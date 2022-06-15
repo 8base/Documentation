@@ -1,0 +1,230 @@
+
+Getting Started:
+Introduction
+What is App Builder?
+Building full-stack go-to-market apps on 8base
+
+App Editor:
+Introduction
+Understanding the App Builder Interface >
+- Editor Header Menu Tools
+- Editor Page Canvas
+- Editor Hidden Canvas
+- Editor Components Drawer
+- Editor Page Context menu
+- Editor Settings and Global Shortcuts
+
+Building Front-ends App Builder Walkthrough:
+Introduction
+Selecting a design theme
+Managing App Pages
+Dragging and dropping Components
+Connecting to a Data Source (8base BE Workspace)
+Accessing frontend data
+Deploying/publishing an App
+
+Custom App Styling:
+Introduction
+Using a CSS Design Framework
+Configurations in the Theme Editor
+Adding custom Fonts and Icons to your App
+Creating a Global App Theme >
+- Exporting/Importing App Themes
+Setting default styles on Components
+Component Styling Settings
+
+Responsive Design in App Builder:
+Introduction
+Managing media query definitions
+Writing custom media query rules
+Changing the Viewport >
+- Setting a Mobile Viewport
+- Setting a Tablet Viewport
+- Setting a Desktop Viewport
+- Setting a custom Viewport
+
+Application Layouts:
+Introduction
+Creating and Editing Layouts
+Adding nested Layouts
+
+App Navigation:
+Introduction
+Create and Editing App Pages >
+- Page URL Settings
+- Access States for Routes
+- Using URL Parameters
+- Handling Redirects
+- Using URL Query Parameters
+- Using URL Fragment Parameters
+- How to create Layouts
+- Adding Logic to Navigation events
+- Using meta-data stored on Pages
+404 and Error Pages
+
+App Components:
+Introduction
+Customizing App Builder Components
+Using Component Property Inputs
+Customizing Styling on Components
+Setting Event Listeners on Components
+Component Library >
+- Header
+- Async content
+- Menu
+- Popper
+- Card
+- Container
+- Drawer
+- Paper
+- Form block
+- Form autocomplete
+- Form field array
+- Form Checkbox
+- Form switch
+- Form radio group
+- Form Select
+- Form multiselect
+- Form text field
+- Form data picker
+- Autocomplete
+- Button
+- Checkbox
+- Radio group
+- Radio
+- Select
+- Multiselect
+- Data picker
+- Switcher
+- Textfield
+- Looper
+- Accordion
+- Alert
+- Table
+- Icon
+- Link
+- Headking
+- List item
+- Nav list item
+- Avatar
+- Divider
+- Breadcrums
+- Badge
+- Chip
+- List
+- Icon button
+- Tooltip
+- Typgraphy
+- Text
+- Image
+Component Categories
+Component Groups
+Component Consistency
+
+Custom Components:
+Introduction
+Setting up your Local Development Environment
+SPEC TBD
+
+Connecting to Data Sources:
+Introduction
+Creating API Connections >
+- Connecting to an 8base BE Workspace
+- Connecting to a GraphQL API
+- Connecting to a REST API
+How to make API Calls (Requests) >
+- How to execute a GraphQL Query/Mutation
+- How to execute a REST API Call
+Send form data with an API Request
+
+Data in the Frontend (State):
+Introduction
+Understanding Local vs. Global State Objects
+Data scopes for App Builder Elements >
+- Layouts
+- Views
+- Requests
+- Resource
+- Functions
+- Components
+- Theme
+Getting and setting state data
+Adding custom state data entries
+
+Custom Frontend Logic:
+Introduction
+Creating custom frontend functions >
+- Typed arguments in frontend functions
+Calling frontend functions >
+- Calling a function from an event
+- Calling a function from a callback
+- Calling a function from a function
+Using Installed JS LIbraries in scripts
+
+Adding CDNs and Libraries:
+Introduction
+Adding/Removing CDNs
+Adding/Removing Libraries
+How to use a CDN/Library module in an App
+
+Triggering Events in the App:
+Introduction
+Specifying Events in Editor
+Managing Events on Components and Requests
+Triggering events in custom front-end logic
+
+Authenticating App Users:
+Introduction
+Supported Authentication Strategies >
+- How to Setup Authentication for JSON Web Tokens
+- How to Setup Authentication for 0Auth
+- How to Setup Authentication for Hosted Login w/ Redirect
+- How to Setup Authentication for Basic Email/Password
+Setting up Protected Pages in App Builder
+Testing Authentication in Development Mode
+
+Images and Files in App Builder:
+Introduction
+Uploading an Image or File
+Displaying an Image or File on a Page
+Available attributes on uploaded files
+Available attributes on uploaded images
+
+Publishing Apps:
+Introduction
+Making an app Public
+Seeing deployment history
+Deployment settings
+CNAME records for Custom domain
+Adding SSL to Custom Domains
+Publishing Apps to a CDN
+
+Handling Errors and Debugging:
+Introduction
+Reading and fixing App Errors
+Adding Validations and Custom Errors
+Handling Errors/Failures in the Editor >
+- Displaying Form Errors to App Users
+- Handling Request Errors in App
+
+Global App Settings:
+Introduction
+Global App Settings Interface
+General Settings
+Using Custom Domains
+Seeing App Activity History
+Managing SEO in App Builder
+Managing App Billing
+Inviting/Managing Collaborators >
+- Assigning Collaborators Roles
+- Revoking access from Collaborators
+
+Setting Role-Based Access Controls and Frontend Permissions:
+Introduction
+Developer permissions in the editor
+User permissions in the Frontend (SPEC TBD)
+
+Billing:
+Introduction
+Upgrading/Downgrading Subscription Tiers
+BILLING SPEC TBD
