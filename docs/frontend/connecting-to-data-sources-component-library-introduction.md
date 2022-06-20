@@ -1,7 +1,7 @@
 ---
-id: 'connecting-to-data-sources-component-library-introduction'
+id: 'connecting-to-data-sources-introduction'
 sidebar_label: 'Introduction'
-slug: '/frontend/connecting-to-data-sources/component-library/introduction'
+slug: '/frontend/connecting-to-data-sources/introduction'
 ---
 
 # Introduction

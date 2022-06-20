@@ -11,6 +11,12 @@
 
 // @ts-check
 
+// These sidebar document ids do not exist:
+// - frontend/connecting-to-data-sources-component-library-introduction
+// - frontend/custom-components-component-library-introduction
+// - frontend/custom-components-component-library-setting-up-your-local-development-environment
+// - frontend/custom-components-component-library-spec-tbd
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 
 const sidebars = {
@@ -60,7 +66,7 @@ const sidebars = {
         type: "category",
         label: "Custom App Styling",
         items: [
-          "frontend/custom-app-styling-understanding-the-app-builder-interface-introduction",
+          "frontend/custom-app-styling-introduction",
           "frontend/custom-app-styling-understanding-the-app-builder-interface-using-a-css-design-framework",
           "frontend/custom-app-styling-understanding-the-app-builder-interface-configurations-in-the-theme-editor",
           "frontend/custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app",
@@ -79,9 +85,9 @@ const sidebars = {
         type: "category",
         label: "Responsive Design in App Builder",
         items: [
-          "frontend/responsive-design-in-app-builder-creating-a-global-app-theme-introduction",
-          "frontend/responsive-design-in-app-builder-creating-a-global-app-theme-managing-media-query-definitions",
-          "frontend/responsive-design-in-app-builder-creating-a-global-app-theme-writing-custom-media-query-rules",
+          "frontend/responsive-design-in-app-builder-introduction",
+          "frontend/responsive-design-in-app-builder-managing-media-query-definitions",
+          "frontend/responsive-design-in-app-builder-writing-custom-media-query-rules",
           {
             type: "category",
             label: "Changing the Viewport",
@@ -98,16 +104,16 @@ const sidebars = {
         type: "category",
         label: "Application Layouts",
         items: [
-          "frontend/application-layouts-changing-the-viewport-introduction",
-          "frontend/application-layouts-changing-the-viewport-creating-and-editing-layouts",
-          "frontend/application-layouts-changing-the-viewport-adding-nested-layouts"
+          "frontend/application-layouts-introduction",
+          "frontend/application-layouts-creating-and-editing-layouts",
+          "frontend/application-layouts-adding-nested-layouts"
         ]
       },
       {
         type: "category",
         label: "App Navigation",
         items: [
-          "frontend/app-navigation-changing-the-viewport-introduction",
+          "frontend/app-navigation-introduction",
           {
             type: "category",
             label: "Create and Editing App Pages",
@@ -123,7 +129,7 @@ const sidebars = {
               "frontend/app-navigation-create-and-editing-app-pages-using-metadata-stored-on-pages"
             ]
           },
-          "frontend/app-navigation-create-and-editing-app-pages-404-and-error-pages"
+          "frontend/app-navigation-404-and-error-pages"
         ]
       },
       {
@@ -189,25 +195,25 @@ const sidebars = {
               "frontend/app-components-component-library-image"
             ]
           },
-          "frontend/app-components-component-library-component-categories",
-          "frontend/app-components-component-library-component-groups",
-          "frontend/app-components-component-library-component-consistency"
+          "frontend/app-components-component-categories",
+          "frontend/app-components-component-groups",
+          "frontend/app-components-component-consistency"
         ]
       },
       {
         type: "category",
         label: "Custom Components",
         items: [
-          "frontend/custom-components-component-library-introduction",
-          "frontend/custom-components-component-library-setting-up-your-local-development-environment",
-          "frontend/custom-components-component-library-spec-tbd"
+          "frontend/custom-components-introduction",
+          "frontend/custom-components-setting-up-your-local-development-environment",
+          "frontend/custom-components-spec-tbd"
         ]
       },
       {
         type: "category",
         label: "Connecting to Data Sources",
         items: [
-          "frontend/connecting-to-data-sources-component-library-introduction",
+          "frontend/connecting-to-data-sources-introduction",
           {
             type: "category",
             label: "Creating API Connections",

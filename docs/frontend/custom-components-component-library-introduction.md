@@ -1,5 +1,5 @@
 ---
-id: 'custom-components-component-library-introduction'
+id: 'custom-components-introduction'
 sidebar_label: 'Introduction'
 slug: '/frontend/custom-components/component-library/introduction'
 ---
