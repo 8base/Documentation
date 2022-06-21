@@ -77,7 +77,7 @@ const config = {
             label: 'Frontend',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/8base/new-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -100,15 +100,11 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/8base',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/8base',
               },
             ],
           },
@@ -117,16 +113,16 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'https://8base.com/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/8base/new-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 8base, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
