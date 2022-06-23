@@ -6,4 +6,4 @@ slug: '/frontend/app-editor//introduction'
 
 # Introduction
 
-...coming soon.
+Coming soon...

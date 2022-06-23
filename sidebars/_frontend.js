@@ -19,6 +19,29 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 
+// KEY NAME IS INDEX IN LIST
+const ParkingLot = {
+  1: {
+    type: "category",
+    label: "App Editor",
+    items: [
+      "frontend/app-editor-introduction",
+      {
+        type: "category",
+        label: "Understanding the App Builder Interface",
+        items: [
+          "frontend/app-editor-understanding-the-app-builder-interface-editor-header-menu-tools",
+          "frontend/app-editor-understanding-the-app-builder-interface-editor-page-canvas",
+          "frontend/app-editor-understanding-the-app-builder-interface-editor-hidden-canvas",
+          "frontend/app-editor-understanding-the-app-builder-interface-editor-components-drawer",
+          "frontend/app-editor-understanding-the-app-builder-interface-editor-page-context-menu",
+          "frontend/app-editor-understanding-the-app-builder-interface-editor-settings-and-global-shortcuts"
+        ]
+      }
+    ]
+  }
+}
+
 const sidebars = {
     frontendDocsSidebar: [
       {
@@ -32,34 +55,15 @@ const sidebars = {
       },
       {
         type: "category",
-        label: "App Editor",
-        items: [
-          "frontend/app-editor-introduction",
-          {
-            type: "category",
-            label: "Understanding the App Builder Interface",
-            items: [
-              "frontend/app-editor-understanding-the-app-builder-interface-editor-header-menu-tools",
-              "frontend/app-editor-understanding-the-app-builder-interface-editor-page-canvas",
-              "frontend/app-editor-understanding-the-app-builder-interface-editor-hidden-canvas",
-              "frontend/app-editor-understanding-the-app-builder-interface-editor-components-drawer",
-              "frontend/app-editor-understanding-the-app-builder-interface-editor-page-context-menu",
-              "frontend/app-editor-understanding-the-app-builder-interface-editor-settings-and-global-shortcuts"
-            ]
-          }
-        ]
-      },
-      {
-        type: "category",
         label: "Building Front-ends App Builder Walkthrough",
         items: [
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-introduction",
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-selecting-a-design-theme",
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-managing-app-pages",
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-dragging-and-dropping-components",
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-connecting-to-a-data-source-8base-be-workspace",
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-accessing-frontend-data",
-          "frontend/building-frontends-app-builder-walkthrough-understanding-the-app-builder-interface-deploying-publishing-an-app"
+          "frontend/building-frontends-app-builder-walkthrough-introduction",
+          "frontend/building-frontends-app-builder-walkthrough-selecting-a-design-theme",
+          "frontend/building-frontends-app-builder-walkthrough-managing-app-pages",
+          "frontend/building-frontends-app-builder-walkthrough-dragging-and-dropping-components",
+          "frontend/building-frontends-app-builder-walkthrough-connecting-to-a-data-source-8base-be-workspace",
+          "frontend/building-frontends-app-builder-walkthrough-accessing-frontend-data",
+          "frontend/building-frontends-app-builder-walkthrough-deploying-publishing-an-app"
         ]
       },
       {
