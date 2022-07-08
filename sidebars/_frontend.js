@@ -21,25 +21,6 @@
 
 // KEY NAME IS INDEX IN LIST
 const ParkingLot = {
-  2: {
-    type: "category",
-    label: "Custom App Styling",
-    items: [
-      "frontend/custom-app-styling-introduction",
-      "frontend/custom-app-styling-understanding-the-app-builder-interface-using-a-css-design-framework",
-      "frontend/custom-app-styling-understanding-the-app-builder-interface-configurations-in-the-theme-editor",
-      "frontend/custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app",
-      {
-        type: "category",
-        label: "Creating a Global App Theme",
-        items: [
-          "frontend/custom-app-styling-creating-a-global-app-theme-exporting-importing-app-themes"
-        ]
-      },
-      "frontend/custom-app-styling-creating-a-global-app-theme-setting-default-styles-on-components",
-      "frontend/custom-app-styling-creating-a-global-app-theme-component-styling-settings"
-    ]
-  },
   3: {
     type: "category",
     label: "Responsive Design in App Builder",
@@ -393,6 +374,25 @@ const sidebars = {
               "frontend/app-editor-understanding-the-app-builder-interface-editor-settings-and-global-shortcuts"
             ]
           }
+        ]
+      },
+      {
+        type: "category",
+        label: "Custom App Styling",
+        items: [
+          "frontend/custom-app-styling-introduction",
+          "frontend/custom-app-styling-understanding-the-app-builder-interface-using-a-css-design-framework",
+          "frontend/custom-app-styling-understanding-the-app-builder-interface-configurations-in-the-theme-editor",
+          "frontend/custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app",
+          {
+            type: "category",
+            label: "Creating a Global App Theme",
+            items: [
+              "frontend/custom-app-styling-creating-a-global-app-theme-exporting-importing-app-themes"
+            ]
+          },
+          "frontend/custom-app-styling-creating-a-global-app-theme-setting-default-styles-on-components",
+          "frontend/custom-app-styling-creating-a-global-app-theme-component-styling-settings"
         ]
       }
     ]
