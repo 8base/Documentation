@@ -21,25 +21,6 @@
 
 // KEY NAME IS INDEX IN LIST
 const ParkingLot = {
-  3: {
-    type: "category",
-    label: "Responsive Design in App Builder",
-    items: [
-      "frontend/responsive-design-in-app-builder-introduction",
-      "frontend/responsive-design-in-app-builder-managing-media-query-definitions",
-      "frontend/responsive-design-in-app-builder-writing-custom-media-query-rules",
-      {
-        type: "category",
-        label: "Changing the Viewport",
-        items: [
-          "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport",
-          "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport",
-          "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-desktop-viewport",
-          "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-custom-viewport"
-        ]
-      }
-    ]
-  },
   4: {
     type: "category",
     label: "Application Layouts",
@@ -388,11 +369,31 @@ const sidebars = {
             type: "category",
             label: "Creating a Global App Theme",
             items: [
+              "frontend/custom-app-styling-creating-a-global-app-theme-introduction",
               "frontend/custom-app-styling-creating-a-global-app-theme-exporting-importing-app-themes"
             ]
           },
           "frontend/custom-app-styling-creating-a-global-app-theme-setting-default-styles-on-components",
           "frontend/custom-app-styling-creating-a-global-app-theme-component-styling-settings"
+        ]
+      },
+      {
+        type: "category",
+        label: "Responsive Design in App Builder",
+        items: [
+          "frontend/responsive-design-in-app-builder-introduction",
+          "frontend/responsive-design-in-app-builder-managing-media-query-definitions",
+          "frontend/responsive-design-in-app-builder-writing-custom-media-query-rules",
+          {
+            type: "category",
+            label: "Changing the Viewport",
+            items: [
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-desktop-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-custom-viewport"
+            ]
+          }
         ]
       }
     ]
