@@ -14,4 +14,6 @@ App Builder currently doesn't support the importing or exporting of a Theme. You
 
 We recommend saving any custom CSS  in a separate file and using a tool like `git` for versioning control. This is also considered a best practice currently when writing custom CSS in media queries.
 
-!>Adding Custom CSS to your App Builder project will result in those changes being applied globally. 
+:::info
+Adding Custom CSS to your App Builder project will result in those changes being applied globally. 
+:::

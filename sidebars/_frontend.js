@@ -21,15 +21,6 @@
 
 // KEY NAME IS INDEX IN LIST
 const ParkingLot = {
-  4: {
-    type: "category",
-    label: "Application Layouts",
-    items: [
-      "frontend/application-layouts-introduction",
-      "frontend/application-layouts-creating-and-editing-layouts",
-      "frontend/application-layouts-adding-nested-layouts"
-    ]
-  },
   5: {
     type: "category",
     label: "App Navigation",
@@ -384,16 +375,25 @@ const sidebars = {
           "frontend/responsive-design-in-app-builder-introduction",
           "frontend/responsive-design-in-app-builder-managing-media-query-definitions",
           "frontend/responsive-design-in-app-builder-writing-custom-media-query-rules",
-          {
-            type: "category",
-            label: "Changing the Viewport",
-            items: [
-              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport",
-              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport",
-              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-desktop-viewport",
-              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-custom-viewport"
-            ]
-          }
+          // {
+          //   type: "category",
+          //   label: "Changing the Viewport",
+          //   items: [
+          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport",
+          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport",
+          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-desktop-viewport",
+          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-custom-viewport"
+          //   ]
+          // }
+        ]
+      },
+      {
+        type: "category",
+        label: "Application Layouts",
+        items: [
+          "frontend/application-layouts-introduction",
+          "frontend/application-layouts-creating-and-editing-layouts",
+          // "frontend/application-layouts-adding-nested-layouts"
         ]
       }
     ]
