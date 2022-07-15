@@ -1,62 +1,107 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
+import AppDoc from './AppDoc';
 
-const FeatureList = [
+function HomeUrl({SVG, URL, Text}){
+  return(
+    <>
+    <div className='flex'>
+      <Link href={URL} className={styles.doc_url}>
+     <SVG className={styles.url_svg}/>
+
+     <span>
+      {Text}
+     </span>
+     </Link>
+     <SVG className={styles.arrow_url}/>
+    </div>
+    </>
+  )
+}
+const Image = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    Svg: require('@site/static/img/8base.svg').default,
   },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  
 ];
 
-function Feature({Svg, title, description}) {
+function Svg({Svg}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
+    <>
+        <Svg className={styles.header_img} role="img" />
+    </>
   );
+}
+function FeaturedVideo({image, text, time,URL}){
+ return (<>
+ <Link to={URL}>
+ <div className={styles.flex + styles.flex_col}>
+  <img src={image} alt='video image'/>
+  <div className ={styles.flex+ styles.flex_col}>
+    <spn>
+      {text}
+    </spn>
+    <span>{time}</span>
+    </div> 
+ </div>
+ </Link>
+  </>)
 }
 
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
+        <div className="row flex">
+          <div className={'container '+ styles.flex}>
+          <Svg {...Image[0]}/>
+       {  /*{FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
-          ))}
+          ))}*/}
+          <div className='container flex flex-col'>
+          <div className={styles.flex}>
+            <h1 className='header'>
+            <span className={styles.home_title_red}>
+            Built for Developers,  
+            </span>
+            <span className={styles.home_title}>
+              By 
+            Developers
+            </span>
+            </h1>
+          </div>
+          <div className='flex'>
+            <h3>
+              Build and run web and mobile applications faster using javascript,
+              GraphQl, and 8base.
+
+            </h3>
+          </div>
+          <div className='flex'>
+            <span>
+              Don't have an account?
+            </span>
+            <Link href='https://app.8base.com/auth/signup' className={styles.signup_link}>
+              Sign Up Now
+            </Link>
+          </div>
+          </div>
+          </div>
+          <div className='doc flex container'>
+            <h3>
+              8base Documentation
+            </h3>
+            <span>
+              Find user guides, developer guides, API refrence, tutorials and more.
+            </span>
+            <div className={styles.flex}>
+              <HomeUrl Text={'8base backend'} SVG={''}/>
+              <HomeUrl Text={'8base app builder'} svg={''}/>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

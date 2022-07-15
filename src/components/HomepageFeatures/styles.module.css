@@ -4,8 +4,33 @@
   padding: 2rem 0;
   width: 100%;
 }
-
+.flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+.header{
+  font-size: 48px;
+  font-weight: 400;
+}
+.header_img{
+  width: 30rem;
+}
+.home_title_red{
+  color: rgb(255, 42, 37);
+
+}
+.signup_link{
+  color: #0874f9;
+}
+.doc_url{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0px 10px  -14px 14px #fff;
 }
