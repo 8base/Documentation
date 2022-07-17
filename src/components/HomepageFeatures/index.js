@@ -3,20 +3,36 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import AppDoc from './AppDoc';
+import Video from './Video';
+import videos from '../video-data.json'
+{/*in any svg just put any one and comment on them by REPLACE IT */}
 
-function HomeUrl({SVG, URL, Text}){
+{/*passing svg in Home URl funstion return an error.. */}
+function Svg({Svg}) {
+  console.log('svg home=> ',Svg )
+  return (
+    <>
+        <Svg className={styles.header_img} role="img" />
+    </>
+  );
+}
+function HomeUrl({Svg, URL, Text}){
+  console.log(Svg)
+
   return(
     <>
-    <div className='flex'>
+    <div className={styles.flex}>
       <Link href={URL} className={styles.doc_url}>
-     <SVG className={styles.url_svg}/>
+     <Svg {...Svg} />
 
      <span>
       {Text}
      </span>
      </Link>
-     <SVG className={styles.arrow_url}/>
+     <Svg {...Svg} />
+
     </div>
+
     </>
   )
 }
@@ -24,17 +40,15 @@ const Image = [
   {
     Svg: require('@site/static/img/8base.svg').default,
   },
+  {
+    Svg: require('@site/static/img/logo.svg').default,
+  },
   
 ];
 
-function Svg({Svg}) {
-  return (
-    <>
-        <Svg className={styles.header_img} role="img" />
-    </>
-  );
-}
-function FeaturedVideo({image, text, time,URL}){
+
+
+{/*function FeaturedVideo({image, text, time,URL}){
  return (<>
  <Link to={URL}>
  <div className={styles.flex + styles.flex_col}>
@@ -48,9 +62,11 @@ function FeaturedVideo({image, text, time,URL}){
  </div>
  </Link>
   </>)
-}
+}*/}
+
 
 export default function HomepageFeatures() {
+  console.log("home videos", videos)
   return (
     <section className={styles.features}>
       <div className="container">
@@ -60,9 +76,15 @@ export default function HomepageFeatures() {
        {  /*{FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}*/}
-          <div className='container flex flex-col'>
+
+          <div className={'container' +styles.flex  + styles.flex_col}>
           <div className={styles.flex}>
+            {/*replace this SVG by yhe dark one in the light mode version */}
+            <Svg {...Image[1]}/>
+          <div className='flex'></div>
+          
             <h1 className='header'>
+
             <span className={styles.home_title_red}>
             Built for Developers,  
             </span>
@@ -97,11 +119,52 @@ export default function HomepageFeatures() {
               Find user guides, developer guides, API refrence, tutorials and more.
             </span>
             <div className={styles.flex}>
-              <HomeUrl Text={'8base backend'} SVG={''}/>
-              <HomeUrl Text={'8base app builder'} svg={''}/>
+              {/*URL SVG */}
+              <div className={styles.flex + styles.flex_col}>
+           <HomeUrl Text={'8base backend'} {...Image[1]} URL={'8base.com'}/>
+            <AppDoc renderItem={'backend'}/>
+           </div>
+           <div className={styles.flex + styles.flex_col}>
+           <HomeUrl Text={'8base backend'} {...Image[1]} URL={'8base.com'}/>
+           <AppDoc renderItem={'Front'}/>
+           </div>
+            </div>
+            <div className={styles.flex + styles.flex_col}></div>
+            <span>
+              Featured Video
+            </span>
+          </div>
+          {/*to be like the design.. you can remove the slice
+           and will display the whole array in the screen.. */}
+          {
+            
+            videos.items.slice(Math.max(videos.items.length -4 , 1)).map((data)=>{
+              return <Video data={data}/>
+            })
+          }
+          {/*visit 8base community */}
+          <div className={styles.flex + ' '+ styles.join_card}>
+            <div className={styles.flex}>
+              <div className={styles.join_img}>
+              <Svg {...Image[1]} />
+            </div>
+              <span  className={styles.hr}></span>
+              <span>Community</span>
+            </div>
+            <div className={styles.flex }>
+              <p>
+                Hop on our community to get thechincal support and participate in forum topics.
+              </p>
+              <div className={styles.flex}>
+                <button className={styles.join}>
+                  Join Now
+                </button>
+              </div>
+
             </div>
 
           </div>
+          
         </div>
       </div>
     </section>

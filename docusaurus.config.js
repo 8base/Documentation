@@ -8,15 +8,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '8base Docs',
   tagline: '8base Platform Documentation',
-  url: 'https://docs.8base.com',
+  url: 'https://docs-silk.vercel.app/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '8base', // Usually your GitHub org/user name.
+  organizationName: 'ahmed3520', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -53,7 +53,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -128,7 +127,31 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'IJ4YA19CBT',
+  
+        // Public API key: it is safe to commit it
+        apiKey: 'b350c396cfdbb63646a0d4e51d9e1564',
+  
+        indexName: 'docusaurus_up_tmp',
+  
+        // Optional: see doc section below
+        contextualSearch: false,
+  
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+//externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // Optional: Algolia search parameters
+       // searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+  
+        //... other Algolia params
+      },
     }),
+ 
+
 };
 
 module.exports = config;
