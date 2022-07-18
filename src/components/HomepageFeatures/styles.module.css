@@ -267,6 +267,9 @@ color: white;
   margin-top: 1.5rem;
 
 }
+.header{
+  font-size: 40px;
+}
 [data-theme='light'] .home_url_span{
   color:black !important;
 
@@ -396,6 +399,10 @@ color:#F1F2F2;
     }
     .video_cont{
       width: 98%;
+      margin-bottom: 0px;
+    }
+    .doc{
+      margin-bottom: 0.5rem;
     }
     .header_wr{
       margin-top: 1rem;
@@ -405,5 +412,11 @@ color:#F1F2F2;
     }
     .join_card{
       height: auto;
+    }
+    .join_comp{
+      padding-top: 0.1rem;
+    }
+    .hr{
+      margin-left: 10px;
     }
   }
