@@ -1,16 +1,29 @@
 import React from 'react'
 import { frontendDocsSidebar } from '../../../sidebars/_frontend'
 import { backendDocsSidebar } from '../../../sidebars/_backend'
-import styles from 'prism-react-renderer/themes/github'
+import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
-function DocumentList({data}) {
+
+
+
+function DocumentList({data, URL}) {
   return(
-    <div >
-       <ul className={styles.flex + styles.flex_col + styles.ul_home}>
+    <div className={styles.doc_urls} >
+       <ul className={styles.ul_home}>
 
     {
     data.map((item)=>{
-        return<li>{item.label}</li>
+console.log('item=>', item.items[0])
+        return(
+          <>
+         
+        <li>
+        <Link href={`${URL}`} style={{color:'#389BF2'}} >{item.label}
+      </Link>
+        
+        </li>
+        </>)
 
       })
     }
@@ -24,9 +37,9 @@ const AppDoc = ({renderItem}) => {
   return (
     <>
     { renderItem == 'backend'?
-    <DocumentList data={backendDocsSidebar}/>
+    <DocumentList data={backendDocsSidebar} URL='/backend'/>
     :
-    <DocumentList data={frontendDocsSidebar}/>
+    <DocumentList data={frontendDocsSidebar} URL="/frontend/getting-started/introduction"/>
     }
     </>
   )

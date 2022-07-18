@@ -56,13 +56,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {
-        title: '8base Docs',
+      navbar: { 
+        style:'dark',
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
         },
         items: [
+  
           {
             type: 'doc',
             docId: 'backend/console-readme',
@@ -77,7 +78,10 @@ const config = {
           },
           {
             href: 'https://github.com/8base/new-docs',
-            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://twitter.com/8base',
             position: 'right',
           },
         ],

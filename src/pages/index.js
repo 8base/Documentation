@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -31,6 +31,22 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  useEffect(()=>{
+    console.log('lol')
+
+    console.log('lol2')
+
+      var element = document.getElementsByClassName('navbar__brand');
+      var loc = window.location.pathname;
+      console.log('element path=> ',loc)
+      if(loc=='/'){
+      element[0].className='nav__active navbar__brand '
+      }
+      console.log('element=> ',element)
+
+
+    
+  },[])
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
