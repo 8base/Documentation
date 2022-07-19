@@ -21,29 +21,6 @@
 
 // KEY NAME IS INDEX IN LIST
 const ParkingLot = {
-  5: {
-    type: "category",
-    label: "App Navigation",
-    items: [
-      "frontend/app-navigation-introduction",
-      {
-        type: "category",
-        label: "Create and Editing App Pages",
-        items: [
-          "frontend/app-navigation-create-and-editing-app-pages-page-url-settings",
-          "frontend/app-navigation-create-and-editing-app-pages-access-states-for-routes",
-          "frontend/app-navigation-create-and-editing-app-pages-using-url-parameters",
-          "frontend/app-navigation-create-and-editing-app-pages-handling-redirects",
-          "frontend/app-navigation-create-and-editing-app-pages-using-url-query-parameters",
-          "frontend/app-navigation-create-and-editing-app-pages-using-url-fragment-parameters",
-          "frontend/app-navigation-create-and-editing-app-pages-how-to-create-layouts",
-          "frontend/app-navigation-create-and-editing-app-pages-adding-logic-to-navigation-events",
-          "frontend/app-navigation-create-and-editing-app-pages-using-metadata-stored-on-pages"
-        ]
-      },
-      "frontend/app-navigation-404-and-error-pages"
-    ]
-  },
   6: {
     type: "category",
     label: "App Components",
@@ -394,6 +371,29 @@ const sidebars = {
           "frontend/application-layouts-introduction",
           "frontend/application-layouts-creating-and-editing-layouts",
           // "frontend/application-layouts-adding-nested-layouts"
+        ]
+      },
+      {
+        type: "category",
+        label: "App Navigation",
+        items: [
+          "frontend/app-navigation-introduction",
+          {
+            type: "category",
+            label: "Create and Editing App Pages",
+            items: [
+              "frontend/app-navigation-create-and-editing-app-pages-page-url-settings",
+              // "frontend/app-navigation-create-and-editing-app-pages-access-states-for-routes",
+              "frontend/app-navigation-create-and-editing-app-pages-using-url-parameters",
+              // "frontend/app-navigation-create-and-editing-app-pages-handling-redirects",
+              // "frontend/app-navigation-create-and-editing-app-pages-using-url-query-parameters",
+              // "frontend/app-navigation-create-and-editing-app-pages-using-url-fragment-parameters",
+              // "frontend/app-navigation-create-and-editing-app-pages-how-to-create-layouts",
+              // "frontend/app-navigation-create-and-editing-app-pages-adding-logic-to-navigation-events",
+              // "frontend/app-navigation-create-and-editing-app-pages-using-metadata-stored-on-pages"
+            ]
+          },
+          // "frontend/app-navigation-404-and-error-pages"
         ]
       }
     ]
