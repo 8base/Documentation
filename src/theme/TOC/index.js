@@ -7,7 +7,7 @@ import Svg from '@site/static/img/like.svg'
 export default function TOC({ toc, editUrl, ...props }) {
 
   return (
-    <div className="toc-wrapper">
+    <div className="toc-wrapper toc_styling">
       <div className='flex toc_header'>
       <span className='toc_header_sep'>
         on this page

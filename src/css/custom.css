@@ -286,3 +286,9 @@ line-height: 100%;
 .signin>svg{
   display: none;
 }
+[data-theme='dark'] .toc_styling{
+  background-color: #323C47;
+}
+[data-theme='light'] .toc_styling{
+  background-color: #F1F5F7;
+}
