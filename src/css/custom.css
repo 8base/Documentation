@@ -50,7 +50,7 @@ background-color: #17202D;
 .navbar__link:hover{
   color: #5EADF2;
 }
-.navbar__items--right >a:first-child:before{
+.navbar__items--right >a:nth-child(4){
   content: '';
   width: 24px;
   height: 24px;
@@ -59,10 +59,11 @@ background-color: #17202D;
     no-repeat;
 
 }
-.navbar__items--right>a:nth-child(2)::before{
+.navbar__items--right>a:nth-child(3)::before{
   content: '';
   width: 30px;
   height: 30px;
+  margin-left: 0.9rem;
   display: flex;
   background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjUgMS44OTU4M0MxNy44MjQ4IDIuMjIxODEgMTcuMTEwNCAyLjQzNjU4IDE2LjM3OTQgMi41MzMzM0MxNy4xNDc2IDIuMDMzNDkgMTcuNzI1NCAxLjIzOTQxIDE4LjAwNDMgMC4zMDAwMDZDMTcuMjc3OSAwLjc3MTkxOCAxNi40ODQ2IDEuMTAzMDMgMTUuNjU4MyAxLjI3OTE3QzE1LjMxMDMgMC44NzM5NzUgMTQuODkxOCAwLjU1MTYzMiAxNC40MjgyIDAuMzMxNzMzQzEzLjk2NDcgMC4xMTE4MzQgMTMuNDY1NyAtMC4wMDEwMjgwNSAxMi45NjE2IDcuMDU1OTllLTA2QzEwLjkyMDkgNy4wNTU5OWUtMDYgOS4yNjkzOCAxLjgwODMzIDkuMjY5MzggNC4wMzc0OUM5LjI2NzkzIDQuMzQ3NTYgOS4yOTk5MSA0LjY1NjcxIDkuMzY0NjIgNC45NTgzMkM3LjkwMTI2IDQuODgyMSA2LjQ2ODMyIDQuNDY3MzIgNS4xNTc0OSAzLjc0MDUyQzMuODQ2NjYgMy4wMTM3MiAyLjY4NjgxIDEuOTkwOSAxLjc1MjEzIDAuNzM3NTA1QzEuNDI0MjIgMS4zNTE3MiAxLjI1MDggMi4wNTI1MiAxLjI1IDIuNzY2NjZDMS4yNSA0LjE2NjY2IDEuOTA3MzggNS40MDQxNiAyLjkgNi4xMjkxNUMyLjMxMTkgNi4xMTM2NSAxLjczNTg1IDUuOTQwNyAxLjIyMDc1IDUuNjI0OTlWNS42NzQ5OUMxLjIyMDc1IDcuNjMzMzIgMi40OTU3NSA5LjI2MjQ4IDQuMTgzMjUgOS42MzMzMUMzLjg2NTkyIDkuNzI3MyAzLjUzODkxIDkuNzc0OTMgMy4yMTA1IDkuNzc0OThDMi45Nzc0NyA5Ljc3NTQzIDIuNzQ0OTYgOS43NTAzMSAyLjUxNjM4IDkuNjk5OThDMi45ODU1IDExLjMwNDEgNC4zNTA4OCAxMi40NzA4IDUuOTY4MjUgMTIuNTA0MUM0LjY1NDAyIDEzLjYyOTUgMy4wNDA0OCAxNC4yMzc4IDEuMzgxMjUgMTQuMjMzM0MxLjA4NjczIDE0LjIzMjggMC43OTI0ODcgMTQuMjEzMyAwLjUgMTQuMTc1QzIuMTg3OTQgMTUuMzcyNiA0LjE1MDA0IDE2LjAwNiA2LjE1Mjc1IDE2QzEyLjk1MzggMTYgMTYuNjY5MyA5Ljg0NTgxIDE2LjY2OTMgNC41MDgzM0MxNi42NjkzIDQuMzMzMzMgMTYuNjY1MSA0LjE1ODMzIDE2LjY1NzYgMy45ODc0OUMxNy4zNzg4IDMuNDE3NTIgMTguMDAyNyAyLjcwOTIxIDE4LjUgMS44OTU4M1oiIGZpbGw9IiM5MkEwQjMiLz4KPC9zdmc+")
     no-repeat;
@@ -208,4 +209,80 @@ line-height: 100%;
 }
 .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module{
   position: inherit !important;
+}
+.tableOfContents_bqdL{
+  position: inherit;
+}
+.toc-wrapper div{
+  position: inherit;
+}
+
+/*styling color mode toggle*/
+.clean-btn{
+  border-radius: 10px !important;
+  background-color: #323C47;
+  margin-left:0.5rem;
+  margin-right: 0.8rem;
+}
+.clean-btn:hover{
+  background-color: #323C47 !important;
+}
+
+[data-theme='light'] .DocSearch {
+  --docsearch-text-color: #f5f6f7;
+  --docsearch-container-background: rgba(9,10,17,0.8);
+  --docsearch-modal-background: #1b1b1d;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40,0 3px 8px 0 #000309;
+  --docsearch-searchbox-background: #090a11;
+  --docsearch-searchbox-focus-background: #000;
+  --docsearch-hit-color: #bec3c9;
+  --docsearch-hit-shadow: none;
+  --docsearch-hit-background: #1c1e21;
+  --docsearch-key-gradient: linear-gradient(-26.5deg,#565872,#31355b);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #282d55,inset 0 0 1px 1px #51577d,0 2px 2px 0 rgba(3,4,9,0.3);
+  --docsearch-footer-background: #242526;
+  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73,76,106,0.5),0 -4px 8px 0 rgba(0,0,0,0.2);
+  --docsearch-logo-color: #fff;
+  --docsearch-muted-color: rgb(164, 166, 168);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+.DocSearch-Button-Keys{
+  display: none !important;
+}
+.signin{
+  margin-left: 1rem;
+  display: flex;
+  padding-right: 0.8rem !important;
+  background-color: rgb(255, 42, 37);
+  text-decoration: none !important;
+  border: none;
+  color: white !important;
+}
+.signin:hover{
+  background-color: rgb(255, 42, 37) !important;
+}
+
+.signin>svg{
+  display: none;
 }

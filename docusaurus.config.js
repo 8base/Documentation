@@ -57,6 +57,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+   
+  
+ 
+  
       navbar: { 
         style:'dark',
         logo: {
@@ -77,16 +81,7 @@ const config = {
             position: 'left',
             label: 'Frontend',
           },
-          {
-            href:'https://github.com/8base/new-docs',
-            position:'right',
-            icon:{
-              alt:'github icon',
-              src: `/logos/github.svg`,
-              href: 'https://github.com/ionic-team/ionic-framework',
-              target: '_blank',
-            }
-          },
+       
           {
             href:'https://twitter.com/8base',
             position:'right',
@@ -97,8 +92,19 @@ const config = {
               target:'_blank'
 
             }
-
-          }
+          },
+          {
+            href:'https://github.com/8base/new-docs',
+            position:'right',
+            icon:{
+              alt:'github icon',
+              src: `/logos/github.svg`,
+              href: 'https://github.com/ionic-team/ionic-framework',
+              target: '_blank',
+            }
+          },
+          
+   
         /*   {
             href: 'https://github.com/8base/new-docs',
             position: 'right',
@@ -108,66 +114,30 @@ const config = {
             position: 'right',
           },
           */
-        ],
-      },
-  
-      footer: {
-        style: 'dark',
-        links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/backend/README',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/8base',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/8base',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'https://8base.com/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/8base/new-docs',
-              },
-            ],
+            href: 'https://app.8base.com/auth/login',
+            label: 'Sign In',
+            position: 'right',
+            className: 'button button--secondary button--lg signin'
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 8base, Inc.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        
       },
       algolia: {
         // The application ID provided by Algolia
         appId: 'IJ4YA19CBT',
-  
         // Public API key: it is safe to commit it
         apiKey: 'b350c396cfdbb63646a0d4e51d9e1564',
   
         indexName: 'docusaurus_up_tmp',
-  
+
+        version: {
+          // You can send raw values without `selectors`
+          defaultValue: ["latest", "stable"],
+        },
         // Optional: see doc section below
-        contextualSearch: false,
-  
+        contextualSearch: true,
+     
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
 //externalUrlRegex: 'external\\.com|domain\\.com',
   
@@ -178,6 +148,12 @@ const config = {
   
         //... other Algolia params
       },
+      
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+   
     }),
  
 
