@@ -35,6 +35,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars/sidebar.js'),
           routeBasePath: '/',
+          sidebarCollapsible:false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -63,7 +64,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-  
+          
           {
             type: 'doc',
             docId: 'backend/console-readme',
@@ -77,6 +78,28 @@ const config = {
             label: 'Frontend',
           },
           {
+            href:'https://github.com/8base/new-docs',
+            position:'right',
+            icon:{
+              alt:'github icon',
+              src: `/logos/github.svg`,
+              href: 'https://github.com/ionic-team/ionic-framework',
+              target: '_blank',
+            }
+          },
+          {
+            href:'https://twitter.com/8base',
+            position:'right',
+            icon:{
+              alt:'twitter icon',
+              src: `/logos/twitter.svg`,
+              href: 'https://twitter.com/8base',
+              target:'_blank'
+
+            }
+
+          }
+        /*   {
             href: 'https://github.com/8base/new-docs',
             position: 'right',
           },
@@ -84,8 +107,10 @@ const config = {
             href: 'https://twitter.com/8base',
             position: 'right',
           },
+          */
         ],
       },
+  
       footer: {
         style: 'dark',
         links: [
