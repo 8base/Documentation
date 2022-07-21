@@ -132,6 +132,13 @@ filter:brightness(2);
 margin-left: 1.5rem;
 
 }
+.navbar__link{
+  color: gray;
+  font-weight: 600;
+}
+.navbar__link--active{
+  color: #5EADF2 !important;
+}
 @media screen and (max-width:900px) {
   .nav__active::after, .navbar__brand::after{
   content: '';

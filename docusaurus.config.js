@@ -73,13 +73,13 @@ const config = {
             type: 'doc',
             docId: 'backend/console-readme',
             position: 'left',
-            label: 'Backend',
+            label: '8base Backend',
           },
           {
             type: 'doc',
             docId: 'frontend/getting-started-introduction',
             position: 'left',
-            label: 'Frontend',
+            label: '8base App Builder',
           },
        
           {
