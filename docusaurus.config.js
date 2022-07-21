@@ -68,7 +68,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          
+
           {
             type: 'doc',
             docId: 'backend/console-readme',
@@ -85,9 +85,10 @@ const config = {
           {
             href:'https://twitter.com/8base',
             position:'right',
+            className:'twitter',
             icon:{
               alt:'twitter icon',
-              src: `/logos/twitter.svg`,
+              src: `logos/twitter.svg`,
               href: 'https://twitter.com/8base',
               target:'_blank'
 
@@ -96,6 +97,7 @@ const config = {
           {
             href:'https://github.com/8base/new-docs',
             position:'right',
+            className:'github',
             icon:{
               alt:'github icon',
               src: `/logos/github.svg`,

@@ -19,7 +19,7 @@ console.log('item=>', item.items[0])
           <>
          
         <li>
-        <Link href={`${URL}`} style={{color:'#389BF2'}} >{item.label}
+        <Link href={`${URL}`} style={{color:'#0874f9'}} >{item.label}
       </Link>
         
         </li>

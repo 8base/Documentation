@@ -80,8 +80,8 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="row flex">
           <div className={'container '+ styles.flex}>
-            <div className={styles.main_img}>
-          <Svg {...Image[0]}/>
+            <div className={styles.main_img} style={{marginTop:'2rem'}}>
+          <Svg {...Image[0]} />
           </div>
        {  /*{FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
@@ -98,7 +98,7 @@ export default function HomepageFeatures() {
             Built for Developers,  
             </span>
             <span className={styles.home_title}>
-              By 
+              by 
             Developers
             </span>
             </h1>
@@ -106,12 +106,12 @@ export default function HomepageFeatures() {
           <div className='flex'>
             <h3 style={{fontWeight:'300'}} className>
               Build and run web and mobile applications faster using javascript,
-              GraphQl, and 8base.
+              GraphQL, and 8base.
 
             </h3>
           </div>
           <div className='flex'>
-            <span className={styles.span_muted}>
+            <span className={styles.span_muted +' '+ styles.acc_span} >
               Don't have an account?
             </span>
             <Link href='https://app.8base.com/auth/signup' className={styles.signup_link}>
@@ -125,7 +125,7 @@ export default function HomepageFeatures() {
               8base Documentation
             </h3>
             <span style={{paddingBottom:'1rem'}}>
-              Find user guides, developer guides, API refrence, tutorials and more.
+              Find user guides, developer guides, API references, tutorials, and more.
             </span>
             <div className={styles.flex +' '+styles.home_url_cont}>
               {/*URL SVG */}
@@ -135,7 +135,9 @@ export default function HomepageFeatures() {
         
             <AppDoc renderItem={'backend'}/>
             <Link href='/backend' className={styles.join_academy+' '+styles.view_url} >
+              <div className={styles.inner_join_button}>
             View All Backend Docs
+            </div>
           </Link>
             </div>
            </div>
@@ -144,7 +146,10 @@ export default function HomepageFeatures() {
           <HomeUrl Text={'8base App Builder'} {...Image[1]} URL={'/frontend/getting-started/introduction'}/>
            <AppDoc renderItem={'Front'}/>
            <Link href='/frontend/getting-started/introduction' className={styles.join_academy+' '+styles.view_url} >
+           <div className={styles.inner_join_button}>
+          
             View All App Builder Docs
+          </div>
           </Link>
            </div>
            </div>
@@ -168,7 +173,9 @@ export default function HomepageFeatures() {
           
           </div>
           <a href='https://www.8base.com/8base-academy' className={styles.join_academy+' '+ styles.join_left} >
+            <div className={styles.inner_join_button}>
             Visit 8base academy
+            </div>
           </a>
           {/*visit 8base community */}
           <div className={styles.flex + ' '+ styles.join_card}>
@@ -177,15 +184,17 @@ export default function HomepageFeatures() {
               <Svg {...Image[1]} />
             </div>
               <span  className={styles.hr}></span>
-              <span className={styles.community}>Community</span>
+              <span className={styles.community}>community</span>
             </div>
             <div className={styles.flex +' '+styles.join_comp_text} >
               <p className={styles.p_comm}>
-                Hop on our community to get thechincal support and participate in forum topics.
+                Hop on our community to get technical support and participate in forum topics.
               </p>
               <div className={styles.flex}>
                 <button className={styles.join}>
+                  <div className={styles.inner_join_button}>
                   Join Now
+                  </div>
                 </button>
               </div>
 

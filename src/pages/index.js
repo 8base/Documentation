@@ -28,19 +28,26 @@ function HomepageHeader() {
     </>
   );
 }
+function insertAfter(referenceNode, newNode) {
+ // referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
 
+
+//navbar__brand
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   useEffect(()=>{
-
-
-      var element = document.getElementsByClassName('navbar__brand');
-      var element2 = document.getElementsByClassName('menu__link--active');
-      console.log("ele=2=>",element2)
+    var el = document.createElement("div");
+    el.className='div_bottom'
+      var element = document.getElementsByClassName('navbar__logo');
+ 
+      var elementReplace = document.getElementsByClassName('navbar__brand');
+      
       var loc = window.location.pathname;
       console.log('element path=> ',loc)
       if(loc=='/'){
-      element[0].className='nav__active navbar__brand '
+      element[0].className='nav__active navbar__logo '
+      elementReplace[0].className=' navbar__brand activate'
       }
 
 
