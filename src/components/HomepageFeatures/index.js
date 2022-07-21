@@ -6,6 +6,9 @@ import AppDoc from './AppDoc';
 import Video from './Video';
 import videos from '../video-data.json'
 import ArrowRight from '@site/static/img/up_right.svg'
+import BackendSvg from '@site/static/logos/8base-backend.svg'
+import Appbuilder from '@site/static/logos/8base-appbuilder.svg'
+
 
 {/*in any svg just put any one and comment on them by REPLACE IT */}
 
@@ -18,7 +21,7 @@ function Svg({Svg}) {
     </>
   );
 }
-function HomeUrl({Svg, URL, Text}){
+function HomeUrl({SVG, URL, Text}){
 
   return(
     <>
@@ -26,7 +29,7 @@ function HomeUrl({Svg, URL, Text}){
 
     <div className={styles.flex + ' '+styles.home_url}>
       <div className={styles.flex +' '+ styles.alcenter+' ' + styles.url_left}>
-     <Svg {...Svg} />
+     <SVG  />
 
      <span className={styles.home_url_span}>
       {Text}
@@ -99,7 +102,7 @@ export default function HomepageFeatures() {
             </span>
             <span className={styles.home_title}>
               by 
-            Developers
+            developers
             </span>
             </h1>
           </div>
@@ -131,7 +134,7 @@ export default function HomepageFeatures() {
               {/*URL SVG */}
             <div className={styles.flex + styles.flex_col +' '+ styles.homr_url_wrapper}>
             <div className={styles.flex+ styles.flex_col + ' '+styles.url_inner}>
-            <HomeUrl Text={'8base backend'} {...Image[1]} URL={'/backend'}/>
+            <HomeUrl Text={'8base backend'} SVG={BackendSvg} URL={'/backend'}/>
         
             <AppDoc renderItem={'backend'}/>
             <Link href='/backend' className={styles.join_academy+' '+styles.view_url} >
@@ -143,7 +146,7 @@ export default function HomepageFeatures() {
            </div>
            <div className={styles.flex + styles.flex_col+ ' '+ styles.homr_url_wrapper}>
           <div className={styles.flex+ styles.flex_col + ' '+styles.url_inner}>
-          <HomeUrl Text={'8base App Builder'} {...Image[1]} URL={'/frontend/getting-started/introduction'}/>
+          <HomeUrl Text={'8base App Builder'} SVG={Appbuilder} URL={'/frontend/getting-started/introduction'}/>
            <AppDoc renderItem={'Front'}/>
            <Link href='/frontend/getting-started/introduction' className={styles.join_academy+' '+styles.view_url} >
            <div className={styles.inner_join_button}>
@@ -192,7 +195,7 @@ export default function HomepageFeatures() {
               </p>
               <div className={styles.flex}>
                 <button className={styles.join}>
-                  <div className={styles.inner_join_button}>
+                  <div className={styles.inner_join_button} >
                   Join Now
                   </div>
                 </button>

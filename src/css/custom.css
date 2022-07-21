@@ -39,9 +39,10 @@
 }
 [data-theme='dark'] main {
 /*background-color: #17202D;*/
-background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#242C34)) ;
+/*background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#242C34)) ;*/
 background-repeat: no-repeat;
-/*background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(36, 44, 52, 1) 100% );*/
+
+background: linear-gradient(180deg, rgba(0,0,0,1) -14%, rgba(36,44,52,1) 21%)
 }
 @media screen and (max-width:700px) {
 .container{
@@ -95,6 +96,7 @@ background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: 1rem;
  /* height: 100%;*/
 }
 
