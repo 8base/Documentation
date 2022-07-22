@@ -26,15 +26,7 @@ If you need to change the URL of an existing Page, we recommend that you create 
 
 :::info
 
-App Builder currently doesn't offer a native redirect capability. If you wish to redirect users from the old URL to the new one, you'll need to use a `beforeReoutEnter` local hook and code like the following.
-
-```js
-
-return ({_,to,_}) => to('DESTINATION_PATH')
-
-```
-
-![Local Hook for redirect](./_images/ab-app-navigation-create-and-editing-app-pages-page-url-settings-2.png)
+App Builder currently doesn't offer a native redirect capability. If you wish to redirect users from the old URL to the new one, you'll need to use a `beforeRouteEnter` local hook and the `router.navigate('DESTINATION_PATH')` method.
 :::
 
 ## Best Practices for URL Management
