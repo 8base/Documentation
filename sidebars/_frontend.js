@@ -333,10 +333,10 @@ const sidebars = {
         label: "App Components",
         items: [
           "frontend/app-components-introduction",
-          // "frontend/app-components-customizing-app-builder-components",
-          // "frontend/app-components-using-component-property-inputs",
-          // "frontend/app-components-customizing-styling-on-components",
-          // "frontend/app-components-setting-event-listeners-on-components",
+          "frontend/app-components-customizing-app-builder-components",
+          "frontend/app-components-using-component-property-inputs",
+          "frontend/app-components-customizing-styling-on-components",
+          "frontend/app-components-setting-event-listeners-on-components",
           // {
           //   type: "category",
           //   label: "Component Library",
