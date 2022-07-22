@@ -8,15 +8,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '8base Docs',
   tagline: '8base Platform Documentation',
-  url: 'https://docs.8base.com',
+  url: 'https://docs-silk.vercel.app/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '8base', // Usually your GitHub org/user name.
+  organizationName: 'ahmed3520', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -35,6 +35,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars/sidebar.js'),
           routeBasePath: '/',
+          sidebarCollapsible:false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -53,82 +54,111 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {
-        title: '8base Docs',
+   
+  
+ 
+  
+      navbar: { 
+        style:'dark',
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
         },
         items: [
+
           {
             type: 'doc',
             docId: 'backend/console-readme',
             position: 'left',
-            label: 'Backend',
+            label: '8base Backend',
           },
           {
             type: 'doc',
             docId: 'frontend/getting-started-introduction',
             position: 'left',
-            label: 'Frontend',
+            label: '8base App Builder',
+          },
+       
+          {
+            href:'https://twitter.com/8base',
+            position:'right',
+            className:'twitter',
+            icon:{
+              alt:'twitter icon',
+              src: `logos/twitter.svg`,
+              href: 'https://twitter.com/8base',
+              target:'_blank'
+
+            }
           },
           {
+            href:'https://github.com/8base/new-docs',
+            position:'right',
+            className:'github',
+            icon:{
+              alt:'github icon',
+              src: `/logos/github.svg`,
+              href: 'https://github.com/ionic-team/ionic-framework',
+              target: '_blank',
+            }
+          },
+          
+   
+        /*   {
             href: 'https://github.com/8base/new-docs',
-            label: 'GitHub',
             position: 'right',
           },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/backend/README',
-              },
-            ],
+            href: 'https://twitter.com/8base',
+            position: 'right',
           },
+          */
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/8base',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/8base',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'https://8base.com/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/8base/new-docs',
-              },
-            ],
+            href: 'https://app.8base.com/auth/login',
+            label: 'Sign In',
+            position: 'right',
+            className: 'button button--secondary button--lg signin'
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 8base, Inc.`,
+        
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'IJ4YA19CBT',
+        // Public API key: it is safe to commit it
+        apiKey: 'b350c396cfdbb63646a0d4e51d9e1564',
+  
+        indexName: 'docusaurus_up_tmp',
+
+        version: {
+          // You can send raw values without `selectors`
+          defaultValue: ["latest", "stable"],
+        },
+        // Optional: see doc section below
+        contextualSearch: true,
+     
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+//externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // Optional: Algolia search parameters
+       // searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+  
+        //... other Algolia params
+      },
+      
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+   
     }),
+ 
+
 };
 
 module.exports = config;
