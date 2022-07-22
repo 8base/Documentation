@@ -81,7 +81,12 @@ const config = {
             position: 'left',
             label: '8base App Builder',
           },
-       
+          {
+            href:'https://community.8base.com/',
+            position:'left',
+            label: 'Community',
+            className: 'hide-svg'
+          },
           {
             href:'https://twitter.com/8base',
             position:'right',
