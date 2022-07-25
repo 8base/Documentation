@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '8base Docs',
   tagline: '8base Platform Documentation',
-  url: 'https://docs-silk.vercel.app/',
+  url: 'https://docs.8base.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ahmed3520', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: '8base', // Usually your GitHub org/user name.
+  projectName: 'Documentation', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -39,14 +39,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/8base/new-docs/blob/main',
+            'https://github.com/8base/Documentation/blob/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/8base/new-docs/blob/main',
+            'https://github.com/8base/Documentation/blob/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,18 +57,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-   
-  
- 
-  
-      navbar: { 
+
+      navbar: {
         style:'dark',
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
         },
         items: [
-
           {
             type: 'doc',
             docId: 'backend/console-readme',
@@ -82,7 +78,7 @@ const config = {
             label: '8base App Builder',
           },
           {
-            href:'https://community.8base.com/',
+            href:'https://community.8base.com',
             position:'left',
             label: 'Community',
             className: 'hide-svg'
@@ -100,7 +96,7 @@ const config = {
             }
           },
           {
-            href:'https://github.com/8base/new-docs',
+            href:'https://github.com/8base/Documentation',
             position:'right',
             className:'github',
             icon:{
@@ -110,17 +106,6 @@ const config = {
               target: '_blank',
             }
           },
-          
-   
-        /*   {
-            href: 'https://github.com/8base/new-docs',
-            position: 'right',
-          },
-          {
-            href: 'https://twitter.com/8base',
-            position: 'right',
-          },
-          */
           {
             href: 'https://app.8base.com/auth/login',
             label: 'Sign In',
@@ -128,14 +113,14 @@ const config = {
             className: 'button button--secondary button--lg signin'
           },
         ],
-        
+
       },
       algolia: {
         // The application ID provided by Algolia
         appId: 'IJ4YA19CBT',
         // Public API key: it is safe to commit it
         apiKey: 'b350c396cfdbb63646a0d4e51d9e1564',
-  
+
         indexName: 'docusaurus_up_tmp',
 
         version: {
@@ -144,25 +129,24 @@ const config = {
         },
         // Optional: see doc section below
         contextualSearch: true,
-     
+
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
 //externalUrlRegex: 'external\\.com|domain\\.com',
-  
+
         // Optional: Algolia search parameters
        // searchParameters: {},
-  
+
         // Optional: path for search page that enabled by default (`false` to disable it)
-  
+
         //... other Algolia params
       },
-      
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-   
+
     }),
- 
 
 };
 
