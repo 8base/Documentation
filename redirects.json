@@ -1,0 +1,390 @@
+[
+  {
+    "from": "/docs",
+    "to": "/backend"
+  },
+  {
+    "from": "/docs/getting-started/connecting-to-api",
+    "to": "/backend/getting-started/connecting-to-api"
+  },
+  {
+    "from": "/docs/8base-console",
+    "to": "/backend/overview"
+  },
+  {
+    "from": "/docs/8base-console/teams",
+    "to": "/backend/teams"
+  },
+  {
+    "from": "/docs/8base-console/authentication",
+    "to": "/backend/authentication"
+  },
+  {
+    "from": "/docs/8base-console/roles-and-permissions",
+    "to": "/backend/roles-and-permissions"
+  },
+  {
+    "from": "/docs/8base-console/handling-files",
+    "to": "/backend/handling-files"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools/data-builder",
+    "to": "/backend/console/data-builder"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools/data-viewer",
+    "to": "/backend/console/data-viewer"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools/api-explorer",
+    "to": "/backend/console/api-explorer"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools/ci-cd",
+    "to": "/backend/console/ci-cd"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools/functions",
+    "to": "/backend/console/functions"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools/users",
+    "to": "/backend/console/users"
+  },
+  {
+    "from": "/docs/8base-console/platform-tools",
+    "to": "/backend/tools"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/single-record-query",
+    "to": "/backend/graphql-api/queries/single-record-query"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/related-record-query",
+    "to": "/backend/graphql-api/queries/related-record-query"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/aggregation-query",
+    "to": "/backend/graphql-api/queries/aggregation-query"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/record-list-query",
+    "to": "/backend/graphql-api/queries/record-list-query"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/filtered-list-query",
+    "to": "/backend/graphql-api/queries/filtered-list-query"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/sort-list-query",
+    "to": "/backend/graphql-api/queries/sort-list-query"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/paginated-query-results",
+    "to": "/backend/graphql-api/queries/paginated-query-results"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/combining-arguments",
+    "to": "/backend/graphql-api/queries/combining-arguments"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries/combining-queries",
+    "to": "/backend/graphql-api/queries/combining-queries"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/queries",
+    "to": "/backend/graphql-api/queries"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/mutations/single-record-mutations",
+    "to": "/backend/graphql-api/mutations/single-record-mutations"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/mutations/related-record-mutations",
+    "to": "/backend/graphql-api/mutations/related-record-mutations"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/mutations/update-by-filter-mutations",
+    "to": "/backend/graphql-api/mutations/update-by-filter-mutations"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/mutations",
+    "to": "/backend/graphql-api/mutations"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/subscriptions/simple-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/simple-record-subscriptions"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/subscriptions/complex-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/complex-record-subscriptions"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/subscriptions",
+    "to": "/backend/graphql-api/subscriptions"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/geo-fields",
+    "to": "/backend/graphql-api/geo-fields"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/grouping-and-aggregations",
+    "to": "/backend/graphql-api/grouping-and-aggregations"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/variables",
+    "to": "/backend/graphql-api/variables"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api/error-handling",
+    "to": "/backend/graphql-api/error-handling"
+  },
+  {
+    "from": "/docs/8base-console/graphql-api",
+    "to": "/backend/graphql-api"
+  },
+  {
+    "from": "/docs/8base-console/custom-functions/resolvers",
+    "to": "/backend/custom-functions/resolvers"
+  },
+  {
+    "from": "/docs/8base-console/custom-functions/tasks",
+    "to": "/backend/custom-functions/tasks"
+  },
+  {
+    "from": "/docs/8base-console/custom-functions/webhooks",
+    "to": "/backend/custom-functions/webhooks"
+  },
+  {
+    "from": "/docs/8base-console/custom-functions/triggers",
+    "to": "/backend/custom-functions/triggers"
+  },
+  {
+    "from": "/docs/8base-console/custom-functions/debugging",
+    "to": "/backend/custom-functions/debugging"
+  },
+  {
+    "from": "/docs/8base-console/custom-functions",
+    "to": "/backend/custom-functions"
+  },
+  {
+    "from": "/docs/8base-console/plugins-integrations/salesforce",
+    "to": "/backend/plugins-integrations/salesforce"
+  },
+  {
+    "from": "/docs/8base-console/plugins-integrations",
+    "to": "/backend/plugins-integrations"
+  },
+  {
+    "from": "/docs/development-tools/dev-env/project-structure",
+    "to": "/backend/development-tools/dev-env/project-structure"
+  },
+  {
+    "from": "/docs/development-tools/dev-env/8base-yml",
+    "to": "/backend/development-tools/dev-env/8base-yml"
+  },
+  {
+    "from": "/docs/development-tools/dev-env/runtime-environment",
+    "to": "/backend/development-tools/dev-env/runtime-environment"
+  },
+  {
+    "from": "/docs/development-tools/dev-env/hosting",
+    "to": "/backend/development-tools/dev-env/hosting"
+  },
+  {
+    "from": "/docs/development-tools/dev-env",
+    "to": "/backend/development-tools/dev-env"
+  },
+  {
+    "from": "/docs/development-tools/cli/commands",
+    "to": "/backend/development-tools/cli/commands"
+  },
+  {
+    "from": "/docs/development-tools/cli/generators",
+    "to": "/backend/development-tools/cli/generators"
+  },
+  {
+    "from": "/docs/development-tools/cli/ci-cd",
+    "to": "/backend/development-tools/cli/ci-cd"
+  },
+  {
+    "from": "/docs/development-tools/cli",
+    "to": "/backend/development-tools/cli"
+  },
+  {
+    "from": "/docs/development-tools/sdk/api",
+    "to": "/backend/development-tools/sdk/api"
+  },
+  {
+    "from": "/docs/development-tools/sdk/auth",
+    "to": "/backend/development-tools/sdk/auth"
+  },
+  {
+    "from": "/docs/development-tools/sdk/file-upload",
+    "to": "/backend/development-tools/sdk/file-upload"
+  },
+  {
+    "from": "/docs/development-tools/sdk/vs-code-plugin",
+    "to": "/backend/development-tools/sdk/vs-code-plugin"
+  },
+  {
+    "from": "/docs/development-tools/sdk/filestack-uploader",
+    "to": "/backend/development-tools/sdk/filestack-uploader"
+  },
+  {
+    "from": "/docs/development-tools/sdk",
+    "to": "/backend/development-tools/sdk"
+  },
+  {
+    "from": "/docs/development-tools/dev-env/project-structure",
+    "to": "/backend/development-tools/dev-env/project-structure"
+  },
+  {
+    "from": "/8base-console",
+    "to": "/backend"
+  },
+  {
+    "from": "/8base-console/teams",
+    "to": "/backend/teams"
+  },
+  {
+    "from": "/8base-console/authentication",
+    "to": "/backend/authentication"
+  },
+  {
+    "from": "/8base-console/roles-and-permissions",
+    "to": "/backend/roles-and-permissions"
+  },
+  {
+    "from": "/8base-console/handling-files",
+    "to": "/backend/handling-files"
+  },
+  {
+    "from": "/8base-console/platform-tools",
+    "to": "/backend/tools"
+  },
+  {
+    "from": "/8base-console/platform-tools/data-builder",
+    "to": "/backend/console/data-builder"
+  },
+  {
+    "from": "/8base-console/platform-tools/data-viewer",
+    "to": "/backend/console/data-viewer"
+  },
+  {
+    "from": "/8base-console/platform-tools/api-explorer",
+    "to": "/backend/console/api-explorer"
+  },
+  {
+    "from": "/8base-console/platform-tools/functions",
+    "to": "/backend/console/functions"
+  },
+  {
+    "from": "/8base-console/platform-tools/users",
+    "to": "/backend/console/users"
+  },
+  {
+    "from": "/8base-console/graphql-api",
+    "to": "/backend/graphql-api"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries",
+    "to": "/backend/graphql-api/queries"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/single-record-query",
+    "to": "/backend/graphql-api/queries/single-record-query"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/related-record-query",
+    "to": "/backend/graphql-api/queries/related-record-query"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/aggregation-query",
+    "to": "/backend/graphql-api/queries/aggregation-query"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/record-list-query",
+    "to": "/backend/graphql-api/queries/record-list-query"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/filtered-list-query",
+    "to": "/backend/graphql-api/queries/filtered-list-query"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/sort-list-query",
+    "to": "/backend/graphql-api/queries/sort-list-query"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/paginated-query-results",
+    "to": "/backend/graphql-api/queries/paginated-query-results"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/combining-arguments",
+    "to": "/backend/graphql-api/queries/combining-arguments"
+  },
+  {
+    "from": "/8base-console/graphql-api/queries/combining-queries",
+    "to": "/backend/graphql-api/queries/combining-queries"
+  },
+  {
+    "from": "/8base-console/graphql-api/mutations",
+    "to": "/backend/graphql-api/mutations"
+  },
+  {
+    "from": "/8base-console/graphql-api/mutations/single-record-mutations",
+    "to": "/backend/graphql-api/mutations/single-record-mutations"
+  },
+  {
+    "from": "/8base-console/graphql-api/mutations/related-record-mutations",
+    "to": "/backend/graphql-api/mutations/related-record-mutations"
+  },
+  {
+    "from": "/8base-console/graphql-api/subscriptions",
+    "to": "/backend/graphql-api/subscriptions"
+  },
+  {
+    "from": "/8base-console/graphql-api/subscriptions/simple-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/simple-record-subscriptions"
+  },
+  {
+    "from": "/8base-console/graphql-api/subscriptions/complex-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/complex-record-subscriptions"
+  },
+  {
+    "from": "/8base-console/graphql-api/grouping-and-aggregations",
+    "to": "/backend/graphql-api/grouping-and-aggregations"
+  },
+  {
+    "from": "/8base-console/graphql-api/variables",
+    "to": "/backend/graphql-api/variables"
+  },
+  {
+    "from": "/8base-console/graphql-api/error-handling",
+    "to": "/backend/graphql-api/error-handling"
+  },
+  {
+    "from": "/8base-console/custom-functions",
+    "to": "/backend/custom-functions"
+  },
+  {
+    "from": "/8base-console/custom-functions/webhooks",
+    "to": "/backend/custom-functions/webhooks"
+  },
+  {
+    "from": "/8base-console/custom-functions/triggers",
+    "to": "/backend/custom-functions/triggers"
+  },
+  {
+    "from": "/8base-console/custom-functions/tasks",
+    "to": "/backend/custom-functions/tasks"
+  },
+  {
+    "from": "/8base-console/custom-functions/resolvers",
+    "to": "/backend/custom-functions/resolvers"
+  },
+  {
+    "from": "/8base-console/custom-functions/debugging",
+    "to": "/backend/custom-functions/debugging"
+  }
+]

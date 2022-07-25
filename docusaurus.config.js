@@ -1,8 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const fs = require('fs');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+const redirects = JSON.parse(fs.readFileSync('redirects.json'));
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -147,6 +150,13 @@ const config = {
       },
 
     }),
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      { redirects },
+    ],
+  ]
 
 };
 

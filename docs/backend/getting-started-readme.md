@@ -1,4 +1,3 @@
-
 ---
 id: 'getting-started-readme'
 sidebar_label: 'Overview'
