@@ -182,11 +182,11 @@ export default function HomepageFeatures() {
           </a>
           {/*visit 8base community */}
           <div className={styles.flex + ' '+ styles.join_card}>
-            <div className={styles.flex +' '+styles.join_comp} style={{alignItems:'center'}}>
+            <div className={styles.flex +' '+styles.join_comp} style={{alignItems:'unset'}}>
               <div className={styles.join_img}>
               <Svg {...Image[1]} />
             </div>
-              <span  className={styles.hr}></span>
+              <span  className={styles.hr} style={{marginTop:'auto', marginBottom:'auto'}}></span>
               <span className={styles.community}>community</span>
             </div>
             <div className={styles.flex +' '+styles.join_comp_text} >

@@ -24,6 +24,10 @@
 .header_img{
   width: 30rem;
 }
+/*Centring 8base DOC URL*/
+.home_url_cont > .homr_url_wrapper:nth-child(1) > .url_inner{
+display: flex;
+}
 .home_title_red{
   color: rgb(255, 42, 37);
 
@@ -144,13 +148,13 @@ ul{
 }
 
 .hr{
-  border-left: 1px solid #fff;
-  height: 20px;
-
+  border-left: 1px solid gray;
+  
+  height: 30px;
 }
 
 .join_img >svg{
-  width: 10rem;
+  width: auto;
 }
 .home_url_cont{
   width: 100%;
@@ -198,7 +202,6 @@ ul{
   flex-direction: column;
 }
 .community{
-  margin-left: 1rem;
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -267,6 +270,8 @@ padding: 1px !important;
   padding: 1px !important;
 }
 .inner_join_button{
+  padding-left: 0.9rem !important;
+  padding-right: 0.9rem !important;
 
 border-radius: 100px;
 background-color: white;
@@ -408,6 +413,15 @@ color:#F1F2F2;
 .main_img>svg{
   height: 300px;
 }
+.join_comp{
+  width:25%;
+  justify-content: space-between;
+}
+@media screen and (max-width:1350px) {
+  .join_comp{
+    width: 28%;
+  }
+}
 @media screen and (max-width: 1100px) {
 .doc,.video_items_row, .featured, .join_left{
   padding-left: 0.5rem;
@@ -415,11 +429,16 @@ color:#F1F2F2;
 .join_left, .join_card{
   margin-left: 0.5rem;
 }
+
 }
 @media screen and (max-width: 950px) {
   .ul_home{
     padding-left: 0 !important;
   }
+  .join_comp{
+    width: 38%;
+  }
+
  }
  @media screen and (max-width: 750px) {
   .video_items_row{
@@ -464,7 +483,7 @@ color:#F1F2F2;
       width: 98%;
     }
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:685px) {
 
     .video_sub{
       justify-content: unset;
@@ -478,7 +497,30 @@ color:#F1F2F2;
     .join_img >svg{
       width: 5rem;
     }
+    .inner_join_button{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+    }
+    .join_comp{
+      width: 40%;
+    }
+  
   }
+  @media screen and (max-width:570px){
+    .join_comp{
+      width: 50%;
+    }
+  
+  }
+  
+  @media screen and (max-width:480px){
+    .join_comp{
+      width: 58%;
+    }
+  
+  }
+  
   @media screen and (max-width:400px) {
     .video_items_row{
       display: grid;
@@ -503,14 +545,27 @@ color:#F1F2F2;
     }
     .join_comp{
       padding-top: 0.1rem;
+      width: 78%;
     }
-    .hr{
-      margin-left: 10px;
-    }
+  
     .join_img{
       margin-top: 0.1rem;
     }
     .acc_span{
       margin-right: 0.1rem;
     }
+  .join>  .inner_join_button{
+      padding-left: 0.8rem !important;
+      padding-right: 0.8rem !important;
+      width: 100% !important;
+      font-size: 1rem;
+    }
+    
+    @media screen and (max-width:480px){
+      .join_comp{
+        width: 70%;
+      }
+    
+    }
+    
   }
