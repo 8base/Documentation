@@ -60,12 +60,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         style:'dark',
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
+          href:'https://www.8base.com/',
         },
         items: [
           {
@@ -147,6 +152,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        
       },
 
     }),

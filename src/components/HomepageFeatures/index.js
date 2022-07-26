@@ -98,7 +98,7 @@ export default function HomepageFeatures() {
             <h1 className={styles.header}>
 
             <span className={styles.home_title_red}>
-            Built for Developers,  
+            Built for developers,  
             </span>
             <span className={styles.home_title}>
               by 
@@ -108,7 +108,7 @@ export default function HomepageFeatures() {
           </div>
           <div className='flex'>
             <h3 style={{fontWeight:'300'}} className>
-              Build and run web and mobile applications faster using javascript,
+              Build and run web and mobile applications faster using JavaScript,
               GraphQL, and 8base.
 
             </h3>
@@ -134,7 +134,7 @@ export default function HomepageFeatures() {
               {/*URL SVG */}
             <div className={styles.flex + styles.flex_col +' '+ styles.homr_url_wrapper}>
             <div className={styles.flex+ styles.flex_col + ' '+styles.url_inner}>
-            <HomeUrl Text={'8base backend'} SVG={BackendSvg} URL={'/backend'}/>
+            <HomeUrl Text={'8base Backend'} SVG={BackendSvg} URL={'/backend'}/>
         
             <AppDoc renderItem={'backend'}/>
             <Link href='/backend' className={styles.join_academy+' '+styles.view_url} >
@@ -177,7 +177,7 @@ export default function HomepageFeatures() {
           </div>
           <a href='https://www.8base.com/8base-academy' className={styles.join_academy+' '+ styles.join_left} >
             <div className={styles.inner_join_button}>
-            Visit 8base academy
+            Visit 8base Academy
             </div>
           </a>
           {/*visit 8base community */}
