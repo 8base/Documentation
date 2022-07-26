@@ -15,8 +15,9 @@
   width: 200px;
 }
 .header{
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 46px;
+  font-weight: bold;
+  
   display: flex;
   flex-direction: column;
 }
@@ -402,6 +403,7 @@ color:#F1F2F2;
 }
 .main_img{
   margin-top: 3rem !important;
+  margin-bottom: 2.5rem;
 }
 .main_img>svg{
   height: 300px;
