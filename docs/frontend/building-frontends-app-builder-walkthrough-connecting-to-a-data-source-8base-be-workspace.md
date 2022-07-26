@@ -5,7 +5,7 @@ slug: '/frontend/building-frontends-app-builder-walkthrough/connecting-to-a-data
 ---
 
 # Connecting to a Data Source (8base BE Workspace)
-
+ 
 A data source is an API client you can send requests from your app to get data to your pages and interact with APIs. In this document, we'll walk through the steps of getting one set up.
 
 ## Setting up an 8base Backend Data Source

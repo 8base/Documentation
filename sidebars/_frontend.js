@@ -30,31 +30,6 @@ const ParkingLot = {
       "frontend/custom-components-spec-tbd"
     ]
   },
-  8: {
-    type: "category",
-    label: "Connecting to Data Sources",
-    items: [
-      "frontend/connecting-to-data-sources-introduction",
-      {
-        type: "category",
-        label: "Creating API Connections",
-        items: [
-          "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-an-8base-be-workspace",
-          "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-graphql-api",
-          "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-rest-api"
-        ]
-      },
-      {
-        type: "category",
-        label: "How to make API Calls (Requests)",
-        items: [
-          "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-how-to-execute-a-graphql-query-mutation",
-          "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-how-to-execute-a-rest-api-call"
-        ]
-      },
-      "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-send-form-data-with-an-api-request"
-    ]
-  },
   9: {
     type: "category",
     label: "Data in the Frontend (State)",
@@ -394,6 +369,31 @@ const sidebars = {
           // "frontend/app-components-component-categories",
           // "frontend/app-components-component-groups",
           // "frontend/app-components-component-consistency"
+        ]
+      },
+      {
+        type: "category",
+        label: "Connecting to Data Sources",
+        items: [
+          "frontend/connecting-to-data-sources-introduction",
+          {
+            type: "category",
+            label: "Creating API Connections",
+            items: [
+              "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-an-8base-be-workspace",
+              "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-graphql-api",
+              "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-rest-api"
+            ]
+          },
+          // {
+          //   type: "category",
+          //   label: "How to make API Calls (Requests)",
+          //   items: [
+          //     "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-how-to-execute-a-graphql-query-mutation",
+          //     "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-how-to-execute-a-rest-api-call"
+          //   ]
+          // },
+          // "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-send-form-data-with-an-api-request"
         ]
       }
     ]
