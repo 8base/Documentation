@@ -4,7 +4,10 @@ import { backendDocsSidebar } from '../../../sidebars/_backend'
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 
-
+function countWord(word){
+  console.log('word=> ', word, " count=> ",word.trim().split(/\s+/).length)
+  return word.trim().split(/\s+/).length;
+}
 
 
 function DocumentList({data, URL}) {
@@ -17,12 +20,19 @@ function DocumentList({data, URL}) {
 console.log('item=>', item.items[0])
         return(
           <>
-         
-        <li>
+         {countWord(item.label)>=5?
+        <li className='li-breakword'>
         <Link href={`${URL}`} style={{color:'#0874f9'}} >{item.label}
       </Link>
         
         </li>
+        :
+        <li >
+        <Link href={`${URL}`} style={{color:'#0874f9'}} >{item.label}
+      </Link>
+        
+        </li>
+    }
         </>)
 
       })

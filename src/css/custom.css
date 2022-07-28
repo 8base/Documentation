@@ -551,3 +551,8 @@ body {
 .hide-svg svg {
   display: none;
 }
+.li-breakword {
+  margin: 0;
+  list-style: none; 
+  line-height: 109%;
+}
