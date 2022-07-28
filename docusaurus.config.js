@@ -95,7 +95,7 @@ const config = {
             href:'https://twitter.com/8base',
             position:'right',
             className:'twitter',
-            icon:{
+            icon: {
               alt:'twitter icon',
               src: `logos/twitter.svg`,
               href: 'https://twitter.com/8base',
