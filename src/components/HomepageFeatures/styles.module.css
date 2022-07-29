@@ -28,8 +28,9 @@
 .home_url_cont > .homr_url_wrapper:nth-child(1) > .url_inner{
 display: flex;
 }
-.home_title_red{
+.home_title_red {
   color: rgb(255, 42, 37);
+  font-size: 54px;
 
 }
 .signup_link{
@@ -93,6 +94,8 @@ ul{
 }
 .ul_home{
   width: 80%;
+  font-size: 14px;
+  line-height: 2em;
 }
 .header_wr{
   margin-top: 4rem;
@@ -139,7 +142,7 @@ ul{
   margin-left: 0px;
 
   display: block;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0 2px rgb(0 0 0 / 30%);
   -moz-box-shadow: 0 0 2px rgba(0,0,0,.3);
@@ -210,11 +213,8 @@ ul{
 }
 
 .join_comp_text{
-  padding-left: 1rem;
   justify-content: space-between;
   align-items: center;
-
-
 }
 .join{
   cursor: pointer;

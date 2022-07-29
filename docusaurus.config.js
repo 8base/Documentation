@@ -70,7 +70,7 @@ const config = {
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
-          href:'https://www.8base.com/',
+          href:'https://docs.8base.com/',
         },
         items: [
           {
