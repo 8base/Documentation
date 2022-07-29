@@ -250,6 +250,11 @@ body {
 .flex_col {
   flex-direction: column;
 }
+
+.home-header {
+  font-size: 54px !important;
+}
+
 .toc_header {
   justify-content: space-between;
   padding-left: 0.5rem;
@@ -560,6 +565,6 @@ body {
 }
 .li-breakword {
   margin: 0;
-  list-style: none; 
+  list-style: none;
   line-height: 109%;
 }

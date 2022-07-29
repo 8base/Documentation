@@ -17,13 +17,13 @@ import Appbuilder from "@site/static/logos/8base-appbuilder.svg";
   /*passing svg in Home URl funstion return an error.. */
 }
 function Svg({ Svg }) {
-  console.log("svg home=> ", Svg);
   return (
     <>
       <Svg className={styles.header_img} role="img" />
     </>
   );
 }
+
 function HomeUrl({ SVG, URL, Text }) {
   return (
     <>
@@ -44,6 +44,7 @@ function HomeUrl({ SVG, URL, Text }) {
     </>
   );
 }
+
 const Image = [
   {
     Svg: require("@site/static/img/8base.svg").default,
@@ -75,7 +76,6 @@ const Image = [
 }
 
 export default function HomepageFeatures() {
-  console.log("home videos", videos);
   return (
     <section className={styles.features}>
       <div className="container">
@@ -107,7 +107,7 @@ export default function HomepageFeatures() {
                 {/*replace this SVG by yhe dark one in the light mode version */}
                 <Svg {...Image[1]} />
 
-                <h1 className={styles.header}>
+                <h1 className={styles.header + ' home-header'}>
                   <span className={styles.home_title_red}>
                     Built for developers,
                   </span>
@@ -158,7 +158,7 @@ export default function HomepageFeatures() {
                   />
 
                   <AppDoc renderItem={"backend"} />
-                  
+
                   <Link
                     href="/backend"
                     className={styles.join_academy + " " + styles.view_url}
