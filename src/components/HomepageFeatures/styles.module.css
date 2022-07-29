@@ -195,6 +195,7 @@ ul {
 }
 .doc_urls {
   padding-top: 1.3rem;
+  display: flex;
 }
 .url_inner {
   flex-direction: column;

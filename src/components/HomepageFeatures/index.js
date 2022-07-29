@@ -107,19 +107,21 @@ export default function HomepageFeatures() {
                 {/*replace this SVG by yhe dark one in the light mode version */}
                 <Svg {...Image[1]} />
 
-                <h1 className={styles.header + ' home-header'}>
+                <h1 className={styles.header + " home-header"}>
                   <span className={styles.home_title_red}>
                     Built for developers,
                   </span>
                   <span className={styles.home_title}>by developers</span>
                 </h1>
               </div>
+
               <div className="flex">
                 <h3 style={{ fontWeight: "300" }} className>
                   Build and run web and mobile applications faster using
                   JavaScript, GraphQL, and 8base.
                 </h3>
               </div>
+
               <div className="flex">
                 <span className={styles.span_muted + " " + styles.acc_span}>
                   Don't have an account?
@@ -133,14 +135,16 @@ export default function HomepageFeatures() {
               </div>
             </div>
           </div>
+
           <div className={styles.doc + " " + styles.flex}>
             <h3 className={styles.h3_home}>8base Documentation</h3>
+
             <span style={{ paddingBottom: "1rem" }}>
               Find user guides, developer guides, API references, tutorials, and
               more.
             </span>
+
             <div className={styles.flex + " " + styles.home_url_cont}>
-              {/*URL SVG */}
               <div
                 className={
                   styles.flex + styles.flex_col + " " + styles.homr_url_wrapper
@@ -169,6 +173,7 @@ export default function HomepageFeatures() {
                   </Link>
                 </div>
               </div>
+
               <div
                 className={
                   styles.flex + styles.flex_col + " " + styles.homr_url_wrapper
@@ -184,7 +189,7 @@ export default function HomepageFeatures() {
                     SVG={Appbuilder}
                     URL={"/frontend/getting-started/introduction"}
                   />
-                  
+
                   <AppDoc renderItem={"Front"} />
 
                   <Link
@@ -198,7 +203,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
             </div>
-            <div className={styles.flex + styles.flex_col}></div>
+
           </div>
           <span className={styles.featured}>Featured Video</span>
           {/*to be like the design.. you can remove the slice
