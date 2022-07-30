@@ -385,15 +385,38 @@ const sidebars = {
               "frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-rest-api"
             ]
           },
+          {
+            type: "category",
+            label: "How to make API Calls (Requests)",
+            items: [
+              "frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation",
+              "frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-rest-api-call"
+            ]
+          },
+          "frontend/connecting-to-data-sources-how-to-make-api-calls-send-form-data-with-an-api-request"
+        ]
+      },
+      {
+        type: "category",
+        label: "Data in the Frontend (State)",
+        items: [
+          "frontend/data-in-the-frontend-introduction",
+          // "frontend/data-in-the-frontend-(state)-how-to-make-api-calls-(requests)-understanding-local-vs.-global-state-objects",
           // {
           //   type: "category",
-          //   label: "How to make API Calls (Requests)",
+          //   label: "Data scopes for App Builder Elements",
           //   items: [
-          //     "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-how-to-execute-a-graphql-query-mutation",
-          //     "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-how-to-execute-a-rest-api-call"
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-layouts",
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-views",
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-requests",
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-resource",
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-functions",
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-components",
+          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-theme"
           //   ]
           // },
-          // "frontend/connecting-to-data-sources-how-to-make-api-calls-(requests)-send-form-data-with-an-api-request"
+          // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-getting-and-setting-state-data",
+          // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-adding-custom-state-data-entries"
         ]
       }
     ]
