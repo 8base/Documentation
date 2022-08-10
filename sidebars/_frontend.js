@@ -401,20 +401,20 @@ const sidebars = {
         label: "Data in the Frontend (State)",
         items: [
           "frontend/data-in-the-frontend-introduction",
-          // "frontend/data-in-the-frontend-(state)-how-to-make-api-calls-(requests)-understanding-local-vs.-global-state-objects",
-          // {
-          //   type: "category",
-          //   label: "Data scopes for App Builder Elements",
-          //   items: [
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-layouts",
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-views",
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-requests",
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-resource",
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-functions",
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-components",
-          //     "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-theme"
-          //   ]
-          // },
+          "frontend/data-in-the-frontend-understanding-local-vs-global-state-objects",
+          {
+            type: "category",
+            label: "Data scopes for App Builder Elements",
+            items: [
+              "frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-layouts",
+              "frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-views",
+              "frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-requests",
+              // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-resource",
+              // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-functions",
+              // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-components",
+              // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-theme"
+            ]
+          },
           // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-getting-and-setting-state-data",
           // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-adding-custom-state-data-entries"
         ]
