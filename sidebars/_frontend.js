@@ -392,8 +392,8 @@ const sidebars = {
               // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-theme"
             ]
           },
-          // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-getting-and-setting-state-data",
-          // "frontend/data-in-the-frontend-(state)-data-scopes-for-app-builder-elements-adding-custom-state-data-entries"
+          "frontend/data-in-the-frontend-getting-and-setting-state-data",
+          "frontend/data-in-the-frontend-adding-custom-state-data-entries"
         ]
       }
     ]
