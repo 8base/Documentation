@@ -1,12 +1,13 @@
 ---
-id: 'triggering-events-in-the-app-calling-frontend-functions-introduction'
-sidebar_label: 'Introduction'
-slug: '/frontend/triggering-events-in-the-app/calling-frontend-functions/introduction'
+id: 'custom-frontend-logic-calling-a-function-from-an-event'
+sidebar_label: 'Calling a function from an event'
+slug: '/frontend/custom-frontend-logic/calling-a-function-from-an-event'
 ---
 
 # Calling a Function from an Event
 
 This article describes how developers can call a function from an event.
+
 ___
 
 There are multiple ways to execute a Function in App Builder. One way is to use an Event. App Builder lets developers set event listeners on Components in the **Events** section of the Component's **Settings** (see screenshot above). 

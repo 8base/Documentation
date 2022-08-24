@@ -30,30 +30,6 @@ const ParkingLot = {
       "frontend/custom-components-spec-tbd"
     ]
   },
-  10: {
-    type: "category",
-    label: "Custom Frontend Logic",
-    items: [
-      "frontend/custom-frontend-logic-data-scopes-for-app-builder-elements-introduction",
-      {
-        type: "category",
-        label: "Creating custom frontend functions",
-        items: [
-          "frontend/custom-frontend-logic-creating-custom-frontend-functions-typed-arguments-in-frontend-functions"
-        ]
-      },
-      {
-        type: "category",
-        label: "Calling frontend functions",
-        items: [
-          "frontend/custom-frontend-logic-calling-frontend-functions-calling-a-function-from-an-event",
-          "frontend/custom-frontend-logic-calling-frontend-functions-calling-a-function-from-a-callback",
-          "frontend/custom-frontend-logic-calling-frontend-functions-calling-a-function-from-a-function"
-        ]
-      },
-      "frontend/custom-frontend-logic-calling-frontend-functions-using-installed-js-libraries-in-scripts"
-    ]
-  },
   11: {
     type: "category",
     label: "Adding CDNs and Libraries",
@@ -394,6 +370,30 @@ const sidebars = {
           },
           "frontend/data-in-the-frontend-getting-and-setting-state-data",
           "frontend/data-in-the-frontend-adding-custom-state-data-entries"
+        ]
+      },
+      {
+        type: "category",
+        label: "Custom Frontend Logic",
+        items: [
+          "frontend/custom-frontend-logic-introduction",
+          {
+            type: "category",
+            label: "Creating custom frontend functions",
+            items: [
+              "frontend/custom-frontend-logic-creating-custom-frontend-functions"
+            ]
+          },
+          {
+            type: "category",
+            label: "Calling frontend functions",
+            items: [
+              "frontend/custom-frontend-logic-calling-a-function-from-an-event",
+              "frontend/custom-frontend-logic-calling-a-function-from-a-callback",
+              "frontend/custom-frontend-logic-calling-a-function-from-a-function"
+            ]
+          },
+          "frontend/custom-frontend-logic-using-installed-js-libraries-in-scripts"
         ]
       }
     ]
