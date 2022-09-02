@@ -16,15 +16,15 @@ While App Builder abstracts into interface most application development concepts
 
 Here is an overview of all the sections you can start diving in to on your journey to becoming an App Builder expert! 
 
-1. Getting Familiar with the Editor - **Docs coming soon...**
-2. Custom App Styling - **Docs coming soon...**
-3. Responsive Design in App Builder - **Docs coming soon...**
-4. Application Layouts - **Docs coming soon...**
-5. App Navigation - **Docs coming soon...**
-6. App Components - **Docs coming soon...**
-7. Connecting to Data Sources - **Docs coming soon...**
-8. Data in the Frontend (State) - **Docs coming soon...**
-9. Custom Frontend Logic - **Docs coming soon...**
+1. [Getting Familiar with the Editor](/docs/frontend/getting-started-what-is-app-builder.md)
+2. [Custom App Styling](docs/frontend/custom-app-styling-introduction.md)
+3. [Responsive Design in App Builder](docs/frontend/responsive-design-in-app-builder-introduction.md)
+4. [Application Layouts](docs/frontend/application-layouts-introduction.md) 
+5. [App Navigation](docs/frontend/app-navigation-introduction.md)
+6. [App Components](docs/frontend/app-components-introduction.md)
+7. [Connecting to Data Sources](docs/frontend/connecting-to-data-sources-introduction.md)
+8. [Data in the Frontend (State)](docs/frontend/data-in-the-frontend-introduction.md)
+9. [Custom Frontend Logic](docs/frontend/custom-frontend-logic-introduction.md)
 10. Triggering Events in the App - **Docs coming soon...**
 11. Authenticating App Users - **Docs coming soon...**
 12. Images and Files in App Builder - **Docs coming soon...**
@@ -33,5 +33,5 @@ Here is an overview of all the sections you can start diving in to on your journ
 
 ## Next Steps
 
-Ready to get going? Check out our Getting Started (Docs coming soon...) to get up and running fast, or continue to learn more about App Builder in a deeper overview on the next page.
+Ready to get going? Check out our [Getting Started](docs/frontend/getting-started-building-fullstack-gotomarket-apps-on-8base.md) to get up and running fast, or continue to learn more about App Builder in a deeper overview on the next page.
 
