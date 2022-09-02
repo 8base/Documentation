@@ -69,30 +69,6 @@ const ParkingLot = {
       "frontend/authenticating-app-users-supported-authentication-strategies-testing-authentication-in-development-mode"
     ]
   },
-  14: {
-    type: "category",
-    label: "Images and Files in App Builder",
-    items: [
-      "frontend/images-and-files-in-app-builder-supported-authentication-strategies-introduction",
-      "frontend/images-and-files-in-app-builder-supported-authentication-strategies-uploading-an-image-or-file",
-      "frontend/images-and-files-in-app-builder-supported-authentication-strategies-displaying-an-image-or-file-on-a-page",
-      "frontend/images-and-files-in-app-builder-supported-authentication-strategies-available-attributes-on-uploaded-files",
-      "frontend/images-and-files-in-app-builder-supported-authentication-strategies-available-attributes-on-uploaded-images"
-    ]
-  },
-  15: {
-    type: "category",
-    label: "Publishing Apps",
-    items: [
-      "frontend/publishing-apps-supported-authentication-strategies-introduction",
-      "frontend/publishing-apps-supported-authentication-strategies-making-an-app-public",
-      "frontend/publishing-apps-supported-authentication-strategies-seeing-deployment-history",
-      "frontend/publishing-apps-supported-authentication-strategies-deployment-settings",
-      "frontend/publishing-apps-supported-authentication-strategies-cname-records-for-custom-domain",
-      "frontend/publishing-apps-supported-authentication-strategies-adding-ssl-to-custom-domains",
-      "frontend/publishing-apps-supported-authentication-strategies-publishing-apps-to-a-cdn"
-    ]
-  },
   16: {
     type: "category",
     label: "Handling Errors and Debugging",
@@ -395,7 +371,31 @@ const sidebars = {
           },
           "frontend/custom-frontend-logic-using-installed-js-libraries-in-scripts"
         ]
-      }
+      },
+      {
+        type: "category",
+        label: "Images and Files in App Builder",
+        items: [
+          "frontend/images-and-files-in-app-builder-introduction",
+          "frontend/images-and-files-in-app-builder-uploading-an-image-or-file",
+          "frontend/images-and-files-in-app-builder-displaying-an-image-or-file-on-a-page",
+          // "frontend/images-and-files-in-app-builder-available-attributes-on-uploaded-files",
+          // "frontend/images-and-files-in-app-builder-available-attributes-on-uploaded-images"
+        ]
+      },
+      {
+        type: "category",
+        label: "Publishing Apps",
+        items: [
+          "frontend/publishing-apps-introduction",
+          "frontend/publishing-apps-making-an-app-public",
+          "frontend/publishing-apps-seeing-deployment-history",
+          // "frontend/publishing-apps-deployment-settings",
+          // "frontend/publishing-apps-cname-records-for-custom-domain",
+          // "frontend/publishing-apps-adding-ssl-to-custom-domains",
+          // "frontend/publishing-apps-publishing-apps-to-a-cdn"
+        ]
+      },
     ]
   };
   
