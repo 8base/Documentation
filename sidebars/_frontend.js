@@ -188,16 +188,17 @@ const sidebars = {
           "frontend/responsive-design-in-app-builder-introduction",
           "frontend/responsive-design-in-app-builder-managing-media-query-definitions",
           "frontend/responsive-design-in-app-builder-writing-custom-media-query-rules",
-          // {
-          //   type: "category",
-          //   label: "Changing the Viewport",
-          //   items: [
-          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport",
-          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport",
-          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-desktop-viewport",
-          //     "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-custom-viewport"
-          //   ]
-          // }
+          {
+            type: "category",
+            label: "The Viewport",
+            items: [
+              "frontend/responsive-design-in-app-builder-changing-the-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-desktop-viewport",
+              "frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-custom-viewport"
+            ]
+          }
         ]
       },
       {
