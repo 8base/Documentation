@@ -367,12 +367,23 @@ const sidebars = {
           type: "category",
           label: "Calling frontend functions",
           items: [
+            "frontend/custom-frontend-logic-calling-frontend-functions",
             "frontend/custom-frontend-logic-calling-a-function-from-an-event",
             "frontend/custom-frontend-logic-calling-a-function-from-a-callback",
             "frontend/custom-frontend-logic-calling-a-function-from-a-function",
           ],
         },
         "frontend/custom-frontend-logic-using-installed-js-libraries-in-scripts",
+      ],
+    },
+    {
+      type: "category",
+      label: "Triggering Events in the App",
+      items: [
+        "frontend/triggering-events-in-the-app-introduction",
+        "frontend/triggering-events-in-the-app-specifying-events-in-editor",
+        "frontend/triggering-events-in-the-app-managing-events-on-components-and-requests",
+        "frontend/triggering-events-in-the-app-triggering-events-in-custom-frontend-logic",
       ],
     },
     {
