@@ -326,6 +326,7 @@ const sidebars = {
             "frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-rest-api-call",
           ],
         },
+        "frontend/connecting-to-data-sources-send-form-data-with-an-api-request",
       ],
     },
     {
