@@ -10,7 +10,7 @@ This article describes how developers can add custom state entries in their fron
 
 ___
 
-![Functions screen in edit mode](./_images/ab-custom-frontend-logic-introduction-1.png)
+![Functions screen in edit mode](./_images/ab-custom-frontend-logic-introduction-1-updated.png)
 
 The idea of (Custom Frontend Logic) Functions in App Builder is the ability to author and use Javascript functions locally and globally within App Builder front-end applications.  This enables developers to easily modularize and reuse any custom code they write.
 
