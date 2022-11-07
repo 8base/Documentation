@@ -6,7 +6,7 @@ slug: '/frontend/custom-frontend-logic/introduction'
 
 # Custom Frontend Logic Introduction 
 
-This articule describes how developers can add custom state entries in their front-end applications.
+This article describes how developers can add custom state entries in their front-end applications.
 
 ___
 
