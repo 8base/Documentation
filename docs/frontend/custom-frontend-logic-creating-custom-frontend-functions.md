@@ -26,6 +26,3 @@ Arguments can be specified when creating a new Function. These arguments will be
 
 Arguments can be given a name and a type (string, number, bigint, boolean, symbol, or object) and declared as a single value or list of the specified type. 
 
-## Return Type
-
-A return type can be optionally specified when creating a new Function. The return type can be string, number, bigint, boolean, symbol, or object. If no return type is specified, the function will default to returning "void". 
