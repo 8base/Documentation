@@ -6,4 +6,4 @@ slug: '/frontend/adding-cdns-and-libraries/calling-frontend-functions/addingremo
 
 # AddingRemoving CDNs
 
-...coming soon.
+...coming soon..
