@@ -5,14 +5,14 @@ slug: '/backend/console/api-explorer'
 ---
 
 # API Explorer
-The [API Explorer](https://app.8base.com/api-explorer) is an in-browser IDE for exploring a workspace's GraphQL API. It allows 8base developers to easily build and execute GraphQL queries from within the workspace.
+The API Explorer is an in-browser IDE for exploring a workspace's GraphQL API. It allows 8base developers to easily build and execute GraphQL queries from within the workspace.
 
 The API Explorer makes use of your **real, live production data!**
 
 ## Introspection
 A GraphQL schema has a built-in introspection system that publishes the schema’s structure. This allows the API Explorer to provide powerful auto-complete features when writing out GraphQL queries. 
 
-To try this for yourself, copy and paste the following code into the textarea in the [API Explorer](https://app.8base.com/api-explorer). 
+To try this for yourself, copy and paste the following code into the textarea in the API Explorer. 
 
 ```javascript
 query {
@@ -27,9 +27,9 @@ Additionally, introspection helps us detect errors in queries. The system recogn
 ![Tooltip showing error in API Explorer](./images/api-explorer-tooltip-error.png)
 
 ## Documentation
-Another convenient way to invistigate the many GraphQL operations and types that are available in the current workspace is using the *Documentation*. It can be found on the right side of the screen when in the [API Explorer](https://app.8base.com/api-explorer). By either searching for a specific operation, or drilling down from the top level `query`, `mutation`, and `subscription` types, **all** schema resources can be inspected.
+Another convenient way to invistigate the many GraphQL operations and types that are available in the current workspace is using the *Documentation*. It can be found on the right side of the screen when in the API Explorer. By either searching for a specific operation, or drilling down from the top level `query`, `mutation`, and `subscription` types, **all** schema resources can be inspected.
 
-Try opening the *Documentation* by using the `[CMD]` or `[WINDOWS]` key shortcut and clicking on a GraphQL operation. For example, copy and paste the following code into the textarea in the [API Explorer](https://app.8base.com/api-explorer). 
+Try opening the *Documentation* by using the `[CMD]` or `[WINDOWS]` key shortcut and clicking on a GraphQL operation. For example, copy and paste the following code into the textarea in the API Explorer. 
 
 ```
 mutation {
