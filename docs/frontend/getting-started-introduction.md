@@ -25,10 +25,10 @@ Here is an overview of all the sections you can start diving in to on your journ
 7. [Connecting to Data Sources](docs/frontend/connecting-to-data-sources-introduction.md)
 8. [Data in the Frontend (State)](docs/frontend/data-in-the-frontend-introduction.md)
 9. [Custom Frontend Logic](docs/frontend/custom-frontend-logic-introduction.md)
-10. Triggering Events in the App - **Docs coming soon...**
+10. [Triggering Events in the App](docs/frontend/triggering-events-in-the-app-introduction.md)
 11. Authenticating App Users - **Docs coming soon...**
-12. Images and Files in App Builder - **Docs coming soon...**
-13. Publishing Apps - **Docs coming soon...**
+12. [Images and Files in App Builder](docs/frontend/images-and-files-in-app-builder-introduction.md)
+13. [Publishing Apps](docs/frontend/publishing-apps-introduction.md)
 14. Global App Settings - **Docs coming soon...**
 
 ## Next Steps

@@ -12,9 +12,9 @@ _______
 
 ## How App Builder Works
 
-App Builder lets you quickly build, deploy, and continue to evolve both customer-facing and internal tools using an intuitive UI and JavaScript when needed. Also, App Builder is a full-stack application development tool, providing developers with a Master Backend (Docs coming soon...) that includes a database, API, roles & permissions, and serverless capabilities. This doesn't preclude you from connecting to other data sources, as requests to REST and GraphQL APIs are also supported.
+App Builder lets you quickly build, deploy, and continue to evolve both customer-facing and internal tools using an intuitive UI and JavaScript when needed. Also, App Builder is a full-stack application development tool that allows connectivity with any backend, including 8base workspaces, which include a database, API, roles & permissions, and serverless capabilities. This doesn't preclude you from connecting to other data sources, as requests to REST and GraphQL APIs are also supported.
 
-To best explain how go-to-market apps can get developed using App Builder, we believe it's essential to give you an overview/walkthrough of the standard App Builder development experience. Along the way, we'll be highlighting many of the core features and capabilities of App Builder that make it a highly dynamic and flexible tool.
+To best explain how go-to-market apps can get developed using App Builder, we believe it's essential to give you an overview/walk through of the standard App Builder development experience. Along the way, we'll be highlighting many of the core features and capabilities of App Builder that make it a highly dynamic and flexible tool.
 
 ### 1. Creating your first App Builder Workspace
 
@@ -30,7 +30,7 @@ Once created, a workspace card will appear in your developer home area, through 
 
 ![Using Drag-and-Drop Components](./_images/ab-component-library-1.png)
 
-App Pages get built using drag-and-drop components inside the App Builder Editor.  App Builder's Component Library includes many feature-packed Components (Docs coming soon...), like (State Management (Docs coming soon...), Assets (Docs coming soon...), and Navigation (Docs coming soon...). Developers drag and drop components onto the page canvas before working on the three available configuration areas of any component; Component Properties (Docs coming soon...), Component Styles (Docs coming soon...), and Component Events (Docs coming soon...).
+App Pages get built using drag-and-drop components inside the App Builder Editor. App Builder's Component Library includes many feature-packed Components, like Input Control, Switch, File Upload, Accordion, Layout Controls such as Card and Async Control, and many more. Plus, we provide State Mangement, Assets, and Navigation. Developers drag and drop components onto the page canvas before working on the three available configuration areas of any component; Component Properties, Component Styles, and Component Events.
 
 • **Component Properties**: The data inputs, attributes, and behavior of a component instance.
 
@@ -42,9 +42,19 @@ App Pages get built using drag-and-drop components inside the App Builder Editor
 
 ![Setting up an Data Source in App Builder](./_images/ab-resources-create-1.png)
 
-Your App Builder project is provisioned with a Master Backend that allows you to upload images, handle user authentication, and save data. However, you can also create API Clients (a.k.a, Resources) that connect to 3rd Party REST and GraphQL APIs. 
+#### Adding Resources
+Resources are the connections of your Frontend workspace connected to a Backend. The left-hand *Resources* pane lists all your connected resources. The right-hand *Add a Resource* pane lists all the available resources.
 
-Requests made to data sources are reusable elements it your App Builder project, allowing you to effectively organize your and optimize projects when collaborating with teams, as well as working by yourself. Meanwhile, the response data recieved from Requests gets stored in App Builder's State Management (Docs coming soon...) system, making it accessible to Components, Functions, and other App Builder elements.
+To add a new 8base Backend connection, click on the name of the 8base resource in the right-hand pane. The new resource will automatically be added to your connected resource list.
+
+To modify the connection properties of your new resource, click on the name, which will bring up the connection properties window. Edit the connection details as needed and save your changes.
+
+![Modifying Resource Connection Properties](./_images/ab-resources-edit-connection-properties.png)
+
+You can also integrate with a Rest API or GraphQL API. Click on the appropriate icon in the *Add a Resource* pane, fill out the connection property details, and save it. The new API resource will be added to your connected resource list.
+
+#### Requests
+Requests made to data sources are reusable elements it your App Builder project, allowing you to effectively organize your and optimize projects when collaborating with teams, as well as working by yourself. Meanwhile, the response data received from Requests gets stored in App Builder's State Management system, making it accessible to Components, Functions, and other App Builder elements.
 
 ### 4. Customizing the Look and Feel of Applications
 
@@ -52,13 +62,17 @@ Requests made to data sources are reusable elements it your App Builder project,
 
 App Builder applications get styled at the global, component default, and component instance levels. These several levels of styling separation allow for fine-grained customization of the look and feel of applications, using both form-based styling options and pure CSS code. 
 
-• **Global Styling**: The global CSS that defines an application's look and feel (i.e., Material Design, custom CSS)
+• **Global Styling**: The global CSS that defines an application's look and feel (i.e., Material Design,  Typography, custom CSS)
+
+![App Builder Theme Editor UI Color](./_images/ab-theme-editor-color.png)
+
+![App Builder Theme Editor UI Typography](./_images/ab-theme-editor-typography.png)
 
 • **Component Default Styling**: The default appearance of a component when it's first dropped onto the canvas, overriding any global style rules.
 
-• **Component Instance Styling**: The appearance of a single component instance configured by the developer, overriding any global style and component default style rules. 
+![App Builder Theme Editor UI Components](./_images/ab-theme-editor-components.png)
 
-At the Global level, App Builder allows developers to import a CSS Design Framework, like Material Design or Bootstrap, to set the baseline for their application's unique look and feel. Meanwhile, a developer can add Custom CSS code instead of an existing CSS Design Framework.
+• **Component Instance Styling**: The appearance of a single component instance configured by the developer, overriding any global style and component default style rules. 
 
 ### 5. Setting up User Authentication
 
