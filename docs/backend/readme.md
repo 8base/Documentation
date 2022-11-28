@@ -1,6 +1,6 @@
 ---
 id: 'console-readme'
-sidebar_label: 'Overview'
+sidebar_label: 'Introduction'
 slug: '/backend'
 ---
 

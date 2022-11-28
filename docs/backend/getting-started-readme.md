@@ -6,11 +6,11 @@ slug: '/backend/getting-started'
 
 # Overview
 
-**8base** is a Backend-as-a-Service. It lets front-end developers focus more on what they love and backend developers expedite their workflow. As our CEO likes to say, "it's totally awesome!"
+**8base** is a Backend-as-a-Service. It lets front-end developers focus more on what they love and back-end developers expedite their work-flow. As our CEO likes to say, "it's totally awesome!"
 
 When using 8base, your project benefits from having:
 
-1. A fully scalable serverless GraphQL API.
+1. A fully scalable server-less GraphQL API.
 2. A fully managed MySQL Database that's hosted on AWS ([Aurora MySQL](https://aws.amazon.com/rds/aurora/)).
 3. Ready-to-use app services (Authentication, Authorization, File Storage, and more)
 4. 8base's rock-star team and [the Community](https://community.8base.com)
@@ -23,7 +23,7 @@ Every 8base Workspace contains of the following components:
 1. **Schema**: A Schema represents the shape of your application data and specifies what data a client application can query from your API, as well as how to manipulate it.
 2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Team Members](/docs/8base-console/teams), Users, [Roles & Permissions](/docs/8base-console/roles-and-permissions), and [Files](/docs/8base-console/handling-files).
 3. **User Data**: All the unique data resources (tables, records, etc) that are specific to your application.
-4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorizion flows of your application. [Authentication](/docs/8base-console/authentication) is implemented through [Authentication Profiles](/docs/8base-console/authentication#authentication-types) while [Authorization](/docs/8base-console/roles-and-permissions) uses the roles and permissions system.
+4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/docs/8base-console/authentication) is implemented through [Authentication Profiles](/docs/8base-console/authentication#authentication-types), while [Authorization](/docs/8base-console/roles-and-permissions) uses the roles and permissions system.
 5. **Workspace Users**: 8base users with access to your Workspace through the console.
 6. [Custom Logic (Custom Functions)](/docs/8base-console/custom-functions): For building and extending your application's server-side functionality.
 7. **Integrations**: Data and functionalities from 3rd party sources.

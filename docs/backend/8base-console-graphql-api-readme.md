@@ -50,7 +50,7 @@ query {
 
 
 
-We see immediately that our result has the same shape as the query. This is key to GraphQL; you always get what you ask for, and the server knows which fields the clients was asking for.
+We see immediately that our result has the same shape as the query. This is key to GraphQL; you always get what you ask for, and the server knows which fields the client was asking for.
 
 8base GraphQL queries are interactive, and support relational queries natively. This mean two important things, 1) a query can be changed at any time, and 2) related data can be joined without writing complex database queries and serializers (it's handled for you). Let's try another example to demonstrate this.
 
@@ -95,7 +95,7 @@ query {
 
 
 
-In this previous example, the `createdAt` field was removed from the query and a `posts` parameter added. In the response, we see this reflected by there no longer being a `created` key and the added `posts` array containing its specified parameters - a sub-selection on fields for the related object(s).
+In the previous example, the `createdAt` field was removed from the query and a `posts` parameter added. In the response, we see this reflected by there no longer being a `created` key and the added `posts` array containing its specified parameters - a sub-selection on fields for the related object(s).
 
 ### Understanding Arguments
 The power of the 8base GraphQL API is further enriched by the ability to specify different arguments when executing a query. This has been demonstrated several times now, where "Huxley" is being passed as an argument to the query (`...author(name: "Huxley")`). When creating data tables in the **Data Builder**, any field marked as *unique* can then be used as an argument for a query.
@@ -164,7 +164,7 @@ query($filter: PostFilter) {
 
 
 ### Aliases
-Aliases get used to return objects having different names than their field names. This is needed when fetching the same type of objects with different arguments in a single query.
+Aliases are used to return objects having different names than their field names. This is needed when fetching the same type of objects with different arguments in a single query.
 
 
 ```javascript
@@ -209,7 +209,7 @@ query {
 
 
 ### Fragments
-Queries can get verbose and unorganized. Fragment create a set of fields that can then be used to represent the defined set.
+Queries can get verbose and unorganized. Fragments create a set of fields that can then be used to represent the defined set.
 
 
 ```javascript

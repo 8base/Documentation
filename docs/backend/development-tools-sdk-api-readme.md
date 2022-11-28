@@ -1,10 +1,10 @@
 ---
 id: 'development-tools-sdk-api-readme'
-sidebar_label: 'Overview'
+sidebar_label: 'API Module'
 slug: '/backend/development-tools/sdk/api'
 ---
 
-# Api Module
+# API Module
 
 The `Api` module is used to conveniently execute GraphQL queries, mutations, and subscriptions against a workspace.
 

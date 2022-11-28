@@ -1,10 +1,10 @@
 ---
 id: 'development-tools-sdk-readme'
-sidebar_label: 'Overview'
+sidebar_label: 'JavaScript'
 slug: '/backend/development-tools/sdk'
 ---
 
-# Javascript SDK
+# JavaScript SDK
 
 The 8base JavaScript SDK implements the client-side libraries used by applications using 8base services.
 

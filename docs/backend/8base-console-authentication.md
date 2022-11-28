@@ -20,7 +20,7 @@ It's important to understand that 8base does **not** store or manage passwords. 
 
 ### 2. Issuance
 
-When an auth provider authenticates a user, it issues an `idToken`. Think of the `idToken` as a temporary passport that contains information about the user that authenticated. This `idToken` get's returned to the front-end application. It can be stored and used to authenticate API requests made to and 8base workspace.
+When an auth provider authenticates a user, it issues an `idToken`. Think of the `idToken` as a temporary passport that contains information about the user that authenticated. This `idToken` get's returned to the front-end application. It can be stored and used to authenticate API requests made to an 8base workspace.
 
 _To dive deeper into idTokens (JSON Web Tokens), please visit [https://jwt.io/](https://jwt.io/)_
 
@@ -28,7 +28,7 @@ _To dive deeper into idTokens (JSON Web Tokens), please visit [https://jwt.io/](
 
 **Simply authenticating a user doesn't add them to a workspace's _Users_ table in 8base**. However, using the `idToken`, an authenticated request can be sent to the workspace API and check whether the token's user exists. To authenticate that request, the token only needs to be added as a _Bearer_ token in the authorization header.
 
-For example, if you're using Javascript `fetch` to handle the request, your script might look something like the following.
+For example, if you're using JavaScript `fetch` to handle the request, your script might look something like the following.
 
 ```javascript
 fetch("8BASE_WORKSPACE_API_ENDPOINT", {
@@ -45,7 +45,7 @@ fetch("8BASE_WORKSPACE_API_ENDPOINT", {
 
 ### 4. Verification
 
-When 8base recieves an authorized API request (a request containing an `idToken`) it validates that token with the issuing auth provider. 8base handles this step using data that's encoded in the `idToken`. This way, a fraudulent token is detected and discarded before any sensitive data is accessed.
+When 8base receives an authorized API request (a request containing an `idToken`) it validates that token with the issuing auth provider. 8base handles this step using data that's encoded in the `idToken`. This way, a fraudulent token is detected and discarded before any sensitive data is accessed.
 
 ### 5. Validation
 
@@ -53,7 +53,7 @@ Once the auth provider validates that the `idToken` – and the user claiming th
 
 ### 6. Query Response
 
-If the query runs succesfully and a user record is returned, great! Just ensure to continue sending the `idToken` in the authorization header on future API calls.
+If the query runs successfully and a user record is returned, great! Just ensure to continue sending the `idToken` in the authorization header on future API calls.
 
 If the query **fails and a user record is not found**, we simply need to create a record for the new user. This can be accomplished using the [`userSignUpWithToken`](#mutation-usersignupwithtoken), as seen below.
 
@@ -75,15 +75,15 @@ mutation {
 
 ## Authentication Types
 
-Under the hood, 8base utilizes [Amazon Cognito](https://aws.amazon.com/cognito/) by default to manage your users' identities and ensure the best security standards. All user accounts are by default stored in an AWS account that's managed by 8base. For upgraded workspace plans, the option of connecting one's Auth0 account or an OpenID provider is available.
+Under the hood, 8base utilizes [Amazon Cognito](https://aws.amazon.com/cognito/) by default to manage your user's identities and ensure the best security standards. All user accounts are by default stored in an AWS account that's managed by 8base. For upgraded workspace plans, the option of connecting one's Auth0 account or an OpenID provider is available.
 
 ### 8base Authentication
 
 <YoutubePlayer src="https://www.youtube.com/embed/BTexF_yxrC0"/>
 
-To create an _Authentication Profile_, navigate to the `App Services > Authentication` and press the `+` button. The form that appears can be completed using the following fields described.
+To create an _Authentication Profile_, navigate to the `App Services > Authentication` and press the `+` button. The form that appears can be completed using the following fields.
 
-- **Name**: A name that describes what this profile does. In this sample case, you can replace My Auth in the screenshot above with a name like Guest User Auth.
+- **Name**: A name that describes what this profile does. In this sample case, you can replace My Auth in the screen shot above with a name like Guest User Auth.
 
 - **Type**: Select `8base Authentication`
 
@@ -95,17 +95,17 @@ To create an _Authentication Profile_, navigate to the `App Services > Authentic
 
 An authentication profile's corresponding client-side information is generated once created. Client-side information allows for connecting client applications to the 8base back-end and any corresponding authentication settings.
 
-`Client ID` and `Domain` are not sensitive strings and are added to one or more client apps.
+`Client ID` and `Domain` are **not** sensitive strings and are added to one or more client apps.
 
 `Login URL` is the auto-generated URL template leading to the Hosted Login Page. You should fill this with one of the `Allowed Callbacks URLs`.
 
 #### Configure Callback URLs
 
-A callback URL is an endpoint that is invoked after a user authenticates. Users are not able to log into an application and receive an error if this field is left empty. By default, the callback URL `http://localhost:3000/auth/callback` is set. Keep it, or replace it with an existing URL from your application.
+A callback URL is an endpoint that is invoked after a user authenticates. Users are not able to log into an application and will receive an error if this field is left empty. By default, the callback URL `http://localhost:3000/auth/callback` is set. Keep it, or replace it with an existing URL from your application.
 
 #### Configure Logout URLs
 
-The logout URL is where a user is sent after logging out. Specify them in the Allowed Logout URLs field. The default logout URL is `http://localhost:3000/logout` and attempting to log out when no logout URL was provided displays an error.
+The logout URL is where a user is sent after logging out. Specify it in the Allowed Logout URLs field. The default logout URL is `http://localhost:3000/logout` and attempting to log out when no logout URL was provided displays an error.
 
 ### Your Own Auth0 Account
 
@@ -117,9 +117,9 @@ All required information is in the settings of your Auth0 account.
 
 ### OpenID Connect
 
-The ability to set up an authentication provider that supports the OpenID specification is available for workspaces with paid plan.
+The ability to set up an authentication provider that supports the OpenID specification is available for workspaces with a paid plan.
 
-In the 8base Management Console, you're able to configure one or more authentication providers under `App Services > Authentication`. Click the "+" button and fill out the provider form, selecting _OpenID_ as the type and adding an OpenID Provider URL. Once completed, the record is saved to your _Authentication Profiles_.
+In the 8base Management Console, you're able to configure one or more authentication providers under `App Services > Authentication`. Click the "+" button and fill out the provider form, select _OpenID_ as the type and add an OpenID Provider URL. Once completed, the record is saved to your _Authentication Profiles_.
 
 ![Adding an OpenID Authentication Provider in 8base](./images/openid-settings.png)
 
