@@ -1,5 +1,5 @@
 ---
-id: 'app-components-common-properties-dragable'
+id: 'app-components-common-properties-draggable'
 sidebar_label: 'Draggable'
 slug: '/frontend/app-components/common-properties-draggable'
 ---

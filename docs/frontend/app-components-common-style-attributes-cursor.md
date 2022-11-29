@@ -1,5 +1,5 @@
 ---
-id: 'app-components-common-style-attributes-cusor'
+id: 'app-components-common-style-attributes-cursor'
 sidebar_label: 'Cursor'
 slug: '/frontend/app-components/common-style-attributes-cursor'
 ---
