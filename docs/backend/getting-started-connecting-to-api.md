@@ -1,6 +1,6 @@
 ---
 id: 'getting-started-connecting-to-api'
-sidebar_label: 'Connecting To Api'
+sidebar_label: 'Connecting To API'
 slug: '/backend/getting-started/connecting-to-api'
 ---
 
@@ -22,7 +22,7 @@ That said, it doesn't matter what technology you use for the client - or server 
 
 ## Setup
 
-In the following examples, we've made a few assumptions (feel free to re-create them for your learnings sake!). Those assumptions are the following:
+In the following examples, we've made a few assumptions (feel free to re-create them for your learning sake!). Those assumptions are the following:
 
 1. An workspace API Token has been created.
 2. You've defined a table named _Todos_ in a workspace.
@@ -31,13 +31,13 @@ In the following examples, we've made a few assumptions (feel free to re-create 
 
 ## Executing API Calls
 
-In all of the examples that follow, make sure to replace any occurance of `{API_ENDPOINT}` with your workspace's endpoint and `{API_TOKEN}` with your developer API token.
+In all of the examples that follow, make sure to replace any occurrence of `{API_ENDPOINT}` with your workspace's endpoint and `{API_TOKEN}` with your developer API token.
 
 The examples provided are in Bash, JavaScript, and Python.
 
 ### Example GraphQL Query
 
-In this query, we're querying a list of todos using the `todosList` operation. If successfull, the `text` field of each item in the list will be returned.
+In this query, we're querying a list of todos using the `todosList` operation. If successful, the `text` field of each item in the list will be returned.
 
 **Curl**
 ```bash
@@ -57,7 +57,7 @@ curl -X POST {API_ENDPOINT} \
     }'''
 ```
 
-**Javascript**
+**JavaScript**
 ```js
 // 'graphql-request' or other GraphQL library is required
 const { request } = require("graphql-request");
@@ -118,7 +118,7 @@ curl -X POST {API_ENDPOINT} \
         }'''
 ```
 
-**Javascript**
+**JavaScript**
 ```javascript
 // 'graphql-request' or other GraphQL library is required
 const { request } = require("graphql-request");
@@ -187,7 +187,7 @@ curl -X POST {API_ENDPOINT}\
         }'''
 ```
 
-**Javascript**
+**JavaScript**
 ```javascript
 // 'graphql-request' or other GraphQL library is required
 const { request, GraphQLClient } = require("graphql-request");

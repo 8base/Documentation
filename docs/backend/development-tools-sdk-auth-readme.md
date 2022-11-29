@@ -1,6 +1,6 @@
 ---
 id: 'development-tools-sdk-auth-readme'
-sidebar_label: 'Overview'
+sidebar_label: 'Auth Module'
 slug: '/backend/development-tools/sdk/auth'
 ---
 

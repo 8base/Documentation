@@ -18,6 +18,6 @@ Inside the **Data Viewer** (`Data > Table Name > Data`) you're able to manage al
 ![Data Viewer uploader with connected channels](./images/data-viewer-upload.png)
 
 ### Delete
-In this same view, you are able to remove any file from a given record. Simply use the ellipsis dropdown located on the image and select "Delete". Make sure to save your changes before leaving the screen.
+In this same view, you are able to remove any file from a given record. Simply use the ellipsis drop-down located on the image and select "Delete". Make sure to save your changes before leaving the screen.
 
 ![Delete files from a specific record](./images/data-viewer-file-delete.png)

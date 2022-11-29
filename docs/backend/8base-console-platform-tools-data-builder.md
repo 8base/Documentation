@@ -10,7 +10,7 @@ The 8base Data Builder is a data modeling UI for defining database tables, field
 
 This means that all Create, Read, Update, and Delete (CRUD) actions, as well as real-time connections (websockets) are immediately available to use via the workspace's unique API endpoint.
 
-Data Builder is found in the management console's `Data` view. It is packed with cool features. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
+The Data Builder is found in the management console's `Data` view. It is packed with cool features. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
 
 ![8Base Data Builder](./images/data-builder-new-table.gif)
 
@@ -30,26 +30,26 @@ As soon as a table is created, corresponding GraphQL schema types and query, mut
 
 To improve look up performance on your tables, you can add one or more of your own indexes. This feature is found in the table settings.
 
-You can select one or several fields in the table by which the index will be generated, as well as whether or not it should be a *Unique Index*. When naming the index, insure that no spaces are used.
+You can select one or several fields in the table by which the index will be generated, as well as whether or not it should be a *Unique Index*. When naming the index, ensure the name does not contain spaces.
 
 ![Creating new table index in the Data Builder](./images/creating-table-indexes.png)
 
 ### Updating Tables
 
-After a table is created, fields and relations can get defined. All updates to a table are published in real-time, giving a seamless experience between defining a data model and having it be highly available.
+After a table is created, fields and relations can be defined. All updates to a table are published in real-time, giving a seamless experience between defining a data model and having it be highly available.
 
 As soon as a table is updated, its corresponding GraphQL schema types and query, mutation, and subscription resolvers will be updated automatically.
 
 To ensure that table related errors and mistakes are minimized, 8base protects against **dozens** of harmful actions. Some of these include:
 
-* A prompt that requires a *Default Value* will appear when changing a non-mandatory field to being mandatory.
-* Date, Number, and Text field values are auto-magically converted when an existing field *type* is updated.
-* When changing a non-unique field to being unique, current records are validated for having unique values.
+* A prompt that requires a *Default Value* will appear when changing a **non-mandatory** field to **mandatory**.
+* Date, Number, and Text field values are automatically converted when an existing field *type* is updated.
+* When changing a **non-unique** field to **unique**, current records are validated for having unique values.
 * Many more!
 
 ### Deleting Tables
 
-A confirmation input that requires the table name to be typed in appears when attempting to delete a table. Please know that deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if any other tables are related to the table being deleted - *belongs to* and *has many*, either specified as mandatory or not - those relations will be severed.
+When attempting to delete a table, a confirmation input requires the table name to be entered. Please know that deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if any other tables are related to the table being deleted - *belongs to* and *has many*, either specified as mandatory or not - those relations will be severed.
 
 ![Deleting table's in the Data Builder](./images/data-builder-delete-table.png)
 
@@ -65,7 +65,7 @@ A confirmation input that requires the table name to be typed in appears when at
 
 ![Defining relationships in the Data Builder](./images/data-builder-making-relationships.gif)
 
-Defining a relationship between two tables can be accomplished by dragging and dropping one table onto another, as well as by selecting `Table` as the Data Type when creating a new table field.
+Defining a relationship between two tables can be accomplished by dragging and dropping one table onto another or by selecting `Table` as the Data Type when creating a new table field.
 
 #### Table Configurations
 
@@ -73,7 +73,7 @@ For specifying *has many*, *has one* and *belongs to* relationships between tabl
 
 Configurations
 
-* *Table* - For selecting what table is to get related.
+* *Table* - For selecting what table is to be related.
 * *Relation Field Name* - The name of the relation as it appears on the **corresponding** table.
 * *Allow Multiple X to Y* - Whether the relationship is *has one* or *has many*.
 * *Mandatory* - Whether the field relationship is required.
@@ -103,21 +103,21 @@ For more information on views, [check this out](https://www.w3schools.com/sql/sq
 
 ## Fields
 
-8base offers all database field types required for building software - and some! Fields with the type File, Smart, and others have extended capabilities that streamline specific tasks - such as managing file/image uploads and validating addresses and phone numbers.
+8base offers all database field types required for building software - and then some! Fields with the type File, Smart, and others have extended capabilities that streamline specific tasks - such as managing file/image uploads and validating addresses and phone numbers.
 
 ### Creating Fields
 
-Every field gets defined on a table and requires a *name* and a *type*. Field names must be unique on the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations - each being specific to the field *type*.
+Every field gets defined in a table and requires a *name* and a *type*. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations - each being specific to the field *type*.
 
 ### Updating Fields
 
-Fields are easily updated using the same interface used to create them. Updates to attributes like the field's *name* - and even *type* in some cases - are changed in real-time, while changes configurations must be saved. If 8base detects an issue with the change being made, an alert will be display with instructions to remedy the issue.
+Fields are easily updated using the same interface used to create them. Updates to attributes like the field's *name* - and even *type* in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
 
 ![Updating fields in the Data Builder](./images/data-builder-field-update.png)
 
 ### Deleting Fields
 
-The "X" found on the right side of a field's name input gets clicked to delete a table. A confirmation modal that requires the field name to be typed in appears when attempting to delete a field. Deleted tables **cannot** be restored and any existing data be lost.
+To delete a field, click the "X" to the right of the field name input. and enter the field name in the confirmation modal. Deleted fields **cannot** be restored and any existing data will be lost.
 
 ### Field Types
 
@@ -257,7 +257,7 @@ type Phone = {
 When using *Number* field types, the "Auto-Increment" option is available under the fields *Advanced Settings*.
 The system will automatically increment a number value for the field when selected, starting at 1.
 
-Fields that have been created using *Auto Increment* can be deleted, though they are **not** editable via the console or API when in use. Similarly to a integer based Primary Key, the value is always escalating. This means that if five-records are created and receive the values 1-5 in their *Auto Increment* fields, whether or not those records get deleted, the next record will be assigned a value of 6.
+Fields that have been created using *Auto Increment* can be deleted, though they are **not** editable via the console or API when in use. Similar to an integer-based Primary Key, the value always escalates. This means that if five-records are created and receive the values 1-5 in their *Auto Increment* fields, whether or not those records get deleted, the next record will be assigned a value of 6.
 
 ### Calculated Fields
 
@@ -269,7 +269,7 @@ The "Virtual" and "Stored" options will indicate how values are stored, which ha
 
 * *Virtual* - Values are not stored, but are evaluated when rows are read. A virtual column takes no storage.
 
-* *Stored* - Values are evaluated and stored when rows are inserted or updated. A stored column does require storage space and can be indexed.
+* *Stored* - Values are evaluated and stored when rows are inserted or updated. A stored column requires storage space and can be indexed.
 
 ![Adding Full Name Field to Users table in 8base Console](./images/calculated-field-full-name.png)
 
@@ -301,7 +301,7 @@ JsonResponse = {
 }
 ```
 
-There is a long list of available MySQL Functions that are referenced with further documentation [MySQL Docs. Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html), all of which are available when using *Calculated Fields*. All operators, with simple descriptions, are listed below.
+There is a long list of available MySQL Functions that are referenced, with further documentation [MySQL Docs. Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html), all of which are available when using *Calculated Fields*. All operators, with simple descriptions, are listed below.
 
 ```
 | Name | Description |

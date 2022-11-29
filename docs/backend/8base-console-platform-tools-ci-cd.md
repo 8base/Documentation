@@ -6,7 +6,7 @@ slug: '/backend/console/ci-cd'
 
 # Continuous Integration & Continuous Deployment (CI/CD)
 
-8base built CI/CD capabilities natively into the workspace to help developers and teams easily management professional software quality controls when developing their applications. On subscription plans where CI/CD is enabled, developers will be able to create up to a specified number of enviroments and graduate changes through their environment pipeline in a [Git](https://git-scm.com/) like fashion.
+8base built CI/CD capabilities natively into the workspace to help developers and teams easily manage professional software quality controls when developing their applications. On subscription plans where CI/CD is enabled, developers will be able to create up to a specified number of environments and graduate changes through their environment pipeline in a [Git](https://git-scm.com/) like fashion.
 
 ## Getting Started with CI/CD
 
@@ -67,7 +67,7 @@ When changes have been made to your current workspace environment and you're rea
 #   --environment, -e Target environment
 ```
 
-Once successfully run, a timestamped migrations script will appear in a directory called `migrations` that's in the root of your project.
+Once successfully run, a timestamped migrations script will appear in a directory called `migrations` at the root of your project.
 
 ## Committing Migrations
 

@@ -31,9 +31,9 @@ Creating a new custom Role is simple. In the Roles Manager view (`App Services >
 
 ### Deleting a Role
 
-To delete a role, toggle the ellipsis toggle located at the end of the roles table row. Click the `Delete` option and then confirm your action through the modal.
+To delete a role, toggle the ellipsis toggle located at the end of the roles table row. Click the `Delete` option and then confirm your action in the modal.
 
-![Create a new role in the 8base Console](./images/delete-role.png)
+![Delete a role in the 8base Console](./images/delete-role.png)
 
 ## Managing Permissions
 
@@ -42,7 +42,7 @@ To delete a role, toggle the ellipsis toggle located at the end of the roles tab
 In the Roles Manager view (`App Services > Roles`), click on the name of a *Role* whose permissions you'd like to update. You'll be taken to a view containing three tabs; *Data*, *Apps* and *Roles*.
 
 ### Data
-Lists all data tables in the current workspace. Each table exposes the ability to set Create, Read, Update, Delete (CRUD) and Field permissions using simple controls. If fine-tuned permissions beyond CRUD actions are required, `Custom Filters` on tables and `Custom Access` on fields can be implemented.
+Lists all the data tables in the current workspace. Each table exposes the ability to set Create, Read, Update, Delete (CRUD) and Field permissions using simple controls. If fine-tuned permissions beyond CRUD actions are required, `Custom Filters` on tables and `Custom Access` on fields can be implemented.
 
 ![Data permissions in Roles Manager](./images/role-permissions-data.png)
 
@@ -59,9 +59,9 @@ Lists all users that hold the selected role and allows for easy role assignment 
 ![Apps permissions in Roles Manager](./images/role-permissions-users.png)
 
 ## API Tokens
-While roles can be assigned to users, they can also be assigned to API Tokens. Unlike an `idToken` that is recieved when a user authenticates and authorizes requests made to the API, API Tokens are static and often used to authorize server-to-server or app-to-server requests. Simply put, API Tokens authorize requests made to the API **without any user context**.
+While roles can be assigned to users, they can also be assigned to API Tokens. Unlike an `idToken` that is received when a user authenticates and authorizes requests made to the API, API Tokens are static and often used to authorize server-to-server or app-to-server requests. Simply put, API Tokens authorize requests made to the API **without any user context**.
 
-API Tokens can be created in [`Settings > API Tokens`](https://app.8base.com/settings/api-tokens). Note that you can only copy the token on create! So make sure to copy the value and store it securely. The roles associated with the token will enforce which permissions the token has. API Tokens by default have not permissions.
+API Tokens can be created in [`Settings > API Tokens`](https://app.8base.com/settings/api-tokens). Note that you can only copy the token on create! So make sure to copy the value and store it securely. The roles associated with the token will enforce which permissions the token has. API Tokens by default have no permissions.
 
 ![Creating an API Token](./images/create-api-token.png)
 
@@ -92,7 +92,7 @@ In this example, `__loggedInUserId` is a dynamic variable that 8base replaces wi
 8base stores media (videos, documents, images, etc...) as records in a system table called *Files*. This makes it necessary for media to be scoped, by default, to the following constraints:
 
 1. When a file is public, anyone can view it.
-2. When a file is private, only the user it was created by can view it.
+2. When a file is private, only the user who created the file can view it.
 
 These constraints get enforced using the following filter.
 
@@ -129,7 +129,7 @@ There are 3 dynamic variables that can be used when creating Roles. They are:
 ### Custom Filters
 <YoutubePlayer src="https://www.youtube.com/embed/FqZ0-usc93w"/>
 
-The best way to write custom filters is by using the API Explorer in conjuction with [Variables](/docs/8base-console/graphql-api/variables/). The filtered result of any GraphQL query is the scoped record set that can be expected by using the same filter as a role's *Custom Filter*.
+The best way to write custom filters is by using the API Explorer in conjunction with [Variables](/docs/8base-console/graphql-api/variables/). The filtered result of any GraphQL query is the scoped record set that can be expected by using the same filter as a role's *Custom Filter*.
 
 For example, imagine that a workspace has both *Posts* and *Authors* tables. In the API Explorer, an 8base user wants to query all *Posts* that belong to *Authors* under the following criteria:
 
@@ -171,7 +171,7 @@ Query Variable
 }
 ```
 
-After successfully running this query, the user decides that the filter should be utilized as a custom filter for post updates. That way, only *editors* would only be able to update posts that belong to authors from their own company. 
+After successfully running this query, the user decides that the filter should be utilized as a custom filter for post updates. That way, only *editors* would be able to update posts that belong to authors from their own company. 
 
 To accomplish this, the value of the `filter` key can be pasted into the *Custom Filter* section of the desired role's update permission.
 
