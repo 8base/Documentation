@@ -1,6 +1,6 @@
 ---
 id: 'app-components-common-properties-class'
-sidebar_label: 'ID'
+sidebar_label: 'Class'
 slug: '/frontend/app-components/common-properties-class'
 ---
 # Class
