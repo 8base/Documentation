@@ -248,7 +248,6 @@ const sidebars = {
                     type: "category",
                     label: "Components",
                     items: [
-                        //new content
                         "frontend/app-components-common-component-properties",
                         "frontend/app-components-common-component-style-attributes",
                         {
