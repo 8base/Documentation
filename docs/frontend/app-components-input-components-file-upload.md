@@ -11,7 +11,10 @@ The *File Upload* component is used independently or as a form component. To use
 
 ### Unique Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>disabled</td><td>bool</td><td>false</td><td>Specifies whether the component is disabled.</td></tr>
 <tr><td>required</td><td>bool</td><td>false</td><td>Indicates if the user must select a file.</td></tr>
@@ -23,6 +26,7 @@ The *File Upload* component is used independently or as a form component. To use
 <tr><td>endAdornment</td><td>component</td><td></td><td>Displays an icon or typography component at the end of the text field.</td></tr>
 <tr><td>acceptedFiles</td><td>string</td><td></td><td>Specifies a comma-separated list of allowed file types.</td></tr>
 <tr><td>maxFileSize</td><td>number</td><td></td><td>Specifies the maximum size of a file.</td></tr>
+</tbody>
 </table>
 
 ## Subcomponents
@@ -35,12 +39,16 @@ For further details, see the Icon component.
 
 #### Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>color</td><td>inherit<br/>primary<br/>secondary<br/>action<br/>disabled<br/>error<br/>string</td><td>inherit</td><td>The color of the icon.</td></tr>
 <tr><td>size</td><td>inherit<br/>small<br/>medium<br/>large</td><td>medium</td><td>Specifies the size of the component.</td></tr>
 <tr><td>viewBox</td><td>0 0 25 25<br/></td><td></td><td>Defines the size of the view box that displays the icon.</td></tr>
 <tr><td>fill</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The fill color of the icon.</td></tr>
 <tr><td>stroke</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The stroke color of the icon.</td></tr>
+</tbody>
 </table>
 
 ### Typography
@@ -50,12 +58,16 @@ For further details, see the [Typography](./app-components-other-components-typo
 
 #### Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>text</td><td>string</td><td></td><td>The text to display in the text field.</td></tr>
 <tr><td>variant</td><td>h1<br/>h2<br/>h3<br/>h4<br/>h5<br/>h6<br/>subtitle1<br/>subtitle2<br/>body1<br/>body2<br/>caption<br/>button<br/>overline<br/>inherit<br/>string</td><td>inherit</td><td>The type of typography to display.</td></tr>
 <tr><td>color</td><td>initial<br/>inherit<br/>primary<br/>secondary<br/>textPrimary<br/>textSecondary<br/>error<br/>string</td><td>inherit</td><td>The color of the typography.</td></tr>
 <tr><td>gutterBottom</td><td>bool</td><td>false</td><td>Enables a gutter at the bottom of the typography component.</td></tr>
 <tr><td>margin</td><td>string</td><td></td><td>Defines margin spacing around the typography component.</td></tr>
+</tbody>
 </table>
 
 

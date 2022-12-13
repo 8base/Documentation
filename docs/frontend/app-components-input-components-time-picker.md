@@ -11,7 +11,10 @@ The *Time Picker* component is used independently or as a form component. To use
 
 ### Unique Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies the value of the component.</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
@@ -30,12 +33,17 @@ The *Time Picker* component is used independently or as a form component. To use
 <tr><td>hoursView</td><td>bool</td><td>true</td><td>If enabled, the component will display the hour view.</td></tr>
 <tr><td>minutesView</td><td>bool</td><td>true</td><td>If enabled, the component will display the minute view.</td></tr>
 <tr><td>secondsView</td><td>bool</td><td>false</td><td>If enabled, the component will display the seconds view.</td></tr>
+</tbody>
 </table>
 
 ### Unique Style Attributes
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>inputVariant</td><td>Filled<br/>Outlined<br/>Standard<br/>string</td><td>Outlined</td><td>Specifies the display type of the component.</td></tr>
+</tbody>
 </table>
 
 For more detail on the *Time Picker* component, see the [MUI developer docs](https://mui.com/x/api/date-pickers/time-picker/).

@@ -11,9 +11,13 @@ The *Field Array* component is used as a form component and must be placed withi
 
 ### Unique Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component.</td></tr>
 <tr><td>validateOnChange</td><td>bool</td><td>false</td><td>If true, validates the data when a change occurs.</td></tr>
+</tbody>
 </table>
 
 

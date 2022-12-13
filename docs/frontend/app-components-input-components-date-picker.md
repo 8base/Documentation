@@ -11,7 +11,10 @@ The *Date Picker* component is used independently or as a form component. To use
 
 ### Unique Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies a value for the component.</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
@@ -30,12 +33,17 @@ The *Date Picker* component is used independently or as a form component. To use
 <tr><td>invalidLabel</td><td></td><td></td><td></td></tr>
 <tr><td>mask</td><td>string</td><td></td><td>Specifies a custom mask for the date format in the form of a string. Overrides the Format property.</td></tr>
 <tr><td>maskChar</td><td>string</td><td></td><td></td></tr>
+</tbody>
 </table>
 
 ### Unique Style Attributes
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>inputVariant</td><td>standard<br/>outlined<br/>filled<br/>string</td><td>outlined</td><td>Specifies the display type of the component.</td></tr>
+</tbody>
 </table>
 
 For more detail on the *Date Picker* component, see the [MUI developer docs](https://mui.com/x/api/date-pickers/date-picker/).

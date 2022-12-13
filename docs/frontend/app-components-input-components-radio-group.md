@@ -11,17 +11,25 @@ The *Radio Group* component is used independently or as a form component. To use
 
 ### Unique Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (*form component only*).</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies the value of the component.</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
 <tr><td>radioItems</td><td>component</td><td></td><td>Specifies a list of radio items within the radio group.</td></tr>
+</tbody>
 </table>
 
 ### Unique Style Attributes
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>row</td><td>bool</td><td>false</td><td>If true, aligns the radio items in a row along the horizontal axis. By default, the radio items align in a column along the vertical axis.</td></tr>
+</tbody>
 </table>
 
 ## Subcomponents
@@ -34,7 +42,10 @@ For further details, see the [Radio](./app-components-input-components-radio) co
 
 #### Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies the value of the component.</td></tr>
 <tr><td>disabled</td><td>bool</td><td>false</td><td>Defines if the component is disabled.</td></tr>
@@ -42,6 +53,7 @@ For further details, see the [Radio](./app-components-input-components-radio) co
 <tr><td>size</td><td>small<br/>medium<br/>string</td><td>medium</td><td>Specifies the size of the component.</td></tr>
 <tr><td>labelPlacement</td><td>top<br/>bottom<br/>start<br/>end<br/>string</td><td>end</td><td>Specifies the location of the component label.</td></tr>
 <tr><td>disableRipple</td><td>bool</td><td>false</td><td>If true, disables the ripple effect on the component.</td></tr>
+</tbody>
 </table>
 
 For more detail on the *Radio Group* component, see the [MUI developer docs](https://mui.com/material-ui/api/radio-group/).

@@ -11,7 +11,10 @@ The *Slider* component is used independently or as a form component. To use it a
 
 ### Unique Properties
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
 <tr><td>ariaLabel</td><td>string</td><td></td><td>Specifies a label for the slider.</td></tr>
@@ -30,11 +33,15 @@ The *Slider* component is used independently or as a form component. To use it a
 <tr><td>marks</td><td>bool</td><td>false</td><td>If true, marks will display on the slider for each unique step. Custom marks can be displayed using an array of value/label keys</td></tr>
 <tr><td>disableSwap</td><td>bool</td><td>false</td><td>If true, prevents the current thumb from swapping when dragging it over another thumb.</td></tr>
 <tr><td>disabled</td><td>bool</td><td>false</td><td>Specifies whether the component is disabled.</td></tr>
+</tbody>
 </table>
 
 ### Unique Style Attributes
 <table>
+<thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td>color</td><td>primary<br/>secondary<br/>error<br/>info<br/>success<br/>warning<br/>string</td><td>primary</td><td>Specifies the color of the component.</td></tr>
 <tr><td>size</td><td>small<br/>medium<br/>string</td><td>medium</td><td>Specifies the size of the component.</td></tr>
 <tr><td>labelPlacement</td><td>top<br/>bottom<br/>start<br/>end<br/>string</td><td>end</td><td>Specifies the placement of the component label.</td></tr>
@@ -44,6 +51,7 @@ The *Slider* component is used independently or as a form component. To use it a
 <tr><td>tabIndex</td><td>number</td><td></td><td>Specifies the tab index of a hidden input element.</td></tr>
 <tr><td>valueLabelFormat</td><td>func</td><td></td><td>A function to specify the format of the value label's value.</td></tr>
 <tr><td>sx</td><td>array</td><td></td><td>Specifies custom CSS styles for the slider.</td></tr>
+</tbody>
 </table>
 
 For more detail on the *Slider* component, see the [MUI developer docs](https://mui.com/material-ui/api/slider/).
