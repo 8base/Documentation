@@ -73,7 +73,7 @@ In the *Page Settings* panel under *Page Layout*, select your layout from the La
 If you return to the Home Page, the page will now be displayed using your layout.
 
 ### Adding Data to a Layout
-A Layout can access *Data* more specifically, it can access *Routes* for the page. 
+A Layout can access *Data*. More specifically, it can access *Routes* for the page. 
 
 Click on the *Pages* icon on the left-hand tool bar and select your Layout to switch to the Layout view. Then click on the *State* icon, which opens the *State* panel.
 
