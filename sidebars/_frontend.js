@@ -312,6 +312,7 @@ const sidebars = {
                                 "frontend/app-components-other-components-image",
                                 "frontend/app-components-other-components-link",
                                 "frontend/app-components-other-components-list",
+                                "frontend/app-components-other-components-list-item",
                                 "frontend/app-components-other-components-nav-list-item",
                                 "frontend/app-components-other-components-table",
                                 "frontend/app-components-other-components-text",

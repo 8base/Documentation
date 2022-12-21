@@ -11,7 +11,7 @@ The checkbox component has three states, checked, unchecked, and indeterminate. 
 
 The *Checkbox* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
 
-### Unique Properties
+### Properties
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -21,13 +21,13 @@ The *Checkbox* component is used independently or as a form component. To use it
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies a boolean value for the component; the default value is on.</td></tr>
 <tr><td>checked</td><td>bool</td><td>false</td><td>Specifies whether the component is checked</td></tr>
-<tr><td>required</td><td>bool</td><td>false</td><td>Indicates if the checkbox must be checked.</td></tr>
+<tr><td>required</td><td>bool</td><td>false</td><td>If true, the checkbox must be checked.</td></tr>
 <tr><td>indeterminate</td><td>bool</td><td>false</td><td>If true, a dash symbol appears on the checkbox, and you cannot modify its state.</td></tr>
-<tr><td>disabled</td><td>bool</td><td>false</td><td>Specifies whether the component is disabled.</td></tr>
+<tr><td>disabled</td><td>bool</td><td>false</td><td>If true, the checkbox is disabled.</td></tr>
 </tbody>
 </table>
 
-### Unique Style Attributes
+### Style Attributes
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -50,7 +50,7 @@ The *Checkbox* component has a subcomponent that allows an icon to be used in pl
 
 *Indeterminate Icon* - specifies an icon to use when the checkbox is indeterminate.
 
-For further details, see the Icon component.
+For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
 <table>
@@ -58,8 +58,8 @@ For further details, see the Icon component.
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>color</td><td>inherit<br/>primary<br/>secondary<br/>action<br/>disabled<br/>error<br/>string</td><td>inherit</td><td>Specifies the color of the icon.</td></tr>
-<tr><td>size</td><td>inherit<br/>small<br/>medium<br/>large<br/>string</td><td>small</td><td>Specifies the size of the icon.</td></tr>
+<tr><td>color</td><td>inherit<br/>primary<br/>secondary<br/>action<br/>disabled<br/>error<br/>string</td><td>inherit</td><td>Defines the color of the icon.</td></tr>
+<tr><td>size</td><td>inherit<br/>small<br/>medium<br/>large<br/>string</td><td>small</td><td>Defines the size of the icon.</td></tr>
 <tr><td>viewBox</td><td>0 0 24 24</td><td></td><td>Defines the size of the view box that displays the icon.</td></tr>
 <tr><td>fill</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The fill color of the icon.</td></tr>
 <tr><td>stroke</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The stroke color of the icon.</td></tr>
