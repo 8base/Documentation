@@ -12,7 +12,7 @@ The *Autocomplete* component is a single-line textbox component that is useful i
 
 The *Autocomplete* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
 
-### Unique Properties
+### Properties
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -21,13 +21,13 @@ The *Autocomplete* component is used independently or as a form component. To us
 <tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies a default value for the component; if the value contains an array, a combo-box will support multiple selections (form component only).</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
-<tr><td>required</td><td>bool</td><td>false</td><td>Specifies whether a selection must be made or input must be entered.</td></tr>
-<tr><td>autofocus</td><td>bool</td><td>false</td><td>Specifies whether Autofocus is enabled.</td></tr>
-<tr><td>readOnly</td><td>bool</td><td>false</td><td>Specifies whether the component is Read-Only.</td></tr>
+<tr><td>required</td><td>bool</td><td>false</td><td>If true, a selection must be made or input must be entered.</td></tr>
+<tr><td>autofocus</td><td>bool</td><td>false</td><td>If true, autofocus is enabled.</td></tr>
+<tr><td>readOnly</td><td>bool</td><td>false</td><td>If true, the autocomplete is read only.</td></tr>
 <tr><td>options</td><td>array</td><td></td><td>Defines a list of options for the component in the form of label/value pairs.</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies the value of the autocomplete. The value must be equal to the option to be selected.</td></tr>
 <tr><td>defaultValue</td><td>any</td><td></td><td>Specifies a default value for the component (independent component only).</td></tr>
-<tr><td>disabled</td><td>bool</td><td></td><td>Specifies whether the component is disabled.</td></tr>
+<tr><td>disabled</td><td>bool</td><td></td><td>If true, the autocomplete is disabled.</td></tr>
 <tr><td>getOptionLabel</td><td>func</td><td></td><td>Determines the label for a given option.</td></tr>
 <tr><td>isOptionEqualToValue</td><td>func</td><td></td><td>Determines if the option selected represents a given value.</td></tr>
 <tr><td>autoComplete</td><td>bool</td><td>false</td><td>If true, the completion string appears inline after the input cursor in the text box.</td></tr>
@@ -61,7 +61,7 @@ The *Autocomplete* component is used independently or as a form component. To us
 </tbody>
 </table>
 
-### Unique Style Attributes
+### Style Attributes
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -69,7 +69,7 @@ The *Autocomplete* component is used independently or as a form component. To us
 <tbody>
 <tr><td>variant</td><td>standard<br/>outlined<br/>filled<br/>string</td><td>outlined</td><td>Defines the visual display of the component.</td></tr>
 <tr><td>size</td><td>medium<br/>small<br/>string</td><td>medium</td><td>Defines the size of the component.</td></tr>
-<tr><td>fullWidth</td><td>bool</td><td>false</td><td>Specifies whether the component occupies the full width of its container.</td></tr>
+<tr><td>fullWidth</td><td>bool</td><td>false</td><td>If true, the autocomplete occupies the full width of its container.</td></tr>
 </tbody>
 </table>
 
@@ -81,7 +81,7 @@ The *Autocomplete* component has a subcomponent that allows an icon to replace t
 
 *Clear Icon* - specifies an icon to replace the clear icon.
 
-For further details, see the Icon component.
+For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
 <table>
@@ -89,8 +89,8 @@ For further details, see the Icon component.
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>color</td><td>inherit<br/>primary<br/>secondary<br/>action<br/>disabled<br/>error<br/>string</td><td>inherit</td><td>Specifies the color of the icon.</td></tr>
-<tr><td>size</td><td>inherit<br/>small<br/>medium<br/>large<br/>string</td><td>small</td><td>Specifies the size of the icon.</td></tr>
+<tr><td>color</td><td>inherit<br/>primary<br/>secondary<br/>action<br/>disabled<br/>error<br/>string</td><td>inherit</td><td>Defines the color of the icon.</td></tr>
+<tr><td>size</td><td>inherit<br/>small<br/>medium<br/>large<br/>string</td><td>small</td><td>Defines the size of the icon.</td></tr>
 <tr><td>viewBox</td><td>0 0 24 24</td><td></td><td>Defines the size of the view box that displays the icon.</td></tr>
 <tr><td>fill</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The fill color of the icon.</td></tr>
 <tr><td>stroke</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The stroke color of the icon.</td></tr>

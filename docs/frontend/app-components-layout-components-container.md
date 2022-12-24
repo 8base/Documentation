@@ -5,7 +5,7 @@ slug: '/frontend/app-components/layout-components/container'
 ---
 
 # Container
-The *Container* component centers your content horizontally. 
+The _Container_ component centers content horizontally and provides an area to lay out other components to create a unified page design.
 
 By default, a container component is *fluid*, and its width grows with the size of the screen. To create a *fixed* container, set the minWidth and maxWidth to the same value. 
 
