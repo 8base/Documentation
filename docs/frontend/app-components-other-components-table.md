@@ -22,7 +22,7 @@ The *Table* component displays data in a table format on a page.
 <tr><td>rowsPerPageOptions</td><td>array</td><td></td><td>Defines an array of options for the rows per page selection.</td></tr>
 <tr><td>hideFooter</td><td>bool</td><td>false</td><td>If true, hides the footer at the bottom of the table.</td></tr>
 <tr><td>hideFooterPagination</td><td>bool</td><td>false</td><td>If true, hides the pagination information in the footer.</td></tr>
-<tr><td>hideFooterSelectedRowCount</td><td>bool</td><td>false</td><td>If true, hides the selected row counter in the footer.</td>
+<tr><td>hideFooterSelectedRowCount</td><td>bool</td><td>false</td><td>If true, hides the selected row counter in the footer.</td></tr>
 <tr><td>checkboxSelection</td><td>bool</td><td>false</td><td>If true, adds a column of checkboxes to the table.</td></tr>
 <tr><td>disableSelectionOnClick</td><td>bool</td><td>false</td><td>If true, disables clicking on a column to select it.</td></tr>
 <tr><td>disableColumnSelector</td><td>bool</td><td>false</td><td>If true, disables access to the column selector to show or hide columns.</td></tr>

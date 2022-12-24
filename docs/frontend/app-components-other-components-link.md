@@ -27,7 +27,7 @@ The *Link* component provides a link to either a document or a location.
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>variant</td><td>h1<br/h2<br/>h3<br/>h4<br/>h5<br/>h6<br/>subtitle1<br/>subtitle2<br/>body1<br/>body2<br/>caption<br/>button<br/>overline<br/>srOnly<br/>inherit<br/>string</td><td>inherit</td><td>Specifies the display type to use.</td></tr>
+<tr><td>variant</td><td>h1<br/>h2<br/>h3<br/>h4<br/>h5<br/>h6<br/>subtitle1<br/>subtitle2<br/>body1<br/>body2<br/>caption<br/>button<br/>overline<br/>srOnly<br/>inherit<br/>string</td><td>inherit</td><td>Specifies the display type to use.</td></tr>
 <tr><td>underline</td><td>none<br/>hover<br/>always<br/>string</td><td>none</td><td>Specifies whether the link is underlined.</td></tr>
 <tr><td>fontColor</td><td>default<br/>inherit<br/>primary<br/>secondary<br/>string</td><td>primary</td><td>Defines the font color of the link.</td></tr>
 </tbody>
