@@ -67,7 +67,7 @@ else if (runWithoutRolesEnforced) {
 
 For obvious security reasons, `checkPermissions` is ONLY available from within custom functions. It cannot be used when making requests from client applications.
 
-As opposed to using `checkPermissions` option, [API Tokens](/docs/8base-console/roles-and-permissions#api-tokens) associated with defined roles can be used to permission `gqlRequest` calls. This ability accommodates situations where permissions are required, but not in the context of the requesting user. To accomplish this, the API Token can be added as a bearer token to the call.
+As opposed to using `checkPermissions` option, [API Tokens](/docs/8base-console/roles-and-permissions/#api-tokens) associated with defined roles can be used to permission `gqlRequest` calls. This ability accommodates situations where permissions are required, but not in the context of the requesting user. To accomplish this, the API Token can be added as a bearer token to the call.
 
 ```javascript
 await ctx.api.gqlRequest(QUERY, VARIABLES, { 
@@ -79,9 +79,9 @@ await ctx.api.gqlRequest(QUERY, VARIABLES, {
 
 ### Timeouts
 All custom functions types have maximum 20 seconds execution time. After the execution time limit is reached the execution times out and returns an error.
-If you need more than 20 seconds of continuous execution you can increase your timeout up to 900 seconds by specifying it in `8base.yml` . Check out the example in [Config](/docs/development-tools/dev-env/8base-yml) section of documentation.
+If you need more than 20 seconds of continuous execution you can increase your timeout up to 900 seconds by specifying it in `8base.yml` . Check out the example in [Config](/docs/development-tools/dev-env/8base-yml/) section of documentation.
 
-In some cases, you can reach a timeout when executing several functions sequentially, in order not to await them you can spawn background tasks using the `context.invokeFunction` API [described here](/docs/8base-console/custom-functions/tasks).
+In some cases, you can reach a timeout when executing several functions sequentially, in order not to await them you can spawn background tasks using the `context.invokeFunction` API [described here](/docs/8base-console/custom-functions/tasks/).
 
 Sometimes your function reaches the 20s limit and also must be executed sequentially. In that case, to not spread the logic of the function across multiple tasks you could make one task and run it multiple times in a recursive manner as shown below:
 ```javascript
@@ -152,10 +152,10 @@ await ctx.invokeFunction(
 ```
 
 ### Managing Dependencies
-8base deploys CFs to a Node.js 14 [runtime environment](/docs/development-tools/dev-env/runtime-environment#supported-languages-and-runtime) in which any compatible NPM dependencies are supported. On deploy, the system will check whether or not your dependencies have been installed and handle that accordingly. As expected, deploys run significantly faster when dependencies are installed locally. Feel free to use either NPM or Yarn as your package manager during development.
+8base deploys CFs to a Node.js 14 [runtime environment](/docs/development-tools/dev-env/runtime-environment#supported-languages-and-runtime/) in which any compatible NPM dependencies are supported. On deploy, the system will check whether or not your dependencies have been installed and handle that accordingly. As expected, deploys run significantly faster when dependencies are installed locally. Feel free to use either NPM or Yarn as your package manager during development.
 
 ### Development Tips
-CFs are developed in a local development environment and then deployed to a given workspace using the [8base CLI](/docs/development-tools/cli). When in development, they can be invoked locally for testing purposes. 
+CFs are developed in a local development environment and then deployed to a given workspace using the [8base CLI](/docs/development-tools/cli/). When in development, they can be invoked locally for testing purposes. 
 
 Using the `8base generate` command is recommended when creating new functions. Doing so provides a recommended folder structure that helps keep everything organized when developing CFs locally, including a `mocks` directory and management of the `8base.yml` file.
 
