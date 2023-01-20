@@ -18,10 +18,10 @@ CFs in 8base are essentially AWS Lambdas that get enriched with access to your w
 ### Custom Function Types
 There are 4-types of CFs made available on 8base that we will go over in depth in the following 4 sections. They are:
 
-* **[Resolvers](/docs/8base-console/custom-functions/resolvers)**: For extending your GraphQL API
-* **[Webhooks](/docs/8base-console/custom-functions/webhooks)**: For RESTful endpoints (GET, POST, DELETE, etc...)
-* **[Triggers](/docs/8base-console/custom-functions/triggers)**: For functions requiring event-based execution
-* **[Tasks](/docs/8base-console/custom-functions/tasks)**: For invocable and scheduled (cron) functions
+* **[Resolvers](/docs/8base-console/custom-functions/resolvers/)**: For extending your GraphQL API
+* **[Webhooks](/docs/8base-console/custom-functions/webhooks/)**: For RESTful endpoints (GET, POST, DELETE, etc...)
+* **[Triggers](/docs/8base-console/custom-functions/triggers/)**: For functions requiring event-based execution
+* **[Tasks](/docs/8base-console/custom-functions/tasks/)**: For invocable and scheduled (cron) functions
 
 All CFs must be declared in your projects 8base.yml file.
 
