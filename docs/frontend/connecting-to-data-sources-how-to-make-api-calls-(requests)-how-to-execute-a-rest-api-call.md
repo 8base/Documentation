@@ -38,7 +38,15 @@ Now when the user interacts with the element on the screen, your GraphQL Query o
 
 ## Executing a Request with code
 
-Coming soon...
+Requests can be executed from any location where code can be used.
+```javascript
+//Assuming the request is called myQuery
+Promise p = myQuery.run();
+```
+Request will return a Promise, so if the code block wants to wait for the results to be recieved the code should look like this
+```javascript
+let results = await myQuery.run();
+```
 
 ## Executing a REST Request with Variables
 
