@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { v4 as uuidv4 } from 'uuid';
 
 import styles from './index.module.css';
 
@@ -61,10 +62,10 @@ export default function Home() {
 
       window.pendo.initialize({
         visitor: {
-          id: 'VISITOR-UNIQUE-ID',
+          id: `8base-docs-visitor-${uuidv4()}`,
         },
         account: {
-          id: 'ACCOUNT-UNIQUE-ID',
+          id: '8BASE-ACCOUNT',
         },
       });
     },[])
