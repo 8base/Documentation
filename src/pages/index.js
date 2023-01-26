@@ -58,7 +58,7 @@ export default function Home() {
           id: `8base-docs-visitor-${uuidv4()}`,
         },
         account: {
-          id: '8BASE-ACCOUNT',
+          id: `8base-docs-account-${uuidv4()}`,
         },
       });
     },[])
