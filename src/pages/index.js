@@ -52,13 +52,13 @@ export default function Home() {
       element[0].className='nav__active navbar__logo '
       elementReplace[0].className=' navbar__brand activate'
       }
-
+      const VISITOR_UUID = `8base-docs-${uuidv4()}`;
       window.pendo.initialize({
         visitor: {
-          id: `8base-docs-visitor-${uuidv4()}`,
+          id: VISITOR_UUID,
         },
         account: {
-          id: '8BASE-ACCOUNT',
+          id: VISITOR_UUID,
         },
       });
     },[])
