@@ -50,20 +50,20 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 
 ## Useful Guides
 
-> [Quick Start](/docs/getting-started/quick-start)
+> [Quick Start](/docs/backend/getting-started-quick-start.md)
 > Learn 8base by building a React or Vue application.
 >
-> [Management Console](/docs/8base-console)
+> [Management Console](/docs/backend/8base-console-readme.md)
 > Read the high-level overview of 8base's management console.
 >
-> [Connect to your API](/docs/getting-started/connecting-to-api)
+> [Connect to your API](/docs/backend/getting-started-connecting-to-api.md)
 > Explore ways to connect to the 8base GraphQL API.
 >
-> [GraphQL API](/docs/8base-console/graphql-api)
+> [GraphQL API](/docs/backend/8base-console-graphql-api-readme.md)
 > Dive deeper into API concepts like authentication, queries, mutations, subscriptions and files.
 >
-> [Custom Functions](/docs/8base-console/custom-functions)
+> [Custom Functions](/docs/backend/8base-console-custom-functions-readme.md)
 > Learn how to deploy back-end functions in JavaScript/TypeScript using 8base CLI.
 >
-> [Client Tools](/docs/development-tools/sdk)
+> [Client Tools](/docs/backend/development-tools-sdk-api-readme.md)
 > Accelerate front-end development with the 8base SDK and Boost UI Kit.
