@@ -102,4 +102,4 @@ Check example expressions and read a detailed description of cron syntax [here](
 
 ### Task Arguments
 
-To learn about the arguments that are passed to tasks, review the [custom function arguments docs.](/docs/8base-console/custom-functions/#custom-function-arguments)
+To learn about the arguments that are passed to tasks, review the [custom function arguments docs.](/backend/custom-functions/#custom-function-arguments)
