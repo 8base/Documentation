@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-sdk-filestack-uploader'
 sidebar_label: 'Filestack Uploader'
-slug: '/backend/development-tools/sdk/filestack-uploader'
+redirect_from: '/backend/development-tools/sdk/filestack-uploader'
+slug: '/projects/backend/development-tools/sdk/filestack-uploader'
 ---
 
 # Filestack
@@ -48,7 +49,7 @@ mutation {
 }
 ```
 
- or you can create and connect file at the same time:
+or you can create and connect file at the same time:
 
 ```javascript
 mutation {
@@ -72,7 +73,7 @@ Filestack has API clients, Pickers and Framework integrations that make it easy 
 ```sh
 curl -X POST \
      --data-binary @FILE_NAME_HERE \
-     --header "Content-Type:MIME_TYPE_HERE" 
+     --header "Content-Type:MIME_TYPE_HERE"
      "https://www.filestackapi.com/api/store/S3?key=YOUR_API_KEY_HERE&policy=YOUR_POLICY_HERE&signature=YOUR_SIGNATURE_HERE&path=YOUR_PATH_HERE"
 ```
 
@@ -92,42 +93,43 @@ The success response should look similar to this:
 In this case, your handle will be `VJaeYGhMSJ2FJJnvSPx9`, the last portion of `"url"`.
 
 ### React Native Support
+
 Filestack does not have an SDK for React Native. See below for how to implement file uploads in React Native using the `fetch()` API and the `ImagePicker` API from Expo.
 
 ```javascript
 const handlePost = async () => {
-  const body = new FormData()
+  const body = new FormData();
 
   // files are required to be sent as multipart form data to Filestack api
-  body.append("fileUpload", {
-    name: "test",
-    uri: `${this.state.file.replace("file://", "")}`
-  })
+  body.append('fileUpload', {
+    name: 'test',
+    uri: `${this.state.file.replace('file://', '')}`,
+  });
 
-  const {fileUploadInfo} = this.props.data
+  const { fileUploadInfo } = this.props.data;
   const endoint = [
     `https://www.filestackapi.com/api/store/S3`,
     `?key=${fileUploadInfo.apiKey}`,
     `&policy=${fileUploadInfo.policy}`,
     `&signature=${fileUploadInfo.signature}`,
-    `&path=${fileUploadInfo.path}`
-  ].join('')
+    `&path=${fileUploadInfo.path}`,
+  ].join('');
 
   try {
     const response = await fetch(endoint, {
       method: 'POST',
-      body: body
-    })
+      body: body,
+    });
 
-    const responseJson = await response.json()
+    const responseJson = await response.json();
 
     this.setState({
-      handle: responseJson.url.slice(33)
-    })
+      handle: responseJson.url.slice(33),
+    });
   } catch (e) {
-    console.log("error", e)
+    console.log('error', e);
   }
-}
+};
 
 // (...)
 
@@ -140,11 +142,11 @@ const _pickImage = async () => {
   //The ImagePicker API from expo returns a URI, which we will use to access the file object to upload to Filestack.
   let result = await ImagePicker.launchImageLibraryAsync({
     allowsEditing: true,
-    aspect: [4, 3]
+    aspect: [4, 3],
   });
 
   if (!result.cancelled) {
     this.setState({ file: result.uri });
   }
-}
+};
 ```

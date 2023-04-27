@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-alert'
 sidebar_label: 'Alert'
-slug: '/frontend/app-components/other-components/alert'
+redirect_from: '/frontend/app-components/other-components/alert'
+slug: '/projects/frontend/app-components/other-components/alert'
 ---
 
 # Alert
-The *Alert* component displays a brief, important message to attract the user's attention without interrupting their work.  
+
+The _Alert_ component displays a brief, important message to attract the user's attention without interrupting their work.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -18,9 +21,10 @@ The *Alert* component displays a brief, important message to attract the user's 
 <tr><td>actionButton</td><td>bool</td><td>false</td><td>If true, will display an action button after the alert message.</td></tr>
 <tr><td>closeText</td><td>string</td><td></td><td>Override for the close label on the popup icon button.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -32,12 +36,15 @@ The *Alert* component displays a brief, important message to attract the user's 
 </table>
 
 ## Subcomponents
-The *Alert* component uses a subcomponent to create an alert title. Two optional subcomponents provide an icon and an action button for the alert component.
+
+The _Alert_ component uses a subcomponent to create an alert title. Two optional subcomponents provide an icon and an action button for the alert component.
 
 ### Alert Title
-The *Alert Title* component provides a title for the alert.
+
+The _Alert Title_ component provides a title for the alert.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -48,11 +55,13 @@ The *Alert Title* component provides a title for the alert.
 </table>
 
 ### Icon
+
 Allows the user to add an icon to the alert component.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -67,11 +76,13 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </table>
 
 ### Button
+
 Allows the user to add an action button to the alert.
 
 For further details, see the [Button](./app-components-input-components-button) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -81,4 +92,4 @@ For further details, see the [Button](./app-components-input-components-button) 
 </tbody>
 </table>
 
-For more detail on the *Alert* component, see the [MUI developer docs](https://mui.com/material-ui/api/alert/).
+For more detail on the _Alert_ component, see the [MUI developer docs](https://mui.com/material-ui/api/alert/).

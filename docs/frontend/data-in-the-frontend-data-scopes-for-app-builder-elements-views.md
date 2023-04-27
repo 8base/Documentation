@@ -1,13 +1,15 @@
 ---
 id: 'data-in-the-frontend-data-scopes-for-app-builder-elements-views'
 sidebar_label: 'Views'
-slug: '/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views'
+redirect_from: '/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views'
+slug: '/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views'
 ---
 
 # Data Scopes for App Builder Views (Pages)
 
 This article describes how developers can expect data scopes to be applied when working with Views (Pages).
-___
+
+---
 
 ![App Builder View State](./_images/ab-data-in-the-frontend-data-scopes-for-app-builder-elements-views-1.png)
 

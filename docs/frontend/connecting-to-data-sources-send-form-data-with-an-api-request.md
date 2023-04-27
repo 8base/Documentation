@@ -1,14 +1,15 @@
 ---
 id: 'connecting-to-data-sources-send-form-data-with-an-api-request'
 sidebar_label: 'Send Form Data with an API Request'
-slug: '/frontend/send-form-data-with-an-api-request'
+redirect_from: '/frontend/send-form-data-with-an-api-request'
+slug: '/projects/frontend/send-form-data-with-an-api-request'
 ---
 
 # Send form data with an API Request
 
 This article describes the process a developer must go through to send data with an API request collected in a form.
 
-___
+---
 
 In App Builder, developers can send form data to an API (GraphQL or REST). To do so, there are several concepts that they need to be familiar with.
 
@@ -24,7 +25,7 @@ With those listed, let's walk through each one so you can start sending data fro
 
 ![Form block](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-1.png)
 
-Form Components are Inputs that are allowed to be placed in the Form Block Component. To collect values from Forms in App Builder, you must use Inputs placed inside a Form Block component. 
+Form Components are Inputs that are allowed to be placed in the Form Block Component. To collect values from Forms in App Builder, you must use Inputs placed inside a Form Block component.
 
 There are several types of inputs:
 
@@ -43,15 +44,15 @@ These inputs allow you to collect user values, but only on the Form's "On Submit
 
 ![Events](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-2.png)
 
-In App Builder, developers can use Component Events to trigger actions associated with custom code execution. In this case, we'll need to set an Event listener for the Forms Block's "On Submit" event. 
+In App Builder, developers can use Component Events to trigger actions associated with custom code execution. In this case, we'll need to set an Event listener for the Forms Block's "On Submit" event.
 
-On a Form Block Component, go to the "Events" tab a select the "On Submit" Event. Then configure the action to run "Custom Code." Once configured, open the code editor. 
+On a Form Block Component, go to the "Events" tab a select the "On Submit" Event. Then configure the action to run "Custom Code." Once configured, open the code editor.
 
 ## Custom Code (JavaScript)
 
 ![Javascript code](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-3.png)
 
-The code editor will give you a blank editor in which you can write any Javascript you want. 
+The code editor will give you a blank editor in which you can write any Javascript you want.
 
 **Know that the arguments that you need to use in order to collect your Form data App Builder will explicitly tell you do NOT exist and will show visual errors. Just ignore those.**
 
@@ -63,7 +64,7 @@ For example, if your Form has a text input component that you named "TextInput1"
 
 ![Global State](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-4.png)
 
-To set a global state value, you'll need to use the `setValue` function on a Global State Entry.  Makes sure that you add a separate entry in the Global State (DO NOT USE LOCAL STATE) for every form Input. Once you do, you'll be able to reference it by name and use the `setValue` method.
+To set a global state value, you'll need to use the `setValue` function on a Global State Entry. Makes sure that you add a separate entry in the Global State (DO NOT USE LOCAL STATE) for every form Input. Once you do, you'll be able to reference it by name and use the `setValue` method.
 
 ```js
 let inputValue = data.TextInput1;
@@ -88,7 +89,7 @@ let inputValue = data.TextInput1;
 // Update value
 globalStateKeyName.setValue(inputValue);
 // Run request AFTER value set
-myRequest.run()
+myRequest.run();
 ```
 
 That's it! Follow these 6 steps and you'll be able to start sending data with API Requests in App Builder.

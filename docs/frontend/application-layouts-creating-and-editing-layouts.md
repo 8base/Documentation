@@ -1,20 +1,21 @@
 ---
 id: 'application-layouts-creating-and-editing-layouts'
 sidebar_label: 'Creating and Editing Layouts'
-slug: '/frontend/application-layouts/creating-and-editing-layouts'
+redirect_from: '/frontend/application-layouts/creating-and-editing-layouts'
+slug: '/projects/frontend/application-layouts/creating-and-editing-layouts'
 ---
 
 # Creating and Editing Layouts
 
 This document describes how a developer can create and edit Layouts in App Builder.
 
-___
+---
 
 ![App Builder Layouts.](./_images/ab-application-layouts-creating-and-editing-layouts-1.png)
 
-All the layouts available in your application are displayed at the bottom of the Pages pane that's located in the left menu. To create your first  Layout, click the "+" in the Layouts section menu. This will open a form that lets you specify the name of your Layout.
+All the layouts available in your application are displayed at the bottom of the Pages pane that's located in the left menu. To create your first Layout, click the "+" in the Layouts section menu. This will open a form that lets you specify the name of your Layout.
 
-Layouts get built no differently than pages. You drag and drop components into the Layout to build it. The only difference is that layouts require the __View component__ to be added to that Page.
+Layouts get built no differently than pages. You drag and drop components into the Layout to build it. The only difference is that layouts require the **View component** to be added to that Page.
 
 ## Understanding the View Component
 

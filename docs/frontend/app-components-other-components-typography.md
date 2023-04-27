@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-typography'
 sidebar_label: 'Typography'
-slug: '/frontend/app-components/other-components/typography'
+redirect_from: '/frontend/app-components/other-components/typography'
+slug: '/projects/frontend/app-components/other-components/typography'
 ---
 
 # Typography
-The *Typography* component allows the placement of text elements within a page or other components.
+
+The _Typography_ component allows the placement of text elements within a page or other components.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -16,9 +19,10 @@ The *Typography* component allows the placement of text elements within a page o
 <tr><td>text</td><td>string</td><td></td><td>Defines the text to display.</td></tr>
 <tr><td>paragraph</td><td>bool</td><td>false</td><td>If true, the element will be a paragraph element.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -30,7 +34,6 @@ The *Typography* component allows the placement of text elements within a page o
 <tr><td>noWrap</td><td>bool</td><td>false</td><td>If true, the text will be truncated and display a text overflow ellipsis.</td></tr>
 <tr><td>gutterBottom</td><td>bool</td><td>false</td><td>Enables a gutter at the bottom of the typography component.</td></tr>
 </tbody>
-</table> 
+</table>
 
-
-For more detail on the *Typography* component, see the [MUI developer docs](https://mui.com/material-ui/api/typography/).
+For more detail on the _Typography_ component, see the [MUI developer docs](https://mui.com/material-ui/api/typography/).

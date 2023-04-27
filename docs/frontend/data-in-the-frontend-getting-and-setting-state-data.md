@@ -1,14 +1,15 @@
 ---
 id: 'data-in-the-frontend-getting-and-setting-state-data'
 sidebar_label: 'Getting and setting state data'
-slug: '/frontend/data-in-the-frontend/getting-and-setting-state-data'
+redirect_from: '/frontend/data-in-the-frontend/getting-and-setting-state-data'
+slug: '/projects/frontend/data-in-the-frontend/getting-and-setting-state-data'
 ---
 
 # Getting and setting state data
 
 This article describes how developers can getting and setting state data in their front-end applications.
 
-___
+---
 
 ![State read/set in app builder](./_images/ab-data-in-the-frontend-getting-and-setting-state-data-1.png)
 
@@ -20,7 +21,11 @@ To read a piece of data from the state, you only need to reference it by its obj
 
 ```js
 // Handlebars
-{{ objectName.value }}
+{
+  {
+    objectName.value;
+  }
+}
 
 // In script or function
 objectName.value;
@@ -32,14 +37,14 @@ You can easily find a state's accessor by clicking the clipboard icon next to th
 
 ## Writing State Data
 
-While most states for different element types are read-only, developers are free to create custom state entries in both the global and local namespaces, which allows read-write access to those states. 
+While most states for different element types are read-only, developers are free to create custom state entries in both the global and local namespaces, which allows read-write access to those states.
 
 To write a piece of data to the Custom namespace, simply reference it by its object key and use the `setValue()` function:
 
 ```js
 // In script
-return function(mode) {
+return function (mode) {
   themeMode.setValue(mode);
   return;
-}
+};
 ```

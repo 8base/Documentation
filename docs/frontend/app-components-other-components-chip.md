@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-chip'
 sidebar_label: 'Chip'
-slug: '/frontend/app-components/other-components/chip'
+redirect_from: '/frontend/app-components/other-components/chip'
+slug: '/projects/frontend/app-components/other-components/chip'
 ---
 
 # Chip
-The *Chip* component represents an input, attribute or action. It allows the user to enter information, make selections, filter content or trigger actions.
+
+The _Chip_ component represents an input, attribute or action. It allows the user to enter information, make selections, filter content or trigger actions.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -20,6 +23,7 @@ The *Chip* component represents an input, attribute or action. It allows the use
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -30,5 +34,4 @@ The *Chip* component represents an input, attribute or action. It allows the use
 </tbody>
 </table>
 
-For more detail on the *Chip* component, see the [MUI developer docs](https://mui.com/material-ui/api/chip/).
-
+For more detail on the _Chip_ component, see the [MUI developer docs](https://mui.com/material-ui/api/chip/).

@@ -1,7 +1,8 @@
 ---
 id: '8base-console-graphql-api-queries-readme'
 sidebar_label: 'Overview'
-slug: '/backend/graphql-api/queries'
+redirect_from: '/backend/graphql-api/queries'
+slug: '/projects/backend/graphql-api/queries'
 ---
 
 # Queries

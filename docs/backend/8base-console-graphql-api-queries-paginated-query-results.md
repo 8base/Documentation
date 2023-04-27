@@ -1,14 +1,16 @@
 ---
 id: '8base-console-graphql-api-queries-paginated-query-results'
 sidebar_label: 'Paginated Query Results'
-slug: '/backend/graphql-api/queries/paginated-query-results'
+redirect_from: '/backend/graphql-api/queries/paginated-query-results'
+slug: '/projects/backend/graphql-api/queries/paginated-query-results'
 ---
 
 # Pagenated Queries
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Using pagination in queries
+
 The arguments `skip` and `first` get used for pagination.
 
 `first` specifies the number of rows to pass from the result set and `skip` determines which slice to retain from the results.

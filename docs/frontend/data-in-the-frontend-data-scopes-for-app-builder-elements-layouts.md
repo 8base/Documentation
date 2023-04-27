@@ -1,13 +1,15 @@
 ---
 id: 'data-in-the-frontend-data-scopes-for-app-builder-elements-layouts'
 sidebar_label: 'Layouts'
-slug: '/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/layouts'
+redirect_from: '/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/layouts'
+slug: '/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/layouts'
 ---
 
 # Data Scopes for App Builder Layouts
 
 This article describes how developers can expect data scopes to be applied when working with Layouts.
-___
+
+---
 
 ![App Builder Layout State](./_images/ab-data-in-the-frontend-data-scopes-for-app-builder-elements-layouts-1.png)
 

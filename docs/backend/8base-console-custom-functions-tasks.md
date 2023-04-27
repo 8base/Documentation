@@ -1,7 +1,8 @@
 ---
 id: '8base-console-custom-functions-tasks'
 sidebar_label: 'Tasks'
-slug: '/backend/custom-functions/tasks'
+redirect_from: '/backend/custom-functions/tasks'
+slug: '/projects/backend/custom-functions/tasks'
 ---
 
 # Tasks
@@ -26,7 +27,7 @@ functions:
     handler:
       code: src/sendWeeklyReport.ts
     type: task
-    schedule: "rate(7 days)"
+    schedule: 'rate(7 days)'
 ```
 
 ##### Non-scheduled function calls
@@ -37,18 +38,18 @@ Functions like resolvers, triggers and webhooks usually run in response to user 
 // Context (ctx) argument maintains the invokeFunction method for
 // invoking tasks from other functions.
 module.exports = async (event, ctx) => {
-  const args = { data: { param: "value" } };
+  const args = { data: { param: 'value' } };
 
-  await ctx.invokeFunction("myTask", args, {
-    waitForResponse: false
+  await ctx.invokeFunction('myTask', args, {
+    waitForResponse: false,
   });
 };
 
 // The "myTask" handler may looks like that
 module.exports = async (event, ctx) => {
-  const { param } = event.data
+  const { param } = event.data;
   // ...
-}
+};
 ```
 
 The `options.waitForResponse (default: false)` property tells the platform to resolve the promise immediately without waiting for the task to complete. If instead you'd like to wait for the task result you can set `waitForResponse` to `true`.
@@ -81,8 +82,8 @@ For a singular value (1) the unit must be written as singular, otherwise it need
 
 `cron(Minutes Hours Day-of-month Month Day-of-week Year)`
 
-| Expression                   | Instruction                                                         |
-| :--------------------------- | :------------------------------------------------------------------ |
+| Expression                     | Instruction                                                         |
+| :----------------------------- | :------------------------------------------------------------------ |
 | `cron(0 10 * * ? *)`           | Invoke task at 10:00am (UTC) everyday                               |
 | `cron(15 12 * * ? *)`          | Invoke task at 12:15pm (UTC) everyday                               |
 | `cron(0 18 ? * MON-FRI *)`     | Invoke task at 06:00pm (UTC) every Mon-Fri                          |

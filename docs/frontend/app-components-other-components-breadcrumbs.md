@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-breadcrumbs'
 sidebar_label: 'Breadcrumbs'
-slug: '/frontend/app-components/other-components/breadcrumbs'
+redirect_from: '/frontend/app-components/other-components/breadcrumbs'
+slug: '/projects/frontend/app-components/other-components/breadcrumbs'
 ---
 
 # Breadcrumbs
-The *Breadcrumbs* component displays a list of links that help the user visualize a page's location within the structure of a website and allows navigation to any page within the list. The component uses either *Typography* or *[Link](./app-components-other-components-link)* components to create the location list.
- 
+
+The _Breadcrumbs_ component displays a list of links that help the user visualize a page's location within the structure of a website and allows navigation to any page within the list. The component uses either _Typography_ or _[Link](./app-components-other-components-link)_ components to create the location list.
+
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,17 +22,20 @@ The *Breadcrumbs* component displays a list of links that help the user visualiz
 <tr><td>itemsAfterCollapse</td><td>integer</td><td>1</td><td>If the max items is exceeded, the number of items to show after the ellipsis.</td></tr>
 <tr><td>expandText</td><td>string</td><td>show path</td><td>Overrides the default label for the expand button.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ## Subcomponents
-The *Breadcrumbs* component has a *Typography* subcomponent that allows for a separator character between breadcrumb items.
+
+The _Breadcrumbs_ component has a _Typography_ subcomponent that allows for a separator character between breadcrumb items.
 
 ### Typography
+
 Specifies a separator character to separate the breadcrumb items.
 
 For further details, see the [Typography](./app-components-other-components-typography) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -42,5 +48,4 @@ For further details, see the [Typography](./app-components-other-components-typo
 </tbody>
 </table>
 
-
-For more detail on the *Breadcrumbs* component, see the [MUI developer docs](https://mui.com/material-ui/api/breadcrumbs/).
+For more detail on the _Breadcrumbs_ component, see the [MUI developer docs](https://mui.com/material-ui/api/breadcrumbs/).

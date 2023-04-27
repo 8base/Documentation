@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-dev-env-8base-yml'
 sidebar_label: '8base Yml'
-slug: '/backend/development-tools/dev-env/8base-yml'
+redirect_from: '/backend/development-tools/dev-env/8base-yml'
+slug: '/projects/backend/development-tools/dev-env/8base-yml'
 ---
 
 # 8base Config
@@ -10,9 +11,8 @@ slug: '/backend/development-tools/dev-env/8base-yml'
 
 The file consists of two sections:
 
-* `functions` - list and configure all your custom functions. Read more on how to configure functions [here](/docs/8base-console/custom-functions).
-* `settings` - list of additional global settings for your project.
-
+- `functions` - list and configure all your custom functions. Read more on how to configure functions [here](/docs/8base-console/custom-functions).
+- `settings` - list of additional global settings for your project.
 
 ### Example 8base.yml
 
@@ -41,7 +41,7 @@ functions:
     operation: TableName.create
     description: |
       An optional description of your trigger function.
-  
+
   webhookExample:
     handler:
       code: src/webhookFunc.ts
@@ -50,7 +50,7 @@ functions:
     method: POST
     description: |
       An optional description of your webhook function.
-    
+
   taskExample:
     handler:
       code: src/taskFunc.ts
@@ -58,7 +58,7 @@ functions:
     schedule: 'rate(1 minute)'
     description: |
       An optional description of your task function.
-      
-settings: 
+
+settings:
   timeout: 500 # you can specify any value from 1 to 900 seconds
 ```

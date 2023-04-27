@@ -1,7 +1,8 @@
 ---
 id: 'building-frontends-app-builder-walkthrough-accessing-frontend-data'
 sidebar_label: 'Accessing frontend data'
-slug: '/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data'
+redirect_from: '/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data'
+slug: '/projects/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data'
 ---
 
 # Accessing frontend data in App Builder
@@ -14,7 +15,7 @@ Additionally, states can be segregated between items being local or global. Whil
 
 ![Opening the state modal in App Builder](./_images/ab-state-1.png)
 
-The first step in managing state data is to open the State modal. This can be done by clicking the "{...}" icon in the left menu. The opened modal will show tabs for both Global and Local state data. 
+The first step in managing state data is to open the State modal. This can be done by clicking the "{...}" icon in the left menu. The opened modal will show tabs for both Global and Local state data.
 
 ## Accessing State data in a Component
 
@@ -26,6 +27,6 @@ Once done, open your State pane and expand any entries with key/value pairs. Whe
 
 ![App Builder state entry used as component property](./_images/ab-state-entry-property-1.png)
 
-In App Builder, all inputs are handlebars enabled. This means you can dynamically read any state value as an input to your Component property. 
+In App Builder, all inputs are handlebars enabled. This means you can dynamically read any state value as an input to your Component property.
 
 For example, click the clipboard icon next to any text value in your app's state and then paste it into the Text Component's "Text" input like so `{{ stateObjectName.keyName }}`. Once done, you should see the rendered value on your page canvas within the component instance.

@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-switch'
 sidebar_label: 'Switch'
-slug: '/frontend/app-components/input-components/switch'
+redirect_from: '/frontend/app-components/input-components/switch'
+slug: '/projects/frontend/app-components/input-components/switch'
 ---
 
 # Switch
-The *Switch* component toggles the state of a single setting on or off.
 
-The *Switch* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Switch_ component toggles the state of a single setting on or off.
+
+The _Switch_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -26,6 +29,7 @@ The *Switch* component is used independently or as a form component. To use it a
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -39,16 +43,19 @@ The *Switch* component is used independently or as a form component. To use it a
 </table>
 
 ## Subcomponents
-The *Switch* component has a subcomponent that allows an icon to replace the normal thumb on the switch.
+
+The _Switch_ component has a subcomponent that allows an icon to replace the normal thumb on the switch.
 
 ### Icon
-*Checked Icon* - specifies an icon to use when the switch is set.
 
-*Unchecked Icon* - specifies an icon to use when the switch is not set.
+_Checked Icon_ - specifies an icon to use when the switch is set.
+
+_Unchecked Icon_ - specifies an icon to use when the switch is not set.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -62,4 +69,4 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </tbody>
 </table>
 
-For more detail on the *Switch* component, see the [MUI developer docs](https://mui.com/material-ui/api/switch/).
+For more detail on the _Switch_ component, see the [MUI developer docs](https://mui.com/material-ui/api/switch/).

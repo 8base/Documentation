@@ -1,7 +1,8 @@
 ---
 id: 'building-frontends-app-builder-walkthrough-managing-app-pages'
 sidebar_label: 'Managing App Pages'
-slug: '/frontend/building-frontends-app-builder-walkthrough/managing-app-pages'
+redirect_from: '/frontend/building-frontends-app-builder-walkthrough/managing-app-pages'
+slug: '/projects/frontend/building-frontends-app-builder-walkthrough/managing-app-pages'
 ---
 
 # Managing App Pages
@@ -40,7 +41,7 @@ When adding dynamic path parameter, you can also enter its name and default valu
 
 ![Default path parameters App Builder Page settings](./_images/ab-editing-page-settings-1.png)
 
-After you have added a parameter, you can edit its name and default value by changing the input key or value. 
+After you have added a parameter, you can edit its name and default value by changing the input key or value.
 
 To delete a parameter, click on the trash can icon button next to the parameter declaration.
 

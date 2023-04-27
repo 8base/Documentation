@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-toggle-button-group'
 sidebar_label: 'Toggle Button Group'
-slug: '/frontend/app-components/input-components/toggle-button-group'
+redirect_from: '/frontend/app-components/input-components/toggle-button-group'
+slug: '/projects/frontend/app-components/input-components/toggle-button-group'
 ---
 
 # Toggle Button Group
-The *Toggle Button Group* component allows the user to select one option from a set.
 
-The *Toggle Button Group* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Toggle Button Group_ component allows the user to select one option from a set.
+
+The _Toggle Button Group_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -25,6 +28,7 @@ The *Toggle Button Group* component is used independently or as a form component
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -39,16 +43,19 @@ The *Toggle Button Group* component is used independently or as a form component
 </table>
 
 ## Subcomponents
-The *Toggle Button Group* component has one subcomponent, a *Toggle Button* component, used to create a list of Toggle Button Items.
+
+The _Toggle Button Group_ component has one subcomponent, a _Toggle Button_ component, used to create a list of Toggle Button Items.
 
 ### Toggle Button
- A *Toggle Button* is a component that acts as a single input control and is part of a set within a Toggle Button Group. It is possible to select multiple toggle buttons unless the **exclusive property** is enabled for the *Toggle Button Group*. 
- 
- The toggle button has two states, On and Off.
- 
- For further details, see the [Toggle Button](./app-components-input-components-toggle-button) component.
+
+A _Toggle Button_ is a component that acts as a single input control and is part of a set within a Toggle Button Group. It is possible to select multiple toggle buttons unless the **exclusive property** is enabled for the _Toggle Button Group_.
+
+The toggle button has two states, On and Off.
+
+For further details, see the [Toggle Button](./app-components-input-components-toggle-button) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -58,4 +65,4 @@ The *Toggle Button Group* component has one subcomponent, a *Toggle Button* comp
 </tbody>
 </table>
 
-For more detail on the *Toggle Button Group* component, see the [MUI developer docs](https://mui.com/material-ui/api/toggle-button-group/).
+For more detail on the _Toggle Button Group_ component, see the [MUI developer docs](https://mui.com/material-ui/api/toggle-button-group/).

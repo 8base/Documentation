@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-slider'
 sidebar_label: 'Slider'
-slug: '/frontend/app-components/input-components/slider'
+redirect_from: '/frontend/app-components/input-components/slider'
+slug: '/projects/frontend/app-components/input-components/slider'
 ---
 
 # Slider
-The *Slider* component allows the user to select one value from a range of values along a bar. They are ideal for adjusting volume, brightness, and image filter settings.
 
-The *Slider* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Slider_ component allows the user to select one value from a range of values along a bar. They are ideal for adjusting volume, brightness, and image filter settings.
+
+The _Slider_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -37,6 +40,7 @@ The *Slider* component is used independently or as a form component. To use it a
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -54,4 +58,4 @@ The *Slider* component is used independently or as a form component. To use it a
 </tbody>
 </table>
 
-For more detail on the *Slider* component, see the [MUI developer docs](https://mui.com/material-ui/api/slider/).
+For more detail on the _Slider_ component, see the [MUI developer docs](https://mui.com/material-ui/api/slider/).

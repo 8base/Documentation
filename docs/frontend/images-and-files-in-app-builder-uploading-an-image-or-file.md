@@ -1,13 +1,15 @@
 ---
 id: 'images-and-files-in-app-builder-uploading-an-image-or-file'
 sidebar_label: 'Uploading an Image or File'
-slug: '/frontend/images-and-files-in-app-builder/uploading-an-image-or-file'
+redirect_from: '/frontend/images-and-files-in-app-builder/uploading-an-image-or-file'
+slug: '/projects/frontend/images-and-files-in-app-builder/uploading-an-image-or-file'
 ---
 
 # Uploading an Image or File
 
 This article describes how developers upload images and files as static assets in App Builder
-___
+
+---
 
 When working on a project in App Builder, you may need to include some images or other files. For example, you might want to add an image to your app's home screen or upload a file that your app will use.
 

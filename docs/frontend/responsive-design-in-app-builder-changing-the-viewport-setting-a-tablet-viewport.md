@@ -1,7 +1,8 @@
 ---
 id: 'responsive-design-in-app-builder-changing-the-viewport-setting-a-tablet-viewport'
 sidebar_label: 'Setting a Tablet Viewport'
-slug: '/frontend/responsive-design-in-app-builder/changing-the-viewport/setting-a-tablet-viewport'
+redirect_from: '/frontend/responsive-design-in-app-builder/changing-the-viewport/setting-a-tablet-viewport'
+slug: '/projects/frontend/responsive-design-in-app-builder/changing-the-viewport/setting-a-tablet-viewport'
 ---
 
 # Setting a Tablet Viewport

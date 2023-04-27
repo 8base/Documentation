@@ -1,15 +1,18 @@
 ---
 id: 'app-components-layout-components-card'
 sidebar_label: 'Card'
-slug: '/frontend/app-components/layout-components/card'
+redirect_from: '/frontend/app-components/layout-components/card'
+slug: '/projects/frontend/app-components/layout-components/card'
 ---
 
 # Card
-The *Card* component is a surface that displays content and actions for a single topic. 
+
+The _Card_ component is a surface that displays content and actions for a single topic.
 
 Cards can contain text, media, and UI controls, and are used to display complex or detailed information.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -20,12 +23,15 @@ Cards can contain text, media, and UI controls, and are used to display complex 
 </table>
 
 ## Subcomponents
-The *Card* component consists several subcomponents that define various aspects of a card's content.
+
+The _Card_ component consists several subcomponents that define various aspects of a card's content.
 
 ### Header (CardHeader)
-The *Header* component provides an area on the card to display a title and subheading.
+
+The _Header_ component provides an area on the card to display a title and subheading.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -37,9 +43,11 @@ The *Header* component provides an area on the card to display a title and subhe
 </table>
 
 ### Content (CardContent)
-The *Content* component is the area of the card where content is displayed.
+
+The _Content_ component is the area of the card where content is displayed.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -51,9 +59,11 @@ The *Content* component is the area of the card where content is displayed.
 </table>
 
 ### Media (CardMedia)
-The *Media* component displays media elements for the card.
+
+The _Media_ component displays media elements for the card.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -65,4 +75,4 @@ The *Media* component displays media elements for the card.
 </tbody>
 </table>
 
-For more detail on the *Card* component, see the [MUI developer docs](https://mui.com/material-ui/api/card/).
+For more detail on the _Card_ component, see the [MUI developer docs](https://mui.com/material-ui/api/card/).

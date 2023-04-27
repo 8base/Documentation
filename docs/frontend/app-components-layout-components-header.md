@@ -1,13 +1,16 @@
 ---
 id: 'app-components-layout-components-header'
 sidebar_label: 'Header'
-slug: '/frontend/app-components/layout-components/header'
+redirect_from: '/frontend/app-components/layout-components/header'
+slug: '/projects/frontend/app-components/layout-components/header'
 ---
 
 # Header
-The *Header* component acts as a container that allows you to organize other components within it at the top of the page.
+
+The _Header_ component acts as a container that allows you to organize other components within it at the top of the page.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>

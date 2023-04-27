@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-field-array'
 sidebar_label: 'Field Array'
-slug: '/frontend/app-components/input-components/field-array'
+redirect_from: '/frontend/app-components/input-components/field-array'
+slug: '/projects/frontend/app-components/input-components/field-array'
 ---
 
 # Field Array
-The *Field Array* component displays form inputs based on a data array. It requires a *[Looper](./app-components-data-components-looper)* component to generate the data array and an input control such as a *[Select](./app-components-input-components-select)* component, which will populate based on the data array.
 
-The *Field Array* component is used as a form component and must be placed within a *Form Block*.
+The _Field Array_ component displays form inputs based on a data array. It requires a _[Looper](./app-components-data-components-looper)_ component to generate the data array and an input control such as a _[Select](./app-components-input-components-select)_ component, which will populate based on the data array.
+
+The _Field Array_ component is used as a form component and must be placed within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,5 +22,3 @@ The *Field Array* component is used as a form component and must be placed withi
 <tr><td>validateOnChange</td><td>bool</td><td>false</td><td>If true, validates the data when a change occurs.</td></tr>
 </tbody>
 </table>
-
-

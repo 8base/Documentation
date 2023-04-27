@@ -1,7 +1,8 @@
 ---
 id: '8base-console-graphql-api-subscriptions-simple-record-subscriptions'
 sidebar_label: 'Simple Record Subscriptions'
-slug: '/backend/graphql-api/subscriptions/simple-record-subscriptions'
+redirect_from: '/backend/graphql-api/subscriptions/simple-record-subscriptions'
+slug: '/projects/backend/graphql-api/subscriptions/simple-record-subscriptions'
 ---
 
 # Simple Record Subscriptions

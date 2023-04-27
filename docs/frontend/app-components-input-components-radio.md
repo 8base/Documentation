@@ -1,13 +1,16 @@
 ---
 id: 'app-components-input-components-radio'
 sidebar_label: 'Radio'
-slug: '/frontend/app-components/input-components/radio'
+redirect_from: '/frontend/app-components/input-components/radio'
+slug: '/projects/frontend/app-components/input-components/radio'
 ---
 
 # Radio
-A *Radio* button is a component that acts as a single input control and is part of a set within a *Radio Group*. It has two states, On and Off. 
+
+A _Radio_ button is a component that acts as a single input control and is part of a set within a _Radio Group_. It has two states, On and Off.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -23,6 +26,7 @@ A *Radio* button is a component that acts as a single input control and is part 
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -35,4 +39,4 @@ A *Radio* button is a component that acts as a single input control and is part 
 </tbody>
 </table>
 
-For more detail on the *Radio* component, see the [MUI developer docs](https://mui.com/material-ui/api/radio/).
+For more detail on the _Radio_ component, see the [MUI developer docs](https://mui.com/material-ui/api/radio/).

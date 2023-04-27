@@ -1,7 +1,8 @@
 ---
 id: '8base-console-platform-tools-data-builder'
 sidebar_label: 'Data Builder'
-slug: '/backend/console/data-builder'
+redirect_from: '/backend/console/data-builder'
+slug: '/projects/backend/console/data-builder'
 ---
 
 # Data Builder
@@ -16,11 +17,11 @@ The Data Builder is found in the management console's `Data` view. It is packed 
 
 ## Tables
 
-In the background, 8base spins up an Aurora MySQL database instance for your workspace. Aurora is a relational database that can handle complex queries and is ACID (Atomicity, Consistency, Isolation, Durability) compliant. When tables are created, updated, and deleted in a workspace, 8base handles the corresponding migrations and executes them immediately against the database. Therefore, you're database is always reflected by the *Data Builder* UI - showing all available fields, validations, tables, and relations.
+In the background, 8base spins up an Aurora MySQL database instance for your workspace. Aurora is a relational database that can handle complex queries and is ACID (Atomicity, Consistency, Isolation, Durability) compliant. When tables are created, updated, and deleted in a workspace, 8base handles the corresponding migrations and executes them immediately against the database. Therefore, you're database is always reflected by the _Data Builder_ UI - showing all available fields, validations, tables, and relations.
 
 ### Creating Tables
 
-New tables are created using the "+ New Table" button. An input that prompts for a *name* value will appear, with which the table can named. All tables require unique names (`attribute`, `workspace` names and their plural form are reserved and cannot be used in any letter cases).
+New tables are created using the "+ New Table" button. An input that prompts for a _name_ value will appear, with which the table can named. All tables require unique names (`attribute`, `workspace` names and their plural form are reserved and cannot be used in any letter cases).
 
 As soon as a table is created, corresponding GraphQL schema types and query, mutation, and subscription resolvers will be generated automatically.
 
@@ -30,7 +31,7 @@ As soon as a table is created, corresponding GraphQL schema types and query, mut
 
 To improve look up performance on your tables, you can add one or more of your own indexes. This feature is found in the table settings.
 
-You can select one or several fields in the table by which the index will be generated, as well as whether or not it should be a *Unique Index*. When naming the index, ensure the name does not contain spaces.
+You can select one or several fields in the table by which the index will be generated, as well as whether or not it should be a _Unique Index_. When naming the index, ensure the name does not contain spaces.
 
 ![Creating new table index in the Data Builder](./images/creating-table-indexes.png)
 
@@ -42,14 +43,14 @@ As soon as a table is updated, its corresponding GraphQL schema types and query,
 
 To ensure that table related errors and mistakes are minimized, 8base protects against **dozens** of harmful actions. Some of these include:
 
-* A prompt that requires a *Default Value* will appear when changing a **non-mandatory** field to **mandatory**.
-* Date, Number, and Text field values are automatically converted when an existing field *type* is updated.
-* When changing a **non-unique** field to **unique**, current records are validated for having unique values.
-* Many more!
+- A prompt that requires a _Default Value_ will appear when changing a **non-mandatory** field to **mandatory**.
+- Date, Number, and Text field values are automatically converted when an existing field _type_ is updated.
+- When changing a **non-unique** field to **unique**, current records are validated for having unique values.
+- Many more!
 
 ### Deleting Tables
 
-When attempting to delete a table, a confirmation input requires the table name to be entered. Please know that deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if any other tables are related to the table being deleted - *belongs to* and *has many*, either specified as mandatory or not - those relations will be severed.
+When attempting to delete a table, a confirmation input requires the table name to be entered. Please know that deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if any other tables are related to the table being deleted - _belongs to_ and _has many_, either specified as mandatory or not - those relations will be severed.
 
 ![Deleting table's in the Data Builder](./images/data-builder-delete-table.png)
 
@@ -57,11 +58,11 @@ When attempting to delete a table, a confirmation input requires the table name 
 
 8base supports 3 types of table relationships to be defined that are congruent with what to expect from relational databases:
 
-| Type | *A* to *B* | *B* to *A* |
-| -- | -- | -- |
-| `one-to-one` | Records in table A may `have_one` or `belong_to` records in table B. | Records in table B may `have_one` or `belong_to` records in table A. |
-| `one-to-many` | Record in table A may `have_many` records in table B. | Records in table B may `have_one` or `belong_to` records in table A. |
-| `many-to-many` | Record in table A may `have_many` records in table B. | Record in table B may `have_many` records in table A. |
+| Type           | _A_ to _B_                                                           | _B_ to _A_                                                           |
+| -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `one-to-one`   | Records in table A may `have_one` or `belong_to` records in table B. | Records in table B may `have_one` or `belong_to` records in table A. |
+| `one-to-many`  | Record in table A may `have_many` records in table B.                | Records in table B may `have_one` or `belong_to` records in table A. |
+| `many-to-many` | Record in table A may `have_many` records in table B.                | Record in table B may `have_many` records in table A.                |
 
 ![Defining relationships in the Data Builder](./images/data-builder-making-relationships.gif)
 
@@ -69,19 +70,19 @@ Defining a relationship between two tables can be accomplished by dragging and d
 
 #### Table Configurations
 
-For specifying *has many*, *has one* and *belongs to* relationships between tables.
+For specifying _has many_, _has one_ and _belongs to_ relationships between tables.
 
 Configurations
 
-* *Table* - For selecting what table is to be related.
-* *Relation Field Name* - The name of the relation as it appears on the **corresponding** table.
-* *Allow Multiple X to Y* - Whether the relationship is *has one* or *has many*.
-* *Mandatory* - Whether the field relationship is required.
-* *Description* - A meta description used for documentation.
+- _Table_ - For selecting what table is to be related.
+- _Relation Field Name_ - The name of the relation as it appears on the **corresponding** table.
+- _Allow Multiple X to Y_ - Whether the relationship is _has one_ or _has many_.
+- _Mandatory_ - Whether the field relationship is required.
+- _Description_ - A meta description used for documentation.
 
 #### Self-Referential Relationships
 
-Self-Referential relationships can be defined by relating tables to themselves! For example, a the *Users* table might have a `many-to-many` relationship with itself, and use a named association of *friends*.
+Self-Referential relationships can be defined by relating tables to themselves! For example, a the _Users_ table might have a `many-to-many` relationship with itself, and use a named association of _friends_.
 
 ### Table Types
 
@@ -93,11 +94,11 @@ Custom tables are the tables created in any workspace by the administrator. They
 
 #### System Tables
 
-System tables - like *Users* - are tables that come delivered with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they can neither be deleted, renamed, nor their existing fields changes.
+System tables - like _Users_ - are tables that come delivered with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they can neither be deleted, renamed, nor their existing fields changes.
 
 #### View Tables
 
-View Tables are virtual tables that aggregate fields from several or more tables into a single *view*. Under the hood, they are based on the result-set of an SQL statement. In a workspace, they can be created using the `viewCreate` GraphQL mutation in the API Explorer. 
+View Tables are virtual tables that aggregate fields from several or more tables into a single _view_. Under the hood, they are based on the result-set of an SQL statement. In a workspace, they can be created using the `viewCreate` GraphQL mutation in the API Explorer.
 
 For more information on views, [check this out](https://www.w3schools.com/sql/sql_view.asp).
 
@@ -107,11 +108,11 @@ For more information on views, [check this out](https://www.w3schools.com/sql/sq
 
 ### Creating Fields
 
-Every field gets defined in a table and requires a *name* and a *type*. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations - each being specific to the field *type*.
+Every field gets defined in a table and requires a _name_ and a _type_. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations - each being specific to the field _type_.
 
 ### Updating Fields
 
-Fields are easily updated using the same interface used to create them. Updates to attributes like the field's *name* - and even *type* in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
+Fields are easily updated using the same interface used to create them. Updates to attributes like the field's _name_ - and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
 
 ![Updating fields in the Data Builder](./images/data-builder-field-update.png)
 
@@ -125,106 +126,106 @@ To delete a field, click the "X" to the right of the field name input. and enter
 
 #### Text
 
-For storing *String* data.
+For storing _String_ data.
 
 Configurations
 
-* *Format* - For specifying what values the field stores (*Plain*, *HTML* or *Markdown*).
-* *Field Size* - The maximum string length.
-* *Allow Multiple* - Stores 0 or more *Text* values in an array (not searchable).
-* *Mandatory* - Whether the field value is required.
-* *Unique* - Whether the field value is required to be unique.
-* *Default Value* - A default value assigned to new records.
-* *Description* - A meta description used for documentation.
+- _Format_ - For specifying what values the field stores (_Plain_, _HTML_ or _Markdown_).
+- _Field Size_ - The maximum string length.
+- _Allow Multiple_ - Stores 0 or more _Text_ values in an array (not searchable).
+- _Mandatory_ - Whether the field value is required.
+- _Unique_ - Whether the field value is required to be unique.
+- _Default Value_ - A default value assigned to new records.
+- _Description_ - A meta description used for documentation.
 
 #### Number
 
-For storing *Integer*, *BigInt*, and *Float* data.
+For storing _Integer_, _BigInt_, and _Float_ data.
 
 Configurations
 
-* *Decimal Place* - How many decimal places *Float* values maintain.
-* *Big Number* - For numbers outside the range `-2^63 (-9,223,372,036,854,775,808) to 2^63-1 (9,223,372,036,854,775,807)`
-* *Minimum Value* - The minimum value required.
-* *Maximum Value* - The maximum value required.
-* *Allow Multiple* - Stores 0 or more *Number* values in an array (not searchable).
-* *Mandatory* - Whether the field value is required.
-* *Unique* - Whether the field value is required to be unique.
-* *Default Value* - A default value assigned to new records.
-* *Description* - A meta description used for documentation.
+- _Decimal Place_ - How many decimal places _Float_ values maintain.
+- _Big Number_ - For numbers outside the range `-2^63 (-9,223,372,036,854,775,808) to 2^63-1 (9,223,372,036,854,775,807)`
+- _Minimum Value_ - The minimum value required.
+- _Maximum Value_ - The maximum value required.
+- _Allow Multiple_ - Stores 0 or more _Number_ values in an array (not searchable).
+- _Mandatory_ - Whether the field value is required.
+- _Unique_ - Whether the field value is required to be unique.
+- _Default Value_ - A default value assigned to new records.
+- _Description_ - A meta description used for documentation.
 
 #### Date
 
-For storing *Date* and *DateTime* data.
+For storing _Date_ and _DateTime_ data.
 
 Configurations
 
-* *Format* - Whether the field stores a *Date* or a *DateTime* value.
-* *Allow Multiple* - Stores 0 or more *Date* values in an array (not searchable).
-* *Mandatory* - Whether the field value is required.
-* *Unique* - Whether the field value is required to be unique.
-* *Default Value* - A default value assigned to new records.
-* *Description* - A meta description used for documentation.
+- _Format_ - Whether the field stores a _Date_ or a _DateTime_ value.
+- _Allow Multiple_ - Stores 0 or more _Date_ values in an array (not searchable).
+- _Mandatory_ - Whether the field value is required.
+- _Unique_ - Whether the field value is required to be unique.
+- _Default Value_ - A default value assigned to new records.
+- _Description_ - A meta description used for documentation.
 
 #### Switch
 
-For storing *Boolean* and custom *Enum* type data.
+For storing _Boolean_ and custom _Enum_ type data.
 
 Configurations
 
-* *Format* - For specifying the *Boolean* type (true / false, yes / no, etc...)
-* *Allow Multiple* - Stores 0 or more *Boolean* values in an array (not searchable).
-* *Mandatory* - Whether the field value is required.
-* *Default Value* - A default value assigned to new records.
-* *Description* - A meta description used for documentation.
+- _Format_ - For specifying the _Boolean_ type (true / false, yes / no, etc...)
+- _Allow Multiple_ - Stores 0 or more _Boolean_ values in an array (not searchable).
+- _Mandatory_ - Whether the field value is required.
+- _Default Value_ - A default value assigned to new records.
+- _Description_ - A meta description used for documentation.
 
 #### File
 
-For storing *Image* and *File* objects.
+For storing _Image_ and _File_ objects.
 
 Configurations
 
-* *Format* - Whether the field stores a *File* or an *Image*.
-* *Allow Multiple* - Stores 0 or more *File* objects in an array.
-* *Mandatory* - Whether the field value is required.
-* *Description* - A meta description used for documentation.
+- _Format_ - Whether the field stores a _File_ or an _Image_.
+- _Allow Multiple_ - Stores 0 or more _File_ objects in an array.
+- _Mandatory_ - Whether the field value is required.
+- _Description_ - A meta description used for documentation.
 
 #### Table
 
-For specifying *has many*, *has one* and *belongs to* relationships between tables.
+For specifying _has many_, _has one_ and _belongs to_ relationships between tables.
 
 Configurations
 
-* *Table* - For selecting what table is to get related.
-* *Relation Field Name* - The name of the relation as it appears on the **corresponding** table.
-* *Allow Multiple X to Y* - Whether the relationship is *has one* or *has many*.
-* *Mandatory* - Whether the field relationship is required.
-* *Description* - A meta description used for documentation.
+- _Table_ - For selecting what table is to get related.
+- _Relation Field Name_ - The name of the relation as it appears on the **corresponding** table.
+- _Allow Multiple X to Y_ - Whether the relationship is _has one_ or _has many_.
+- _Mandatory_ - Whether the field relationship is required.
+- _Description_ - A meta description used for documentation.
 
 #### Smart
 
-For storing *addresses* and *phone numbers* with managed validations and logic. 
+For storing _addresses_ and _phone numbers_ with managed validations and logic.
 
 Configurations
 
-* *Format* - Whether the field stores a *Phone Number* or an *Address*.
-* *Allow Multiple* - Stores 0 or more *Smart* objects in an array.
-* *Mandatory* - Whether the field value is required.
-* *Description* - A meta description used for documentation.
+- _Format_ - Whether the field stores a _Phone Number_ or an _Address_.
+- _Allow Multiple_ - Stores 0 or more _Smart_ objects in an array.
+- _Mandatory_ - Whether the field value is required.
+- _Description_ - A meta description used for documentation.
 
 #### JSON
 
-For storing *JSON* objects.
+For storing _JSON_ objects.
 
 Configurations
 
-* *Mandatory* - Whether the field value is required.
-* *Default Value* - A default value assigned to new records.
-* *Description* - A meta description used for documentation.
+- _Mandatory_ - Whether the field value is required.
+- _Default Value_ - A default value assigned to new records.
+- _Description_ - A meta description used for documentation.
 
 ### Smart Fields
 
-*Smart Fields* are enriched field types offered by 8base. They provide structure, and sometimes logic, to the organization and validation of common data.
+_Smart Fields_ are enriched field types offered by 8base. They provide structure, and sometimes logic, to the organization and validation of common data.
 
 #### Address
 
@@ -232,13 +233,13 @@ For persisting addresses in a field. The `address` field will display available 
 
 ```ts
 type Address = {
-  country: !String
-  street1: !String
-  street2: String
-  zip: !String
-  city: !String
-  state: !String
-}
+  country: !String;
+  street1: !String;
+  street2: String;
+  zip: !String;
+  city: !String;
+  state: !String;
+};
 ```
 
 #### Phone
@@ -247,35 +248,35 @@ For persisting phone numbers in a field. The `phone` field will display availabl
 
 ```ts
 type Phone = {
-  code: !String
-  number: !String
-}
+  code: !String;
+  number: !String;
+};
 ```
 
 ### Auto Increment Fields
 
-When using *Number* field types, the "Auto-Increment" option is available under the fields *Advanced Settings*.
+When using _Number_ field types, the "Auto-Increment" option is available under the fields _Advanced Settings_.
 The system will automatically increment a number value for the field when selected, starting at 1.
 
-Fields that have been created using *Auto Increment* can be deleted, though they are **not** editable via the console or API when in use. Similar to an integer-based Primary Key, the value always escalates. This means that if five-records are created and receive the values 1-5 in their *Auto Increment* fields, whether or not those records get deleted, the next record will be assigned a value of 6.
+Fields that have been created using _Auto Increment_ can be deleted, though they are **not** editable via the console or API when in use. Similar to an integer-based Primary Key, the value always escalates. This means that if five-records are created and receive the values 1-5 in their _Auto Increment_ fields, whether or not those records get deleted, the next record will be assigned a value of 6.
 
 ### Calculated Fields
 
-Under *Advanced Settings* for field types *Text*, *Number*, *Date*, *Switch*, and *JSON* the "Calculated" option is available. This feature follows the [MySQL Generated Column standard](https://dev.mysql.com/doc/refman/5.7/en/create-table-generated-columns.html).
+Under _Advanced Settings_ for field types _Text_, _Number_, _Date_, _Switch_, and _JSON_ the "Calculated" option is available. This feature follows the [MySQL Generated Column standard](https://dev.mysql.com/doc/refman/5.7/en/create-table-generated-columns.html).
 
 #### Calculated Field Types
 
 The "Virtual" and "Stored" options will indicate how values are stored, which has the following implications when used:
 
-* *Virtual* - Values are not stored, but are evaluated when rows are read. A virtual column takes no storage.
+- _Virtual_ - Values are not stored, but are evaluated when rows are read. A virtual column takes no storage.
 
-* *Stored* - Values are evaluated and stored when rows are inserted or updated. A stored column requires storage space and can be indexed.
+- _Stored_ - Values are evaluated and stored when rows are inserted or updated. A stored column requires storage space and can be indexed.
 
 ![Adding Full Name Field to Users table in 8base Console](./images/calculated-field-full-name.png)
 
-When creating *Calculated Fields*, you only have access to fields stored on the record itself. Any field can be accessed using the same field names seen on the GraphQL API. The **return value of the calculation must be the same as the set field type**.
+When creating _Calculated Fields_, you only have access to fields stored on the record itself. Any field can be accessed using the same field names seen on the GraphQL API. The **return value of the calculation must be the same as the set field type**.
 
-For example, adding a *Full Name* field to the User's table could be accomplished using a virtual calculated field with the expression set to `CONCAT(firstName, " ", lastName)`. This would add a `fullName` attribute to our API queries.
+For example, adding a _Full Name_ field to the User's table could be accomplished using a virtual calculated field with the expression set to `CONCAT(firstName, " ", lastName)`. This would add a `fullName` attribute to our API queries.
 
 ```javascript
 GqlQuery = `
@@ -286,22 +287,22 @@ GqlQuery = `
       }
     }
   }
-`
+`;
 
 JsonResponse = {
-  "data": {
-    "usersList": {
-      "items": [
+  data: {
+    usersList: {
+      items: [
         {
-          "fullName": "John Smith"
-        }
-      ]
-    }
-  }
-}
+          fullName: 'John Smith',
+        },
+      ],
+    },
+  },
+};
 ```
 
-There is a long list of available MySQL Functions that are referenced, with further documentation [MySQL Docs. Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html), all of which are available when using *Calculated Fields*. All operators, with simple descriptions, are listed below.
+There is a long list of available MySQL Functions that are referenced, with further documentation [MySQL Docs. Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html), all of which are available when using _Calculated Fields_. All operators, with simple descriptions, are listed below.
 
 ```
 | Name | Description |

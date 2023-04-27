@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-date-picker'
 sidebar_label: 'Date Picker'
-slug: '/frontend/app-components/input-components/date-picker'
+redirect_from: '/frontend/app-components/input-components/date-picker'
+slug: '/projects/frontend/app-components/input-components/date-picker'
 ---
 
 # Date Picker
-The *Date Picker* component allows the user to select a date. *Date Picker* components display in dialogs on mobile devices and text drop-downs on desktops.
 
-The *Date Picker* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Date Picker_ component allows the user to select a date. _Date Picker_ components display in dialogs on mobile devices and text drop-downs on desktops.
+
+The _Date Picker_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -28,6 +31,7 @@ The *Date Picker* component is used independently or as a form component. To use
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -37,4 +41,4 @@ The *Date Picker* component is used independently or as a form component. To use
 </tbody>
 </table>
 
-For more detail on the *Date Picker* component, see the [MUI developer docs](https://mui.com/x/api/date-pickers/date-picker/).
+For more detail on the _Date Picker_ component, see the [MUI developer docs](https://mui.com/x/api/date-pickers/date-picker/).

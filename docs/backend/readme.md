@@ -1,7 +1,8 @@
 ---
 id: 'console-readme'
 sidebar_label: 'Introduction'
-slug: '/backend'
+redirect_from: '/backend'
+slug: '/projects/backend'
 ---
 
 # Introduction

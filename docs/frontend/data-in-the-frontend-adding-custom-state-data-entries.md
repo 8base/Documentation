@@ -1,13 +1,15 @@
 ---
 id: 'data-in-the-frontend-adding-custom-state-data-entries'
 sidebar_label: 'Adding custom state data entries'
-slug: '/frontend/data-in-the-frontend/adding-custom-state-data-entries'
+redirect_from: '/frontend/data-in-the-frontend/adding-custom-state-data-entries'
+slug: '/projects/frontend/data-in-the-frontend/adding-custom-state-data-entries'
 ---
 
 # Adding custom state data entries
+
 This article describes how developers can add custom state entries in their front-end applications.
 
-___
+---
 
 ## What are custom state data entries?
 
@@ -34,12 +36,12 @@ Whether you create the custom state entry within the global or local namespace w
 Custom state data entries can be used for a variety of purposes, including:
 
 - Tracking application data
-: e.g. a "currentUser" entry that stores information about the logged-in user
+  : e.g. a "currentUser" entry that stores information about the logged-in user
 
 - Temporarily storing data on the client side
-: e.g. a "cart" entry that stores information about items in a user's shopping cart
+  : e.g. a "cart" entry that stores information about items in a user's shopping cart
 
 - Debugging purposes
-: e.g. an "isDebug" flag that enables/disables certain features in the application for debugging purposes
+  : e.g. an "isDebug" flag that enables/disables certain features in the application for debugging purposes
 
 They are a very flexible feature of App Builder that can enable anything from custom authentication flows to new theming configurations.

@@ -1,18 +1,21 @@
 ---
 id: 'app-components-input-components-autocomplete'
 sidebar_label: 'Autocomplete'
-slug: '/frontend/app-components/input-components/autocomplete'
+redirect_from: '/frontend/app-components/input-components/autocomplete'
+slug: '/projects/frontend/app-components/input-components/autocomplete'
 ---
 
 # Autocomplete
-The *Autocomplete* component is a single-line textbox component that is useful in two scenarios:
+
+The _Autocomplete_ component is a single-line textbox component that is useful in two scenarios:
 
 1. As a **combo-box** - a value is chosen from a predefined set of options such as a country list.
 2. As a **free-solo** - the textbox may contain an arbitrary value, but it saves the user time by suggesting values. An example is Google Search, where a completion string appears inline after the input cursor.
 
-The *Autocomplete* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Autocomplete_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -62,6 +65,7 @@ The *Autocomplete* component is used independently or as a form component. To us
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -74,16 +78,19 @@ The *Autocomplete* component is used independently or as a form component. To us
 </table>
 
 ## Subcomponents
-The *Autocomplete* component has a subcomponent that allows an icon to replace the default popup or clear icons.
+
+The _Autocomplete_ component has a subcomponent that allows an icon to replace the default popup or clear icons.
 
 ### Icon
-*Popup Icon* - specifies an icon to replace the default popup icon.
 
-*Clear Icon* - specifies an icon to replace the clear icon.
+_Popup Icon_ - specifies an icon to replace the default popup icon.
+
+_Clear Icon_ - specifies an icon to replace the clear icon.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -97,4 +104,4 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </tbody>
 </table>
 
-For more detail on the *Autocomplete* component, see the [MUI developer docs](https://mui.com/material-ui/api/autocomplete/).
+For more detail on the _Autocomplete_ component, see the [MUI developer docs](https://mui.com/material-ui/api/autocomplete/).

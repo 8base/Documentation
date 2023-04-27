@@ -1,19 +1,19 @@
 ---
 id: '8base-console-custom-functions-webhooks'
 sidebar_label: 'Webhooks'
-slug: '/backend/custom-functions/webhooks'
+redirect_from: '/backend/custom-functions/webhooks'
+slug: '/projects/backend/custom-functions/webhooks'
 ---
 
 # Webhooks
 
-A *webhook* allows you to call *Custom Functions* as regular RESTful endpoints. They can be very useful if you integrate with a 3rd party service that posts data back to your app using a specified URL. For example, enabling a payment processing service such as Stripe or Coinbase Commerce to notify your app of a successful payment by calling *X* URL.
+A _webhook_ allows you to call _Custom Functions_ as regular RESTful endpoints. They can be very useful if you integrate with a 3rd party service that posts data back to your app using a specified URL. For example, enabling a payment processing service such as Stripe or Coinbase Commerce to notify your app of a successful payment by calling _X_ URL.
 
 ## 8base.yml Declaration
 
 Webhooks have an optional parameter `path` that allows you to manually specify the final URL fragment. By default, it gets defined as the function name.
 
 ```yaml
-
 functions:
   #
   # Using a default path, the deployed endpoint would
@@ -55,14 +55,14 @@ Webhook functions support the use of path parameters. Path parameters are parame
 For example, lets change the last example to include a value named `customerId` in the path. This gets declared in the project's `8base.yml`.
 
 ```yaml
-...
-  paymentWebhookCustomPath:
-    handler:
-      code: src/paymentWebhook.js
-    type: webhook
-    # customerId path parameter
-    path: '{customerId}/successful-charge-notice'
-    method: POST
+---
+paymentWebhookCustomPath:
+  handler:
+    code: src/paymentWebhook.js
+  type: webhook
+  # customerId path parameter
+  path: '{customerId}/successful-charge-notice'
+  method: POST
 ```
 
 Once deployed, the updated webhook endpoint gets set to `https://api.8base.com/<WORKSPACE_ID>/webhook/{customerId}/successful-charge-notice` and allows for a `customerId` param to be accessed on the `event` argument.
@@ -91,15 +91,16 @@ In this example, the webhook's path is `{client}/protected-webhook`. We expect t
 ```javascript
 module.exports = async (event, ctx) => {
   /* Validate access using custom header */
-  const accessToken = process.env[`${event.pathParameters.client}_ACCESS_TOKEN`];
+  const accessToken =
+    process.env[`${event.pathParameters.client}_ACCESS_TOKEN`];
   const headerToken = event.headers['X-CLIENT-ACCESS-TOKEN'];
 
   if (!Boolean(accessToken) && accessToken != headerToken) {
     return {
       statusCode: 403,
-      body: JSON.stringify({ message: 'Unauthorized access' })
-    }
-  };
+      body: JSON.stringify({ message: 'Unauthorized access' }),
+    };
+  }
 
   /* Function code */
 };
@@ -109,21 +110,24 @@ module.exports = async (event, ctx) => {
 
 The format of the response object is left entirely up to the developer, giving full control over the returned HTTP status code, headers and response body.
 
-*An HTTP `statusCode` value is required*
+_An HTTP `statusCode` value is required_
 
 ```javascript
 return {
   statusCode: 200, // statusCode is required
   headers: {
-    "x-custom-header" : "My Header Value"
+    'x-custom-header': 'My Header Value',
   },
-  body: JSON.stringify({ message: "Hello World!" })
+  body: JSON.stringify({ message: 'Hello World!' }),
 };
 ```
+
 <!--{% hint style="info" %}-->
+
 #### Getting the webhook URL
 
 In order to get your webhook URL after you have deployed it, run `8base describe [FUNCTION_NAME]` using the CLI.
+
 <!--{% endhint %}-->
 
 ### Example
@@ -138,21 +142,18 @@ Here is an example webhook with in-code documentation to help you get started.
 import gql from 'graphql-tag';
 
 /**
- * Custom modules can get imported (and shared between functions) 
+ * Custom modules can get imported (and shared between functions)
  * by importing/requiring them using relative paths.
  */
 import { sendMail, GMAIL_USER } from '../../mailer';
 
 /**
- * Inside the webhook, API calls can be executed against your 
+ * Inside the webhook, API calls can be executed against your
  * workspace and 3rd party API's.
  */
 const INVOICE_MUTATION = gql`
   mutation Invoice($id: ID!, $state: STRING!) {
-    invoiceUpdate(data: {
-      id: $id
-      state: $state
-    }) {
+    invoiceUpdate(data: { id: $id, state: $state }) {
       id
       state
       customer {
@@ -168,13 +169,13 @@ const INVOICE_MUTATION = gql`
  * A response body can get specified as a stringified JSON object and any
  * custom headers set.
  */
-const responseBuilder = (code=200, message=undefined, headers={}) => ({
+const responseBuilder = (code = 200, message = undefined, headers = {}) => ({
   body: JSON.stringify({ message }),
   statusCode: code,
-  headers
+  headers,
 });
 
-/** 
+/**
  * The webhook function's handler can be synchronous or asynchronous and
  * is always passed the event, and context (ctx) arguments.
  */
@@ -194,9 +195,9 @@ module.exports = async (event, ctx) => {
       id: eventData.invoiceId,
       state: eventData.chargeType,
     });
-  /* Handle errors for failed GraphQL mutation */
+    /* Handle errors for failed GraphQL mutation */
   } catch (e) {
-    return responseBuilder(422, "Failed to update invoice");
+    return responseBuilder(422, 'Failed to update invoice');
   }
 
   try {
@@ -204,10 +205,12 @@ module.exports = async (event, ctx) => {
      * If the update was successful, send an email to the
      * app user notifying them.
      */
-    const { invoiceUpdatenv: { customer } } = response;
+    const {
+      invoiceUpdatenv: { customer },
+    } = response;
 
     /* Add email event to logs */
-    console.log(`Sending email to ${customer.email}...`)
+    console.log(`Sending email to ${customer.email}...`);
 
     /* Send email using imported module */
     await sendMail({
@@ -218,10 +221,10 @@ module.exports = async (event, ctx) => {
         Hi ${customer.name},
         You're invoice was just marked ${invoiceUpdate.state}
         Thanks!
-      `
+      `,
     });
 
-  /* Handle error for failed email */
+    /* Handle error for failed email */
   } catch (e) {
     return responseBuilder(400, 'Failed to notify user');
   }

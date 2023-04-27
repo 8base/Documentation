@@ -1,14 +1,15 @@
 ---
 id: 'app-navigation-create-and-editing-app-pages-using-url-fragment-parameters'
 sidebar_label: 'Using URL Fragment Parameters'
-slug: '/frontend/app-navigation/create-and-editing-app-pages/using-url-fragment-parameters'
+redirect_from: '/frontend/app-navigation/create-and-editing-app-pages/using-url-fragment-parameters'
+slug: '/projects/frontend/app-navigation/create-and-editing-app-pages/using-url-fragment-parameters'
 ---
 
 # Using URL Fragment Params
 
 This article describes how developers use URL fragment parameters.
 
-___
+---
 
 In App Builder, the `router` is a global state entry provided to every page. On the currently active route, App Builder parses and makes available any fragment params included in the URL path.
 
@@ -18,5 +19,5 @@ This makes it so that you can access `fragments` for the current route in any fu
 
 ```js
 // Accessing the fragments of the current page from the router
-var urlFragments = router.currentRoute.fragments
-``` 
+var urlFragments = router.currentRoute.fragments;
+```

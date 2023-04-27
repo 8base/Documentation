@@ -1,14 +1,15 @@
 ---
 id: 'custom-frontend-logic-calling-frontend-functions'
 sidebar_label: 'Calling Frontend Functions'
-slug: '/frontend/custom-frontend-logic/calling-frontend-functions'
+redirect_from: '/frontend/custom-frontend-logic/calling-frontend-functions'
+slug: '/projects/frontend/custom-frontend-logic/calling-frontend-functions'
 ---
 
 # Calling Frontend Functions
 
-This article describes how developers can call frontend functions in App Builder___
+This article describes how developers can call frontend functions in App Builder\_\_\_
 
-___
+---
 
 In App Builder, developers can add custom frontend logic by calling frontend functions. This is useful when you want to perform an action on the client side, yet encapsulate your code in a reusable function.
 

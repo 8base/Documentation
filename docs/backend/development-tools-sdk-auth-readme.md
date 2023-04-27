@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-sdk-auth-readme'
 sidebar_label: 'Auth Module'
-slug: '/backend/development-tools/sdk/auth'
+redirect_from: '/backend/development-tools/sdk/auth'
+slug: '/projects/backend/development-tools/sdk/auth'
 ---
 
 # Auth Module
@@ -56,12 +57,12 @@ The `CUSTOM_AUTH` strategy is used when the _Authentication Profile_ is set to "
 import Auth from '8base-sdk/auth';
 
 const OpenIDConfig = {
-  strategy: "CUSTOM_AUTH",
+  strategy: 'CUSTOM_AUTH',
   /* Strategy settings */
   settings: {
     /* 8base Authentication Profile ID */
-    authProfileId: "8BASE_AUTHENTICATION_PROFILE_ID",
-  }
+    authProfileId: '8BASE_AUTHENTICATION_PROFILE_ID',
+  },
 };
 
 /* Configure 8base SDK */

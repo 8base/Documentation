@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-icon'
 sidebar_label: 'Icon'
-slug: '/frontend/app-components/other-components/icon'
+redirect_from: '/frontend/app-components/other-components/icon'
+slug: '/projects/frontend/app-components/other-components/icon'
 ---
 
 # Icon
-The *Icon* component allows an icon on a page or as an adornment on other components.
+
+The _Icon_ component allows an icon on a page or as an adornment on other components.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,6 +22,7 @@ The *Icon* component allows an icon on a page or as an adornment on other compon
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -32,6 +36,4 @@ The *Icon* component allows an icon on a page or as an adornment on other compon
 </tbody>
 </table>
 
-
-For more detail on the *Icon* component, see the [MUI developer docs](https://mui.com/material-ui/api/icon/).
-
+For more detail on the _Icon_ component, see the [MUI developer docs](https://mui.com/material-ui/api/icon/).

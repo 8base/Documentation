@@ -1,7 +1,8 @@
 ---
 id: '8base-console-graphql-api-grouping-and-aggregations-readme'
 sidebar_label: 'Grouping and Aggregations'
-slug: '/backend/graphql-api/grouping-and-aggregations'
+redirect_from: '/backend/graphql-api/grouping-and-aggregations'
+slug: '/projects/backend/graphql-api/grouping-and-aggregations'
 ---
 
 # Grouping and Aggregations
@@ -124,7 +125,6 @@ query {
 }
 ```
 
-
 ## Aggregations
 
 Every group defined has an additional `fn` property, where you can specify an array of functions (or single) to apply to the column. For example, `SUM` the column or return the `MIN` or `MAX` value.
@@ -176,7 +176,6 @@ query {
   }
 }
 ```
-
 
 ## Sorting
 
@@ -246,7 +245,6 @@ query {
   }
 }
 ```
-
 
 ## Pagination
 
@@ -324,7 +322,6 @@ query {
 }
 ```
 
-
 ## Filtering
 
 You can use the same filter parameter as in list queries and combine it with groupings. The filter will be applied before the groupBy operation.
@@ -379,7 +376,6 @@ query {
   }
 }
 ```
-
 
 ## Having
 
@@ -445,7 +441,6 @@ query {
   }
 }
 ```
-
 
 Compound having clauses are also supported in the similar way that filters do. You can specify them in two equivalent ways:
 
@@ -518,7 +513,6 @@ query {
 }
 ```
 
-
 In that case you can define multiple clauses for the same alias without alias duplication like in the previous example:
 
 **Example**
@@ -583,10 +577,9 @@ query {
 }
 ```
 
-
 ## Special grouping fields
 
-##### _group
+##### \_group
 
 8base provides a special groupBy query field called `_group`. It’s a shortcut to an aggregation function with a distinct modifier applied - { aggregate: GROUP_CONCAT, distinct: true }.
 
@@ -660,7 +653,6 @@ query {
 }
 ```
 
-
 ## Type Conversions
 
 Type conversions are designed to perform a best effort on converting actual values to the expected type. If this is impossible or meaningless, an instructive error will be thrown. The following list shows the permitted expected types and each one's actual value types that are supported.
@@ -706,6 +698,7 @@ Type conversions are designed to perform a best effort on converting actual valu
 - array of the groups records
 
 ## Aggregation Functions
+
 Each aggregation function is combined with optional distinct modifier, which is false by default.
 
 - `AVG`: Average the columns values

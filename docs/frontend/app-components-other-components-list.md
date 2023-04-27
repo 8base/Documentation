@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-list'
 sidebar_label: 'List'
-slug: '/frontend/app-components/other-components/list'
+redirect_from: '/frontend/app-components/other-components/list'
+slug: '/projects/frontend/app-components/other-components/list'
 ---
 
 # List
-The *List* component is a continuous vertical index of text or images. The *List* component uses *List Item* or *Nav-List Item* components to create a list.
+
+The _List_ component is a continuous vertical index of text or images. The _List_ component uses _List Item_ or _Nav-List Item_ components to create a list.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,14 +22,17 @@ The *List* component is a continuous vertical index of text or images. The *List
 </table>
 
 ## Subcomponents
-The *List* component has two possible subcomponents, the *List Item* and the *Nav-List Item*.
+
+The _List_ component has two possible subcomponents, the _List Item_ and the _Nav-List Item_.
 
 ### List Item
+
 A text-based item for a list.
 
 For further details, see the [List Item](./app-components-other-components-list-item) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -40,11 +46,13 @@ For further details, see the [List Item](./app-components-other-components-list-
 </table>
 
 ### Nav-List Item
+
 A navigational element within a list.
 
 For further details, see the [Nav-List Item](./app-components-other-components-nav-list-item) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -57,7 +65,6 @@ For further details, see the [Nav-List Item](./app-components-other-components-n
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an *[icon](./app-components-other-components-icon)*, *[badge](./app-components-other-components-badge)*, *[chip](./app-components-other-components-chip)* or *[container](./app-components-layout-components-container)* to the left-hand side of a list item or nav-list item.
+The **Add Left Component** allows the placement of an _[icon](./app-components-other-components-icon)_, _[badge](./app-components-other-components-badge)_, _[chip](./app-components-other-components-chip)_ or _[container](./app-components-layout-components-container)_ to the left-hand side of a list item or nav-list item.
 
-
-For more detail on the *List* component, see the [MUI developer docs](https://mui.com/material-ui/api/list/).
+For more detail on the _List_ component, see the [MUI developer docs](https://mui.com/material-ui/api/list/).

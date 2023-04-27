@@ -1,14 +1,16 @@
 ---
 id: '8base-console-graphql-api-queries-record-list-query'
 sidebar_label: 'Record List Query'
-slug: '/backend/graphql-api/queries/record-list-query'
+redirect_from: '/backend/graphql-api/queries/record-list-query'
+slug: '/projects/backend/graphql-api/queries/record-list-query'
 ---
 
 # Record List Query
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Fetching multiple table records
+
 Query list of records from a single table. Note the `items` key that denotes an array of results will get returned.
 
 <div class="code-sample">

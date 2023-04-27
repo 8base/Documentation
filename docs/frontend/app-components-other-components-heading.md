@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-heading'
 sidebar_label: 'Heading'
-slug: '/frontend/app-components/other-components/heading'
+redirect_from: '/frontend/app-components/other-components/heading'
+slug: '/projects/frontend/app-components/other-components/heading'
 ---
 
 # Heading
-The *Heading* component allows the placement of a heading on a page.
+
+The _Heading_ component allows the placement of a heading on a page.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,6 +22,7 @@ The *Heading* component allows the placement of a heading on a page.
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -31,4 +35,3 @@ The *Heading* component allows the placement of a heading on a page.
 <tr><td>noWrap</td><td>bool</td><td>false</td><td>If true, prevents the heading from wrapping.</td></tr>
 </tbody>
 </table>
-

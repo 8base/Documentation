@@ -1,7 +1,8 @@
 ---
 id: 'getting-started-connecting-to-api'
 sidebar_label: 'Connecting To API'
-slug: '/backend/getting-started/connecting-to-api'
+redirect_from: '/backend/getting-started/connecting-to-api'
+slug: '/projects/backend/getting-started/connecting-to-api'
 ---
 
 # Connecting to the API
@@ -40,6 +41,7 @@ The examples provided are in Bash, JavaScript, and Python.
 In this query, we're querying a list of todos using the `todosList` operation. If successful, the `text` field of each item in the list will be returned.
 
 **Curl**
+
 ```bash
 curl -X POST {API_ENDPOINT} \
     -H "Content-Type: application/json" \
@@ -58,10 +60,11 @@ curl -X POST {API_ENDPOINT} \
 ```
 
 **JavaScript**
+
 ```js
 // 'graphql-request' or other GraphQL library is required
-const { request } = require("graphql-request");
-const ENDPOINT = "{API_ENDPOINT}";
+const { request } = require('graphql-request');
+const ENDPOINT = '{API_ENDPOINT}';
 
 const GET_TODOS = `
 query {
@@ -73,10 +76,11 @@ query {
 }
 `;
 
-request(ENDPOINT, GET_TODOS).then(r => console.log(r.todosList.items));
+request(ENDPOINT, GET_TODOS).then((r) => console.log(r.todosList.items));
 ```
 
 **Python**
+
 ```py
 # 'graphqlclient' or other GraphQL library is required
 from graphqlclient import GraphQLClient
@@ -101,17 +105,18 @@ print(result)
 In this mutation, we're using the `todoCreate` operation to create a new note with both `text` and `completed` specified. If successful, the `id`, `text`, and `completed` fields will be returned.
 
 **Curl**
+
 ```bash
 curl -X POST {API_ENDPOINT} \
      -H "Content-Type: application/json" \
-     -d '''{ 
-          "query": "mutation TodoCreate { 
+     -d '''{
+          "query": "mutation TodoCreate {
             todoCreate(data: {
-              text: \"from CURL\", 
+              text: \"from CURL\",
               completed: false
             }) {
-              id 
-              text 
+              id
+              text
               completed
             }
           }"
@@ -119,9 +124,10 @@ curl -X POST {API_ENDPOINT} \
 ```
 
 **JavaScript**
+
 ```javascript
 // 'graphql-request' or other GraphQL library is required
-const { request } = require("graphql-request");
+const { request } = require('graphql-request');
 const ENDPOINT = `{API_ENDPOINT}`;
 
 const MAKE_TODO = `
@@ -137,10 +143,11 @@ const MAKE_TODO = `
     }
   }
 `;
-request(ENDPOINT, MAKE_TODO).then(r => console.log(r));
+request(ENDPOINT, MAKE_TODO).then((r) => console.log(r));
 ```
 
 **Python**
+
 ```py
 # `graphqlclient` or other GraphQL library is required
 from graphqlclient import GraphQLClient
@@ -169,17 +176,18 @@ print(result)
 In this mutation, we're using the `todoCreate` operation to create a new note while adding an API Token to authenticate the request. If successful, the `id`, `text`, and `completed` fields will be returned.
 
 **Curl**
+
 ```bash
 curl -X POST {API_ENDPOINT}\
      -H "Content-Type: application/json" \
      -H 'Authorization: Bearer {API_TOKEN}' \
-     -d '''{ 
-          "query": "mutation TodoCreate { 
+     -d '''{
+          "query": "mutation TodoCreate {
             todoCreate(data: {
               text: \"from CURL with auth\",
               completed: false
             }) {
-              id 
+              id
               text
               completed
             }
@@ -188,9 +196,10 @@ curl -X POST {API_ENDPOINT}\
 ```
 
 **JavaScript**
+
 ```javascript
 // 'graphql-request' or other GraphQL library is required
-const { request, GraphQLClient } = require("graphql-request");
+const { request, GraphQLClient } = require('graphql-request');
 const ENDPOINT = `{API_ENDPOINT}`;
 
 const MAKE_TODO = `
@@ -210,15 +219,16 @@ const MAKE_TODO = `
 // create a new instance of GraphQLClient in order to add an authorization header
 const client = new GraphQLClient(ENDPOINT, {
   headers: {
-    Authorization: "Bearer {API_TOKEN}"
-  }
+    Authorization: 'Bearer {API_TOKEN}',
+  },
 });
 
 // update the request function so it runs in the context of client
-client.request(MAKE_TODO).then(r => console.log(r));
+client.request(MAKE_TODO).then((r) => console.log(r));
 ```
 
 **Python**
+
 ```python
 # `graphqlclient` or other GraphQL library is required
 from graphqlclient import GraphQLClient

@@ -1,20 +1,21 @@
 ---
 id: 'app-components-customizing-styling-on-components'
 sidebar_label: 'Customizing Styling on Components'
-slug: '/frontend/app-components/customizing-styling-on-components'
+redirect_from: '/frontend/app-components/customizing-styling-on-components'
+slug: '/projects/frontend/app-components/customizing-styling-on-components'
 ---
 
 # Customizing Styling on Components
 
 This article describes how a developer can apply custom styling to component instances when working with App Builder.
 
-___
+---
 
 ![App Builders Component Styles](./_images/ab-component-settings-styles-1.png)
 
-Every component in App Builder can be styled using the styling pane. Unlike when configuring your application Theme, component styles apply to the instance they're being set on.  You can use this to make a specific component stand out or to override the theming for just one component. 
+Every component in App Builder can be styled using the styling pane. Unlike when configuring your application Theme, component styles apply to the instance they're being set on. You can use this to make a specific component stand out or to override the theming for just one component.
 
-The default components that ship with App Builder are all based on an implementation of Material UI. As a result, some have custom styling properties specific to that framework. All custom styling options that are **unique to a component** appear at the top of the styling pane. 
+The default components that ship with App Builder are all based on an implementation of Material UI. As a result, some have custom styling properties specific to that framework. All custom styling options that are **unique to a component** appear at the top of the styling pane.
 
 !["Component Specific Styles"](./_images/ab-component-settings-styles-2.png)
 
@@ -36,7 +37,7 @@ Inside the Theme section of your app, you can add global custom CSS. You can use
 }
 ```
 
-Using the **class** property on a component, you  can add the `.bg-red` class to any component you want to target with this rule:
+Using the **class** property on a component, you can add the `.bg-red` class to any component you want to target with this rule:
 
 ## Conclusion
 

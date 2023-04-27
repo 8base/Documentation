@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-divider'
 sidebar_label: 'Divider'
-slug: '/frontend/app-components/other-components/divider'
+redirect_from: '/frontend/app-components/other-components/divider'
+slug: '/projects/frontend/app-components/other-components/divider'
 ---
 
 # Divider
-The *Divider* component is a thin line that separates content areas.
+
+The _Divider_ component is a thin line that separates content areas.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -21,4 +24,4 @@ The *Divider* component is a thin line that separates content areas.
 </tbody>
 </table>
 
-For more detail on the *Divider* component, see the [MUI developer docs](https://mui.com/material-ui/api/divider/).
+For more detail on the _Divider_ component, see the [MUI developer docs](https://mui.com/material-ui/api/divider/).

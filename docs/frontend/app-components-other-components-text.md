@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-text'
 sidebar_label: 'Text'
-slug: '/frontend/app-components/other-components/text'
+redirect_from: '/frontend/app-components/other-components/text'
+slug: '/projects/frontend/app-components/other-components/text'
 ---
 
 # Text
-The *Text* component is unique in that it provides a **Rich Text Editor** (RTE) that allows the user to style text. 
+
+The _Text_ component is unique in that it provides a **Rich Text Editor** (RTE) that allows the user to style text.
 
 The RTE has the following features.
+
 - B - bold text
 - I - italic text
 - Unordered list - create an unordered list
@@ -18,6 +21,7 @@ The RTE has the following features.
 - Redo - redo the previous change
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -27,5 +31,3 @@ The RTE has the following features.
 <tr><td>text</td><td>string</td><td></td><td>Defines the text within the RTE container.</td></tr>
 </tbody>
 </table>
-
-

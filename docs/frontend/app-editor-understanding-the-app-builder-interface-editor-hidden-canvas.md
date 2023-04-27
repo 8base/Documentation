@@ -1,7 +1,8 @@
 ---
 id: 'app-editor-understanding-the-app-builder-interface-editor-hidden-canvas'
 sidebar_label: 'Editor Hidden Canvas'
-slug: '/frontend/app-editor/understanding-the-app-builder-interface/editor-hidden-canvas'
+redirect_from: '/frontend/app-editor/understanding-the-app-builder-interface/editor-hidden-canvas'
+slug: '/projects/frontend/app-editor/understanding-the-app-builder-interface/editor-hidden-canvas'
 ---
 
 # Editor Hidden Canvas
@@ -14,7 +15,7 @@ The Hidden Canvas area gets used to build your application's "not-seen-by-defaul
 
 To open the Hidden Canvas, open the Page Structure modal from the left menu. Using the dropdown under "Page Canvas", select "Hidden Canvas Nodes."
 
-Thisin  will show you a list of all the Hidden Components on your page and allow you to toggle their visibility. By toggling visibility to "on" by clicking the eye icon, you can bring these components into view the Editor.
+Thisin will show you a list of all the Hidden Components on your page and allow you to toggle their visibility. By toggling visibility to "on" by clicking the eye icon, you can bring these components into view the Editor.
 
 ## Creating Dialogs
 

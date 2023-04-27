@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-radio-group'
 sidebar_label: 'Radio Group'
-slug: '/frontend/app-components/input-components/radio-group'
+redirect_from: '/frontend/app-components/input-components/radio-group'
+slug: '/projects/frontend/app-components/input-components/radio-group'
 ---
 
 # Radio Group
-The *Radio Group* component allows the user to select one option from a set.
 
-The *Radio Group* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Radio Group_ component allows the user to select one option from a set.
+
+The _Radio Group_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -23,6 +26,7 @@ The *Radio Group* component is used independently or as a form component. To use
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -33,14 +37,17 @@ The *Radio Group* component is used independently or as a form component. To use
 </table>
 
 ## Subcomponents
-The *Radio Group* component has one subcomponent, a *Radio* component, used to create a list of Radio Items.
+
+The _Radio Group_ component has one subcomponent, a _Radio_ component, used to create a list of Radio Items.
 
 ### Radio
-A *Radio* button is a component that acts as a single input control and is part of a set within a *Radio Group*. It has two states, On and Off.
+
+A _Radio_ button is a component that acts as a single input control and is part of a set within a _Radio Group_. It has two states, On and Off.
 
 For further details, see the [Radio](./app-components-input-components-radio) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -56,4 +63,4 @@ For further details, see the [Radio](./app-components-input-components-radio) co
 </tbody>
 </table>
 
-For more detail on the *Radio Group* component, see the [MUI developer docs](https://mui.com/material-ui/api/radio-group/).
+For more detail on the _Radio Group_ component, see the [MUI developer docs](https://mui.com/material-ui/api/radio-group/).

@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-file-upload'
 sidebar_label: 'File Upload'
-slug: '/frontend/app-components/input-components/file-upload'
+redirect_from: '/frontend/app-components/input-components/file-upload'
+slug: '/projects/frontend/app-components/input-components/file-upload'
 ---
 
 # File Upload
-The *File Upload* component allows the user to browse and select one or more files to upload. 
 
-The *File Upload* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _File Upload_ component allows the user to browse and select one or more files to upload.
+
+The _File Upload_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -30,14 +33,17 @@ The *File Upload* component is used independently or as a form component. To use
 </table>
 
 ## Subcomponents
-The *File Upload* component has two subcomponents that allow an icon or typography to be placed as an adornment at the start or end of the text field.
+
+The _File Upload_ component has two subcomponents that allow an icon or typography to be placed as an adornment at the start or end of the text field.
 
 ### Icon
+
 Specifies an icon to use at the start or end of a text field.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -52,11 +58,13 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </table>
 
 ### Typography
+
 Specifies typography to use at the start or end of the text field.
 
 For further details, see the [Typography](./app-components-other-components-typography) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -68,8 +76,3 @@ For further details, see the [Typography](./app-components-other-components-typo
 <tr><td>gutterBottom</td><td>bool</td><td>false</td><td>Enables a gutter at the bottom of the typography component.</td></tr>
 </tbody>
 </table>
-
-
-
-
-

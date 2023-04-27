@@ -1,14 +1,15 @@
 ---
 id: 'custom-frontend-logic-creating-custom-frontend-functions'
 sidebar_label: 'Creating Custom Frontend Functions'
-slug: '/frontend/custom-frontend-logic/creating-custom-frontend-functions'
+redirect_from: '/frontend/custom-frontend-logic/creating-custom-frontend-functions'
+slug: '/projects/frontend/custom-frontend-logic/creating-custom-frontend-functions'
 ---
 
 # Creating Custom Frontend Functions
 
 This article describes how developers can create custom frontend functions in App Builder.
 
-___
+---
 
 Creating new Function in App Builder can be done by using the "Functions" tab in the left sidebar and clicking the "+" button. This will open the "Create New Function" modal.
 
@@ -24,8 +25,8 @@ Once satisfied with your Function, click the "Save" button to save it. Your new 
 
 Arguments can be specified when creating a new Function. These arguments will be available to use in the body of the function. Make sure to set the argument names in both the function code and the Arguments list, as the Arguments list will enhance your function with added validations.
 
-Arguments can be given a name and a type (string, number, bigint, boolean, symbol, or object) and declared as a single value or list of the specified type. 
+Arguments can be given a name and a type (string, number, bigint, boolean, symbol, or object) and declared as a single value or list of the specified type.
 
 ## Return Type
 
-A return type can be optionally specified when creating a new Function. The return type can be string, number, bigint, boolean, symbol, or object. If no return type is specified, the function will default to returning "void". 
+A return type can be optionally specified when creating a new Function. The return type can be string, number, bigint, boolean, symbol, or object. If no return type is specified, the function will default to returning "void".

@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-cli-readme'
 sidebar_label: 'Overview'
-slug: '/backend/development-tools/cli'
+redirect_from: '/backend/development-tools/cli'
+slug: '/projects/backend/development-tools/cli'
 ---
 
 # CLI
@@ -11,7 +12,7 @@ The 8base Command Line Interface (CLI) makes it easy to generate custom function
 ## Install
 
 ```shell
-# Install the CLI Globally 
+# Install the CLI Globally
 $ npm install -g 8base-cli
 
 # Ensure proper install

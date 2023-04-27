@@ -1,15 +1,17 @@
 ---
 id: '8base-console-graphql-api-queries-aggregation-query'
 sidebar_label: 'Aggregation Query'
-slug: '/backend/graphql-api/queries/aggregation-query'
+redirect_from: '/backend/graphql-api/queries/aggregation-query'
+slug: '/projects/backend/graphql-api/queries/aggregation-query'
 ---
 
 # Simple Aggregation
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Using aggregators in queries
-You can fetch aggregations on nodes using an aggregation query. Currently the available aggregation function is `count`. 
+
+You can fetch aggregations on nodes using an aggregation query. Currently the available aggregation function is `count`.
 
 <div class="code-sample">
 <div>

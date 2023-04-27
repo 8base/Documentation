@@ -1,16 +1,17 @@
 ---
 id: 'data-in-the-frontend-introduction'
 sidebar_label: 'Introduction'
-slug: '/frontend/data-in-the-frontend/introduction'
+redirect_from: '/frontend/data-in-the-frontend/introduction'
+slug: '/projects/frontend/data-in-the-frontend/introduction'
 ---
 
 # Introduction
 
 This article describes how developers can store and access data in their front-end applications and manage the state.
 
-___
+---
 
-In App Builder, frontend data (State Management) refers to global or locally accessible and reactive data that can be read and updated by components, resources, functions, and other app elements. 
+In App Builder, frontend data (State Management) refers to global or locally accessible and reactive data that can be read and updated by components, resources, functions, and other app elements.
 
 ![State Management](./_images/ab-state-management-into-1.png)
 

@@ -1,7 +1,8 @@
 ---
 id: '8base-console-graphql-api-geo-fields-readme'
 sidebar_label: 'Geo JSON Fields'
-slug: '/backend/graphql-api/geo-fields'
+redirect_from: '/backend/graphql-api/geo-fields'
+slug: '/projects/backend/graphql-api/geo-fields'
 ---
 
 # Geo Fields
@@ -12,15 +13,15 @@ With GeoFields, developers are able to filter records based on geo-coordinates. 
 
 The current implementation of geo filtering querying and works with _Point_ type geo fields defined on 8base tables (i.e. `[longitude, latitude]`). There are number of different geo-coordinate based predicates that can get used to query specific records. That list includes the following:
 
-- *equals*: GeoJSONCoordinates
-- *not_equals*: GeoJSONCoordinates
-- *within*: GeometryInput
-- *not_within*: GeometryInput
-- *touches*: GeometryInput
-- *not_touches*: GeometryInput
-- *inside_bounds*: GeometryBoundsInput
-- *not_inside_bounds*: GeometryBoundsInput
-- *distance*: GeometryDistanceFilterInput
+- _equals_: GeoJSONCoordinates
+- _not_equals_: GeoJSONCoordinates
+- _within_: GeometryInput
+- _not_within_: GeometryInput
+- _touches_: GeometryInput
+- _not_touches_: GeometryInput
+- _inside_bounds_: GeometryBoundsInput
+- _not_inside_bounds_: GeometryBoundsInput
+- _distance_: GeometryDistanceFilterInput
 
 Descriptions of these different types are as follows:
 
@@ -144,7 +145,7 @@ Using `extraFields` to calculate and return a records location from a supplied l
 **Query**
 
 ```graphql
-query($latlong: GeoJSONCoordinates) {
+query ($latlong: GeoJSONCoordinates) {
   tableNameList(
     extraFields: {
       location: {
@@ -202,7 +203,7 @@ Often a developer will want to both filter records based on a geo-coordinate whi
 **Query**
 
 ```graphql
-query($latlong: GeoJSONCoordinates!) {
+query ($latlong: GeoJSONCoordinates!) {
   playlistsList(
     filter: { _extraField: { alias: "distance", float: { lt: 5 } } }
     extraFields: {

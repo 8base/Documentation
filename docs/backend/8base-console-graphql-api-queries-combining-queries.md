@@ -1,12 +1,13 @@
 ---
 id: '8base-console-graphql-api-queries-combining-queries'
 sidebar_label: 'Combining Queries'
-slug: '/backend/graphql-api/queries/combining-queries'
+redirect_from: '/backend/graphql-api/queries/combining-queries'
+slug: '/projects/backend/graphql-api/queries/combining-queries'
 ---
 
 # Combining Queries
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Using multiple queries in a request
 
@@ -27,7 +28,7 @@ query {
       }
     }
   }
-  
+
   /* A list of posts from other authors */
   postsList(filter: {
     author: {
@@ -40,7 +41,7 @@ query {
       title
     }
   }
-  
+
   /* A list of others other than the huxley */
   authorsList(filter: {
     name: {

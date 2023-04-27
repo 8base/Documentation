@@ -1,14 +1,15 @@
 ---
 id: 'getting-started-what-is-app-builder'
 sidebar_label: 'What is App Builder'
-slug: '/frontend/getting-started//what-is-app-builder'
+redirect_from: '/frontend/getting-started/what-is-app-builder'
+slug: '/projects/frontend/getting-started/what-is-app-builder'
 ---
 
 # What is App Builder?
 
 Learn how App Builder works and why it's useful.
 
-_______
+---
 
 ## Why App Builder?
 
@@ -26,13 +27,13 @@ That said, how does it work?
 
 As a developer working in App Builder, you'll spend most of your time in the App Builder Editor after creating a project. The editor is where you'll be able to create application pages, configure routes, drag-and-drop components, configure components, connect to data sources, write JavaScript functions, and a whole lot more! Essentially, it's your application's command center and development environment, whether you're working on your own or a team.
 
-The application you build inside the editor is **not your built application**. Think of it as an interactive preview of your application that 8base provides so that you have a highly engaging and interactive development environment. Meanwhile, all the changes and customizations you make to your application get stored in a catalog of Domain Specific Language (DSL) files that 8base maintains and manages. These DSL files collectively represent your application and are created/updated based on your actions in the editor. 
+The application you build inside the editor is **not your built application**. Think of it as an interactive preview of your application that 8base provides so that you have a highly engaging and interactive development environment. Meanwhile, all the changes and customizations you make to your application get stored in a catalog of Domain Specific Language (DSL) files that 8base maintains and manages. These DSL files collectively represent your application and are created/updated based on your actions in the editor.
 
 At any point in the development process, you can deploy your application to a public endpoint so its intended users can access it. How does this happen?
 
 ## Build and Deploy
 
-The DSL files created when working in the App Builder Editor get compiled upon deployment. Currently, App Builder compiles the DSL into a React.js application that's then ushered through a build and deploy process which mirrors that of using the framework natively. 
+The DSL files created when working in the App Builder Editor get compiled upon deployment. Currently, App Builder compiles the DSL into a React.js application that's then ushered through a build and deploy process which mirrors that of using the framework natively.
 
 This means that after the DSL code is compiled into – or generates – React.js application code. 8base then spins up a process that runs the `build` command, which outputs a compiled web application ready to be deployed. App Builder handles deployment by uploading the code files to an S3 bucket configured with a public URL. Your application is then available to users!
 

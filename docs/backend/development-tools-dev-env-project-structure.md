@@ -1,10 +1,12 @@
 ---
 id: 'development-tools-dev-env-project-structure'
 sidebar_label: 'Project Structure'
-slug: '/backend/development-tools/dev-env/project-structure'
+redirect_from: '/backend/development-tools/dev-env/project-structure'
+slug: '/projects/backend/development-tools/dev-env/project-structure'
 ---
 
 # Project Structure
+
 When using the [8base CLI](/docs/development-tools/cli) to create a new project with all default options, it will create a directory structure that resembles the following:
 
 ```text
@@ -45,6 +47,7 @@ All the dependencies can be installed using `npm` or `yarn`. Additionally, the 8
 Following this project structure is valuable for staying organized and getting the most out of 8base's CLI. For example, the CLI's [generator commands](/docs/development-tools/cli/generators) offer great convenience for scaffolding new resources and will add generated files using pattern seen above (`src/<functionType>/<functionName>/**/*`).
 
 ## Server vs. Client
+
 It's very common that developers wish to commit their server-side and client-side code to the same git repository. In such situations, we suggest cleanly seperating the two directories at the project's root level. This will prevent a number of errors that would otherwise occure when installing dependencies and deploying code.
 
 Try using the following directory structure when committing server-side and client-side code to the same git repository:

@@ -1,13 +1,16 @@
 ---
 id: 'app-components-input-components-file-picker-8base'
 sidebar_label: 'File Picker 8base'
-slug: '/frontend/app-components/input-components/file-picker-8base'
+redirect_from: '/frontend/app-components/input-components/file-picker-8base'
+slug: '/projects/frontend/app-components/input-components/file-picker-8base'
 ---
 
 # File Picker 8base
-The *File Picker 8base* component allows a user to select multiple files to upload to an 8base workspace.
+
+The _File Picker 8base_ component allows a user to select multiple files to upload to an 8base workspace.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>

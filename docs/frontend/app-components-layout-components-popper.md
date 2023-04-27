@@ -1,15 +1,18 @@
 ---
 id: 'app-components-layout-components-popper'
 sidebar_label: 'Popper'
-slug: '/frontend/app-components/layout-components/popper'
+redirect_from: '/frontend/app-components/layout-components/popper'
+slug: '/projects/frontend/app-components/layout-components/popper'
 ---
 
 # Popper
-The *Popper* component displays content on top of other content. The component API is an alternative to the react-popper and relies on a 3rd party library, *Popper.js*, for perfect positioning.
 
-When you add a *Popper* component to a page, a *[Button](./app-components-input-components-button)* component that controls the state of the *Popper* is automatically added for you. Other components, such as an *[Icon](./app-components-other-components-icon)* or *[Image](./app-components-other-components-image)*, can also be used.
+The _Popper_ component displays content on top of other content. The component API is an alternative to the react-popper and relies on a 3rd party library, _Popper.js_, for perfect positioning.
+
+When you add a _Popper_ component to a page, a _[Button](./app-components-input-components-button)_ component that controls the state of the _Popper_ is automatically added for you. Other components, such as an _[Icon](./app-components-other-components-icon)_ or _[Image](./app-components-other-components-image)_, can also be used.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,4 +22,4 @@ When you add a *Popper* component to a page, a *[Button](./app-components-input-
 </tbody>
 </table>
 
-For more detail on the *Popper* component, see the [MUI developer docs](https://mui.com/material-ui/api/popper/).
+For more detail on the _Popper_ component, see the [MUI developer docs](https://mui.com/material-ui/api/popper/).

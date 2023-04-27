@@ -1,7 +1,8 @@
 ---
 id: 'responsive-design-in-app-builder-introduction'
 sidebar_label: 'Introduction'
-slug: '/frontend/responsive-design-in-app-builder/introduction'
+redirect_from: '/frontend/responsive-design-in-app-builder/introduction'
+slug: '/projects/frontend/responsive-design-in-app-builder/introduction'
 ---
 
 # Responsive Design Introduction
@@ -14,7 +15,7 @@ Responsive design is a term that is used to describe a website or web applicatio
 
 This is in contrast to traditional web design, where the layout is fixed and does not change regardless of the device being used.
 
-Responsive design has become increasingly important in recent years as the number of people using mobile devices to access the internet has grown. 
+Responsive design has become increasingly important in recent years as the number of people using mobile devices to access the internet has grown.
 
 ## Responsive Design Using Media Queries
 
@@ -24,7 +25,6 @@ Media queries are a CSS3 feature that allows developers to target specific style
 
 App Builder provides both a visual interface for working with media queries, as well as a code editor for CSS.
 
-When you are developing your app, you can preview how it will look on different devices by using the Viewports feature. This lets you see how your app will look on different screen sizes and orientations, and test out different media queries. 
+When you are developing your app, you can preview how it will look on different devices by using the Viewports feature. This lets you see how your app will look on different screen sizes and orientations, and test out different media queries.
 
 In the following responsive design sections, we will take a look at how you can use media queries in App Builder to create responsive apps.
-

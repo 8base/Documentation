@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-badge'
 sidebar_label: 'Badge'
-slug: '/frontend/app-components/other-components/badge'
+redirect_from: '/frontend/app-components/other-components/badge'
+slug: '/projects/frontend/app-components/other-components/badge'
 ---
 
 # Badge
-The *Badge* component is a visual element that adds a badge to the top right of a child component, such as an icon.
+
+The _Badge_ component is a visual element that adds a badge to the top right of a child component, such as an icon.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -21,6 +24,7 @@ The *Badge* component is a visual element that adds a badge to the top right of 
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -35,14 +39,17 @@ The *Badge* component is a visual element that adds a badge to the top right of 
 </table>
 
 ## Subcomponents
-The *Badge* component requires an icon child subcomponent.
+
+The _Badge_ component requires an icon child subcomponent.
 
 ### Icon
-Defines an *Icon* component used to support the badge component.
+
+Defines an _Icon_ component used to support the badge component.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -56,4 +63,4 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </tbody>
 </table>
 
-For more detail on the *Badge* component, see the [MUI developer docs](https://mui.com/material-ui/api/badge/).
+For more detail on the _Badge_ component, see the [MUI developer docs](https://mui.com/material-ui/api/badge/).

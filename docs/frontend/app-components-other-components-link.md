@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-link'
 sidebar_label: 'Link'
-slug: '/frontend/app-components/other-components/link'
+redirect_from: '/frontend/app-components/other-components/link'
+slug: '/projects/frontend/app-components/other-components/link'
 ---
 
 # Link
-The *Link* component provides a link to either a document or a location.
+
+The _Link_ component provides a link to either a document or a location.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -22,6 +25,7 @@ The *Link* component provides a link to either a document or a location.
 </table>
 
 #### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -33,8 +37,4 @@ The *Link* component provides a link to either a document or a location.
 </tbody>
 </table>
 
-For more detail on the *Link* component, see the [MUI developer docs](https://mui.com/material-ui/api/link/).
-
-
-
-
+For more detail on the _Link_ component, see the [MUI developer docs](https://mui.com/material-ui/api/link/).

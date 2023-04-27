@@ -1,16 +1,17 @@
 ---
 id: 'building-frontends-app-builder-walkthrough-connecting-to-a-data-source-8base-be-workspace'
 sidebar_label: 'Connecting to a Data Source (8base BE Workspace)'
-slug: '/frontend/building-frontends-app-builder-walkthrough/connecting-to-a-data-source-8base-be-workspace'
+redirect_from: '/frontend/building-frontends-app-builder-walkthrough/connecting-to-a-data-source-8base-be-workspace'
+slug: '/projects/frontend/building-frontends-app-builder-walkthrough/connecting-to-a-data-source-8base-be-workspace'
 ---
 
 # Connecting to a Data Source (8base BE Workspace)
- 
+
 A data source is an API client you can send requests from your app to get data to your pages and interact with APIs. In this document, we'll walk through the steps of getting one set up.
 
 ## Setting up an 8base Backend Data Source
 
-To set up a data source, click on the Resources icon in the left-side menu. It will open a modal that lists all of the available data sources. Currently, App Builder supports connecting to an API via REST or GraphQL, as well as an 8base Backend. 
+To set up a data source, click on the Resources icon in the left-side menu. It will open a modal that lists all of the available data sources. Currently, App Builder supports connecting to an API via REST or GraphQL, as well as an 8base Backend.
 
 ![Resources in App Builder](./_images/ab-resources-1.png)
 
@@ -24,7 +25,7 @@ After your 8base Backend is selected, click on it in the list of the available r
 
 ![Configuring a resource](./_images/ab-resources-configure-1.png)
 
-With 8base, it's easy to connect to the data source of your choice and start building the app of your dreams. Get started today! 
+With 8base, it's easy to connect to the data source of your choice and start building the app of your dreams. Get started today!
 
 ## Making an API Request to the Data Source
 

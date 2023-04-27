@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-sdk-readme'
 sidebar_label: 'JavaScript'
-slug: '/backend/development-tools/sdk'
+redirect_from: '/backend/development-tools/sdk'
+slug: '/projects/backend/development-tools/sdk'
 ---
 
 # JavaScript SDK
@@ -19,13 +20,13 @@ Once initialized, any configured submodule can be imported into or access in oth
 When initializing the `EightBase` class, the `workspaceId` argument is required and gets passed down automatically to all submodules. The SDK generates the workspace endpoint URLs required for all GraphQL API calls.
 
 ```javascript
-import eightBase from "8base-js-sdk";
+import eightBase from '8base-js-sdk';
 
 /**
  * Import configs (optionally stored in other files)
  */
-import authConfig from "./configs/auth.js";
-import apiConfig from "./configs/api.js";
+import authConfig from './configs/auth.js';
+import apiConfig from './configs/api.js';
 
 /**
  * Configure all SDK submodules in single configure call.
@@ -34,24 +35,24 @@ export const { api, auth } = eightBase.configure({
   /**
    * Workspace ID is required!
    */
-  workspaceId: "<WORKSPACE_ID>",
+  workspaceId: '<WORKSPACE_ID>',
   /**
    * Automatically enable refresh tokens to
    * get used by the SDK.
    */
   autoTokenRefresh: true,
   /**
-   * Specify configs for any named SDK module 
+   * Specify configs for any named SDK module
    */
   Auth: AuthConfig,
-  Api: ApiConfig
+  Api: ApiConfig,
 });
 ```
 
 Once configured, the SDK submodules can be imported into scripts and components that require them from the configuration file.
 
 ```javascript
-import { auth, api } from "8base.js";
+import { auth, api } from '8base.js';
 ```
 
 ## Available SDK Modules

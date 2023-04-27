@@ -1,14 +1,15 @@
 ---
 id: 'app-components-component-groups'
 sidebar_label: 'Component Groups'
-slug: '/frontend/app-components/component-groups'
+redirect_from: '/frontend/app-components/component-groups'
+slug: '/projects/frontend/app-components/component-groups'
 ---
 
 # Component Groups
 
 This article describes how developers can use Component Groups to group together components into a reusable object.
 
-___
+---
 
 Component Groups are a way of logically grouping together components in an app. This is useful for several reasons:
 
@@ -19,6 +20,6 @@ To create a Component Group, add any number of Components to the Page Canvas, ju
 
 ![Component Groups](./_images/ab-app-components-component-groups-1.png)
 
-Once a Group is created, it will appear  in the Components "Group" Tab with a special icon to indicate that it is a Group. You can drag-and-drop the Group onto the Page Canvas to use it just like any other Component.
+Once a Group is created, it will appear in the Components "Group" Tab with a special icon to indicate that it is a Group. You can drag-and-drop the Group onto the Page Canvas to use it just like any other Component.
 
 If you need to make changes to a Group, simply edit an existing instance of the Group and then create a new Group. **Changes made to a Group do not propagate across all instances of that Group.**

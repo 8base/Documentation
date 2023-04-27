@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-sdk-api-readme'
 sidebar_label: 'API Module'
-slug: '/backend/development-tools/sdk/api'
+redirect_from: '/backend/development-tools/sdk/api'
+slug: '/projects/backend/development-tools/sdk/api'
 ---
 
 # API Module
@@ -54,17 +55,17 @@ export const apiConfig = {
    */
   transformRequest: [
     (next, data) => {
-      next({ 
+      next({
         ...data,
         variables: {
           data: {
             timestamp: fixedTimestamp,
-          }       
-        } 
+          }
+        }
       })
     },
     (next, data) => {
-      next({ 
+      next({
         ...data
         // Something else!
       })
@@ -79,7 +80,7 @@ export const apiConfig = {
    */
   transformResponse: [
     (next, data) => {
-      next({ 
+      next({
         ...data
         response: {
           data: {
@@ -91,7 +92,7 @@ export const apiConfig = {
       })
     },
     (next, data) => {
-      next({ 
+      next({
         ...data
         // Something else!
       })
@@ -151,12 +152,12 @@ await Api.request(
   }
   `,
   {
-    email: "joe@shmo.com"
+    email: 'joe@shmo.com',
   },
   {
     headers: {
-      "X-AMZ-HEADER": "SOME-VALUE"
-    }
+      'X-AMZ-HEADER': 'SOME-VALUE',
+    },
   }
 );
 ```
@@ -182,12 +183,12 @@ await Api.query(
     }
   `,
   {
-    name: "Joe"
+    name: 'Joe',
   },
   {
     headers: {
-      "X-AMZ-HEADER": "SOME-VALUE"
-    }
+      'X-AMZ-HEADER': 'SOME-VALUE',
+    },
   }
 );
 ```
@@ -216,13 +217,13 @@ await api.mutation(
     }
   `,
   {
-    email: "joe@shmo.com",
-    newName: "Tom"
+    email: 'joe@shmo.com',
+    newName: 'Tom',
   },
   {
     headers: {
-      "X-AMZ-HEADER": "SOME-VALUE"
-    }
+      'X-AMZ-HEADER': 'SOME-VALUE',
+    },
   }
 );
 ```
@@ -243,24 +244,24 @@ const SubscriptionOptions = {
    * Any variables that will get used in the Subscription query.
    */
   variables: {
-    action: "create"
+    action: 'create',
   },
   /**
    * Callback for when the connection is opened
    */
-  open: () => console.log("Subscription connection established..."),
+  open: () => console.log('Subscription connection established...'),
   /**
    * Callback for when data is recieved
    */
-  data: data => console.log("Data recieved: ", data),
+  data: (data) => console.log('Data recieved: ', data),
   /**
    * Callback for when connection is closed
    */
-  close: () => console.log("Subscription connection closed..."),
+  close: () => console.log('Subscription connection closed...'),
   /**
    * Callback for when error is recieved
    */
-  error: err => console.log("Subscription error: ", err)
+  error: (err) => console.log('Subscription error: ', err),
 };
 
 const subscription = await api.subscription(
@@ -310,19 +311,15 @@ const InvokeOptions = {
   method: 'POST',
   /* Data passed to function */
   data: {
-    email: "joe@shmo.com"
-  }
-}
+    email: 'joe@shmo.com',
+  },
+};
 
-await api.invoke(
-  "myFunctionName",
-  InvokeOptions,
-  {
-    headers: {
-      "X-AMZ-HEADER": "SOME-VALUE"
-    }
-  }
-);
+await api.invoke('myFunctionName', InvokeOptions, {
+  headers: {
+    'X-AMZ-HEADER': 'SOME-VALUE',
+  },
+});
 ```
 
 ## Error Handlers
@@ -332,7 +329,7 @@ In the Api module config, you're able to specify error handler functions. While 
 For example, this can be useful when handling expired authentication token errors.
 
 ```javascript
-import auth from "auth.js";
+import auth from 'auth.js';
 
 const ApiConfig = {
   // other config options
@@ -347,7 +344,7 @@ const ApiConfig = {
          * call `reRun()` to execute original API call.
          */
         const { idToken } = auth.refreshToken();
-        store.setItem("id_token", idToken);
+        store.setItem('id_token', idToken);
         reRun();
         /**
          * If token refresh failed, catch error and handle user logout.
@@ -356,7 +353,7 @@ const ApiConfig = {
         auth.logout();
       }
     },
-    default: err => {}
-  }
+    default: (err) => {},
+  },
 };
 ```

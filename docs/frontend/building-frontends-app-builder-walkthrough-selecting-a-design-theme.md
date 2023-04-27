@@ -1,7 +1,8 @@
 ---
 id: 'building-frontends-app-builder-walkthrough-selecting-a-design-theme'
 sidebar_label: 'Selecting a design theme'
-slug: '/frontend/building-frontends-app-builder-walkthrough/selecting-a-design-theme'
+redirect_from: '/frontend/building-frontends-app-builder-walkthrough/selecting-a-design-theme'
+slug: '/projects/frontend/building-frontends-app-builder-walkthrough/selecting-a-design-theme'
 ---
 
 # Selecting a design theme

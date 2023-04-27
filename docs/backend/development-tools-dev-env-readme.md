@@ -1,7 +1,8 @@
 ---
 id: 'development-tools-dev-env-readme'
 sidebar_label: 'Overview'
-slug: '/backend/development-tools/dev-env'
+redirect_from: '/backend/development-tools/dev-env'
+slug: '/projects/backend/development-tools/dev-env'
 ---
 
 # Development Environment
@@ -29,6 +30,7 @@ _To test this feature, implement the `hello` resolver from [Resolvers](/docs/8ba
 `8base invoke-local hello -j '{ "data": { "name": "Bob" } }'`
 
 <!--{% hint style="info" %}-->
+
 ##### Environment Variables
 
 If you'd like to set environment variables while running `invoke-local` there are a couple of options. You can either include variables directly in the command, such as:
@@ -38,8 +40,8 @@ If you'd like to set environment variables while running `invoke-local` there ar
 you can also create a `.env` file with variables and use it as follows:
 
 `env $(cat .env | xargs) 8base invoke-local hello`
-<!--{% endhint %}-->
 
+<!--{% endhint %}-->
 
 ### Invoke functions remotely
 

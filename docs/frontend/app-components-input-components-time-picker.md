@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-time-picker'
 sidebar_label: 'Time Picker'
-slug: '/frontend/app-components/input-components/time-picker'
+redirect_from: '/frontend/app-components/input-components/time-picker'
+slug: '/projects/frontend/app-components/input-components/time-picker'
 ---
 
 # Time Picker
-The *Time Picker* component allows the user to select a single time. It renders a modal dialogue on a mobile device and a text field with a popover on a desktop.
 
-The *Time Picker* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Time Picker_ component allows the user to select a single time. It renders a modal dialogue on a mobile device and a text field with a popover on a desktop.
+
+The _Time Picker_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -37,6 +40,7 @@ The *Time Picker* component is used independently or as a form component. To use
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -46,4 +50,4 @@ The *Time Picker* component is used independently or as a form component. To use
 </tbody>
 </table>
 
-For more detail on the *Time Picker* component, see the [MUI developer docs](https://mui.com/x/api/date-pickers/time-picker/).
+For more detail on the _Time Picker_ component, see the [MUI developer docs](https://mui.com/x/api/date-pickers/time-picker/).

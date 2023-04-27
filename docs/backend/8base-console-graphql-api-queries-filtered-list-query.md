@@ -1,14 +1,16 @@
 ---
 id: '8base-console-graphql-api-queries-filtered-list-query'
 sidebar_label: 'Filtered List Query'
-slug: '/backend/graphql-api/queries/filtered-list-query'
+redirect_from: '/backend/graphql-api/queries/filtered-list-query'
+slug: '/projects/backend/graphql-api/queries/filtered-list-query'
 ---
 
 # Filtered List Queries
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Using filters in queries
+
 Query list of records that are filtered. Notice the `filter` argument.
 
 <div class="code-sample">
@@ -59,12 +61,13 @@ query {
 </div>
 </div>
 
-
 ## Conditional Filters
-Conditional filters utilize the `AND` and `OR` keys. 
+
+Conditional filters utilize the `AND` and `OR` keys.
 
 ### Using `AND`
-When `AND` is specified, all filter objects must return *truthy*. 
+
+When `AND` is specified, all filter objects must return _truthy_.
 
 <div class="code-sample">
 <div>
@@ -124,7 +127,8 @@ query {
 </div>
 
 ### Using `OR`
-When `OR` is specified, at least one filter object must return *truthy*. 
+
+When `OR` is specified, at least one filter object must return _truthy_.
 
 <div class="code-sample">
 <div>
@@ -195,6 +199,7 @@ query {
 </div>
 
 ## Nested Filters
+
 Filters, and all their elements, can be nested to satisfy more complex specs.
 
 <div class="code-sample">
@@ -286,71 +291,83 @@ query {
 </div>
 </div>
 
-
 ## Filter Types
-Depending on a field type, different filter predicates are available. 
+
+Depending on a field type, different filter predicates are available.
 
 ### ID
+
 When filtering by a field of type ID, the available predicates are:
-* *equals*: ID
-* *not_equals*: ID
-* *in*: [ID!]
-* *not_in*: [ID!]
-* *contains*: ID
-* *not_contains*: ID
-* *starts_with*: ID
-* *not_starts_with*: ID
-* *ends_with*: ID
-* *not_ends_with*: ID
-* *lt*: ID (less than)
-* *lte*: ID (less than or equal to)
-* *gt*: ID (greater than)
-* *gte*: ID (greater that or equal to)
-* *is_empty*: Boolean
-* *is_not_empty*: Boolean
+
+- _equals_: ID
+- _not_equals_: ID
+- _in_: [ID!]
+- _not_in_: [ID!]
+- _contains_: ID
+- _not_contains_: ID
+- _starts_with_: ID
+- _not_starts_with_: ID
+- _ends_with_: ID
+- _not_ends_with_: ID
+- _lt_: ID (less than)
+- _lte_: ID (less than or equal to)
+- _gt_: ID (greater than)
+- _gte_: ID (greater that or equal to)
+- _is_empty_: Boolean
+- _is_not_empty_: Boolean
 
 ### Text/String
+
 When filtering by a field of type String/Text, the available predicates are:
-* *equals*: String
-* *not_equals*: String
-* *in*: [String!]
-* *not_in*: [String!]
-* *contains*: String
-* *not_contains*: String
-* *starts_with*: String
-* *not_starts_with*: String
-* *ends_with*: String
-* *not_ends_with*: String
-* *is_empty*: Boolean
-* *is_not_empty*: Boolean
+
+- _equals_: String
+- _not_equals_: String
+- _in_: [String!]
+- _not_in_: [String!]
+- _contains_: String
+- _not_contains_: String
+- _starts_with_: String
+- _not_starts_with_: String
+- _ends_with_: String
+- _not_ends_with_: String
+- _is_empty_: Boolean
+- _is_not_empty_: Boolean
 
 ### Number/Integer
+
 When filtering by a field of type Number/Integer, the available predicates are:
-* *equals*: Int
-* *not_equals*: Int
-* *in*: [Int!]
-* *not_in*: [Int!]
-* *lt*: ID (less than)
-* *lte*: ID (less than or equal to)
-* *gt*: ID (greater than)
-* *gte*: ID (greater that or equal to)
-* *is_empty*: Boolean
-* *is_not_empty*: Boolean
+
+- _equals_: Int
+- _not_equals_: Int
+- _in_: [Int!]
+- _not_in_: [Int!]
+- _lt_: ID (less than)
+- _lte_: ID (less than or equal to)
+- _gt_: ID (greater than)
+- _gte_: ID (greater that or equal to)
+- _is_empty_: Boolean
+- _is_not_empty_: Boolean
 
 ### Switch/Boolean
+
 When filtering by a field of type Switch/Boolean, the available predicates are:
-* *equals*: Boolean
-* *not_equals*: Boolean
-* *is_empty*: Boolean
-* *is_not_empty*: Boolean
+
+- _equals_: Boolean
+- _not_equals_: Boolean
+- _is_empty_: Boolean
+- _is_not_empty_: Boolean
 
 ### Table
+
 When filtering by a relation, the available predicates are:
-* *some*: [tableName]Filter
-* *every*: [tableName]Filter
-* *none*: [tableName]Filter
+
+- _some_: [tableName]Filter
+- _every_: [tableName]Filter
+- _none_: [tableName]Filter
 
 ### Users Table
-The *Users* has two special conditional filters that can get used. They are referential to a user record and the logged in user. For example, was a *Post.createdBy* the logged in user?
-* *is_self*: Boolean
-* *not_self*: Boolean
+
+The _Users_ has two special conditional filters that can get used. They are referential to a user record and the logged in user. For example, was a _Post.createdBy_ the logged in user?
+
+- _is_self_: Boolean
+- _not_self_: Boolean

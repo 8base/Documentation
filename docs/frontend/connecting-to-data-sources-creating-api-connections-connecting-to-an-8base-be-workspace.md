@@ -1,16 +1,17 @@
 ---
 id: 'connecting-to-data-sources-creating-api-connections-connecting-to-an-8base-be-workspace'
 sidebar_label: 'Connecting to an 8base BE Workspace'
-slug: '/frontend/connecting-to-data-sources/creating-api-connections/connecting-to-an-8base-be-workspace'
+redirect_from: '/frontend/connecting-to-data-sources/creating-api-connections/connecting-to-an-8base-be-workspace'
+slug: '/projects/frontend/connecting-to-data-sources/creating-api-connections/connecting-to-an-8base-be-workspace'
 ---
 
 # Connecting to an 8base BE Workspace
 
 This article describes how developers can quickly create a Resource connected to an 8base Backend Workspace.
 
-___
+---
 
-To set up an 8base Backend Workspace as a data source, click on the Resources icon in the left-side menu. It will open a modal that lists all of the available data sources. 
+To set up an 8base Backend Workspace as a data source, click on the Resources icon in the left-side menu. It will open a modal that lists all of the available data sources.
 
 ![Resources in App Builder](./_images/ab-resources-1.png)
 
@@ -22,7 +23,7 @@ After your 8base Backend is selected, click on it in the list of available resou
 
 ![Configuring a resource](./_images/ab-resources-configure-1.png)
 
-With 8base, it's easy to connect to the data source of your choice and start building the app of your dreams. 
+With 8base, it's easy to connect to the data source of your choice and start building the app of your dreams.
 
 ## Making an API Request to the Data Source
 

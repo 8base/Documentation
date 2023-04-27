@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-select'
 sidebar_label: 'Select'
-slug: '/frontend/app-components/input-components/select'
+redirect_from: '/frontend/app-components/input-components/select'
+slug: '/projects/frontend/app-components/input-components/select'
 ---
 
 # Select
-The *Select* component provides the user with a list of options to select from. Only **one** option is chosen.
 
-The *Select* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Select_ component provides the user with a list of options to select from. Only **one** option is chosen.
+
+The _Select_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -23,8 +26,8 @@ The *Select* component is used independently or as a form component. To use it a
 </tbody>
 </table>
 
-
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -37,12 +40,15 @@ The *Select* component is used independently or as a form component. To use it a
 </table>
 
 ## Subcomponents
-The *Select* component uses a *Menu Item* subcomponent to create the options list.
+
+The _Select_ component uses a _Menu Item_ subcomponent to create the options list.
 
 ### Menu Item
-The _Menu Item_ component creates a menu item either manually or dynamically.
+
+The *Menu Item* component creates a menu item either manually or dynamically.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -55,4 +61,4 @@ The _Menu Item_ component creates a menu item either manually or dynamically.
 </tbody>
 </table>
 
-For more detail on the *Select* component, see the [MUI developer docs](https://mui.com/material-ui/api/select/).
+For more detail on the _Select_ component, see the [MUI developer docs](https://mui.com/material-ui/api/select/).

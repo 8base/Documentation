@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-multiselect'
 sidebar_label: 'Multiselect'
-slug: '/frontend/app-components/input-components/multiselect'
+redirect_from: '/frontend/app-components/input-components/multiselect'
+slug: '/projects/frontend/app-components/input-components/multiselect'
 ---
 
 # Multiselect
-The *Multiselect* component provides the user with a list of options to select from. **Multiple** options can be chosen.
 
-The *Multiselect* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Multiselect_ component provides the user with a list of options to select from. **Multiple** options can be chosen.
+
+The _Multiselect_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -25,6 +28,7 @@ The *Multiselect* component is used independently or as a form component. To use
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -37,12 +41,15 @@ The *Multiselect* component is used independently or as a form component. To use
 </table>
 
 ## Subcomponents
-The *Multiselect* component uses a *Menu Item* subcomponent to create an options list and one of three possible components *Text*, *Looper*,  or *Container* to render the multiselect.
+
+The _Multiselect_ component uses a _Menu Item_ subcomponent to create an options list and one of three possible components _Text_, _Looper_, or _Container_ to render the multiselect.
 
 ### Menu Item
-The *Menu Item* component is a list component with a special target. It is static or dynamically generated text.
+
+The _Menu Item_ component is a list component with a special target. It is static or dynamically generated text.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -56,11 +63,13 @@ The *Menu Item* component is a list component with a special target. It is stati
 </table>
 
 ### Text
-The *Text* component creates a text value for another component.
+
+The _Text_ component creates a text value for another component.
 
 For further details, see the [Text](./app-components-other-components-text) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -68,14 +77,16 @@ For further details, see the [Text](./app-components-other-components-text) comp
 <tbody>
 <tr><td>text</td><td>string</td><td></td><td>Specifies a text value for the multiselect item.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ### Looper
-The *Looper* component creates a static or dynamic data array for another component.
+
+The _Looper_ component creates a static or dynamic data array for another component.
 
 For further details, see the [Looper](./app-components-data-components-looper) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -87,9 +98,7 @@ For further details, see the [Looper](./app-components-data-components-looper) c
 </table>
 
 ### Container
+
 Defines the margin and padding around a multiselect item.
 
 For further details, see the [Container](./app-components-layout-components-container) component.
-
-
-

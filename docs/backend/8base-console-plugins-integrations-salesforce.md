@@ -1,7 +1,8 @@
 ---
 id: '8base-console-plugins-integrations-salesforce'
 sidebar_label: 'Salesforce'
-slug: '/backend/plugins-integrations/salesforce'
+redirect_from: '/backend/plugins-integrations/salesforce'
+slug: '/projects/backend/plugins-integrations/salesforce'
 ---
 
 # Salesforce

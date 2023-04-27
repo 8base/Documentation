@@ -1,13 +1,16 @@
 ---
 id: 'app-components-input-components-form-block'
 sidebar_label: 'Form Block'
-slug: '/frontend/app-components/input-components/form-block'
+redirect_from: '/frontend/app-components/input-components/form-block'
+slug: '/projects/frontend/app-components/input-components/form-block'
 ---
 
 # Form Block
-The *Form Block* component provides an area in which to design a form. All form components **must** be placed within the *Form Block* component.
+
+The _Form Block_ component provides an area in which to design a form. All form components **must** be placed within the _Form Block_ component.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>

@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-nav-list-item'
 sidebar_label: 'Nav List Item'
-slug: '/frontend/app-components/other-components/nav-list-item'
+redirect_from: '/frontend/app-components/other-components/nav-list-item'
+slug: '/projects/frontend/app-components/other-components/nav-list-item'
 ---
 
 # Nav List Item
-The *Nav List* component is a navigational element contained within a list.
+
+The _Nav List_ component is a navigational element contained within a list.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -24,9 +27,10 @@ The *Nav List* component is a navigational element contained within a list.
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an *[icon](./app-components-other-components-icon)*, *[badge](./app-components-other-components-badge)*, *[chip](./app-components-other-components-chip)* or *[container](./app-components-layout-components-container)* to the left-hand side of a nav list item.
+The **Add Left Component** allows the placement of an _[icon](./app-components-other-components-icon)_, _[badge](./app-components-other-components-badge)_, _[chip](./app-components-other-components-chip)_ or _[container](./app-components-layout-components-container)_ to the left-hand side of a nav list item.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -46,5 +50,3 @@ The **Add Left Component** allows the placement of an *[icon](./app-components-o
 <tr><td>disableRipple</td><td>bool</td><td>false</td><td>If true, the ripple effect is disabled.</td></tr>
 </tbody>
 </table>
-
-

@@ -1,18 +1,21 @@
 ---
 id: '8base-console-platform-tools-api-explorer'
 sidebar_label: 'Api Explorer'
-slug: '/backend/console/api-explorer'
+redirect_from: '/backend/console/api-explorer'
+slug: '/projects/backend/console/api-explorer'
 ---
 
 # API Explorer
+
 The API Explorer is an in-browser IDE for exploring a workspace's GraphQL API. It allows 8base developers to easily build and execute GraphQL queries from within the workspace.
 
 The API Explorer makes use of your **real, live production data!**
 
 ## Introspection
-A GraphQL schema has a built-in introspection system that publishes the schema’s structure. This allows the API Explorer to provide powerful auto-complete features when writing out GraphQL queries. 
 
-To try this for yourself, copy and paste the following code into the textarea in the API Explorer. 
+A GraphQL schema has a built-in introspection system that publishes the schema’s structure. This allows the API Explorer to provide powerful auto-complete features when writing out GraphQL queries.
+
+To try this for yourself, copy and paste the following code into the textarea in the API Explorer.
 
 ```javascript
 query {
@@ -27,9 +30,10 @@ Additionally, introspection helps us detect errors in queries. The system recogn
 ![Tooltip showing error in API Explorer](./images/api-explorer-tooltip-error.png)
 
 ## Documentation
-Another convenient way to investigate the many GraphQL operations and types that are available in the current workspace is by using the *Documentation*. When in the API Explorer the *Documentation* can be found on the right side of the screen. By either searching for a specific operation, or drilling down from the top level `query`, `mutation`, and `subscription` types, **all** schema resources can be inspected.
 
-Try opening the *Documentation* by using the `[CMD]` or `[WINDOWS]` key shortcut and clicking on a GraphQL operation. For example, copy and paste the following code into the text area in the API Explorer. 
+Another convenient way to investigate the many GraphQL operations and types that are available in the current workspace is by using the _Documentation_. When in the API Explorer the _Documentation_ can be found on the right side of the screen. By either searching for a specific operation, or drilling down from the top level `query`, `mutation`, and `subscription` types, **all** schema resources can be inspected.
+
+Try opening the _Documentation_ by using the `[CMD]` or `[WINDOWS]` key shortcut and clicking on a GraphQL operation. For example, copy and paste the following code into the text area in the API Explorer.
 
 ```
 mutation {
@@ -41,12 +45,13 @@ mutation {
 }
 ```
 
-Once added, hold-press the `[CMD]` or `[WINDOWS]` key while hovering over "userCreate" and click. The *Documentation* will open, where we can then investigate the operation.
+Once added, hold-press the `[CMD]` or `[WINDOWS]` key while hovering over "userCreate" and click. The _Documentation_ will open, where we can then investigate the operation.
 
 ![Opening the documentation using keyboard shortcut](./images/documentation-explorer-open-shortcut.png)
 
 ## Explorer
-8base integrated the *Explorer* from [OneGraph](https://www.onegraph.com/) to provide an easily interface for building GraphQL Queries. To open the Explorer, click the "Explorer" button located above the text area. The Explorer will open up on screen left. While drilling down into the Explorer list items and clicking the check boxes, accurate queries will begin populating the text area.
+
+8base integrated the _Explorer_ from [OneGraph](https://www.onegraph.com/) to provide an easily interface for building GraphQL Queries. To open the Explorer, click the "Explorer" button located above the text area. The Explorer will open up on screen left. While drilling down into the Explorer list items and clicking the check boxes, accurate queries will begin populating the text area.
 
 Try opening `apiTokenList` and checking the `count` option. The following query will populate the text area, which can be executed to check how many API tokens exist in the current workspace.
 
@@ -58,6 +63,6 @@ query MyQuery {
 }
 ```
 
-Note that argument values can either be typed into to text area or the Explorer's input fields. Required values in the Explorer are denoted with an asterisk (*).
+Note that argument values can either be typed into to text area or the Explorer's input fields. Required values in the Explorer are denoted with an asterisk (\*).
 
 ![Opening the documentation using keyboard shortcut](./images/one-graph-explorer.png)

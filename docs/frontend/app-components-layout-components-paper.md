@@ -1,13 +1,16 @@
 ---
 id: 'app-components-layout-components-paper'
 sidebar_label: 'Paper'
-slug: '/frontend/app-components/layout-components/paper'
+redirect_from: '/frontend/app-components/layout-components/paper'
+slug: '/projects/frontend/app-components/layout-components/paper'
 ---
 
 # Paper
-The *Paper* component translates the physical properties of paper to the screen. Like physical paper, *Paper* components can be re-sized, shuffled, and bound together as multiple sheets.
+
+The _Paper_ component translates the physical properties of paper to the screen. Like physical paper, _Paper_ components can be re-sized, shuffled, and bound together as multiple sheets.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -19,4 +22,4 @@ The *Paper* component translates the physical properties of paper to the screen.
 </tbody>
 </table>
 
-For more detail on the *Paper* component, see the [MUI developer docs](https://mui.com/material-ui/api/paper/).
+For more detail on the _Paper_ component, see the [MUI developer docs](https://mui.com/material-ui/api/paper/).

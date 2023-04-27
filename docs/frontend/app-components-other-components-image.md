@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-image'
 sidebar_label: 'Image'
-slug: '/frontend/app-components/other-components/image'
+redirect_from: '/frontend/app-components/other-components/image'
+slug: '/projects/frontend/app-components/other-components/image'
 ---
 
 # Image
-The *Image* component allows an image to be placed on a page.
+
+The _Image_ component allows an image to be placed on a page.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>

@@ -1,12 +1,13 @@
 ---
 id: '8base-console-custom-functions-triggers'
 sidebar_label: 'Triggers'
-slug: '/backend/custom-functions/triggers'
+redirect_from: '/backend/custom-functions/triggers'
+slug: '/projects/backend/custom-functions/triggers'
 ---
 
 # Triggers
 
-A *trigger* is a type of function that runs in response to a data mutation event (i.e, while creating, updating or deleting an object). This allows for important actions to run as callbacks to your data commits, without cluttering up client apps with web requests.
+A _trigger_ is a type of function that runs in response to a data mutation event (i.e, while creating, updating or deleting an object). This allows for important actions to run as callbacks to your data commits, without cluttering up client apps with web requests.
 
 ## 8base.yml
 
@@ -24,9 +25,11 @@ function:
 ```
 
 <!--{% hint style="info" %}-->
-### *operation* Options
 
-When defining an *operation*, use: `<TableName>.(create|update|delete)`
+### _operation_ Options
+
+When defining an _operation_, use: `<TableName>.(create|update|delete)`
+
 <!--{% endhint %}-->
 
 ### trigger.before
@@ -34,22 +37,22 @@ When defining an *operation*, use: `<TableName>.(create|update|delete)`
 This type of trigger is executed before the data is written to the database. It allows you to validate or modify the data before saving it in the database.
 
 ```javascript
-module.exports = event => {
+module.exports = (event) => {
   const { password, passwordConfirm } = event.data;
 
   if (password != passwordConfirm) {
     // Throwing an error will cancel the operation and data will not be inserted
-    throw new Error('Passwords don\'t match');
+    throw new Error("Passwords don't match");
   }
 
   // You can modify what goes into the database
   return {
     data: {
       ...event.data,
-      status: 'confirmed'
-    }
-  }
-}
+      status: 'confirmed',
+    },
+  };
+};
 ```
 
 ### trigger.after
@@ -59,14 +62,14 @@ This type of trigger is executed after the data has been successfully saved in t
 ```javascript
 const sender = require('email-service');
 
-module.exports = async event => {
+module.exports = async (event) => {
   const { invitees } = event.data;
 
   let sent = false;
   try {
     await sender.sendInvites(invitees);
     sent = true;
-  } catch(e) {
+  } catch (e) {
     console.error('Error sending invites: ', e);
   }
 
@@ -74,15 +77,15 @@ module.exports = async event => {
   return {
     data: {
       ...event.data,
-      sent
-    }
-  }
-}
+      sent,
+    },
+  };
+};
 ```
 
 ### Trigger Arguments
 
-Alike the [standard custom function arguments](/docs/8base-console/custom-functions/#custom-function-arguments), a *trigger.after* type function receives the output of a mutation in the `event.data` property. However, sometimes parameters that were originally passed in the mutation are needed. Therefore, the `event` object is enriched to have a `event.originalData` property which maintains the original input object.
+Alike the [standard custom function arguments](/docs/8base-console/custom-functions/#custom-function-arguments), a _trigger.after_ type function receives the output of a mutation in the `event.data` property. However, sometimes parameters that were originally passed in the mutation are needed. Therefore, the `event` object is enriched to have a `event.originalData` property which maintains the original input object.
 
 `event.originalObject` also contains the version of the object before the mutation was applied to it. This is useful when you need to compare objects before and after the mutation to find out what fields changed.
 
@@ -103,18 +106,20 @@ To learn more about the arguments that are passed to triggers, review the [custo
 
 ### Trigger Response
 
-The value returned by a *trigger* is allowed two properties: *data* and *errors*.
+The value returned by a _trigger_ is allowed two properties: _data_ and _errors_.
 
 ```javascript
 return {
   data: {
-    ...event.data
+    ...event.data,
   },
-  errors: [{
-    message: "Error message",
-    code: "error_code"
-  }]
-}
+  errors: [
+    {
+      message: 'Error message',
+      code: 'error_code',
+    },
+  ],
+};
 ```
 
 ### Important

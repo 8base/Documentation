@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-button'
 sidebar_label: 'Button'
-slug: '/frontend/app-components/input-components/button'
+redirect_from: '/frontend/app-components/input-components/button'
+slug: '/projects/frontend/app-components/input-components/button'
 ---
 
 # Button
-The *Button* component allows a user to take actions or make choices with a single tap.
 
-The *Button* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Button_ component allows a user to take actions or make choices with a single tap.
+
+The _Button_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -23,6 +26,7 @@ The *Button* component is used independently or as a form component. To use it a
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -39,16 +43,19 @@ The *Button* component is used independently or as a form component. To use it a
 </table>
 
 ## Subcomponents
-The *Button* component has a subcomponent that allows the placement of an icon on the left or right side of the button face.
+
+The _Button_ component has a subcomponent that allows the placement of an icon on the left or right side of the button face.
 
 ### Icon
-*Left Icon* - specifies an icon to use on the left side of the button face.
 
-*Right Icon* - specifies an icon to use on the right side of the button face.
+_Left Icon_ - specifies an icon to use on the left side of the button face.
+
+_Right Icon_ - specifies an icon to use on the right side of the button face.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -62,4 +69,4 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </tbody>
 </table>
 
-For more detail on the *Button* component, see the [MUI developer docs](https://mui.com/material-ui/api/button/).
+For more detail on the _Button_ component, see the [MUI developer docs](https://mui.com/material-ui/api/button/).

@@ -1,14 +1,15 @@
 ---
 id: 'app-navigation-create-and-editing-app-pages-page-url-settings'
 sidebar_label: 'Page URL Settings'
-slug: '/frontend/app-navigation/create-and-editing-app-pages/page-url-settings'
+redirect_from: '/frontend/app-navigation/create-and-editing-app-pages/page-url-settings'
+slug: '/projects/frontend/app-navigation/create-and-editing-app-pages/page-url-settings'
 ---
 
 # App Navigation Page URL Settings
 
 This document describes how a developer can set and manage Page URLs when working in App Builder.
 
-___
+---
 
 ![Page URL Settings](./_images/ab-app-navigation-create-and-editing-app-pages-page-url-settings-1.png)
 
@@ -16,7 +17,7 @@ Every Page in App Builder requires a unique path at which it can be accessed. Th
 
 You can customize the URL for any Page in App Builder. Simply navigate to the Page Settings you wish to modify, and update the values set in the "Route" section of its settings. Once done, use the "Save" button to save your changes.
 
-**Page Name** is solely used for internal purposes. Meanwhile, the **Path** is what defines how the Page will be accessed/referenced. 
+**Page Name** is solely used for internal purposes. Meanwhile, the **Path** is what defines how the Page will be accessed/referenced.
 
 ## Impact of Changing Existing URLs
 
@@ -40,4 +41,3 @@ When working with App Builder, we recommend following a few best practices for m
 • Use descriptive Page names and URLs. Descriptive names and URLs make it easier for you and other developers to understand the purpose of each Page.
 
 • Use consistent URL patterns across your app. This makes it easier to remember how to access specific Pages, and also makes your app's structure more predictable.
-

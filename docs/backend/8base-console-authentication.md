@@ -1,7 +1,8 @@
 ---
 id: '8base-console-authentication'
 sidebar_label: 'Authentication'
-slug: '/backend/authentication'
+redirect_from: '/backend/authentication'
+slug: '/projects/backend/authentication'
 ---
 
 # Authentication
@@ -31,13 +32,13 @@ _To dive deeper into idTokens (JSON Web Tokens), please visit [https://jwt.io/](
 For example, if you're using JavaScript `fetch` to handle the request, your script might look something like the following.
 
 ```javascript
-fetch("8BASE_WORKSPACE_API_ENDPOINT", {
-  method: "POST",
+fetch('8BASE_WORKSPACE_API_ENDPOINT', {
+  method: 'POST',
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
     Authorization: `Bearer ${idToken}`,
   },
-  body: JSON.stringify({ query: "{ user { id } }" }),
+  body: JSON.stringify({ query: '{ user { id } }' }),
 })
   .then(userExistsCallback)
   .catch(userDoesntExistCallback);

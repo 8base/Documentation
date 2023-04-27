@@ -1,16 +1,17 @@
 ---
 id: 'connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation'
 sidebar_label: 'How to execute a GraphQL Query / Mutation'
-slug: '/frontend/connecting-to-data-sources/how-to-make-api-calls-requests/how-to-execute-a-graphql-querymutation'
+redirect_from: '/frontend/connecting-to-data-sources/how-to-make-api-calls-requests/how-to-execute-a-graphql-querymutation'
+slug: '/projects/frontend/connecting-to-data-sources/how-to-make-api-calls-requests/how-to-execute-a-graphql-querymutation'
 ---
 
 # How to execute a GraphQL Query/Mutation
 
 This article describes how developers can execute a GraphQL Query/Mutation request to an API.
 
-___
+---
 
-There are several strategies for running GraphQL Queries and Mutations in App Builder; both in development and the built app. They include: 
+There are several strategies for running GraphQL Queries and Mutations in App Builder; both in development and the built app. They include:
 
 • Using the "Run" button in the Request Pane
 
@@ -32,36 +33,41 @@ App Builder allows you to set a request to run automatically on certain events i
 
 ![Running GraphQL Request on an Action](./_images/ab-connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation-2.png)
 
-To do this, select a component on the canvas on which the event listener will be set.  Then, in the **Events** pane, click the **+** button to add an appropriate event listener, then select **Run Request** from the Actions menu. Finally, select the Request you want to run. 
+To do this, select a component on the canvas on which the event listener will be set. Then, in the **Events** pane, click the **+** button to add an appropriate event listener, then select **Run Request** from the Actions menu. Finally, select the Request you want to run.
 
-Now when the user interacts with the element on the screen, your GraphQL Query or Mutation will automatically execute and populate the state in App Builder so you can reference what data is returned. 
+Now when the user interacts with the element on the screen, your GraphQL Query or Mutation will automatically execute and populate the state in App Builder so you can reference what data is returned.
 
 ## Executing a Request with code
 
 Requests can be executed from any location where code can be used.
+
 ```javascript
 //Assuming the request is called myQuery
 Promise p = myQuery.run();
 ```
+
 Request will return a Promise, so if the code block wants to wait for the results to be recieved the code should look like this
+
 ```javascript
 let results = await myQuery.run();
 ```
 
 If the request needs variables, those can be passed using a object
+
 ```javascript
 let results = await myQuer.run({
-    variables: {
-        variableName: variableValue,
-        otherVariableName: otherValue
-    }
+  variables: {
+    variableName: variableValue,
+    otherVariableName: otherValue,
+  },
 });
 ```
+
 Please note these variables values will take precedence over the definitions within the Request configurations.
 
 ## Executing a Request with Variables
 
-When a Query or Mutation requires variables to be used, those variables can be set in the Request's settings.  
+When a Query or Mutation requires variables to be used, those variables can be set in the Request's settings.
 
 !["Running GraphQL Request with Variables](./_images/ab-connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation-3.png)
 

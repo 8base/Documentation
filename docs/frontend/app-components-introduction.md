@@ -1,14 +1,15 @@
 ---
 id: 'app-components-introduction'
 sidebar_label: 'Introduction'
-slug: '/frontend/app-components/introduction'
+redirect_from: '/frontend/app-components/introduction'
+slug: '/projects/frontend/app-components/introduction'
 ---
 
 # App Components Introduction
 
 This document describes what Components are in App Builder and why they're useful when building applications.
 
-___
+---
 
 ![App Editor components library](./_images/ab-editor-components-drawer-1.png)
 

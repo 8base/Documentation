@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-toggle-button'
 sidebar_label: 'Toggle Button'
-slug: '/frontend/app-components/input-components/toggle-button'
+redirect_from: '/frontend/app-components/input-components/toggle-button'
+slug: '/projects/frontend/app-components/input-components/toggle-button'
 ---
 
 # Toggle Button
- A *Toggle Button* is a component that acts as a single input control and is part of a set within a Toggle Button Group. It is possible to select multiple toggle buttons unless the **exclusive property** is enabled for the *Toggle Button Group*.
- 
- The toggle button has two states, On and Off.
- 
+
+A _Toggle Button_ is a component that acts as a single input control and is part of a set within a Toggle Button Group. It is possible to select multiple toggle buttons unless the **exclusive property** is enabled for the _Toggle Button Group_.
+
+The toggle button has two states, On and Off.
+
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -26,6 +29,7 @@ slug: '/frontend/app-components/input-components/toggle-button'
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -43,16 +47,18 @@ slug: '/frontend/app-components/input-components/toggle-button'
 
 ## Subcomponents
 
-The *Toggle Button* component has a subcomponent that allows the placement of an icon on the left or right side of the button face.
+The _Toggle Button_ component has a subcomponent that allows the placement of an icon on the left or right side of the button face.
 
 ### Icon
-*Left Icon* - specifies an icon to use on the left side of the button face.
 
-*Right Icon* - specifies an icon to use on the right side of the button face.
+_Left Icon_ - specifies an icon to use on the left side of the button face.
+
+_Right Icon_ - specifies an icon to use on the right side of the button face.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -66,4 +72,4 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </tbody>
 </table>
 
-For more detail on the *Toggle Button* component, see the [MUI developer docs](https://mui.com/material-ui/api/toggle-button).
+For more detail on the _Toggle Button_ component, see the [MUI developer docs](https://mui.com/material-ui/api/toggle-button).

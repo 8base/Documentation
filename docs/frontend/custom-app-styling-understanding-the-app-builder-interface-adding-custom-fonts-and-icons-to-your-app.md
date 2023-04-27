@@ -1,10 +1,12 @@
 ---
 id: 'custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app'
 sidebar_label: 'Adding custom Fonts and Icons to your App'
-slug: '/frontend/custom-app-styling/understanding-the-app-builder-interface/adding-custom-fonts-and-icons-to-your-app'
+redirect_from: '/frontend/custom-app-styling/understanding-the-app-builder-interface/adding-custom-fonts-and-icons-to-your-app'
+slug: '/projects/frontend/custom-app-styling/understanding-the-app-builder-interface/adding-custom-fonts-and-icons-to-your-app'
 ---
 
 # Adding custom Fonts and Icons to your App
+
 To add custom Fonts and Icons to your App Builder project, you must include them in your project's theme resources. You can do this by navigating to the "Font Management" section of your project's Themes area!
 
 ![Custom fonts in App Builder](./_images/ab-custom-styles-fonts-1.png)
@@ -15,7 +17,7 @@ There are two ways to add Custom Fonts to your project:
 
 - **Upload a new font**: If you have a .ttf (TrueType Font) or .otf (OpenType Font) file, you can upload it directly into your project.
 
-- **Import a Google Font**:  If you want to use a Google Font in your project, search for it by name and select the import button.
+- **Import a Google Font**: If you want to use a Google Font in your project, search for it by name and select the import button.
 
 ### Selecting a Google Font
 

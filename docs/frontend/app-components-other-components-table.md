@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-table'
 sidebar_label: 'Table'
-slug: '/frontend/app-components/other-components/table'
+redirect_from: '/frontend/app-components/other-components/table'
+slug: '/projects/frontend/app-components/other-components/table'
 ---
 
 # Table
-The *Table* component displays data in a table format on a page.
+
+The _Table_ component displays data in a table format on a page.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -27,7 +30,7 @@ The *Table* component displays data in a table format on a page.
 <tr><td>disableSelectionOnClick</td><td>bool</td><td>false</td><td>If true, disables clicking on a column to select it.</td></tr>
 <tr><td>disableColumnSelector</td><td>bool</td><td>false</td><td>If true, disables access to the column selector to show or hide columns.</td></tr>
 </tbody>
-</table> 
+</table>
 
 **Column Settings**
 Clicking on the gear on the right-hand side of a column brings up the settings panel for the column.
@@ -48,6 +51,7 @@ Clicking on the gear on the right-hand side of a column brings up the settings p
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -58,17 +62,20 @@ Clicking on the gear on the right-hand side of a column brings up the settings p
 <tr><td>showTableBorder</td><td>bool</td><td>false</td><td>If true, displays the table border.</td></tr>
 <tr><td>rowHeight</td><td>integer</td><td></td><td>Defines the height of the table rows.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ## Subcomponents
-The *Table* component has three possible subcomponents *Text*, *Link*,  or *Container* used to render the cell data within the table.
+
+The _Table_ component has three possible subcomponents _Text_, _Link_, or _Container_ used to render the cell data within the table.
 
 ### Text
-The *Text* component creates a text value for another component.
+
+The _Text_ component creates a text value for another component.
 
 For further details, see the [Text](./app-components-other-components-text) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -76,14 +83,16 @@ For further details, see the [Text](./app-components-other-components-text) comp
 <tbody>
 <tr><td>text</td><td>string</td><td></td><td>Specifies a text value for the multiselect item.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ### Link
-The *Link* component provides a link to either a document or a location.
+
+The _Link_ component provides a link to either a document or a location.
 
 For further details, see the [Link](./app-components-other-components-link) component.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -96,6 +105,7 @@ For further details, see the [Link](./app-components-other-components-link) comp
 </table>
 
 ### Container
+
 Defines the margin and padding around a multiselect item.
 
 For further details, see the [Container](./app-components-layout-components-container) component.

@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-icon-button'
 sidebar_label: 'Icon Button'
-slug: '/frontend/app-components/other-components/icon-button'
+redirect_from: '/frontend/app-components/other-components/icon-button'
+slug: '/projects/frontend/app-components/other-components/icon-button'
 ---
 
 # Icon Button
-The *Icon Button* component is a button represented as an icon. It functions the same way as the button component.
+
+The _Icon Button_ component is a button represented as an icon. It functions the same way as the button component.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -20,6 +23,7 @@ The *Icon Button* component is a button represented as an icon. It functions the
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -35,14 +39,17 @@ The *Icon Button* component is a button represented as an icon. It functions the
 </table>
 
 ## Subcomponents
-The *Icon Button* component has one subcomponent that uses an icon as a button face.
+
+The _Icon Button_ component has one subcomponent that uses an icon as a button face.
 
 ### Icon
-The *Icon* component allows the user to select an icon to place on the icon button.
+
+The _Icon_ component allows the user to select an icon to place on the icon button.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -55,6 +62,3 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 <tr><td>stroke</td><td>hex #ffffff<br/>rgb 5,5,5</td><td></td><td>The stroke color of the icon.</td></tr>
 </tbody>
 </table>
-
-
-

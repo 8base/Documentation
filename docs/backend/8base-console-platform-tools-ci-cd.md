@@ -1,7 +1,8 @@
 ---
 id: '8base-console-platform-tools-ci-cd'
 sidebar_label: 'Ci Cd'
-slug: '/backend/console/ci-cd'
+redirect_from: '/backend/console/ci-cd'
+slug: '/projects/backend/console/ci-cd'
 ---
 
 # Continuous Integration & Continuous Deployment (CI/CD)
@@ -18,7 +19,7 @@ npm install -g 8base-cli
 
 ## Creating New Environments
 
-When creating new *Environments*, you are able to specify whether you just want to copy the system configuration into the new environment (Tables, Functions, Roles, etc.) or whether you want to copy the system configuration and all data records.
+When creating new _Environments_, you are able to specify whether you just want to copy the system configuration into the new environment (Tables, Functions, Roles, etc.) or whether you want to copy the system configuration and all data records.
 
 To create a new environment, use the following command.
 
@@ -44,7 +45,7 @@ You can switch between environments when using the CLI by running the following 
 
 ## Deleting Environments
 
-To delete an environment, run the following command - keeping in mind the *Master* environment cannot be deleted.
+To delete an environment, run the following command - keeping in mind the _Master_ environment cannot be deleted.
 
 ```sh
 8base environment delete -n [BRANCH_NAME]
@@ -88,7 +89,6 @@ If you are committing changes to the master branch, you will be prompted to conf
 
 _**Note: For a list of all migration commands with their associated options, run `8base migration --help` in your terminal.**_
 
-
 ## Handling Backups
 
 Sometimes you'll want to take a snapshot of an environment in order to easily restore it at a later date or save it for later reference. This can be accomplished using the following backup commands.
@@ -103,5 +103,3 @@ Sometimes you'll want to take a snapshot of an environment in order to easily re
 # Restore environment to backup
 8base backup restore
 ```
-
-

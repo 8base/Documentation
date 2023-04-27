@@ -1,7 +1,8 @@
 ---
 id: '8base-console-custom-functions-debugging'
 sidebar_label: 'Debugging'
-slug: '/backend/custom-functions/debugging'
+redirect_from: '/backend/custom-functions/debugging'
+slug: '/projects/backend/custom-functions/debugging'
 ---
 
 # Debugging
@@ -9,6 +10,7 @@ slug: '/backend/custom-functions/debugging'
 Custom Functions (CFs) can get debugged in production and when developing locally. While there are many ways to debug code, and specific IDEs that provide special tooling, here we're addressing the most general ways to debug custom functions in 8base.
 
 ### Production Debugging
+
 <!-- ![Production logs for custom functions](../../images/cf-searching-logs.gif) -->
 
 When a CF gets deployed to a workspace it becomes visible in the `Logic` screen on the 8base console. This both confirms that the function was successfully deployed and is where the CFs execution logs can get reviewed and tailed in real-time. Logs report each request uniquely.
@@ -17,7 +19,7 @@ When a CF gets deployed to a workspace it becomes visible in the `Logic` screen 
 START RequestId: 250be4db-cac4-425a-9d4c-24f94ccefd7f Version: $LATEST
 END RequestId: 250be4db-cac4-425a-9d4c-24f94ccefd7f
 REPORT RequestId: 250be4db-cac4-425a-9d4c-24f94ccefd7f Duration: 0.54 ms Billed Duration: 100 ms Memory Size: 1536 MB Max Memory Used: 88 MB XRAY TraceId: 1-5d794811-0a64a1f6f0c03eb43a0df3b0 SegmentId: 3353cda75bd91f53 Sampled: false
-``` 
+```
 
 Using the `console.log` and `console.error` methods inside of a CF will output any given argument to the execution logs. Knowing this, a developer has the flexibility to enrich their logs as needed, as well as output arguments for debugging purposes.
 
@@ -29,6 +31,7 @@ export default async (event: any, ctx: any) : Promise<LocalizeResult> => {
 ```
 
 ### Local Debugging
+
 The suggested method for debugging CFs locally requires a Chrome browser. Once installed, add this script to the project’s package.json file:
 
 ```json
@@ -39,7 +42,7 @@ The suggested method for debugging CFs locally requires a Chrome browser. Once i
 
 The script runs `node --inspect`, and then finds the path to the `8base-cli` package installed globally on the machine - building a path to the executable (e.g., `/usr/local/lib/node_modules/8base-cli/dist/index.js`). Whether yarn or npm is being used won’t matter.
 
-Next, place a `debugger` in the code where you want to pause the execution. When debugging an error, insure that the `debugger` is placed *before* error occurs.
+Next, place a `debugger` in the code where you want to pause the execution. When debugging an error, insure that the `debugger` is placed _before_ error occurs.
 
 ```javascript
 export default async (event: any, ctx: any) : Promise<LocalizeResult> => {
@@ -49,7 +52,7 @@ export default async (event: any, ctx: any) : Promise<LocalizeResult> => {
   new DontExist({ something: 'is wrong' });
 ```
 
-Before invoking the CF, open Chrome and visit `chrome://inspect`. Click the *Open dedicated DevTools for Node* link. The window that opens is the Chrome developer console where you’re debugger will be stopped.
+Before invoking the CF, open Chrome and visit `chrome://inspect`. Click the _Open dedicated DevTools for Node_ link. The window that opens is the Chrome developer console where you’re debugger will be stopped.
 
 You can now start debugging the function using the `invoke-local` command.
 

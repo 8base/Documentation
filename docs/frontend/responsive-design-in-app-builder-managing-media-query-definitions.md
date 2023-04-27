@@ -1,7 +1,8 @@
 ---
 id: 'responsive-design-in-app-builder-managing-media-query-definitions'
 sidebar_label: 'Managing media query definitions'
-slug: '/frontend/responsive-design-in-app-builder/managing-media-query-definitions'
+redirect_from: '/frontend/responsive-design-in-app-builder/managing-media-query-definitions'
+slug: '/projects/frontend/responsive-design-in-app-builder/managing-media-query-definitions'
 ---
 
 # Managing media query definitions
@@ -19,4 +20,3 @@ App Builder provides a media query manager that makes it easy to create and edit
 ![Theme editor with Media Queries tab highlighted](./_images/ab-custom-styling-theme-media-queries-2.png)
 
 The media query manager will list all existing media queries for the currently selected theme. From here, a developer can add new media queries or edit existing ones. Just click on the "Add Media Query" or edit Icon buttons next to a media query to get started.
-

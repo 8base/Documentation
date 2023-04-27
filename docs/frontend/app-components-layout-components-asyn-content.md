@@ -1,19 +1,23 @@
 ---
 id: 'app-components-layout-components-async-content'
 sidebar_label: 'Async Content'
-slug: '/frontend/app-components/layout-components/async-content'
+redirect_from: '/frontend/app-components/layout-components/async-content'
+slug: '/projects/frontend/app-components/layout-components/async-content'
 ---
 
 # Async Content
-The *Async Content* component is a progress indicator that displays an unspecified wait time or length of a process. 
 
-It informs users about the state of ongoing processes such as loading an application, submitting a form or saving updates. 
+The _Async Content_ component is a progress indicator that displays an unspecified wait time or length of a process.
+
+It informs users about the state of ongoing processes such as loading an application, submitting a form or saving updates.
 
 Progress indicators are:
+
 - Determinate - display how long an operation will take
 - Indeterminate - visualize an unspecified wait time
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -25,6 +29,7 @@ Progress indicators are:
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -38,17 +43,4 @@ Progress indicators are:
 </tbody>
 </table>
 
-For more detail on the *Async Content* component, see the [MUI developer docs](https://mui.com/material-ui/api/circular-progress/).
-
-
-
-
-
-
-
-
-
-
-
-
-
+For more detail on the _Async Content_ component, see the [MUI developer docs](https://mui.com/material-ui/api/circular-progress/).

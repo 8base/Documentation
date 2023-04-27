@@ -1,23 +1,27 @@
 ---
 id: '8base-console-platform-tools-advanced-advanced-introspection'
 sidebar_label: 'Advanced Introspection'
-slug: '/backend/console/advanced-introspection'
+redirect_from: '/backend/console/advanced-introspection'
+slug: '/projects/backend/console/advanced-introspection'
 ---
+
 # Advanced Introspection
-Introspection allows you to query the database system to understand the operations you can perform on your schema. 
+
+Introspection allows you to query the database system to understand the operations you can perform on your schema.
 
 To learn more about Introspection, visit the [GraphQL](https://graphql.org/learn/introspection/) website.
 
 ## Retrieving Your Schema
+
 Retrieving your schema is a two-step process.
 
-**Step 1.**  Paste the following query into the left pane of the API Explorer to retrieve introspection information about your schema.
+**Step 1.** Paste the following query into the left pane of the API Explorer to retrieve introspection information about your schema.
 
 <div class="code-sample">
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 query Introspection {
   system {
     introspection {
@@ -25,13 +29,13 @@ query Introspection {
     }
   }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
   "data": {
     "system": {
@@ -39,17 +43,17 @@ query Introspection {
         "url": "https://8base-user-uploads-3bjwok12adad.s3.amazonaws.com/
         introspection/816nag82jdg2"
       }
-    } 
-  }    
+    }
+  }
 }
-~~~
+```
 
 </div>
 </div>
 
-The response returns a very long URL. 
+The response returns a very long URL.
 
-*Note: The URL provided in this example is truncated and is for demonstration purposes only.*
+_Note: The URL provided in this example is truncated and is for demonstration purposes only._
 <br /><br />
 
 **Step 2.** Copy the URL returned in the response and paste it into a browser window; this will download a JSON file.
@@ -57,16 +61,18 @@ The response returns a very long URL.
 If you open the JSON file, you will see a description of all the possible types and operations available for the schema.
 
 ## Querying Your Schema Interactively
+
 You can query your schema interactively to learn more about the data types and operations available.
 
 ### Query Data Types
+
 Running the following query returns the kind and name of the different data types.
 
 <div class="code-sample">
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 query qSchema {
  __schema {
         types {
@@ -75,50 +81,50 @@ query qSchema {
        }
    }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
   "data": {
     "__schema": {
       "types": [
-	  {
-	          "kind": "OBJECT",
-	          "name": "ImportedTable"
-	        },
-	        {
-	          "kind": "OBJECT",
-	          "name": "MissingRelation"
-	        },
-	        {
-	          "kind": "INTERFACE",
-	          "name": "FunctionInfo"
-	        },
-	        {
-	          "kind": "ENUM",
-	          "name": "FunctionType"
-	        },
-	        {
-	          "kind": "OBJECT",
-	          "name": "Application"
-	        },
-	        {
-	          "kind": "ENUM",
-	          "name": "ApplicationStatusEnum"
-	        },
-	        {
-	          "kind": "OBJECT",
-	          "name": "FunctionWebhookInfo"
-	        }
-         ]
-      }
-   }
+        {
+          "kind": "OBJECT",
+          "name": "ImportedTable"
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MissingRelation"
+        },
+        {
+          "kind": "INTERFACE",
+          "name": "FunctionInfo"
+        },
+        {
+          "kind": "ENUM",
+          "name": "FunctionType"
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Application"
+        },
+        {
+          "kind": "ENUM",
+          "name": "ApplicationStatusEnum"
+        },
+        {
+          "kind": "OBJECT",
+          "name": "FunctionWebhookInfo"
+        }
+      ]
+    }
+  }
 }
-~~~
+```
 
 </div>
 </div>
@@ -131,7 +137,7 @@ Running the following query returns the kind, name, and description of the diffe
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 query qSchema {
   __schema {
     types {
@@ -141,13 +147,13 @@ query qSchema {
     }
   }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
   "data": {
     "__schema": {
@@ -165,8 +171,8 @@ query qSchema {
        {
           "kind": "SCALAR",
           "name": "String",
-          "description": "The `String` scalar type represents textual data, 
-          represented as UTF-8 character sequences. The String type is most often 
+          "description": "The `String` scalar type represents textual data,
+          represented as UTF-8 character sequences. The String type is most often
           used by GraphQL to represent free-form human-readable text."
         },
         {
@@ -182,16 +188,16 @@ query qSchema {
         {
           "kind": "SCALAR",
           "name": "DateTime",
-          "description": "A date-time string at UTC, such as `2007-12-25T16:15:30Z`, 
-          compliant with the `date-time` format outlined in section 5.6 of the 
-          RFC 3339 profile of the ISO 8601 standard for representation of dates 
+          "description": "A date-time string at UTC, such as `2007-12-25T16:15:30Z`,
+          compliant with the `date-time` format outlined in section 5.6 of the
+          RFC 3339 profile of the ISO 8601 standard for representation of dates
           and times using the Gregorian calendar."
         }
       ]
     }
   }
 }
-~~~
+```
 
 </div>
 </div>
@@ -204,7 +210,7 @@ Running the following query returns a list of fields, which includes the field n
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 query qSchema {
   __schema {
      types {
@@ -220,13 +226,13 @@ query qSchema {
      }
   }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
  "data": {
    "__schema": {
@@ -246,8 +252,8 @@ query qSchema {
             "name": "description",
             "type": {
               "name": "String",
-              "description": "The `String` scalar type represents textual data, 
-              represented as UTF-8 character sequences. The String type is most 
+              "description": "The `String` scalar type represents textual data,
+              represented as UTF-8 character sequences. The String type is most
               often used by GraphQL to represent free-form human-readable text."
              }
            },
@@ -262,27 +268,29 @@ query qSchema {
            "name": "deprecationReason",
            "type": {
              "name": "String",
-             "description": "The `String` scalar type represents textual data, 
-             represented as UTF-8 character sequences. The String type is most 
+             "description": "The `String` scalar type represents textual data,
+             represented as UTF-8 character sequences. The String type is most
              often used by GraphQL to represent free-form human-readable text."
             }
            }
          ]
-       }    
+       }
      ]
     }
   }
 }
-~~~
+```
 
 </div>
 </div>
 
 ## Managing Introspection Settings
+
 You have the option of not exposing your introspection information. If you decide to do so, you can turn it off and on as needed.
 
 ### Checking the Environment Settings
-Running the following query will check the environment settings for your introspection. 
+
+Running the following query will check the environment settings for your introspection.
 
 The response returns a null value if your environment settings are not set up.
 
@@ -290,7 +298,7 @@ The response returns a null value if your environment settings are not set up.
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 query ReadSettings {
    system {
       environmentSettings {
@@ -298,40 +306,42 @@ query ReadSettings {
       }
    }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
-  'data':  {
-    'system': {
-       'environmentSettings': {
-         'introspection': null
-       }
+  "data": {
+    "system": {
+      "environmentSettings": {
+        "introspection": null
+      }
     }
   }
 }
-~~~
+```
 
 </div>
 </div>
 
 ### Turning Introspection Off and On
-Introspection can be turned off and on by running a mutation against the system. 
+
+Introspection can be turned off and on by running a mutation against the system.
 
 The mutation name can be anything, but it should be something that describes what the mutation does.
 
 #### Turning Introspection Off
+
 Running the following mutation will turn off introspection.
 
 <div class="code-sample">
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 mutation mName {
    system {
      environmentSetup(
@@ -343,13 +353,13 @@ mutation mName {
         }
    }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
   "data": {
     "system": {
@@ -359,7 +369,7 @@ mutation mName {
     }
   }
 }
-~~~
+```
 
 </div>
 </div>
@@ -370,7 +380,7 @@ Attempting to query the schema after introspection has been turned off will disp
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 query qSchema {
   __schema {
      types {
@@ -379,13 +389,13 @@ query qSchema {
      }
   }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
   'errors': {
     'message': { 'Introspection was turned off' ,
@@ -398,19 +408,20 @@ query qSchema {
     }
   }
 }
-~~~
+```
 
 </div>
 </div>
 
 #### Turning Introspection On
+
 Running the following mutation will turn introspection on.
 
 <div class="code-sample">
 <div>
 <label>Request</label>
 
-~~~javascript
+```javascript
 mutation mutationName {
    system {
      environmentSetup(
@@ -422,13 +433,13 @@ mutation mutationName {
         }
    }
 }
-~~~
+```
 
 </div>
 <div>
 <label>Response</label>
 
-~~~json
+```json
 {
   "data": {
     "system": {
@@ -438,9 +449,7 @@ mutation mutationName {
     }
   }
 }
-~~~
+```
 
 </div>
 </div>
-
-

@@ -1,13 +1,16 @@
 ---
 id: 'app-components-layout-components-menu'
 sidebar_label: 'Menu'
-slug: '/frontend/app-components/layout-components/menu'
+redirect_from: '/frontend/app-components/layout-components/menu'
+slug: '/projects/frontend/app-components/layout-components/menu'
 ---
 
 # Menu
-The *Menu* component displays a list of choices on a temporary surface. The user must interact with a button or another control to display a menu.
+
+The _Menu_ component displays a list of choices on a temporary surface. The user must interact with a button or another control to display a menu.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -21,4 +24,4 @@ The *Menu* component displays a list of choices on a temporary surface. The user
 </tbody>
 </table>
 
-For more detail on the *Menu* component, see the [MUI developer docs](https://mui.com/material-ui/api/menu/).
+For more detail on the _Menu_ component, see the [MUI developer docs](https://mui.com/material-ui/api/menu/).

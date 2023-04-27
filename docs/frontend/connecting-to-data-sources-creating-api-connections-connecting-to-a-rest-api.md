@@ -1,22 +1,23 @@
 ---
 id: 'connecting-to-data-sources-creating-api-connections-connecting-to-a-rest-api'
 sidebar_label: 'Connecting to a REST API'
-slug: '/frontend/connecting-to-data-sources/creating-api-connections/connecting-to-a-rest-api'
+redirect_from: '/frontend/connecting-to-data-sources/creating-api-connections/connecting-to-a-rest-api'
+slug: '/projects/frontend/connecting-to-data-sources/creating-api-connections/connecting-to-a-rest-api'
 ---
 
 # Connecting to a REST API
 
 This article describes how developers can quickly create a Resource connected to a 3rd party REST API
 
-___
+---
 
-To set up a REST API as a data source, click on the Resources icon in the left-side menu. It will open a modal that lists all of the available data sources. 
+To set up a REST API as a data source, click on the Resources icon in the left-side menu. It will open a modal that lists all of the available data sources.
 
 ![Resources in App Builder](./_images/ab-resources-1.png)
 
 In the "Add a Resource" area, select "REST API." This will open up a configuration window in which you can specify the name of your API, Base URL, and any default headers and URL parameters.
 
-Click "Save" to save your changes. Once saved, the new data source will be visible in the Resources list when creating Requests. 
+Click "Save" to save your changes. Once saved, the new data source will be visible in the Resources list when creating Requests.
 
 ![Configuring a REST API](./_images/ab-connecting-to-data-sources-creating-api-connections-connecting-to-a-rest-api.png)
 

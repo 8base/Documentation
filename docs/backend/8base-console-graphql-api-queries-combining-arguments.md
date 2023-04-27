@@ -1,14 +1,16 @@
 ---
 id: '8base-console-graphql-api-queries-combining-arguments'
 sidebar_label: 'Combining Arguments'
-slug: '/backend/graphql-api/queries/combining-arguments'
+redirect_from: '/backend/graphql-api/queries/combining-arguments'
+slug: '/projects/backend/graphql-api/queries/combining-arguments'
 ---
 
 # Combining Arguments
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Using multiple arguments in queries
+
 More than one argument can get used in a single list query.
 
 <div class="code-sample">

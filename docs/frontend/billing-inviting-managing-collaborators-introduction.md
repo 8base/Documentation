@@ -1,7 +1,8 @@
 ---
 id: 'billing-inviting-managing-collaborators-introduction'
 sidebar_label: 'Introduction'
-slug: '/frontend/billing/inviting/managing-collaborators/introduction'
+redirect_from: '/frontend/billing/inviting/managing-collaborators/introduction'
+slug: '/projects/frontend/billing/inviting/managing-collaborators/introduction'
 ---
 
 # Introduction

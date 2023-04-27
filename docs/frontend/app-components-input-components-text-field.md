@@ -1,15 +1,18 @@
 ---
 id: 'app-components-input-components-text-field'
 sidebar_label: 'Text Field'
-slug: '/frontend/app-components/input-components/text-field'
+redirect_from: '/frontend/app-components/input-components/text-field'
+slug: '/projects/frontend/app-components/input-components/text-field'
 ---
 
 # Text Field
-The *Text Field* component allows the user to enter and edit text.
 
-The *Text Field* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Text Field_ component allows the user to enter and edit text.
+
+The _Text Field_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -36,6 +39,7 @@ The *Text Field* component is used independently or as a form component. To use 
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -49,14 +53,17 @@ The *Text Field* component is used independently or as a form component. To use 
 </table>
 
 ## Subcomponents
-The *Text Field* component has two subcomponents that allow an icon or typography to be placed as an adornment at the start or end of the text field.
+
+The _Text Field_ component has two subcomponents that allow an icon or typography to be placed as an adornment at the start or end of the text field.
 
 ### Icon
+
 Specifies an icon to use at the start or end of a text field.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -71,11 +78,13 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </table>
 
 ### Typography
+
 Specifies typography to use at the start or end of a text field.
 
 For further details, see the [Typography](./app-components-other-components-typography) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -88,4 +97,4 @@ For further details, see the [Typography](./app-components-other-components-typo
 </tbody>
 </table>
 
-For more detail on the *Text Field* component, see the [MUI developer docs](https://mui.com/material-ui/api/text-field/).
+For more detail on the _Text Field_ component, see the [MUI developer docs](https://mui.com/material-ui/api/text-field/).

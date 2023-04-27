@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-avatar'
 sidebar_label: 'Avatar'
-slug: '/frontend/app-components/other-components/avatar'
+redirect_from: '/frontend/app-components/other-components/avatar'
+slug: '/projects/frontend/app-components/other-components/avatar'
 ---
 
 # Avatar
-The *Avatar* component is a visual element, such as an image, letter(s) or icon, used to represent a user, label or tool.
+
+The _Avatar_ component is a visual element, such as an image, letter(s) or icon, used to represent a user, label or tool.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -20,6 +23,7 @@ The *Avatar* component is a visual element, such as an image, letter(s) or icon,
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -30,14 +34,17 @@ The *Avatar* component is a visual element, such as an image, letter(s) or icon,
 </table>
 
 ## Subcomponents
-The *Avatar* component has two subcomponents that allow the addition of either an icon or typography to the avatar component.
+
+The _Avatar_ component has two subcomponents that allow the addition of either an icon or typography to the avatar component.
 
 ### Icon
+
 An icon to use on the avatar.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -52,11 +59,13 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </table>
 
 ### Typography
+
 The typography to use on the avatar.
 
 For further details, see the [Typography](./app-components-other-components-typography) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -69,4 +78,4 @@ For further details, see the [Typography](./app-components-other-components-typo
 </tbody>
 </table>
 
-For more detail on the *Avatar* component, see the [MUI developer docs](https://mui.com/material-ui/api/avatar/).
+For more detail on the _Avatar_ component, see the [MUI developer docs](https://mui.com/material-ui/api/avatar/).

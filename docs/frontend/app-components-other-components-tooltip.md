@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-tooltip'
 sidebar_label: 'Tooltip'
-slug: '/frontend/app-components/other-components/tooltip'
+redirect_from: '/frontend/app-components/other-components/tooltip'
+slug: '/projects/frontend/app-components/other-components/tooltip'
 ---
 
 # Tooltip
-The *Tooltip* component displays informative text when a user hovers over, focuses on, or taps an element.
+
+The _Tooltip_ component displays informative text when a user hovers over, focuses on, or taps an element.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -25,9 +28,10 @@ The *Tooltip* component displays informative text when a user hovers over, focus
 <tr><td>leaveDelay</td><td>number</td><td>0</td><td>Defines the number of milliseconds to wait before hiding the tooltip.</td></tr>
 <tr><td>leaveTouchDelay</td><td>number</td><td>1500</td><td>Defines the number of milliseconds after a user stops touching an element before hiding the tooltip.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -36,17 +40,20 @@ The *Tooltip* component displays informative text when a user hovers over, focus
 <tr><td>placement</td><td>bottom-end<br/>bottom-start<br/>bottom<br/>left-end<br/>left-start<br/>left<br/>right-end<br/>right-start<br/>right<br/>top-end<br/>top-start<br/>top<br/>string</td><td>bottom</td><td>Defines the placement of the tooltip.</td></tr>
 <tr><td>arrow</td><td>bool</td><td>false</td><td>If true, adds an arrow to the tooltip.</td></tr>
 </tbody>
-</table> 
+</table>
 
 ## Subcomponents
-The *Tooltip* component has two typography subcomponents used to create text for a typography element and the tooltip text.
+
+The _Tooltip_ component has two typography subcomponents used to create text for a typography element and the tooltip text.
 
 ### Typography
+
 Specifies text for the typography element and the tooltip.
 
 For further details, see the [Typography](./app-components-other-components-typography) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -59,7 +66,4 @@ For further details, see the [Typography](./app-components-other-components-typo
 </tbody>
 </table>
 
-For more detail on the *Tooltip* component, see the [MUI developer docs](https://mui.com/material-ui/api/tooltip/).
-
-
-
+For more detail on the _Tooltip_ component, see the [MUI developer docs](https://mui.com/material-ui/api/tooltip/).

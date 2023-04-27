@@ -1,17 +1,20 @@
 ---
 id: 'app-components-input-components-checkbox'
 sidebar_label: 'Checkbox'
-slug: '/frontend/app-components/input-components/checkbox'
+redirect_from: '/frontend/app-components/input-components/checkbox'
+slug: '/projects/frontend/app-components/input-components/checkbox'
 ---
 
 # Checkbox
-The *Checkbox* component allows the user to select one or more items from a set.
+
+The _Checkbox_ component allows the user to select one or more items from a set.
 
 The checkbox component has three states, checked, unchecked, and indeterminate. When used as a form component, a checkbox has two states, checked or unchecked.
 
-The *Checkbox* component is used independently or as a form component. To use it as a form component, place it within a *Form Block*.
+The _Checkbox_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -28,6 +31,7 @@ The *Checkbox* component is used independently or as a form component. To use it
 </table>
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -41,18 +45,21 @@ The *Checkbox* component is used independently or as a form component. To use it
 </table>
 
 ## Subcomponents
-The *Checkbox* component has a subcomponent that allows an icon to be used in place of the standard checkmark.
+
+The _Checkbox_ component has a subcomponent that allows an icon to be used in place of the standard checkmark.
 
 ### Icon
-*Checked Icon* - specifies an icon to use when the checkbox is checked.
 
-*Unchecked Icon* - specifies an icon to use when the checkbox is unchecked.
+_Checked Icon_ - specifies an icon to use when the checkbox is checked.
 
-*Indeterminate Icon* - specifies an icon to use when the checkbox is indeterminate.
+_Unchecked Icon_ - specifies an icon to use when the checkbox is unchecked.
+
+_Indeterminate Icon_ - specifies an icon to use when the checkbox is indeterminate.
 
 For further details, see the [Icon](./app-components-other-components-icon) component.
 
 #### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -66,4 +73,4 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 </tbody>
 </table>
 
-For more detail on the *Checkbox* component, see the [MUI developer docs](https://mui.com/material-ui/api/checkbox/).
+For more detail on the _Checkbox_ component, see the [MUI developer docs](https://mui.com/material-ui/api/checkbox/).

@@ -1,33 +1,35 @@
 ---
 id: '8base-console-graphql-api-subscriptions-complex-record-subscriptions'
 sidebar_label: 'Complex Record Subscriptions'
-slug: '/backend/graphql-api/subscriptions/complex-record-subscriptions'
+redirect_from: '/backend/graphql-api/subscriptions/complex-record-subscriptions'
+slug: '/projects/backend/graphql-api/subscriptions/complex-record-subscriptions'
 ---
 
 # Complex Record Subscriptions
 
-*For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.*
+_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 ## Subscriptions using filters
+
 You can subscribe to individual and related records being created, updated, and deleted using 8base's auto-generated GraphQL subscriptiong operation.
 
 ### Subscribing to all mutations on a single record
-Subscription for observing a single record. Note that a subscription could listen for an individual record being `created` by specifying a unique field that the record will be created with, **only** if the subscription is established prior to the record being created.
 
+Subscription for observing a single record. Note that a subscription could listen for an individual record being `created` by specifying a unique field that the record will be created with, **only** if the subscription is established prior to the record being created.
 
 ```javascript
 subscription {
   Posts(filter: {
     mutation_in: [
-      create, 
-      update, 
+      create,
+      update,
       delete
     ],
     node: {
       title: {
         equals: "Possumly the Best Coffee"
       }
-    } 
+    }
   }) {
     node {
       title
@@ -43,8 +45,6 @@ subscription {
 }
 ```
 
-
-
 ```json
 {
   "data": {
@@ -57,30 +57,23 @@ subscription {
           "name": "Huxley"
         }
       },
-      "updatedFields": [
-        "title",
-        "body",
-        "publishingDate",
-        "authors"
-      ],
+      "updatedFields": ["title", "body", "publishingDate", "authors"],
       "mutation": "update"
     }
   }
 }
 ```
 
-
-
 ### Subscribing to all records related to a record
-Subscription for observing a single record. Note that a subscription could listen for an individual record being `created` by specifying a unique field that the record will be created with, **only** if the subscription is established prior to the record being created.
 
+Subscription for observing a single record. Note that a subscription could listen for an individual record being `created` by specifying a unique field that the record will be created with, **only** if the subscription is established prior to the record being created.
 
 ```javascript
 subscription {
   Posts(filter: {
     mutation_in: [
-      create, 
-      update, 
+      create,
+      update,
       delete
     ],
     node: {
@@ -89,7 +82,7 @@ subscription {
           equals: "Huxley"
         }
       }
-    } 
+    }
   }) {
     node {
       title
@@ -100,8 +93,6 @@ subscription {
   }
 }
 ```
-
-
 
 ```json
 {
@@ -118,11 +109,9 @@ subscription {
 }
 ```
 
-
-
 ### Subscription to field specific events on records
-Subscription for listening to field change on table records.
 
+Subscription for listening to field change on table records.
 
 ```javascript
 subscription {
@@ -143,8 +132,6 @@ subscription {
 }
 ```
 
-
-
 ```json
 {
   "data": {
@@ -160,5 +147,3 @@ subscription {
   }
 }
 ```
-
-

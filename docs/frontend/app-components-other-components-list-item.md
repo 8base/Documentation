@@ -1,13 +1,16 @@
 ---
 id: 'app-components-other-components-list-item'
 sidebar_label: 'List Item'
-slug: '/frontend/app-components/other-components/list-item'
+redirect_from: '/frontend/app-components/other-components/list-item'
+slug: '/projects/frontend/app-components/other-components/list-item'
 ---
 
 # List Item
-The *List Item* component is a text-based item contained within a list.
+
+The _List Item_ component is a text-based item contained within a list.
 
 ### Properties
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -24,9 +27,10 @@ The *List Item* component is a text-based item contained within a list.
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an *[icon](./app-components-other-components-icon)*, *[badge](./app-components-other-components-badge)*, *[chip](./app-components-other-components-chip)* or *[container](./app-components-layout-components-container)* to the left-hand side of a list item. 
+The **Add Left Component** allows the placement of an _[icon](./app-components-other-components-icon)_, _[badge](./app-components-other-components-badge)_, _[chip](./app-components-other-components-chip)_ or _[container](./app-components-layout-components-container)_ to the left-hand side of a list item.
 
 ### Style Attributes
+
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
@@ -39,6 +43,4 @@ The **Add Left Component** allows the placement of an *[icon](./app-components-o
 </tbody>
 </table>
 
-
-For more detail on the *List Item* component, see the [MUI developer docs](https://mui.com/material-ui/api/list-item/).
-
+For more detail on the _List Item_ component, see the [MUI developer docs](https://mui.com/material-ui/api/list-item/).

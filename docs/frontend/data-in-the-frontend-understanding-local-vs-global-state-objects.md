@@ -1,14 +1,15 @@
 ---
 id: 'data-in-the-frontend-understanding-local-vs-global-state-objects'
 sidebar_label: 'Understanding Local vs Global State Objects'
-slug: '/frontend/data-in-the-frontend/understanding-local-vs-global-state-objects'
+redirect_from: '/frontend/data-in-the-frontend/understanding-local-vs-global-state-objects'
+slug: '/projects/frontend/data-in-the-frontend/understanding-local-vs-global-state-objects'
 ---
 
 # Understanding Local vs. Global State Objects
 
 This article describes the difference between Global and Local state objects when working with App Builder's state management system.
 
-___
+---
 
 When working with App Builder, it's essential to understand the difference between Local and Global state objects. You may want to use one or the other, depending on your needs. Here's a quick overview of each:
 
@@ -38,7 +39,7 @@ Global state objects are useful when you need to:
 
 ## How are Global vs. the Local States managed?
 
-When creating _Requests_, _Functions_, and _Custom State Entries_, you're able to first select which namespace you want to enter the element into by selecting the relevant tab ("Global" or "Local") in the pane. 
+When creating _Requests_, _Functions_, and _Custom State Entries_, you're able to first select which namespace you want to enter the element into by selecting the relevant tab ("Global" or "Local") in the pane.
 
 ![_Component_ being added to a Local state object](./_images/ab-local-v-global-state-3.png)
 
@@ -48,6 +49,6 @@ Once either "Global" or "Local" is selected in any element's management pane, go
 
 App Builder automatically manages many different elements' scope based on where they are applied/added to your app. For example, your Theme values are always accessible from the Global State, while certain Component Instances - depending on whether they're added to a Page or Layout, will vary.
 
-## Next 
+## Next
 
 In the following sections, we will look at the scoping of different types of elements available in App Builder.
