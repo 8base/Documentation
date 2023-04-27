@@ -38,18 +38,16 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars/sidebar.js'),
           routeBasePath: '/',
-          sidebarCollapsible:false,
+          sidebarCollapsible: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/8base/Documentation/blob/main',
+          editUrl: 'https://github.com/8base/Documentation/blob/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/8base/Documentation/blob/main',
+          editUrl: 'https://github.com/8base/Documentation/blob/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -66,11 +64,11 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        style:'dark',
+        style: 'dark',
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
-          href:'https://docs.8base.com/',
+          href: 'https://docs.8base.com/',
         },
         items: [
           {
@@ -86,42 +84,40 @@ const config = {
             label: '8base App Builder',
           },
           {
-            href:'https://community.8base.com',
-            position:'left',
+            href: 'https://community.8base.com',
+            position: 'left',
             label: 'Community',
-            className: 'hide-svg'
+            className: 'hide-svg',
           },
           {
-            href:'https://twitter.com/8base',
-            position:'right',
-            className:'twitter',
+            href: 'https://twitter.com/8base',
+            position: 'right',
+            className: 'twitter',
             icon: {
-              alt:'twitter icon',
+              alt: 'twitter icon',
               src: `logos/twitter.svg`,
               href: 'https://twitter.com/8base',
-              target:'_blank'
-
-            }
+              target: '_blank',
+            },
           },
           {
-            href:'https://github.com/8base/Documentation',
-            position:'right',
-            className:'github',
-            icon:{
-              alt:'github icon',
+            href: 'https://github.com/8base/Documentation',
+            position: 'right',
+            className: 'github',
+            icon: {
+              alt: 'github icon',
               src: `/logos/github.svg`,
               href: 'https://github.com/ionic-team/ionic-framework',
               target: '_blank',
-            }
+            },
           },
           {
             href: 'https://app.8base.com/auth/login',
             label: 'Sign In',
             position: 'right',
-            className: 'button button--secondary button--lg signin'
+            className: 'button button--secondary button--lg signin',
           },
         ],
-
       },
       algolia: {
         // The application ID provided by Algolia
@@ -133,16 +129,16 @@ const config = {
 
         version: {
           // You can send raw values without `selectors`
-          defaultValue: ["latest", "stable"],
+          defaultValue: ['latest', 'stable'],
         },
         // Optional: see doc section below
         contextualSearch: true,
 
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-//externalUrlRegex: 'external\\.com|domain\\.com',
+        //externalUrlRegex: 'external\\.com|domain\\.com',
 
         // Optional: Algolia search parameters
-       // searchParameters: {},
+        // searchParameters: {},
 
         // Optional: path for search page that enabled by default (`false` to disable it)
 
@@ -152,18 +148,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        
       },
-
     }),
 
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      { redirects },
-    ],
-  ]
-
+  plugins: [['@docusaurus/plugin-client-redirects', { redirects }]],
 };
 
 module.exports = config;
