@@ -37,7 +37,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars/sidebar.js'),
-          routeBasePath: '/',
+          routeBasePath: '/projects/',
           sidebarCollapsible: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -68,7 +68,7 @@ const config = {
         logo: {
           alt: '8base Logo',
           src: 'img/logo.svg',
-          href: 'https://docs.8base.com/',
+          href: '/',
         },
         items: [
           {
