@@ -1,8 +1,8 @@
 ---
 id: 'getting-started-introduction'
 sidebar_label: 'Introduction'
-redirect_from: '/frontend/getting-started/introduction'
-slug: '/projects/frontend/getting-started/introduction'
+redirect_from: '/frontend/getting-started-introduction'
+slug: '/projects/frontend/getting-started-introduction'
 ---
 
 # App Builder Docs

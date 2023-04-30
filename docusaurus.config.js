@@ -71,18 +71,18 @@ const config = {
           href: '/',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'console-readme',
-            position: 'left',
-            label: '8base Backend',
-          },
-          {
-            type: 'doc',
-            docId: 'frontend/getting-started-introduction',
-            position: 'left',
-            label: '8base App Builder',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'console-readme',
+          //   position: 'left',
+          //   label: '8base Backend',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'frontend/getting-started-introduction',
+          //   position: 'left',
+          //   label: '8base App Builder',
+          // },
           {
             href: 'https://community.8base.com',
             position: 'left',
