@@ -19,7 +19,7 @@ const sidebars = {
             label: 'Welcome',
             items: [{
                 type: 'doc',
-                id: 'backend/console-readme',
+                id: 'console-readme',
                 label: 'Introduction'
             }],
         },

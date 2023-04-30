@@ -73,7 +73,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'backend/console-readme',
+            docId: 'console-readme',
             position: 'left',
             label: '8base Backend',
           },
