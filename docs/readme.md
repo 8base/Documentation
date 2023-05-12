@@ -7,50 +7,22 @@ slug: '/'
 
 # Introduction
 
-**[Sign Up for 8Base](https://app.8base.com)** 🤘 **[Documentation Home](https://docs.8base.com)** 📑 **[Getting Started](/projects/backend/getting-started)** 🚀 **[8base Plans](https://www.8base.com/pricing)**
+Welcome to 8base, a robust low-code platform designed to facilitate the creation of full-stack JavaScript applications. We created this platform for professional developers who seek an efficient and streamlined tool to bring their projects to life.
 
-## Welcome!
+8base empowers developers to generate comprehensive applications, manage data effectively, and design and deploy scalable and robust digital products. With 8base, developers can generate comprehensive GraphQL APIs and extend them with custom server-side functions.
 
-Welcome to 8base! We're so glad you're here. We've poured countless hours into creativity and code to create 8base. All of that effort intended solely to support you in building something amazing.
+Furthermore, 8base allows developers to build frontend applications that interact seamlessly with the backend and communicate with any third-party API using a modern JavaScript framework. The versatility of 8base provides a wide range of opportunities to innovate and deliver high-quality digital solutions.
 
-Reading this documentation is the first step to becoming an 8base master, which in turn will make you into a 21st century software whiz-kid. Seriously, it's that good.
+## Documentation organization
+1. **Project Management**: This section provides a thorough understanding of how to create, manage, and coordinate your application projects on 8base effectively.
 
-Always let us know how we can help!
+2. **Backend Development**: Here, you'll find detailed guides and tutorials on leveraging the power of 8base for backend development. It includes instructions on creating GraphQL APIs, custom server-side functions, and managing data.
 
-## Connecting with the Community
+3. **Frontend Development**: This part of the documentation provides comprehensive instructions on integrating 8base with modern JavaScript frameworks for frontend development. You'll learn how to connect your frontend applications to the backend and interact with third-party APIs.
 
-While building on 8base and checking out the docs, you might have some questions. Actually, lets re-phrase that... while building on 8base YOU'LL DEFINITELY HAVE SOME QUESTIONS. When such a situation arises, fret not. We're here for you.
+## Connecting with the community
+For a more interactive learning experience, we encourage you to connect with our vibrant community at [https://community.8base.com/](https://community.8base.com/). This platform allows you to ask questions, share experiences, and interact with other members of the 8base community.
 
-> [Start a Topic on 8base's Discourse](https://community.8base.com)  
-> Create topics for new feature suggestions, code support, or debugging help.
+In the event of technical issues with the product, please reach out to our dedicated support team at support@8base.com. We are committed to providing you with the assistance you need to ensure a seamless experience with 8base.
 
-## Contributing to 8base Docs
-
-Like most great things, 8base is a work in progress. As a consequence of that, our documentation is constantly under development and probably in need of some TLC. Right now, we have two team members that are maintaining the docs, and frankly, they could use a little help...
-
-That's where YOU come in.
-
-Our documentation repo is public and open-sourced [right here](https://github.com/8base/documentation) on GitHub. So whenever you want to, you could:
-
-- Report missing sections: Think something **should** be in the documentation that **isn't**? [Create an issue](https://github.com/8base/documentation/issues) to let us know!
-- Submit pull requests: Want to not only point out the problem but be apart of the solution? Clone the Documentation repo and submit pull requests start... pretty much anything, like:
-  - Grammar and spelling
-  - Errors in any code example
-  - Even BETTER code examples
-  - Missing sections
-  - Better descriptions
-  - A nice GIF of a police man in the Authorization section \* Anything else...
-
-If you need help getting started, just reach out to us at [support@8base.com](mailto://support@8base.com). However, here are some more complete descriptions of work that can be done.
-
-### 1. Reporting an Issue
-
-8base uses GitHub Issue Tracking to track issues (primarily bugs and contributions of new code). If you've found a bug in 8base, this is the place to start. You'll need to create a (free) GitHub account in order to submit an issue, to comment on them or to create pull requests.
-
-### 2. Create an Awesome Code Example
-
-Examples are sooo important in great documentation and are very helpful for the 8base community. You can help by providing complete code examples, or by editing the current ones. Honestly, if you think "a, b, and c examples are terrible and I could make them better", please do! We won't take it personally...
-
-### 3. Contributing Articles
-
-You can help improve the 8base Docs by making them more coherent, consistent, or readable and adding missing information, correcting factual errors, fixing typos, and bringing them up to date with the latest 8base features. It's honestly an open-book. If you think something is useful, others probably will too.
+We are glad to have you here and we hope you find this documentation insightful and beneficial as you explore the full capabilities of 8base. Your journey to creating powerful and innovative full-stack applications begins here.
