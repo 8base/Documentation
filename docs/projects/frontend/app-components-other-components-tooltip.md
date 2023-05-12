@@ -50,7 +50,7 @@ The _Tooltip_ component has two typography subcomponents used to create text for
 
 Specifies text for the typography element and the tooltip.
 
-For further details, see the [Typography](./app-components-other-components-typography) component.
+For further details, see the *Typography* component.
 
 #### Properties
 

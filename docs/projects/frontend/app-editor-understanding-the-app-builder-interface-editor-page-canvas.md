@@ -13,19 +13,19 @@ The Page Canvas area gets used to build your application when working inside the
 
 The Page Canvas is a WYSIWYG editor, meaning you can see how your app will look as you build it. To build your user interface, you can drag and drop components onto the Page Canvas.
 
-## Layouts and Views
+![App Builder Page Canvas](./_images/ab-editor-page-canvas-1.png)
 
 Most often, when developing an App in App Builder, your Pages will be built using a combination of Layouts and Views.
 
-### Layouts Summary
+Most often, when developing an App in App Builder, your Pages will be built using a combination of *Layouts* and *Components*. 
 
 A **Layout** is a reusable container you can use to arrange components on the Page Canvas. App Builder ships with a few different Layout components, such as the **Authenticated** and **Empty**. You can also create custom Layouts.
 
-Layouts are not Page-specific and get selected on a page-by-page basis in the Page settings.
+### Layouts
 
-### Views Summary
+A *Layout* is a reusable container to arrange components on the Page Canvas. The App Builder has a few different Layouts, such as **Authenticated** and **Empty**. You can also create custom layouts.
 
-A **View** is all components added to a specific page rendered within the Layout. This means that when editing a Page, you're adding components to a View. Meanwhile, when editing a Layout, you're adding components to the Layout that will be available on all Pages using that Layout.
+### Components
 
 All this said Layouts and Views are always displayed and updated through the Page Canvas.
 

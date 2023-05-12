@@ -41,7 +41,7 @@ The _Avatar_ component has two subcomponents that allow the addition of either a
 
 An icon to use on the avatar.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 
@@ -62,7 +62,7 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 
 The typography to use on the avatar.
 
-For further details, see the [Typography](./app-components-other-components-typography) component.
+For further details, see the *Typography* component.
 
 #### Properties
 

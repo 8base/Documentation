@@ -68,7 +68,7 @@ module.exports = (event) => {
 
 ### Resolver Arguments
 
-To learn about the arguments that are passed to resolvers, review the [custom function arguments docs.](/docs/8base-console/custom-functions/#custom-function-arguments)
+To learn about the arguments that are passed to resolvers, review the [custom function arguments docs.](/projects/backend/custom-functions/#custom-function-arguments)
 
 ### Resolver Response
 

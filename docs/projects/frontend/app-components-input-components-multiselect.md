@@ -66,7 +66,7 @@ The _Menu Item_ component is a list component with a special target. It is stati
 
 The _Text_ component creates a text value for another component.
 
-For further details, see the [Text](./app-components-other-components-text) component.
+For further details, see the *Text* component.
 
 #### Properties
 
@@ -83,7 +83,7 @@ For further details, see the [Text](./app-components-other-components-text) comp
 
 The _Looper_ component creates a static or dynamic data array for another component.
 
-For further details, see the [Looper](./app-components-data-components-looper) component.
+For further details, see the *Looper* component.
 
 #### Properties
 
@@ -101,4 +101,4 @@ For further details, see the [Looper](./app-components-data-components-looper) c
 
 Defines the margin and padding around a multiselect item.
 
-For further details, see the [Container](./app-components-layout-components-container) component.
+For further details, see the [Container](/projects/frontend/app-components/layout-components/container) component.

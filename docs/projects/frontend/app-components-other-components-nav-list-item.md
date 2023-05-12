@@ -27,7 +27,7 @@ The _Nav List_ component is a navigational element contained within a list.
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an _[icon](./app-components-other-components-icon)_, _[badge](./app-components-other-components-badge)_, _[chip](./app-components-other-components-chip)_ or _[container](./app-components-layout-components-container)_ to the left-hand side of a nav list item.
+The **Add Left Component** allows the placement of an _[icon](/projects/frontend/app-components/other-components/icon)_, _[badge](/projects/frontend/app-components/other-components/badge)_, _[chip](/projects/frontend/app-components/other-components/chip)_ or _[container](/projects/frontend/app-components/layout-components/container)_ to the left-hand side of a nav list item.
 
 ### Style Attributes
 

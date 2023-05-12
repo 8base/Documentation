@@ -52,7 +52,7 @@ _Checked Icon_ - specifies an icon to use when the switch is set.
 
 _Unchecked Icon_ - specifies an icon to use when the switch is not set.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 

@@ -45,6 +45,6 @@ In the same drop-down, columns can easily be reordered. Simply drag-and-drop ite
 
 To import a CSV file, click the ellipsis button in the top right corner of the menu bar and choose `[Import CSV]` from the drop-down. The CSV importer supports column mapping and enforces all schema defined validations on create.
 
-Please refer to the [CLI's Import](/docs/development-tools/cli/commands#import) command docs to import more complex data (related records, images, smart fields, etc).
+Please refer to the [CLI's Import](/projects/backend/development-tools/cli/commands#import) command docs to import more complex data (related records, images, smart fields, etc).
 
 ![Importing records into the Data Viewer](./images/data-viewer-import.gif)

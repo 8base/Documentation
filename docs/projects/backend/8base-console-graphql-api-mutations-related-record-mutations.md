@@ -16,7 +16,7 @@ You can create, connect, reconnect, and disconnect related table records using 8
 - **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
 - **Disconnect**: Disconnect connected object(s) (update mutation only).
 
-**\*Note**: Some examples will use [aliases](/docs/8base-console/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
+**\*Note**: Some examples will use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
 
 ##### Creating related records in nested mutation
 

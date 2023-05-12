@@ -6,8 +6,9 @@ slug: '/projects/frontend/app-components/data-components/looper'
 ---
 
 # Looper
+The *Looper* component is a container that uses a static or dynamic data array. Other components, such as a *List* or *Typography* component, are added to the *Looper* component to render dynamic content on the page.
 
-The _Looper_ component is a container that uses a static or dynamic data array. Other components, such as a _[List](./app-components-other-components-list)_ or _[Typography](./app-components-other-components-typography)_ component, are added to the _Looper_ component to render dynamic content on the page.
+The _Looper_ component is a container that uses a static or dynamic data array. Other components, such as a _[List](/projects/frontend/app-components/other-components/list)_ or _[Typography](/projects/frontend/app-components/other-components/typography)_ component, are added to the _Looper_ component to render dynamic content on the page.
 
 #### Properties
 

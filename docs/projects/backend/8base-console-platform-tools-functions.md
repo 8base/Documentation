@@ -7,7 +7,7 @@ slug: '/projects/backend/console/functions'
 
 # Logic
 
-The [Logic](https://app.8base.com/logic) screen is a dashboard where all [Custom Functions](https://docs.8base.com/docs/8base-console/custom-functions) that have been deployed to a workspace can be reviewed. Consider it your catalog for any custom server side logic.
+The [Logic](https://app.8base.com/logic) screen is a dashboard where all [Custom Functions](/projects/backend/custom-functions) that have been deployed to a workspace can be reviewed. Consider it your catalog for any custom server side logic.
 
 ![Logic screen in 8base management console](./images/logic-screen.png)
 
@@ -31,4 +31,4 @@ If a `console.log('...something')` statement is used inside of a custom function
 
 All descriptions and meta-data attributed to a function must be added/updated inside the `8base.yml` file. There is currently no support for editing functions in the management console.
 
-Check out the [8base.yml docs](https://docs.8base.com/docs/development-tools/dev-env/8base-yml) to learn more about deploying functions to a workspace.
+Check out the [8base.yml docs](/projects/backend/development-tools/dev-env/8base-yml) to learn more about deploying functions to a workspace.

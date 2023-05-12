@@ -976,10 +976,6 @@
     "to": "/projects/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic"
   },
   {
-    "from": "/backend/getting-started/quick-start",
-    "to": "/projects/project-ui-walkthrough"
-  },
-  {
     "from": "/backend",
     "to": "/"
   }

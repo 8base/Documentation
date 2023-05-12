@@ -81,8 +81,8 @@ GraphQL mutations (like the one above) handle record creates, updates, and delet
 
 This is a great example of how 8base supports relational queries and mutations!
 
-- _[GraphQL API docs](https://docs.8base.com/docs/8base-console/graphql-api)_
-- _[API Explorer docs](https://docs.8base.com/docs/8base-console/platform-tools/api-explorer)_
+- _[GraphQL API docs](/projects/backend/graphql-api)_
+- _[API Explorer docs](/projects/backend/console/api-explorer)_
 
 ### 2.2. Roles and Permissions
 
@@ -100,7 +100,7 @@ Now, all users with the _Reviewer_ role who call the workspace API endpoint will
 
 ![8base roles and permissions](./images/qs-roles-and-permissions.png)
 
-- _[Roles and Permissions docs](https://docs.8base.com/docs/8base-console/roles-and-permissions)_
+- _[Roles and Permissions docs](/projects/backend/roles-and-permissions)_
 
 ### 2.3. Authentication Profiles
 
@@ -111,7 +111,7 @@ Navigate to the [Authentication page](https://app.8base.com/app-services/authent
 | Option        | Value                | Notes                                                                                                            |
 | ------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | `Name`        | "Default Guest Auth" | Choose any descriptive name                                                                                      |
-| `Type`        | 8base authentication | Find more auth info in the [docs](https://docs.8base.com/docs/8base-console/authentication#8base-authentication) |
+| `Type`        | 8base authentication | Find more auth info in the [docs](/projects/backend/authentication#8base-authentication) |
 | `Self Signup` | Open to all          | Leave `Off` if using a free workspace                                                                            |
 | `Roles`       | Reviewer             | Multiple roles can be assigned to user on sign up                                                                |
 
@@ -121,7 +121,7 @@ Add the new authentication profile. The information that’s now displayed will 
 
 Scroll down to where you see `Custom Domains`. This is where you can provide routes that’ll be used during authentication. Make sure the `localhost:port` number matches that which your app will run on in development - or other redirect URLs for native apps!
 
-- _[Authentication Profile docs](https://docs.8base.com/docs/8base-console/authentication#8base-authentication)_
+- _[Authentication Profile docs](/projects/backend/authentication#8base-authentication)_
 
 ### 2.4. Getting the Workspace API Endpoint
 
@@ -247,7 +247,7 @@ Serverless custom functions provide tremendous flexibility in customizing server
 - Webhooks: For invoking functions on webhook events using HTTP requests ([GET|POST|PUT|DELETE] @ endpoint)
 - Scheduled Tasks: For invoking functions on timed intervals (once a day, every five-minutes, or cron format)
 
-* _[Custom Functions docs](https://docs.8base.com/docs/8base-console/custom-functions)_
+* _[Custom Functions docs](/projects/backend/custom-functions)_
 
 ### 3.3. Choose a Starter App / Framework for the Frontend
 

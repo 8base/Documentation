@@ -23,7 +23,7 @@ To view pending invitations, switch the top left drop-down option to _Invitation
 
 ## Roles and permission for team members
 
-The same [roles and permissions](/docs/8base-console/roles-and-permissions) system that is used in authorizing 8base applications is used for team member access management. These roles can be configured so that they are specific to an individual or general to a group. Roles are configured the same way in both of these scenarios. However, lets look at both examples.
+The same [roles and permissions](/projects/backend/roles-and-permissions) system that is used in authorizing 8base applications is used for team member access management. These roles can be configured so that they are specific to an individual or general to a group. Roles are configured the same way in both of these scenarios. However, lets look at both examples.
 
 ### Developer User Role
 

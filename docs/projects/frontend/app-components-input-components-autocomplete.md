@@ -87,7 +87,7 @@ _Popup Icon_ - specifies an icon to replace the default popup icon.
 
 _Clear Icon_ - specifies an icon to replace the clear icon.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 

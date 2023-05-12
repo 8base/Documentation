@@ -52,7 +52,7 @@ _Left Icon_ - specifies an icon to use on the left side of the button face.
 
 _Right Icon_ - specifies an icon to use on the right side of the button face.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 

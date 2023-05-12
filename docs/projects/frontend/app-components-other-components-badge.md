@@ -46,7 +46,7 @@ The _Badge_ component requires an icon child subcomponent.
 
 Defines an _Icon_ component used to support the badge component.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 

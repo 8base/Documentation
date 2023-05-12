@@ -1,7 +1,6 @@
 ---
 id: 'project-ui-walkthrough'
 sidebar_label: 'Project UI Walkthrough'
-redirect_from: '/backend/getting-started/quick-start'
 slug: '/projects/project-ui-walkthrough'
 ---
 # Project UI Walkthrough

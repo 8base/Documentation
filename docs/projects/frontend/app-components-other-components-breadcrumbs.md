@@ -7,7 +7,7 @@ slug: '/projects/frontend/app-components/other-components/breadcrumbs'
 
 # Breadcrumbs
 
-The _Breadcrumbs_ component displays a list of links that help the user visualize a page's location within the structure of a website and allows navigation to any page within the list. The component uses either _Typography_ or _[Link](./app-components-other-components-link)_ components to create the location list.
+The _Breadcrumbs_ component displays a list of links that help the user visualize a page's location within the structure of a website and allows navigation to any page within the list. The component uses either _Typography_ or _[Link](/projects/frontend/app-components/other-components/link)_ components to create the location list.
 
 ### Properties
 
@@ -32,7 +32,7 @@ The _Breadcrumbs_ component has a _Typography_ subcomponent that allows for a se
 
 Specifies a separator character to separate the breadcrumb items.
 
-For further details, see the [Typography](./app-components-other-components-typography) component.
+For further details, see the *Typography* component.
 
 #### Properties
 

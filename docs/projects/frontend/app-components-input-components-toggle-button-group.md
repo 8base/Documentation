@@ -52,7 +52,7 @@ A _Toggle Button_ is a component that acts as a single input control and is part
 
 The toggle button has two states, On and Off.
 
-For further details, see the [Toggle Button](./app-components-input-components-toggle-button) component.
+For further details, see the [Toggle Button](/projects/frontend/app-components/input-components/toggle-button) component.
 
 #### Properties
 

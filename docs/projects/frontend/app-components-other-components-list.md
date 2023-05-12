@@ -29,7 +29,7 @@ The _List_ component has two possible subcomponents, the _List Item_ and the _Na
 
 A text-based item for a list.
 
-For further details, see the [List Item](./app-components-other-components-list-item) component.
+For further details, see the *List Item* component.
 
 #### Properties
 
@@ -49,7 +49,7 @@ For further details, see the [List Item](./app-components-other-components-list-
 
 A navigational element within a list.
 
-For further details, see the [Nav-List Item](./app-components-other-components-nav-list-item) component.
+For further details, see the *Nav-List Item* component.
 
 #### Properties
 
@@ -65,6 +65,6 @@ For further details, see the [Nav-List Item](./app-components-other-components-n
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an _[icon](./app-components-other-components-icon)_, _[badge](./app-components-other-components-badge)_, _[chip](./app-components-other-components-chip)_ or _[container](./app-components-layout-components-container)_ to the left-hand side of a list item or nav-list item.
+The **Add Left Component** allows the placement of an _[icon](/projects/frontend/app-components/other-components/icon)_, _[badge](/projects/frontend/app-components/other-components/badge)_, _[chip](/projects/frontend/app-components/other-components/chip)_ or _[container](/projects/frontend/app-components/layout-components/container)_ to the left-hand side of a list item or nav-list item.
 
 For more detail on the _List_ component, see the [MUI developer docs](https://mui.com/material-ui/api/list/).

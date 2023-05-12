@@ -47,7 +47,7 @@ The structure of a Workspace can generally be divide into two parts:
 
 Application users and all the data created by them, contained in user data tables.
 
-An awesome way to get more familiar with the true power of 8base is to complete [the quick start app](/docs/getting-started/quick-start) and watch some of the [8base Academy Videos](https://www.youtube.com/channel/UCQgTczr5z_O4SJ-3nkANOaw). That said, below is a list of great guides to help get you familiar with many key concepts.
+An awesome way to get more familiar with the true power of 8base is to complete [the quick start app](/projects/backend/getting-started/quick-start) and watch some of the [8base Academy Videos](https://www.youtube.com/channel/UCQgTczr5z_O4SJ-3nkANOaw). That said, below is a list of great guides to help get you familiar with many key concepts.
 
 ## Useful Guides
 

@@ -244,7 +244,7 @@ type Address = {
 
 #### Phone
 
-For persisting phone numbers in a field. The `phone` field will display available fields in the [Data Viewer](/docs/8base-console/platform-tools/data-viewer/) and API Explorer.
+For persisting phone numbers in a field. The `phone` field will display available fields in the [Data Viewer](/projects/backend/console/data-viewer) and API Explorer.
 
 ```ts
 type Phone = {

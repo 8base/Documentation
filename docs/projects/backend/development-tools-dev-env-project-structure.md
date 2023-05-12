@@ -7,7 +7,7 @@ slug: '/projects/backend/development-tools/dev-env/project-structure'
 
 # Project Structure
 
-When using the [8base CLI](/docs/development-tools/cli) to create a new project with all default options, it will create a directory structure that resembles the following:
+When using the [8base CLI](/projects/backend/development-tools/cli) to create a new project with all default options, it will create a directory structure that resembles the following:
 
 ```text
 Building a new project called ExampleProject 🚀
@@ -44,7 +44,7 @@ ExampleProject
 
 All the dependencies can be installed using `npm` or `yarn`. Additionally, the 8base CLI comes with Webpack and TypeScript pre-configured. This allows you to write code in JavaScript or TypeScript in your custom functions, as well as use `async/await`.
 
-Following this project structure is valuable for staying organized and getting the most out of 8base's CLI. For example, the CLI's [generator commands](/docs/development-tools/cli/generators) offer great convenience for scaffolding new resources and will add generated files using pattern seen above (`src/<functionType>/<functionName>/**/*`).
+Following this project structure is valuable for staying organized and getting the most out of 8base's CLI. For example, the CLI's [generator commands](/projects/backend/development-tools/cli/generators) offer great convenience for scaffolding new resources and will add generated files using pattern seen above (`src/<functionType>/<functionName>/**/*`).
 
 ## Server vs. Client
 

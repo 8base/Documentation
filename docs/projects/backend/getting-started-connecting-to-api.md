@@ -17,7 +17,7 @@ An 8base Workspace API is a single endpoint from which **all** data sources can 
 https://api.8base.com/<WORKSPACE_ID>
 ```
 
-All requests made to a workspace endpoint must be run using either a GraphQL client or an HTTP POST request - the only exception is when using [webhook custom functions](https://docs.8base.com/docs/8base-console/custom-functions/webhooks). We highly recommend using a GraphQL client like the [8base SDK](https://docs.8base.com/docs/development-tools/sdk/api-client) or [Apollo Client](https://github.com/apollographql/apollo-client).
+All requests made to a workspace endpoint must be run using either a GraphQL client or an HTTP POST request - the only exception is when using [webhook custom functions](/projects/backend/custom-functions/webhooks). We highly recommend using a GraphQL client like the [8base SDK](https://docs.8base.com/docs/development-tools/sdk/api-client) or [Apollo Client](https://github.com/apollographql/apollo-client).
 
 That said, it doesn't matter what technology you use for the client - or server - application. As long as you can perform HTTP requests, you'll be able to query a workspace endpoint.
 

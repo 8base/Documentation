@@ -56,7 +56,7 @@ _Unchecked Icon_ - specifies an icon to use when the checkbox is unchecked.
 
 _Indeterminate Icon_ - specifies an icon to use when the checkbox is indeterminate.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 

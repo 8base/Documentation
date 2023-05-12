@@ -9,7 +9,7 @@ slug: '/projects/frontend/app-components/layout-components/popper'
 
 The _Popper_ component displays content on top of other content. The component API is an alternative to the react-popper and relies on a 3rd party library, _Popper.js_, for perfect positioning.
 
-When you add a _Popper_ component to a page, a _[Button](./app-components-input-components-button)_ component that controls the state of the _Popper_ is automatically added for you. Other components, such as an _[Icon](./app-components-other-components-icon)_ or _[Image](./app-components-other-components-image)_, can also be used.
+When you add a _Popper_ component to a page, a _[Button](/projects/frontend/app-components/input-components/button)_ component that controls the state of the _Popper_ is automatically added for you. Other components, such as an _[Icon](/projects/frontend/app-components/other-components/icon)_ or _[Image](/projects/frontend/app-components/other-components/image)_, can also be used.
 
 ### Style Attributes
 

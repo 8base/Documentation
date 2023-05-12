@@ -68,9 +68,9 @@ Many other data points are stored about a user. If you need to update other info
 
 Deleting a user can be done by clicking `delete` in the row drop-down. This action will delete the user record, along with any of its dependent records.
 
-When using [8base Authentication](https://docs.8base.com/docs/8base-console/authentication#8base-authentication) the user's record will be deleted in both 8base and the authentication provider. When using another authentication provider the user record will **only** be deleted in 8base.
+When using [8base Authentication](/projects/backend/authentication#8base-authentication) the user's record will be deleted in both 8base and the authentication provider. When using another authentication provider the user record will **only** be deleted in 8base.
 
-Please refer to the [Authentication docs](https://docs.8base.com/docs/8base-console/authentication) to learn more about this.
+Please refer to the [Authentication docs](/projects/backend/authentication) to learn more about this.
 
 ## Passwords
 

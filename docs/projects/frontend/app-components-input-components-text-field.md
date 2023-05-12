@@ -60,7 +60,7 @@ The _Text Field_ component has two subcomponents that allow an icon or typograph
 
 Specifies an icon to use at the start or end of a text field.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 
@@ -81,7 +81,7 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 
 Specifies typography to use at the start or end of a text field.
 
-For further details, see the [Typography](./app-components-other-components-typography) component.
+For further details, see the *Typography* component.
 
 #### Properties
 

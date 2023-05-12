@@ -72,7 +72,7 @@ The _Table_ component has three possible subcomponents _Text_, _Link_, or _Conta
 
 The _Text_ component creates a text value for another component.
 
-For further details, see the [Text](./app-components-other-components-text) component.
+For further details, see the *Text* component.
 
 #### Properties
 
@@ -89,7 +89,7 @@ For further details, see the [Text](./app-components-other-components-text) comp
 
 The _Link_ component provides a link to either a document or a location.
 
-For further details, see the [Link](./app-components-other-components-link) component.
+For further details, see the *Link* component.
 
 ### Properties
 
@@ -108,4 +108,4 @@ For further details, see the [Link](./app-components-other-components-link) comp
 
 Defines the margin and padding around a multiselect item.
 
-For further details, see the [Container](./app-components-layout-components-container) component.
+For further details, see the [Container](/projects/frontend/app-components/layout-components/container) component.
