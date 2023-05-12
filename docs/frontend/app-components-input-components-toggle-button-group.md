@@ -46,7 +46,7 @@ The *Toggle Button Group* component has one subcomponent, a *Toggle Button* comp
  
  The toggle button has two states, On and Off.
  
- For further details, see the [Toggle Button](./app-components-input-components-toggle-button) component.
+ For further details, see the *Toggle Button* component.
 
 #### Properties
 <table>

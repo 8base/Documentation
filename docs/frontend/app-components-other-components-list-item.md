@@ -24,7 +24,7 @@ The *List Item* component is a text-based item contained within a list.
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an *[icon](./app-components-other-components-icon)*, *[badge](./app-components-other-components-badge)*, *[chip](./app-components-other-components-chip)* or *[container](./app-components-layout-components-container)* to the left-hand side of a list item. 
+The **Add Left Component** allows the placement of an *icon)*, *badge*, *chip* or *container* to the left-hand side of a list item. 
 
 ### Style Attributes
 <table>

@@ -14,7 +14,7 @@ The Hidden Canvas area gets used to build your application's "not-seen-by-defaul
 
 To open the Hidden Canvas, open the Page Structure modal from the left menu. Using the dropdown under "Page Canvas", select "Hidden Canvas Nodes."
 
-Thisin  will show you a list of all the Hidden Components on your page and allow you to toggle their visibility. By toggling visibility to "on" by clicking the eye icon, you can bring these components into view the Editor.
+This will show you a list of all the Hidden Components on your page and allow you to toggle their visibility. By toggling visibility to "on" by clicking the eye icon, you can bring these components into view the Editor.
 
 ## Creating Dialogs
 

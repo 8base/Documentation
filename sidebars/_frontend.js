@@ -204,7 +204,6 @@ const sidebars = {
             type: "category",
             label: "Application Layouts",
             items: [
-                "frontend/application-layouts-introduction",
                 "frontend/application-layouts-creating-and-editing-layouts",
                 // "frontend/application-layouts-adding-nested-layouts"
             ],
@@ -225,7 +224,6 @@ const sidebars = {
                         // "frontend/app-navigation-create-and-editing-app-pages-handling-redirects",
                         // "frontend/app-navigation-create-and-editing-app-pages-using-url-query-parameters",
                         "frontend/app-navigation-create-and-editing-app-pages-using-url-fragment-parameters",
-                        "frontend/app-navigation-create-and-editing-app-pages-how-to-create-layouts",
                         "frontend/app-navigation-create-and-editing-app-pages-adding-logic-to-navigation-events",
                         "frontend/app-navigation-create-and-editing-app-pages-using-metadata-stored-on-pages",
                     ],

@@ -38,7 +38,7 @@ The *Radio Group* component has one subcomponent, a *Radio* component, used to c
 ### Radio
 A *Radio* button is a component that acts as a single input control and is part of a set within a *Radio Group*. It has two states, On and Off.
 
-For further details, see the [Radio](./app-components-input-components-radio) component.
+For further details, see the *Radio* component.
 
 #### Properties
 <table>

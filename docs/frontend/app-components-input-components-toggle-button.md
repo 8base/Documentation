@@ -50,7 +50,7 @@ The *Toggle Button* component has a subcomponent that allows the placement of an
 
 *Right Icon* - specifies an icon to use on the right side of the button face.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 <table>

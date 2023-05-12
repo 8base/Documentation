@@ -66,7 +66,7 @@ The *Table* component has three possible subcomponents *Text*, *Link*,  or *Cont
 ### Text
 The *Text* component creates a text value for another component.
 
-For further details, see the [Text](./app-components-other-components-text) component.
+For further details, see the *Text* component.
 
 #### Properties
 <table>
@@ -81,7 +81,7 @@ For further details, see the [Text](./app-components-other-components-text) comp
 ### Link
 The *Link* component provides a link to either a document or a location.
 
-For further details, see the [Link](./app-components-other-components-link) component.
+For further details, see the *Link* component.
 
 ### Properties
 <table>
@@ -98,4 +98,4 @@ For further details, see the [Link](./app-components-other-components-link) comp
 ### Container
 Defines the margin and padding around a multiselect item.
 
-For further details, see the [Container](./app-components-layout-components-container) component.
+For further details, see the *Container* component.

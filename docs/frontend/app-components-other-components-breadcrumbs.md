@@ -27,7 +27,7 @@ The *Breadcrumbs* component has a *Typography* subcomponent that allows for a se
 ### Typography
 Specifies a separator character to separate the breadcrumb items.
 
-For further details, see the [Typography](./app-components-other-components-typography) component.
+For further details, see the *Typography* component.
 
 #### Properties
 <table>

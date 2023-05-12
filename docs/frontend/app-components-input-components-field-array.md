@@ -5,7 +5,7 @@ slug: '/frontend/app-components/input-components/field-array'
 ---
 
 # Field Array
-The *Field Array* component displays form inputs based on a data array. It requires a *[Looper](./app-components-data-components-looper)* component to generate the data array and an input control such as a *[Select](./app-components-input-components-select)* component, which will populate based on the data array.
+The *Field Array* component displays form inputs based on a data array. It requires a *Looper* component to generate the data array and an input control such as a *Select* component, which will populate based on the data array.
 
 The *Field Array* component is used as a form component and must be placed within a *Form Block*.
 

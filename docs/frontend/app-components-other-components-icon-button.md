@@ -40,7 +40,7 @@ The *Icon Button* component has one subcomponent that uses an icon as a button f
 ### Icon
 The *Icon* component allows the user to select an icon to place on the icon button.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 <table>

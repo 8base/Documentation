@@ -81,7 +81,7 @@ The *Autocomplete* component has a subcomponent that allows an icon to replace t
 
 *Clear Icon* - specifies an icon to replace the clear icon.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 <table>

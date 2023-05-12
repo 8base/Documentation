@@ -58,7 +58,7 @@ The *Menu Item* component is a list component with a special target. It is stati
 ### Text
 The *Text* component creates a text value for another component.
 
-For further details, see the [Text](./app-components-other-components-text) component.
+For further details, see the *Text* component.
 
 #### Properties
 <table>
@@ -73,7 +73,7 @@ For further details, see the [Text](./app-components-other-components-text) comp
 ### Looper
 The *Looper* component creates a static or dynamic data array for another component.
 
-For further details, see the [Looper](./app-components-data-components-looper) component.
+For further details, see the *Looper* component.
 
 #### Properties
 <table>
@@ -89,7 +89,7 @@ For further details, see the [Looper](./app-components-data-components-looper) c
 ### Container
 Defines the margin and padding around a multiselect item.
 
-For further details, see the [Container](./app-components-layout-components-container) component.
+For further details, see the *Container* component.
 
 
 

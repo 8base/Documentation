@@ -50,7 +50,7 @@ The *Alert Title* component provides a title for the alert.
 ### Icon
 Allows the user to add an icon to the alert component.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 <table>
@@ -69,7 +69,7 @@ For further details, see the [Icon](./app-components-other-components-icon) comp
 ### Button
 Allows the user to add an action button to the alert.
 
-For further details, see the [Button](./app-components-input-components-button) component.
+For further details, see the *Button* component.
 
 #### Properties
 <table>

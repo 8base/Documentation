@@ -50,7 +50,7 @@ The *Checkbox* component has a subcomponent that allows an icon to be used in pl
 
 *Indeterminate Icon* - specifies an icon to use when the checkbox is indeterminate.
 
-For further details, see the [Icon](./app-components-other-components-icon) component.
+For further details, see the *Icon* component.
 
 #### Properties
 <table>

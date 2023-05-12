@@ -50,7 +50,7 @@ The *Accordion Summary* component provides a title for the content within the de
 </table> 
 
 ### Accordion Details
-The *Accordion Details* component provides a surface to display additional information through other components, such as a *[Card](./app-components-layout-components-card)*, *[Typography](./app-components-other-components-typography)* or *[Text](./app-components-other-components-text)* component.
+The *Accordion Details* component provides a surface to display additional information through other components, such as a *Card*, *Typography* or *Text* component.
 
 <table>
 <thead>
@@ -66,7 +66,7 @@ The *Accordion Details* component provides a surface to display additional infor
 </table> 
 
 ### Accordion Actions
-The *Accordion Actions* component allows for the placement of *[Button](./app-components-input-components-button)* components to perform actions related to the accordion's function. By default, when the accordion actions are enabled, both the **Cancel** and **OK** buttons are added to the component.
+The *Accordion Actions* component allows for the placement of *Button)* components to perform actions related to the accordion's function. By default, when the accordion actions are enabled, both the **Cancel** and **OK** buttons are added to the component.
 
 <table>
 <thead>
