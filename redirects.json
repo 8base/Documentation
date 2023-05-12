@@ -248,10 +248,6 @@
     "to": "/projects/backend/getting-started"
   },
   {
-    "from": "/backend",
-    "to": "/projects/backend"
-  },
-  {
     "from": "/frontend/adding-cdns-and-libraries/calling-frontend-functions/addingremoving-cdns",
     "to": "/projects/frontend/adding-cdns-and-libraries/calling-frontend-functions/addingremoving-cdns"
   },
@@ -808,8 +804,8 @@
     "to": "/projects/frontend/getting-started/building-full-stack-go-to-market-apps-on-8base"
   },
   {
-    "from": "/frontend/getting-started/introduction",
-    "to": "/projects/frontend/getting-started/introduction"
+    "from": "/frontend/getting-started-introduction",
+    "to": "/projects/frontend/getting-started-introduction"
   },
   {
     "from": "/frontend/getting-started/what-is-app-builder",
@@ -978,5 +974,13 @@
   {
     "from": "/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic",
     "to": "/projects/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic"
+  },
+  {
+    "from": "/backend/getting-started/quick-start",
+    "to": "/projects/project-ui-walkthrough"
+  },
+  {
+    "from": "/backend",
+    "to": "/"
   }
 ]

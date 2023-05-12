@@ -25,7 +25,7 @@ Creating an App Builder project is as simple as giving your project a name and c
 
 Once created, a workspace card will appear in your developer home area, through which you can access the App Builder Editor for your project.
 
-_For more information on 8base's backend tools, visit the [backend docs](../backend/readme.md)_
+_For more information on 8base's backend tools, visit the [backend section](/projects/backend/overview)_
 
 ### 2. Using Drag-and-Drop Components to Build Pages in Apps
 

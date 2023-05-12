@@ -229,7 +229,7 @@ _Smart Fields_ are enriched field types offered by 8base. They provide structure
 
 #### Address
 
-For persisting addresses in a field. The `address` field will display available fields in the [Data Viewer](/docs/8base-console/platform-tools/data-viewer/) and API Explorer.
+For persisting addresses in a field. The `address` field will display available fields in the [Data Viewer](/projects/backend/console/data-viewer) and API Explorer.
 
 ```ts
 type Address = {

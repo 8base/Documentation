@@ -7,7 +7,7 @@ slug: '/'
 
 # Introduction
 
-**[Sign Up for 8Base](https://app.8base.com)** 🤘 **[Documentation Home](https://docs.8base.com)** 📑 **[Getting Started](https://docs.8base.com/docs/getting-started/quick-start)** 🚀 **[8base Plans](https://www.8base.com/pricing)**
+**[Sign Up for 8Base](https://app.8base.com)** 🤘 **[Documentation Home](https://docs.8base.com)** 📑 **[Getting Started](/projects/backend/getting-started)** 🚀 **[8base Plans](https://www.8base.com/pricing)**
 
 ## Welcome!
 

@@ -12,13 +12,13 @@ export default function TOC({ toc, editUrl, ...props }) {
       <span className='toc_header_sep'>
         on this page
       </span>
-      <button className='share_button'>
+      {/* <button className='share_button'>
         Share
-      </button>
+      </button> */}
       </div>
       
       <OriginalTOC toc={toc} {...props} />
-      <div className='toc_seprator'/>
+      {/* <div className='toc_seprator'/>
       <div className='toc_us flex flex_col'>
         <span style={{marginBottom:'0.5rem'}}>
           Was this article useful?
@@ -34,7 +34,7 @@ export default function TOC({ toc, editUrl, ...props }) {
         <span className='users_perc'>
           89% of our users said this content was useful.
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

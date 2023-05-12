@@ -22,13 +22,13 @@ When using 8base, your project benefits from having:
 Every 8base Workspace contains of the following components:
 
 1. **Schema**: A Schema represents the shape of your application data and specifies what data a client application can query from your API, as well as how to manipulate it.
-2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Team Members](/docs/8base-console/teams), Users, [Roles & Permissions](/docs/8base-console/roles-and-permissions), and [Files](/docs/8base-console/handling-files).
+2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Team Members](/projects/backend/teams), Users, [Roles & Permissions](/projects/backend/roles-and-permissions), and [Files](/projects/backend/handling-files).
 3. **User Data**: All the unique data resources (tables, records, etc) that are specific to your application.
-4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/docs/8base-console/authentication) is implemented through [Authentication Profiles](/docs/8base-console/authentication#authentication-types), while [Authorization](/docs/8base-console/roles-and-permissions) uses the roles and permissions system.
+4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/projects/backend/authentication) is implemented through [Authentication Profiles](/projects/backend/authentication#authentication-types), while [Authorization](/projects/backend/roles-and-permissions) uses the roles and permissions system.
 5. **Workspace Users**: 8base users with access to your Workspace through the console.
-6. [Custom Logic (Custom Functions)](/docs/8base-console/custom-functions): For building and extending your application's server-side functionality.
+6. [Custom Logic (Custom Functions)](/projects/backend/custom-functions): For building and extending your application's server-side functionality.
 7. **Integrations**: Data and functionalities from 3rd party sources.
-8. [CI/CD](/docs/development-tools/cli/ci-cd): The ability to create branched Workspace environments and a development pipeline.
+8. [CI/CD](/projects/backend/development-tools/cli/ci-cd): The ability to create branched Workspace environments and a development pipeline.
 
 ## Workspaces
 
@@ -51,20 +51,20 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 
 ## Useful Guides
 
-> [Quick Start](/docs/backend/getting-started-quick-start.md)
+> [Quick Start](/projects/backend/getting-started-quick-start.md)
 > Learn 8base by building a React or Vue application.
 >
-> [Management Console](/docs/backend/8base-console-readme.md)
+> [Management Console](/projects/backend/8base-console-readme.md)
 > Read the high-level overview of 8base's management console.
 >
-> [Connect to your API](/docs/backend/getting-started-connecting-to-api.md)
+> [Connect to your API](/projects/backend/getting-started-connecting-to-api.md)
 > Explore ways to connect to the 8base GraphQL API.
 >
-> [GraphQL API](/docs/backend/8base-console-graphql-api-readme.md)
+> [GraphQL API](/projects/backend/8base-console-graphql-api-readme.md)
 > Dive deeper into API concepts like authentication, queries, mutations, subscriptions and files.
 >
-> [Custom Functions](/docs/backend/8base-console-custom-functions-readme.md)
+> [Custom Functions](/projects/backend/8base-console-custom-functions-readme.md)
 > Learn how to deploy back-end functions in JavaScript/TypeScript using 8base CLI.
 >
-> [Client Tools](/docs/backend/development-tools-sdk-api-readme.md)
+> [Client Tools](/projects/backend/development-tools-sdk-api-readme.md)
 > Accelerate front-end development with the 8base SDK and Boost UI Kit.

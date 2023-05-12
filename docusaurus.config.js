@@ -38,7 +38,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars/sidebar.js'),
           routeBasePath: '/',
-          sidebarCollapsible: false,
+          sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/8base/Documentation/blob/main',
@@ -71,18 +71,6 @@ const config = {
           href: '/',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'console-readme',
-          //   position: 'left',
-          //   label: '8base Backend',
-          // },
-          // {
-          //   type: 'doc',
-          //   docId: 'frontend/getting-started-introduction',
-          //   position: 'left',
-          //   label: '8base App Builder',
-          // },
           {
             href: 'https://community.8base.com',
             position: 'left',

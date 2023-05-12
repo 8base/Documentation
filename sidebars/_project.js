@@ -31,13 +31,15 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'projects/backend/getting-started-readme',
+        'projects/provisioning-projects',
+        'projects/project-ui-walkthrough',
         'projects/backend/getting-started-quick-start',
         'projects/backend/getting-started-connecting-to-api',
       ],
     },
     {
       type: 'category',
-      label: 'Backend Console',
+      label: 'Backend',
       items: [
         'projects/backend/8base-console-readme',
         'projects/backend/8base-console-teams',
