@@ -1,7 +1,7 @@
-const backendDocsSidebar = require('./_backend')
-const frontendDocsSidebar = require('./_frontend')
+const projectDocsSidebar = require('./_project');
 
 module.exports = {
-    ...backendDocsSidebar,
-    ...frontendDocsSidebar,
-  };
+  // ...backendDocsSidebar,
+  // ...frontendDocsSidebar,
+  ...projectDocsSidebar,
+};
