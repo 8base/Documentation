@@ -568,3 +568,8 @@ body {
   list-style: none;
   line-height: 109%;
 }
+
+/* Add padding at the end of sidebar */
+nav.menu {
+  padding-bottom: 40px;
+}
