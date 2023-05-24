@@ -1,8 +1,8 @@
 ---
-id: 'app-components-input-components-toggle-button'
+id: 'app-components-control-components-toggle-button'
 sidebar_label: 'Toggle Button'
 redirect_from: '/frontend/app-components/input-components/toggle-button'
-slug: '/projects/frontend/app-components/input-components/toggle-button'
+slug: '/projects/frontend/app-components/control-components/toggle-button'
 ---
 
 # Toggle Button

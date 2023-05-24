@@ -1,8 +1,8 @@
 ---
-id: 'app-components-input-components-autocomplete'
+id: 'app-components-control-components-autocomplete'
 sidebar_label: 'Autocomplete'
 redirect_from: '/frontend/app-components/input-components/autocomplete'
-slug: '/projects/frontend/app-components/input-components/autocomplete'
+slug: '/projects/frontend/app-components/control-components/autocomplete'
 ---
 
 # Autocomplete
@@ -12,7 +12,7 @@ The _Autocomplete_ component is a single-line textbox component that is useful i
 1. As a **combo-box** - a value is chosen from a predefined set of options such as a country list.
 2. As a **free-solo** - the textbox may contain an arbitrary value, but it saves the user time by suggesting values. An example is Google Search, where a completion string appears inline after the input cursor.
 
-The _Autocomplete_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Autocomplete_ component is used independently or as a form component within a Form Block. 
 
 ### Properties
 

@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-text-field'
+id: 'app-components-control-components-text-field'
 sidebar_label: 'Text Field'
 redirect_from: '/frontend/app-components/input-components/text-field'
-slug: '/projects/frontend/app-components/input-components/text-field'
+slug: '/projects/frontend/app-components/control-components/text-field'
 ---
 
 # Text Field
 
-The _Text Field_ component allows the user to enter and edit text.
-
-The _Text Field_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Text Field_ component allows the user to enter and edit text. It is used independently or as a form component within a Form Block.
 
 ### Properties
 
@@ -18,7 +16,7 @@ The _Text Field_ component is used independently or as a form component. To use 
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component.</td></tr>
+<tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies the value of the component.</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Secifies a label for the component.</td></tr>
 <tr><td>placeholder</td><td>string</td><td></td><td>Displays placeholder text in the text field to prompt the user for specific input.</td></tr>

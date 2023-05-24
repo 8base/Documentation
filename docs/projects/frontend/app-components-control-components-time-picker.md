@@ -1,15 +1,15 @@
 ---
-id: 'app-components-input-components-time-picker'
+id: 'app-components-control-components-time-picker'
 sidebar_label: 'Time Picker'
 redirect_from: '/frontend/app-components/input-components/time-picker'
-slug: '/projects/frontend/app-components/input-components/time-picker'
+slug: '/projects/frontend/app-components/control-components/time-picker'
 ---
 
 # Time Picker
 
 The _Time Picker_ component allows the user to select a single time. It renders a modal dialogue on a mobile device and a text field with a popover on a desktop.
 
-The _Time Picker_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Time Picker_ component is used independently or as a form component within a Form Block.
 
 ### Properties
 

@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-multiselect'
+id: 'app-components-control-components-multiselect'
 sidebar_label: 'Multiselect'
 redirect_from: '/frontend/app-components/input-components/multiselect'
-slug: '/projects/frontend/app-components/input-components/multiselect'
+slug: '/projects/frontend/app-components/control-components/multiselect'
 ---
 
 # Multiselect
 
-The _Multiselect_ component provides the user with a list of options to select from. **Multiple** options can be chosen.
-
-The _Multiselect_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Multiselect_ component provides the user with a list of options to select from. **Multiple** options can be chosen. It is used independently or as a form component within a Form Block.
 
 ### Properties
 

@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-button'
+id: 'app-components-control-components-button'
 sidebar_label: 'Button'
 redirect_from: '/frontend/app-components/input-components/button'
-slug: '/projects/frontend/app-components/input-components/button'
+slug: '/projects/frontend/app-components/control-components/button'
 ---
 
 # Button
 
-The _Button_ component allows a user to take actions or make choices with a single tap.
-
-The _Button_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Button_ component allows a user to take actions or make choices with a single tap. It is used independently or as a form component within a Form Block.
 
 ### Properties
 

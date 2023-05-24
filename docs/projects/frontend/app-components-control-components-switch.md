@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-switch'
+id: 'app-components-control-components-switch'
 sidebar_label: 'Switch'
 redirect_from: '/frontend/app-components/input-components/switch'
-slug: '/projects/frontend/app-components/input-components/switch'
+slug: '/projects/frontend/app-components/control-components/switch'
 ---
 
 # Switch
 
-The _Switch_ component toggles the state of a single setting on or off.
-
-The _Switch_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Switch_ component toggles the state of a single setting on or off. It is used independently or as a form component within a Form Block.
 
 ### Properties
 

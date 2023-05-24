@@ -1,13 +1,13 @@
 ---
-id: 'app-components-input-components-field-array'
+id: 'app-components-control-components-field-array'
 sidebar_label: 'Field Array'
 redirect_from: '/frontend/app-components/input-components/field-array'
-slug: '/projects/frontend/app-components/input-components/field-array'
+slug: '/projects/frontend/app-components/control-components/field-array'
 ---
 
 # Field Array
 
-The _Field Array_ component displays form inputs based on a data array. It requires a _[Looper](/projects/frontend/app-components/data-components/looper)_ component to generate the data array and an input control such as a _[Select](/projects/frontend/app-components/input-components/select)_ component, which will populate based on the data array.
+The _Field Array_ component displays form inputs based on a data array. It requires a _Looper_ component to generate the data array and an input control such as a _Select_ component, which will populate based on the data array.
 
 The _Field Array_ component is used as a form component and must be placed within a _Form Block_.
 

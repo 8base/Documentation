@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-date-picker'
+id: 'app-components-control-components-date-picker'
 sidebar_label: 'Date Picker'
 redirect_from: '/frontend/app-components/input-components/date-picker'
-slug: '/projects/frontend/app-components/input-components/date-picker'
+slug: '/projects/frontend/app-components/control-components/date-picker'
 ---
 
 # Date Picker
 
-The _Date Picker_ component allows the user to select a date. _Date Picker_ components display in dialogs on mobile devices and text drop-downs on desktops.
-
-The _Date Picker_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Date Picker_ component allows the user to select a date. _Date Picker_ components display in dialogs on mobile devices and text drop-downs on desktops. It is used independently or as a form component within a Form Block.
 
 ### Properties
 

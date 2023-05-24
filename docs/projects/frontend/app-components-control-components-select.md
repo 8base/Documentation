@@ -1,15 +1,15 @@
 ---
-id: 'app-components-input-components-select'
+id: 'app-components-control-components-select'
 sidebar_label: 'Select'
 redirect_from: '/frontend/app-components/input-components/select'
-slug: '/projects/frontend/app-components/input-components/select'
+slug: '/projects/frontend/app-components/control-components/select'
 ---
 
 # Select
 
 The _Select_ component provides the user with a list of options to select from. Only **one** option is chosen.
 
-The _Select_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Select_ component is used independently or as a form component within a Form Block. 
 
 ### Properties
 

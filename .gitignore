@@ -10,6 +10,7 @@
 
 # Editors
 .idea
+.obsidian
 *.iml
 
 # Misc
