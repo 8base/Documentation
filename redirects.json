@@ -284,6 +284,78 @@
     "to": "/projects/frontend/app-components/component-groups"
   },
   {
+    "from": "/frontend/app-components/input-components/autocomplete",
+    "to": "/projects/frontend/app-components/control-components/autocomplete"
+  },
+  {
+    "from": "/frontend/app-components/input-components/button",
+    "to": "/projects/frontend/app-components/control-components/button"
+  },
+  {
+    "from": "/frontend/app-components/input-components/checkbox",
+    "to": "/projects/frontend/app-components/control-components/checkbox"
+  },
+  {
+    "from": "/frontend/app-components/input-components/date-picker",
+    "to": "/projects/frontend/app-components/control-components/date-picker"
+  },
+  {
+    "from": "/frontend/app-components/input-components/field-array",
+    "to": "/projects/frontend/app-components/control-components/field-array"
+  },
+  {
+    "from": "/frontend/app-components/input-components/file-picker-8base",
+    "to": "/projects/frontend/app-components/control-components/file-picker-8base"
+  },
+  {
+    "from": "/frontend/app-components/input-components/file-upload",
+    "to": "/projects/frontend/app-components/control-components/file-upload"
+  },
+  {
+    "from": "/frontend/app-components/input-components/form-block",
+    "to": "/projects/frontend/app-components/control-components/form-block"
+  },
+  {
+    "from": "/frontend/app-components/input-components/multiselect",
+    "to": "/projects/frontend/app-components/control-components/multiselect"
+  },
+  {
+    "from": "/frontend/app-components/input-components/radio-group",
+    "to": "/projects/frontend/app-components/control-components/radio-group"
+  },
+  {
+    "from": "/frontend/app-components/input-components/radio",
+    "to": "/projects/frontend/app-components/control-components/radio"
+  },
+  {
+    "from": "/frontend/app-components/input-components/select",
+    "to": "/projects/frontend/app-components/control-components/select"
+  },
+  {
+    "from": "/frontend/app-components/input-components/slider",
+    "to": "/projects/frontend/app-components/control-components/slider"
+  },
+  {
+    "from": "/frontend/app-components/input-components/switch",
+    "to": "/projects/frontend/app-components/control-components/switch"
+  },
+  {
+    "from": "/frontend/app-components/input-components/text-field",
+    "to": "/projects/frontend/app-components/control-components/text-field"
+  },
+  {
+    "from": "/frontend/app-components/input-components/time-picker",
+    "to": "/projects/frontend/app-components/control-components/time-picker"
+  },
+  {
+    "from": "/frontend/app-components/input-components/toggle-button-group",
+    "to": "/projects/frontend/app-components/control-components/toggle-button-group"
+  },
+  {
+    "from": "/frontend/app-components/input-components/toggle-button",
+    "to": "/projects/frontend/app-components/control-components/toggle-button"
+  },
+  {
     "from": "/frontend/app-components/customizing-app-builder-components",
     "to": "/projects/frontend/app-components/customizing-app-builder-components"
   },
@@ -294,78 +366,6 @@
   {
     "from": "/frontend/app-components/data-components/looper",
     "to": "/projects/frontend/app-components/data-components/looper"
-  },
-  {
-    "from": "/frontend/app-components/input-components/autocomplete",
-    "to": "/projects/frontend/app-components/input-components/autocomplete"
-  },
-  {
-    "from": "/frontend/app-components/input-components/button",
-    "to": "/projects/frontend/app-components/input-components/button"
-  },
-  {
-    "from": "/frontend/app-components/input-components/checkbox",
-    "to": "/projects/frontend/app-components/input-components/checkbox"
-  },
-  {
-    "from": "/frontend/app-components/input-components/date-picker",
-    "to": "/projects/frontend/app-components/input-components/date-picker"
-  },
-  {
-    "from": "/frontend/app-components/input-components/field-array",
-    "to": "/projects/frontend/app-components/input-components/field-array"
-  },
-  {
-    "from": "/frontend/app-components/input-components/file-picker-8base",
-    "to": "/projects/frontend/app-components/input-components/file-picker-8base"
-  },
-  {
-    "from": "/frontend/app-components/input-components/file-upload",
-    "to": "/projects/frontend/app-components/input-components/file-upload"
-  },
-  {
-    "from": "/frontend/app-components/input-components/form-block",
-    "to": "/projects/frontend/app-components/input-components/form-block"
-  },
-  {
-    "from": "/frontend/app-components/input-components/multiselect",
-    "to": "/projects/frontend/app-components/input-components/multiselect"
-  },
-  {
-    "from": "/frontend/app-components/input-components/radio-group",
-    "to": "/projects/frontend/app-components/input-components/radio-group"
-  },
-  {
-    "from": "/frontend/app-components/input-components/radio",
-    "to": "/projects/frontend/app-components/input-components/radio"
-  },
-  {
-    "from": "/frontend/app-components/input-components/select",
-    "to": "/projects/frontend/app-components/input-components/select"
-  },
-  {
-    "from": "/frontend/app-components/input-components/slider",
-    "to": "/projects/frontend/app-components/input-components/slider"
-  },
-  {
-    "from": "/frontend/app-components/input-components/switch",
-    "to": "/projects/frontend/app-components/input-components/switch"
-  },
-  {
-    "from": "/frontend/app-components/input-components/text-field",
-    "to": "/projects/frontend/app-components/input-components/text-field"
-  },
-  {
-    "from": "/frontend/app-components/input-components/time-picker",
-    "to": "/projects/frontend/app-components/input-components/time-picker"
-  },
-  {
-    "from": "/frontend/app-components/input-components/toggle-button-group",
-    "to": "/projects/frontend/app-components/input-components/toggle-button-group"
-  },
-  {
-    "from": "/frontend/app-components/input-components/toggle-button",
-    "to": "/projects/frontend/app-components/input-components/toggle-button"
   },
   {
     "from": "/frontend/app-components/introduction",
