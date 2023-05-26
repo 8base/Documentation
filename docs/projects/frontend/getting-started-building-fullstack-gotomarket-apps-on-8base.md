@@ -93,8 +93,6 @@ Once an application is ready for deployment, the deploy button is available in t
 
 Changes made in the App Builder Editor do not affect deployed applications. Meaning that while users rely on a stable version of the deployed app, you and your team can safely make changes and update features in the Editor. There isn't any need to deploy new features and capabilities until they're fully stable and ready for prime time! The "Save" and "Backup" buttons allow you to commit/restore your work when developing.
 
-Currently, App Builder supports 1-developer using the Editor at a time. However, 8base is quickly working towards enabling multi-developer collaboration in front-end projects.
-
 ## Full-stack Go-to-Market Apps
 
 The steps detailed above are the most common steps taken during an App Builder app's lifecycle, from creating a new project to deployment and continuous development. Within each stage, core App Builder capabilities were highlighted, such as multi-level custom styling, state management, 3rd party API connectivity, backend data storage with an API, deployment, and more. These capabilities provide the building blocks for modern application development – the fundamental ones and beyond.
