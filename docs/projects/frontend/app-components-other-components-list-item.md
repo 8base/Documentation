@@ -27,7 +27,9 @@ The _List Item_ component is a text-based item contained within a list.
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an _[icon](/projects/frontend/app-components/other-components/icon)_, _[badge](/projects/frontend/app-components/other-components/badge)_, _[chip](/projects/frontend/app-components/other-components/chip)_ or _[container](/projects/frontend/app-components/layout-components/container)_ to the left-hand side of a list item.
+You do not need to add a *Looper* component to a *List* to create list items dynamically. Each *List Item* has a built-in looper, called a Loop, that allows you to create list items dynamically.
+
+The **Add Left Component** allows the placement of an _icon_, _badge_, _chip_ or _container_ to the left-hand side of a list item.
 
 ### Style Attributes
 

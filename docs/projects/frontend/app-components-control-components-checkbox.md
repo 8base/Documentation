@@ -1,8 +1,8 @@
 ---
-id: 'app-components-input-components-checkbox'
+id: 'app-components-control-components-checkbox'
 sidebar_label: 'Checkbox'
 redirect_from: '/frontend/app-components/input-components/checkbox'
-slug: '/projects/frontend/app-components/input-components/checkbox'
+slug: '/projects/frontend/app-components/control-components/checkbox'
 ---
 
 # Checkbox
@@ -11,7 +11,7 @@ The _Checkbox_ component allows the user to select one or more items from a set.
 
 The checkbox component has three states, checked, unchecked, and indeterminate. When used as a form component, a checkbox has two states, checked or unchecked.
 
-The _Checkbox_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Checkbox_ component is used independently or as a form component within a Form Block. 
 
 ### Properties
 

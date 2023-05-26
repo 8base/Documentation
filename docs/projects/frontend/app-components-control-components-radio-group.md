@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-radio-group'
+id: 'app-components-control-components-radio-group'
 sidebar_label: 'Radio Group'
 redirect_from: '/frontend/app-components/input-components/radio-group'
-slug: '/projects/frontend/app-components/input-components/radio-group'
+slug: '/projects/frontend/app-components/control-components/radio-group'
 ---
 
 # Radio Group
 
-The _Radio Group_ component allows the user to select one option from a set.
-
-The _Radio Group_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The *Radio Group* component allows the user to select one option from a set.  It is used independently or as a form component within a Form Block.
 
 ### Properties
 
@@ -42,7 +40,7 @@ The _Radio Group_ component has one subcomponent, a _Radio_ component, used to c
 
 ### Radio
 
-A _Radio_ button is a component that acts as a single input control and is part of a set within a _Radio Group_. It has two states, On and Off.
+A *Radio* button is a component that acts as a single input control and is part of a set within a *Radio Group*. It has two states, On and Off.
 
 For further details, see the *Radio* component.
 
@@ -56,11 +54,17 @@ For further details, see the *Radio* component.
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
 <tr><td>value</td><td>any</td><td></td><td>Specifies the value of the component.</td></tr>
 <tr><td>disabled</td><td>bool</td><td>false</td><td>If true, the radio button is disabled.</td></tr>
+<tr><td>required</td><td>bool</td><td>false</td><td>If true, the radio button must be checked.</td></tr>
+<tr><td>readOnly</td><td>bool</td><td>false</td><td>If true, the radio button is read only.</td></tr>
+<tr><td>autofocus</td><td>bool</td><td>false</td><td>If true, autofocus is enabled.</td></tr>
+<tr><td>loopData</td><td>array</td><td></td><td>Defines an array of data in the format id, prop1, prop2, prop3. The id <b>must</b> be is small letters.</td></tr>
+<tr><td>itemName</td><td>string</td><td></td><td>Defines a unique identifier that allows access the array element's properties.</td></tr>
 <tr><td>color</td><td>default<br/>primary<br/>secondary<br/>error<br/>info<br/>success<br/>warning<br/>string</td><td>primary</td><td>Defines the color of the component.</td></tr>
 <tr><td>size</td><td>small<br/>medium<br/>string</td><td>medium</td><td>Defines the size of the component.</td></tr>
 <tr><td>labelPlacement</td><td>top<br/>bottom<br/>start<br/>end<br/>string</td><td>end</td><td>Specifies the location of the component label.</td></tr>
 <tr><td>disableRipple</td><td>bool</td><td>false</td><td>If true, disables the ripple effect on the radio button.</td></tr>
 </tbody>
 </table>
+<br/>
 
 For more detail on the _Radio Group_ component, see the [MUI developer docs](https://mui.com/material-ui/api/radio-group/).

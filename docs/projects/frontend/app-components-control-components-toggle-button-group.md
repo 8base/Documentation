@@ -1,15 +1,13 @@
 ---
-id: 'app-components-input-components-toggle-button-group'
+id: 'app-components-control-components-toggle-button-group'
 sidebar_label: 'Toggle Button Group'
 redirect_from: '/frontend/app-components/input-components/toggle-button-group'
-slug: '/projects/frontend/app-components/input-components/toggle-button-group'
+slug: '/projects/frontend/app-components/control-components/toggle-button-group'
 ---
 
 # Toggle Button Group
 
-The _Toggle Button Group_ component allows the user to select one option from a set.
-
-The _Toggle Button Group_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Toggle Button Group_ component allows the user to select one option from a set. It is used independently or as a form component within a Form Block.
 
 ### Properties
 
@@ -52,7 +50,7 @@ A _Toggle Button_ is a component that acts as a single input control and is part
 
 The toggle button has two states, On and Off.
 
-For further details, see the [Toggle Button](/projects/frontend/app-components/input-components/toggle-button) component.
+For further details, see the *Toggle Button* component.
 
 #### Properties
 

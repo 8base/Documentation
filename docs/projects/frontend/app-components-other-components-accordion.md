@@ -57,7 +57,7 @@ The _Accordion Summary_ component provides a title for the content within the de
 
 ### Accordion Details
 
-The _Accordion Details_ component provides a surface to display additional information through other components, such as a _[Card](/projects/frontend/app-components/layout-components/card)_, _[Typography](/projects/frontend/app-components/other-components/typography)_ or _[Text](/projects/frontend/app-components/other-components/text)_ component.
+The _Accordion Details_ component provides a surface to display additional information through other components, such as a _Card_, _Typography_ or _Text_ component.
 
 <table>
 <thead>
@@ -73,12 +73,8 @@ The _Accordion Details_ component provides a surface to display additional infor
 </table>
 
 ### Accordion Actions
-<<<<<<< HEAD:docs/projects/frontend/app-components-other-components-accordion.md
 
-The _Accordion Actions_ component allows for the placement of _[Button](/projects/frontend/app-components/input-components/button)_ components to perform actions related to the accordion's function. By default, when the accordion actions are enabled, both the **Cancel** and **OK** buttons are added to the component.
-=======
-The *Accordion Actions* component allows for the placement of *Button)* components to perform actions related to the accordion's function. By default, when the accordion actions are enabled, both the **Cancel** and **OK** buttons are added to the component.
->>>>>>> origin/tomas-010:docs/frontend/app-components-other-components-accordion.md
+The *Accordion Actions* component allows for the placement of *Button* components to perform actions related to the accordion's function. By default, when the accordion actions are enabled, both the **Cancel** and **OK** buttons are added to the component.
 
 <table>
 <thead>

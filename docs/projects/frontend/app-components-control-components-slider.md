@@ -1,15 +1,15 @@
 ---
-id: 'app-components-input-components-slider'
+id: 'app-components-control-components-slider'
 sidebar_label: 'Slider'
 redirect_from: '/frontend/app-components/input-components/slider'
-slug: '/projects/frontend/app-components/input-components/slider'
+slug: '/projects/frontend/app-components/control-components/slider'
 ---
 
 # Slider
 
 The _Slider_ component allows the user to select one value from a range of values along a bar. They are ideal for adjusting volume, brightness, and image filter settings.
 
-The _Slider_ component is used independently or as a form component. To use it as a form component, place it within a _Form Block_.
+The _Slider_ component is used independently or as a form component within a Form Block.
 
 ### Properties
 

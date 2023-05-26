@@ -5,28 +5,57 @@ redirect_from: '/frontend/building-frontends-app-builder-walkthrough/accessing-f
 slug: '/projects/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data'
 ---
 
-# Accessing frontend data in App Builder
+# Accessing frontend data in Projects
 
-To access data in frontend applications, App Builder uses a State management system to store frontend data and reflect the attributes and data of App Builder elements, like Components and Requests. This object is accessible to any element within App Builder. Any data that needs to be accessed by multiple elements can be stored in this global object for easy retrieval.
+Frontend applications use a State management system to store data and reflect the attributes and data of elements, like Components and Requests. The State object is accessible to any element within the frontend. Any data that needs to be accessed by multiple elements can be stored in this object for easy retrieval.
 
-Additionally, states can be segregated between items being local or global. While Global states are accessible by any element, Local states are only accessible by the elements within the Page they got created within. This allows for state data to get easily organized.
+Additionally, states can be either Local or Global. While Global states are accessible by any element within a frontend application, Local states are only accessible by elements within the Page they were created.
 
-## Opening the State modal
+## Opening the State pane
 
-![Opening the state modal in App Builder](./_images/ab-state-1.png)
+The first step in managing state data is to open the *State* pane by clicking the "{...}" icon in the left menu. 
 
-The first step in managing state data is to open the State modal. This can be done by clicking the "{...}" icon in the left menu. The opened modal will show tabs for both Global and Local state data.
+![Opening the state pane in a frontend](./_images/ab-state-1.png)
+
+The *State* pane has tabs for Local and Global state data and gives you access to four different data types.
+
+- **Custom Entries** - Custom data that you create.
+- **Requests** - Data accessed through a database request.
+- **Resources** - Data related to specific resources. For example, under the Global State tab, you will find data in the Resource section about your project, such as the project name, title, API, and workspace.
+- **Router** - Data related to your application pages.
+
+![State Pane details](./_images/ab-state-pane-detail.png)
 
 ## Accessing State data in a Component
 
-![App Builder State Entry](./_images/ab-state-entry-1.png)
+To access state data in a component, you must drag and drop a component onto the Page first. Try dragging a *Text Field* component onto your Page.
 
-To access state data in a component, you'll first need to drag and drop a component onto the Page. Go ahead and try adding the Text Component.
+![State Pane TextField Component](./_images/ab-state-pane-textField-component.png)
 
-Once done, open your State pane and expand any entries with key/value pairs. When hovering over any key or value, you'll see a small clipboard icon to the right of the entry. Clicking on this icon will copy the state accessor for you to use as the input to your Component property.
+Open your *State* pane and expand the **textField_1** entry under Custom Entries. Let's add a default value to our *Text Field* so the user knows what to enter in the field. 
 
-![App Builder state entry used as component property](./_images/ab-state-entry-property-1.png)
+Click the "pencil icon" to the right of the **textField_1** in the *State* pane, which opens a properties dialog. In the **Default Value** field, enter the text "Please enter an address" without the quotes, and click "Save". The text will be saved in the **textField_1** value property.
 
-In App Builder, all inputs are handlebars enabled. This means you can dynamically read any state value as an input to your Component property.
+![State Pane TextField Value](./_images/ab-state-pane-textField-value.png)
 
-For example, click the clipboard icon next to any text value in your app's state and then paste it into the Text Component's "Text" input like so `{{ stateObjectName.keyName }}`. Once done, you should see the rendered value on your page canvas within the component instance.
+When hovering over any key or value, you'll see a small clipboard icon to the right of the entry. Clicking this icon will copy the **state accessor** for you to use as input in your Component.
+
+In frontend projects, all inputs are handlebars enabled, meaning you can dynamically read any state value as an input in your Component's properties.
+
+For example, click the "clipboard icon" next to the **textField_1** value property and paste it into the _Text Field_ component **Value** field in the *Properties* pane. Add handlebars to the front and back of the pasted text in the field. Your **Value** should look like this {{textField_1.value}}.
+
+
+![State Pane TextField Clipboard](./_images/ab-state-pane-textField-clipboard.png)
+
+Once done, you should see the rendered value on your page canvas within the component instance.
+
+![State entry used as component property](./_images/ab-state-component-states.png)
+
+## Data Binding examples
+
+The following examples demonstrate how to bind different types of data to commonly used components.
+
+1. [Binding a Request to a Table](/projects/frontend/data-binding-example-binding-request-to-table-component.md)
+2. [Binding Custom Entries to a Card](/projects/frontend/data-binding-example-binding-custom-entries-to-card-component.md)
+3. [Binding a Request to a Looper](/projects/frontend/data-binding-example-binding-request-to-looper-component.md)
+5. [Binding a Function to a Looper](/projects/frontend/data-binding-example-binding-function-to-looper-component.md)

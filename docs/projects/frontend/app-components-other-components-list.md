@@ -65,6 +65,6 @@ For further details, see the *Nav-List Item* component.
 </tbody>
 </table>
 
-The **Add Left Component** allows the placement of an _[icon](/projects/frontend/app-components/other-components/icon)_, _[badge](/projects/frontend/app-components/other-components/badge)_, _[chip](/projects/frontend/app-components/other-components/chip)_ or _[container](/projects/frontend/app-components/layout-components/container)_ to the left-hand side of a list item or nav-list item.
+The **Add Left Component** allows the placement of an _icon_, _badge_, _chip_ or _container_ to the left-hand side of a list item or nav-list item.
 
 For more detail on the _List_ component, see the [MUI developer docs](https://mui.com/material-ui/api/list/).
