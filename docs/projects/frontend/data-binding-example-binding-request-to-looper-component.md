@@ -78,21 +78,21 @@ You now have data that you can test in your components.
 48. On the *Properties* pane in the **Custom Properties** section, enter `{{ queryUserList?.data }}` in the **Loop Data** field.
 49. Select your *Card* component.
 50. On the *Properties* pane in the **Custom Properties** section, click the gear icon to the right of the **Header**, which opens a pop-up settings window.
-51. Next to the **Title** field, click the three-way icon "<>" and switch to the code format "{}". 
+51. Next to the **Title** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 52. Enter `{{item.firstName+" "+item.lastName}}` in the **Title** field.
-53. Next to the **Subheader** field, click the three-way icon "<>" and switch to the code format "{}". 
+53. Next to the **Subheader** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 54. Enter `{{item.email}}` in the **Subheader** field and click "x" to close the pop-out.
 
 ![Looper Request Response](./_images/ab-state-looper-request-4.png)
 
 55. Select your *Image* component.
-56. On the *Properties* pane, next to the **Source** field, click the three-way icon "<>" and switch to the code format "{}". 
+56. On the *Properties* pane, next to the **Source** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 58. Enter `{{item.media}}` in the **Source** field.
 59. Select the first *Typography* component.
-60. On the *Properties* pane, next to the **Text** field, click the three-way icon "<>" and switch to the code format "{}". 
+60. On the *Properties* pane, next to the **Text** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 61. Enter `Birth Date: {{lux.DateTime.fromISO(item.birthDate, "DD-MM-YYYY").toFormat('MMMM d, yyyy')}}` in the **Text** field.
 62. Select the second *Typography* component.
-63. On the *Properties* pane, next to the **Text** field, click the three-way icon "<>" and switch to the code format "{}". 
+63. On the *Properties* pane, next to the **Text** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 64. Enter `Team: {{item.team}}` in the **Text** field.
 
 Your completed page should look something like this.

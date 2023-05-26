@@ -86,18 +86,18 @@ The *Looper* will display four blank Cards on your Page, which is how many objec
 
 18. Select your *Card* component, which opens the *Properties* pane.
 19. In the **Custom Properties** section, click the gear icon to the right of the **Header** item, which opens a pop-up settings window. 
-20. Next to the **Title** field, click the three-way icon "<>" and switch to the code format "{}". 
+20. Next to the **Title** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 21. Enter `{{ item.title + ' ' + (itemIndex+1)}}` in the **Title** field. 
-22. Next to the **Subheader** field, click the three-way icon "<>" and switch to the code format "{}".
+22. Next to the **Subheader** field, click the three-way icon "\<\>" and switch to the code format "{}".
 23. Enter `{{ item.subheader}}` in the **Subheader** field and click the "x" to close the pop-out.
 
 ![Adding Card Header Data](./_images/ab-state-looper-functions-4.png)
 
 24. Click the gear icon to the right of the **Media** item, which opens a pop-up settings window. 
-25. Next to the **Image** field, click the three-way icon "<>" and switch to the code format "{}". 
+25. Next to the **Image** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 26. Enter `{{item.media}}` in the **Image** field, set the **Height** to 120 px, and click "x" to close the pop-out.
 27. Select the *Typography* component on any *Card*, which opens the *Properties* pane. 
-28. Next to the **Text** field, click the three-way icon "<>" and switch to the code format "{}".
+28. Next to the **Text** field, click the three-way icon "\<\>" and switch to the code format "{}".
 29. Enter `{{item.content}}` in the **Text** field, and click "x" to close the pop-out.
 
 ![Adding Typography Data](./_images/ab-state-looper-functions-5.png)

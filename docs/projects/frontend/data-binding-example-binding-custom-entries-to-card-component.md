@@ -55,11 +55,11 @@ Now that you have all your **Custom Entries** set up, you will add data to the *
 
 1. Select your *Card* component, which opens the *Properties* pane.
 2. Click the *Styles* tab to switch to the *Styles* pane and expand the **Size** section.
-3. Next to the **Width** field, click the three-way icon "<>" and switch to State format.
+3. Next to the **Width** field, click the three-way icon "\<\>" and switch to State format.
 4. Select "big" from the drop-down inside the **Width** field, which sets the width of your *Card* component using your custom entry.
 5. Click the *Properties* tab to switch back to the *Properties* pane.
 6. In the **Custom Properties** section, click the gear icon to the right of the **Header**, which opens a pop-up settings window.
-7. Next to the **Title** field, click the three-way icon "<>" and switch to the code format "{}". 
+7. Next to the **Title** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 8. Enter `Role: {{role.value}}` in the **Title** field.
 9. The **value** of the **role** custom entry will appear as the title of your *Card*.
 
@@ -68,7 +68,7 @@ Now that you have all your **Custom Entries** set up, you will add data to the *
 Next, you will add text to the *Typography* component to your *Card* from the **userName** custom entry.
 
 1. Select the *Typography* component on your *Card*, which opens the *Properties* pane.
-2. Next to the **Text** field, click the three-way icon "<>" and switch to the State format.
+2. Next to the **Text** field, click the three-way icon "\<\>" and switch to the State format.
 3. Select "userName" from the drop-down inside the **Text** field.
 4. Your *Typography* component should display **John Wick**.
 
@@ -79,7 +79,7 @@ At this point your *Card* should look like this.
 You will now add the final piece, which is setting up the image to display.
 
 1. Select the *Image* component on your card, which opens the *Properties* pane.
-2. Next to the **Source** field, click the three-way icon "<>" and switch to the code format "{}". 
+2. Next to the **Source** field, click the three-way icon "\<\>" and switch to the code format "{}". 
 3. Enter `{{userPic.value}}` in the **Source** field.
 
 Your completed *Card* should look like this.

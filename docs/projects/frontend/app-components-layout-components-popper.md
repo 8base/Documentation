@@ -32,9 +32,9 @@ The *Popper Content* is the area within the *Popper* component that displays the
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>variant</td><td>elevation<br/>outlined<br/>string</td><td></td><td>Defines the type of the component.</td>
-<tr><td>square</td><td>bool</td><td>false</td><td>If true, rounded corners are disabled.</td>
-<tr><td>elevation</td><td>integer</td><td></td><td>Specifies a shadow applied to the surface, making the component appear raised above the surface. Valid values are 0-24.</td>
+<tr><td>variant</td><td>elevation<br/>outlined<br/>string</td><td></td><td>Defines the type of the component.</td></tr>
+<tr><td>square</td><td>bool</td><td>false</td><td>If true, rounded corners are disabled.</td></tr>
+<tr><td>elevation</td><td>integer</td><td></td><td>Specifies a shadow applied to the surface, making the component appear raised above the surface. Valid values are 0-24.</td></tr>
 </tbody>
 </table>
 
