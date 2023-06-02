@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-autocomplete'
+id: 'app-components-controls-components-autocomplete'
 sidebar_label: 'Autocomplete'
 redirect_from: '/frontend/app-components/input-components/autocomplete'
-slug: '/projects/frontend/app-components/control-components/autocomplete'
+slug: '/projects/frontend/app-components/controls-components/autocomplete'
 ---
 
 # Autocomplete

@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-switch'
+id: 'app-components-controls-components-switch'
 sidebar_label: 'Switch'
 redirect_from: '/frontend/app-components/input-components/switch'
-slug: '/projects/frontend/app-components/control-components/switch'
+slug: '/projects/frontend/app-components/controls-components/switch'
 ---
 
 # Switch

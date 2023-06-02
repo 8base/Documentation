@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-date-picker'
+id: 'app-components-controls-components-date-picker'
 sidebar_label: 'Date Picker'
 redirect_from: '/frontend/app-components/input-components/date-picker'
-slug: '/projects/frontend/app-components/control-components/date-picker'
+slug: '/projects/frontend/app-components/controls-components/date-picker'
 ---
 
 # Date Picker

@@ -26,6 +26,14 @@ const sidebars = {
       items: [
         'projects/provisioning-projects',
         'projects/project-ui-walkthrough',
+        {
+          type: 'category',
+          label: 'Adding Authentication to Projects',
+          items: [
+            'projects/hosted-login-authentication',
+            'projects/coded-login-authentication',
+          ],
+        },
       ],
     },
     {
@@ -323,13 +331,13 @@ const sidebars = {
               items: [
                 'projects/frontend/app-components-common-component-properties',
                 'projects/frontend/app-components-common-component-style-attributes',
-                //{
-                 // type: 'category',
-                 // label: 'Form Components',
-                 // items: [
-                 //   'projects/frontend/app-components-form-components-overview',
-                 // ],
-               // },
+                {
+                  type: 'category',
+                  label: 'Form Components',
+                  items: [
+                    'projects/frontend/app-components-form-components-form-components-overview',
+                  ],
+                },
                 {
                   type: 'category',
                   label: 'Layout Components',
@@ -346,26 +354,28 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'Control Components',
+                  label: 'Controls Components',
                   items: [
-                    'projects/frontend/app-components-control-components-form-block',
-                    'projects/frontend/app-components-control-components-autocomplete',
-                    'projects/frontend/app-components-control-components-button',
-                    'projects/frontend/app-components-control-components-checkbox',
-                    'projects/frontend/app-components-control-components-date-picker',
-                    'projects/frontend/app-components-control-components-field-array',
-                    'projects/frontend/app-components-control-components-file-picker-8base',
-                    'projects/frontend/app-components-control-components-file-upload',
-                    'projects/frontend/app-components-control-components-multiselect',
-                    'projects/frontend/app-components-control-components-radio',
-                    'projects/frontend/app-components-control-components-radio-group',
-                    'projects/frontend/app-components-control-components-select',
-                    'projects/frontend/app-components-control-components-slider',
-                    'projects/frontend/app-components-control-components-switch',
-                    'projects/frontend/app-components-control-components-text-field',
-                    'projects/frontend/app-components-control-components-time-picker',
-                    'projects/frontend/app-components-control-components-toggle-button',
-                    'projects/frontend/app-components-control-components-toggle-button-group',
+                    'projects/frontend/app-components-controls-components-form-block',
+                    'projects/frontend/app-components-controls-components-autocomplete',
+                    'projects/frontend/app-components-controls-components-button',
+                    'projects/frontend/app-components-controls-components-checkbox',
+                    'projects/frontend/app-components-controls-components-date-picker',
+                    'projects/frontend/app-components-controls-components-field-array',
+                    'projects/frontend/app-components-controls-components-file-picker-8base',
+                    'projects/frontend/app-components-controls-components-file-upload',
+                    'projects/frontend/app-components-controls-components-multiselect',
+                    'projects/frontend/app-components-controls-components-radio',
+                    'projects/frontend/app-components-controls-components-radio-group',
+                    'projects/frontend/app-components-controls-components-select',
+                    'projects/frontend/app-components-controls-components-slider',
+                    'projects/frontend/app-components-controls-components-switch',
+                    'projects/frontend/app-components-controls-components-tab',
+                    'projects/frontend/app-components-controls-components-tab-group',
+                    'projects/frontend/app-components-controls-components-text-field',
+                    'projects/frontend/app-components-controls-components-time-picker',
+                    'projects/frontend/app-components-controls-components-toggle-button',
+                    'projects/frontend/app-components-controls-components-toggle-button-group',
                   ],
                 },
                 {

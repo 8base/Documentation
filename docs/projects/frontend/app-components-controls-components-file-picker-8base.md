@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-file-picker-8base'
+id: 'app-components-controls-components-file-picker-8base'
 sidebar_label: 'File Picker 8base'
 redirect_from: '/frontend/app-components/input-components/file-picker-8base'
-slug: '/projects/frontend/app-components/control-components/file-picker-8base'
+slug: '/projects/frontend/app-components/controls-components/file-picker-8base'
 ---
 
 # File Picker 8base

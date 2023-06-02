@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-time-picker'
+id: 'app-components-controls-components-time-picker'
 sidebar_label: 'Time Picker'
 redirect_from: '/frontend/app-components/input-components/time-picker'
-slug: '/projects/frontend/app-components/control-components/time-picker'
+slug: '/projects/frontend/app-components/controls-components/time-picker'
 ---
 
 # Time Picker

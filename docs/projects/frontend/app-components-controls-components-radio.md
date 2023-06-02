@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-radio'
+id: 'app-components-controls-components-radio'
 sidebar_label: 'Radio'
 redirect_from: '/frontend/app-components/input-components/radio'
-slug: '/projects/frontend/app-components/control-components/radio'
+slug: '/projects/frontend/app-components/controls-components/radio'
 ---
 
 # Radio

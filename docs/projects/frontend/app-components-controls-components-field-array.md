@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-field-array'
+id: 'app-components-controls-components-field-array'
 sidebar_label: 'Field Array'
 redirect_from: '/frontend/app-components/input-components/field-array'
-slug: '/projects/frontend/app-components/control-components/field-array'
+slug: '/projects/frontend/app-components/controls-components/field-array'
 ---
 
 # Field Array

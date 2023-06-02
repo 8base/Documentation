@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-select'
+id: 'app-components-controls-components-select'
 sidebar_label: 'Select'
 redirect_from: '/frontend/app-components/input-components/select'
-slug: '/projects/frontend/app-components/control-components/select'
+slug: '/projects/frontend/app-components/controls-components/select'
 ---
 
 # Select

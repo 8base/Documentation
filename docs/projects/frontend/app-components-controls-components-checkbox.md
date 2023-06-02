@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-checkbox'
+id: 'app-components-controls-components-checkbox'
 sidebar_label: 'Checkbox'
 redirect_from: '/frontend/app-components/input-components/checkbox'
-slug: '/projects/frontend/app-components/control-components/checkbox'
+slug: '/projects/frontend/app-components/controls-components/checkbox'
 ---
 
 # Checkbox

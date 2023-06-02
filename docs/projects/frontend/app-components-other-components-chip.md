@@ -9,6 +9,8 @@ slug: '/projects/frontend/app-components/other-components/chip'
 
 The _Chip_ component represents an input, attribute or action. It allows the user to enter information, make selections, filter content or trigger actions.
 
+The appearance of the *Chip* component can change based on the type of *Event* attached to it. For example, a small close icon displays on the *Chip* component when an "On Delete" event is attached.
+
 ### Properties
 
 <table>

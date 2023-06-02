@@ -9,6 +9,8 @@ slug: '/projects/frontend/app-components/other-components/alert'
 
 The _Alert_ component displays a brief, important message to attract the user's attention without interrupting their work.
 
+The appearance of the *Alert* component can change based on the type of *Event* attached to it. For example, a small close icon displays on the *Alert* component when an "On Close" event is attached.
+
 ### Properties
 
 <table>
@@ -19,7 +21,7 @@ The _Alert_ component displays a brief, important message to attract the user's 
 <tr><td>text</td><td>string</td><td></td><td>The message text to display in the alert.</td></tr>
 <tr><td>icon</td><td>bool</td><td>false</td><td>If true, overrides the default icon displayed on the alert.</td></tr>
 <tr><td>actionButton</td><td>bool</td><td>false</td><td>If true, will display an action button after the alert message.</td></tr>
-<tr><td>closeText</td><td>string</td><td></td><td>Override for the close label on the popup icon button.</td></tr>
+<tr><td>closeText</td><td>string</td><td></td><td>Override for the close label on the popup icon button. This property is only available if an "On Close" event is attached to the component.</td></tr>
 </tbody>
 </table>
 

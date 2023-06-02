@@ -21,28 +21,33 @@ To create a new project:
 + A new pop-up opens for you to enter your project details.
 + Enter a unique name for your project.
 + Choose your AWS region, either East or West.
-+ Check the "Add Integrated Authentication" box if your project requires authentication.
++ Choose your Integrated Authentication type.
+	+ **No Authentication** - your project will not use authentication.
+	+ **Hosted Login** - a default 8base authentication profile is created for your project. 
+	+ **Coded Login** -  a default authentication profile along with Sign In and Sign Up pages are created for your project. 
 + Choose your project type:
-    + Full-Stack - frontend and backend workspaces will be created.
-    + Backend-Only - only a backend workspace will be created.
+	+ **Full-Stack** - frontend and backend workspaces will be created.
+	+ **Backend-Only** - only a backend workspace will be created.
 + Choose your payment plan.
 + Click the "Create" button.
 
 ![Create a Project](./_images/projects-provisioning-projects-create-project.png)
 
-The project creator pop-up opens and steps through setting up your project. 
+The project creator pop-up opens and steps through setting up your project. Once the project creator has finished the setup, it will automatically close.
 
 ![Project Creator](./_images/projects-provisioning-projects-project-creator.png)
 
-Once your project is created the pop-up closes and you are redirected to your project dashboard.
-
-If your project uses authentication, a new pop-up opens indicating that you must install a *Template* to set up your authentication. (A separate article covers Template installation.)
+If your project uses authentication, a new pop-up opens indicating that you must install a *Template* to set up your authentication.
 
 ![Template Notice](./_images/projects-provisioning-projects-project-authentication-setup.png)
 
-Click "OK" to close the pop-up. You can now begin working on your new project.
+Click "OK" to close the pop-up and your project dashboard is displayed. 
 
 ![Project Dashboard](./_images/projects-provisioning-projects-project-dashboard.png)
+
+You can find instructions on how to set up your *Template* by clicking the **Help** icon at the top of the *Project Dashboard* and selecting "View Template Instructions", which opens the 8base documentation site in a new browser.
+
+![Project Dashboard](./_images/projects-provisioning-projects-project-dashboard-help-menu.png)
 
 Check out the article **Project UI Walkthrough** to get familiar with the *Project Dashboard*.
 

@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-text-field'
+id: 'app-components-controls-components-text-field'
 sidebar_label: 'Text Field'
 redirect_from: '/frontend/app-components/input-components/text-field'
-slug: '/projects/frontend/app-components/control-components/text-field'
+slug: '/projects/frontend/app-components/controls-components/text-field'
 ---
 
 # Text Field

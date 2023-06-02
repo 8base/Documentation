@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-form-block'
+id: 'app-components-controls-components-form-block'
 sidebar_label: 'Form Block'
 redirect_from: '/frontend/app-components/input-components/form-block'
-slug: '/projects/frontend/app-components/control-components/form-block'
+slug: '/projects/frontend/app-components/controls-components/form-block'
 ---
 
 # Form Block

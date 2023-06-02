@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-toggle-button-group'
+id: 'app-components-controls-components-toggle-button-group'
 sidebar_label: 'Toggle Button Group'
 redirect_from: '/frontend/app-components/input-components/toggle-button-group'
-slug: '/projects/frontend/app-components/control-components/toggle-button-group'
+slug: '/projects/frontend/app-components/controls-components/toggle-button-group'
 ---
 
 # Toggle Button Group

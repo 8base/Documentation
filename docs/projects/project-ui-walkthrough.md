@@ -31,7 +31,7 @@ If you have more than one frontend, click the down arrow next to the current fro
 
 ![Frontend List](./_images/projects-project-ui-walkthrough-dashboard-frontend-list2.png)
 
-Select the frontend you want to work with and click the "Open" button. The App Builder opens in a new browser tab (as seen above).
+Select the frontend you want to work with and click the "Open" button. The project builder opens in a new browser tab (as seen above).
 
 #### All Environments
 The project dashboard's *All Environments* area provides information about your project roles, authorization profiles, file storage size, and database information for your backend application. There will only be database information if you have a backend application.
@@ -159,17 +159,32 @@ Click the *Frontends* link on the menu to open the *Frontend Listing* page. Clic
 
 **Common Flow:**
 
-A pop-up opens for you to input the name of your frontend and enable integrated authentication if required.
+A pop-up opens for you to input the **name** of your frontend and enable **integrated authentication** if required.
+
+The following types of integrated authentication are available:
++ **No Authentication** - your project will not use authentication.
++ **Hosted Login** - a default 8base authentication profile is created for your project. 
++ **Coded Login** -  a default authentication profile along with Sign In and Sign Up pages are created for your project. 
+
+**Note:** For an in depth discussion of how authentication works see the article on [Authentication](/projects/backend/8base-console-authentication.md).
 
 ![Add Frontend](./_images/projects-project-ui-walkthrough-create-new-frontend.png)
 
-Click the "Cancel" button to cancel adding a frontend and close the pop-up.
+If you are adding integrated authentication for your project, select the type of authentication you want, and either select an existing authentication profile from the drop-down or "Add Auth Profile" to create a new one.
+
+The authentication profile you selected will be used for all the GraphQL mutations in your Frontend(s).
+
+![Add Authentication](./_images/projects-project-ui-walkthrough-create-new-frontend-integrated-auth.png)
 
 Click the "Create" button to bring up the *Frontend Creator*, which steps through creating your new frontend. 
 
 ![Frontend Creator](./_images/projects-project-ui-walkthrough-create-new-frontend-creator.png)
 
-The *Frontend Creator* closes once your new frontend is ready.
+The *Frontend Creator* completes the setup, and a new pop-up prompts you to set up your authentication *Template*. Click "OK" to close the pop-up.
+
+![Add Frontend](./_images/projects-project-ui-walkthrough-create-new-frontend-existing-auth.png)
+
+You can find instructions on how to set up your *Template* by clicking the **Help** icon at the top of the *Project Dashboard* or *Frontend Listing page* and selecting "View Template Instructions", which opens the 8base documentation site in a new browser.
 
 **End Flow A:**
 

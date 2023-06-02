@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-button'
+id: 'app-components-controls-components-button'
 sidebar_label: 'Button'
 redirect_from: '/frontend/app-components/input-components/button'
-slug: '/projects/frontend/app-components/control-components/button'
+slug: '/projects/frontend/app-components/controls-components/button'
 ---
 
 # Button

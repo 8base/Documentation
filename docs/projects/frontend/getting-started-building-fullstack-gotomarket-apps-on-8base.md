@@ -79,7 +79,18 @@ App Builder applications get styled at the global, component default, and compon
 
 ### 5. Setting up User Authentication
 
-User Authentication (Docs coming soon...)
+8base offers you two types of *Integrated Authentication* for your projects: [**Hosted Login**](/projects/hosted-login-authentication.md) and [**Coded Login**](/projects/coded-login-authentication.md).
+
+The **Hosted Login** integrated authentication is an external 8base branded page that manages **Login**, **Sign Up**, and **Change Password** functionalities.
+
+The **Coded Login** integrated authentication provides a default authentication profile, Sign In and Sign Up pages, and the GraphQL mutations and functions required to make these pages functional right out of the box.
+
+During project creation, you choose the type of authentication you want for your project by selecting it from the **Integrated Authentication** drop-down on the Create Project screen.
+
+![Adding Authentication](./_images/ab-adding-user-authentication.png)
+
+**Note:** For an in depth discussion of how authentication works see the article on [Authentication](/projects/backend/8base-console-authentication.md).
+
 
 ### 6. Deploying Applications and Custom Domains
 

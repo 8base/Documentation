@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-multiselect'
+id: 'app-components-controls-components-multiselect'
 sidebar_label: 'Multiselect'
 redirect_from: '/frontend/app-components/input-components/multiselect'
-slug: '/projects/frontend/app-components/control-components/multiselect'
+slug: '/projects/frontend/app-components/controls-components/multiselect'
 ---
 
 # Multiselect

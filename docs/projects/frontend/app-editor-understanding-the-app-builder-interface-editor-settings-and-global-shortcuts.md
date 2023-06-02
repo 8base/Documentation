@@ -7,25 +7,25 @@ slug: '/projects/frontend/app-editor/understanding-the-app-builder-interface/edi
 
 # Editor Settings and Global Context
 
-![Editor app settings](./_images/ab-editor-app-context-1.png)
-
 The Settings, Assets, Resources, and Themes area is where your most critical project-level settings can be accessed. This area is important for elements that are not specific to a particular page or component but more general and project-wide.
 
-## Theme (Global Styles)
+![Editor app settings](./_images/ab-editor-app-context-1.png)
 
-![Theme global settings](./_images/ab-global-context-theme-1.png)
+## Theme (Global Styles)
 
 Your application Theme sets the default styling of your application. This includes things like colors, fonts, and component styles. The Theme area is where you can manage all the global styles for your app.
 
 By default, App Builder provides components that have been built using an implementation of Material UI. Due to this, Material UI is the default Theme CSS Design Framework. However, we'll be rolling out other CSS design frameworks over time. Meanwhile, you can go in and customize the default CSS associated with components and manage styling assets like fonts and media queries.
 
-## Assets (Static Assets)
+![Theme global settings](./_images/ab-global-context-theme-1.png)
 
-![Global assets in App Builder](./_images/ab-global-context-assets-1.png)
+## Assets (Static Assets)
 
 The Assets tab allows you to upload static images, videos, or document files. These can be used/displayed throughout your app using the relevant components. All document formats are currently supported.
 
 Note that these files are **deployed with your app bundle.**
+
+![Global assets in App Builder](./_images/ab-global-context-assets-1.png)
 
 ## Resources (Data Sources)
 
@@ -51,10 +51,10 @@ After your 8base Backend is selected, click on it in the list of the available r
 
 ## App Settings
 
-![App Settings](./_images/ab-global-context-settings-1.png)
-
 The App Settings tab is where you'll configure general settings for your application that are not specific to any particular page, component, or data source.
 
-This is where you can configure your app's name, description, 3rd party libraries, and more. Additionally, this is also where you'll be able to manage features like application deployment and global router hooks.
+This is where you can configure your app's name, description, 3rd party libraries, and more. Additionally, this is also where you'll be able to manage features like application deployment and global navigation events.
+
+![App Settings](./_images/ab-global-context-settings-1.png)
 
 We'll cover all of this in more detail in upcoming sections.

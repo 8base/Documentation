@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-slider'
+id: 'app-components-controls-components-slider'
 sidebar_label: 'Slider'
 redirect_from: '/frontend/app-components/input-components/slider'
-slug: '/projects/frontend/app-components/control-components/slider'
+slug: '/projects/frontend/app-components/controls-components/slider'
 ---
 
 # Slider

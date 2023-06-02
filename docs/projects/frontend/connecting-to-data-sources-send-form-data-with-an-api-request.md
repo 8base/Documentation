@@ -11,54 +11,79 @@ This article describes the process a developer must go through to send data with
 
 ---
 
-In App Builder, developers can send form data to an API (GraphQL or REST). To do so, there are several concepts that they need to be familiar with.
+In a Frontend application, developers can send form data to an API (GraphQL or REST). To do so, there are several concepts that they need to be familiar with.
 
 1. Form Components
-2. Component Events
-3. Custom Code (JavaScript)
-4. Setting/Accessing Global State Values
-5. Setting Variables in Requests
+2. Form Submission
+3. On Submit Event
+4. Custom Code (JavaScript)
+5. Setting/Accessing Global State Values
+6. Setting Variables in Requests
 
 With those listed, let's walk through each one so you can start sending data from the front end.
 
 ## Form Components
 
+To collect values from Forms in your Frontend application, you must use *Form* components. 
+
 ![Form block](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-1.png)
 
-Form Components are Inputs that are allowed to be placed in the Form Block Component. To collect values from Forms in App Builder, you must use Inputs placed inside a Form Block component.
+*Form* components **have** a Name property and **must** be placed within a _Form Block_.
 
-There are several types of inputs:
+**Form components:**
 
-- Text Input
-- Number Input
-- Date/Time Input
-- Single Select Dropdown
-- Multi Select Dropdown
-- Checkbox Group
-- Radio Button Group
-- and more.
+For more detailed information on a specific *Form* component, see the **Controls Components** section on the _8base documentation site_.
 
-These inputs allow you to collect user values, but only on the Form's "On Submit" event.
+- Form Block
+- Form Autocomplete
+- Form Checkbox
+- Form Date Picker
+- Form Field Array
+- Form File Upload
+- Form Multiselect
+- Form Radio Group
+- Form Text Field
+- Form Time Picker
+- Form Select
+- Form Slider
+- Form Switch
 
-## Component Events
+Another type of component that you can use within your form is a *Controls* component.
+
+*Controls* components **do not have** a Name property and **must** be placed within a _Page_. You can use **only** these specific *Controls* components within a *Form*.
+
+**Controls components:**
+
+- Button
+- Radio
+- Toggle Button
+- Toggle Button Group
+
+:::note
+ All other components except for the *Controls* components can be placed within a Form.
+:::
+
+## Form Submission
+
+Every *Form Block* contains an **On Submit** event that allows you to submit the data collected by your form. You also need a **Button** of type *Submit*, and you must write custom code to process and handle the form submission.
+
+## On Submit Event
+
+You can access the **On Submit** event on the *Events* tab on the right-hand pane of the project builder. After adding an On Submit event, set the "Choose Action" to **Run Custom Code**.
 
 ![Events](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-2.png)
 
-In App Builder, developers can use Component Events to trigger actions associated with custom code execution. In this case, we'll need to set an Event listener for the Forms Block's "On Submit" event.
-
-On a Form Block Component, go to the "Events" tab a select the "On Submit" Event. Then configure the action to run "Custom Code." Once configured, open the code editor.
-
 ## Custom Code (JavaScript)
+
+To add custom code to process your form data, click the "Add Custom Code" button, which opens the **Code Editor**.
 
 ![Javascript code](./_images/ab-connecting-to-data-sources-send-form-data-with-an-api-request-3.png)
 
-The code editor will give you a blank editor in which you can write any Javascript you want.
+Every *Form* has a hidden variable called `data`. You can access your form's data by referencing this variable, and you reference the component's name to access data in a specific component.
 
-**Know that the arguments that you need to use in order to collect your Form data App Builder will explicitly tell you do NOT exist and will show visual errors. Just ignore those.**
+Let's say you have a *Form* component called *TextField_1*. To access this component's data, you would reference it as `data.TextField_1`.
 
-Inside the function, know that you'll be able to access any Form data from the inputs included in the form on a hidden variable called `data` with the accessor that matches the Input component name.
-
-For example, if your Form has a text input component that you named "TextInput1" you'll be able to access the data on the "On Submit" event using `data.TextInput1`.
+To access all of the form's data, especially during testing, you can log it to the console using `console.log("Data " + data)`, which will allow you to confirm all your form's components are working correctly.
 
 ## Setting/Accessing Global State Values
 
@@ -67,7 +92,7 @@ For example, if your Form has a text input component that you named "TextInput1"
 To set a global state value, you'll need to use the `setValue` function on a Global State Entry. Makes sure that you add a separate entry in the Global State (DO NOT USE LOCAL STATE) for every form Input. Once you do, you'll be able to reference it by name and use the `setValue` method.
 
 ```js
-let inputValue = data.TextInput1;
+let inputValue = data.TextField_1;
 globalStateKeyName.setValue(inputValue);
 ```
 
@@ -85,7 +110,7 @@ You'll probably now want to make sure that the actual Request runs! You can acco
 
 ```js
 // Access value from form Submit event
-let inputValue = data.TextInput1;
+let inputValue = data.TextField_1;
 // Update value
 globalStateKeyName.setValue(inputValue);
 // Run request AFTER value set

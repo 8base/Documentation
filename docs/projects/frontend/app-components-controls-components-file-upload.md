@@ -1,8 +1,8 @@
 ---
-id: 'app-components-control-components-file-upload'
+id: 'app-components-controls-components-file-upload'
 sidebar_label: 'File Upload'
 redirect_from: '/frontend/app-components/input-components/file-upload'
-slug: '/projects/frontend/app-components/control-components/file-upload'
+slug: '/projects/frontend/app-components/controls-components/file-upload'
 ---
 
 # File Upload
