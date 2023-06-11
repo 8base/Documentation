@@ -50,18 +50,18 @@ Each column has its own properties that you can customize independently of other
 
 You can see that some column sizes and names differ from what you would like them to be, so let's fix that.
 
-8. Scroll down to the **Columns*** section in the *Properties* pane.
+8. Scroll down to the **Columns** section in the *Properties* pane.
 9. Click the gear icon next to the **Duedate** column, which opens a pop-out settings pane.
-10. Enter "Due Date" in the **Name** field and click the "X" to close the pop-out.
+10. Enter "Due Date" in the **Name** field and click the "x" to close the pop-out.
 
 ![Adjusting Columns](./_images/ab-state-table-requests-4.png)
 
 11. Click the gear icon next to the **Startdate** column to open the pop-out settings pane.
-12. Enter "Start Date" in the **Name** field and click the "X" to close the pop-out.
+12. Enter "Start Date" in the **Name** field and click the "x" to close the pop-out.
 12. Click the gear icon next to the **Description** column to open the pop-out.
-13. Enter 150 in the **Width** field and click the "X" to close the pop-out.
+13. Enter 150 in the **Width** field and click the "x" to close the pop-out.
 14. Let's hide the **Id** column because we don't need to see it. Click the gear icon next to the **Id** column to open the pop-out settings pane.
-15. Switch the "Hide" toggle to **on** to hide the **Id** column and click the "X" to close the pop-out.
+15. Switch the "Hide" toggle to **on** to hide the **Id** column and click the "x" to close the pop-out.
 
 ![Hiding Columns](./_images/ab-state-table-requests-5.png)
 
