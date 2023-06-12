@@ -36,14 +36,14 @@ Your page should look similar to this.
 
 It's now time to build your **Function**.
 
-11. Click the function icon on the left-hand menu to open the *Functions* pane and select the *Global* tab.
-12. Click the "+" on the top of the *Functions* pane to create a new **Function**.
+1. Click the function icon on the left-hand menu to open the *Functions* pane and select the *Global* tab.
+2. Click the "+" on the top of the *Functions* pane to create a new **Function**.
 
 ![Creating a Function](./_images/ab-state-looper-functions-2.png)
 
-13. Enter "spanishRecipe" at the top on the *Functions* pane where it says **newFunction**. This will be the name of your new function.
-14. Click the expand arrow in the **code area** of the *Functions* pane to open the the **code panel**.
-15. Copy and paste the following code into the **code panel** and click "Done".
+3. Enter "spanishRecipe" at the top on the *Functions* pane where it says **newFunction**. This will be the name of your new function.
+4. Click the expand arrow in the **code area** of the *Functions* pane to open the the **code panel**.
+5. Copy and paste the following code into the **code panel** and click "Done".
 
 ~~~js
  return [
@@ -77,28 +77,28 @@ It's now time to build your **Function**.
 
 We will now add the *Function* data to the *Looper* component.
 
-16. Select your *Looper* on the Page, which opens the *Properties* pane.
-17. Enter `{{ spanishRecipe() }}` in the **Loop Data** field and the word *item* in the **Item Name** field.
+6. Select your *Looper* on the Page, which opens the *Properties* pane.
+7. Enter `{{ spanishRecipe() }}` in the **Loop Data** field and the word *item* in the **Item Name** field.
 
 The *Looper* will display four blank Cards on your Page, which is how many objects are in your **Function**.
 
 ![Looper Output](./_images/ab-state-looper-functions-3.png)
 
-18. Select your *Card* component, which opens the *Properties* pane.
-19. In the **Custom Properties** section, click the gear icon to the right of the **Header** item, which opens a pop-up settings window. 
-20. Next to the **Title** field, click the three-way icon "\<\>" and switch to the code format "{}". 
-21. Enter `{{ item.title + ' ' + (itemIndex+1)}}` in the **Title** field. 
-22. Next to the **Subheader** field, click the three-way icon "\<\>" and switch to the code format "{}".
-23. Enter `{{ item.subheader}}` in the **Subheader** field and click the "x" to close the pop-out.
+8. Select your *Card* component, which opens the *Properties* pane.
+9. In the **Custom Properties** section, click the gear icon to the right of the **Header** item, which opens a pop-up settings window. 
+10. Next to the **Title** field, click the three-way symbol `<>` and switch to the code format `{}`. 
+11. Enter `{{ item.title + ' ' + (itemIndex+1)}}` in the **Title** field. 
+12. Next to the **Subheader** field, click the three-way symbol `<>` and switch to the code format `{}`.
+13. Enter `{{ item.subheader}}` in the **Subheader** field and click the "x" to close the pop-out.
 
 ![Adding Card Header Data](./_images/ab-state-looper-functions-4.png)
 
-24. Click the gear icon to the right of the **Media** item, which opens a pop-up settings window. 
-25. Next to the **Image** field, click the three-way icon "\<\>" and switch to the code format "{}". 
-26. Enter `{{item.media}}` in the **Image** field, set the **Height** to 120 px, and click "x" to close the pop-out.
-27. Select the *Typography* component on any *Card*, which opens the *Properties* pane. 
-28. Next to the **Text** field, click the three-way icon "\<\>" and switch to the code format "{}".
-29. Enter `{{item.content}}` in the **Text** field, and click "x" to close the pop-out.
+14. Click the gear icon to the right of the **Media** item, which opens a pop-up settings window. 
+15. Next to the **Image** field, click the three-way symbol `<>` and switch to the code format `{}`. 
+16. Enter `{{item.media}}` in the **Image** field, set the **Height** to 120 px, and click "x" to close the pop-out.
+17. Select the *Typography* component on any *Card*, which opens the *Properties* pane. 
+18. Next to the **Text** field, click the three-way symbol `<>` and switch to the code format `{}`.
+19. Enter `{{item.content}}` in the **Text** field, and click "x" to close the pop-out.
 
 ![Adding Typography Data](./_images/ab-state-looper-functions-5.png)
 
