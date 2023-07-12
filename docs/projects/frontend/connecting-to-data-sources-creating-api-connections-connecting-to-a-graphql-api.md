@@ -32,3 +32,14 @@ In the Request create form, you can select which Resource you want to request an
 ![Making a request in the Request Modal](./_images/ab-resources-request-2.png)
 
 After you've made your request, you'll see the response. The data also gets stored in the State pane, making it accessible by components and other parts of your app.
+
+## Understanding the different operation types
+
+### Query (lazy)
+This GraphQL query is expected to be executed in response to an event. This is the default option when fetching data, as most applications will prefer to be in control of when a query is executed. You can execute lazy queries as part of [component events](/projects/frontend/connecting-to-data-sources/how-to-make-api-calls-requests/how-to-execute-a-graphql-querymutation#setting-a-request-to-run-on-an-event) or [navigation events](/projects/frontend/app-navigation/create-and-editing-app-pages/adding-logic-to-navigation-events/). You can also execute it from any code block using the [run method](/projects/frontend/connecting-to-data-sources/how-to-make-api-calls-requests/how-to-execute-a-graphql-querymutation#setting-a-request-to-run-on-an-event).
+
+### Query
+This GraphQL query will be executed when the global or local scope, where is defined, is mounted. At runtime, your app should assume query results will be present in the state if the scope is mounted. You cannot select queries as targets of component events or navigation events. You could execute them using the run method, but please consider that would be an additional execution. 
+
+### Mutation
+Mutations are used to send data to the server and usually, they would add or modify data. Mutations behave like lazy queries, letting the app decide when is the appropriate time to execute them.
