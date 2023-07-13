@@ -19,6 +19,8 @@ This will start the process of compiling, building, and deploying your app. All 
 
 You can find more deployment options in the Deployment area of your app's Settings. Different deployment options are available, such as configuring SSL certificates, enabling a CDN, and the instructions for mapping a Custom Domain with your DNS provider.
 
+Note that these options will only become available once your first deployment is completed.
+
 ![Deploy settings](./_images/ab-deploy-settings-1.png)
 
 ### Adding a Custom Domain
