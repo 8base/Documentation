@@ -355,6 +355,7 @@ const sidebars = {
                     'projects/frontend/app-components-control-components-date-picker',
                     'projects/frontend/app-components-control-components-field-array',
                     'projects/frontend/app-components-control-components-file-picker-8base',
+                    'projects/frontend/app-components-control-components-file-picker-button-8base',
                     'projects/frontend/app-components-control-components-file-upload',
                     'projects/frontend/app-components-control-components-file-picker-button',
                     'projects/frontend/app-components-control-components-multiselect',
