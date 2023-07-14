@@ -356,6 +356,7 @@ const sidebars = {
                     'projects/frontend/app-components-control-components-field-array',
                     'projects/frontend/app-components-control-components-file-picker-8base',
                     'projects/frontend/app-components-control-components-file-upload',
+                    'projects/frontend/app-components-control-components-file-picker-button',
                     'projects/frontend/app-components-control-components-multiselect',
                     'projects/frontend/app-components-control-components-radio',
                     'projects/frontend/app-components-control-components-radio-group',
