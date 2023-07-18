@@ -312,12 +312,20 @@
     "to": "/projects/frontend/app-components/control-components/file-picker-button-8base"
   },
   {
+    "from": "/frontend/app-components/input-components/file-dropzone-8base",
+    "to": "/projects/frontend/app-components/control-components/file-dropzone-8base"
+  },
+  {
     "from": "/frontend/app-components/input-components/file-upload",
     "to": "/projects/frontend/app-components/control-components/file-upload"
   },
   {
     "from": "/frontend/app-components/input-components/file-picker-button",
     "to": "/projects/frontend/app-components/control-components/file-picker-button"
+  },
+  {
+    "from": "/frontend/app-components/input-components/file-dropzone",
+    "to": "/projects/frontend/app-components/control-components/file-dropzone"
   },
   {
     "from": "/frontend/app-components/input-components/form-block",
