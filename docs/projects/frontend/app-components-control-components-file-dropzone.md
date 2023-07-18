@@ -11,7 +11,7 @@ The _File Drop Zone_ component is a variant of the [_File Upload_](/projects/f
 
 This component differs by being a container-type component rather than a file-type input. However, even though its presentation is different, under the hood, all its properties and functionality are the same as the [_File Upload_](/projects/frontend/app-components/control-components/file-upload) component.
 
-![File Picker Button](./_images/ab-component-dropzone.gif)
+![File Dropzone](./_images/ab-component-dropzone.gif)
 
 The _File Drop Zone_ component is a container that has typography and icon components inside to give the user greater flexibility when customizing.
 
@@ -32,6 +32,7 @@ The component also has **Custom Properties** that allow you to add additional pr
 <tr><td>wrongFileTypeText</td><td>string</td><td>"Wrong file type uploaded"</td><td>Defines the text in the error message to be shown when uploading a file with a different type than the one set.</td></tr>
 <tr><td>maxFileSize</td><td>number</td><td></td><td>Defines the maximum size of a file.</td></tr>
 <tr><td>fileSizeExceededText</td><td>string</td><td>"Max file size exceeded (maxFileSize)"</td><td>Defines the text in the error message to be shown when uploading a file with a size larger than the one set.</td></tr>
+<tr><td>showFileList</td><td>bool</td><td>true</td><td>If true, the list of selected files is displayed.</td></tr>
 </tbody>
 </table>
 
