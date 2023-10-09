@@ -1,23 +1,17 @@
 ---
 id: 'console-readme'
-sidebar_label: 'What is 8base?'
-redirect_from: '/backend'
+sidebar_label: 'Welcome'
 slug: '/'
 ---
-# Introduction to 8base?
+# Welcome
+Welcome to 8base, a robust low-code platform designed to facilitate the creation of full-stack JavaScript applications. We created this platform for professional developers who seek an efficient and streamlined tool to bring their projects to life.
 
-Welcome to 8base, a purpose-built low-code platform for professional developers. At its core, 8base is engineered to streamline the development of full-stack JavaScript applications, eliminating the usual overhead while retaining the depth and control that seasoned developers and their end-users expect.
+8base empowers developers to generate comprehensive applications, manage data effectively, and design and deploy scalable and robust digital products. With 8base, developers can generate comprehensive GraphQL APIs and extend them with custom server-side functions.
 
-## Key Features of 8base
+Furthermore, 8base allows developers to build frontend applications that interact seamlessly with the backend and communicate with any third-party API using a modern JavaScript framework. The versatility of 8base provides a wide range of opportunities to innovate and deliver high-quality digital solutions.
+ 
+## Documentation organization
 
-- **Frontend Development Tools**: 8base provides a powerful visual frontend development environment with a rich set of fully-configurable UI components. Quickly design, build and deploy web applications with no limitations on styling or taking full-control using code where necessary. 8base’s frontend tools provide simple integration with 8base Backends while also providing for easy integration with any API or data source.
-- **Backend Development Tools**: 8base delivers an integrated suite of backend development tools, streamlining the process of setting up a relational data schema, implementing granular role-based access controls, provisioning authentication services, and more. Designed with efficiency in mind, these tools empower developers to establish a robust backend infrastructure with minimal friction, ensuring a solid foundation for any application.
-- **GraphQL API Generation**: 8base instantly delivers an auto-generated and fully-documented GraphQL APIs for an application’s backend data. Extend and customize these APIs with server-side functions to ensure they fit your specific requirements.
-- **Managed Backend-as-a-Service**: 8base presents a comprehensive DevOps-free backend solution, encompassing a fully-managed relational database and serverless functions. Whether you're leveraging 8base's frontend toolkit or your preferred development framework, this service ensures robust backend support, streamlining operations and allowing developers to prioritize feature-rich application development.
-
-8base’s Backend-as-a-Service can be utilized independently of its frontend development tools, for use cases where a managed backend is required to support frontend web and/or mobile applications written using other frameworks or tools.
-
-In essence, 8base is a toolkit for developers who prioritize efficiency, scalability, security and quality. 
-
-Dive in and discover how 8base can elevate your development process and application runtime operations.
-
+- **Introduction**: This section provides foundational information on what 8base is, who is it for, and how to use it. It also has a quickstart tutorial for your first project  
+- **Backend Development**: Here, you'll find detailed guides and tutorials on leveraging the power of 8base for backend development. It includes instructions on creating GraphQL APIs, custom server-side functions, and managing data.
+- **Frontend Development**: This part of the documentation provides comprehensive instructions on integrating 8base with modern JavaScript frameworks for frontend development. You'll learn how to connect your frontend applications to the backend and interact with third-party APIs.

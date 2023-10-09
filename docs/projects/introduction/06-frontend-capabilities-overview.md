@@ -1,8 +1,3 @@
----
-id: 'frontend-capabilities-overview'
-sidebar_label: 'Frontend Capabilities Overview'
-slug: '/introduction/frontend-capabilities-overview'
----
 # Frontend capabilities overview
 
 
