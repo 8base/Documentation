@@ -18,14 +18,23 @@ const sidebars = {
     {
       type: 'doc',
       id: 'console-readme',
-      label: 'Introduction',
+      label: 'Welcome',
     },
     {
       type: 'category',
-      label: 'Project Management',
+      label: 'Introduction',
       items: [
-        'projects/provisioning-projects',
-        'projects/project-ui-walkthrough',
+        'projects/introduction/what-is-8base',
+        'projects/introduction/who-uses-8base',
+        'projects/introduction/quickstart',
+        'projects/introduction/main-modules-and-capabilities',
+        'projects/introduction/projects',
+        'projects/introduction/backend-capabilities-overview',
+        'projects/introduction/frontend-capabilities-overview',
+        'projects/introduction/built-application-architecture',
+        'projects/introduction/using-8base-at-scale',
+        // 'projects/introduction/navigating-our-docs',
+        'projects/introduction/developer-resources'
       ],
     },
     {

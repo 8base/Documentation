@@ -1,8 +1,7 @@
 ---
-id: 'console-readme'
+id: 'what-is-8base'
 sidebar_label: 'What is 8base?'
-redirect_from: '/backend'
-slug: '/'
+slug: '/introduction/what-is-8base'
 ---
 # Introduction to 8base?
 
