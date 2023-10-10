@@ -10,7 +10,7 @@ Welcome to 8base, a powerful low-code development platform designed to facilitat
 
 8base also enables developers to build frontend applications that interact seamlessly with their 8base backend and communicate with any third-party API. The versatility of 8base provides a wide range of opportunities to innovate and deliver high-quality digital solutions.
 
-## Create an account
+## Create an Account
 Create your free account to get started with 8base at [app.8base.com](https://app.8base.com). After you've set up your account, you'll be able to create Projects and use the 8base tools to buiold and run web applications.
 
 You can sign up with user name and password, Github or Google.
@@ -23,7 +23,7 @@ You can sign up with user name and password, Github or Google.
 Allow pop-up and redirects and ClipBoard from app.8base.com and appbuilder.8base.com.
 
 
-## Documentation organization
+## Documentation Organization
 
 - [**Introduction**](/introduction/what-is-8base): This section provides foundational information on what 8base is, who is it for, and how to use it. It also has a [quickstart tutorial](/introduction/quickstart) for your first project  
 - [**Backend Development**](/projects/backend/getting-started): Here, you'll find detailed guides and tutorials on leveraging the power of 8base for backend development. It includes instructions on creating GraphQL APIs, custom server-side functions, and managing data.
