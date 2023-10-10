@@ -4,6 +4,7 @@ sidebar_label: 'Quickstart'
 slug: '/introduction/quickstart'
 ---
 # Quickstart Guide for 8base
+Julia is testing out git yehaw!
 
 This guide describes the process of creating a project in 8base and outline the options available to you. A project in 8base serves as a container for backend services such as data management, API, authentication, and optionally, one or several frontend applications. Team members collaborate within a project, utilizing 8base tools to construct their applications.
 
