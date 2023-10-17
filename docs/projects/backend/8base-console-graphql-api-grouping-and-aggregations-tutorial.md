@@ -25,7 +25,7 @@ In this tutorial, we are using data about movies. There are two tables: **Actor*
 
 If we look at the **Actor** table, on the **Schema** tab, we can see our auto-generated fields and user-defined fields. The first column displays the field names, and the second column lists the field types.
 
-<!--- a![lt_text](images/image1.png "image_tooltip") --->
+![The 8base data page showing a schema table.](./images/ui-tutorial-groups-schema-actor.png)
 
 
 The field type will affect how the field can be configured and behaves. The field type also affects the kind of data you can receive from a field. For more information, see [Field Types](https://docs.8base.com/projects/backend/console/data-builder/#field-types). 
@@ -41,12 +41,12 @@ On the **Data** tab, we can see our data. Each data entry has the following colu
 * DOB (Date of Birth)
 * Movies (this column links to the Movies data table)
 
-<!--![alt_text](images/image2.png "image_tooltip")-->
+![The 8base data page showing a data table.](./images/ui-tutorial-groups-data-actors.png)
 
 
 If we view the **Movies** data table, the schema looks like this:
 
-<!--![alt_text](images/image3.png "image_tooltip") -->
+![The 8base data page showing a schema table.](./images/ui-tutorial-groups-schema-movie.png)
 
 
 The **Cast** field is a table that is being pulled from the Actor data table. The Movie table data has these columns:
@@ -61,7 +61,7 @@ The **Cast** field is a table that is being pulled from the Actor data table. Th
 * Cast (this column links to the Actors data table)
 
 
-<!-- [alt_text](images/image4.png "image_tooltip")-->
+![The 8base data page showing a data table.](./images/ui-tutorial-groups-data-movie.png)
 
 
 
@@ -100,12 +100,12 @@ To run a query, click the **Execute query** button.
 
 The query has returned all of the data, sorted in the order specified in the query. The results are listed first by field ID of the movie, and then a sub-section listing actor names, also in order of ID number. 
 
-> **TIP:** In 8base, if you do not specify a sort order, the default is to sort items by ``created_at``.
+> **Tip:** In 8base, if you do not specify a sort order, the default is to sort items by ``created_at``.
 
-<!--![alt_text](images/image6.png "image_tooltip")-->
+![The 8base API explorer showing the results of a simple query.](./images/ui-tutorial-groups-first-query.png)
 
 
-There is nothing wrong with these results, but is ordering everything by ID number the most practical way to sort or find results? If you are trying to decide what movie to watch, those ID numbers do not help you.
+There is nothing wrong with these results, but is ordering everything by ID number the most practical way to sort results? If you are trying to decide what movie to watch, those ID numbers do not help you.
 
 Let’s use groups to organize and filter the data in a more usable way.
 
@@ -116,8 +116,8 @@ Now we will write a new query to get a list of movie titles organized by directo
 
 
 
-* Query field: `moviesList `(this replaces `query` in the first example)
-* Argument:` groupBy `
+* Query field: `moviesList` (this replaces `query` in the first example)
+* Argument: `groupBy`
 
 Groups are defined in the `groupBy` argument of the table list query, `moviesList`. The `groups{ }` argument is what sets the sort order. Here, `GroupDirector` is first, followed by `MovieGroup` items by title.
 
@@ -150,14 +150,14 @@ Groups are defined in the `groupBy` argument of the table list query, `moviesLis
 ```
 
 
-> **TIP:** If you want to quickly build a query, click the **Explorer** button and use the list on the left to add fields, groups, and aggregations. **
+> **Tip:** If you want to quickly build a query, click the **Explorer** button and use the list on the left to add fields, groups, and aggregations.
 
 Our new results give us a list of directors, and which movies they directed:
 
-<!--![alt_text](images/image7.png "image_tooltip")-->
+![The 8base API explorer showing the results of a query with one condition.](./images/ui-tutorial-groups-having-single-condition.png)
 
 
-These results are sorted alphabetically by director’s first name, which is a more logical way to present information than field ID. You can also see quick insights- this data shows that Christopher Nolan has directed more movies than James Cameron. 
+These results are sorted alphabetically by the first name of the director. This is a more logical way to present information than field ID. You can also see quick insights: this data shows that Christopher Nolan has directed more movies than James Cameron. 
 
 This list has the same number of data points as our first query, but they are sorted in a more logical way. If we are picking a movie to watch, we will want fewer results to sort through. 
 
@@ -203,13 +203,13 @@ query GroupingWithCondition{
 ```
 
 
-The having clause states that the query should only return items in `GroupDirector` that start with J. The groups argument is the same as in the previous example.
+The `having` clause states that the query should only return items in `GroupDirector` that start with J. The groups argument is the same as in the previous example.
 
 Our results come back with four directors: James Cameron, John Lasseter, Jonathan Demme, and Joel Cohen. 
 
 
 
-<!--![alt_text](images/image8.png "image_tooltip")-->
+![The 8base API explorer showing the results of a query where we only see director's whose names start with J.](./images/ui-tutorial-groups-condition-directorname.png)
 
 
 You can use grouping by condition to create categories in your data. For example, you could search for directors who released movies in the 1980s, directors whose first names are “John”, or directors who make PG rated movies. 
@@ -217,7 +217,7 @@ You can use grouping by condition to create categories in your data. For example
 
 ## Grouping with Multiple Conditions
 
-Next, we will run a query with more than one condition. We only want results where the director name starts with J. And we want the movie title results to be sorted by film rating: G, PG, PG-13, R, etc.  
+Next, we will run a query with more than one condition. We only want results where the director name starts with J. And we want the movie title results to be sorted by film rating: G, PG, PG-13, R.  
 
 To do this, we use:
 
@@ -267,7 +267,7 @@ query MultipleGroupsWithCondition{
 
 In our results, James Cameron now appears twice: Once in a section listing his PG-13 movies, and once in a section showing his one rated R movie. 
 
-<!--![alt_text](images/image9.png "image_tooltip")-->
+![The 8base API explorer showing the results of a query where we only see director's whose names start with , sorted by movie rating.](./images/ui-tutorial-groups-mutipleconditions.png)
 
 
 Now that we know the movie ratings, we can pick a movie that is appropriate to watch with our grandparents. But our grandparents will want to know which actors are in these movies, so we need to add nested groups to our query.
@@ -282,7 +282,7 @@ The first part of the query is similar to the last one. You need to change the q
 
 
 * Query field: `MultipleGroupsWithConditionWithNestedGroups`
-* Two group arguments:` ActorGender `and` ActorGroup`
+* Two group arguments: `ActorGender` and `ActorGroup`
 
 ```javascript
 query MultipleGroupsWithConditionWithNestedGroups{
@@ -344,14 +344,12 @@ query MultipleGroupsWithConditionWithNestedGroups{
 }
 ```
 
-
-
 Our results now show a lot of information. Here is a snapshot showing James Cameron’s PG-13 movies:
 
-<!--![alt_text](images/image10.png "image_tooltip")-->
+![The 8base API explorer showing the results of a query with multiple nested groups.](./images/ui-tutorial-groups-nested-groups.png)
 
 
-The entries are still grouped by director’s first name, and then movie rating. Then you see the movie title, a list of actors, and a list of actresses. 
+The entries are still grouped by the director’s first name and then movie rating. Then you see the movie title, a list of actors, and a list of actresses. 
 
 Our first query gave us a huge list of movies, organized by ID, with no filtering. Now we can quickly scan a smaller list of movies, and pick one based on director, rating, and actor or actress.
 
