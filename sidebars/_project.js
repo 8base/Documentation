@@ -374,7 +374,7 @@ const sidebars = {
                     'projects/frontend/app-components-control-components-radio',
                     'projects/frontend/app-components-control-components-radio-group',
                     'projects/frontend/app-components-control-components-select',
-                    'projects/frontend/app-components-control-components-slidaer',
+                    'projects/frontend/app-components-control-components-slider',
                     'projects/frontend/app-components-control-components-switch',
                     'projects/frontend/app-components-control-components-text-field',
                     'projects/frontend/app-components-control-components-time-picker',
