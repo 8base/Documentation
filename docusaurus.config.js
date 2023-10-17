@@ -5,7 +5,7 @@ const fs = require('fs');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const redirects = JSON.parse(fs.readFileSync('redirects.json'));
+const redirects = JSON.parse(fs.readFileSync('redirects.json', 'utf8'));
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -72,36 +72,19 @@ const config = {
         },
         items: [
           {
-            href: 'https://community.8base.com',
+            to: '/',
             position: 'left',
-            label: 'Community',
-            className: 'hide-svg',
+            label: 'Reference',
+            activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog"
           },
           {
-            href: 'https://twitter.com/8base',
-            position: 'right',
-            className: 'twitter',
-            icon: {
-              alt: 'twitter icon',
-              src: `logos/twitter.svg`,
-              href: 'https://twitter.com/8base',
-              target: '_blank',
-            },
-          },
-          {
-            href: 'https://github.com/8base/Documentation',
-            position: 'right',
-            className: 'github',
-            icon: {
-              alt: 'github icon',
-              src: `/logos/github.svg`,
-              href: 'https://github.com/ionic-team/ionic-framework',
-              target: '_blank',
-            },
+            to: '/changelog',
+            position: 'left',
+            label: 'Change Log',
           },
           {
             href: 'https://app.8base.com/auth/login',
-            label: 'Sign In',
+            label: 'Go to 8base Dashboard',
             position: 'right',
             className: 'button button--secondary button--lg signin',
           },
