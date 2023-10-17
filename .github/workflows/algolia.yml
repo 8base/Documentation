@@ -1,0 +1,22 @@
+name: Algolia Indexing
+
+on:
+  workflow_run:
+    workflows: ['deploy']
+    types:
+      - completed
+
+jobs:
+  algolia-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install JQ
+        run: sudo apt-get install -y jq
+
+      - name: Run Algolia Scraper
+        run: |
+          docker run --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
