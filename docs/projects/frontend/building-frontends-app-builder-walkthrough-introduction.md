@@ -1,6 +1,5 @@
 ---
 id: 'building-frontends-app-builder-walkthrough-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/building-frontends-app-builder-walkthrough/introduction'
 slug: '/projects/frontend/building-frontends-app-builder-walkthrough/introduction'
 ---

@@ -1,6 +1,5 @@
 ---
 id: 'triggering-events-in-the-app-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/triggering-events-in-the-app/introduction'
 slug: '/projects/frontend/triggering-events-in-the-app/introduction'
 ---

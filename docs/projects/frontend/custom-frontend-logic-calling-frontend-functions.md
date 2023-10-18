@@ -1,6 +1,5 @@
 ---
 id: 'custom-frontend-logic-calling-frontend-functions'
-sidebar_label: 'Calling Frontend Functions'
 redirect_from: '/frontend/custom-frontend-logic/calling-frontend-functions'
 slug: '/projects/frontend/custom-frontend-logic/calling-frontend-functions'
 ---

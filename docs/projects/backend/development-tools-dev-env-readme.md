@@ -1,6 +1,5 @@
 ---
 id: 'development-tools-dev-env-readme'
-sidebar_label: 'Overview'
 redirect_from: '/backend/development-tools/dev-env'
 slug: '/projects/backend/development-tools/dev-env'
 ---

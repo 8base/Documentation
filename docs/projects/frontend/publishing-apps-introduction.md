@@ -1,6 +1,5 @@
 ---
 id: 'publishing-apps-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/publishing-apps/introduction'
 slug: '/projects/frontend/publishing-apps/introduction'
 ---

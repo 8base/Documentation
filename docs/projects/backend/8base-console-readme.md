@@ -1,8 +1,7 @@
 ---
 id: '8base-console-readme'
-sidebar_label: 'Overview'
-redirect_from: '/backend/overview'
-slug: '/projects/backend/overview'
+redirect_from: '/backend/backend'
+slug: '/projects/backend/backend'
 ---
 
 # What's the 8base Management Console?

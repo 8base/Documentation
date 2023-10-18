@@ -1,6 +1,5 @@
 ---
 id: 'connecting-to-data-sources-creating-api-connections'
-sidebar_label: 'API Connecting Types'
 redirect_from: '/frontend/connecting-to-data-sources/creating-api-connections'
 slug: '/projects/frontend/connecting-to-data-sources/creating-api-connections'
 ---
