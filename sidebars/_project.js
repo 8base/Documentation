@@ -39,6 +39,19 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Getting started',
+      items: [
+        {
+          type: 'category',
+          label: 'Common tasks',
+          items: [
+            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
+          ]
+        }
+      ],
+    },
+    {
+      type: 'category',
       label: 'Backend development',
       items: [
         {
@@ -122,7 +135,6 @@ const sidebars = {
               ],
             },
             'projects/backend/8base-console-graphql-api-grouping-and-aggregations-readme',
-            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
             'projects/backend/8base-console-graphql-api-geo-fields-readme',
             'projects/backend/8base-console-graphql-api-variables',
             'projects/backend/8base-console-graphql-api-error-handling',
