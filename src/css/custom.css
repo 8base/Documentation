@@ -643,6 +643,11 @@ nav.menu {
   color: #a3afb7;
 }
 
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
+  .menu__link {
+  color: #323c47;
+}
+
 .theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
   .menu__link {
   color: #323c47;
