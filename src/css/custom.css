@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
   font-family: Montserrat, sans-serif;
@@ -16,7 +16,7 @@ body {
 }
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #5eadf2;
+  --ifm-color-primary: #238bff;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -173,7 +173,7 @@ body {
   position: relative;
   top: 1px;
 }*/
-.menu__list-item > .menu__link--active::before {
+/* .menu__list-item > .menu__link--active::before {
   content: '\2022';
   color: inherit;
   font-size: 1.5rem;
@@ -181,14 +181,14 @@ body {
   padding-right: 4px;
   position: relative;
   top: -2px;
-}
+} */
 .menu__link {
-  color: gray;
   font-weight: 400;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  color: #7d828c;
 }
-.menu__link:hover {
-  /*color: #5EADF2;*/
-}
+
 .btn_reaction {
   padding: 0.5rem;
   cursor: pointer;
@@ -284,7 +284,7 @@ body {
 }
 
 /*styling color mode toggle*/
-.clean-btn {
+[aria-label='Switch between dark and light mode (currently light mode)'] {
   border-radius: 8px !important;
   background-color: #323c47;
   /* margin-left: 0.5rem; */
@@ -293,9 +293,6 @@ body {
   align-items: center;
   height: 32px !important;
   pad: 0 80px;
-}
-.clean-btn:hover {
-  background-color: #323c47 !important;
 }
 .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   width: unset !important;
@@ -588,6 +585,8 @@ body {
 /* Add padding at the end of sidebar */
 nav.menu {
   padding-bottom: 40px;
+  padding-top: 36px;
+  padding-left: 20px;
 }
 
 /* Removes active navbar item buttom bar */
@@ -598,4 +597,75 @@ nav.menu {
 
 .DocSearch.DocSearch-Container {
   height: 100%;
+}
+
+.menu__listItem svg {
+  display: none; /* This hides the current icon */
+}
+
+.clean-btn.menu__caret::before {
+  background: none;
+  content: url('/img/right.svg'); /* This adds your custom icon */
+  display: inline-block; /* Necessary to display the icon */
+  rotate: -90deg;
+}
+
+.menu__link.menu__link--sublist.menu__link--sublist-caret::after {
+  background: none;
+  content: url('/img/right.svg'); /* This adds your custom icon */
+  display: inline-block; /* Necessary to display the icon */
+  rotate: -90deg;
+}
+
+/* Sidebar top level items */
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
+  > .menu__list-item-collapsible
+  > a {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #a3afb7;
+}
+/* Sidebar top level items - Active */
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
+  > .menu__list-item-collapsible
+  > .menu__link.menu__link--sublist.menu__link--active {
+  text-decoration: underline;
+  font-weight: 700 !important;
+}
+
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
+  .menu__link.menu__link--sublist.menu__link--sublist-caret {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #a3afb7;
+}
+
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
+  .menu__link {
+  color: #323c47;
+}
+
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-3.menu__list-item
+  .menu__link.menu__link--sublist.menu__link--sublist-caret {
+  color: #323c47;
+}
+
+.menu__link.menu__link--sublist {
+  color: #a3afb7;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 400;
+}
+
+/* Sidebar item container */
+.theme-doc-sidebar-menu.menu__list {
+  width: 92%;
+}
+
+/* styles.css */
+.sibling-style {
+  color: #7d828c !important;
 }
