@@ -46,6 +46,7 @@ const sidebars = {
           label: 'Common tasks',
           items: [
             'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
+            'projects/gettingstarted/common-tasks-real-time-applications',            
           ]
         }
       ],

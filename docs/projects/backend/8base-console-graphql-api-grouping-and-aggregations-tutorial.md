@@ -1,11 +1,11 @@
 ---
 id: '8base-console-graphql-api-grouping-and-aggregations-tutorial'
-sidebar_label: 'Tutorial: Using Groups and Aggregations in Queries'
+sidebar_label: 'Using Groups and Aggregations in Queries'
 redirect_from: '/backend/graphql-api/grouping-and-aggregations-tutorial'
 slug: '/projects/backend/graphql-api/grouping-and-aggregations-tutorial'
 ---
 
-# Tutorial: Using Groups and Aggregations in Queries
+# Using Groups and Aggregations in Queries
 
 Groups and aggregations help you gain valuable insights from your data, in order to improve business processes, customer experiences, and overall efficiency.
 

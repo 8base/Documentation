@@ -1,6 +1,6 @@
 ---
 id: '8base-console-platform-tools-api-explorer'
-sidebar_label: 'Api Explorer'
+sidebar_label: 'API Explorer'
 redirect_from: '/backend/console/api-explorer'
 slug: '/projects/backend/console/api-explorer'
 ---
