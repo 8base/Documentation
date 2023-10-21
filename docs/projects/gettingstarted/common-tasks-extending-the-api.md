@@ -50,7 +50,7 @@ Next we will generate our resolver. The command below gives:
 The default project has four examples. You can clean up the file structure and the `8base.yml` until only the resolver we need remains.
 
 
-```bash
+```yaml
     functions:
         movieWithReview:
         type: resolver
@@ -67,7 +67,7 @@ Let's modify the schema (`src/resolvers/movieWithReview/schema.graphql`) so we c
 We will add a type with the data we want to return:
 
 
-```
+```graphql
     type  MovieWithReviewType {
 	    id: ID,
 	    title: String,
@@ -82,7 +82,7 @@ We will add a type with the data we want to return:
 Then we can specify what  the result will look like:
 
 
-```
+```graphql
     type  MovieWithReviewResult {
 	    result: MovieWithReviewType
     }
@@ -92,12 +92,11 @@ Then we can specify what  the result will look like:
 Lastly, we need the caller to send the id of the movie we want to get the review for. And we will specify that we are returning a `MovieWithReviewResult` instance.
 
 
-```
+```graphql
     extend  type  Query {
     	movieWithReview(id: ID!!): MovieWithReviewResult
     }
 ```
-
 
 ## Implementing the Handler
 
@@ -108,78 +107,50 @@ We will need to retrieve the data of the movie in question, using the id provide
 First we define the query:
 
 
-```
+```javascript
     const  GETMOVIE  =  gql  `
-    
     query  getMoview($id: ID!) {
-    
-    movie(id: $id) {
-    
-    id
-    
-    title
-    
-    genre
-    
-    director
-    
-    rating
-    
-    }
-    
+        movie(id: $id) {
+            id
+            title
+            genre
+            director
+            rating
+        }
     }
 ```
 
 And then we execute it:
 
 
-```bash
-const  result  =  await  ctx.api.gqlRequest(GETMOVIE, { id:  event.data.id })
+```javascript
+    const  result  =  await  ctx.api.gqlRequest(GETMOVIE, { id:  event.data.id })
 ```
 
 
 For the interaction with OpenAI, we will wrap things in a function. OpenAI endpoints require an API key, so we will keep that as an environment variable.
 
 
-```bash
+```javascript
     const  openAiChatEnpoint  =  'https://api.openai.com/v1/chat/completions';
-    
     const  openAIKey  =  process.env.OPENAI;
-    
     const  chat  =  async  function (movie) {
-    
-    const  data  = {
-    
-    "model":  "gpt-3.5-turbo",
-    
-    "messages": [
-    
-    {
-    
-    "role":  "user",
-    
-    "content":  `You are a movie critic. Provide a brief review of the movie ${movie}}`
-    
-    }
-    
-    ]
-    
-    }
-    
-    return  axios.post(openAiChatEnpoint, data, {
-    
-    headers: {
-    
-    'Authorization':  `Bearer ${openAIKey}`,
-    
-    'Content-Type':  'application/json',
-    
-    'Accept':  'application/json'
-    
-    }
-    
-    });
-    
+        const  data  = {
+            "model":  "gpt-3.5-turbo",
+            "messages": [
+                {
+                    "role":  "user",
+                    "content":  `You are a movie critic. Provide a brief review of the movie ${movie}}`
+                }
+            ]
+        }
+        return  axios.post(openAiChatEnpoint, data, {
+            headers: {
+                'Authorization':  `Bearer ${openAIKey}`,
+                'Content-Type':  'application/json',
+                'Accept':  'application/json'
+            }    
+        });
     }
 ```
 
@@ -187,120 +158,68 @@ For the interaction with OpenAI, we will wrap things in a function. OpenAI endpo
 Once we have retrieved the details of the movie, we can call our chat method to get the review from ChatGPT:
 
 
-```bash
-const  review  =  await  chat(result.movie.title);
+```javascript
+    const  review  =  await  chat(result.movie.title);
 ```
 
 
 From there, we just need to assemble the response to send. Putting it all together, it looks like this:
 
 
-```bash
-    import  gql  from  'graphql-tag';
-    
-    const  axios  =  require('axios').default;
-    
-      
-    
-    const  openAiChatEnpoint  =  'https://api.openai.com/v1/chat/completions';
-    
-    const  openAIKey  =  process.env.OPENAI;
-    
-    const  chat  =  async  function (movie) {
-    
-    const  data  = {
-    
-    "model":  "gpt-3.5-turbo",
-    
+```javascript
+import gql from 'graphql-tag';
+const axios = require('axios').default;
+
+const openAiChatEnpoint = 'https://api.openai.com/v1/chat/completions';
+const openAIKey = process.env.OPENAI;
+const chat = async function (movie) {
+  const data = {
+    "model": "gpt-3.5-turbo",
     "messages": [
-    
-    {
-    
-    "role":  "user",
-    
-    "content":  `You are a movie critic. Provide a brief review of the movie ${movie}}`
-    
-    }
-    
+      {
+        "role": "user",
+        "content": `You are a movie critic. Provide a brief review of the movie ${movie}}`
+      }
     ]
-    
-    }
-    
-    return  axios.post(openAiChatEnpoint, data, {
-    
-    headers: {
-    
-    'Authorization':  `Bearer ${openAIKey}`,
-    
-    'Content-Type':  'application/json',
-    
-    'Accept':  'application/json'
-    
-    }
-    
-    });
-    
-    }
-    
-      
-    
-    const  GETMOVIE  =  gql  `
-    
-    query  getMoview($id: ID!) {
-    
+  }
+  return axios.post(openAiChatEnpoint, data, {
+      headers: {
+        'Authorization': `Bearer ${openAIKey}`,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+  });
+}
+
+const GETMOVIE = gql `
+  query getMoview($id: ID!) {
     movie(id: $id) {
-    
-    id
-    
-    title
-    
-    genre
-    
-    director
-    
-    rating
-    
+      id
+      title
+      genre
+      director
+      rating
     }
-    
-    }
-    
-    `
-    
-      
-    
-    module.exports  =  async (event, ctx) => {
-    
-    const  result  =  await  ctx.api.gqlRequest(GETMOVIE, { id:  event.data.id })
-    
-    const  review  =  await  chat(result.movie.title);
-    
-    const  returnData  = {
-    
-    id :  result.movie.id,
-    
-    title:  result.movie.title,
-    
-    genre:  result.movie.genre,
-    
-    director:  result.movie.director,
-    
-    rating:  result.movie.rating,
-    
-    review:  review.data.choices[0].message.content
-    
-    }
-    
-    return {
-    
+  }
+`
+
+module.exports = async (event, ctx) => {
+  const result = await ctx.api.gqlRequest(GETMOVIE, { id: event.data.id })
+  const review = await chat(result.movie.title);
+  const returnData = {
+    id : result.movie.id,
+    title: result.movie.title,
+    genre: result.movie.genre,
+    director: result.movie.director,
+    rating: result.movie.rating,
+    review: review.data.choices[0].message.content
+  }
+  return {
     data: {
-    
-    result:  returnData
-    
+      result: returnData
     },
-    
-    };
-    
-    };
+  };
+};
 ```
 
 
@@ -309,15 +228,11 @@ From there, we just need to assemble the response to send. Putting it all togeth
 We can use mocks to test different scenarios without custom functions. In our case, our mock should look like this:
 
 
-```bash
-    {
-    
-    "data": {
-    
-    "id": "clnnd8hii00ax08i75bw34i58"
-    
-    }
-    
+```json
+    {    
+        "data": {
+            "id": "clnnd8hii00ax08i75bw34i58"
+        }    
     }
 ```
 
@@ -333,7 +248,8 @@ OPENAI=XXXXXXX 8base invoke-local movieWithReview -p src/resolvers/movieWithRevi
 We will get the following results:
 
 
-<!--![alt_text](images/image1.png "image_tooltip")-->
+![Environment variable](./_images/common-tasks-extending-the-api-00.png)
+
 
 
 Input this call in order to deploy:
@@ -356,13 +272,12 @@ First, we need to set up our environment variable:
 Now the environment variable will be available to your custom function.
 
 
-<!--![alt_text](images/image2.png "image_tooltip")-->
-
+![Environment variable](./_images/common-tasks-extending-the-api-01.png)
 
 Then we can execute our query in the **API explorer**.
 
 
-<!--![alt_text](images/image3.png "image_tooltip")-->
+![Query](./_images/common-tasks-extending-the-api-02.png)
 
 
 As you can see, our results include a full movie review. 
