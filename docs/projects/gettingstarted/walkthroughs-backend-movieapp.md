@@ -8,7 +8,7 @@ slug: '/walkthroughs/backedend-movieapp'
 In this guide, we will show you how can create a basic movie database app to showcase the ease of integrating the 8base Backend with your own custom frontend. 
 
 
-<!--![alt__text](images/image1.png "image_tooltip")-->
+![alt__text](_images/backend-only-01.png "image_tooltip")
 
 
 If you've followed our [full-stack walkthrough](/walkthroughs/full-stack), this process will seem familiar. The core difference in this section is that we are focusing solely on implementing our own frontend and integrating it with 8base backend. 
@@ -32,7 +32,7 @@ We have already set up at this endpoint: [https://api.8base.com/clm0fahrv000008i
  `Movies` has many-to-many relations with `Actors`.
 
 
-<!--![alt__text](images/image2.png "image_tooltip")-->
+![alt__text](_images/backend-only-02.png "image_tooltip")
 
 
 ## 1. Setting Up the Project
@@ -119,7 +119,7 @@ The backend is public and already configured for you - feel free to use it: [htt
 ## Creating Movie List View
 
 
-<!--![alt__text](images/image3.png "image_tooltip")-->
+![alt__text](_images/backend-only-03.png "image_tooltip")
 
 
 We need to create a new component called `MoviesList.js` in the `src` folder. This component fetches a list of movies from our 8base backend using the GraphQL query `GET_MOVIES`. This query is one of the automatically-generated GraphQL queries and mutations added to your API for every table - in this case for `Movies` table.
@@ -197,7 +197,7 @@ We also handle the loading and error states, and then map through the fetched mo
 ## Adding Movie Details View
 
 
-<!--![alt__text](images/image4.png "image_tooltip")-->
+![alt__text](_images/backend-only-04.png "image_tooltip")
 
 
 Next, we will create another component `src/MovieDetail.js`. Here, we'll fetch detailed information of a single movie using the GraphQL query `GET_MOVIE_DETAILS`. 
@@ -521,7 +521,7 @@ We will also add the Poppins font into our app, by adding following line to `pub
 Finally, run your app by typing `npm run start` in your terminal!
 
 
-<!--![alt__text](images/image5.png "image_tooltip")-->
+![alt__text](_images/backend-only-01.png "image_tooltip")
 
 
 Well done! You have completed the guide and built a basic frontend app powered by 8base Backend GraphQL API. Keep experimenting and happy coding!
