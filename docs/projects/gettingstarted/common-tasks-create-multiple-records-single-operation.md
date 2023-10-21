@@ -31,27 +31,17 @@ Single record mutations enable operations on individual records. This includes c
 For instance,
 
 ```javascript
-
     mutation {
-
       userCreate(
-
         data: { email: "test@example.com", firstName: "test", lastName: "example" }
-
-      ) {
-
+      ) 
+      {
         id
-
         email
-
         firstName
-
         lastName
-
       }
-
     }
-
 ```
 
 This example illustrates the creation of a new user in the **User** table.
@@ -59,64 +49,45 @@ This example illustrates the creation of a new user in the **User** table.
 ### Creating a single record
 
 You can create a new record using the data argument that defines the records data:
-```javascript 
+```graphql 
     mutation {
-
       authorCreate(data: {
-
         name: "Wyatt"
-
       }) {
-
         id
-
         name
-
       }
-
     }
 
     {  
-
     "data":  {  
-
     "authorCreate":  {  
-
     "id":  "ck0d12w8e01c001l1dtxz5b7f",  
-
     "name":  "Wyatt"  
-
     }  
-
-    }  
-
-    }
+  }  
+}
 ```
 
 ### Updating a Single Record
 
 You can also update a record using the data argument while including the records  `id`  or using a  `filter`  that includes a unique field.
 
-```javascript
-
+```graphql
     mutation {  
-
     /* Updates record name with find by unique name) */  
 
     quade:  authorUpdate(filter:  {  
-
     name:  "Quade"  
 
     },  
 
     data:  {  
-
     name:  "PenPossum"  
 
     })  {  
 
     id  
-
     name  
 
     }  
@@ -126,15 +97,12 @@ You can also update a record using the data argument while including the records
     /* Updates record with (find by id) */  
 
     wyatt:  authorUpdate(data:  {  
-
     id:  "ck0d12w8e01c001l1dtxz5b7f",  
-
     name:  "Hyatt"  
 
     })  {  
 
     id  
-
     name  
 
     }  
@@ -144,19 +112,13 @@ You can also update a record using the data argument while including the records
     {  
 
     "data":  {  
-
     "quade":  {  
-
     "id":  "ck0d12nf001bu01l15skw13pg",  
-
     "name":  "PenPossum"  
-
     },  
 
     "wyatt":  {  
-
     "id":  "ck0d12w8e01c001l1dtxz5b7f",  
-
     "name":  "Hyatt"  
 
     }  
@@ -171,28 +133,21 @@ You can also update a record using the data argument while including the records
 
 You can delete a record using the data argument while including the records  `id`  or using a  `filter`  that includes a unique field.
 
-```javascript
+```graphql
 
     mutation {  
-
     /* Deletes records by unique field. */  
 
     quade:  authorDelete(filter:  {  
-
     name:  "PenPossum"  
 
     })  {  
-
     success  
 
     }  
-
       
-
     /* Deletes record by id. */  
-
     wyatt:  authorDelete(data:  {  
-
     id:  "ck0d12w8e01c001l1dtxz5b7f"  
 
     })  {  
@@ -206,15 +161,12 @@ You can delete a record using the data argument while including the records  `id
     {  
 
     "data":  {  
-
     "quade":  {  
-
     "success":  true  
 
     },  
 
     "wyatt":  {  
-
     "success":  true  
 
     }  
@@ -236,23 +188,14 @@ For example:
 ```javascript
 
     mutation {
-
       userCreate(
-
         data: {
-
           email: "test@example.com"
-
           firstName: "test"
-
           lastName: "example"
-
           posts: {
-
             create: [
-
               { title: "first post", content: "content of the first post" }
-
               { title: "second post", content: "content of the second post" }
 
             ]
@@ -264,21 +207,13 @@ For example:
       ) {
 
         id
-
         email
-
         firstName
-
         lastName
-
         posts {
-
           items {
-
             id
-
             title
-
             content
 
           }
@@ -295,13 +230,13 @@ In this example, a new user is created along with two associated posts.
 
 You can create, connect, reconnect, and disconnect related table records using 8base's auto-generated GraphQL mutation operations.
 
--   **Create**: Create and relate child objects.
+- **Create**: Create and relate child objects.
 
--   **Connect**: Connect existing objects in addition to already connected objects.
+- **Connect**: Connect existing objects in addition to already connected objects.
 
--   **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
+- **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
 
--   **Disconnect**: Disconnect connected objects (update mutation only).
+- **Disconnect**: Disconnect connected objects (update mutation only).
 
 ### Creating Related Records in Nested Mutation
 
@@ -310,43 +245,26 @@ When creating or updating a parent record, one or more child records can be crea
 ```javascript
 
     mutation {
-
       authorUpdate(
-
         filter: { name: "Huxley" }
-
         data: {
-
           bio: "Just a guy who loves possum."
-
           posts: {
-
             create: [
-
               {
-
                 title: "Can't stop the Possum"
-
                 body: "Cause Possum is Awesome"
-
                 publishingDate: "2019-09-22T03:45:33.432Z"
 
               }
-
             ]
-
           }
-
         }
 
       ) {
-
         posts(last: 1) {
-
           items {
-
             title
-
           }
 
         }
@@ -360,15 +278,11 @@ When creating or updating a parent record, one or more child records can be crea
       "data": {
 
         "authorUpdate": {
-
           "posts": {
-
             "items": [
 
               {
-
                 "title": "Can't stop the Possum"
-
               }
 
             ]
@@ -406,11 +320,8 @@ One or more records can be connected using a mutation that associates them, whet
       },
 
       data: {
-
         author: {
-
           connect: {
-
             name: "Stevens"
 
           }
@@ -420,9 +331,7 @@ One or more records can be connected using a mutation that associates them, whet
       }) {
 
         title
-
         author {
-
           name
 
         }
@@ -434,13 +343,9 @@ One or more records can be connected using a mutation that associates them, whet
     {
 
       "data": {
-
         "postUpdate": {
-
           "title": "Can't stop the Possum",
-
           "author": {
-
             "name": "Stevens"
 
           }
@@ -460,9 +365,7 @@ All related records can be  _dissasociated_  from a record, while  _connecting_ 
 ```javascript
 
     /**
-
      * All posts belonging to the author Huxley are changed to the new set.
-
      */
 
     mutation {
@@ -735,7 +638,9 @@ Prefix the title of every post published before a specific date with the string 
 
 When using the  `tableNameUpdateByFilter`  operation, different field types have different functions that can be used.
 
->**Note**: When running the `updateByFilter` operation, only one coercive method can be used at a time per field.
+:::note
+When running the `updateByFilter` operation, only one coercive method can be used at a time per field.
+:::
 
 #### String
 

@@ -17,13 +17,13 @@ Forms are essential for data collection, providing a structured method to gather
 A form block is a container component, designed to house various form components or inputs. It is frequently used in scenarios requiring user input, such as sign-up forms or survey forms.
 
 
-![alt_text](_images/using-forms-01.png "image_tooltip")
+![alt_text](_images/using-forms-01.png )
 
 
 ## Form Components
 
 
-![alt_text](_images/using-forms-02.png "image_tooltip")
+![alt_text](_images/using-forms-02.png )
 
 
 Form components are individual elements placed within a Form Block. They collect different types of user data and include:
@@ -91,7 +91,7 @@ Name: Save
 It should look like this:
 
 
-![alt_text](_images/using-forms-03.png "image_tooltip")
+![alt_text](_images/using-forms-03.png )
 
 
 ### Validating the Form
@@ -99,7 +99,7 @@ It should look like this:
 Now, it's time to add validations to the form components we just added. This is facilitated by the **Add Field Validation** section present within the form block.
 
 
-![alt_text](_images/using-forms-04.png "image_tooltip")
+![alt_text](_images/using-forms-04.png )
 
 
 To add a validation, click **Add Item**. Each item will have a name field that must match the name of the form component to which we want to apply it.
@@ -107,7 +107,7 @@ To add a validation, click **Add Item**. Each item will have a name field that m
 For example, to apply required validation to the `memberName` field, the item should look like this:
 
 
-![alt_text](_images/using-forms-05.png "image_tooltip")
+![alt_text](_images/using-forms-05.png )
 
 
 Once we create an item and match it with a field within the form, to add the desired validation, click on **Add Test**.
@@ -125,7 +125,7 @@ Depending on the field type, the available validations will be shown. In this ca
 * Uuid
 
 
-![alt_text](_images/using-forms-06.png "image_tooltip")
+![alt_text](_images/using-forms-06.png )
 
 
 The form validations also allow us to add regular expressions. For example, for the `memberPhone` field, let’s add a regex to validate US phone numbers:
@@ -151,7 +151,7 @@ The form validations also allow us to add regular expressions. For example, for 
 9. Click anywhere outside the dialog window to finish.
 
 
-![alt_text](_images/using-forms-07.png "image_tooltip")
+![alt_text](_images/using-forms-07.png )
 
 
 Next, let’s set up validation for a date type. Suppose we want to limit the user's date to join the team to a maximum of one month. Then we must do the following:
@@ -174,13 +174,13 @@ Next, let’s set up validation for a date type. Suppose we want to limit the us
 
 8.  Click anywhere outside the dialog window to finish. 
 
-![alt_text](_images/using-forms-08.png "image_tooltip")
+![alt_text](_images/using-forms-08.png )
 
 
 Finally, let's test our validations. Fill in the form, but leave some fields empty or with incorrect formats. When you click **Submit**,  the validations errors will appear:
 
 
-![alt_text](_images/using-forms-09.png "image_tooltip")
+![alt_text](_images/using-forms-09.png )
 								
 
 ## Configuring the `OnSubmit` Event
@@ -192,13 +192,13 @@ Now, it is time to configure the form block's `OnSubmit` event.
 Let's go to the component's **Events** tab and click **Edit Custom Code**.
 
 
-![alt_text](_images/using-forms-10.gif "image_tooltip")
+![alt_text](_images/using-forms-10.gif )
 
 
 In the ensuing code example, we perform three critical steps:
 
 
-![alt_text](_images/using-forms-11.png "image_tooltip")
+![alt_text](_images/using-forms-11.png )
 
 
 1.  Capture the values entered in the Form inputs.
@@ -211,4 +211,4 @@ Upon completing these steps, click  **Done**. This action finalizes your code ed
 
 Now, you are set to execute the `OnSubmit` event. To do this, let’s preview our app and click on the **Save** button. Remember, this action triggers the submission of user data, after performing the validations.
 
-![alt_text](_images/using-forms-12.gif "image_tooltip")
+![alt_text](_images/using-forms-12.gif )

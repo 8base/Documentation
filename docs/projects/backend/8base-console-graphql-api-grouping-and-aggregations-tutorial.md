@@ -69,7 +69,7 @@ The **Cast** field is a table that is being pulled from the Actor data table. Th
 
 First, let’s run a query to show what our results are when we do not group anything. In the API Explorer, we will type in this query:
 
-```javascript
+```graphql
 query {
  moviesList{
    items{
@@ -100,7 +100,9 @@ To run a query, click the **Execute query** button.
 
 The query has returned all of the data, sorted in the order specified in the query. The results are listed first by field ID of the movie, and then a sub-section listing actor names, also in order of ID number. 
 
-> **Tip:** In 8base, if you do not specify a sort order, the default is to sort items by ``created_at``.
+:::tip
+In 8base, if you do not specify a sort order, the default is to sort items by ``created_at``.
+:::
 
 ![The 8base API explorer showing the results of a simple query.](./images/ui-tutorial-groups-first-query.png)
 
@@ -150,8 +152,9 @@ Groups are defined in the `groupBy` argument of the table list query, `moviesLis
 ```
 
 
-> **Tip:** If you want to quickly build a query, click the **Explorer** button and use the list on the left to add fields, groups, and aggregations.
-
+:::tip 
+If you want to quickly build a query, click the **Explorer** button and use the list on the left to add fields, groups, and aggregations.
+:::
 Our new results give us a list of directors, and which movies they directed:
 
 ![The 8base API explorer showing the results of a query with one condition.](./images/ui-tutorial-groups-having-single-condition.png)
@@ -355,8 +358,6 @@ Our first query gave us a huge list of movies, organized by ID, with no filterin
 
 
 ## Related Articles
-
-
 
 * [Grouping and Aggregations](https://docs.8base.com/projects/backend/graphql-api/grouping-and-aggregations) 
 * [Grouping and Aggregations on the GraphQL API](https://www.8base.com/8base-academy/grouping-and-aggregations-on-the-graphql-api) 

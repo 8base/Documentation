@@ -19,19 +19,19 @@ Navigation events in 8base address this in two ways: **Global** and **Local**.
 You can access them by going to **Settings** > **Global Navigation Events**. 
  
 
-![alt__text](_images/leveraging-nav-events-01.png "image_tooltip")
+![alt__text](_images/leveraging-nav-events-01.png )
 
 
 **Local Navigation Events** are specific to transitions into or out of a particular page. You can see them when you open a page’s settings.
 
 
-![alt__text](_images/leveraging-nav-events-02.png "image_tooltip")
+![alt__text](_images/leveraging-nav-events-02.png )
 
 
 Each event can initiate one of three actions: **Run Request**, **Run Function**, or execute **Custom Code**.
 
 
-![alt__text](_images/leveraging-nav-events-03.png "image_tooltip")
+![alt__text](_images/leveraging-nav-events-03.png )
 
 
 When opting for the **Custom Code** action, you gain access to two essential arguments: 
@@ -42,7 +42,7 @@ When opting for the **Custom Code** action, you gain access to two essential arg
 * `from`: Provides insights into the page being navigated away from.
 
 
-![alt__text](_images/leveraging-nav-events-04.png "image_tooltip")
+![alt__text](_images/leveraging-nav-events-04.png )
 
 
 There are several different hooks:
@@ -90,7 +90,7 @@ query GetUserPreferences {
 ``` 
 
 
-![alt__text](_images/leveraging-nav-events-05.png "image_tooltip")
+![alt__text](_images/leveraging-nav-events-05.png )
 
 
 **OnComplete Callback for Request**:
@@ -102,7 +102,7 @@ languageService.setValue(data.preferences.items.theme;
 ``` 
 
 
-<!--![alt__text](_images/leveraging-nav-events-06.png "image_tooltip")-->
+<!--![alt__text](_images/leveraging-nav-events-06.png )-->
 
 
 ### `afterEach`: After Every Route Transition
@@ -116,7 +116,7 @@ analyticsService.log(`Navigated from ${from.path} to ${to.path}`)
 ``` 
 
 
-<!--![alt__text](_images/leveraging-nav-events-07.png "image_tooltip")-->
+<!--![alt__text](_images/leveraging-nav-events-07.png )-->
 
 
 ## Local Navigation Events
