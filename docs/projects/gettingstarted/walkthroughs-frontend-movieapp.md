@@ -111,25 +111,23 @@ After setting up the resource, the next step is to generate the requests for you
 
     
 
-   -Request 1: `popularMovies`: This GET request returns a list of movies, sorted by popularity. 
+**Request 1**: `popularMovies`: This GET request returns a list of movies, sorted by popularity. 
 
-	    - Set it to execute on the  `BeforeRouteEnter`  navigation event on the homepage. This provides the necessary data to display the movie list as soon as the page loads.
+Set it to execute on the  `BeforeRouteEnter`  navigation event on the homepage. This provides the necessary data to display the movie list as soon as the page loads.
 
 
 <!--![alt__text](images/image12.png "image_tooltip")-->
 
 
-```
-
+```javascript
 curl --location 'https://api.themoviedb.org/3/discover/movie?include_adult=true&include_video=true&language=en-US&page=1&sort_by=popularity.desc' \
 
 --header 'Authorization: Bearer PLEASE SIGN UP TO themoviedb' \
 
 --header 'accept: application/json'
-
 ```
 
-    -   Request 2: `insideMovie`: This request fetches the details of a movie based on a provided ID. 
+**Request 2**: `insideMovie`: This request fetches the details of a movie based on a provided ID. 
 
 
 <!--![alt__text](images/image13.png "image_tooltip")-->
@@ -180,20 +178,15 @@ We will use a looper with a card component inside it to show the details of each
 **Movie Details**: Shows the details of a selected movie
 
 Here, we will show the details of a movie using these components:
-
+- Heading: Contains the title of the movie
+- Typography: to show the genre of the movie
+- Rating: shows the user score
+- Image: to show the movie poster
+- Editable Text: Contains the Overview
 
 <!--![alt__text](images/image20.png "image_tooltip")-->
 
 
-	- Heading: Contains the title of the movie
-
-	- Typography: to show the genre of the movie
-
-	- Rating: shows the user score
-
-	- Image: to show the movie poster
-
-	- Editable Text: Contains the Overview
 
 Each component will display the `insideMovie` request's content according to the ID sent from the Home Page.
 

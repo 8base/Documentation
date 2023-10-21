@@ -3,17 +3,15 @@ id: 'walkthroughs-backend-movieapp'
 sidebar_label: 'Building a Backend for a Frontend-only Project'
 slug: '/walkthroughs/backedend-movieapp'
 ---
-#Building a Backend for a Frontend-only Project
+# Building a Backend for a Frontend-only Project
 
-In this guide, we'll delve into how you can create a basic movie db app to showcase the ease of integrating the 8base Backend with your own custom frontend. 
+In this guide, we will show you how can create a basic movie database app to showcase the ease of integrating the 8base Backend with your own custom frontend. 
 
 
 <!--![alt__text](images/image1.png "image_tooltip")-->
 
 
-If you've followed our [full-stack walkthrough](https://docs.8base.com/projects/walkthroughs/full-stack)
-
-, this process will seem familiar. The core difference in this section is that we are focusing solely on implementing our own frontend and integrating it with 8base backend. 
+If you've followed our [full-stack walkthrough](/walkthroughs/full-stack), this process will seem familiar. The core difference in this section is that we are focusing solely on implementing our own frontend and integrating it with 8base backend. 
 
 ## Understanding the Backend Structure
 
@@ -39,7 +37,7 @@ We have already set up at this endpoint: [https://api.8base.com/clm0fahrv000008i
 
 ## 1. Setting Up the Project
 
-### Initialize a New React Project.
+### Initialize a New React Project
 
 We will use `create-react-app` here, the official tool backed by the React team, to bootstrap our project. It effortlessly sets up a new project environment, ensuring we dive straight into coding without dealing with initial configurations. For this walkthrough, Node.js version `18.11.0` was used:
 
@@ -123,8 +121,6 @@ The backend is public and already configured for you - feel free to use it: [htt
 
 <!--![alt__text](images/image3.png "image_tooltip")-->
 
-
-###Fetching the Movie List
 
 We need to create a new component called `MoviesList.js` in the `src` folder. This component fetches a list of movies from our 8base backend using the GraphQL query `GET_MOVIES`. This query is one of the automatically-generated GraphQL queries and mutations added to your API for every table - in this case for `Movies` table.
 
@@ -516,9 +512,11 @@ Let's add some basic styles for clean design and responsiveness, by replacing th
 
 We will also add the Poppins font into our app, by adding following line to `public/index.html` file:
 
-    `&lt;link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"  rel="stylesheet">`
+```
+    &lt;link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"  rel="stylesheet">
+```
 
-## Run the App
+## Running the App
 
 Finally, run your app by typing `npm run start` in your terminal!
 
