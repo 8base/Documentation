@@ -97,7 +97,7 @@ When implementing pagination in a query, the  `first`  and  `skip`  arguments ar
 Every 8base Backend automatically delivers a user table.
 
 
-<!--![alt__text](images/image1.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-01.png "image_tooltip")
 
 
 To query these users, we input the following query into the **API Explorer**:
@@ -713,19 +713,19 @@ Our data is set up in the backend and we have a query ready. Let's dive into how
 To assess the resources integrated with your frontend, navigate to the **Resources** section. This can be accomplished by selecting the corresponding icon located in the sidebar.
 
 
-<!--![alt__text](images/image2.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-02.png "image_tooltip")
 
 
 You can select a specific resource to view more detailed information.
 
 
-<!--![alt__text](images/image3.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-03.png "image_tooltip")
 
 
 Here is the detailed view for a resource:
 
 
-<!--![alt__text](images/image4.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-04.png "image_tooltip")
 
 
 Now let’s craft the query: 
@@ -735,7 +735,7 @@ Now let’s craft the query:
 1. On the right-hand side, click **Requests**. 
 
 
-<!--![alt__text](images/image5.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-05.png "image_tooltip")
 
 
 
@@ -743,7 +743,7 @@ Now let’s craft the query:
 2. Create a **Global Request** as a **Lazy Query**.
 
 
-<!--![alt__text](images/image6.gif "image_tooltip")-->
+<!--![alt_text](images/image6.gif "image_tooltip")-->
 
 
 
@@ -832,7 +832,7 @@ Now let’s craft the query:
 5. Click **Save**.
 
 
-<!--![alt__text](images/image7.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-07.gif "image_tooltip")
 
 
 At this moment, we will not send the variables for `first` and `skip`. We will do this in another section, because this is not mandatory. If we execute the request, it will give us the total list without pagination.
@@ -860,19 +860,19 @@ Our backend table contains twelve records. This configuration will display the f
 1.  Click on **Pages** in the sidebar.
 
 
-<!--![alt__text](images/image8.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-08.png "image_tooltip")
 
 
 2.  Locate your page and click on the gear icon to view its settings.
 
 
-<!--![alt__text](images/image9.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-09.png "image_tooltip")
 
 
 3.  The settings panel will appear. The Local **Navigation Events** section is located at the bottom.
 
 
-<!--![alt__text](images/image10.gif "image_tooltip")-->
+![alt_text](_images/implementing-pagination-10.png "image_tooltip")
 
 
 #### Configuring **BeforeRouteEnter** Event
@@ -883,7 +883,7 @@ Our backend table contains twelve records. This configuration will display the f
 2. Then, choose the custom code option to enter the request execution code. 
 
 
-<!--![alt__text](images/image11.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-11.gif "image_tooltip")
 
 
 
@@ -907,13 +907,13 @@ Our backend table contains twelve records. This configuration will display the f
 ```
 
 
-<!--![alt__text](images/image12.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-12.png "image_tooltip")
 
 
 4. After implementing the code, be sure to save your changes. Click on the **Save** button located at the top of the page settings.
 
 
-<!--![alt__text](images/image13.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-13.png "image_tooltip")
 
 
 Now your page is set up to execute the GraphQL query upon load. 
@@ -931,13 +931,13 @@ The looper component is designed to iterate over an array of data, providing a r
 First, we need to connect our query response to the looper component. This connection can be achieved through the Loop Data field. In this example, we will use the **Enter Code** option.
 
 
-<!--![alt__text](images/image14.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-14.png "image_tooltip")
 
 
 The reference to our query response will be placed in the **Loop Data** dropdown between {{ }}:  `{{ accUsersGet?.data }}`.
 
 
-<!--![alt__text](images/image15.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-15.png "image_tooltip")
 
 
 By default, the **Item Name** field is set to "item". This serves as the argument we will use to access each element in our query response.
@@ -947,7 +947,7 @@ By default, the **Item Name** field is set to "item". This serves as the argumen
 Next, we will add a component within the looper to display the iterated information. For this instance, we will use a **Card Component** as it aligns well with our example.
 
 
-<!--![alt__text](images/image16.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-16.png "image_tooltip")
 
 
 The **Card Component** should be configured as follows:
@@ -955,7 +955,7 @@ The **Card Component** should be configured as follows:
 1.  **Card Header**: The header will display the first and last name of each user. Using our "item" argument, it will look like this:  `{{item?.firstName}} {{item?.lastName}}`.
 
 
-<!--![alt__text](images/image17.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-17.png "image_tooltip")
 
 
     
@@ -963,7 +963,7 @@ The **Card Component** should be configured as follows:
 2.  **Card Content**: The content will display the user's profile photo. The image source configuration will be:  `{{item?.avatar?.downloadUrl}}`.
 
 
-<!--![alt__text](images/image18.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-18.png "image_tooltip")
 
 
     
@@ -971,7 +971,7 @@ The **Card Component** should be configured as follows:
 3.  **Typography Component**: Within the card content, we will add a typography component to display the user's email. The text of this component will be:  `{{item?.email}}`.
 
 
-<!--![alt__text](images/image19.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-19.png "image_tooltip")
     
 
 #### Previewing the Result
@@ -979,7 +979,7 @@ The **Card Component** should be configured as follows:
 Once these steps have been completed, the component is set to display the information. To preview the result, execute the request from the requests panel.
 
 
-<!--![alt__text](images/image20.gif "image_tooltip")-->
+<!--![alt_text](images/image20.gif "image_tooltip")-->
 
 
 >**Note**: The pagination will not appear in the preview. When executing the query from the request panel, it is performed without a value in the `skip` and `first` variables.
@@ -1001,19 +1001,19 @@ Here are the steps to add an `onClick` event to the button:
 2. Go to the component and click on it. This action will open the properties panel.
 
 
-<!--![alt__text](images/image21.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-21.gif "image_tooltip")
 
 
 3.  In the properties panel, select the **Events** tab.
 
 
-<!--![alt__text](images/image22.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-22.png "image_tooltip")
 
 
 4.  Under this tab, add an **On Click** event and choose **Run Custom Code**.
 
 
-<!--![alt__text](images/image23.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-23.png "image_tooltip")
 
 
 5. Just like we did for the local navigation event, we will incorporate the code to execute our request. This code will send the values for the  `skip`  and  `first`  variables.
@@ -1045,7 +1045,7 @@ Here are the steps to add an `onClick` event to the button:
 ```
 
 
-<!--![alt__text](images/image24.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-24.png "image_tooltip")
 
 
 7. After entering the code, save the configuration by clicking **Done**.
@@ -1057,19 +1057,19 @@ With that, we have successfully configured the pagination for the second page of
 In the editor's header menu, click the **Preview** button to launch a preview of your application. 
 
 
-<!--![alt__text](images/image25.gif "image_tooltip")-->
+<!--![alt_text](images/image25.gif "image_tooltip")-->
 
 
 Here is the first page:
 
 
-<!--![alt__text](images/image26.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-26.gif "image_tooltip")
 
 
 And here is the second one:
 
 
-<!--![alt__text](images/image27.png "image_tooltip")-->
+![alt_text](_images/implementing-pagination-27.png "image_tooltip")
 
 
 Congratulations! Your application now has pagination.

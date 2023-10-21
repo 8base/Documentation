@@ -1,9 +1,9 @@
 ---
 id: 'walkthroughs-frontend-movieapp'
-sidebar_label: 'Building a Movie App with an 8base Frontend-only Project'
+sidebar_label: 'Building an App with an 8base Frontend-only Project'
 slug: '/walkthroughs/frontend-movieapp'
 ---
-# Building a Movie App with an 8base Frontend-only Project
+# Building an App with an 8base Frontend-only Project
 
 Let's dive into the process of creating a basic movie database app using an 8base frontend-only project. Our app is called **Movie DB**.
 

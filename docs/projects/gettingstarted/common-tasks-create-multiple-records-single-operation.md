@@ -1,6 +1,6 @@
 ---
 id: 'common-tasks-create-multiple-records-single-operation'
-sidebar_label: 'Using and Validating Forms'
+sidebar_label: 'Creating and Updating Multiple Records in a Single Operation'
 redirect_from: '/gettingstarted/common-tasks-create-multiple-records-single-operation'
 slug: '/projects/gettingstarted/common-tasks-create-multiple-records-single-operation'
 ---

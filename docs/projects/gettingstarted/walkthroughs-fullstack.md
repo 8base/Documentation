@@ -1,9 +1,9 @@
 ---
 id: 'walkthroughs-fullstack'
-sidebar_label: 'Building a Full-Stack Movie App'
+sidebar_label: 'Building a Full-Stack App'
 slug: '/walkthroughs/full-stack'
 ---
-# Building a Full-Stack Movie App
+# Building a Full-Stack App
 
 In this guide, we well build a simple full-stack application leveraging the "Jumpstart with accelerators" template. Make sure to follow the [quickstart](/introduction/quickstart) tutorial to provision your project
 

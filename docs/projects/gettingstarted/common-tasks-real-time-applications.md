@@ -25,7 +25,7 @@ For the scope of this guide, we will not be building an entire Task Management S
 Start by preparing the backbone of your data model. In the 8base backend, set up a `Tasks` table with a `name` text field. This table will store the tasks that we want to monitor in real-time.
 
 
-<!--![alt_text](images/image1.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-01.png "image_tooltip")
 
 
 ## Step 2: Setting Up the React Project
@@ -139,25 +139,25 @@ ReactDOM.render(
 ```
 
 
-<!--![alt_text](images/image2.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-02.png "image_tooltip")
 
 
 You can get the ID of your backend and Websocket Endpoint under **Settings**.
 
 
-<!--![alt_text](images/image3.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-03.png "image_tooltip")
 
 
 As for `TOKEN`- you can get it two ways:
 
 - As the response of a `userLogin` mutation.  \
 
-<!--![alt_text](images/image4.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-04.png "image_tooltip")
  \
 - From the local storage of your current active 8base backend in the browser. Go to your 8base backend -> **Local Storage** -> **https://app.8base.com/** -> **auth** -> **token**. Copy the token value.
 
 
-<!--![alt_text](images/image5.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-05.png "image_tooltip")
 
 
 Finally, replace your `src/App.js` code with following:
@@ -229,19 +229,19 @@ It's showtime! Save the changes and start the app by executing this in your term
 Keep an eye on the WebSocket connection initializing in the network tab for your browser. This affirms the readiness of your application for real-time data operations.
 
 
-<!--![alt_text](images/image6.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-06.png "image_tooltip")
 
 
 Time to test! Emulate real-time behavior by adding a fresh task via the **Data Viewer** of your 8base backend or another method. For example, executing `tasksCreate` mutation via Postman or any other request client. 
 
 
-<!--![alt_text](images/image7.png "image_tooltip")-->
+![alt_text](_images/real-time-applications-07.png "image_tooltip")
 
 
 When inserting a new task to the `Tasks` table, the app will promptly display a real-time notification with the response from the subscription.
 
 
-<!--<!--![alt_text](images/image8.png "image_tooltip")-->-->
+<!--![alt_text](_images/real-time-applications-08.png "image_tooltip")-->
 
 
 ## Conclusion
