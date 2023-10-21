@@ -46,8 +46,8 @@ const sidebars = {
           label: 'Walkthroughs',
           items: [
             'projects/gettingstarted/walkthroughs-fullstack',
-            'projects/gettingstarted/walkthroughs-backend-movie-app',
-            'projects/gettingstarted/walkthroughs-frontend-movie-app',                               
+            'projects/gettingstarted/walkthroughs-backend-movieapp',
+            'projects/gettingstarted/walkthroughs-frontend-movieapp',                               
           ]
         },
         {
