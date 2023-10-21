@@ -43,6 +43,15 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Walkthroughs',
+          items: [
+            'projects/gettingstarted/walkthroughs-fullstack',
+            'projects/gettingstarted/walkthroughs-backend-movie-app',
+            'projects/gettingstarted/walkthroughs-frontend-movie-app',                               
+          ]
+        }
+        {
+          type: 'category',
           label: 'Common tasks',
           items: [
             'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',

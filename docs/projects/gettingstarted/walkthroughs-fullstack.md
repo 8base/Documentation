@@ -1,6 +1,6 @@
 ---
-id: 'what-is-8base'
-sidebar_label: 'What is 8base?'
+id: 'walkthroughs-fullstack'
+sidebar_label: 'Full stack'
 slug: '/walkthroughs/full-stack'
 ---
 # Full-stack walkthrough
