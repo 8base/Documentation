@@ -49,7 +49,7 @@ const sidebars = {
             'projects/gettingstarted/walkthroughs-backend-movie-app',
             'projects/gettingstarted/walkthroughs-frontend-movie-app',                               
           ]
-        }
+        },
         {
           type: 'category',
           label: 'Common tasks',
