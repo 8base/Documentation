@@ -17,7 +17,7 @@ export default function LogoWrapper(props) {
         |
       </span>
       <img
-        src="img/docs.png"
+        src="/img/docs.png"
         alt="docs logo"
         height={23}
         width={65}
