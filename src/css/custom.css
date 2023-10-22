@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
   font-family: Montserrat, sans-serif;
@@ -116,14 +116,6 @@ body {
   border-left: 6px solid #5eadf2;
   margin-top: auto;
 }
-/* .navbar__logo::after {
-  content: '';
-  width: 25px;
-  height: 25px;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABlUlEQVRIie2TMUgbYRiGnzN6S8DFQUInB7t1clHHlkLs0l0nu2SU4iAEjnu/C8Ehk92yWKjUvYNEQTvWpXRxU6hbQwsdCk4Jd3+HnmLjJT1THUTf7f57v+e97+c9uFcys1UzW73OjJfXJ2kdWEuf3wCvJSX/HSDJB94Ci0AnPfaBbWBZUqffLMDIoJeNRqMIfEjhZ8BLz/PKwK/0rCVpfKgN6vX6ZLfb3QFmgO/AC0lfAKIoepIkSQt4BBwBZUnfcgfUarWpOI73gGnga6FQKAdBcJLh2QUeA6dpyHEv68oVRVE0E8fxYQr/DMz1wgGCIDj1fX8eOASmgE+SZgcGSHqaJMlHYBI4AJ5J+pG1JUC1Wv1ZLBafAy1gAtg3s4XLnosrMrMl59wmfxpCqVTyK5VKtx/8sprN5li73T5vU8fzvFdhGL6/2MDMVpxz787hAHnhGV7fObdlZmsAowBhGG4AGwCSXF5wliT9VZzRnEOZob2wLA380W5C1wqQ5OX56qEDhtHdD+jbojx1zeO59Q0e9E/9Bg6jjiYEuNGPAAAAAElFTkSuQmCC')
-    no-repeat;
-  margin-left: 1.5rem;
-} */
 .nav__active::after {
   content: '';
   width: 25px;
@@ -164,22 +156,6 @@ body {
 .clean-btn {
   margin-left: 0px !important;
 }
-/*.menu__list-item >.menu__link--active::before{
-  content:"\2022";
-  color: inherit;
-  padding-right: 4px;
-  position: relative;
-  top: 1px;
-}*/
-/* .menu__list-item > .menu__link--active::before {
-  content: '\2022';
-  color: inherit;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding-right: 4px;
-  position: relative;
-  top: -2px;
-} */
 .menu__link {
   font-weight: 400;
   font-size: 13px;
@@ -332,6 +308,7 @@ body {
 }
 .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   width: 40px !important;
+  height: 32px !important;
 }
 .DocSearch-Button {
   background-color: #323c47 !important;
