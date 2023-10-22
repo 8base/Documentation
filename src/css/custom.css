@@ -27,6 +27,9 @@ body {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-color-base: #323c47;
   --ifm-pagination-nav-color-hover: #5eadf2;
+  --ifm-h1-font-size: 1.75rem;
+  --ifm-h2-font-size: 1.25rem;
+  --ifm-font-size-base: 0.875rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -46,11 +49,7 @@ body {
   /*background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#242C34)) ;*/
   background-repeat: no-repeat;
 
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) -14%,
-    rgba(36, 44, 52, 1) 21%
-  );
+  background: #111;
 }
 @media screen and (max-width: 700px) {
   .container {
@@ -95,10 +94,6 @@ body {
 }
 .navbar__link:hover {
   opacity: 0.6;
-}
-.navbar__link--active,
-.breadcrumbs__item--active .breadcrumbs__link {
-  color: #5eadf2;
 }
 .navbar__brand {
   margin-right: 0px;
@@ -240,11 +235,10 @@ body {
   background-color: #f1f5f7;
   padding: 1rem;
   border-radius: 13px;
-  margin-top: 3.1rem;
 }
 .toc-wrapper.toc_styling {
   position: sticky;
-  top: 80px;
+  top: 88px;
   background-color: unset !important;
 }
 .table-of-contents__link {
@@ -757,4 +751,37 @@ nav.menu {
 .feedback-btn:hover {
   background-color: #eaf1fe;
   border-radius: 50%;
+}
+
+/* Document main content */
+.padding-top--md {
+  padding-top: 2.25rem !important;
+}
+.col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  padding-left: 40px;
+  padding-right: 24px;
+}
+
+.navbar__link--active,
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #238bff;
+}
+
+.breadcrumbs__item.breadcrumbs__item--active > span {
+  background-color: #f4f7f9;
+}
+[data-theme='dark'] .breadcrumbs__item.breadcrumbs__item--active > span {
+  background-color: #e8eff5;
+}
+
+.markdown h1:first-child {
+  font-size: 1.75rem;
+}
+
+.markdown h2 {
+  font-size: 1.5rem;
+}
+
+.markdown h3 {
+  font-size: 1.25rem;
 }
