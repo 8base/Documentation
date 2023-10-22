@@ -155,7 +155,7 @@ body {
   line-height: 100%;
 }
 [data-theme='dark'] .menu__list-item-collapsible > a {
-  color: #fff;
+  color: #f4f7f9;
 }
 [data-theme='dark'] .menu {
   background-color: #17202d;
@@ -284,21 +284,24 @@ body {
 }
 
 /*styling color mode toggle*/
-[aria-label='Switch between dark and light mode (currently light mode)'] {
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   border-radius: 8px !important;
   background-color: #323c47;
-  /* margin-left: 0.5rem; */
   margin-right: 0.5rem;
   justify-content: center;
   align-items: center;
   height: 32px !important;
   pad: 0 80px;
+  border-radius: 4px;
 }
 /* Color mode toggle switch */
 .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  width: 40px !important;
 }
 .DocSearch-Button {
   background-color: #323c47 !important;
@@ -641,20 +644,32 @@ nav.menu {
   font-size: 13px;
   color: #a3afb7;
 }
-
-.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
+/*  */
+[data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
   .menu__link {
   color: #323c47;
 }
+[data-theme='dark'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
+  .menu__link {
+  color: #a3afb7;
+}
 
-.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
+[data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
   .menu__link {
   color: #323c47;
 }
+[data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
+  .menu__link {
+  color: #a3afb7;
+}
 
-.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-3.menu__list-item
+[data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-3.menu__list-item
   .menu__link.menu__link--sublist.menu__link--sublist-caret {
   color: #323c47;
+}
+[data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-3.menu__list-item
+  .menu__link.menu__link--sublist.menu__link--sublist-caret {
+  color: #a3afb7;
 }
 
 .menu__link.menu__link--sublist {
