@@ -25,6 +25,8 @@ body {
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-color-base: #323c47;
+  --ifm-pagination-nav-color-hover: #5eadf2;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -37,6 +39,7 @@ body {
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-font-color-base: #fff;
 }
 [data-theme='dark'] main {
   /*background-color: #17202D;*/
@@ -218,8 +221,10 @@ body {
 }
 .toc_header_sep {
   text-transform: uppercase;
-  padding-left: 0rem;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: Poppins;
+  font-size: 12px;
+  color: #a3afb7;
 }
 .toc_seprator {
   border-bottom: 1px solid var(--ifm-toc-border-color);
@@ -236,6 +241,37 @@ body {
   padding: 1rem;
   border-radius: 13px;
   margin-top: 3.1rem;
+}
+.toc-wrapper.toc_styling {
+  position: sticky;
+  top: 80px;
+  background-color: unset !important;
+}
+.table-of-contents__link {
+  font-size: 12px;
+  color: #323c47;
+}
+[data-theme='dark'] .table-of-contents__link {
+  color: #fff;
+}
+.table-of-contents li {
+  position: relative;
+}
+.table-of-contents li a {
+  padding-left: 16px;
+}
+.table-of-contents__link.toc-highlight.table-of-contents__link--active {
+  color: #4da1ff;
+}
+.table-of-contents__link.toc-highlight.table-of-contents__link--active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #0874f9;
+  border-radius: 2px;
 }
 .share_button {
   cursor: pointer;
@@ -687,4 +723,38 @@ nav.menu {
 /* styles.css */
 .sibling-style {
   color: #7d828c !important;
+}
+
+.pagination-nav {
+  grid-template-columns: repeat(3, 1fr);
+}
+.pagination-nav__link--next {
+  grid-column: 3/3;
+  color: #525860;
+  border: 1px solid #a3afb7;
+}
+.pagination-nav__link--prev {
+  grid-column: 1/2;
+  color: #525860;
+  border: 1px solid #a3afb7;
+}
+
+.pagination-nav__link--next:hover,
+.pagination-nav__link--prev:hover {
+  box-shadow: 0px 2px 4px 0px #32325d33;
+}
+
+.pagination-nav__sublabel {
+  color: #525860 !important;
+}
+.pagination-nav__label {
+  color: #525860 !important;
+}
+.pagination-nav__label:hover {
+  color: #5eadf2 !important;
+}
+
+.feedback-btn:hover {
+  background-color: #eaf1fe;
+  border-radius: 50%;
 }
