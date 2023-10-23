@@ -1,12 +1,12 @@
 ---
 id: 'common-tasks-leveraging-navigation-events'
-sidebar_label: 'Leveraging Navigation Events in a SaaS Project Management Tool'
+sidebar_label: 'Leveraging Navigation Events'
 redirect_from: '/gettingstarted/common-tasks-leveraging-navigation-events'
 slug: '/projects/gettingstarted/common-tasks-leveraging-navigation-events'
 ---
 
 
-# Leveraging Navigation Events in a SaaS Project Management Tool
+# Leveraging Navigation Events
 
 Navigation is more than transitioning between pages—it's about proactively responding to user activities. Incorporating these events strategically can heighten user experience, ensuring navigation within the application is both intuitive and meaningful. 
 
