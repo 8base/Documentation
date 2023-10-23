@@ -41,7 +41,7 @@ const config = {
           sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/8base/Documentation/blob/main',
+          // editUrl: 'https://github.com/8base/Documentation/blob/main',
         },
         blog: {
           showReadingTime: true,
@@ -140,6 +140,9 @@ const config = {
     }),
 
   plugins: [['@docusaurus/plugin-client-redirects', { redirects }]],
+  scripts: [
+    '/scripts/fullstory.js'
+  ]
 };
 
 module.exports = config;
