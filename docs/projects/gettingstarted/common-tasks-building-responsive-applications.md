@@ -84,15 +84,10 @@ Back on our page, we aim to make the inner menu disappear on smaller resolutions
 There are plenty of options for styling within App Builder. App Builder uses rules to manage the precedence of each style configuration to make its behavior predictable. In general, styling rules are evaluated in this order (with subsequent rules overriding the previous one):
 
  1. Theme configuration, configured in the theme module.
-
  2. Component defaults, configured in the theme module.
-
  3. Global CSS, managed from within the theme module.
-
  4. Media query CSS, accessible from the viewport size selector.
-
  5. Component instance style, configurable from the style tab of each component instance. 
-
  6. Component instance custom CSS, available at the bottom of the style pane of each component instance.
 
 In our example, we will be overriding the `display` attribute of the element, so we need to ensure it is not set from the component instance style. Otherwise, as indicated in the above rules, its presence will override our media query CSS.

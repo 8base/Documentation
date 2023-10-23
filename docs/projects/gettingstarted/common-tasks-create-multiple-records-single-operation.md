@@ -19,9 +19,7 @@ Mutations are critical operations that enable the creation, update, and deletion
 There are three broad categories of mutations:
 
 -   Single record mutations
-
 -   Related record mutations
-
 -   Update by filter mutations
 
 ## Single Record Mutations
@@ -199,11 +197,8 @@ In this example, a new user is created along with two associated posts.
 You can create, connect, reconnect, and disconnect related table records using 8base's auto-generated GraphQL mutation operations.
 
 - **Create**: Create and relate child objects.
-
 - **Connect**: Connect existing objects in addition to already connected objects.
-
 - **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
-
 - **Disconnect**: Disconnect connected objects (update mutation only).
 
 ### Creating Related Records in Nested Mutation
@@ -451,9 +446,7 @@ When running the `updateByFilter` operation, only one coercive method can be use
 #### String
 
 -   **prefix**: String - Prepends a supplied string to the field's existing value.
-
 -   **postfix**: String - Appends a supplied string to the field's existing value.
-
 -   **set**: String - Sets a supplied string as the field's new value.
 
 For example:
@@ -471,19 +464,12 @@ mutation {
 #### Number
 
 -   **add**: Int - Adds a supplied Int to the field's existing value.
-
 -   **sub**: Int - Subtracts a supplied Int from the field's existing value.
-
 -   **mult**: Int - Multiply a supplied Int by the field's existing value.
-
 -   **dev**: Int - Divide the field's existing value by a supplied Int.
-
 -   **mod**: Int - Modulo the field's existing value by a supplied Int.
-
 -   **set**: Int - Sets a supplied Int as the field's new value.
-
 -   **pow**: Int - Raise the field's existing value to the exponent of a supplied Int.
-
 -   **sqrt**: Boolean - Set the field's existing value to its square root (use  `true`  or  `false`).
 
 For example:
@@ -534,7 +520,6 @@ mutation {
 #### Switch
 
 -   **set**: Boolean|String - Set the field's existing value to a supplied Boolean or String value.
-
 -   **invert**: Boolean - Switches the field's existing value to its Boolean opposite (`true -> false`,  `false -> true`).
 
 For example:
