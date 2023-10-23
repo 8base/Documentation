@@ -140,6 +140,9 @@ const config = {
     }),
 
   plugins: [['@docusaurus/plugin-client-redirects', { redirects }]],
+  scripts: [
+    '/scripts/fullstory.js'
+  ]
 };
 
 module.exports = config;
