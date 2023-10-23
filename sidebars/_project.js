@@ -55,7 +55,7 @@ const sidebars = {
           label: 'Common tasks',
           link: {
             type: 'doc',
-            id: '/projects/gettingstarted/common-tasks-index',
+            id: 'projects/gettingstarted/common-tasks-index',
           },
           items: [
             'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
