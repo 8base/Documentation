@@ -55,7 +55,7 @@ const sidebars = {
           label: 'Common tasks',
           link: {
             type: 'doc',
-            id: 'projects/gettingstarted/common-tasks-index',
+            id: '/projects/gettingstarted/common-tasks-index',
           },
           items: [
             'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
@@ -63,7 +63,7 @@ const sidebars = {
             'projects/gettingstarted/common-tasks-extending-the-api', 
             'projects/gettingstarted/common-tasks-implementing-pagination-api-queries',
             'projects/gettingstarted/common-tasks-using-validating-forms', 
-            'pnpm rojects/gettingstarted/common-tasks-leveraging-navigation-events',
+            'projects/gettingstarted/common-tasks-leveraging-navigation-events',
             'projects/gettingstarted/common-tasks-building-responsive-applications',
             'projects/gettingstarted/common-tasks-real-time-applications',                   
           ]
