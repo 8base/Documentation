@@ -28,6 +28,6 @@ When working with 8base, developers frequently encounter tasks that are central 
     
 <!-- -   [Maximizing Reusable Elements](Link to Common Tasks -> Maximizing Reusable Elements): Discover the art of leveraging component groups for reusability. -->
     
--   [Real-time Applications: Using 8base Subscriptions with your Frontend](common-tasks-real-time-applications): A hands-on guide to implementing GraphQL subscriptions in App Builder.
+-   [Real-time Applications: Using 8base Subscriptions with your Frontend](common-tasks-real-time-applications): A hands-on guide to implementing GraphQL subscriptions in 8base.
 
 As you progress through these sections, you will gain both a theoretical understanding and practical know-how, bridging the gap between conceptual knowledge and its real-world application.
