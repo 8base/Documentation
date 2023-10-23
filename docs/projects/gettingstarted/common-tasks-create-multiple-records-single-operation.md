@@ -30,18 +30,21 @@ Single record mutations enable operations on individual records. This includes c
 
 For instance,
 
-```javascript
-    mutation {
-      userCreate(
-        data: { email: "test@example.com", firstName: "test", lastName: "example" }
-      ) 
-      {
-        id
-        email
-        firstName
-        lastName
-      }
+```graphql
+mutation {
+  userCreate(
+    data: {
+      email: "test@example.com"
+      firstName: "test"
+      lastName: "example"
     }
+  ) {
+    id
+    email
+    firstName
+    lastName
+  }
+}
 ```
 
 This example illustrates the creation of a new user in the **User** table.
@@ -50,22 +53,23 @@ This example illustrates the creation of a new user in the **User** table.
 
 You can create a new record using the data argument that defines the records data:
 ```graphql 
-    mutation {
-      authorCreate(data: {
-        name: "Wyatt"
-      }) {
-        id
-        name
-      }
-    }
+mutation {
+  authorCreate(
+    data: { name: "Wyatt" }
+  ) {
+    id
+    name
+  }
+}
 
-    {  
-    "data":  {  
-    "authorCreate":  {  
-    "id":  "ck0d12w8e01c001l1dtxz5b7f",  
-    "name":  "Wyatt"  
-    }  
-  }  
+# Response:
+{
+  "data": {
+    "authorCreate": {
+      "id": "ck0d12w8e01c001l1dtxz5b7f",
+      "name": "Wyatt"
+    }
+  }
 }
 ```
 
@@ -74,59 +78,42 @@ You can create a new record using the data argument that defines the records dat
 You can also update a record using the data argument while including the records  `id`  or using a  `filter`  that includes a unique field.
 
 ```graphql
-    mutation {  
-    /* Updates record name with find by unique name) */  
-
-    quade:  authorUpdate(filter:  {  
-    name:  "Quade"  
-
-    },  
-
-    data:  {  
-    name:  "PenPossum"  
-
-    })  {  
-
-    id  
-    name  
-
-    }  
-
-    }  
-
-    /* Updates record with (find by id) */  
-
-    wyatt:  authorUpdate(data:  {  
-    id:  "ck0d12w8e01c001l1dtxz5b7f",  
-    name:  "Hyatt"  
-
-    })  {  
-
-    id  
-    name  
-
-    }  
-
-    
-
-    {  
-
-    "data":  {  
-    "quade":  {  
-    "id":  "ck0d12nf001bu01l15skw13pg",  
-    "name":  "PenPossum"  
-    },  
-
-    "wyatt":  {  
-    "id":  "ck0d12w8e01c001l1dtxz5b7f",  
-    "name":  "Hyatt"  
-
-    }  
-
-    }  
-
+mutation {
+  # Updates record name with find by unqiue name)
+  quade: authorUpdate(
+    filter: { name: "Quade" }
+    data: {
+      name: "PenPossum"
     }
+  ) {
+    id
+    name
+  }
+  # Updates record with (find by id)
+  wyatt: authorUpdate(
+    data: {
+      id: "ck0d12w8e01c001l1dtxz5b7f"
+      name: "Hyatt"
+    }
+  ) {
+    id
+    name
+  }
+}
 
+# Response:
+{
+  "data": {
+    "quade": {
+      "id": "ck0d12nf001bu01l15skw13pg",
+      "name": "PenPossum"
+    },
+    "wyatt": {
+      "id": "ck0d12w8e01c001l1dtxz5b7f",
+      "name": "Hyatt"
+    }
+  }
+}
 ```
 
 ### Deleting a Single Record
@@ -134,47 +121,33 @@ You can also update a record using the data argument while including the records
 You can delete a record using the data argument while including the records  `id`  or using a  `filter`  that includes a unique field.
 
 ```graphql
+mutation {
+  # Deletes record by unqiue field.
+  quade: authorDelete(filter: {
+    name: "PenPossum"
+  }) {
+    success
+  }
 
-    mutation {  
-    /* Deletes records by unique field. */  
+  # Deletes record by id.
+  wyatt: authorDelete(data: {
+    id: "ck0d12w8e01c001l1dtxz5b7f"
+  }) {
+    success
+  }
+}
 
-    quade:  authorDelete(filter:  {  
-    name:  "PenPossum"  
-
-    })  {  
-    success  
-
-    }  
-      
-    /* Deletes record by id. */  
-    wyatt:  authorDelete(data:  {  
-    id:  "ck0d12w8e01c001l1dtxz5b7f"  
-
-    })  {  
-
-    success  
-
-    }  
-
+# Response: 
+{
+  "data": {
+    "quade": {
+      "success": true
+    },
+    "wyatt": {
+      "success": true
     }
-
-    {  
-
-    "data":  {  
-    "quade":  {  
-    "success":  true  
-
-    },  
-
-    "wyatt":  {  
-    "success":  true  
-
-    }  
-
-    }  
-
-    }
-
+  }
+}
 ```
 
 When handling delete mutations, an additional force parameter can be specified in the data object that accepts a boolean value. The default value is  `false`. When set to  `true`,  it will force a cascading delete on the record. This means that if the record being deleted is a parent in a mandatory relationship with child records, all child records will be deleted as well.
@@ -185,45 +158,40 @@ Related record mutations enable creating multiple related records in one operati
 
 For example:
 
-```javascript
-
-    mutation {
-      userCreate(
-        data: {
-          email: "test@example.com"
-          firstName: "test"
-          lastName: "example"
-          posts: {
-            create: [
-              { title: "first post", content: "content of the first post" }
-              { title: "second post", content: "content of the second post" }
-
-            ]
-
+```graphql
+mutation {
+  userCreate(
+    data: {
+      email: "test@example.com"
+      firstName: "test"
+      lastName: "example"
+      posts: {
+        create: [
+          {
+            title: "first post"
+            content: "content of the first post"
           }
-
-        }
-
-      ) {
-
-        id
-        email
-        firstName
-        lastName
-        posts {
-          items {
-            id
-            title
-            content
-
+          {
+            title: "second post"
+            content: "content of the second post"
           }
-
-        }
-
+        ]
       }
-
     }
-
+  ) {
+    id
+    email
+    firstName
+    lastName
+    posts {
+      items {
+        id
+        title
+        content
+      }
+    }
+  }
+}
 ```
 
 In this example, a new user is created along with two associated posts.
@@ -242,286 +210,157 @@ You can create, connect, reconnect, and disconnect related table records using 8
 
 When creating or updating a parent record, one or more child records can be created using  `create`.
 
-```javascript
-
-    mutation {
-      authorUpdate(
-        filter: { name: "Huxley" }
-        data: {
-          bio: "Just a guy who loves possum."
-          posts: {
-            create: [
-              {
-                title: "Can't stop the Possum"
-                body: "Cause Possum is Awesome"
-                publishingDate: "2019-09-22T03:45:33.432Z"
-
-              }
-            ]
-          }
-        }
-
-      ) {
-        posts(last: 1) {
-          items {
-            title
-          }
-
-        }
-
-      }
-
+```graphql
+mutation {
+  authorUpdate(filter: {
+    name: "Huxley"
+  },
+  data: {
+    bio: "Just a guy who loves possum.",
+    posts: {
+      create: [{
+        title: "Can't stop the Possum",
+        body: "Cause Possum is Awesome",
+        publishingDate: "2019-09-22T03:45:33.432Z"
+      }]
     }
-
-    {
-
-      "data": {
-
-        "authorUpdate": {
-          "posts": {
-            "items": [
-
-              {
-                "title": "Can't stop the Possum"
-              }
-
-            ]
-
-          }
-
-        }
-
+  }) {
+    posts(last: 1) {
+      items {
+        title
       }
-
     }
+  }
+}
 
+# Response:
+{
+  "data": {
+    "authorUpdate": {
+      "posts": {
+        "items": [
+          {
+            "title": "Can't stop the Possum"
+          }
+        ]
+      }
+    }
+  }
+} 
 ```
 
 ### Connecting Records in Mutation
 
 One or more records can be connected using a mutation that associates them, whether the relationship is  _many-to-many_,  _one-to-many_, or  _one-to-one_.
 
-```javascript
-
-    /**
-
-     * The author gets changed to the author
-
-     * named "Stevens" using connect.
-
-     */
-
-    mutation {
-
-      postUpdate(filter: {
-
-        title: "Can't stop the Possum"
-
-      },
-
-      data: {
-        author: {
-          connect: {
-            name: "Stevens"
-
-          }
-
-        }
-
-      }) {
-
-        title
-        author {
-          name
-
-        }
-
+```graphql
+# The author gets changed to the author named "Stevens" using connect.
+mutation {
+  postUpdate(filter: {
+    title: "Can't stop the Possum"
+  },
+  data: {
+    author: {
+      connect: {
+        name: "Stevens"
       }
-
     }
+  }) {
+    title
+    author {
+      name
+    }
+  }
+}
 
-    {
-
-      "data": {
-        "postUpdate": {
-          "title": "Can't stop the Possum",
-          "author": {
-            "name": "Stevens"
-
-          }
-
-        }
-
+# Response:
+{
+  "data": {
+    "postUpdate": {
+      "title": "Can't stop the Possum",
+      "author": {
+        "name": "Stevens"
       }
-
     }
-
+  }
+}
 ```
 
 ### Re-connecting Records in a Mutation
 
 All related records can be  _dissasociated_  from a record, while  _connecting_  one or more in a specified set.
 
-```javascript
-
-    /**
-     * All posts belonging to the author Huxley are changed to the new set.
-     */
-
-    mutation {
-
-      authorUpdate(filter: {
-
-        name: "Huxley"
-
-      },
-
-      data: {
-
-        posts: {
-
-          reconnect: [{
-
-            id: "ck08eum6101qf01l9cn6v35v4"
-
-          }, {
-
-            id: "ck08eve7t01r701l9fsg9a4ow"
-
-          }]
-
-        }
-
-      }) {
-
-        name
-
-        posts {
-
-          count
-
-          items {
-
-            title
-
-          }
-
-        }
-
-      }
-
+```graphql
+# All posts belonging to the author Huxley are changed to the new set.
+mutation {
+  authorUpdate(filter: {
+    name: "Huxley"
+  },
+  data: {
+    posts: {
+      reconnect: [{
+        id: "ck08eum6101qf01l9cn6v35v4"
+      }, {
+        id: "ck08eve7t01r701l9fsg9a4ow"
+      }]
     }
-
-    {
-
-      "data": {
-
-        "authorUpdate": {
-
-          "name": "Huxley",
-
-          "posts": {
-
-            "count": 2,
-
-            "items": [
-
-              {
-
-                "title": "Awesome Possum"
-
-              },
-
-              {
-
-                "title": "Pt.2 of the Possum Trilogy"
-
-              }
-
-            ]
-
-          }
-
-        }
-
+  }) {
+    name
+    posts {
+      count
+      items {
+        title
       }
-
     }
+  }
+}
 
+# Response:
+{
+  "data": {
+    "authorUpdate": {
+      "name": "Huxley",
+      "posts": {
+        "count": 2,
+        "items": [
+          {
+            "title": "Awesome Possum"
+          },
+          {
+            "title": "Pt.2 of the Possum Trilogy"
+          }
+        ]
+      }
+    }
+  }
+}
 ```
 
 ### Disconnecting Records in a Mutation
 
 One or more records can be disconnected using a mutation, whether the relationship is  _many-to-many_,  _one-to-many_, or  _one-to-one_. If the relationship is  _mandatory_, an error will be raised.
 
-```javascript
-
-    /**
-
-     * All posts belonging to the author
-
-     * Huxley are changed to the new set.
-
-     */
-
-    mutation {
-
-      authorUpdate(filter: {
-
-        name: "Huxley"
-
-      },
-
-      data: {
-
-        publications: {
-
-          disconnect: [{
-
-            id: "ck0d2peue00sg01l36w2q2gdo"
-
-          }, {
-
-            id: "ck0d2q07g00sx01l340mt7lh9"
-
-          }]
-
-        }
-
-      }) {
-
-        name
-
-        publications {
-
-          count
-
-        }
-
-      }
-
+```graphql
+# All posts belonging to the author Huxley are changed to the new set.
+mutation {
+  authorUpdate(filter: {
+    name: "Huxley"
+  },
+  data: {
+    publications: {
+      disconnect: [{
+        id: "ck0d2peue00sg01l36w2q2gdo"
+      }, {
+        id: "ck0d2q07g00sx01l340mt7lh9"
+      }]
     }
-
-    {
-
-      "data": {
-
-        "authorUpdate": {
-
-          "name": "Huxley",
-
-          "publications": {
-
-            "count": 0
-
-          }
-
-        }
-
-      }
-
+  }) {
+    name
+    publications {
+      count
     }
-
+  }
+}
 ```
 
 ## Updating Using Filter Mutations
@@ -530,24 +369,26 @@ You can update multiple records concurrently using a filter. The operations are 
 
 For instance,
 
-```javascript
-
-    mutation {
-
-      userUpdateByFilter(
-
-        filter: { email: { equals: "test@example.com" } }
-
-        data: { lastName: "updated" }
-
-      ) {
-
-        count
-
+```graphql
+mutation {
+  userUpdateByFilter(
+    filter: {
+      email: {
+        equals: "test@example.com"
       }
-
     }
 
+    data: {
+      lastName: {
+        set: "New lastName"
+      }
+    }
+  ) {
+    items {
+      lastName
+    }
+  }
+}
 ```
 
 This example demonstrates how to update the  `lastName`  of all users that have their  `email`  equal to  `test@example.com`.
@@ -558,80 +399,45 @@ You can update multiple table records using 8base's auto-generated GraphQL mutat
 
 Prefix the title of every post published before a specific date with the string "LEGACY: ".
 
-```javascript
-
-    mutation {
-
-      postUpdateByFilter(
-
-      data: {
-
-        title: {
-
-          prefix: "LEGACY: "
-
-        }
-
-      },
-
-      filter: {
-
-        publishingDate: {
-
-          lt: "2020-06-05"
-
-        }
-
-      }) {
-
-        count
-
-        items {
-
-          title
-
-        }
-
-      }
-
+```graphql
+mutation {
+  postUpdateByFilter(
+  data: {
+    title: {
+      prefix: "LEGACY: "
     }
-
-    {
-
-      "data": {
-
-        "postUpdateByFilter": {
-
-          "count": 3,
-
-          "items": [
-
-            {
-
-              "title": "LEGACY: My Post"
-
-            },
-
-            {
-
-              "title": "LEGACY: My Other Post"
-
-            },
-
-            {
-
-              "title": "LEGACY: My Other Awesome Post"
-
-            }
-
-          ]
-
-        }
-
-      }
-
+  },
+  filter: {
+    publishingDate: {
+      lt: "2020-06-05"
     }
+  }) {
+    count
+    items {
+      title
+    }
+  }
+}
 
+# Response:
+{
+  "data": {
+    "postUpdateByFilter": {
+      "count": 3,
+      "items": [
+        {
+          "title": "LEGACY: My Post"
+        },
+        {
+          "title": "LEGACY: My Other Post"
+        },
+        {
+          "title": "LEGACY: My Other Awesome Post"
+        }
+      ]
+    }
+  }
+}
 ```
 
 ### Field Type Predicates
@@ -652,22 +458,14 @@ When running the `updateByFilter` operation, only one coercive method can be use
 
 For example:
 
-```javascript
-
-    mutation {
-
-      postUpdateByFilter(data: { aTextTypeField: { postfix: " - ADD ME AFTER" } }) {
-
-        items {
-
-          aTextTypeField
-
-        }
-
-      }
-
+```graphql
+mutation {
+  postUpdateByFilter(data: { aTextTypeField: { postfix: " - ADD ME AFTER" } }) {
+    items {
+      aTextTypeField
     }
-
+  }
+}
 ```
 
 #### Number
@@ -690,22 +488,14 @@ For example:
 
 For example:
 
-```javascript
-
-    mutation {
-
-      postUpdateByFilter(data: { aNumberTypeField: { pow: 10 } }) {
-
-        items {
-
-          aNumberTypeField
-
-        }
-
-      }
-
+```graphql
+mutation {
+  postUpdateByFilter(data: { aNumberTypeField: { pow: 10 } }) {
+    items {
+      aNumberTypeField
     }
-
+  }
+}
 ```
 
 #### Date
@@ -718,48 +508,27 @@ For example:
 
 For example:
 
-```javascript
-
-    mutation {
-
-      postUpdateByFilter(
-
-        data: {
-
-          aDateTypeField: {
-
-            add: {
-
-              years: 1
-
-              months: 3
-
-              days: 20
-
-              hours: 13
-
-              seconds: 22
-
-              microseconds: 980
-
-            }
-
-          }
-
+```graphql
+mutation {
+  postUpdateByFilter(
+    data: {
+      aDateTypeField: {
+        add: {
+          years: 1
+          months: 3
+          days: 20
+          hours: 13
+          seconds: 22
+          microseconds: 980
         }
-
-      ) {
-
-        items {
-
-          aDateTypeField
-
-        }
-
       }
-
     }
-
+  ) {
+    items {
+      aDateTypeField
+    }
+  }
+}
 ```
 
 #### Switch
@@ -770,22 +539,14 @@ For example:
 
 For example:
 
-```javascript
-
-    mutation {
-
-      postUpdateByFilter(data: { aSwitchTypeField: { set: "CUSTOM_OPTION" } }) {
-
-        items {
-
-          aSwitchTypeField
-
-        }
-
-      }
-
+```graphql
+mutation {
+  postUpdateByFilter(data: { aSwitchTypeField: { set: "CUSTOM_OPTION" } }) {
+    items {
+      aSwitchTypeField
     }
-
+  }
+}
 ```
 
 #### JSON
@@ -794,24 +555,14 @@ For example:
 
 For example:
 
-```javascript
-
-    mutation {
-
-      postUpdateByFilter(
-
-        data: { aJsonTypeField: { set: { hey: "HO!", lets: "GO!" } } }
-
-      ) {
-
-        items {
-
-          aJsonTypeField
-
-        }
-
-      }
-
+```graphql
+mutation {
+  postUpdateByFilter(
+    data: { aJsonTypeField: { set: { hey: "HO!", lets: "GO!" } } }
+  ) {
+    items {
+      aJsonTypeField
     }
-
+  }
+}
 ```

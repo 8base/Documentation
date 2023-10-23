@@ -71,21 +71,18 @@ Now we will explore practical scenarios within a fictional SaaS Management Tool 
 
 **Action**: **Run Request**
 
-```javascript
+```graphql
 query GetUserPreferences {
-
-  PreferencesList(filter: { id: "someUserId" }) {
-
+  PreferencesList(
+    filter: {
+      id: "someUserId"
+    }
+  ) {
     items {
-
       theme
-
       language
-
+    }
   }
-
- }
-
 }
 ``` 
 
@@ -97,13 +94,9 @@ query GetUserPreferences {
 
 ```javascript
 themeService.setValue(data.preferences.items.theme);
-
-languageService.setValue(data.preferences.items.theme;
+languageService.setValue(data.preferences.items.theme);
 ``` 
-
-
-<!--![alt__text](_images/leveraging-nav-events-06.png )-->
-
+![alt__text](_images/leveraging-nav-events-06.png )
 
 ### `afterEach`: After Every Route Transition
 
@@ -115,9 +108,7 @@ languageService.setValue(data.preferences.items.theme;
 analyticsService.log(`Navigated from ${from.path} to ${to.path}`)
 ``` 
 
-
-<!--![alt__text](_images/leveraging-nav-events-07.png )-->
-
+![alt__text](_images/leveraging-nav-events-07.png )
 
 ## Local Navigation Events
 
@@ -127,26 +118,26 @@ analyticsService.log(`Navigated from ${from.path} to ${to.path}`)
 
 **Action**: **Run Request**
 
+![alt__text](_images/leveraging-nav-events-07-1.png )
+
 **GraphQL Request**:
 
-```javascript
-query GetProjectDetails($projectId: ID!) {
-
-  project(id: $projectId }) {
-
+```graphql
+query GetProjectDetails(
+  $projectId: ID!
+) {
+  project(id: $projectId) {
     id
-
     name
-
     description
-
     createdAt
-
     updatedAt
-
   }
-
+}
 ``` 
+
+![alt__text](_images/leveraging-nav-events-07-2.png )
+
 
 ### `beforeRouteUpdate`: Updating Parameters within the Same Route
 
@@ -164,6 +155,8 @@ query GetProjectDetails($projectId: ID!) {
   }
 ``` 
 
+![alt__text](_images/leveraging-nav-events-08.png )
+
 ### `beforeRouteExit` (Local Event): Invoked Before Navigating Away from a Specific Route 
 
 **Use Case**: Imagine you're working within the **Task Creation** page of our management tool. It is important to ensure that users have either saved their progress or are aware they might be discarding unsaved tasks before navigating away.
@@ -172,6 +165,8 @@ query GetProjectDetails($projectId: ID!) {
 
 **Function**: `warnUnsavedChanges()`
 
+![alt__text](_images/leveraging-nav-events-09.png )
+
 This function could be designed to check if any changes have been made within the **Task Creation** page and, if so, display a modal or alert warning the user about potential data loss.
 
 ```javascript
@@ -179,5 +174,7 @@ This function could be designed to check if any changes have been made within th
         return "You have unsaved changes! Are you sure you want to leave without saving?";
     }
 ``` 
+
+![alt__text](_images/leveraging-nav-events-10.png )
 
 Here, the function checks if the task input field has any content. If it does, it returns a warning message. The actual method of displaying this message can vary, but a common approach is to use a browser's default confirmation dialog.
