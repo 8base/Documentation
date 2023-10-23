@@ -71,22 +71,21 @@ Now we will explore practical scenarios within a fictional SaaS Management Tool 
 
 **Action**: **Run Request**
 
-```javascript
+```graphql
 query GetUserPreferences {
-
-  PreferencesList(filter: { id: "someUserId" }) {
-
+  PreferencesList(
+    filter: {
+      id: "someUserId"
+    }
+  ) {
     items {
-
       theme
 
       language
-
+    }
   }
-
- }
-
 }
+
 ``` 
 
 
@@ -129,23 +128,18 @@ analyticsService.log(`Navigated from ${from.path} to ${to.path}`)
 
 **GraphQL Request**:
 
-```javascript
-query GetProjectDetails($projectId: ID!) {
-
-  project(id: $projectId }) {
-
+```graphql
+query GetProjectDetails(
+  $projectId: ID!
+) {
+  project(id: $projectId) {
     id
-
     name
-
     description
-
     createdAt
-
     updatedAt
-
   }
-
+}
 ``` 
 
 ### `beforeRouteUpdate`: Updating Parameters within the Same Route

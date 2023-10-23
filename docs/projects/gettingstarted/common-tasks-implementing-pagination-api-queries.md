@@ -22,72 +22,39 @@ When implementing pagination in a query, the  `first`  and  `skip`  arguments ar
 
 **Query:**
 
-```javascript
-
-     query {
-
-      /**
-
-       * First consider 0 as the starting slice of paginated records. As this
-
-       * number is increased, the prior results leave out previously fetched
-
-       * records. (i.e., skip 0 -> skip 3 -> skip 6 -> skip 9...)
-
-       */
-
-      postsList(skip: 0, first: 3) {
-
-        items {
-
-          title
-
-        }
-
-      }
-
+```graphql
+query {
+# First consider 0 as the starting slice of paginated rcords. As this
+# number is increased, the prior results leave out previously fetched
+# records. (i.e., skip 0 -> skip 3 -> skip 6 -> skip 9...)
+  postsList(skip: 0, first: 3) {
+    items {
+      title
     }
-
+  }
+}
 ```
 
 **Response:**
 
-```javascript
-
-    {
-
-      "data": {
-
-        "postsList": {
-
-          "items": [
-
-            {
-
-              "title": "Awesome Possum"
-
-            },
-
-            {
-
-              "title": "A Sunset and Waves"
-
-            },
-
-            {
-
-              "title": "Vapor Distilled Water for All"
-
-            }
-
-          ]
-
+```graphql
+{
+  "data": {
+    "postsList": {
+      "items": [
+        {
+          "title": "Awesome Possum"
+        },
+        {
+          "title": "A Sunset and Waves"
+        },
+        {
+          "title": "Vapor Distilled Water for All"
         }
-
-      }
-
+      ]
     }
-
+  }
+}
 ```
 
 ## Pagination Example
@@ -104,599 +71,315 @@ To query these users, we input the following query into the **API Explorer**:
 
 **Query:**
 
-```javascript
+```graphql
+query TeamMembers(
+  $filter: UserFilter
+) {
+  usersList(
+    filter: $filter
 
-    query TeamMembers ($filter: UserFilter) {
+    sort: { firstName: ASC }
+  ) {
+    count
 
-      usersList (
-
-        filter: $filter
-
-        sort: { firstName: ASC }
-
-      ) {
-
-        count
-
-        items {
-
-          id
-
-          email
-
-          firstName
-
-          lastName
-
-          status
-
-          createdAt
-
-          avatar {
-
-            downloadUrl
-
-          }
-
-          roles {
-
-            items {
-
-              id
-
-              name
-
-            }
-
-          }
-
-        }
-
+    items {
+      id
+      email
+      firstName
+      lastName
+      status
+      createdAt
+      avatar {
+        downloadUrl
       }
-
+      roles {
+        items {
+          id
+          name
+        }
+      }
     }
+  }
+}
 
 ```
 
 **Response**
 
-```javascript
-
-    {
-
-      "data": {
-
-        "usersList": {
-
-          "count": 12,
-
-          "items": [
-
-            {
-
-              "id": "clnnv3fj3007q08ml5z3p5fft",
-
-              "email": "Bruce@wayne.com",
-
-              "firstName": "Bruce",
-
-              "lastName": "Wayne",
-
-              "status": "active",
-
-              "createdAt": "2023-10-13T00:19:49.984Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiVWd1UUNESGhUb2V2ZWozMDkxYXEifQ==,signature:0988af19fa9d94c3024d88029982c90c996cbef76cad1749b3410fb9ebc52f6b/UguQCDHhToevej3091aq"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+```graphql
+{
+  "data": {
+    "usersList": {
+      "count": 12,
+      "items": [
+        {
+          "id": "clnnv3fj3007q08ml5z3p5fft",
+          "email": "Bruce@wayne.com",
+          "firstName": "Bruce",
+          "lastName": "Wayne",
+          "status": "active",
+          "createdAt": "2023-10-13T00:19:49.984Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiVWd1UUNESGhUb2V2ZWozMDkxYXEifQ==,signature:0988af19fa9d94c3024d88029982c90c996cbef76cad1749b3410fb9ebc52f6b/UguQCDHhToevej3091aq"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            },
-
-            {
-
-              "id": "clnnv14n2005t08mleu9b35v8",
-
-              "email": "Charles@dean.com",
-
-              "firstName": "Charles",
-
-              "lastName": "Dean",
-
-              "status": "active",
-
-              "createdAt": "2023-10-13T00:18:02.558Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoidFZIRDl6RGRSeGlFMGFwNExJamwifQ==,signature:ab6f47734b4fa02ecd034592cc2d731a1b7ae13da9359fa2ff7d25b2a14d0736/tVHD9zDdRxiE0ap4LIjl"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnv14n2005t08mleu9b35v8",
+          "email": "Charles@dean.com",
+          "firstName": "Charles",
+          "lastName": "Dean",
+          "status": "active",
+          "createdAt": "2023-10-13T00:18:02.558Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoidFZIRDl6RGRSeGlFMGFwNExJamwifQ==,signature:ab6f47734b4fa02ecd034592cc2d731a1b7ae13da9359fa2ff7d25b2a14d0736/tVHD9zDdRxiE0ap4LIjl"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            },
-
-            {
-
-              "id": "cllyfazq000ih08jyf1ty79jw",
-
-              "email": "carlosjimenezrobayo@gmail.com",
-
-              "firstName": "Charlie",
-
-              "lastName": "Garcia",
-
-              "status": "active",
-
-              "createdAt": "2023-08-31T00:23:52.152Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiN0ZmWVQ1YjhTU2EwVlRPUVhFS0gifQ==,signature:faa5f1982b733dd1a3dc117bb908a8db95dd84029efa73e4ad6f421a492dcee3/7FfYT5b8SSa0VTOQXEKH"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "cllyfazq000ih08jyf1ty79jw",
+          "email": "carlosjimenezrobayo@gmail.com",
+          "firstName": "Charlie",
+          "lastName": "Garcia",
+          "status": "active",
+          "createdAt": "2023-08-31T00:23:52.152Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiN0ZmWVQ1YjhTU2EwVlRPUVhFS0gifQ==,signature:faa5f1982b733dd1a3dc117bb908a8db95dd84029efa73e4ad6f421a492dcee3/7FfYT5b8SSa0VTOQXEKH"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            },
-
-            {
-
-              "id": "clnnv2cwb007308mlh9mb7ry7",
-
-              "email": "cLark@kent.com",
-
-              "firstName": "Clark",
-
-              "lastName": "Kent",
-
-              "status": "active",
-
-              "createdAt": "2023-10-13T00:18:59.915Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiSmFZTWF3a1R5cTgweEhhZ0pJN2cifQ==,signature:e4c8e8f353bc34e73138fc9877780e70d7b4b49dbde9396284c7ca64bf3ed84b/JaYMawkTyq80xHagJI7g"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657f004s08kw8v194arm",
-
-                    "name": "Guest"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnv2cwb007308mlh9mb7ry7",
+          "email": "cLark@kent.com",
+          "firstName": "Clark",
+          "lastName": "Kent",
+          "status": "active",
+          "createdAt": "2023-10-13T00:18:59.915Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiSmFZTWF3a1R5cTgweEhhZ0pJN2cifQ==,signature:e4c8e8f353bc34e73138fc9877780e70d7b4b49dbde9396284c7ca64bf3ed84b/JaYMawkTyq80xHagJI7g"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657f004s08kw8v194arm",
+                "name": "Guest"
               }
-
-            },
-
-            {
-
-              "id": "clnnv3xxm008d08ml0bg8ck1q",
-
-              "email": "corey@taylor.com",
-
-              "firstName": "Corey",
-
-              "lastName": "Taylor",
-
-              "status": "inactive",
-
-              "createdAt": "2023-10-13T00:20:13.834Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiOHJFM2pGdUdSVjJMVnB6aGtDU2cifQ==,signature:3ff99284dd5976006a50668ef6d092ba44ce2ab94197f4408907c7e5128e6c27/8rE3jFuGRV2LVpzhkCSg"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657f004s08kw8v194arm",
-
-                    "name": "Guest"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnv3xxm008d08ml0bg8ck1q",
+          "email": "corey@taylor.com",
+          "firstName": "Corey",
+          "lastName": "Taylor",
+          "status": "inactive",
+          "createdAt": "2023-10-13T00:20:13.834Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiOHJFM2pGdUdSVjJMVnB6aGtDU2cifQ==,signature:3ff99284dd5976006a50668ef6d092ba44ce2ab94197f4408907c7e5128e6c27/8rE3jFuGRV2LVpzhkCSg"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657f004s08kw8v194arm",
+                "name": "Guest"
               }
-
-            },
-
-            {
-
-              "id": "clnnv1ryc006g08mlhdbl14jd",
-
-              "email": "Lois@lane.com",
-
-              "firstName": "Lois",
-
-              "lastName": "Lane",
-
-              "status": "inactive",
-
-              "createdAt": "2023-10-13T00:18:32.773Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiZXdBcHRibThRSlNubjc3eGtUMFgifQ==,signature:9497d1570f682980a0052499af7e66e7420f0b855ac3a3826e0150a6e3625837/ewAptbm8QJSnn77xkT0X"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657f004s08kw8v194arm",
-
-                    "name": "Guest"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnv1ryc006g08mlhdbl14jd",
+          "email": "Lois@lane.com",
+          "firstName": "Lois",
+          "lastName": "Lane",
+          "status": "inactive",
+          "createdAt": "2023-10-13T00:18:32.773Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiZXdBcHRibThRSlNubjc3eGtUMFgifQ==,signature:9497d1570f682980a0052499af7e66e7420f0b855ac3a3826e0150a6e3625837/ewAptbm8QJSnn77xkT0X"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657f004s08kw8v194arm",
+                "name": "Guest"
               }
-
-            },
-
-            {
-
-              "id": "clnnv0btk005608ml3hiveqkd",
-
-              "email": "Lola@food.com",
-
-              "firstName": "LoLa",
-
-              "lastName": "Hamilton",
-
-              "status": "active",
-
-              "createdAt": "2023-10-13T00:17:25.208Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiSldVWVFCQlF6QzlMV1V6U2xtb1UifQ==,signature:85833ccdf4c9f12f0b63f753220dddcd01b1b4713ae3de8500055aecb1ac09b1/JWUYQBBQzC9LWUzSlmoU"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnv0btk005608ml3hiveqkd",
+          "email": "Lola@food.com",
+          "firstName": "LoLa",
+          "lastName": "Hamilton",
+          "status": "active",
+          "createdAt": "2023-10-13T00:17:25.208Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiSldVWVFCQlF6QzlMV1V6U2xtb1UifQ==,signature:85833ccdf4c9f12f0b63f753220dddcd01b1b4713ae3de8500055aecb1ac09b1/JWUYQBBQzC9LWUzSlmoU"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            },
-
-            {
-
-              "id": "clnnssdp4000l08jy95iu7g3b",
-
-              "email": "luigi@mario.com",
-
-              "firstName": "Luis",
-
-              "lastName": "Muro",
-
-              "status": "active",
-
-              "createdAt": "2023-10-12T23:15:15.161Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiNnF1dkFvUXBRRGFmN0hIZzBmWTEifQ==,signature:ded945e9ce3b3715c01ac6cd319799ab6844a1fb9eb9e72a300d3fe331ccb743/6quvAoQpQDaf7HHg0fY1"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnssdp4000l08jy95iu7g3b",
+          "email": "luigi@mario.com",
+          "firstName": "Luis",
+          "lastName": "Muro",
+          "status": "active",
+          "createdAt": "2023-10-12T23:15:15.161Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiNnF1dkFvUXBRRGFmN0hIZzBmWTEifQ==,signature:ded945e9ce3b3715c01ac6cd319799ab6844a1fb9eb9e72a300d3fe331ccb743/6quvAoQpQDaf7HHg0fY1"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            },
-
-            {
-
-              "id": "clnnt8e2h00dn08ml9s5tfp22",
-
-              "email": "marco@boudeaux.com",
-
-              "firstName": "Marco",
-
-              "lastName": "Boudeaux",
-
-              "status": "active",
-
-              "createdAt": "2023-10-12T23:27:42.137Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoieUd0TGtjaG1SSEdhdFlLMnJBTWUifQ==,signature:daee680db16511fce4d370e75ff5c15d6b088d510c6238ad8ff812dc65797efc/yGtLkchmRHGatYK2rAMe"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657f004s08kw8v194arm",
-
-                    "name": "Guest"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnt8e2h00dn08ml9s5tfp22",
+          "email": "marco@boudeaux.com",
+          "firstName": "Marco",
+          "lastName": "Boudeaux",
+          "status": "active",
+          "createdAt": "2023-10-12T23:27:42.137Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoieUd0TGtjaG1SSEdhdFlLMnJBTWUifQ==,signature:daee680db16511fce4d370e75ff5c15d6b088d510c6238ad8ff812dc65797efc/yGtLkchmRHGatYK2rAMe"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657f004s08kw8v194arm",
+                "name": "Guest"
               }
-
-            },
-
-            {
-
-              "id": "clnnuzlys004j08mldjsdfscj",
-
-              "email": "Maria@marzo",
-
-              "firstName": "Maria",
-
-              "lastName": "Marzo",
-
-              "status": "active",
-
-              "createdAt": "2023-10-13T00:16:51.701Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoidmRxSXJZNGhUUzZ6aDN4ZmdJa0EifQ==,signature:eeb84b417dcdde58fbdca77923b3d0e84a1f81abebac6a0a8507512bd1467956/vdqIrY4hTS6zh3xfgIkA"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657f004s08kw8v194arm",
-
-                    "name": "Guest"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnuzlys004j08mldjsdfscj",
+          "email": "Maria@marzo",
+          "firstName": "Maria",
+          "lastName": "Marzo",
+          "status": "active",
+          "createdAt": "2023-10-13T00:16:51.701Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoidmRxSXJZNGhUUzZ6aDN4ZmdJa0EifQ==,signature:eeb84b417dcdde58fbdca77923b3d0e84a1f81abebac6a0a8507512bd1467956/vdqIrY4hTS6zh3xfgIkA"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657f004s08kw8v194arm",
+                "name": "Guest"
               }
-
-            },
-
-            {
-
-              "id": "clnnqdmey001208jk7fik1gb4",
-
-              "email": "mario@mario.com",
-
-              "firstName": "Mario",
-
-              "lastName": "Lopez",
-
-              "status": "active",
-
-              "createdAt": "2023-10-12T22:07:47.387Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiR1dJSllnYVRXV29veFl3YUpvSWUifQ==,signature:0c6995008c8f58049c78cf5ebd9c6d596766501e28090834def370315e49fc6b/GWIJYgaTWWooxYwaJoIe"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnqdmey001208jk7fik1gb4",
+          "email": "mario@mario.com",
+          "firstName": "Mario",
+          "lastName": "Lopez",
+          "status": "active",
+          "createdAt": "2023-10-12T22:07:47.387Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiR1dJSllnYVRXV29veFl3YUpvSWUifQ==,signature:0c6995008c8f58049c78cf5ebd9c6d596766501e28090834def370315e49fc6b/GWIJYgaTWWooxYwaJoIe"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            },
-
-            {
-
-              "id": "clnnstv4d006x08kvh9nn4wat",
-
-              "email": "yoshi@mario.com",
-
-              "firstName": "yoshua",
-
-              "lastName": "Montreal",
-
-              "status": "active",
-
-              "createdAt": "2023-10-12T23:16:24.397Z",
-
-              "avatar": {
-
-                "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiVnZhdXNkSVhSeXlIY05ramcwRmEifQ==,signature:7028c0c75a563827a0b306aedd25d40a0ba05a38390286e319682ee715d3b280/VvausdIXRyyHcNkjg0Fa"
-
-              },
-
-              "roles": {
-
-                "items": [
-
-                  {
-
-                    "id": "cllye657r004t08kw5hncblc0",
-
-                    "name": "Administrator"
-
-                  }
-
-                ]
-
+            ]
+          }
+        },
+        {
+          "id": "clnnstv4d006x08kvh9nn4wat",
+          "email": "yoshi@mario.com",
+          "firstName": "yoshua",
+          "lastName": "Montreal",
+          "status": "active",
+          "createdAt": "2023-10-12T23:16:24.397Z",
+          "avatar": {
+            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiVnZhdXNkSVhSeXlIY05ramcwRmEifQ==,signature:7028c0c75a563827a0b306aedd25d40a0ba05a38390286e319682ee715d3b280/VvausdIXRyyHcNkjg0Fa"
+          },
+          "roles": {
+            "items": [
+              {
+                "id": "cllye657r004t08kw5hncblc0",
+                "name": "Administrator"
               }
-
-            }
-
-          ]
-
+            ]
+          }
         }
-
-      }
-
+      ]
     }
-
+  }
+}
 ```
 
 Now we want to split the previous query response into two pages, to show the list of users in the Frontend. We will use the `first` and `skip` arguments.
 
 **Query:**
 
-```javascript
-
-    query TeamMembers ($filter: UserFilter) {
-
-      usersList (
-
-        skip:0, 
-
-        first: 6,
-
-        filter: $filter
-
-        sort: { firstName: ASC }
-
-      ) {
-
-        count
-
-        items {
-
-          id
-
-          email
-
-          firstName
-
-          lastName
-
-          status
-
-          createdAt
-
-          avatar {
-
-            downloadUrl
-
-          }
-
-          roles {
-
-            items {
-
-              id
-
-              name
-
-            }
-
-          }
-
-        }
-
+```graphql
+query TeamMembers(
+  $filter: UserFilter
+) {
+  usersList(
+    skip: 0
+    first: 6
+    filter: $filter
+    sort: { firstName: ASC }
+  ) {
+    count
+    items {
+      id
+      email
+      firstName
+      lastName
+      status
+      createdAt
+      avatar {
+        downloadUrl
       }
-
+      roles {
+        items {
+          id
+          name
+        }
+      }
     }
+  }
+}
 
 ```
 
@@ -751,79 +434,53 @@ Now let’s craft the query:
 3. If you want to update the `first` and `skip` values with a frontend event, you will need to modify their values to use variables. 
     * So, instead of using:
 
-```javascript
-
-    query TeamMembers ($filter: UserFilter) {
-
-      usersList (
-
-        skip:0, 
-
-        first: 6,
-
-        filter: $filter
-
+```graphql
+query TeamMembers(
+  $filter: UserFilter
+) {
+  usersList(
+    skip: 0
+    first: 6
+    filter: $filter
+  )
 ```
 
 
 
 * Your query should look like this:
 
-```javascript
-
-    query TeamMembers ($filter: UserFilter, $skip: Int, $first: Int) {
-
-      usersList (
-
-        skip: $skip, 
-
-        first: $first,
-
-        filter: $filter
-
-        sort: { firstName: ASC }
-
-      ) {
-
-        count
-
-        items {
-
-          id
-
-          email
-
-          firstName
-
-          lastName
-
-          status
-
-          createdAt
-
-          avatar {
-
-            downloadUrl
-
-          }
-
-          roles {
-
-            items {
-
-              id
-
-              name
-
-            }
-
-          }
-
-        }
-
+```graphql
+query TeamMembers(
+  $filter: UserFilter
+  $skip: Int
+  $first: Int
+) {
+  usersList(
+    skip: $skip
+    first: $first
+    filter: $filter
+    sort: { firstName: ASC }
+  ) {
+    count
+    items {
+      id
+      email
+      firstName
+      lastName
+      status
+      createdAt
+      avatar {
+        downloadUrl
       }
-
+      roles {
+        items {
+          id
+          name
+        }
+      }
     }
+  }
+}
 
 ```
 
@@ -891,19 +548,12 @@ Our backend table contains twelve records. This configuration will display the f
 3. The code should be structured as follows, sending the  `skip`  and  `first`  variables:
 
 ```javascript
-
-    accUsersGet.run({
-
-      variables: {
-
-        "skip":0,
-
-        "first":6
-
-      }
-
-    });
-
+accUsersGet.run({
+    variables: {
+        "skip": 0,
+        "first": 6
+    }
+});
 ```
 
 
@@ -1031,19 +681,12 @@ Here are the steps to add an `onClick` event to the button:
 6. These particular values will trigger the query execution and fetch the next 6 records in the response.
 
 ```javascript
-
-    accUsersGet.run({
-
-           variables: {
-
-             "skip":0,
-
-             "First":6
-
-           }
-
-         });
-
+accUsersGet.run({
+    variables: {
+        "skip": 0,
+        "First": 6
+    }
+});
 ```
 
 
