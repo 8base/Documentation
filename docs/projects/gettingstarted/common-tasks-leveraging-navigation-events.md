@@ -80,12 +80,10 @@ query GetUserPreferences {
   ) {
     items {
       theme
-
       language
     }
   }
 }
-
 ``` 
 
 
@@ -96,7 +94,6 @@ query GetUserPreferences {
 
 ```javascript
 themeService.setValue(data.preferences.items.theme);
-
 languageService.setValue(data.preferences.items.theme;
 ``` 
 
