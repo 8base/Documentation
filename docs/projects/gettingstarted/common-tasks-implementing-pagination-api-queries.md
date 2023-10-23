@@ -57,9 +57,7 @@ query {
 }
 ```
 
-## Pagination Example
-
-### First: The Backend Data
+## The Backend Data
 
 Every 8base Backend automatically delivers a user table.
 
@@ -390,7 +388,9 @@ Using `skip: 0` / `first: 6` will bring only the first six records of the respon
 
 This way, we have two pages showing six records each. 
 
-#### Next: The Frontend Implementation - Adding the Query
+## Frontend Implementation 
+
+### Adding the Query
 
 Our data is set up in the backend and we have a query ready. Let's dive into how we can leverage pagination in our frontend. We need to add a resource to our application.
 
@@ -484,7 +484,7 @@ query TeamMembers(
 
 At this moment, we will not send the variables for `first` and `skip`. We will do this in another section, because this is not mandatory. If we execute the request, it will give us the total list without pagination.
 
-### The Frontend Implementation - Using the Query
+### Using the Query
 
 In this section, we will guide you through the process of using a GraphQL query in the frontend of your application. We will construct a webpage that displays a list of personnel data fetched from our backend.
 
@@ -502,7 +502,7 @@ In this scenario, the variables will be passed as follows:
 
 Our backend table contains twelve records. This configuration will display the first six records on the initial page.
 
-#### Accessing Local Navigation Events
+### Accessing Local Navigation Events
 
 1.  Click on **Pages** in the sidebar.
 
@@ -522,7 +522,7 @@ Our backend table contains twelve records. This configuration will display the f
 ![Pagination](_images/implementing-pagination-11.gif)
 
 
-#### Configuring **BeforeRouteEnter** Event
+### Configuring **BeforeRouteEnter** Event
 
 
 
@@ -558,7 +558,7 @@ accUsersGet.run({
 
 Now your page is set up to execute the GraphQL query upon load. 
 
-#### Rendering Query Responses with the Looper Component
+### Rendering Query Responses with the Looper Component
 
 The time has come to render the query response to the user.
 
@@ -566,7 +566,7 @@ We will use the looper component to show the information that comes in the query
 
 The looper component is designed to iterate over an array of data, providing a repeating structure to display each array item.
 
-#### Connecting the Query Response to the Looper
+### Connecting the Query Response to the Looper
 
 First, we need to connect our query response to the looper component. This connection can be achieved through the Loop Data field. In this example, we will use the **Enter Code** option.
 
@@ -582,7 +582,7 @@ The reference to our query response will be placed in the **Loop Data** dropdown
 
 By default, the **Item Name** field is set to "item". This serves as the argument we will use to access each element in our query response.
 
-#### Configuring the Card Component
+### Configuring the Card Component
 
 Next, we will add a component within the looper to display the iterated information. For this instance, we will use a **Card Component** as it aligns well with our example.
 
@@ -614,7 +614,7 @@ The **Card Component** should be configured as follows:
 ![Pagination](_images/implementing-pagination-20.png )
     
 
-#### Previewing the Result
+### Previewing the Result
 
 Once these steps have been completed, the component is set to display the information. To preview the result, execute the request from the requests panel.
 
@@ -626,7 +626,7 @@ Once these steps have been completed, the component is set to display the inform
 The pagination will not appear in the preview. When executing the query from the request panel, it is performed without a value in the `skip` and `first` variables.
 :::
 
-#### Displaying the Second Page
+### Displaying the Second Page
 
 Previously, we configured a local navigation event to trigger our query when the page loads. This displays the first page of our response, corresponding to the first 6 records. The next step involves providing a mechanism for the user to re-execute the query, this time aiming to display the subsequent page.
 
@@ -687,7 +687,7 @@ accUsersGet.run({
 
 With that, we have successfully configured the pagination for the second page of our application.
 
-#### Previewing the Application
+### Previewing the Application
 
 In the editor's header menu, click the **Preview** button to launch a preview of your application. 
 

@@ -35,7 +35,7 @@ We have already set up at this endpoint: [https://api.8base.com/clm0fahrv000008i
 ![Backend walkthrough](_images/backend-only-02.png )
 
 
-## 1. Setting Up the Project
+## Setting Up the Project
 
 ### Initialize a New React Project
 

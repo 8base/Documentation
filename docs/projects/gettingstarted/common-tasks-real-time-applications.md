@@ -156,7 +156,7 @@ function App() {
 export default App;
 ```
 
-## Step 5: Launch and Test Your App
+## Step 4: Launch and Test Your App
 
 It's showtime! Save the changes and start the app by executing this in your terminal:
 
