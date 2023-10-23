@@ -1,12 +1,12 @@
 ---
 id: 'common-tasks-leveraging-navigation-events'
-sidebar_label: 'Leveraging Navigation Events in a SaaS Project Management Tool'
+sidebar_label: 'Leveraging Navigation Events'
 redirect_from: '/gettingstarted/common-tasks-leveraging-navigation-events'
 slug: '/projects/gettingstarted/common-tasks-leveraging-navigation-events'
 ---
 
 
-# Leveraging Navigation Events in a SaaS Project Management Tool
+# Leveraging Navigation Events
 
 Navigation is more than transitioning between pages—it's about proactively responding to user activities. Incorporating these events strategically can heighten user experience, ensuring navigation within the application is both intuitive and meaningful. 
 
@@ -19,19 +19,19 @@ Navigation events in 8base address this in two ways: **Global** and **Local**.
 You can access them by going to **Settings** > **Global Navigation Events**. 
  
 
-![alt__text](_images/leveraging-nav-events-01.png )
+![Navigation events](_images/leveraging-nav-events-01.png )
 
 
 **Local Navigation Events** are specific to transitions into or out of a particular page. You can see them when you open a page’s settings.
 
 
-![alt__text](_images/leveraging-nav-events-02.png )
+![Navigation events](_images/leveraging-nav-events-02.png )
 
 
 Each event can initiate one of three actions: **Run Request**, **Run Function**, or execute **Custom Code**.
 
 
-![alt__text](_images/leveraging-nav-events-03.png )
+![Navigation events](_images/leveraging-nav-events-03.png )
 
 
 When opting for the **Custom Code** action, you gain access to two essential arguments: 
@@ -42,7 +42,7 @@ When opting for the **Custom Code** action, you gain access to two essential arg
 * `from`: Provides insights into the page being navigated away from.
 
 
-![alt__text](_images/leveraging-nav-events-04.png )
+![Navigation events](_images/leveraging-nav-events-04.png )
 
 
 There are several different hooks:
@@ -87,7 +87,7 @@ query GetUserPreferences {
 ``` 
 
 
-![alt__text](_images/leveraging-nav-events-05.png )
+![Navigation events](_images/leveraging-nav-events-05.png )
 
 
 **OnComplete Callback for Request**:
@@ -96,7 +96,7 @@ query GetUserPreferences {
 themeService.setValue(data.preferences.items.theme);
 languageService.setValue(data.preferences.items.theme);
 ``` 
-![alt__text](_images/leveraging-nav-events-06.png )
+![Navigation events](_images/leveraging-nav-events-06.png )
 
 ### `afterEach`: After Every Route Transition
 
@@ -108,7 +108,7 @@ languageService.setValue(data.preferences.items.theme);
 analyticsService.log(`Navigated from ${from.path} to ${to.path}`)
 ``` 
 
-![alt__text](_images/leveraging-nav-events-07.png )
+![Navigation events](_images/leveraging-nav-events-07.png )
 
 ## Local Navigation Events
 
@@ -118,7 +118,7 @@ analyticsService.log(`Navigated from ${from.path} to ${to.path}`)
 
 **Action**: **Run Request**
 
-![alt__text](_images/leveraging-nav-events-07-1.png )
+![Navigation events](_images/leveraging-nav-events-07-1.png )
 
 **GraphQL Request**:
 
@@ -136,7 +136,7 @@ query GetProjectDetails(
 }
 ``` 
 
-![alt__text](_images/leveraging-nav-events-07-2.png )
+![Navigation events](_images/leveraging-nav-events-07-2.png )
 
 
 ### `beforeRouteUpdate`: Updating Parameters within the Same Route
@@ -155,7 +155,7 @@ query GetProjectDetails(
   }
 ``` 
 
-![alt__text](_images/leveraging-nav-events-08.png )
+![Navigation events](_images/leveraging-nav-events-08.png )
 
 ### `beforeRouteExit` (Local Event): Invoked Before Navigating Away from a Specific Route 
 
@@ -165,7 +165,7 @@ query GetProjectDetails(
 
 **Function**: `warnUnsavedChanges()`
 
-![alt__text](_images/leveraging-nav-events-09.png )
+![Navigation events](_images/leveraging-nav-events-09.png )
 
 This function could be designed to check if any changes have been made within the **Task Creation** page and, if so, display a modal or alert warning the user about potential data loss.
 
@@ -175,6 +175,6 @@ This function could be designed to check if any changes have been made within th
     }
 ``` 
 
-![alt__text](_images/leveraging-nav-events-10.png )
+![Navigation events](_images/leveraging-nav-events-10.png )
 
 Here, the function checks if the task input field has any content. If it does, it returns a warning message. The actual method of displaying this message can vary, but a common approach is to use a browser's default confirmation dialog.

@@ -53,6 +53,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Common tasks',
+          link: {
+            type: 'doc',
+            id: 'projects/gettingstarted/common-tasks-index',
+          },
           items: [
             'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
             'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',

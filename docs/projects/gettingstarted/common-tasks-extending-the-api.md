@@ -33,12 +33,8 @@ Before we start coding, we need to add axios to interact with the OpenAI API and
 
 Next we will generate our resolver. The command below gives:
 
-
-
 - The skeleton of the resolver
-
 - A file to manage the associated schema 
-
 - A default mock file to use for local testing
 
 
