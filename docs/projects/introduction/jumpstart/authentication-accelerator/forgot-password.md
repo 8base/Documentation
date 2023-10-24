@@ -1,6 +1,11 @@
-# Authentication Accelerator - Forgot Password Page
+---
+id: 'forgot-password'
+sidebar_label: 'Forgot Password Page'
+slug: '/introduction/jumpstart/authentication-accelerator/forgot-password'
+---
+# Forgot Password Page
 
-![Forgot Password Page](../assets/forgotPassword.png)
+![Forgot Password Page](../_images/forgotPassword.png)
 
 The Forgot Password page in the Authentication Accelerator allows users to reset their password in case they've forgotten it. This documentation will guide you through implementing and using the Forgot Password function, along with the necessary requests and steps for resetting a password.
 

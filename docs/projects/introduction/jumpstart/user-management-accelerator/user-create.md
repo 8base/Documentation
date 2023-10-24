@@ -1,6 +1,11 @@
-# Team Managment Accelerator - User Create Page
+---
+id: 'user-create'
+sidebar_label: 'User Create Page'
+slug: '/introduction/jumpstart/user-management-accelerator/user-create'
+---
+# User Create Page
 
-![User Create Page](../assets/userCreatePage.png)
+![User Create Page](../_images/userCreatePage.png)
 
 The User create page in the User Management Accelerator allows users to create their profile information. It provides a seamless user experience for managing user profiles within your application. Here are the primary functions used on this page.
 

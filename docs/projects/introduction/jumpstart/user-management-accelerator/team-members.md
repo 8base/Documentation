@@ -1,6 +1,11 @@
-# Team Managment Accelerator - Team Members Page
+---
+id: 'team-members'
+sidebar_label: 'Team Members Page'
+slug: '/introduction/jumpstart/user-management-accelerator/team-members'
+---
+# Team Members Page
 
-![Team Members Page](../assets/teamMembersPage.png)
+![Team Members Page](../_images/teamMembersPage.png)
 
 The Team Members page in the User Management Accelerator provides a comprehensive interface for managing users within your application. This page allows you to perform CRUD (Create, Read, Update, Delete) operations on user profiles and includes several features for enhanced usability.
 

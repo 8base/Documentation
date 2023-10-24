@@ -1,4 +1,9 @@
-# Navigation Accelerator - Sidebar Control
+---
+id: 'sidebar-control'
+sidebar_label: 'Sidebar Control'
+slug: '/introduction/jumpstart/navigation-accelerator/sidebar-control'
+---
+# Sidebar Control
 
 The Navigation Accelerator plays a pivotal role in controlling and organizing the sidebar navigation of your application. In this document, we'll delve into how it manages and configures the sidebar structure, ensuring a user-friendly and intuitive navigation experience.
 

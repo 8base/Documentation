@@ -1,6 +1,11 @@
-# Authentication Accelerator - Signup Page
+---
+id: 'signup'
+sidebar_label: 'Signup Page'
+slug: '/introduction/jumpstart/authentication-accelerator/signup'
+---
+# Signup Page
 
-![Signup Page](../assets/signupPage.png)
+![Signup Page](../_images/signupPage.png)
 
 The Signup page in the Authentication Accelerator allows new users to register and create an account. This documentation will guide you through implementing and using the Signup function, along with the necessary requests and dependencies.
 

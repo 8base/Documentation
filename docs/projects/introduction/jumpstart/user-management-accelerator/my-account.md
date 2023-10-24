@@ -1,6 +1,11 @@
-# User Managment Accelerator - My Account Page
+---
+id: 'my-account'
+sidebar_label: 'My Account Page'
+slug: '/introduction/jumpstart/user-management-accelerator/my-account'
+---
+# My Account Page
 
-![My Account Page](../assets/accountPage.png)
+![My Account Page](../_images/accountPage.png)
 
 The My Account page in the User Management Accelerator empowers users to manage their personal account information. It offers a convenient interface for updating user profiles and avatars. This page is designed for users to take control of their own account details.
 

@@ -1,6 +1,11 @@
-# Authentication Accelerator - Login Page
+---
+id: 'login'
+sidebar_label: 'Login Page'
+slug: '/introduction/jumpstart/authentication-accelerator/login'
+---
+# Login Page
 
-![Login Page](../assets/loginPage.png)
+![Login Page](../_images/loginPage.png)
 
 The Login page in the Authentication Accelerator allows users to securely log in to your application. This documentation will walk you through implementing and using the Login function, along with essential requests and dependencies.
 

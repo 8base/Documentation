@@ -1,6 +1,11 @@
-# Team Managment Accelerator - User Profile Page
+---
+id: 'user-profile'
+sidebar_label: 'User Profile Page'
+slug: '/introduction/jumpstart/user-management-accelerator/user-profile'
+---
+# User Profile Page
 
-![User Profile Page](../assets/userProfilePage.png)
+![User Profile Page](../_images/userProfilePage.png)
 
 The User Profile page in the User Management Accelerator allows users to view and edit their profile information. It provides a seamless user experience for managing user profiles within your application. Here are the primary functions used on this page.
 
