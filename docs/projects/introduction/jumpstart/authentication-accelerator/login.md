@@ -5,24 +5,24 @@ slug: '/introduction/jumpstart/authentication-accelerator/login'
 ---
 # Login Page
 
+The Login page in the Authentication Accelerator allows users to securely log into your application. We will walk you through implementing and using the Login function, along with essential requests and dependencies.
+
 ![Login Page](../_images/loginPage.png)
 
-The Login page in the Authentication Accelerator allows users to securely log in to your application. This documentation will walk you through implementing and using the Login function, along with essential requests and dependencies.
+## Functions
 
-# Functions
+### Login Function
 
-## Login Function
+The `accAuthLogin` function is responsible for user login and authentication. When a user logs in, this function is called to initiate the login process. <!-- Here's an annotated code snippet explaining how it works.-->
 
-The `accAuthLogin` function is responsible for user login and authentication. When a user logs in, this function is called to initiate the login process. Here's an annotated code snippet explaining how it works.
+## Requests
 
-# Requests
+### LoginRequest
 
-## LoginRequest
-
-The `accAuthLoginRequest` is a GraphQL mutation used for user login. It takes the user's email, password, and authentication profile ID as input parameters and returns authentication tokens. Here's the request.
+The `accAuthLoginRequest` GraphQL mutation is used for user login. It takes the user's email, password, and authentication profile ID as input parameters and returns authentication tokens. 
 
 This request is crucial for the login process as it authenticates the user and provides the necessary tokens for subsequent API requests.
 
-## UserGetByEmail
+### UserGetByEmail
 
-The `accUserGetByEmail` GraphQL query is used to retrieve user information based on their email address. It's used to check if a user with the provided email exists in your application.
+The `accUserGetByEmail` GraphQL query is used to retrieve user information based on their email address. It verifies whether a user with the provided email address exists in your application.

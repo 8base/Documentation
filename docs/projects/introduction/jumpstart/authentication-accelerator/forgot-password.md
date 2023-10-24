@@ -5,29 +5,28 @@ slug: '/introduction/jumpstart/authentication-accelerator/forgot-password'
 ---
 # Forgot Password Page
 
-![Forgot Password Page](../_images/forgotPassword.png)
+The Forgot Password page in the Authentication Accelerator allows users to reset their password. We will guide you through implementing and using the Forgot Password function, along with the necessary requests and steps for resetting a password.
 
-The Forgot Password page in the Authentication Accelerator allows users to reset their password in case they've forgotten it. This documentation will guide you through implementing and using the Forgot Password function, along with the necessary requests and steps for resetting a password.
+![Forgot Password Page](../_images/forgotPassword.png)
 
 ## Reset Password Workflow
 
-The "Forgot Password" functionality have some step process:
+The "Forgot Password" functionality follows this process:
 
-- **Request Password Reset Code**: Users initiate the password reset process by providing their email address. The requestPasswordResetCode function sends a request to generate a validation code and sends it to the user's email address.
+1. **Request Password Reset Code**: The user initiates the password reset process by providing their email address. The `requestPasswordResetCode` function sends a request to generate a validation code. The code is sent to the user's email address.
 
-- **Receive Validation Code**: Users receive the validation code in their email.
+2. **Receive Validation Code**: The user receives the validation code in their email.
 
-- **Confirm Password Reset**: Users enter the received validation code and their new password. The confirmPasswordReset function sends a request to confirm the password reset.
+3. **Confirm Password Reset**: The user enters the received validation code and their new password. The `confirmPasswordReset` function sends a request to confirm the password reset.
 
-- **Password Reset Complete**: If the password reset is successful, users can now log in with their new password.
+4. **Password Reset Complete**: If the password reset is successful, the user can now log in with their new password.
 
 # Requests
 
-
 ### Request Password Reset Code
 
-The `accAuthForgotPassword` is responsible of start the process, user provides their email address, and a request is made to generate a validation code and send it to the user's email address.
+The `accAuthForgotPassword` request starts the process. The user provides their email address, a request is made to generate a validation code, and the code is sent to the user's email address.
 
-## Confirm Password Reset
+### Confirm Password Reset
 
-Once the user receives the validation code, they provide it and the `accAuthForgotPasswordConfirm` is responsible of finish the process, with the password that was entered in the initial step.
+The user receives the validation code and they input it. The `accAuthForgotPasswordConfirm` request finishes the process, with the password that was entered in the initial step.

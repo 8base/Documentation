@@ -5,7 +5,9 @@ slug: '/introduction/jumpstart/theme-management-accelerator/adaptable-components
 ---
 # Adaptable Components
 
-Adaptable Components are an integral part of your application, sourced from Material UI, and they offer a dynamic and flexible user interface (UI). These components are designed to adapt seamlessly to various screen sizes and device types, providing a consistent and responsive user experience.
+Adaptable Components are an integral part of your application, sourced from Material UI. They offer a dynamic and flexible user interface (UI). These components are designed to adapt seamlessly to various screen sizes and device types, providing a consistent and responsive user experience.
+
+By combining Material UI's adaptable components with custom CSS, you can achieve a highly personalized and visually appealing user interface for your application. This combination of flexibility and control ensures that your application can adapt to various screen sizes and device types while maintaining a consistent and visually pleasing design.
 
 ## Custom CSS
 
@@ -15,10 +17,8 @@ In addition to Material UI's predefined CSS classes, you have the flexibility to
 
 ## CSS Classes Generation
 
-Each Material UI component comes with its own CSS file, and your application automatically generates some classes that correspond to these components. These generated classes provide a starting point for your CSS customization efforts.
-
-By combining the power of Material UI's adaptable components with custom CSS, you can achieve a highly personalized and visually appealing user interface for your application. This combination of flexibility and control ensures that your application can adapt to various screen sizes and device types while maintaining a consistent and visually pleasing design.
+Each Material UI component comes with its own CSS file, and your application automatically generates classes that correspond to these components. These generated classes provide a starting point for your CSS customization efforts.
 
 ## Learn More
 
-If you want to deeply learn more about custom css for the components refer to the [MUI Documentation](https://mui.com/material-ui/getting-started/)
+To learn more about custom css for these components, see [MUI Documentation](https://mui.com/material-ui/getting-started/)
