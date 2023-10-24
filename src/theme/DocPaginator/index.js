@@ -115,18 +115,28 @@ export default function DocPaginator(props) {
               onClick={() => handleFeedbackChange(true)}
               disabled={isLoading}
               className="clean-btn feedback-btn"
-              style={{ height: 24, width: 24 }}
+              style={{ height: 24, width: 24, rotate: '180deg', minWidth: 24 }}
             >
-              <img src="/img/thumb.svg" alt="thumbs" />
+              <img src="/img/thumb.svg" alt="thumbs" className="hide-dark" />
+              <img
+                src="/img/thumb_white.svg"
+                alt="thumbs"
+                className="hide-light"
+              />
             </button>
             {/* Thumb's down */}
             <button
               onClick={() => handleFeedbackChange(false)}
               disabled={isLoading}
               className="clean-btn feedback-btn"
-              style={{ height: 24, width: 24, rotate: '180deg' }}
+              style={{ height: 24, width: 24, minWidth: 24 }}
             >
-              <img src="/img/thumb.svg" alt="thumbs" />
+              <img src="/img/thumb.svg" alt="thumbs" className="hide-dark" />
+              <img
+                src="/img/thumb_white.svg"
+                alt="thumbs"
+                className="hide-light"
+              />
             </button>
           </div>
         ) : null}
@@ -231,6 +241,7 @@ export default function DocPaginator(props) {
                 fontWeight: 500,
                 fontFamily: 'Poppins, sans-serif',
               }}
+              className="feedback-cancel"
               type="reset"
               onClick={handleReset}
             >
@@ -253,6 +264,7 @@ export default function DocPaginator(props) {
                 boxShadow: '0px 2px 4px 0px #32325D33',
                 cursor: 'pointer',
               }}
+              className="feedback-submit"
             >
               Submit
             </button>
