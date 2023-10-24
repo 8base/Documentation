@@ -12,6 +12,7 @@ export default function SearchBarWrapper(props) {
           }
           const recentElement = document.querySelector('.DocSearch-Hit-source');
           if (
+            recentElement &&
             recentElement.innerHTML !== ('Recent Searches' || 'Search Results')
           ) {
             if (recentElement.innerHTML === 'Recent') {

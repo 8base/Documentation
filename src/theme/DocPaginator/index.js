@@ -4,18 +4,20 @@ import PaginatorNavLink from '@theme/PaginatorNavLink';
 export default function DocPaginator(props) {
   const { previous, next } = props;
 
-  const [feedback, setFeedback] = useState('');
+  const [comment, setComment] = useState('');
   const [isHelpful, setIsHelpful] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isFormVisible, setIsFormFormVisible] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const handleFeedbackChange = (isHelpful) => {
     setIsFormFormVisible(true);
     setIsHelpful(isHelpful);
+    setSubmitSuccess(false);
   };
 
   const handleReset = () => {
-    setFeedback('');
+    setComment('');
     setIsHelpful(null);
     setIsFormFormVisible(false);
   };
@@ -25,38 +27,44 @@ export default function DocPaginator(props) {
 
     setIsLoading(true);
 
+    const myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/json');
+
+    const raw = JSON.stringify({
+      sentiment: isHelpful ? 'Positive' : 'Negative',
+      comment,
+    });
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow',
+    };
+
+    let response;
     try {
-      const response = await fetch(
-        'https://your-feedback-service.com/feedback',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ feedback }),
-        }
+      response = await fetch(
+        'https://api.8base.com/clo4dtrvk000y08l6dv57bpsk/webhook/SaveFeedback',
+        requestOptions
       );
-
-      if (!response.ok) {
-        // Handle non-2xx response (you might also want to check for specific status codes)
-        console.error('Failed to submit feedback:', response.statusText);
-        return;
-      }
-
-      const responseData = await response.json();
-      console.log('Feedback submitted successfully:', responseData);
+      const result = await response.text();
+      console.log(result);
     } catch (error) {
       console.error('Error submitting feedback:', error);
     } finally {
       setIsLoading(false);
+      if (response.status === 200) {
+        setSubmitSuccess(true);
+        setIsFormFormVisible(false);
+      }
     }
   };
 
-  // Create a ref for your textarea element
+  // Create a ref for the textarea element
   const textareaRef = useRef(null);
 
-  // Use the useEffect hook to focus and scroll to the textarea
-  // element when it becomes visible
+  // Focus and scroll to the textarea element when it becomes visible
   useEffect(() => {
     if (isFormVisible && textareaRef.current) {
       // Focus the textarea element
@@ -176,8 +184,8 @@ export default function DocPaginator(props) {
           </p>
           <textarea
             ref={textareaRef}
-            value={feedback}
-            onChange={(e) => setFeedback(e.target.value)}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
             disabled={isLoading}
             style={{
               width: '100%',
@@ -270,6 +278,13 @@ export default function DocPaginator(props) {
             </button>
           </div>
         </form>
+      ) : null}
+
+      {/* Thank you message */}
+      {submitSuccess ? (
+        <div style={{ textAlign: 'center', marginTop: 30 }}>
+          “Thank you for your feedback”
+        </div>
       ) : null}
     </>
   );
