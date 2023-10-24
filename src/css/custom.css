@@ -800,6 +800,7 @@ nav.menu {
   --docsearch-muted-color: #fff !important;
   --docsearch-hit-active-color: #323c47 !important;
   --docsearch-modal-width: 744px !important;
+  --docsearch-container-background: rgba(0, 0, 0, 0.2);
 }
 
 #docsearch-input {
@@ -815,6 +816,7 @@ nav.menu {
 
 .DocSearch-Modal {
   padding: 40px;
+  box-shadow: none !important;
 }
 
 .DocSearch-Hits {
