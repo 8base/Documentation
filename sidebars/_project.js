@@ -27,56 +27,7 @@ const sidebars = {
         'projects/introduction/what-is-8base',
         'projects/introduction/who-uses-8base',
         'projects/introduction/quickstart',
-          {
-            type: 'category',
-            label: 'Jumpstart with accelerators',
-            link: {
-                    type: 'doc',
-                    id: 'projects/introduction/jumpstart/jumpstart',
-                  },
-              items: [
-                {
-                  type: 'category',
-                  label: 'Authentication accelerator',
-                  items: [
-                    'projects/introduction/jumpstart/authentication-accelerator/signup',
-                    'projects/introduction/jumpstart/authentication-accelerator/login',  
-                    'projects/introduction/jumpstart/authentication-accelerator/forgot-password',                             
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Navigation accelerator',
-                  items: [
-                  'projects/introduction/jumpstart/navigation-accelerator/sidebar-control',
-                  'projects/introduction/jumpstart/navigation-accelerator/breadcrumbs-management',
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'User and team management accelerator',
-                  items: [
-                      'projects/introduction/jumpstart/user-management-accelerator/my-account',
-                      'projects/introduction/jumpstart/user-management-accelerator/team-members',
-                      'projects/introduction/jumpstart/user-management-accelerator/user-create',
-                      'projects/introduction/jumpstart/user-management-accelerator/user-profile',
-                    ],
-                },
-                {
-                  type: 'category',
-                  label: 'Theme management accelerator',
-                  link: {
-                          type: 'doc',
-                          id: 'projects/introduction/jumpstart/theme-management-accelerator/theme-management',
-                        },
-                          items: [  
-                          'projects/introduction/jumpstart/theme-management-accelerator/darkmode-support',                    
-                          'projects/introduction/jumpstart/theme-management-accelerator/adaptable-components',
-                          'projects/introduction/jumpstart/theme-management-accelerator/theme-customization',                
-                          ],
-                },    
-              ],
-          },
+          
         'projects/introduction/main-modules-and-capabilities',
         'projects/introduction/projects',
         'projects/introduction/backend-capabilities-overview',
@@ -99,6 +50,56 @@ const sidebars = {
             'projects/gettingstarted/walkthroughs-backend-movieapp',
             'projects/gettingstarted/walkthroughs-frontend-movieapp',                               
           ]
+        },
+        {
+          type: 'category',
+          label: 'Jumpstart with accelerators',
+          link: {
+                  type: 'doc',
+                  id: 'projects/introduction/jumpstart/jumpstart',
+                },
+            items: [
+              {
+                type: 'category',
+                label: 'Authentication accelerator',
+                items: [
+                  'projects/introduction/jumpstart/authentication-accelerator/signup',
+                  'projects/introduction/jumpstart/authentication-accelerator/login',  
+                  'projects/introduction/jumpstart/authentication-accelerator/forgot-password',                             
+                ],
+              },
+              {
+                type: 'category',
+                label: 'User management accelerator',
+                items: [
+                    'projects/introduction/jumpstart/user-management-accelerator/my-account',
+                    'projects/introduction/jumpstart/user-management-accelerator/team-members',
+                    'projects/introduction/jumpstart/user-management-accelerator/user-create',
+                    'projects/introduction/jumpstart/user-management-accelerator/user-profile',
+                  ],
+              },
+              {
+                type: 'category',
+                label: 'Navigation accelerator',
+                items: [
+                'projects/introduction/jumpstart/navigation-accelerator/sidebar-control',
+                'projects/introduction/jumpstart/navigation-accelerator/breadcrumbs-management',
+                ],
+              },            
+              {
+                type: 'category',
+                label: 'Theme management accelerator',
+                link: {
+                        type: 'doc',
+                        id: 'projects/introduction/jumpstart/theme-management-accelerator/theme-management',
+                      },
+                        items: [  
+                        'projects/introduction/jumpstart/theme-management-accelerator/darkmode-support',                    
+                        'projects/introduction/jumpstart/theme-management-accelerator/adaptable-components',
+                        'projects/introduction/jumpstart/theme-management-accelerator/theme-customization',                
+                        ],
+              },    
+            ],
         },
         {
           type: 'category',
