@@ -919,6 +919,7 @@ nav.menu {
 
 [data-theme='dark'] .DocSearch {
   --docsearch-modal-width: 744px !important;
+  --docsearch-container-background: rgba(0, 0, 0, 0.2);
 }
 
 .DocSearch-Hit-Container:hover mark {
