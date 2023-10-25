@@ -3,7 +3,7 @@ id: 'what-is-8base'
 sidebar_label: 'What is 8base?'
 slug: '/introduction/what-is-8base'
 ---
-# Introduction to 8base?
+# What is 8base?
 
 Welcome to 8base, a purpose-built low-code platform for professional developers. At its core, 8base is engineered to streamline the development of full-stack JavaScript applications, eliminating the usual overhead while retaining the depth and control that seasoned developers and their end-users expect.
 

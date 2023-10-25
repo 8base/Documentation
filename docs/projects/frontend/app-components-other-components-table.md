@@ -53,7 +53,7 @@ Each column has its own properties that you can customize by clicking the *gear*
 >  3. Delete all the objects in the array except for two.
 >  4. Modify the objects so they have **id**, **gallery**, and **photo** columns.
 >  5. Add a name for each **gallery** and a link for each **photo**.
->  6. Each object should look something like this: `{"id":1,"gallery":"Henry Art","photo":"https://henryart.org/assets/img/_largeImage/230331_henry_art_gallery_175.jpg"}`
+>  6. Each object should look something like this: `{"id":1,"gallery":"Henry Art","photo":"https://henryart.org/_images/img/_largeImage/230331_henry_art_gallery_175.jpg"}`
 >  7. Click "Auto Generate Columns" to delete the old columns and create new ones.
 >  8. Scroll down to the *Columns* section in the *Properties* pane, and click the *gear* icon next to the Photo column name to open the *Settings* panel.
 >  9. Click the "Add Render Cell" button and choose **Container** in the drop-down, which creates a container to hold your image within the column.
