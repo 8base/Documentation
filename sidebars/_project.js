@@ -109,7 +109,7 @@ const sidebars = {
             id: 'projects/gettingstarted/common-tasks-index',
           },
           items: [
-            'projects/gettingstarted/common-tasks-configuring-role-based-access-control'
+            'projects/gettingstarted/common-tasks-configuring-role-based-access-control',
             'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
             'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
             'projects/gettingstarted/common-tasks-extending-the-api', 

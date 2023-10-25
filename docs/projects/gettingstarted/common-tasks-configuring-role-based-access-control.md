@@ -1,15 +1,15 @@
 ---
 id: 'common-tasks-configuring-role-based-access-control'
-sidebar_label: 'Configuring Role-based Access Controls'
+sidebar_label: 'Configuring Role-Based Access Controls'
 slug: '/gettingstarted/commontasks/common-tasks-configuring-role-based-access-control'
 ---
-# Configuring Role-based Access Control
+# Configuring Role-Based Access Control
 
 When developing applications, there are two key aspects that can potentially inhibit your progress: **Authentication** and **Authorization**. Authentication confirms the identity of a user, ensuring that they are who they say they are. Authorization, on the other hand, decides what an authenticated user is allowed to do. In 8base, we streamline these features through our **Role-based Access Control (RBAC)** API.
 
 Whether you are creating a simple blog or a multi-tenant SaaS solution, setting clear boundaries through roles and permissions is essential. This ensures that users only interact with the data and functionalities they are allowed to access. 8base's RBAC is tailored to offer both adaptability and potency, allowing developers to define nuanced permissions effortlessly.
 
-In this section, we will delve into a practical example, outlining roles and permissions for a hypothetical blogging platform. For or a more in-depth exploration of RBAC in 8base, please refer to [Roles and Permissions](#link to App Services-> Roles and Permissions) and [Authentication](#link to App Services -> Authentication).
+In this section, we will delve into a practical example, outlining roles and permissions for a hypothetical blogging platform. For or a more in-depth exploration of RBAC in 8base, please refer to [Roles and Permissions](/backend/roles-and-permissions) and [Authentication](/backend/authentication).
 
 ## The Data
 
