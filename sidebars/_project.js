@@ -109,14 +109,14 @@ const sidebars = {
             id: 'projects/gettingstarted/commontasks/index',
           },
           items: [
-            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
-            'projects/gettingstarted/commontasks/create-multiple-records-single-operation',
-            'projects/gettingstarted/commontasks/extending-the-api', 
-            'projects/gettingstarted/commontasks/implementing-pagination-api-queries',
-            'projects/gettingstarted/commontasks/using-validating-forms', 
-            'projects/gettingstarted/commontasks/leveraging-navigation-events',
-            'projects/gettingstarted/commontasks/building-responsive-applications',
-            'projects/gettingstarted/commontasks/real-time-applications',                   
+            'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
+            'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
+            'projects/gettingstarted/common-tasks-extending-the-api', 
+            'projects/gettingstarted/common-tasks-implementing-pagination-api-queries',
+            'projects/gettingstarted/common-tasks-using-validating-forms', 
+            'projects/gettingstarted/common-tasks-leveraging-navigation-events',
+            'projects/gettingstarted/common-tasks-building-responsive-applications',
+            'projects/gettingstarted/common-tasks-real-time-applications',                   
           ]
         }
       ],
