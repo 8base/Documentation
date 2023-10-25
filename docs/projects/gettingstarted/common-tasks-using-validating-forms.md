@@ -1,8 +1,8 @@
 ---
 id: 'common-tasks-using-validating-forms'
 sidebar_label: 'Using and Validating Forms'
-redirect_from: '/gettingstarted/common-tasks-using-validating-forms'
-slug: '/projects/gettingstarted/common-tasks-using-validating-forms'
+redirect_from: '/gettingstarted/commontasks/using-validating-forms'
+slug: '/gettingstarted/commontasks/using-validating-forms'
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 id: 'user-profile'
 sidebar_label: 'User Profile Page'
-slug: '/introduction/jumpstart/user-management-accelerator/user-profile'
+slug: '/gettingstarted/jumpstart/user-management-accelerator/user-profile'
 ---
 # User Profile Page
 

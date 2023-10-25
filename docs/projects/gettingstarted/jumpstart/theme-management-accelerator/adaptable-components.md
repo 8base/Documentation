@@ -1,7 +1,7 @@
 ---
 id: 'adaptable-components'
 sidebar_label: 'Adaptable Components'
-slug: '/introduction/jumpstart/theme-management-accelerator/adaptable-components'
+slug: '/gettingstarted/jumpstart/theme-management-accelerator/adaptable-components'
 ---
 # Adaptable Components
 

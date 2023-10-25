@@ -1,8 +1,8 @@
 ---
 id: 'common-tasks-leveraging-navigation-events'
 sidebar_label: 'Leveraging Navigation Events'
-redirect_from: '/gettingstarted/common-tasks-leveraging-navigation-events'
-slug: '/projects/gettingstarted/common-tasks-leveraging-navigation-events'
+redirect_from: '/gettingstarted/commontasks/leveraging-navigation-events'
+slug: '/gettingstarted/commontasks/leveraging-navigation-events'
 ---
 
 

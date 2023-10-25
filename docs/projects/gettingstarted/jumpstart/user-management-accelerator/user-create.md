@@ -1,7 +1,7 @@
 ---
 id: 'user-create'
 sidebar_label: 'User Create Page'
-slug: '/introduction/jumpstart/user-management-accelerator/user-create'
+slug: '/gettingstarted/jumpstart/user-management-accelerator/user-create'
 ---
 # User Create Page
 

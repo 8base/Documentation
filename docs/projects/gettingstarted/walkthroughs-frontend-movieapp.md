@@ -1,7 +1,7 @@
 ---
 id: 'walkthroughs-frontend-movieapp'
 sidebar_label: 'Building an App with an 8base Frontend-only Project'
-slug: '/walkthroughs/frontend-movieapp'
+slug: '/gettingstarted/walkthroughs/frontend-movieapp'
 ---
 # Building an App with an 8base Frontend-only Project
 

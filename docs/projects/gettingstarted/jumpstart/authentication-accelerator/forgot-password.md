@@ -1,7 +1,7 @@
 ---
 id: 'forgot-password'
 sidebar_label: 'Forgot Password Page'
-slug: '/introduction/jumpstart/authentication-accelerator/forgot-password'
+slug: '/gettingstarted/jumpstart/authentication-accelerator/forgot-password'
 ---
 # Forgot Password Page
 

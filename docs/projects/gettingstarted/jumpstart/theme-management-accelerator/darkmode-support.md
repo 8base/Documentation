@@ -1,7 +1,7 @@
 ---
 id: 'darkmode-support'
 sidebar_label: 'Dark Mode Support'
-slug: '/introduction/jumpstart/theme-management-accelerator/darkmode-support'
+slug: '/gettingstarted/jumpstart/theme-management-accelerator/darkmode-support'
 ---
 # Dark Mode Support
 

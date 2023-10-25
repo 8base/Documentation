@@ -1,8 +1,8 @@
 ---
 id: 'common-tasks-extending-the-api'
 sidebar_label: 'Extending the API'
-redirect_from: '/gettingstarted/common-tasks-extending-the-api'
-slug: '/projects/gettingstarted/common-tasks-extending-the-api'
+redirect_from: '/gettingstarted/commontasks/extending-the-api'
+slug: '/gettingstarted/commontasks/extending-the-api'
 ---
 # Extending the API
 

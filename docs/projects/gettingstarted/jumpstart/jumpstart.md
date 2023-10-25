@@ -1,7 +1,7 @@
 ---
 id: 'jumpstart'
 sidebar_label: 'Jumpstart your project with accelerators'
-slug: '/introduction/jumpstart/jumpstart'
+slug: '/gettingstarted/jumpstart'
 ---
 # Jumpstart your project with accelerators
 

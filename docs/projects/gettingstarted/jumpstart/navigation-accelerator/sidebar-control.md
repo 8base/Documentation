@@ -1,7 +1,7 @@
 ---
 id: 'sidebar-control'
 sidebar_label: 'Sidebar Control'
-slug: '/introduction/jumpstart/navigation-accelerator/sidebar-control'
+slug: '/gettingstarted/jumpstart/navigation-accelerator/sidebar-control'
 ---
 # Sidebar Control
 
