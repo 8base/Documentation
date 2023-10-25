@@ -806,6 +806,9 @@ nav.menu {
 #docsearch-input {
   color: #323c47;
 }
+[data-theme='dark'] #docsearch-input {
+  color: #fff;
+}
 .DocSearch-Input::placeholder {
   color: #abb1b8 !important;
 }
@@ -827,11 +830,16 @@ nav.menu {
 .DocSearch-Hit-source {
   color: #abb1b8 !important;
   padding-top: 2px !important;
+  font-size: 14px !important;
 }
 
 .DocSearch-Hit[aria-selected='true'] {
   padding-left: 0 !important;
   background-color: #f4f7f9 !important;
+}
+[data-theme='dark'] .DocSearch-Hit[aria-selected='true'] {
+  padding-left: 0 !important;
+  background-color: var(--ifm-menu-color-background-hover) !important;
 }
 
 .DocSearch-Hit-content-wrapper {
@@ -875,4 +883,46 @@ nav.menu {
 
 [data-theme='dark'] .clean-btn.feedback-btn:hover .hide-light {
   display: none;
+}
+
+.DocSearch-Help {
+  color: #323c47 !important;
+  font-size: 1rem !important;
+}
+[data-theme='dark'] .DocSearch-Help {
+  color: #fff !important;
+}
+
+/* This is for 'Recent Searches' */
+.docSearchRecent {
+  display: block !important;
+  color: #abb1b8;
+  margin-top: 16px;
+  padding-top: 6px;
+  border-top: 1px solid #e8eff5;
+  color: #abb1b8;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* This is to give proper hover colors for list items on first hover. */
+#docsearch-item-0:hover {
+  background-color: #f4f7f9 !important;
+}
+#docsearch-item-0:hover .DocSearch-Hit-title {
+  color: var(--docsearch-hit-color);
+}
+[data-theme='dark'] #docsearch-item-0:hover {
+  background-color: var(--ifm-menu-color-background-hover) !important;
+}
+[data-theme='dark'] #docsearch-item-0:hover .DocSearch-Hit-title {
+  color: var(--docsearch-hit-color);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-modal-width: 744px !important;
+}
+
+.DocSearch-Hit-Container:hover mark {
+  color: var(--docsearch-hit-color) !important;
 }

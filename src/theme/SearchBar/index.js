@@ -6,10 +6,47 @@ export default function SearchBarWrapper(props) {
     const observer = new MutationObserver((mutationsList, observer) => {
       for (let mutation of mutationsList) {
         if (mutation.type === 'childList') {
+          // Set search placeholder text
           const inputElement = document.getElementById('docsearch-input');
           if (inputElement) {
-            inputElement.placeholder = 'Search 8base';
+            if (inputElement.placeholder !== 'Search 8base') {
+              inputElement.placeholder = 'Search 8base';
+            }
           }
+
+          // Add 'Recent Searches' text if there are no recent searches
+          const noRecentSearches = document.querySelector('.DocSearch-Help');
+          if (
+            noRecentSearches &&
+            !document.querySelector('.DocSearch-Hit-source')
+          ) {
+            if (noRecentSearches.innerHTML !== 'no recent searches found') {
+              noRecentSearches.innerHTML = 'no recent searches found';
+              if (!document.querySelector('.docSearchRecent')) {
+                const recentSearchesElement = document.createElement('div');
+                recentSearchesElement.innerHTML = 'Recent Searches';
+                recentSearchesElement.classList.add('docSearchRecent');
+                document
+                  .querySelector('.DocSearch-Dropdown')
+                  .prepend(recentSearchesElement);
+              }
+            }
+          }
+
+          // Remove 'Recent Searches' from above if the original is shown
+          if (document.querySelector('.DocSearch-Hit-source')) {
+            if (document.querySelector('.docSearchRecent')) {
+              document.querySelector('.docSearchRecent').remove();
+            }
+          }
+
+          // Disable auto selection of first entry in the list for search
+          document.querySelector('.DocSearch-Hit[aria-selected="true"]') &&
+            document
+              .querySelector('.DocSearch-Hit[aria-selected="true"]')
+              .setAttribute('aria-selected', 'false');
+
+          //
           const recentElement = document.querySelector('.DocSearch-Hit-source');
           if (
             recentElement &&
