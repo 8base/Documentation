@@ -1,7 +1,7 @@
 ---
 id: 'my-account'
 sidebar_label: 'My Account Page'
-slug: '/introduction/jumpstart/user-management-accelerator/my-account'
+slug: '/gettingstarted/jumpstart/user-management-accelerator/my-account'
 ---
 # My Account Page
 

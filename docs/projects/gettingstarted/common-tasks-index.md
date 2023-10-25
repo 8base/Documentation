@@ -1,8 +1,8 @@
 ---
 id: 'common-tasks-index'
 sidebar_label: 'Common tasks'
-redirect_from: '/gettingstarted/common-tasks-index'
-slug: '/projects/gettingstarted/common-tasks-index'
+redirect_from: '/gettingstarted/commontasks/index'
+slug: '/gettingstarted/commontasks/index'
 ---
 
 # Common Tasks

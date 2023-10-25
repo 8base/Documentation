@@ -56,34 +56,34 @@ const sidebars = {
           label: 'Jumpstart with accelerators',
           link: {
                   type: 'doc',
-                  id: 'projects/introduction/jumpstart/jumpstart',
+                  id: 'projects/gettingstarted/jumpstart/jumpstart',
                 },
             items: [
               {
                 type: 'category',
                 label: 'Authentication accelerator',
                 items: [
-                  'projects/introduction/jumpstart/authentication-accelerator/signup',
-                  'projects/introduction/jumpstart/authentication-accelerator/login',  
-                  'projects/introduction/jumpstart/authentication-accelerator/forgot-password',                             
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',  
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/forgot-password',                             
                 ],
               },
               {
                 type: 'category',
                 label: 'User management accelerator',
                 items: [
-                    'projects/introduction/jumpstart/user-management-accelerator/my-account',
-                    'projects/introduction/jumpstart/user-management-accelerator/team-members',
-                    'projects/introduction/jumpstart/user-management-accelerator/user-create',
-                    'projects/introduction/jumpstart/user-management-accelerator/user-profile',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/user-create',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/user-profile',
                   ],
               },
               {
                 type: 'category',
                 label: 'Navigation accelerator',
                 items: [
-                'projects/introduction/jumpstart/navigation-accelerator/sidebar-control',
-                'projects/introduction/jumpstart/navigation-accelerator/breadcrumbs-management',
+                'projects/gettingstarted/jumpstart/navigation-accelerator/sidebar-control',
+                'projects/gettingstarted/jumpstart/navigation-accelerator/breadcrumbs-management',
                 ],
               },            
               {
@@ -91,12 +91,12 @@ const sidebars = {
                 label: 'Theme management accelerator',
                 link: {
                         type: 'doc',
-                        id: 'projects/introduction/jumpstart/theme-management-accelerator/theme-management',
+                        id: 'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-management',
                       },
                         items: [  
-                        'projects/introduction/jumpstart/theme-management-accelerator/darkmode-support',                    
-                        'projects/introduction/jumpstart/theme-management-accelerator/adaptable-components',
-                        'projects/introduction/jumpstart/theme-management-accelerator/theme-customization',                
+                        'projects/gettingstarted/jumpstart/theme-management-accelerator/darkmode-support',                    
+                        'projects/gettingstarted/jumpstart/theme-management-accelerator/adaptable-components',
+                        'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-customization',                
                         ],
               },    
             ],
@@ -109,7 +109,7 @@ const sidebars = {
             id: 'projects/gettingstarted/common-tasks-index',
           },
           items: [
-            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
+            'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
             'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
             'projects/gettingstarted/common-tasks-extending-the-api', 
             'projects/gettingstarted/common-tasks-implementing-pagination-api-queries',

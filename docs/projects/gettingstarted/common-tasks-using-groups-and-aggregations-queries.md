@@ -1,8 +1,7 @@
 ---
-id: '8base-console-graphql-api-grouping-and-aggregations-tutorial'
+id: 'common-tasks-using-groups-and-aggregations-queries'
 sidebar_label: 'Using Groups and Aggregations in Queries'
-redirect_from: '/backend/graphql-api/grouping-and-aggregations-tutorial'
-slug: '/projects/backend/graphql-api/grouping-and-aggregations-tutorial'
+slug: '/gettingstarted/commontasks/using-groups-and-aggregations-queries'
 ---
 
 # Using Groups and Aggregations in Queries
@@ -25,7 +24,7 @@ In this tutorial, we are using data about movies. There are two tables: **Actor*
 
 If we look at the **Actor** table, on the **Schema** tab, we can see our auto-generated fields and user-defined fields. The first column displays the field names, and the second column lists the field types.
 
-![The 8base data page showing a schema table.](./images/ui-tutorial-groups-schema-actor.png)
+![The 8base data page showing a schema table.](./_images/ui-tutorial-groups-schema-actor.png)
 
 
 The field type will affect how the field can be configured and behaves. The field type also affects the kind of data you can receive from a field. For more information, see [Field Types](https://docs.8base.com/projects/backend/console/data-builder/#field-types). 
@@ -41,12 +40,12 @@ On the **Data** tab, we can see our data. Each data entry has the following colu
 * DOB (Date of Birth)
 * Movies (this column links to the Movies data table)
 
-![The 8base data page showing a data table.](./images/ui-tutorial-groups-data-actors.png)
+![The 8base data page showing a data table.](./_images/ui-tutorial-groups-data-actors.png)
 
 
 If we view the **Movies** data table, the schema looks like this:
 
-![The 8base data page showing a schema table.](./images/ui-tutorial-groups-schema-movie.png)
+![The 8base data page showing a schema table.](./_images/ui-tutorial-groups-schema-movie.png)
 
 
 The **Cast** field is a table that is being pulled from the Actor data table. The Movie table data has these columns:
@@ -61,7 +60,7 @@ The **Cast** field is a table that is being pulled from the Actor data table. Th
 * Cast (this column links to the Actors data table)
 
 
-![The 8base data page showing a data table.](./images/ui-tutorial-groups-data-movie.png)
+![The 8base data page showing a data table.](./_images/ui-tutorial-groups-data-movie.png)
 
 
 
@@ -104,7 +103,7 @@ The query has returned all of the data, sorted in the order specified in the que
 In 8base, if you do not specify a sort order, the default is to sort items by ``created_at``.
 :::
 
-![The 8base API explorer showing the results of a simple query.](./images/ui-tutorial-groups-first-query.png)
+![The 8base API explorer showing the results of a simple query.](./_images/ui-tutorial-groups-first-query.png)
 
 
 There is nothing wrong with these results, but is ordering everything by ID number the most practical way to sort results? If you are trying to decide what movie to watch, those ID numbers do not help you.
@@ -157,7 +156,7 @@ If you want to quickly build a query, click the **Explorer** button and use the 
 :::
 Our new results give us a list of directors, and which movies they directed:
 
-![The 8base API explorer showing the results of a query with one condition.](./images/ui-tutorial-groups-having-single-condition.png)
+![The 8base API explorer showing the results of a query with one condition.](./_images/ui-tutorial-groups-having-single-condition.png)
 
 
 These results are sorted alphabetically by the first name of the director. This is a more logical way to present information than field ID. You can also see quick insights: this data shows that Christopher Nolan has directed more movies than James Cameron. 
@@ -212,7 +211,7 @@ Our results come back with four directors: James Cameron, John Lasseter, Jonatha
 
 
 
-![The 8base API explorer showing the results of a query where we only see director's whose names start with J.](./images/ui-tutorial-groups-condition-directorname.png)
+![The 8base API explorer showing the results of a query where we only see director's whose names start with J.](./_images/ui-tutorial-groups-condition-directorname.png)
 
 
 You can use grouping by condition to create categories in your data. For example, you could search for directors who released movies in the 1980s, directors whose first names are “John”, or directors who make PG rated movies. 
@@ -270,7 +269,7 @@ query MultipleGroupsWithCondition{
 
 In our results, James Cameron now appears twice: Once in a section listing his PG-13 movies, and once in a section showing his one rated R movie. 
 
-![The 8base API explorer showing the results of a query where we only see director's whose names start with , sorted by movie rating.](./images/ui-tutorial-groups-mutipleconditions.png)
+![The 8base API explorer showing the results of a query where we only see director's whose names start with , sorted by movie rating.](./_images/ui-tutorial-groups-mutipleconditions.png)
 
 
 Now that we know the movie ratings, we can pick a movie that is appropriate to watch with our grandparents. But our grandparents will want to know which actors are in these movies, so we need to add nested groups to our query.
@@ -349,7 +348,7 @@ query MultipleGroupsWithConditionWithNestedGroups{
 
 Our results now show a lot of information. Here is a snapshot showing James Cameron’s PG-13 movies:
 
-![The 8base API explorer showing the results of a query with multiple nested groups.](./images/ui-tutorial-groups-nested-groups.png)
+![The 8base API explorer showing the results of a query with multiple nested groups.](./_images/ui-tutorial-groups-nested-groups.png)
 
 
 The entries are still grouped by the director’s first name and then movie rating. Then you see the movie title, a list of actors, and a list of actresses. 

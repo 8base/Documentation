@@ -1,7 +1,7 @@
 ---
 id: 'team-members'
 sidebar_label: 'Team Members Page'
-slug: '/introduction/jumpstart/user-management-accelerator/team-members'
+slug: '/gettingstarted/jumpstart/user-management-accelerator/team-members'
 ---
 # Team Members Page
 

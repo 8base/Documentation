@@ -1,7 +1,7 @@
 ---
 id: 'theme-management'
 sidebar_label: 'Theme Management Accelerator'
-slug: '/introduction/jumpstart/theme-management-accelerator/theme-management'
+slug: '/gettingstarted/jumpstart/theme-management-accelerator/theme-management'
 ---
 # Theme Management Accelerator
 

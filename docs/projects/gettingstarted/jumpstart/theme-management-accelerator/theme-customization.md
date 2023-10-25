@@ -1,7 +1,7 @@
 ---
 id: 'theme-customization'
 sidebar_label: 'Theme Customization'
-slug: '/introduction/jumpstart/theme-management-accelerator/theme-customization'
+slug: '/gettingstarted/jumpstart/theme-management-accelerator/theme-customization'
 ---
 # Theme Customization
 

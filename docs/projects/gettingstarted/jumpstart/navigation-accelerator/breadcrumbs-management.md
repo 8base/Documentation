@@ -1,7 +1,7 @@
 ---
 id: 'breadcrumbs-management'
 sidebar_label: 'Breadcrumbs Management'
-slug: '/introduction/jumpstart/navigation-accelerator/breadcrumbs-management'
+slug: '/gettingstarted/jumpstart/navigation-accelerator/breadcrumbs-management'
 ---
 # Breadcrumbs Management
 

@@ -1,8 +1,8 @@
 ---
 id: 'common-tasks-real-time-applications'
 sidebar_label: 'Real-time Applications: Using 8base Subscriptions with your Frontend'
-redirect_from: '/gettingstarted/common-tasks-real-time-applications'
-slug: '/projects/gettingstarted/common-tasks-real-time-applications'
+redirect_from: '/gettingstarted/commontasks/real-time-applications'
+slug: '/gettingstarted/commontasks/real-time-applications'
 ---
 
 

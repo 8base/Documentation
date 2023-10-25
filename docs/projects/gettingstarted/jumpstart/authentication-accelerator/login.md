@@ -1,7 +1,7 @@
 ---
 id: 'login'
 sidebar_label: 'Login Page'
-slug: '/introduction/jumpstart/authentication-accelerator/login'
+slug: '/gettingstarted/jumpstart/authentication-accelerator/login'
 ---
 # Login Page
 
