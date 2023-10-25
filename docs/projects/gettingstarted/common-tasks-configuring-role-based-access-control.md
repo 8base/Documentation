@@ -9,7 +9,7 @@ When developing applications, there are two key aspects that can potentially inh
 
 Whether you are creating a simple blog or a multi-tenant SaaS solution, setting clear boundaries through roles and permissions is essential. This ensures that users only interact with the data and functionalities they are allowed to access. 8base's RBAC is tailored to offer both adaptability and potency, allowing developers to define nuanced permissions effortlessly.
 
-In this section, we will delve into a practical example, outlining roles and permissions for a hypothetical blogging platform. For or a more in-depth exploration of RBAC in 8base, please refer to [Roles and Permissions](/backend/roles-and-permissions) and [Authentication](/backend/authentication).
+In this section, we will delve into a practical example, outlining roles and permissions for a hypothetical blogging platform. For or a more in-depth exploration of RBAC in 8base, please refer to [Roles and Permissions](../backend/8base-console-roles-and-permissions.md) and [Authentication](../backend/8base-console-authentication.md).
 
 ## The Data
 
@@ -27,7 +27,7 @@ There is a difference between Users and Team Members in 8base:
 -   **Users** are individuals who sign-up for the application you have built. Their roles determine permissions within the application.
 
 
-For an in-depth understanding, refer to [Teams](/backend/teams.md) and [Users](/backend/console/users.md).
+For an in-depth understanding, refer to [Teams](../backend/8base-console-teams.md) and [Users](../backend/8base-console-platform-tools-users.md).
 
 ## Setting up Roles and Permissions
 
@@ -69,7 +69,7 @@ Now we will create another new role called "Reader". Readers will only have read
 
 We need an administrator role, which can only be given to team members. We will use the default "Administrator" role that 8base provides. This role has all permissions enabled by default, granting team members full access to manage content, users, and application settings within the 8base Management Console.
 
-🔍 For more on roles and permissions, explore [Roles and Permissions](/backend/teams/#roles-and-permission-for-team-members).
+For more on roles and permissions, explore [Roles and Permissions](../backend/8base-console-roles-and-permissions.md).
 
 ## Authentication
 
@@ -84,13 +84,13 @@ We will start by creating an Authentication Profile.
 2. Click on the **+** button to create a new authentication profile.
 ![Adding a profile](_images/access-control-add-profile-3.png)
 3. Fill in the form:
-- **Name**: A descriptive name, e.g., "Blogging Platform Auth".
+   - **Name**: A descriptive name, e.g., "Blogging Platform Auth".
 ![Adding a profile](_images/access-control-add-profile-4.png)
-- **Type**: Choose **8base Authentication**.
-- **Self Signup**: Select **Open to all**.
-- **Roles**: Attach the "Editor" role you created.
+   - **Type**: Choose **8base Authentication**.
+   - **Self Signup**: Select **Open to all**.
+   - **Roles**: Attach the "Editor" role you created.
 ![Adding a profile](_images/access-control-add-profile-5.png)
-- Configure client-side information and callback URLs if needed.
+   - Configure client-side information and callback URLs if needed.
  4. Save the profile.
  5. Repeat this process for the "Reader" role.
 
@@ -115,7 +115,7 @@ mutation UserSignUpWithPassword(
 }
 ```
   
-To learn more about authentication in 8base, see [Understanding Authentication](/backend/authentication/#understanding-authentication).
+To learn more about authentication in 8base, see [Understanding Authentication](../backend/8base-console-authentication.md).
 
 ## Custom Filters
 
@@ -128,7 +128,7 @@ Custom filters control data access. Here's how to set one up:
 ![Editing a role](_images/access-control-custom-filters-4.png)
 5. Paste the following code
 
-```
+```graphql
 {
   "authors": {
     "users": {
@@ -151,9 +151,9 @@ Custom filters control data access. Here's how to set one up:
 This filter ensures that Editors can only update posts from authors in their domain.
    
 
-🔍 Interested in mastering custom filters? Check out [Custom Filters](/backend/roles-and-permissions/#custom-filters).
+Interested in mastering custom filters? Check out [Custom Filters](/projects/backend/roles-and-permissions/#custom-filters).
 
-## API Tokens
+## Creating API Tokens
 
 API Tokens allow scheduled post publication without direct user intervention. To create an API token:
 
@@ -171,6 +171,6 @@ API Tokens allow scheduled post publication without direct user intervention. To
 
 Using this token, a server-side script can fetch scheduled posts and publish them without user intervention. Note that by default, API Tokens have no permissions, hence associating roles is crucial.
 
-🔍 For a deeper dive into API tokens and their capabilities, visit [API Tokens](/backend/roles-and-permissions/#api-tokens).
+For a deeper dive into API tokens and their capabilities, visit [API Tokens](/projects/backend/roles-and-permissions/#api-tokens).
 
 With these settings, your blogging platform offers differentiated access for Editors, Readers, and Administrators. It is also primed for server-side operations via API Tokens, ensuring a secure and efficient environment.

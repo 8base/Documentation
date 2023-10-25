@@ -61,9 +61,7 @@ query {
 
 Every 8base Backend automatically delivers a user table.
 
-
 ![Pagination](_images/implementing-pagination-01.png )
-
 
 To query these users, we input the following query into the **API Explorer**:
 
@@ -103,6 +101,8 @@ query TeamMembers(
 ```
 
 **Response**
+
+Here is a snippet of the response:
 
 ```graphql
 {
@@ -167,181 +167,11 @@ query TeamMembers(
             ]
           }
         },
-        {
-          "id": "clnnv2cwb007308mlh9mb7ry7",
-          "email": "cLark@kent.com",
-          "firstName": "Clark",
-          "lastName": "Kent",
-          "status": "active",
-          "createdAt": "2023-10-13T00:18:59.915Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiSmFZTWF3a1R5cTgweEhhZ0pJN2cifQ==,signature:e4c8e8f353bc34e73138fc9877780e70d7b4b49dbde9396284c7ca64bf3ed84b/JaYMawkTyq80xHagJI7g"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657f004s08kw8v194arm",
-                "name": "Guest"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnv3xxm008d08ml0bg8ck1q",
-          "email": "corey@taylor.com",
-          "firstName": "Corey",
-          "lastName": "Taylor",
-          "status": "inactive",
-          "createdAt": "2023-10-13T00:20:13.834Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiOHJFM2pGdUdSVjJMVnB6aGtDU2cifQ==,signature:3ff99284dd5976006a50668ef6d092ba44ce2ab94197f4408907c7e5128e6c27/8rE3jFuGRV2LVpzhkCSg"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657f004s08kw8v194arm",
-                "name": "Guest"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnv1ryc006g08mlhdbl14jd",
-          "email": "Lois@lane.com",
-          "firstName": "Lois",
-          "lastName": "Lane",
-          "status": "inactive",
-          "createdAt": "2023-10-13T00:18:32.773Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiZXdBcHRibThRSlNubjc3eGtUMFgifQ==,signature:9497d1570f682980a0052499af7e66e7420f0b855ac3a3826e0150a6e3625837/ewAptbm8QJSnn77xkT0X"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657f004s08kw8v194arm",
-                "name": "Guest"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnv0btk005608ml3hiveqkd",
-          "email": "Lola@food.com",
-          "firstName": "LoLa",
-          "lastName": "Hamilton",
-          "status": "active",
-          "createdAt": "2023-10-13T00:17:25.208Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiSldVWVFCQlF6QzlMV1V6U2xtb1UifQ==,signature:85833ccdf4c9f12f0b63f753220dddcd01b1b4713ae3de8500055aecb1ac09b1/JWUYQBBQzC9LWUzSlmoU"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657r004t08kw5hncblc0",
-                "name": "Administrator"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnssdp4000l08jy95iu7g3b",
-          "email": "luigi@mario.com",
-          "firstName": "Luis",
-          "lastName": "Muro",
-          "status": "active",
-          "createdAt": "2023-10-12T23:15:15.161Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiNnF1dkFvUXBRRGFmN0hIZzBmWTEifQ==,signature:ded945e9ce3b3715c01ac6cd319799ab6844a1fb9eb9e72a300d3fe331ccb743/6quvAoQpQDaf7HHg0fY1"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657r004t08kw5hncblc0",
-                "name": "Administrator"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnt8e2h00dn08ml9s5tfp22",
-          "email": "marco@boudeaux.com",
-          "firstName": "Marco",
-          "lastName": "Boudeaux",
-          "status": "active",
-          "createdAt": "2023-10-12T23:27:42.137Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoieUd0TGtjaG1SSEdhdFlLMnJBTWUifQ==,signature:daee680db16511fce4d370e75ff5c15d6b088d510c6238ad8ff812dc65797efc/yGtLkchmRHGatYK2rAMe"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657f004s08kw8v194arm",
-                "name": "Guest"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnuzlys004j08mldjsdfscj",
-          "email": "Maria@marzo",
-          "firstName": "Maria",
-          "lastName": "Marzo",
-          "status": "active",
-          "createdAt": "2023-10-13T00:16:51.701Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoidmRxSXJZNGhUUzZ6aDN4ZmdJa0EifQ==,signature:eeb84b417dcdde58fbdca77923b3d0e84a1f81abebac6a0a8507512bd1467956/vdqIrY4hTS6zh3xfgIkA"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657f004s08kw8v194arm",
-                "name": "Guest"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnqdmey001208jk7fik1gb4",
-          "email": "mario@mario.com",
-          "firstName": "Mario",
-          "lastName": "Lopez",
-          "status": "active",
-          "createdAt": "2023-10-12T22:07:47.387Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiR1dJSllnYVRXV29veFl3YUpvSWUifQ==,signature:0c6995008c8f58049c78cf5ebd9c6d596766501e28090834def370315e49fc6b/GWIJYgaTWWooxYwaJoIe"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657r004t08kw5hncblc0",
-                "name": "Administrator"
-              }
-            ]
-          }
-        },
-        {
-          "id": "clnnstv4d006x08kvh9nn4wat",
-          "email": "yoshi@mario.com",
-          "firstName": "yoshua",
-          "lastName": "Montreal",
-          "status": "active",
-          "createdAt": "2023-10-12T23:16:24.397Z",
-          "avatar": {
-            "downloadUrl": "https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MTY5NzI0MTYwMCwiaGFuZGxlIjoiVnZhdXNkSVhSeXlIY05ramcwRmEifQ==,signature:7028c0c75a563827a0b306aedd25d40a0ba05a38390286e319682ee715d3b280/VvausdIXRyyHcNkjg0Fa"
-          },
-          "roles": {
-            "items": [
-              {
-                "id": "cllye657r004t08kw5hncblc0",
-                "name": "Administrator"
-              }
-            ]
-          }
-        }
-      ]
+      ]           
+      }
+      
     }
   }
-}
 ```
 ![Pagination](_images/implementing-pagination-02.png)
 
@@ -407,22 +237,13 @@ Here is the detailed view for a resource:
 ![Pagination](_images/implementing-pagination-05.png )
 
 
-
 Now let’s craft the query: 
 
-
-1. On the right-hand side, click **Requests**. 
-
+1. On the right-hand side, click **Requests**.
 ![Pagination](_images/implementing-pagination-06.png)
-
 2. Create a **Global Request** as a **Lazy Query**.
-
-
 ![Pagination](_images/implementing-pagination-07.gif)
-
-
-3. If you want to update the `first` and `skip` values with a frontend event, you will need to modify their values to use variables. 
-    * So, instead of using:
+3. If you want to update the `first` and `skip` values with a frontend event, you will need to modify their values to use variables. So, instead of using:
 
 ```graphql
 query TeamMembers(
@@ -434,10 +255,7 @@ query TeamMembers(
     filter: $filter
   )
 ```
-
-
-
-* Your query should look like this:
+Your query should look like this:
 
 ```graphql
 query TeamMembers(
@@ -471,16 +289,12 @@ query TeamMembers(
     }
   }
 }
-
 ```
 
 4. Enter the query above in the query field of your new request and give it a name.
-
-5. Click **Save**.
-
+5. Click **Save & Run**.
 
 ![Pagination](_images/implementing-pagination-08.png )
-
 
 At this moment, we will not send the variables for `first` and `skip`. We will do this in another section, because this is not mandatory. If we execute the request, it will give us the total list without pagination.
 
@@ -493,11 +307,8 @@ To achieve this, we will leverage a local navigation event, with the **Run custo
 In this scenario, the variables will be passed as follows:
 
 ```
-
 -   `skip: 0`
-
 -   `first: 6`
-
 ```
 
 Our backend table contains twelve records. This configuration will display the first six records on the initial page.
@@ -505,36 +316,18 @@ Our backend table contains twelve records. This configuration will display the f
 ### Accessing Local Navigation Events
 
 1.  Click on **Pages** in the sidebar.
-
-
 ![Pagination](_images/implementing-pagination-09.png )
-
-
 2.  Locate your page and click on the gear icon to view its settings.
-
-
 ![Pagination](_images/implementing-pagination-10.png )
-
-
 3.  The settings panel will appear. The Local **Navigation Events** section is located at the bottom.
-
-
 ![Pagination](_images/implementing-pagination-11.gif)
-
 
 ### Configuring **BeforeRouteEnter** Event
 
 
-
 1. Select the **BeforeRouteEnter** option. We want the query to execute when the page loads. 
-2. Then, choose the custom code option to enter the request execution code. 
-
-
+2. Then, choose the custom code option to enter the request execution code.
 ![Pagination](_images/implementing-pagination-12.png )
-
-
-
-
 3. The code should be structured as follows, sending the  `skip`  and  `first`  variables:
 
 ```javascript
@@ -545,16 +338,10 @@ accUsersGet.run({
     }
 });
 ```
-
-
 ![Pagination](_images/implementing-pagination-13.png )
 
-
 4. After implementing the code, be sure to save your changes. Click on the **Save** button located at the top of the page settings.
-
-
 ![Pagination](_images/implementing-pagination-14.png )
-
 
 Now your page is set up to execute the GraphQL query upon load. 
 
@@ -570,15 +357,11 @@ The looper component is designed to iterate over an array of data, providing a r
 
 First, we need to connect our query response to the looper component. This connection can be achieved through the Loop Data field. In this example, we will use the **Enter Code** option.
 
-
 ![Pagination](_images/implementing-pagination-15.png )
-
 
 The reference to our query response will be placed in the **Loop Data** dropdown between {{ }}:  `{{ accUsersGet?.data }}`.
 
-
 ![Pagination](_images/implementing-pagination-16.png )
-
 
 By default, the **Item Name** field is set to "item". This serves as the argument we will use to access each element in our query response.
 
@@ -586,31 +369,17 @@ By default, the **Item Name** field is set to "item". This serves as the argumen
 
 Next, we will add a component within the looper to display the iterated information. For this instance, we will use a **Card Component** as it aligns well with our example.
 
-
 ![Pagination](_images/implementing-pagination-17.png )
-
 
 The **Card Component** should be configured as follows:
 
 1.  **Card Header**: The header will display the first and last name of each user. Using our "item" argument, it will look like this:  `{{item?.firstName}} {{item?.lastName}}`.
-
-
-![Pagination](_images/implementing-pagination-18.png )
-
-
-    
+![Pagination](_images/implementing-pagination-18.png )    
 
 2.  **Card Content**: The content will display the user's profile photo. The image source configuration will be:  `{{item?.avatar?.downloadUrl}}`.
-
-
-![Pagination](_images/implementing-pagination-19.png )
-
-
-    
+![Pagination](_images/implementing-pagination-19.png )    
 
 3.  **Typography Component**: Within the card content, we will add a typography component to display the user's email. The text of this component will be:  `{{item?.email}}`.
-
-
 ![Pagination](_images/implementing-pagination-20.png )
     
 
@@ -618,9 +387,7 @@ The **Card Component** should be configured as follows:
 
 Once these steps have been completed, the component is set to display the information. To preview the result, execute the request from the requests panel.
 
-
 ![Pagination](_images/implementing-pagination-21.gif )
-
 
 :::note
 The pagination will not appear in the preview. When executing the query from the request panel, it is performed without a value in the `skip` and `first` variables.
@@ -637,39 +404,21 @@ In order to achieve this, we will enhance our application's interface by adding 
 Here are the steps to add an `onClick` event to the button:
 
 
-
-1. Drag a button onto the canvas.  
-
+1. Drag a button onto the canvas.
 2. Go to the component and click on it. This action will open the properties panel.
-
-
 ![Pagination](_images/implementing-pagination-22.png )
-
-
 3.  In the properties panel, select the **Events** tab.
-
 ![Pagination](_images/implementing-pagination-23.png )
-
-
-
 4.  Under this tab, add an **On Click** event and choose **Run Custom Code**.
-
 ![Pagination](_images/implementing-pagination-24.png )
-
-
-
 5. Just like we did for the local navigation event, we will incorporate the code to execute our request. This code will send the values for the  `skip`  and  `first`  variables.
 
 ```
-
 -   `skip`: 6
-
 -   `first`: 6
-
 ```
 
 6. These particular values will trigger the query execution and fetch the next 6 records in the response.
-
 ```javascript
 accUsersGet.run({
     variables: {
@@ -679,9 +428,7 @@ accUsersGet.run({
 });
 ```
 
-
 ![Pagination](_images/implementing-pagination-25.png )
-
 
 7. After entering the code, save the configuration by clicking **Done**.
 
@@ -691,20 +438,14 @@ With that, we have successfully configured the pagination for the second page of
 
 In the editor's header menu, click the **Preview** button to launch a preview of your application. 
 
-
 ![Pagination](_images/implementing-pagination-26.gif )
-
 
 Here is the first page:
 
-
 ![Pagination](_images/implementing-pagination-27.png )
-
 
 And here is the second one:
 
-
 ![Pagination](_images/implementing-pagination-28.png )
-
 
 Congratulations! Your application now has pagination.
