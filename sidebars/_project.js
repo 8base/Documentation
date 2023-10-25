@@ -27,6 +27,7 @@ const sidebars = {
         'projects/introduction/what-is-8base',
         'projects/introduction/who-uses-8base',
         'projects/introduction/quickstart',
+          
         'projects/introduction/main-modules-and-capabilities',
         'projects/introduction/projects',
         'projects/introduction/backend-capabilities-overview',
@@ -39,7 +40,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Getting started',
+      label: 'Getting Started',
       items: [
         {
           type: 'category',
@@ -52,13 +53,64 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Common tasks',
+          label: 'Jumpstart with Accelerators',
+          link: {
+                  type: 'doc',
+                  id: 'projects/gettingstarted/jumpstart/jumpstart',
+                },
+            items: [
+              {
+                type: 'category',
+                label: 'Authentication Accelerator',
+                items: [
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',  
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/forgot-password',                             
+                ],
+              },
+              {
+                type: 'category',
+                label: 'User management accelerator',
+                items: [
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/user-create',
+                    'projects/gettingstarted/jumpstart/user-management-accelerator/user-profile',
+                  ],
+              },
+              {
+                type: 'category',
+                label: 'Navigation Accelerator',
+                items: [
+                'projects/gettingstarted/jumpstart/navigation-accelerator/sidebar-control',
+                'projects/gettingstarted/jumpstart/navigation-accelerator/breadcrumbs-management',
+                ],
+              },            
+              {
+                type: 'category',
+                label: 'Theme Management Accelerator',
+                link: {
+                        type: 'doc',
+                        id: 'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-management',
+                      },
+                        items: [  
+                        'projects/gettingstarted/jumpstart/theme-management-accelerator/darkmode-support',                    
+                        'projects/gettingstarted/jumpstart/theme-management-accelerator/adaptable-components',
+                        'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-customization',                
+                        ],
+              },    
+            ],
+        },
+        {
+          type: 'category',
+          label: 'Common Tasks',
           link: {
             type: 'doc',
             id: 'projects/gettingstarted/common-tasks-index',
           },
           items: [
-            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-tutorial',
+            'projects/gettingstarted/common-tasks-configuring-role-based-access-control',
+            'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
             'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
             'projects/gettingstarted/common-tasks-extending-the-api', 
             'projects/gettingstarted/common-tasks-implementing-pagination-api-queries',
@@ -72,7 +124,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Backend development',
+      label: 'Backend Development',
       items: [
         {
           type: 'category',
@@ -223,7 +275,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Frontend development',
+      label: 'Frontend Development',
       items: [
 
         {
@@ -467,7 +519,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'How to make API Calls (Requests)',
+              label: 'How to Make API Calls (Requests)',
               items: [
                 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls',
                 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation',
@@ -507,14 +559,14 @@ const sidebars = {
             'projects/frontend/custom-frontend-logic-introduction',
             {
               type: 'category',
-              label: 'Creating custom frontend functions',
+              label: 'Creating Custom Frontend Functions',
               items: [
                 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions',
               ],
             },
             {
               type: 'category',
-              label: 'Calling frontend functions',
+              label: 'Calling Frontend Functions',
               items: [
                 'projects/frontend/custom-frontend-logic-calling-frontend-functions',
                 'projects/frontend/custom-frontend-logic-calling-a-function-from-an-event',

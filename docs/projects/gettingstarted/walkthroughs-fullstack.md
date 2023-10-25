@@ -1,7 +1,7 @@
 ---
 id: 'walkthroughs-fullstack'
 sidebar_label: 'Building a Full-Stack App'
-slug: '/walkthroughs/full-stack'
+slug: '/gettingstarted/walkthroughs/full-stack'
 ---
 # Building a Full-Stack App
 

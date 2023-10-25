@@ -1,16 +1,15 @@
 ---
 id: 'common-tasks-index'
 sidebar_label: 'Common tasks'
-redirect_from: '/gettingstarted/common-tasks-index'
-slug: '/projects/gettingstarted/common-tasks-index'
+redirect_from: '/gettingstarted/commontasks/index'
+slug: '/gettingstarted/commontasks/index'
 ---
-
 # Common Tasks
 
 When working with 8base, developers frequently encounter tasks that are central to application development, regardless of the specific use-case or business logic. This 'Common Tasks' section is designed to guide you through these essential activities with hands-on, practical walkthroughs based on real-life use cases. Here's a brief overview of the subsections you will find:
 
 
-<!-- -   [Configuring Role-based Access Control](Link to Common Tasks -> Configuring Role-based Access Control): Dive into permissions configurations and understand the power of advanced filters. -->
+-   [Configuring Role-based Access Control](common-tasks-configuring-role-based-access-control): Dive into permissions configurations and understand the power of advanced filters.
     
 -   [Using Groups and Aggregations in Queries](../backend/graphql-api/grouping-and-aggregations-tutorial): Get a grasp on leveraging grouping and aggregation functions in a GraphQL Query.
     

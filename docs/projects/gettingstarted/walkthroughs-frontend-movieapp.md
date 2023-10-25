@@ -1,7 +1,7 @@
 ---
 id: 'walkthroughs-frontend-movieapp'
 sidebar_label: 'Building an App with an 8base Frontend-only Project'
-slug: '/walkthroughs/frontend-movieapp'
+slug: '/gettingstarted/walkthroughs/frontend-movieapp'
 ---
 # Building an App with an 8base Frontend-only Project
 
@@ -9,7 +9,6 @@ Let's dive into the process of creating a basic movie database app using an 8bas
 
 
 ![Frontend walkthrough](_images/walkthrough-frontend-01.png )
-
 
 This approach integrates the external backend via an API, capitalizing on the features of App Builder.
 
@@ -46,24 +45,10 @@ We will start by crafting a frontend from scratch. This example does not require
 
 
 1. In an existing project, select **Add new Frontend**.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-04.png )
-
-
-
-
 2. Click **Build from Scratch**, and then click **Create**.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-05.png )
-
-
-
-
 3. Select **DIY Authentication**.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-06.png )
 
 
@@ -74,20 +59,10 @@ After creating the new frontend, we can establish and integrate the necessary re
 Before we create a request, we must add a resource:
 
 1.  Click on **Resources** in the editor's sidebar.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-07.png )
-
-
 2. Add a REST resource according to your project requirements.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-08.png )
-
-
 3.  Once the resource configuration is complete, click **Save**.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-09.png )
 
 
@@ -96,25 +71,13 @@ Before we create a request, we must add a resource:
 After setting up the resource, the next step is to generate the requests for your application:
 
 1.  Click on the **Requests** button located in the sidebar.
-
-
-![Frontend walkthrough](_images/walkthrough-frontend-10.png )
-
-
-    
-
+![Frontend walkthrough](_images/walkthrough-frontend-10.png )    
 2.  In this section, create two global requests:
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-11.png )
-
-
-    
 
 **Request 1**: `popularMovies`: This GET request returns a list of movies, sorted by popularity. 
 
 Set it to execute on the  `BeforeRouteEnter`  navigation event on the homepage. This provides the necessary data to display the movie list as soon as the page loads.
-
 
 ![Frontend walkthrough](_images/walkthrough-frontend-12.png )
 
@@ -129,12 +92,10 @@ curl --location 'https://api.themoviedb.org/3/discover/movie?include_adult=true&
 
 **Request 2**: `insideMovie`: This request fetches the details of a movie based on a provided ID. 
 
-
 ![Frontend walkthrough](_images/walkthrough-frontend-13.png )
 
 
 The movie ID is passed as a parameter (`:movie`). We'll extract this ID from the path of the "Movie Details" page, which is dynamic:  `/movie-details/:id`.
-
 
 ![Frontend walkthrough](_images/walkthrough-frontend-14.png )
 
@@ -164,12 +125,9 @@ We will use a looper with a card component inside it to show the details of each
 
 ![Frontend walkthrough](_images/walkthrough-frontend-17.png )
 
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-18.png )
 
-
- Additionally, each card will have an `onclick` event with a navigate action to redirect the user to the "Movie Details" page next to the ID of the selected movie.
+Additionally, each card will have an `onclick` event with a navigate action to redirect the user to the "Movie Details" page next to the ID of the selected movie.
 
 
 ![Frontend walkthrough](_images/walkthrough-frontend-19.png )
@@ -186,17 +144,10 @@ Here, we will show the details of a movie using these components:
 
 ![Frontend walkthrough](_images/walkthrough-frontend-20.png )
 
-
-
 Each component will display the `insideMovie` request's content according to the ID sent from the Home Page.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-21.png )
 
-
 And that's all! You can see the app in action by clicking on **Preview** from the editor or by deploying the app.
-
-
 ![Frontend walkthrough](_images/walkthrough-frontend-22-moviedb.gif )
 
 

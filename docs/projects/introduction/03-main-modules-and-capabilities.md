@@ -32,7 +32,7 @@ Backend Builder can be accessed by selecting OPEN BACKEND from the Project Dashb
 
 ## App Builder
 
-8base's App Builder is a visual tool designed for frontend development. It allows developers to design and build frontend web applications, integrate with the 8base backend and other APIs and data sources, and perview and deploy applications seamlessly.
+8base's App Builder is a visual tool designed for frontend development. It allows developers to design and build frontend web applications, integrate with the 8base backend and other APIs and data sources, and preview and deploy applications seamlessly.
 
 Key Features:
 
