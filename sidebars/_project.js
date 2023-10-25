@@ -70,7 +70,7 @@ const sidebars = {
               },
               {
                 type: 'category',
-                label: 'User and team management accelerator',
+                label: 'User management accelerator',
                 items: [
                     'projects/introduction/jumpstart/user-management-accelerator/my-account',
                     'projects/introduction/jumpstart/user-management-accelerator/team-members',
