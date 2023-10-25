@@ -40,7 +40,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Getting started',
+      label: 'Getting Started',
       items: [
         {
           type: 'category',
@@ -53,7 +53,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Jumpstart with accelerators',
+          label: 'Jumpstart with Accelerators',
           link: {
                   type: 'doc',
                   id: 'projects/gettingstarted/jumpstart/jumpstart',
@@ -61,7 +61,7 @@ const sidebars = {
             items: [
               {
                 type: 'category',
-                label: 'Authentication accelerator',
+                label: 'Authentication Accelerator',
                 items: [
                   'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
                   'projects/gettingstarted/jumpstart/authentication-accelerator/login',  
@@ -80,7 +80,7 @@ const sidebars = {
               },
               {
                 type: 'category',
-                label: 'Navigation accelerator',
+                label: 'Navigation Accelerator',
                 items: [
                 'projects/gettingstarted/jumpstart/navigation-accelerator/sidebar-control',
                 'projects/gettingstarted/jumpstart/navigation-accelerator/breadcrumbs-management',
@@ -88,7 +88,7 @@ const sidebars = {
               },            
               {
                 type: 'category',
-                label: 'Theme management accelerator',
+                label: 'Theme Management Accelerator',
                 link: {
                         type: 'doc',
                         id: 'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-management',
@@ -103,12 +103,13 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Common tasks',
+          label: 'Common Tasks',
           link: {
             type: 'doc',
             id: 'projects/gettingstarted/common-tasks-index',
           },
           items: [
+            'projects/gettingstarted/common-tasks-configuring-role-based-access-control',
             'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
             'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
             'projects/gettingstarted/common-tasks-extending-the-api', 
@@ -123,7 +124,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Backend development',
+      label: 'Backend Development',
       items: [
         {
           type: 'category',
@@ -274,7 +275,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Frontend development',
+      label: 'Frontend Development',
       items: [
 
         {
@@ -518,7 +519,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'How to make API Calls (Requests)',
+              label: 'How to Make API Calls (Requests)',
               items: [
                 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls',
                 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation',
@@ -558,14 +559,14 @@ const sidebars = {
             'projects/frontend/custom-frontend-logic-introduction',
             {
               type: 'category',
-              label: 'Creating custom frontend functions',
+              label: 'Creating Custom Frontend Functions',
               items: [
                 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions',
               ],
             },
             {
               type: 'category',
-              label: 'Calling frontend functions',
+              label: 'Calling Frontend Functions',
               items: [
                 'projects/frontend/custom-frontend-logic-calling-frontend-functions',
                 'projects/frontend/custom-frontend-logic-calling-a-function-from-an-event',

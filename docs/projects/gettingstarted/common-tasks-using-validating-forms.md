@@ -4,8 +4,6 @@ sidebar_label: 'Using and Validating Forms'
 redirect_from: '/gettingstarted/commontasks/using-validating-forms'
 slug: '/gettingstarted/commontasks/using-validating-forms'
 ---
-
-
 # Using and Validating Forms
 
 Forms are essential for data collection, providing a structured method to gather user input.
@@ -15,15 +13,11 @@ Forms are essential for data collection, providing a structured method to gather
 ## Form Block
 
 A form block is a container component, designed to house various form components or inputs. It is frequently used in scenarios requiring user input, such as sign-up forms or survey forms.
-
-
 ![Forms](_images/using-forms-01.png )
-
 
 ## Form Components
 
 ![Forms](_images/using-forms-02.png )
-
 
 Form components are individual elements placed within a Form Block. They collect different types of user data and include:
 
@@ -78,22 +72,17 @@ It should look like this:
 
 ![Forms](_images/using-forms-03.png )
 
-
 ### Validating the Form
 
 Now, it's time to add validations to the form components we just added. This is facilitated by the **Add Field Validation** section present within the form block.
 
-
 ![Forms](_images/using-forms-04.png )
-
 
 To add a validation, click **Add Item**. Each item will have a name field that must match the name of the form component to which we want to apply it.
 
 For example, to apply required validation to the `memberName` field, the item should look like this:
 
-
 ![Forms](_images/using-forms-05.png )
-
 
 Once we create an item and match it with a field within the form, to add the desired validation, click on **Add Test**.
 
@@ -107,12 +96,9 @@ Depending on the field type, the available validations will be shown. In this ca
 * Url
 * Uuid
 
-
 ![Forms](_images/using-forms-06.png )
 
-
 The form validations also allow us to add regular expressions. For example, for the `memberPhone` field, let’s add a regex to validate US phone numbers:
-
 
 1. Click on **Add Item**.
 2. Match the name with the field to which you want to add validation, in this case `memberPhone`.
@@ -123,10 +109,7 @@ The form validations also allow us to add regular expressions. For example, for 
 7. Add an error message: "Please enter a valid US phone number."
 8. Fill the field with the necessary regex, in this case: `^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[ 0-9]{4}$ ->` This regular expression will only allow phone numbers with this format: `(123)123-1234`
 9. Click anywhere outside the dialog window to finish.
-
-
 ![Forms](_images/using-forms-07.png )
-
 
 Next, let’s set up validation for a date type. Suppose we want to limit the user's date to join the team to a maximum of one month. Then we must do the following:
 
@@ -138,13 +121,10 @@ Next, let’s set up validation for a date type. Suppose we want to limit the us
 5.  Click on the gear icon.
 6.  Add an error message: "New members cannot join more than one month in advance."
 7.  Enter the max date.
-8.  Click anywhere outside the dialog window to finish. 
-
+8.  Click anywhere outside the dialog window to finish.
 ![Forms](_images/using-forms-08.png )
 
-
 Finally, let's test our validations. Fill in the form, but leave some fields empty or with incorrect formats. When you click **Submit**,  the validations errors will appear:
-
 
 ![Forms](_images/using-forms-09.png )
 								
@@ -157,15 +137,11 @@ Now, it is time to configure the form block's `OnSubmit` event.
 
 Let's go to the component's **Events** tab and click **Edit Custom Code**.
 
-
 ![Forms](_images/using-forms-10.gif )
-
 
 In the ensuing code example, we perform three critical steps:
 
-
 ![Forms](_images/using-forms-11.png )
-
 
 1.  Capture the values entered in the Form inputs.
 2.  Execute a request to create a user, using the captured data.

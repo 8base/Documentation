@@ -4,8 +4,6 @@ sidebar_label: 'Real-time Applications: Using 8base Subscriptions with your Fron
 redirect_from: '/gettingstarted/commontasks/real-time-applications'
 slug: '/gettingstarted/commontasks/real-time-applications'
 ---
-
-
 # Real-time Applications: Using 8base Subscriptions with your Frontend
 
 In dynamic web applications, real-time updates are integral for enhancing user experience. Think of a Task Management SaaS application where team members are distributed across different locations. Being instantly notified about new tasks without having to constantly refresh the page can significantly improve the app's interactivity. GraphQL subscriptions make such real-time features — like chats, notifications, and live feeds — a reality.
@@ -24,9 +22,7 @@ For the scope of this guide, we will not be building an entire Task Management S
 
 Start by preparing the backbone of your data model. In the 8base backend, set up a `Tasks` table with a `name` text field. This table will store the tasks that we want to monitor in real-time.
 
-
 ![real time applications](_images/real-time-applications-01.png )
-
 
 ## Step 2: Setting Up the React Project
 
@@ -98,27 +94,18 @@ ReactDOM.render(
 );
 ```
 
-
 ![real time applications](_images/real-time-applications-02.png )
-
 
 You can get the ID of your backend and Websocket Endpoint under **Settings**.
 
-
 ![real time applications](_images/real-time-applications-03.png )
-
 
 As for `TOKEN`- you can get it two ways:
 
-- As the response of a `userLogin` mutation.  \
-
+- As the response of a `userLogin` mutation.
 ![real time applications](_images/real-time-applications-04.png )
- \
 - From the local storage of your current active 8base backend in the browser. Go to your 8base backend -> **Local Storage** -> **https://app.8base.com/** -> **auth** -> **token**. Copy the token value.
-
-
 ![real time applications](_images/real-time-applications-05.png )
-
 
 Finally, replace your `src/App.js` code with following:
 
@@ -164,21 +151,15 @@ It's showtime! Save the changes and start the app by executing this in your term
 
 Keep an eye on the WebSocket connection initializing in the network tab for your browser. This affirms the readiness of your application for real-time data operations.
 
-
 ![real time applications](_images/real-time-applications-06.png )
-
 
 Time to test! Emulate real-time behavior by adding a fresh task via the **Data Viewer** of your 8base backend or another method. For example, executing `tasksCreate` mutation via Postman or any other request client. 
 
-
 ![real time applications](_images/real-time-applications-07.png )
-
 
 When inserting a new task to the `Tasks` table, the app will promptly display a real-time notification with the response from the subscription.
 
-
 <!--![real time applications](_images/real-time-applications-08.png )-->
-
 
 ## Conclusion
 
