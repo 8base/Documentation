@@ -341,7 +341,6 @@ body {
     0 -4px 8px 0 rgba(0, 0, 0, 0.2);
   --docsearch-logo-color: #fff;
   --docsearch-muted-color: rgb(164, 166, 168);
-  height: 32px;
 }
 
 [data-theme='dark'] .DocSearch {
