@@ -106,7 +106,7 @@ const sidebars = {
           label: 'Common tasks',
           link: {
             type: 'doc',
-            id: 'projects/gettingstarted/commontasks/index',
+            id: 'projects/gettingstarted/common-tasks-index',
           },
           items: [
             'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',

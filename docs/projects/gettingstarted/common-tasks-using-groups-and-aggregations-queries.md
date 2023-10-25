@@ -1,8 +1,7 @@
 ---
-id: '8base-console-graphql-api-grouping-and-aggregations-tutorial'
+id: 'common-tasks-using-groups-and-aggregations-queries'
 sidebar_label: 'Using Groups and Aggregations in Queries'
-redirect_from: '/backend/graphql-api/grouping-and-aggregations-tutorial'
-slug: '/projects/backend/graphql-api/grouping-and-aggregations-tutorial'
+slug: '/gettingstarted/commontasks/using-groups-and-aggregations-queries'
 ---
 
 # Using Groups and Aggregations in Queries
