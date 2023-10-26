@@ -41,7 +41,7 @@ const sidebars = {
       label: 'Getting Started',
       link: {
         type: 'doc',
-        id: 'projects/gettingstarted/readme',
+        id: 'projects/gettingstarted/gettingstarted-index',
       },
       items: [
         {
@@ -133,7 +133,7 @@ const sidebars = {
       label: 'Backend Development',
       link: {
         type: 'doc',
-        id: 'projects/backend/readme',
+        id: 'projects/backend/backend-index',
       },
       items: [
         {
