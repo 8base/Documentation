@@ -1,10 +1,10 @@
 {
     "index_name": "docusaurus_up_tmp",
     "start_urls": [
-      "https://docs.8base.com"
+      "https://documentation-cfbq48ib8-esteban-felipes-projects.vercel.app"
     ],
     "sitemap_urls": [
-      "https://docs.8base.com/sitemap.xml"
+      "https://documentation-cfbq48ib8-esteban-felipes-projects.vercel.app/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [], 
