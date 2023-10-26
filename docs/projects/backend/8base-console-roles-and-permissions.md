@@ -5,7 +5,7 @@ redirect_from: '/backend/roles-and-permissions'
 slug: '/projects/backend/roles-and-permissions'
 ---
 
-# Authorization
+# Roles And Permissions
 
 Authorization in 8base uses a robust roles and permissions system that lets you securely control access to any data resources in a workspace. You use the roles and authorization system to control what users (with roles) are able to access and who is authorized (has permission) to do what.
 

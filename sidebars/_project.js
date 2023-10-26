@@ -26,6 +26,7 @@ const sidebars = {
         'projects/introduction/what-is-8base',
         'projects/introduction/who-uses-8base',
         'projects/introduction/quickstart',
+
         'projects/introduction/main-modules-and-capabilities',
         'projects/introduction/projects',
         'projects/introduction/backend-capabilities-overview',
@@ -38,7 +39,91 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Backend development',
+      label: 'Getting Started',
+      items: [
+        {
+          type: 'category',
+          label: 'Walkthroughs',
+          items: [
+            'projects/gettingstarted/walkthroughs-fullstack',
+            'projects/gettingstarted/walkthroughs-backend-movieapp',
+            'projects/gettingstarted/walkthroughs-frontend-movieapp',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Jumpstart with Accelerators',
+          link: {
+            type: 'doc',
+            id: 'projects/gettingstarted/jumpstart/jumpstart',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Authentication Accelerator',
+              items: [
+                'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
+                'projects/gettingstarted/jumpstart/authentication-accelerator/login',
+                'projects/gettingstarted/jumpstart/authentication-accelerator/forgot-password',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'User management accelerator',
+              items: [
+                'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
+                'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
+                'projects/gettingstarted/jumpstart/user-management-accelerator/user-create',
+                'projects/gettingstarted/jumpstart/user-management-accelerator/user-profile',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Navigation Accelerator',
+              items: [
+                'projects/gettingstarted/jumpstart/navigation-accelerator/sidebar-control',
+                'projects/gettingstarted/jumpstart/navigation-accelerator/breadcrumbs-management',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Theme Management Accelerator',
+              link: {
+                type: 'doc',
+                id: 'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-management',
+              },
+              items: [
+                'projects/gettingstarted/jumpstart/theme-management-accelerator/darkmode-support',
+                'projects/gettingstarted/jumpstart/theme-management-accelerator/adaptable-components',
+                'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-customization',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Common Tasks',
+          link: {
+            type: 'doc',
+            id: 'projects/gettingstarted/common-tasks-index',
+          },
+          items: [
+            'projects/gettingstarted/common-tasks-configuring-role-based-access-control',
+            'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
+            'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
+            'projects/gettingstarted/common-tasks-extending-the-api',
+            'projects/gettingstarted/common-tasks-implementing-pagination-api-queries',
+            'projects/gettingstarted/common-tasks-using-validating-forms',
+            'projects/gettingstarted/common-tasks-leveraging-navigation-events',
+            'projects/gettingstarted/common-tasks-building-responsive-applications',
+            'projects/gettingstarted/common-tasks-real-time-applications',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Backend Development',
       link: {
         type: 'doc',
         id: 'projects/backend/readme',
