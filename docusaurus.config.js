@@ -5,7 +5,7 @@ const fs = require('fs');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const redirects = JSON.parse(fs.readFileSync('redirects.json'));
+const redirects = JSON.parse(fs.readFileSync('redirects.json', 'utf8'));
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -61,7 +61,7 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         style: 'dark',
@@ -72,36 +72,19 @@ const config = {
         },
         items: [
           {
-            href: 'https://community.8base.com',
+            to: '/',
             position: 'left',
-            label: 'Community',
-            className: 'hide-svg',
+            label: 'Reference',
+            activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog"
           },
           {
-            href: 'https://twitter.com/8base',
-            position: 'right',
-            className: 'twitter',
-            icon: {
-              alt: 'twitter icon',
-              src: `logos/twitter.svg`,
-              href: 'https://twitter.com/8base',
-              target: '_blank',
-            },
-          },
-          {
-            href: 'https://github.com/8base/Documentation',
-            position: 'right',
-            className: 'github',
-            icon: {
-              alt: 'github icon',
-              src: `/logos/github.svg`,
-              href: 'https://github.com/ionic-team/ionic-framework',
-              target: '_blank',
-            },
+            to: '/changelog',
+            position: 'left',
+            label: 'Change Log',
           },
           {
             href: 'https://app.8base.com/auth/login',
-            label: 'Sign In',
+            label: 'Go to 8base Dashboard',
             position: 'right',
             className: 'button button--secondary button--lg signin',
           },
@@ -109,11 +92,11 @@ const config = {
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: 'IJ4YA19CBT',
+        appId: '4VK26RCW37',
         // Public API key: it is safe to commit it
-        apiKey: 'b350c396cfdbb63646a0d4e51d9e1564',
+        apiKey: '4bbfa15cdf087fe84a02bc76e921ba11',
 
-        indexName: 'docusaurus_up_tmp',
+        indexName: '8baseDocs',
 
         version: {
           // You can send raw values without `selectors`
@@ -140,9 +123,7 @@ const config = {
     }),
 
   plugins: [['@docusaurus/plugin-client-redirects', { redirects }]],
-  scripts: [
-    '/scripts/fullstory.js'
-  ]
+  scripts: ['/scripts/fullstory.js'],
 };
 
 module.exports = config;

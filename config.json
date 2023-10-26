@@ -1,13 +1,13 @@
 {
-    "index_name": "docusaurus_up_tmp",
+    "index_name": "8baseDocs",
     "start_urls": [
-      "https://docs.8base.com"
+      "https://documentation-newstyle-rfitkth3x-esteban-felipes-projects.vercel.app"
     ],
     "sitemap_urls": [
-      "https://docs.8base.com/sitemap.xml"
+      "https://documentation-newstyle-rfitkth3x-esteban-felipes-projects.vercel.app/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
-    "stop_urls": [],
+    "stop_urls": [], 
     "selectors": {
       "lvl0": {
         "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",

@@ -1,6 +1,5 @@
 ---
 id: 'connecting-to-data-sources-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/connecting-to-data-sources/introduction'
 slug: '/projects/frontend/connecting-to-data-sources/introduction'
 ---

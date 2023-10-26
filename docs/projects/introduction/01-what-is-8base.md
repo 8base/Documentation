@@ -1,5 +1,5 @@
 ---
-id: 'what-is-8base'
+id: '01-what-is-8base'
 sidebar_label: 'What is 8base?'
 slug: '/introduction/what-is-8base'
 ---

@@ -1,6 +1,5 @@
 ---
 id: 'custom-frontend-logic-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/custom-frontend-logic/introduction'
 slug: '/projects/frontend/custom-frontend-logic/introduction'
 ---

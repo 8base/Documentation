@@ -1,6 +1,5 @@
 ---
 id: 'data-in-the-frontend-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/data-in-the-frontend/introduction'
 slug: '/projects/frontend/data-in-the-frontend/introduction'
 ---

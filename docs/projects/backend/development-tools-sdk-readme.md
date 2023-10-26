@@ -1,6 +1,6 @@
 ---
 id: 'development-tools-sdk-readme'
-sidebar_label: 'JavaScript'
+sidebar_label: 'JavaScript SDK'
 redirect_from: '/backend/development-tools/sdk'
 slug: '/projects/backend/development-tools/sdk'
 ---
