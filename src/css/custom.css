@@ -3,7 +3,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -41,7 +41,7 @@ body {
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-font-color-base: #fff;
+  --ifm-font-color-base: #f4f7f9;
 }
 [data-theme='dark'] main {
   /*background-color: #17202D;*/
@@ -126,6 +126,9 @@ body {
 .navbar__link {
   color: #a3afb7;
   font-weight: 600;
+}
+[data-theme='dark'] .navbar__link {
+  color: #cfd7de;
 }
 .navbar__link--active {
   color: #61a5fa !important;
@@ -212,6 +215,9 @@ h6 {
   font-family: Poppins;
   font-size: 13px;
   color: #a3afb7;
+}
+[data-theme='dark'] .toc_header_sep {
+  color: #cfd7de;
 }
 .toc_seprator {
   border-bottom: 1px solid var(--ifm-toc-border-color);
@@ -655,6 +661,12 @@ nav.menu {
   font-size: 13px;
   color: #a3afb7;
 }
+[data-theme='dark']
+  .theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
+  > .menu__list-item-collapsible
+  > a {
+  color: #cfd7de;
+}
 /* Sidebar top level items - Active */
 .theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
   > .menu__list-item-collapsible
@@ -677,7 +689,7 @@ nav.menu {
 }
 [data-theme='dark'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1.menu__list-item
   .menu__link {
-  color: #a3afb7;
+  color: #cfd7de;
 }
 
 [data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
@@ -686,7 +698,7 @@ nav.menu {
 }
 [data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2.menu__list-item
   .menu__link {
-  color: #a3afb7;
+  color: #cfd7de;
 }
 
 [data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-3.menu__list-item
@@ -695,7 +707,7 @@ nav.menu {
 }
 [data-theme='light'].theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-3.menu__list-item
   .menu__link.menu__link--sublist.menu__link--sublist-caret {
-  color: #a3afb7;
+  color: #cfd7de;
 }
 
 .menu__link.menu__link--sublist {
@@ -780,14 +792,14 @@ nav.menu {
 
 .navbar__link--active,
 .breadcrumbs__item--active .breadcrumbs__link {
-  color: #238bff;
+  color: #4da1ff;
 }
 
 .breadcrumbs__item.breadcrumbs__item--active > span {
   background-color: #f4f7f9;
 }
 [data-theme='dark'] .breadcrumbs__item.breadcrumbs__item--active > span {
-  background-color: #e8eff5;
+  background-color: #323c47;
 }
 
 .markdown h1:first-child {
@@ -949,4 +961,12 @@ nav.menu {
 
 .breadcrumbs__link {
   font-size: 13px;
+}
+
+[data-theme='dark'] #__docusaurus_skipToContent_fallback {
+  background-color: #111 !important;
+}
+
+[data-theme='dark'] .breadcrumbs__item:not(:last-child)::after {
+  opacity: 1;
 }

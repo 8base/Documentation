@@ -12,9 +12,10 @@ export default function LogoWrapper(props) {
       >
         <span
           style={{
-            marginLeft: 2,
+            marginLeft: 4,
+            marginRight: 3,
             fontSize: 40,
-            lineHeight: 0.8,
+            lineHeight: 1,
             fontWeight: 100,
           }}
         >
