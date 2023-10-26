@@ -1,4 +1,6 @@
 # Change Log
+<p><br /></p>
+
 ## Oct 24th, 2023
 
 ** Fixes :fire: **
@@ -21,6 +23,8 @@
 - Allow access in frontend to users with access in the management system Project. 
 - increment memory in lambdas 
 
+<p><br /></p>
+
 ## Oct 20th, 2023
 
 **Fixes :fire:**
@@ -31,6 +35,8 @@
 
 **Technical Tasks :nerd_face:**
 - Draft Engine | A log to track all REDIS events was created; this will be used on the support track. 
+
+<p><br /></p>
 
 ## Oct 14th, 2023
 
@@ -43,6 +49,8 @@
 - App Builder | Events - We fixed the issue causing events not to work on Icons when using an image in them. 
 - App Builder | Local Dialogs - Now, states created within the Local Dialogs are removed when deleting the component.  
 - App Builder | Requests - Now Rest params are working as expected on paths with multiple levels. 
+
+<p><br /></p>
 
 ## Oct 10th, 2023
 
