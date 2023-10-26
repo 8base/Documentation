@@ -40,10 +40,18 @@ const sidebars = {
     {
       type: 'category',
       label: 'Getting Started',
+      link: {
+        type: 'doc',
+        id: 'projects/gettingstarted/readme',
+      },
       items: [
         {
           type: 'category',
           label: 'Walkthroughs',
+          link: {
+            type: 'doc',
+            id: 'projects/gettingstarted/walkthroughs',
+          },
           items: [
             'projects/gettingstarted/walkthroughs-fullstack',
             'projects/gettingstarted/walkthroughs-backend-movieapp',

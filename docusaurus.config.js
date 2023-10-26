@@ -96,7 +96,7 @@ const config = {
         // Public API key: it is safe to commit it
         apiKey: '4bbfa15cdf087fe84a02bc76e921ba11',
 
-        indexName: 'index',
+        indexName: '8baseDocs',
 
         version: {
           // You can send raw values without `selectors`
@@ -123,9 +123,7 @@ const config = {
     }),
 
   plugins: [['@docusaurus/plugin-client-redirects', { redirects }]],
-  scripts: [
-    '/scripts/fullstory.js'
-  ]
+  scripts: ['/scripts/fullstory.js'],
 };
 
 module.exports = config;
