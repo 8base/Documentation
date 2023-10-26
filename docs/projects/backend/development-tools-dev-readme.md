@@ -12,9 +12,7 @@ slug: '/projects/backend/development-tools'
 Here's a brief overview of the subsections you will find: 
 
 - [Development Environment](development-tools-dev-env-readme.md)
-
 - [Command Line Interface (CLI)](development-tools-cli-readme.md)
-
 - [JavaScript SDK](development-tools-sdk-readme.md)
 
 
