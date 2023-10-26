@@ -1,10 +1,10 @@
 {
     "index_name": "8baseDocs",
     "start_urls": [
-      "https://documentation-newstyle-rfitkth3x-esteban-felipes-projects.vercel.app"
+      "https://docs.8base.com"
     ],
     "sitemap_urls": [
-      "https://documentation-newstyle-rfitkth3x-esteban-felipes-projects.vercel.app/sitemap.xml"
+      "https://docs.8base.com/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [], 
