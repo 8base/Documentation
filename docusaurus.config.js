@@ -92,11 +92,11 @@ const config = {
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: 'IJ4YA19CBT',
+        appId: '4VK26RCW37',
         // Public API key: it is safe to commit it
-        apiKey: 'b350c396cfdbb63646a0d4e51d9e1564',
+        apiKey: '4bbfa15cdf087fe84a02bc76e921ba11',
 
-        indexName: 'docusaurus_up_tmp',
+        indexName: 'index',
 
         version: {
           // You can send raw values without `selectors`
