@@ -1,6 +1,6 @@
 ---
 id: 'data-binding'
-slug: '/projects/frontend/data-binding'
+# slug: '/projects/frontend/data-binding'
 ---
 
 # Data Binding
