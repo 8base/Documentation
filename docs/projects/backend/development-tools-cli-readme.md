@@ -1,6 +1,5 @@
 ---
 id: 'development-tools-cli-readme'
-sidebar_label: 'Overview'
 redirect_from: '/backend/development-tools/cli'
 slug: '/projects/backend/development-tools/cli'
 ---

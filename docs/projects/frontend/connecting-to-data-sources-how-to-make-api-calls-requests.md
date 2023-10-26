@@ -1,6 +1,5 @@
 ---
 id: 'connecting-to-data-sources-how-to-make-api-calls'
-sidebar_label: 'How to Make API Calls'
 redirect_from: '/frontend/connecting-to-data-sources/how-to-make-api-calls'
 slug: '/projects/frontend/connecting-to-data-sources/how-to-make-api-calls'
 ---

@@ -1,6 +1,5 @@
 ---
 id: 'app-components-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/app-components/introduction'
 slug: '/projects/frontend/app-components/introduction'
 ---
