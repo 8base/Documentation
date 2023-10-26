@@ -15,7 +15,7 @@ Here's a brief overview of the subsections you will find:
 - [App Editor](app-editor-introduction.md)
 - [Custom App Styling](custom-app-styling-introduction.md)
 - [Responsive Design in App Builder](responsive-design-in-app-builder-introduction.md)
-- [Application Layouts](application-layouts.md)
+<!-- - [Application Layouts](application-layouts.md)-->
 - [App Navigation](app-navigation-introduction.md)
 - [App Components](app-components-introduction.md)
 - [Connecting to Data Sources](connecting-to-data-sources-introduction.md)

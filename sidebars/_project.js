@@ -515,10 +515,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Components',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/app-components-components',
-              },
+              // link: {
+              //  type: 'doc',
+              // id: 'projects/frontend/app-components-components',
+              //},
               items: [
                 'projects/frontend/app-components-common-component-properties',
                 'projects/frontend/app-components-common-component-style-attributes',
