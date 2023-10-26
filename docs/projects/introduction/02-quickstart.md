@@ -1,5 +1,5 @@
 ---
-id: 'quickstart'
+id: '02-quickstart'
 sidebar_label: 'Quickstart'
 slug: '/introduction/quickstart'
 ---

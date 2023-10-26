@@ -1,5 +1,5 @@
 ---
-id: 'developer-resources'
+id: '10-developer-resources'
 sidebar_label: 'Developer Resources'
 slug: '/introduction/developer-resources'
 ---

@@ -1,5 +1,5 @@
 ---
-id: 'main-modules-and-capabilities'
+id: '03-main-modules-and-capabilities'
 sidebar_label: 'Main Modules and Capabilities'
 slug: '/introduction/main-modules-and-capabilities'
 ---

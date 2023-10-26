@@ -1,9 +1,9 @@
 ---
-id: 'projects'
+id: '04-projects'
 sidebar_label: 'Projects'
 slug: '/introduction/projects'
 ---
-# 8base Projects
+# Projects
 
 8base delivers a robust platform empowering developers to architect comprehensive JavaScript applications. At the heart of this platform lies 8base Projects, chiefly comprising a Backend and possibly numerous Frontends. You can classify these projects into two primary categories: Fullstack and Backend-Only.
 

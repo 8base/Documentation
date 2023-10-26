@@ -1,9 +1,9 @@
 ---
-id: 'backend-capabilities-overview'
+id: '05-backend-capabilities-overview'
 sidebar_label: 'Backend Capabilities Overview'
 slug: '/introduction/backend-capabilities-overview'
 ---
-# Backend Capabilities: A Comprehensive Overview
+# Backend Capabilities Overview
 
 Navigating your application's backend and data capabilities requires a solid understanding of the functionalities available to you. This document aims to provide you with a detailed look into these offerings.
 
