@@ -75,7 +75,7 @@ const config = {
             to: '/',
             position: 'left',
             label: 'Reference',
-            activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog"
+            activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog "
           },
           // {
           //   to: '/changelog',
