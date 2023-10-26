@@ -13,7 +13,10 @@ export default function DocSidebar(props) {
       });
 
       const selectedElement = document.querySelector('aside [aria-current]');
-      const isSubmenu = selectedElement.getAttribute('aria-expanded');
+      let isSubmenu;
+      if (selectedElement) {
+        isSubmenu = selectedElement.getAttribute('aria-expanded');
+      }
 
       if (selectedElement) {
         if (isSubmenu) {
