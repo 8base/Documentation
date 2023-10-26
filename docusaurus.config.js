@@ -77,11 +77,11 @@ const config = {
             label: 'Reference',
             activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog"
           },
-          {
-            to: '/changelog',
-            position: 'left',
-            label: 'Change Log',
-          },
+          // {
+          //   to: '/changelog',
+          //   position: 'left',
+          //   label: 'Change Log',
+          // },
           {
             href: 'https://app.8base.com/auth/login',
             label: 'Go to 8base Dashboard',
