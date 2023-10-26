@@ -128,6 +128,10 @@
     "to": "/projects/backend/console/advanced-introspection"
   },
   {
+    "from": "/backend/console/advanced",
+    "to": "/projects/backend/console/advanced"
+  },
+  {
     "from": "/backend/console/api-explorer",
     "to": "/projects/backend/console/api-explorer"
   },
@@ -164,8 +168,8 @@
     "to": "/projects/backend/plugins-integrations/salesforce"
   },
   {
-    "from": "/backend/overview",
-    "to": "/projects/backend/overview"
+    "from": "/backend/backend",
+    "to": "/projects/backend/backend"
   },
   {
     "from": "/backend/roles-and-permissions",
@@ -210,6 +214,10 @@
   {
     "from": "/backend/development-tools/dev-env/runtime-environment",
     "to": "/projects/backend/development-tools/dev-env/runtime-environment"
+  },
+  {
+    "from": "/backend/development-tools",
+    "to": "/projects/backend/development-tools"
   },
   {
     "from": "/backend/development-tools/sdk/api",
@@ -992,7 +1000,35 @@
     "to": "/projects/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic"
   },
   {
-    "from": "/backend",
-    "to": "/"
+    "from": "/gettingstarted/commontasks/building-responsive-applications",
+    "to": "/gettingstarted/commontasks/building-responsive-applications"
+  },
+  {
+    "from": "/gettingstarted/commontasks/create-multiple-records-single-operation",
+    "to": "/gettingstarted/commontasks/create-multiple-records-single-operation"
+  },
+  {
+    "from": "/gettingstarted/commontasks/extending-the-api",
+    "to": "/gettingstarted/commontasks/extending-the-api"
+  },
+  {
+    "from": "/gettingstarted/commontasks/implementing-pagination-api-queries",
+    "to": "/gettingstarted/commontasks/implementing-pagination-api-queries"
+  },
+  {
+    "from": "/gettingstarted/commontasks/index",
+    "to": "/gettingstarted/commontasks"
+  },
+  {
+    "from": "/gettingstarted/commontasks/leveraging-navigation-events",
+    "to": "/gettingstarted/commontasks/leveraging-navigation-events"
+  },
+  {
+    "from": "/gettingstarted/commontasks/real-time-applications",
+    "to": "/gettingstarted/commontasks/real-time-applications"
+  },
+  {
+    "from": "/gettingstarted/commontasks/using-validating-forms",
+    "to": "/gettingstarted/commontasks/using-validating-forms"
   }
 ]

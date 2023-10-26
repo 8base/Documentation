@@ -1,6 +1,5 @@
 ---
 id: 'images-and-files-in-app-builder-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/images-and-files-in-app-builder/introduction'
 slug: '/projects/frontend/images-and-files-in-app-builder/introduction'
 ---

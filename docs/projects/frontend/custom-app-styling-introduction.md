@@ -1,6 +1,5 @@
 ---
 id: 'custom-app-styling-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/custom-app-styling/introduction'
 slug: '/projects/frontend/custom-app-styling/introduction'
 ---

@@ -5,7 +5,7 @@ slug: '/gettingstarted/walkthroughs/backedend-movieapp'
 ---
 # Building a Frontend for a Backend-only Project
 
-In this guide, we will show you how can create a basic movie database app to showcase the ease of integrating the 8base Backend with your own custom frontend. 
+In this guide, we will show you how to create a basic movie database app to showcase the ease of integrating the 8base Backend with your own custom frontend. 
 
 
 ![Backend walkthrough](_images/backend-only-01.png )

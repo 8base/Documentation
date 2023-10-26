@@ -16,90 +16,96 @@
 const sidebars = {
   backendDocsSidebar: [
     {
-      type: 'doc',
-      id: 'console-readme',
-      label: 'Welcome',
-    },
-    {
       type: 'category',
       label: 'Introduction',
+      link: {
+        type: 'doc',
+        id: 'projects/introduction/index',
+      },
       items: [
-        'projects/introduction/what-is-8base',
+        'projects/introduction/01-what-is-8base',
         'projects/introduction/who-uses-8base',
-        'projects/introduction/quickstart',
-          
-        'projects/introduction/main-modules-and-capabilities',
-        'projects/introduction/projects',
-        'projects/introduction/backend-capabilities-overview',
-        'projects/introduction/frontend-capabilities-overview',
-        'projects/introduction/built-application-architecture',
-        'projects/introduction/using-8base-at-scale',
+        'projects/introduction/02-quickstart',
+        'projects/introduction/03-main-modules-and-capabilities',
+        'projects/introduction/04-projects',
+        'projects/introduction/05-backend-capabilities-overview',
+        'projects/introduction/06-frontend-capabilities-overview',
+        'projects/introduction/07-built-application-architecture',
+        'projects/introduction/08-using-8base-at-scale',
         // 'projects/introduction/navigating-our-docs',
-        'projects/introduction/developer-resources'
+        'projects/introduction/10-developer-resources',
       ],
     },
     {
       type: 'category',
       label: 'Getting Started',
+      link: {
+        type: 'doc',
+        id: 'projects/gettingstarted/gettingstarted-index',
+      },
       items: [
         {
           type: 'category',
           label: 'Walkthroughs',
+          link: {
+            type: 'doc',
+            id: 'projects/gettingstarted/walkthroughs',
+          },
           items: [
             'projects/gettingstarted/walkthroughs-fullstack',
             'projects/gettingstarted/walkthroughs-backend-movieapp',
-            'projects/gettingstarted/walkthroughs-frontend-movieapp',                               
-          ]
+            'projects/gettingstarted/walkthroughs-frontend-movieapp',
+          ],
         },
         {
           type: 'category',
           label: 'Jumpstart with Accelerators',
           link: {
-                  type: 'doc',
-                  id: 'projects/gettingstarted/jumpstart/jumpstart',
-                },
-            items: [
-              {
-                type: 'category',
-                label: 'Authentication Accelerator',
-                items: [
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',  
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/forgot-password',                             
-                ],
-              },
-              {
-                type: 'category',
-                label: 'User management accelerator',
-                items: [
-                    'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
-                    'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
-                    'projects/gettingstarted/jumpstart/user-management-accelerator/user-create',
-                    'projects/gettingstarted/jumpstart/user-management-accelerator/user-profile',
-                  ],
-              },
-              {
-                type: 'category',
-                label: 'Navigation Accelerator',
-                items: [
+            type: 'doc',
+            id: 'projects/gettingstarted/jumpstart/jumpstart',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Authentication Accelerator',
+              items: [
+                'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
+                'projects/gettingstarted/jumpstart/authentication-accelerator/login',
+                'projects/gettingstarted/jumpstart/authentication-accelerator/forgot-password',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'User management accelerator',
+              items: [
+                'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
+                'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
+                'projects/gettingstarted/jumpstart/user-management-accelerator/user-create',
+                'projects/gettingstarted/jumpstart/user-management-accelerator/user-profile',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Navigation Accelerator',
+              items: [
                 'projects/gettingstarted/jumpstart/navigation-accelerator/sidebar-control',
                 'projects/gettingstarted/jumpstart/navigation-accelerator/breadcrumbs-management',
-                ],
-              },            
-              {
-                type: 'category',
-                label: 'Theme Management Accelerator',
-                link: {
-                        type: 'doc',
-                        id: 'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-management',
-                      },
-                        items: [  
-                        'projects/gettingstarted/jumpstart/theme-management-accelerator/darkmode-support',                    
-                        'projects/gettingstarted/jumpstart/theme-management-accelerator/adaptable-components',
-                        'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-customization',                
-                        ],
-              },    
-            ],
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Theme Management Accelerator',
+              link: {
+                type: 'doc',
+                id: 'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-management',
+              },
+              items: [
+                'projects/gettingstarted/jumpstart/theme-management-accelerator/darkmode-support',
+                'projects/gettingstarted/jumpstart/theme-management-accelerator/adaptable-components',
+                'projects/gettingstarted/jumpstart/theme-management-accelerator/theme-customization',
+              ],
+            },
+          ],
         },
         {
           type: 'category',
@@ -112,25 +118,32 @@ const sidebars = {
             'projects/gettingstarted/common-tasks-configuring-role-based-access-control',
             'projects/gettingstarted/common-tasks-using-groups-and-aggregations-queries',
             'projects/gettingstarted/common-tasks-create-multiple-records-single-operation',
-            'projects/gettingstarted/common-tasks-extending-the-api', 
+            'projects/gettingstarted/common-tasks-extending-the-api',
             'projects/gettingstarted/common-tasks-implementing-pagination-api-queries',
-            'projects/gettingstarted/common-tasks-using-validating-forms', 
+            'projects/gettingstarted/common-tasks-using-validating-forms',
             'projects/gettingstarted/common-tasks-leveraging-navigation-events',
             'projects/gettingstarted/common-tasks-building-responsive-applications',
-            'projects/gettingstarted/common-tasks-real-time-applications',                   
-          ]
-        }
+            'projects/gettingstarted/common-tasks-real-time-applications',
+          ],
+        },
       ],
     },
     {
       type: 'category',
       label: 'Backend Development',
+      link: {
+        type: 'doc',
+        id: 'projects/backend/backend-index',
+      },
       items: [
         {
           type: 'category',
           label: 'Getting Started',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/getting-started-readme',
+          },
           items: [
-            'projects/backend/getting-started-readme',
             'projects/backend/getting-started-quick-start',
             'projects/backend/getting-started-connecting-to-api',
           ],
@@ -138,8 +151,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'Backend',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-readme',
+          },
           items: [
-            'projects/backend/8base-console-readme',
             'projects/backend/8base-console-teams',
             'projects/backend/8base-console-authentication',
             'projects/backend/8base-console-roles-and-permissions',
@@ -147,6 +163,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Tools',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/8base-console-platform-tools-readme',
+              },
               items: [
                 'projects/backend/8base-console-platform-tools-data-builder',
                 'projects/backend/8base-console-platform-tools-data-viewer',
@@ -155,6 +175,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Advanced',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/8base-console-platform-tools-advanced',
+                  },
                   items: [
                     'projects/backend/8base-console-platform-tools-advanced-advanced-introspection',
                   ],
@@ -168,13 +192,19 @@ const sidebars = {
         {
           type: 'category',
           label: 'GraphQL API',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-graphql-api-readme',
+          },
           items: [
-            'projects/backend/8base-console-graphql-api-readme',
             {
               type: 'category',
               label: 'Queries',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/8base-console-graphql-api-queries-readme',
+              },
               items: [
-                'projects/backend/8base-console-graphql-api-queries-readme',
                 'projects/backend/8base-console-graphql-api-queries-single-record-query',
                 'projects/backend/8base-console-graphql-api-queries-record-list-query',
                 'projects/backend/8base-console-graphql-api-queries-related-record-query',
@@ -189,8 +219,11 @@ const sidebars = {
             {
               type: 'category',
               label: 'Mutations',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/8base-console-graphql-api-mutations-readme',
+              },
               items: [
-                'projects/backend/8base-console-graphql-api-mutations-readme',
                 'projects/backend/8base-console-graphql-api-mutations-single-record-mutations',
                 'projects/backend/8base-console-graphql-api-mutations-related-record-mutations',
                 'projects/backend/8base-console-graphql-api-mutations-update-by-filter-mutations',
@@ -199,8 +232,11 @@ const sidebars = {
             {
               type: 'category',
               label: 'Subscriptions',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/8base-console-graphql-api-subscriptions-readme',
+              },
               items: [
-                'projects/backend/8base-console-graphql-api-subscriptions-readme',
                 'projects/backend/8base-console-graphql-api-subscriptions-simple-record-subscriptions',
                 'projects/backend/8base-console-graphql-api-subscriptions-complex-record-subscriptions',
                 'projects/backend/8base-console-graphql-api-subscriptions-client',
@@ -215,8 +251,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'Custom Functions',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-custom-functions-readme',
+          },
           items: [
-            'projects/backend/8base-console-custom-functions-readme',
             'projects/backend/8base-console-custom-functions-resolvers',
             'projects/backend/8base-console-custom-functions-triggers',
             'projects/backend/8base-console-custom-functions-webhooks',
@@ -227,20 +266,30 @@ const sidebars = {
         {
           type: 'category',
           label: 'Plugins and Integrations',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-plugins-integrations-readme',
+          },
           items: [
-            'projects/backend/8base-console-plugins-integrations-readme',
             'projects/backend/8base-console-plugins-integrations-salesforce',
           ],
         },
         {
           type: 'category',
           label: 'Local Development Environment',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/development-tools-dev-readme',
+          },
           items: [
             {
               type: 'category',
               label: 'Environment',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-dev-env-readme',
+              },
               items: [
-                'projects/backend/development-tools-dev-env-readme',
                 'projects/backend/development-tools-dev-env-project-structure',
                 'projects/backend/development-tools-dev-env-8base-yml',
                 'projects/backend/development-tools-dev-env-runtime-environment',
@@ -250,8 +299,11 @@ const sidebars = {
             {
               type: 'category',
               label: 'Command Line Interface (CLI)',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-cli-readme',
+              },
               items: [
-                'projects/backend/development-tools-cli-readme',
                 'projects/backend/development-tools-cli-commands',
                 'projects/backend/development-tools-cli-generators',
                 'projects/backend/development-tools-cli-ci-cd',
@@ -260,8 +312,11 @@ const sidebars = {
             {
               type: 'category',
               label: 'SDK',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-sdk-readme',
+              },
               items: [
-                'projects/backend/development-tools-sdk-readme',
                 'projects/backend/development-tools-sdk-api-readme',
                 'projects/backend/development-tools-sdk-auth-readme',
                 'projects/backend/development-tools-sdk-file-upload',
@@ -276,13 +331,19 @@ const sidebars = {
     {
       type: 'category',
       label: 'Frontend Development',
+      link: {
+        type: 'doc',
+        id: 'projects/frontend/frontend-index',
+      },
       items: [
-
         {
           type: 'category',
           label: 'Getting Started',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/getting-started-introduction',
+          },
           items: [
-            'projects/frontend/getting-started-introduction',
             'projects/frontend/getting-started-what-is-app-builder',
             'projects/frontend/getting-started-building-fullstack-gotomarket-apps-on-8base',
           ],
@@ -290,8 +351,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'Building Front-ends App Builder Walkthrough',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/building-frontends-app-builder-walkthrough-introduction',
+          },
           items: [
-            'projects/frontend/building-frontends-app-builder-walkthrough-introduction',
             'projects/frontend/building-frontends-app-builder-walkthrough-selecting-a-design-theme',
             'projects/frontend/building-frontends-app-builder-walkthrough-managing-app-pages',
             'projects/frontend/building-frontends-app-builder-walkthrough-dragging-and-dropping-components',
@@ -300,6 +364,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Data Binding',
+             // link: {
+             //   type: 'doc',
+             //   id: 'projects/frontend/data-binding',
+             // },
               items: [
                 'projects/frontend/data-binding-example-binding-request-to-table-component',
                 'projects/frontend/data-binding-example-binding-custom-entries-to-card-component',
@@ -313,11 +381,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'App Editor',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/app-editor-introduction',
+          },
           items: [
-            'projects/frontend/app-editor-introduction',
             {
               type: 'category',
               label: 'Understanding the App Builder Interface',
+             // link: {
+             //   type: 'doc',
+             //   id: 'projects/frontend/app-editor-understanding-the-app-builder-interface',
+            //  },
               items: [
                 'projects/frontend/app-editor-understanding-the-app-builder-interface-editor-header-menu-tools',
                 'projects/frontend/app-editor-understanding-the-app-builder-interface-editor-page-canvas',
@@ -332,16 +407,22 @@ const sidebars = {
         {
           type: 'category',
           label: 'Custom App Styling',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/custom-app-styling-introduction',
+          },
           items: [
-            'projects/frontend/custom-app-styling-introduction',
             'projects/frontend/custom-app-styling-understanding-the-app-builder-interface-using-a-css-design-framework',
             'projects/frontend/custom-app-styling-understanding-the-app-builder-interface-configurations-in-the-theme-editor',
             'projects/frontend/custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app',
             {
               type: 'category',
               label: 'Creating a Global App Theme',
+              link: {
+                type: 'doc',
+                id: 'projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction',
+              },
               items: [
-                'projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction',
                 'projects/frontend/custom-app-styling-creating-a-global-app-theme-exporting-importing-app-themes',
               ],
             },
@@ -352,13 +433,20 @@ const sidebars = {
         {
           type: 'category',
           label: 'Responsive Design in App Builder',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/responsive-design-in-app-builder-introduction',
+          },
           items: [
-            'projects/frontend/responsive-design-in-app-builder-introduction',
             'projects/frontend/responsive-design-in-app-builder-managing-media-query-definitions',
             'projects/frontend/responsive-design-in-app-builder-writing-custom-media-query-rules',
             {
               type: 'category',
               label: 'The Viewport',
+              // link: {
+              //  type: 'doc',
+              //  id: 'projects/frontend/responsive-design-in-app-builder-viewport',
+             // },
               items: [
                 'projects/frontend/responsive-design-in-app-builder-changing-the-viewport',
                 'projects/frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport',
@@ -372,6 +460,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Application Layouts',
+          // link: {
+          //  type: 'doc',
+          //  id: 'projects/frontend/application-layouts',
+         // },
           items: [
             'projects/frontend/application-layouts-creating-and-editing-layouts',
             // "projects/frontend/application-layouts-adding-nested-layouts"
@@ -380,13 +472,19 @@ const sidebars = {
         {
           type: 'category',
           label: 'App Navigation',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/app-navigation-introduction',
+          },
           items: [
-            'projects/frontend/app-navigation-introduction',
             {
               type: 'category',
               label: 'App Pages States and Settings',
+              link: {
+                type: 'doc',
+                id: 'projects/frontend/app-navigation-create-and-editing-app-pages',
+              },
               items: [
-                'projects/frontend/app-navigation-create-and-editing-app-pages',
                 'projects/frontend/app-navigation-create-and-editing-app-pages-page-url-settings',
                 'projects/frontend/app-navigation-create-and-editing-app-pages-access-states-for-routes',
                 'projects/frontend/app-navigation-create-and-editing-app-pages-using-url-parameters',
@@ -403,8 +501,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'App Components',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/app-components-introduction',
+          },
           items: [
-            'projects/frontend/app-components-introduction',
             'projects/frontend/app-components-customizing-app-builder-components',
             'projects/frontend/app-components-using-component-property-inputs',
             'projects/frontend/app-components-customizing-styling-on-components',
@@ -414,19 +515,27 @@ const sidebars = {
             {
               type: 'category',
               label: 'Components',
+              // link: {
+              //  type: 'doc',
+              // id: 'projects/frontend/app-components-components',
+              //},
               items: [
                 'projects/frontend/app-components-common-component-properties',
                 'projects/frontend/app-components-common-component-style-attributes',
                 //{
-                 // type: 'category',
-                 // label: 'Form Components',
-                 // items: [
-                 //   'projects/frontend/app-components-form-components-overview',
-                 // ],
-               // },
+                // type: 'category',
+                // label: 'Form Components',
+                // items: [
+                //   'projects/frontend/app-components-form-components-overview',
+                // ],
+                // },
                 {
                   type: 'category',
                   label: 'Layout Components',
+                //  link: {
+                //   type: 'doc',
+                //    id: 'projects/frontend/app-components-layout-components',
+                //  },
                   items: [
                     'projects/frontend/app-components-layout-components-async-content',
                     'projects/frontend/app-components-layout-components-card',
@@ -441,6 +550,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Control Components',
+                  // link: {
+                  // type: 'doc',
+                  // id: 'projects/frontend/app-components-control-components',
+                  // },
                   items: [
                     'projects/frontend/app-components-control-components-form-block',
                     'projects/frontend/app-components-control-components-autocomplete',
@@ -469,6 +582,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Data Components',
+                 // link: {
+                 //   type: 'doc',
+                 //    id: 'projects/frontend/app-components-data-components',
+                 //  },
                   items: [
                     'projects/frontend/app-components-data-components-looper',
                   ],
@@ -476,6 +593,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Other Components',
+                 // link: {
+                 //   type: 'doc',
+                 //   id: 'projects/frontend/app-components-other-components',
+                 //  },
                   items: [
                     'projects/frontend/app-components-other-components-accordion',
                     'projects/frontend/app-components-other-components-alert',
@@ -505,13 +626,20 @@ const sidebars = {
         {
           type: 'category',
           label: 'Connecting to Data Sources',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/connecting-to-data-sources-introduction',
+          },
           items: [
             'projects/frontend/connecting-to-data-sources-introduction',
             {
               type: 'category',
               label: 'Creating API Connections',
+              link: {
+                type: 'doc',
+                id: 'projects/frontend/connecting-to-data-sources-creating-api-connections',
+              },
               items: [
-                'projects/frontend/connecting-to-data-sources-creating-api-connections',
                 'projects/frontend/connecting-to-data-sources-creating-api-connections-connecting-to-an-8base-be-workspace',
                 'projects/frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-graphql-api',
                 'projects/frontend/connecting-to-data-sources-creating-api-connections-connecting-to-a-rest-api',
@@ -519,9 +647,12 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'How to Make API Calls (Requests)',
+              label: 'How to make API Calls (Requests)',
+              link: {
+                type: 'doc',
+                id: 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls',
+              },
               items: [
-                'projects/frontend/connecting-to-data-sources-how-to-make-api-calls',
                 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-graphql-query-mutation',
                 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls-how-to-execute-a-rest-api-call',
               ],
@@ -532,12 +663,19 @@ const sidebars = {
         {
           type: 'category',
           label: 'Data in the Frontend (State)',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/data-in-the-frontend-introduction',
+          },
           items: [
-            'projects/frontend/data-in-the-frontend-introduction',
             'projects/frontend/data-in-the-frontend-understanding-local-vs-global-state-objects',
             {
               type: 'category',
               label: 'Data scopes for App Builder Elements',
+//link: {
+             //   type: 'doc',
+             //   id: 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements',
+             // },
               items: [
                 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-layouts',
                 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-views',
@@ -555,20 +693,30 @@ const sidebars = {
         {
           type: 'category',
           label: 'Custom Frontend Logic',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/custom-frontend-logic-introduction',
+          },
           items: [
-            'projects/frontend/custom-frontend-logic-introduction',
             {
               type: 'category',
-              label: 'Creating Custom Frontend Functions',
+              label: 'Creating custom frontend functions',
+             // link: {
+             //   type: 'doc',
+            //   id: 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions-readme',
+             // },
               items: [
                 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions',
               ],
             },
             {
               type: 'category',
-              label: 'Calling Frontend Functions',
+              label: 'Calling frontend functions',
+              link: {
+                type: 'doc',
+                id: 'projects/frontend/custom-frontend-logic-calling-frontend-functions',
+              },
               items: [
-                'projects/frontend/custom-frontend-logic-calling-frontend-functions',
                 'projects/frontend/custom-frontend-logic-calling-a-function-from-an-event',
                 'projects/frontend/custom-frontend-logic-calling-a-function-from-a-callback',
                 'projects/frontend/custom-frontend-logic-calling-a-function-from-a-function',
@@ -580,8 +728,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'Triggering Events in the App',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/triggering-events-in-the-app-introduction',
+          },
           items: [
-            'projects/frontend/triggering-events-in-the-app-introduction',
             'projects/frontend/triggering-events-in-the-app-specifying-events-in-editor',
             'projects/frontend/triggering-events-in-the-app-managing-events-on-components-and-requests',
             'projects/frontend/triggering-events-in-the-app-triggering-events-in-custom-frontend-logic',
@@ -590,8 +741,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'Images and Files in App Builder',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/images-and-files-in-app-builder-introduction',
+          },
           items: [
-            'projects/frontend/images-and-files-in-app-builder-introduction',
             'projects/frontend/images-and-files-in-app-builder-uploading-an-image-or-file',
             'projects/frontend/images-and-files-in-app-builder-displaying-an-image-or-file-on-a-page',
             // "projects/frontend/images-and-files-in-app-builder-available-attributes-on-uploaded-files",
@@ -601,8 +755,11 @@ const sidebars = {
         {
           type: 'category',
           label: 'Publishing Apps',
+          link: {
+            type: 'doc',
+            id: 'projects/frontend/publishing-apps-introduction',
+          },
           items: [
-            'projects/frontend/publishing-apps-introduction',
             'projects/frontend/publishing-apps-making-an-app-public',
             'projects/frontend/publishing-apps-seeing-deployment-history',
             // "projects/frontend/publishing-apps-deployment-settings",
@@ -611,7 +768,7 @@ const sidebars = {
             // "projects/frontend/publishing-apps-publishing-apps-to-a-cdn"
           ],
         },
-          ],
+      ],
     },
   ],
 };

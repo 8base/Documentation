@@ -1,6 +1,5 @@
 ---
 id: 'responsive-design-in-app-builder-introduction'
-sidebar_label: 'Introduction'
 redirect_from: '/frontend/responsive-design-in-app-builder/introduction'
 slug: '/projects/frontend/responsive-design-in-app-builder/introduction'
 ---

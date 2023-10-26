@@ -1,5 +1,5 @@
 ---
-id: 'built-application-architecture'
+id: '07-built-application-architecture'
 sidebar_label: 'Built Application Architecture'
 slug: '/introduction/built-application-architecture'
 ---

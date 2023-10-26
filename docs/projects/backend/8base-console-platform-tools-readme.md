@@ -1,6 +1,5 @@
 ---
 id: '8base-console-platform-tools-readme'
-sidebar_label: 'Overview'
 redirect_from: '/backend/tools'
 slug: '/projects/backend/tools'
 ---

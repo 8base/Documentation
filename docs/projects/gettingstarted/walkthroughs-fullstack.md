@@ -5,7 +5,7 @@ slug: '/gettingstarted/walkthroughs/full-stack'
 ---
 # Building a Full-Stack App
 
-In this guide, we well build a simple full-stack application leveraging the "Jumpstart with accelerators" template. Make sure to follow the [quickstart](/introduction/quickstart) tutorial to provision your project
+In this guide, we will build a simple full-stack application leveraging the "Jumpstart with accelerators" template. Make sure to follow the [quickstart](/introduction/quickstart) tutorial to provision your project
 
 ## Configuring your Data Model
 From your project dashboard, open your backend. You can also go to the **Backend** section and open it from there. Once in the backend, open the **Data** module to configure your data schema.

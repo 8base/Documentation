@@ -1,6 +1,5 @@
 ---
 id: '8base-console-graphql-api-mutations-readme'
-sidebar_label: 'Overview'
 redirect_from: '/backend/graphql-api/mutations'
 slug: '/projects/backend/graphql-api/mutations'
 ---

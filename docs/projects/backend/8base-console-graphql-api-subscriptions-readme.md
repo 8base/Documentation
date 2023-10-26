@@ -1,6 +1,5 @@
 ---
 id: '8base-console-graphql-api-subscriptions-readme'
-sidebar_label: 'Overview'
 redirect_from: '/backend/graphql-api/subscriptions'
 slug: '/projects/backend/graphql-api/subscriptions'
 ---

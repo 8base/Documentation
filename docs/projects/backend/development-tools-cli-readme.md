@@ -1,11 +1,11 @@
 ---
 id: 'development-tools-cli-readme'
-sidebar_label: 'Overview'
+sidebar_label: 'Command Line Interface (CLI)'
 redirect_from: '/backend/development-tools/cli'
 slug: '/projects/backend/development-tools/cli'
 ---
 
-# CLI
+# Command Line Interface (CLI)
 
 The 8base Command Line Interface (CLI) makes it easy to generate custom functions and manage workspaces straight from the terminal. Run the following commands to get going!
 

@@ -1,5 +1,9 @@
-# Frontend capabilities overview
-
+---
+id: '06-frontend-capabilities-overview'
+sidebar_label: 'Frontend Capabilities Overview'
+slug: '/introduction/frontend-capabilities-overview'
+---
+# Frontend Capabilities Overview
 
 As a JavaScript developer, your journey towards creating dynamic applications is about to get a whole lot smoother. Welcome to App Builder, your one-stop solution for visual development and configuration. With App Builder, you're in full command, deciding how and where to implement your applications. Not only does it let you interact with a pseudo-live version of your application, but it also integrates the development, testing, and visualization into a single editor.
 
