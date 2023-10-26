@@ -158,9 +158,17 @@ body {
 }
 .menu__link {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   color: #7d828c;
+}
+
+p {
+  font-size: 16px;
+}
+
+main li {
+  font-size: 16px;
 }
 
 .btn_reaction {
