@@ -3,11 +3,10 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
@@ -27,9 +26,9 @@ body {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-color-base: #323c47;
   --ifm-pagination-nav-color-hover: #5eadf2;
-  --ifm-h1-font-size: 1.75rem;
-  --ifm-h2-font-size: 1.25rem;
-  --ifm-font-size-base: 0.875rem;
+  --ifm-h1-font-size: 40px;
+  --ifm-h2-font-size: 32px;
+  --ifm-font-size-base: 1rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -202,7 +201,7 @@ main li {
   text-transform: uppercase;
   font-weight: 600;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 13px;
   color: #a3afb7;
 }
 .toc_seprator {
@@ -226,7 +225,7 @@ main li {
   background-color: unset !important;
 }
 .table-of-contents__link {
-  font-size: 12px;
+  font-size: 13px;
   color: #323c47;
 }
 [data-theme='dark'] .table-of-contents__link {
@@ -237,6 +236,7 @@ main li {
 }
 .table-of-contents li a {
   padding-left: 16px;
+  font-size: 13px;
 }
 .table-of-contents__link.toc-highlight.table-of-contents__link--active {
   color: #4da1ff;
@@ -259,6 +259,10 @@ main li {
 }
 [data-theme='dark'] .toc-wrapper {
   background-color: #f1f5f7;
+}
+
+.theme-doc-markdown.markdown {
+  margin-top: 16px;
 }
 
 .flex {
@@ -374,7 +378,7 @@ main li {
 }
 
 .DocSearch-Button-Placeholder {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .signin {
@@ -389,7 +393,7 @@ main li {
   border-radius: 4px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 32px !important;
 }
 .signin:hover {
@@ -778,15 +782,15 @@ nav.menu {
 }
 
 .markdown h1:first-child {
-  font-size: 1.75rem;
+  font-size: 40px;
 }
 
 .markdown h2 {
-  font-size: 1.5rem;
+  font-size: 32px;
 }
 
 .markdown h3 {
-  font-size: 1.25rem;
+  font-size: 24px;
 }
 
 /* Algolia */
@@ -932,4 +936,8 @@ nav.menu {
 
 .DocSearch-Hit-Container:hover mark {
   color: var(--docsearch-hit-color) !important;
+}
+
+.breadcrumbs__link {
+  font-size: 13px;
 }
