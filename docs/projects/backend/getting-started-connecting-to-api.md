@@ -7,8 +7,6 @@ slug: '/projects/backend/getting-started/connecting-to-api'
 
 # Connecting to the API
 
-<YoutubePlayer src="https://www.youtube.com/embed/gLM-Fc6gWlE" />
-
 An 8base Workspace API is a single endpoint from which **all** data sources can be queried. Simply put, it's the single source of truth for an application's data.
 
 **Workspace Endpoint Anatomy**

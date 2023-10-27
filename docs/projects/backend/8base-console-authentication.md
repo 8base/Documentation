@@ -80,8 +80,6 @@ Under the hood, 8base utilizes [Amazon Cognito](https://aws.amazon.com/cognito/)
 
 ### 8base Authentication
 
-<YoutubePlayer src="https://www.youtube.com/embed/BTexF_yxrC0"/>
-
 To create an _Authentication Profile_, navigate to the `App Services > Authentication` and press the `+` button. The form that appears can be completed using the following fields.
 
 - **Name**: A name that describes what this profile does. In this sample case, you can replace My Auth in the screen shot above with a name like Guest User Auth.

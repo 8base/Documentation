@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from '@theme-original/Navbar/Logo';
 import Link from '@docusaurus/Link';
 
 export default function LogoWrapper(props) {
+  // This is to style the login button
+  useEffect(() => {
+    const anchor = document.querySelector(
+      'a.navbar__item.navbar__link.button.button--secondary.button--lg.signin'
+    );
+    if (anchor) {
+      const outerDiv = document.createElement('div');
+      outerDiv.style.backgroundColor = 'var(--ifm-navbar-background-color)';
+      outerDiv.style.padding = '5px 14px';
+      outerDiv.style.borderRadius = '100px';
+
+      const innerDiv = document.createElement('div');
+      innerDiv.textContent = 'Log into 8base';
+
+      outerDiv.appendChild(innerDiv);
+      anchor.appendChild(outerDiv);
+    }
+  }, []);
+
   return (
     <>
       <Logo {...props} />
@@ -12,9 +31,10 @@ export default function LogoWrapper(props) {
       >
         <span
           style={{
-            marginLeft: 2,
+            marginLeft: 4,
+            marginRight: 3,
             fontSize: 40,
-            lineHeight: 0.8,
+            lineHeight: 1,
             fontWeight: 100,
           }}
         >
