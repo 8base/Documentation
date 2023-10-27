@@ -443,6 +443,11 @@ h6 {
   font-weight: 600;
   font-size: 14px;
 }
+.navbar__item.navbar__link:not(
+    .navbar__items--right .navbar__item.navbar__link
+  ) {
+  top: 6px;
+}
 .navbar__brand {
   margin-left: 0 !important;
 }
@@ -969,4 +974,8 @@ nav.menu {
 
 [data-theme='dark'] .breadcrumbs__item:not(:last-child)::after {
   opacity: 1;
+}
+
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+  display: none;
 }
