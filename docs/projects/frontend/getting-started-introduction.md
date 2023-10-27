@@ -4,7 +4,7 @@ redirect_from: '/frontend/getting-started-introduction'
 slug: '/projects/frontend/getting-started-introduction'
 ---
 
-# App Builder Docs
+# Getting Started
 
 Learn how developers and teams can build, deploy, and evolve full-stack web applications using App Builder. Create great UX/UI experiences for user-facing and internal applications using App Builder's drag-and-drop components, and connect to REST APIs, GraphQL APIs, and other data sources, all while using intuitive UI tools and JavaScript.
 
@@ -26,10 +26,10 @@ Here is an overview of all the sections you can start diving in to on your journ
 8. [Data in the Frontend (State)](/projects/frontend/data-in-the-frontend-introduction.md)
 9. [Custom Frontend Logic](/projects/frontend/custom-frontend-logic-introduction.md)
 10. [Triggering Events in the App](/projects/frontend/triggering-events-in-the-app-introduction.md)
-11. Authenticating App Users - **Docs coming soon...**
+<!--11. Authenticating App Users - **Docs coming soon...** -->
 12. [Images and Files in App Builder](/projects/frontend/images-and-files-in-app-builder-introduction.md)
 13. [Publishing Apps](/projects/frontend/publishing-apps-introduction.md)
-14. Global App Settings - **Docs coming soon...**
+<!-- 14. Global App Settings - **Docs coming soon...** -->
 
 ## Next Steps
 

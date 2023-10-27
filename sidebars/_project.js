@@ -23,18 +23,17 @@ const sidebars = {
         id: 'projects/introduction/index',
       },
       items: [
-        'projects/introduction/what-is-8base',
+        'projects/introduction/01-what-is-8base',
         'projects/introduction/who-uses-8base',
-        'projects/introduction/quickstart',
-
-        'projects/introduction/main-modules-and-capabilities',
-        'projects/introduction/projects',
-        'projects/introduction/backend-capabilities-overview',
-        'projects/introduction/frontend-capabilities-overview',
-        'projects/introduction/built-application-architecture',
-        'projects/introduction/using-8base-at-scale',
+        'projects/introduction/02-quickstart',
+        'projects/introduction/03-main-modules-and-capabilities',
+        'projects/introduction/04-projects',
+        'projects/introduction/05-backend-capabilities-overview',
+        'projects/introduction/06-frontend-capabilities-overview',
+        'projects/introduction/07-built-application-architecture',
+        'projects/introduction/08-using-8base-at-scale',
         // 'projects/introduction/navigating-our-docs',
-        'projects/introduction/developer-resources',
+        'projects/introduction/10-developer-resources',
       ],
     },
     {
@@ -42,7 +41,7 @@ const sidebars = {
       label: 'Getting Started',
       link: {
         type: 'doc',
-        id: 'projects/gettingstarted/readme',
+        id: 'projects/gettingstarted/gettingstarted-index',
       },
       items: [
         {
@@ -134,7 +133,7 @@ const sidebars = {
       label: 'Backend Development',
       link: {
         type: 'doc',
-        id: 'projects/backend/readme',
+        id: 'projects/backend/backend-index',
       },
       items: [
         {
@@ -331,10 +330,10 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Frontend development',
+      label: 'Frontend Development',
       link: {
         type: 'doc',
-        id: 'projects/frontend/readme',
+        id: 'projects/frontend/frontend-index',
       },
       items: [
         {
@@ -365,10 +364,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Data Binding',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/data-binding',
-              },
+             // link: {
+             //   type: 'doc',
+             //   id: 'projects/frontend/data-binding',
+             // },
               items: [
                 'projects/frontend/data-binding-example-binding-request-to-table-component',
                 'projects/frontend/data-binding-example-binding-custom-entries-to-card-component',
@@ -390,10 +389,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Understanding the App Builder Interface',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/app-editor-understanding-the-app-builder-interface',
-              },
+             // link: {
+             //   type: 'doc',
+             //   id: 'projects/frontend/app-editor-understanding-the-app-builder-interface',
+            //  },
               items: [
                 'projects/frontend/app-editor-understanding-the-app-builder-interface-editor-header-menu-tools',
                 'projects/frontend/app-editor-understanding-the-app-builder-interface-editor-page-canvas',
@@ -444,10 +443,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'The Viewport',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/responsive-design-in-app-builder-viewport',
-              },
+              // link: {
+              //  type: 'doc',
+              //  id: 'projects/frontend/responsive-design-in-app-builder-viewport',
+             // },
               items: [
                 'projects/frontend/responsive-design-in-app-builder-changing-the-viewport',
                 'projects/frontend/responsive-design-in-app-builder-changing-the-viewport-setting-a-mobile-viewport',
@@ -461,10 +460,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Application Layouts',
-          link: {
-            type: 'doc',
-            id: 'projects/frontend/application-layouts',
-          },
+          // link: {
+          //  type: 'doc',
+          //  id: 'projects/frontend/application-layouts',
+         // },
           items: [
             'projects/frontend/application-layouts-creating-and-editing-layouts',
             // "projects/frontend/application-layouts-adding-nested-layouts"
@@ -516,10 +515,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Components',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/app-components-components',
-              },
+              // link: {
+              //  type: 'doc',
+              // id: 'projects/frontend/app-components-components',
+              //},
               items: [
                 'projects/frontend/app-components-common-component-properties',
                 'projects/frontend/app-components-common-component-style-attributes',
@@ -533,10 +532,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Layout Components',
-                  link: {
-                    type: 'doc',
-                    id: 'projects/frontend/app-components-layout-components',
-                  },
+                //  link: {
+                //   type: 'doc',
+                //    id: 'projects/frontend/app-components-layout-components',
+                //  },
                   items: [
                     'projects/frontend/app-components-layout-components-async-content',
                     'projects/frontend/app-components-layout-components-card',
@@ -551,10 +550,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Control Components',
-                  link: {
-                    type: 'doc',
-                    id: 'projects/frontend/app-components-control-components',
-                  },
+                  // link: {
+                  // type: 'doc',
+                  // id: 'projects/frontend/app-components-control-components',
+                  // },
                   items: [
                     'projects/frontend/app-components-control-components-form-block',
                     'projects/frontend/app-components-control-components-autocomplete',
@@ -583,10 +582,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Data Components',
-                  link: {
-                    type: 'doc',
-                    id: 'projects/frontend/app-components-data-components',
-                  },
+                 // link: {
+                 //   type: 'doc',
+                 //    id: 'projects/frontend/app-components-data-components',
+                 //  },
                   items: [
                     'projects/frontend/app-components-data-components-looper',
                   ],
@@ -594,10 +593,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Other Components',
-                  link: {
-                    type: 'doc',
-                    id: 'projects/frontend/app-components-other-components',
-                  },
+                 // link: {
+                 //   type: 'doc',
+                 //   id: 'projects/frontend/app-components-other-components',
+                 //  },
                   items: [
                     'projects/frontend/app-components-other-components-accordion',
                     'projects/frontend/app-components-other-components-alert',
@@ -673,10 +672,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Data scopes for App Builder Elements',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements',
-              },
+//link: {
+             //   type: 'doc',
+             //   id: 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements',
+             // },
               items: [
                 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-layouts',
                 'projects/frontend/data-in-the-frontend-data-scopes-for-app-builder-elements-views',
@@ -702,10 +701,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Creating custom frontend functions',
-              link: {
-                type: 'doc',
-                id: 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions-readme',
-              },
+             // link: {
+             //   type: 'doc',
+            //   id: 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions-readme',
+             // },
               items: [
                 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions',
               ],

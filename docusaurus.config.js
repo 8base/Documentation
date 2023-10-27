@@ -92,6 +92,11 @@ const config = {
             position: 'left',
             label: '8base.com',
           },
+          // {
+          //   to: '/changelog',
+          //   position: 'left',
+          //   label: 'Change Log',
+          // },
           {
             href: 'https://app.8base.com/auth/login',
             label: ' ',
