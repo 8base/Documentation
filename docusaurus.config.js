@@ -94,7 +94,7 @@ const config = {
           },
           {
             href: 'https://app.8base.com/auth/login',
-            label: 'Log into 8base',
+            label: ' ',
             position: 'right',
             className: 'button button--secondary button--lg signin',
           },

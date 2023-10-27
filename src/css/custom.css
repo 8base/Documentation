@@ -345,11 +345,19 @@ h6 {
 }
 .DocSearch-Button-Placeholder {
   color: rgba(255, 255, 255, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px !important;
 }
 .DocSearch-Search-Icon {
-  width: 17px;
-  height: 17px;
+  display: none;
 }
+.DocSearch-Button-Container::before {
+  content: url('/img/search.svg') !important;
+  height: 24px;
+  width: 24px;
+}
+
 [data-theme='light'] .DocSearch {
   --docsearch-text-color: #f5f6f7;
   --docsearch-container-background: rgba(9, 10, 17, 0.8);
@@ -392,24 +400,19 @@ h6 {
   );
 }
 
-.DocSearch-Button-Placeholder {
-  font-family: 'Poppins', sans-serif;
-}
-
 .signin {
   margin-left: 1rem;
   display: flex;
   padding-right: 0.8rem !important;
-  background-color: rgb(255, 42, 37);
+  background-image: linear-gradient(135deg, #ce4854, #5d93ff);
   text-decoration: none !important;
   border: none;
   color: white !important;
   height: 32px;
-  border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
+  border-radius: 100px;
   margin-left: 32px !important;
+  width: 133px;
+  padding-left: 1px !important;
 }
 .signin:hover {
   background-color: rgb(255, 42, 37) !important;
@@ -962,6 +965,21 @@ nav.menu {
 
 .DocSearch-Hit-Container:hover mark {
   color: var(--docsearch-hit-color) !important;
+}
+
+.DocSearch-Button-Keys {
+  top: 10px;
+}
+.DocSearch-Button-Key {
+  box-shadow: none !important;
+  top: 0 !important;
+}
+kbd {
+  padding-top: 4px !important;
+  background: #7d828c66 !important;
+}
+.DocSearch.DocSearch-Button {
+  height: 32px;
 }
 
 .breadcrumbs__link {
