@@ -596,10 +596,6 @@
     "to": "/projects/frontend/application-layouts/introduction"
   },
   {
-    "from": "/frontend/application-layouts",
-    "to": "/projects/frontend/application-layouts"
-  },
-  {
     "from": "/frontend/authenticating-app-users/calling-frontend-functions/introduction",
     "to": "/projects/frontend/authenticating-app-users/calling-frontend-functions/introduction"
   },
@@ -810,10 +806,6 @@
   {
     "from": "/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views",
     "to": "/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views"
-  },
-  {
-    "from": "/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements",
-    "to": "/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements"
   },
   {
     "from": "/frontend/data-in-the-frontend/getting-and-setting-state-data",

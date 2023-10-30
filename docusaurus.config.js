@@ -74,17 +74,32 @@ const config = {
           {
             to: '/',
             position: 'left',
-            label: 'Reference',
-            activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog"
+            label: 'Documentation',
+            // activeBaseRegex: `^(?!/changelog)`, // This regex means "all paths except for /changelog"
           },
           {
-            to: '/changelog',
+            href: 'https://www.8base.com/8base-academy',
             position: 'left',
-            label: 'Change Log',
+            label: 'Academy',
           },
+          {
+            href: 'https://community.8base.com/',
+            position: 'left',
+            label: 'Community',
+          },
+          {
+            href: 'https://www.8base.com/',
+            position: 'left',
+            label: '8base.com',
+          },
+          // {
+          //   to: '/changelog',
+          //   position: 'left',
+          //   label: 'Change Log',
+          // },
           {
             href: 'https://app.8base.com/auth/login',
-            label: 'Go to 8base Dashboard',
+            label: ' ',
             position: 'right',
             className: 'button button--secondary button--lg signin',
           },
