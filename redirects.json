@@ -588,10 +588,6 @@
     "to": "/projects/frontend/app-navigation/introduction"
   },
   {
-    "from": "/frontend/application-layouts/adding-nested-layouts",
-    "to": "/projects/frontend/application-layouts/adding-nested-layouts"
-  },
-  {
     "from": "/frontend/application-layouts/creating-and-editing-layouts",
     "to": "/projects/frontend/application-layouts/creating-and-editing-layouts"
   },
@@ -1006,5 +1002,37 @@
   {
     "from": "/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic",
     "to": "/projects/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic"
+  },
+  {
+    "from": "/gettingstarted/commontasks/building-responsive-applications",
+    "to": "/gettingstarted/commontasks/building-responsive-applications"
+  },
+  {
+    "from": "/gettingstarted/commontasks/create-multiple-records-single-operation",
+    "to": "/gettingstarted/commontasks/create-multiple-records-single-operation"
+  },
+  {
+    "from": "/gettingstarted/commontasks/extending-the-api",
+    "to": "/gettingstarted/commontasks/extending-the-api"
+  },
+  {
+    "from": "/gettingstarted/commontasks/implementing-pagination-api-queries",
+    "to": "/gettingstarted/commontasks/implementing-pagination-api-queries"
+  },
+  {
+    "from": "/gettingstarted/commontasks/index",
+    "to": "/gettingstarted/commontasks"
+  },
+  {
+    "from": "/gettingstarted/commontasks/leveraging-navigation-events",
+    "to": "/gettingstarted/commontasks/leveraging-navigation-events"
+  },
+  {
+    "from": "/gettingstarted/commontasks/real-time-applications",
+    "to": "/gettingstarted/commontasks/real-time-applications"
+  },
+  {
+    "from": "/gettingstarted/commontasks/using-validating-forms",
+    "to": "/gettingstarted/commontasks/using-validating-forms"
   }
 ]
