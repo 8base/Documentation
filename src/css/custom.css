@@ -1006,3 +1006,7 @@ a[target='_blank'] > svg {
 .navbar__item.navbar__link.button.button--secondary.button--lg.signin {
   transition: all 0.3s;
 }
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-styles-module {
+  border-right: 1px solid var(--ifm-toc-border-color);
+}
