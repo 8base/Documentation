@@ -13,6 +13,7 @@ export default function LogoWrapper(props) {
       outerDiv.style.backgroundColor = 'var(--ifm-navbar-background-color)';
       outerDiv.style.padding = '5px 14px';
       outerDiv.style.borderRadius = '100px';
+      outerDiv.className = 'login';
 
       const innerDiv = document.createElement('div');
       innerDiv.textContent = 'Log into 8base';
