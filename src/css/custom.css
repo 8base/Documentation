@@ -1007,6 +1007,6 @@ a[target='_blank'] > svg {
   transition: all 0.3s;
 }
 
-.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-styles-module {
+aside > div > div {
   border-right: 1px solid var(--ifm-toc-border-color);
 }
