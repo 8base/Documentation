@@ -1,11 +1,11 @@
 ---
 id: 'app-editor-introduction'
-sidebar_label: 'Introduction'
+sidebar_label: 'App Editor'
 redirect_from: '/frontend/app-editor/introduction'
 slug: '/projects/frontend/app-editor/introduction'
 ---
 
-# Introduction
+# App Editor
 
 ![App Editor](./_images/ab-editor-header-menu-1.png)
 

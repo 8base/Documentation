@@ -1,10 +1,11 @@
 ---
 id: 'getting-started-readme'
+sidebar_label: 'Getting Started'
 redirect_from: '/backend/getting-started'
 slug: '/projects/backend/getting-started'
 ---
 
-# Overview
+# Getting Started
 
 **8base** is a Backend-as-a-Service. It lets front-end developers focus more on what they love and back-end developers expedite their work-flow. As our CEO likes to say, "it's totally awesome!"
 

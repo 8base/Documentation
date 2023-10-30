@@ -1,10 +1,11 @@
 ---
 id: 'building-frontends-app-builder-walkthrough-introduction'
+sidebar_label: 'Building Frontends App Builder Walkthrough'
 redirect_from: '/frontend/building-frontends-app-builder-walkthrough/introduction'
 slug: '/projects/frontend/building-frontends-app-builder-walkthrough/introduction'
 ---
 
-# Introduction
+# Building Frontends App Builder Walkthrough
 
 ![App Builder Editor interface](./_images/app-builder-editor-1.png)
 
