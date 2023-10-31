@@ -7,6 +7,6 @@ slug: '/projects/backend/console/advanced'
 
 # Advanced
 
-Learn more about advanced backend tooling. 
+8base offers advanced backend features that help developers interact with their schemas.
 
-- [Advanced Introspection](8base-console-platform-tools-advanced-advanced-introspection.md)
+- [Advanced Introspection](8base-console-platform-tools-advanced-advanced-introspection.md): Learn about how GraphQL Introspection allows you to query the database system to understand the operations you can perform on your schema.

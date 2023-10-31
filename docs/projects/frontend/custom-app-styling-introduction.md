@@ -1,10 +1,11 @@
 ---
 id: 'custom-app-styling-introduction'
+sidebar_label: 'Custom App Styling'
 redirect_from: '/frontend/custom-app-styling/introduction'
 slug: '/projects/frontend/custom-app-styling/introduction'
 ---
 
-# Introduction
+# Custom App Styling
 
 App Builder makes it easy to customize the look and feel of your apps. Using existing CSS Design Frameworks, you can create unique and consistent app designs without having to start from scratch.
 

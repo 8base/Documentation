@@ -1,6 +1,6 @@
 ---
 id: 'data-in-the-frontend-data-scopes-for-app-builder-elements-resource'
-sidebar_label: 'Resource'
+sidebar_label: 'Resources'
 redirect_from: '/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/resource'
 slug: '/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/resource'
 ---

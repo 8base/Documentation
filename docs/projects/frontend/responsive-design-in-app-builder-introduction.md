@@ -1,10 +1,11 @@
 ---
 id: 'responsive-design-in-app-builder-introduction'
+sidebar_label: 'Responsive Design'
 redirect_from: '/frontend/responsive-design-in-app-builder/introduction'
 slug: '/projects/frontend/responsive-design-in-app-builder/introduction'
 ---
 
-# Responsive Design Introduction
+# Responsive Design
 
 This document describes how responsive design works in App Builder.
 

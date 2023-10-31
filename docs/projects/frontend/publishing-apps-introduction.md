@@ -1,10 +1,11 @@
 ---
 id: 'publishing-apps-introduction'
+sidebar_label: 'Publishing Apps'
 redirect_from: '/frontend/publishing-apps/introduction'
 slug: '/projects/frontend/publishing-apps/introduction'
 ---
 
-# Introduction
+# Publishing Apps
 
 This article describes how App Builder compiles, builds, and deploys apps to make them publically available.
 
