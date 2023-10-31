@@ -145,7 +145,7 @@ const sidebars = {
                     id: 'projects/8basehome/projects-index',
                     },
                 items: [
-                  'projects/8basehome/project-dashboard-walkthrough.md',                  
+                  'projects/8basehome/project-dashboard-walkthrough',                  
                 ],
               },            
             ],
