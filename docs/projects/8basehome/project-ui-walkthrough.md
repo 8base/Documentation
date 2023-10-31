@@ -1,6 +1,6 @@
 ---
-id: 'project-ui-walkthrough'
-sidebar_label: 'Project UI Walkthrough'
+id: 'project-dashboard-walkthrough'
+sidebar_label: 'Dashboard Walkthrough'
 slug: '/projects/project-ui-walkthrough'
 ---
 # Project UI Walkthrough

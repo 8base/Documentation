@@ -76,7 +76,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'User management accelerator',
+              label: 'User Management Accelerator',
               items: [
                 'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
                 'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
@@ -128,6 +128,32 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: '8base Home',
+      link: {
+             type: 'doc',
+             id: 'projects/gettingstarted/gettingstarted-index',
+            },
+          items: [       
+              'projects/gettingstarted/walkthroughs',                
+              {
+              type: 'category',
+              label: 'Projects',
+              link: {
+                    type: 'doc',
+                    id: 'projects/gettingstarted/jumpstart/jumpstart',
+                    },
+                items: [
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',             
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',
+                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',
+                ],
+              },            
+            ],
+        },         
     {
       type: 'category',
       label: 'Backend Development',
