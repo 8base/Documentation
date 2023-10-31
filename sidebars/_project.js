@@ -136,16 +136,21 @@ const sidebars = {
              id: 'projects/8basehome/8basehome-index',
             },
           items: [       
-              'projects/8basehome/creating-projects',                
+              'projects/8basehome/projects/creating-projects',                
               {
               type: 'category',
               label: 'Projects',
               link: {
                     type: 'doc',
-                    id: 'projects/8basehome/projects-index',
+                    id: 'projects/8basehome/projects/projects-index',
                     },
                 items: [
-                  'projects/8basehome/project-dashboard-walkthrough',                  
+                  'projects/8basehome/projects/projects-dashboard-walkthrough',
+                  'projects/8basehome/projects/projects-backend-ui',
+                  'projects/8basehome/projects/projects-frontend-ui',
+                  'projects/8basehome/projects/projects-team-management',
+                  'projects/8basehome/projects/projects-billing', 
+                  'projects/8basehome/projects/projects-settings',                   
                 ],
               },            
             ],
