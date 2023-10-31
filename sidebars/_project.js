@@ -133,23 +133,19 @@ const sidebars = {
       label: '8base Home',
       link: {
              type: 'doc',
-             id: 'projects/gettingstarted/gettingstarted-index',
+             id: 'projects/8basehome/8basehome-index',
             },
           items: [       
-              'projects/gettingstarted/walkthroughs',                
+              'projects/8basehome/creating-projects',                
               {
               type: 'category',
               label: 'Projects',
               link: {
                     type: 'doc',
-                    id: 'projects/gettingstarted/jumpstart/jumpstart',
+                    id: 'projects/8basehome/projects-index',
                     },
                 items: [
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/signup',
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',             
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',
-                  'projects/gettingstarted/jumpstart/authentication-accelerator/login',
+                  'projects/8basehome/project-dashboard-walkthrough.md',                  
                 ],
               },            
             ],

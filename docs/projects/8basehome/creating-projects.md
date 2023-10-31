@@ -1,9 +1,9 @@
 ---
-id: 'provisioning-projects'
-sidebar_label: 'Provisioning Projects'
-slug: '/projects/provisioning-projects'
+id: 'creating-projects'
+sidebar_label: 'Creating a Project'
+slug: '/8basehome/creating-projects'
 ---
-# Provisioning Projects
+# Creating a Project
 Provisioning projects in 8base can be done in a few simple steps and allows you to set up Full-Stack or Backend-Only projects in seconds.
 _______
 

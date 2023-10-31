@@ -1,9 +1,9 @@
 ---
 id: 'project-dashboard-walkthrough'
 sidebar_label: 'Dashboard Walkthrough'
-slug: '/projects/project-ui-walkthrough'
+slug: '/8basehome/project-ui-walkthrough'
 ---
-# Project UI Walkthrough
+# Dashboard Walkthrough
 This article walks you through the features accessible on the *Project Dashboard*.
 _______
 
