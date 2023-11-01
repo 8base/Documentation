@@ -5,8 +5,7 @@ slug: '/8basehome/projects/projects-billing'
 ---
 # Project Billing
 
-#### Quotas
-The project dashboard's *Quotas* area provides usage data and limits on different aspects of your project, such as the environment limit, number of team members, client user apps, and database rows. You can also access your *Billing* information.
+The Project Dashboard's *Quotas* area provides usage data and limits on different aspects of your project, such as the environment limit, number of team members, client user apps, and database rows. You can also access your *Billing* information.
 
 ![Quotas](./_images/projects-project-ui-walkthrough-quotas.png)
 
@@ -22,7 +21,7 @@ Click the "Change Plan" button in the Project Usage section to change your payme
 
 Click "View" next to your current statement in the Billing History section to view a copy of your bill. A PDF of your bill opens in a new browser tab.
 
-#### Current Plan
+## Current Plan
 If you want to change your current plan, click on the "Change" link on the project dashboard next to the *Current Plan* heading. A pop-up opens and displays the available plans and your existing plan.
 
 ![Current Plan](./_images/projects-project-ui-walkthrough-plan.png)
