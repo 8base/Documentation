@@ -147,7 +147,17 @@ const sidebars = {
                 items: [
                   'projects/8basehome/projects/projects-dashboard-walkthrough',
                   'projects/8basehome/projects/projects-backend-ui',
-                  'projects/8basehome/projects/projects-frontend-ui',
+                    {
+                      type: 'category',
+                      label: 'Frontend',
+                      link: {
+                          type: 'doc',
+                          id: 'projects/8basehome/projects/projects-frontend-ui',
+                          },
+                        items: [
+                        'projects/8basehome/projects/projects-frontend-creation',
+                        ],
+                    },
                   'projects/8basehome/projects/projects-team-management',
                   'projects/8basehome/projects/projects-billing', 
                   'projects/8basehome/projects/projects-settings',                   
