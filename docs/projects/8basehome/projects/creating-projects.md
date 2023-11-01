@@ -1,14 +1,12 @@
 ---
-id: 'provisioning-projects'
-sidebar_label: 'Provisioning Projects'
-slug: '/projects/provisioning-projects'
+id: 'creating-projects'
+sidebar_label: 'Creating a Project'
+slug: '/8basehome/creating-projects'
 ---
-# Provisioning Projects
+# Creating a Project
 Provisioning projects in 8base can be done in a few simple steps and allows you to set up Full-Stack or Backend-Only projects in seconds.
-_______
 
-## Creating a Project
-After you login, the *My Projects* page loads and displays a list of all your projects. This page will be blank if you have not yet created any projects. 
+After you login, the **My Projects** page loads and displays a list of all your projects. This page will be blank if you have not yet created any projects. 
 
 ![My Projects](./_images/projects-provisioning-projects-my-projects.png)
 
@@ -17,16 +15,16 @@ Before creating your first project, you should set up your payment details. You 
 :::
 
 To create a new project:
-+ Click "Create Project" in the upper left corner of the My Projects page.
-+ A new pop-up opens for you to enter your project details.
-+ Enter a unique name for your project.
-+ Choose your AWS region, either East or West.
-+ Check the "Add Integrated Authentication" box if your project requires authentication.
-+ Choose your project type:
+1. Click "Create Project" in the upper left corner of the My Projects page.
+2. A new pop-up opens for you to enter your project details.
+3. Enter a unique name for your project.
+4. Choose your AWS region, either East or West.
+5. Check the "Add Integrated Authentication" box if your project requires authentication.
+6. Choose your project type:
     + Full-Stack - frontend and backend workspaces will be created.
     + Backend-Only - only a backend workspace will be created.
-+ Choose your payment plan.
-+ Click the "Create" button.
+7. Choose your payment plan.
+8. Click the "Create" button.
 
 ![Create a Project](./_images/projects-provisioning-projects-create-project.png)
 

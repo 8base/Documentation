@@ -1,10 +1,11 @@
 ---
 id: 'data-in-the-frontend-introduction'
+sidebar_label: 'Data in the Frontend'
 redirect_from: '/frontend/data-in-the-frontend/introduction'
 slug: '/projects/frontend/data-in-the-frontend/introduction'
 ---
 
-# Introduction
+# Data in the Frontend
 
 This article describes how developers can store and access data in their front-end applications and manage the state.
 

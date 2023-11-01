@@ -1,5 +1,6 @@
 ---
 id: 'getting-started-introduction'
+sidebar_label: 'Getting Started'
 redirect_from: '/frontend/getting-started-introduction'
 slug: '/projects/frontend/getting-started-introduction'
 ---

@@ -30,6 +30,8 @@ export default function DocSidebar(props) {
           }
 
           // For level 2 or deeper, add styles
+          if (!selectedElement?.parentElement?.nextElementSibling?.children)
+            return;
           const elements = Array.from(
             selectedElement.parentElement.nextElementSibling.children
           );
@@ -37,6 +39,7 @@ export default function DocSidebar(props) {
             element.querySelector('a').classList.add('sibling-style');
           });
         } else {
+          if (!selectedElement.parentElement.parentElement.children) return;
           const siblingElements = Array.from(
             selectedElement.parentElement.parentElement.children
           );

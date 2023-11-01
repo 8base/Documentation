@@ -1,10 +1,11 @@
 ---
 id: 'images-and-files-in-app-builder-introduction'
+sidebar_label: 'Images and Files in App Builder'
 redirect_from: '/frontend/images-and-files-in-app-builder/introduction'
 slug: '/projects/frontend/images-and-files-in-app-builder/introduction'
 ---
 
-# Introduction
+# Images and Files in App Builder
 
 This article describes how developers handle _Static Assets_ in App Builder
 
