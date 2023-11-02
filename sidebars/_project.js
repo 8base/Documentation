@@ -215,7 +215,6 @@ const sidebars = {
             id: 'projects/backend/8base-console-readme',
           },
           items: [
-            'projects/backend/8base-console-teams',
             'projects/backend/8base-console-authentication',
             'projects/backend/8base-console-roles-and-permissions',
             'projects/backend/8base-console-handling-files',

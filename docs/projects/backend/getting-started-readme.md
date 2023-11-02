@@ -22,7 +22,7 @@ When using 8base, your project benefits from having:
 Every 8base Workspace contains of the following components:
 
 1. **Schema**: A Schema represents the shape of your application data and specifies what data a client application can query from your API, as well as how to manipulate it.
-2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Team Members](/projects/backend/teams), Users, [Roles & Permissions](/projects/backend/roles-and-permissions), and [Files](/projects/backend/handling-files).
+2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Project Team Management](../8basehome/projects/projects-team-management.md), Users, [Roles & Permissions](/projects/backend/roles-and-permissions), and [Files](/projects/backend/handling-files).
 3. **User Data**: All the unique data resources (tables, records, etc) that are specific to your application.
 4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/projects/backend/authentication) is implemented through [Authentication Profiles](/projects/backend/authentication#authentication-types), while [Authorization](/projects/backend/roles-and-permissions) uses the roles and permissions system.
 5. **Workspace Users**: 8base users with access to your Workspace through the console.
