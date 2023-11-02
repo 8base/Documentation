@@ -7,8 +7,8 @@ slug: '/8basehome/organizations/organizations-team-management'
 
 Managing team members in an organization offers more granular control than at the project level. You can give team members different access rights in different projects, and even in different backend environments in the same project.
 
-## Pre-defined Organization Roles
-There are some pre-defined roles in 8base:
+## Predefined Organization Roles
+There are predefined roles in 8base:
 
 -   **Owner**: Has access to everything. The Owner is usually the creator of the organization. 
 :::note

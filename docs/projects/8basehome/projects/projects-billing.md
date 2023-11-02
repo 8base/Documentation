@@ -15,9 +15,9 @@ This area shows your current payment method.
 
 ### Updating your Payment Method
 
-Click the **Update** button in the **Payment Methods** section to update your payment details. A dialog box opens to allow you to change your payment details.
-
+1. Click the **Update** button in the **Payment Methods** section to update your payment details. A dialog box opens.
 ![Payment Details](./_images/projects-project-ui-walkthrough-billing-payment-details.png)
+2. Fill in the form and click **Submit Changes**. For security purposes, the form will always be blank, and will not contain your previous payment information.
 
 ## Project Usage
 

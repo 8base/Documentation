@@ -78,7 +78,7 @@ The **Backend** link opens a page with information about your backend, such as t
 For more information, see [Backend](projects-backend-ui.md).
 
 ### Frontends
-The **Frontends** link opens a page listing your frontends and deployment information for each frontend. Click the **Open** button on one of your listed frontends to open your frontend in the App Builder. 
+The **Frontends** link opens a page listing your frontends and deployment information for each frontend.  
 
 For more information, see [Frontend](projects-frontend-ui.md).
 

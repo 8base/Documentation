@@ -16,15 +16,12 @@ You can open the Team Management page from the Project Dashboard. If you are a p
 
 ## Inviting Team Members
 
-To add a new team member, click the **Add a Team Member** button.
-
+To add a new team member:
+1. Click the **Add a Team Member** button. A dialog box opens.
 ![Add Team Member](./_images/projects-project-ui-walkthrough-team-add-member.png)
-
-Complete the form in the dialog box and click **Send Invite**. A notification displays, indicating the cost for adding a new team member.
-
+2. Complete the form in the dialog box and click **Send Invite**. A notification displays, indicating the cost for adding a new team member.
 ![Team Member Notification](./_images/projects-project-ui-walkthrough-team-add-member-notification.png)
-
-Click **Continue** to send the invitation. A confirmation message at the bottom of the page indicates the invitation was sent. Click **Cancel** to cancel adding the team member and close the dialog box.
+3. Click **Continue** to send the invitation. A confirmation message at the bottom of the page indicates the invitation was sent. 
 
 The next time you login and view the **Team** page, the new team member's name will be listed. 
 
@@ -32,24 +29,27 @@ Team members who have not accepted an invitation have a status of **Pending**. I
 
 ## Managing Team Members
 
-Team members can be updated and removed by clicking the *...** menu next to their **Status** column. Updating a team member's roles will effect their permissions within the project. Deleting a team member will **only** disassociate a developer from the current project. Their 8base developer account will remain intact.
+Team members can be updated and removed by clicking the **...** menu next to their **Status** column. Updating a team member's roles will affect their permissions within the project. 
+:::note
+Deleting a team member will **only** disassociate a developer from the current project. Their 8base developer account will remain intact.
+:::
 
 ## Team Member Roles and Permissions
 
 For information about creating new roles and managing permissions, see [Roles and Permissions](../../backend/8base-console-roles-and-permissions.md).
 
-## Difference Between Team Members and App Users
+## Differences between Team Members and App Users
 
 There are two types of user-related records in 8base. The first one is called _Team Member Record_ and is created when a Team Member is invited to a workspace. The second one is _User Record_ which is related to the actual client app User who signs-up (registers) for the application you build.
 
-This is an important distinction to be understood. The roles assigned to the _Team Member_ determine which permissions the developer has within the Project. The roles assigned to the _User_ determine which permissions the developer has within the application being built.
+This is an important distinction. The roles assigned to the _Team Member_ determine which permissions the developer has within the project. The roles assigned to the _User_ determine which permissions the developer has within the application being built.
 
 If the developer wants to test the application as if their account only had the "Guest" role, they can do so by updating their _User Record_ with the desired role. However, only the project administrator is able to update and edit roles belonging to _Team Members_.
 
 
 ## Troubleshooting
 
-### 1: The invitation link you clicked is for another account!
+### The invitation link you clicked is for another account!
 
 Existing 8base developers may already be logged in when accepting an invitation to join another workspace. **If the logged in account's email address is different than that which the invitation was sent to, the invitation will fail**. 
 

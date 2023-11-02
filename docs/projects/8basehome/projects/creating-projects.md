@@ -23,7 +23,7 @@ For more information about projects, see [Projects](../../introduction/04-projec
 
 ## Creating a Project 
 
-After you login, the **My Projects** page loads and displays a list of all your projects. This page will be blank if you have not  created any projects. 
+After you log in, the **My Projects** page loads and displays a list of all your projects. This page will be blank if you have not  created any projects. 
 
 ![My Projects](./_images/projects-provisioning-projects-my-projects.png)
 
@@ -33,7 +33,7 @@ Before creating your first project, you should set up your payment details. Othe
 
 To create a new project:
 1. Click **Create Project** in the upper left corner of the **My Projects** page.
-2. A dialog box opens for you to enter your project details.
+2. A dialog box opens.
 ![Create new project dialog box](_images/ui-creating-projects-create-dialog.png)
 3. Enter a unique name for your project.
 4. Choose your AWS region, either East or West. It is a best practice to choose a region that is geographically close to your users. This reduces latency, because data reaches the users more quickly.
@@ -52,7 +52,7 @@ Once your project is created the dialog box closes and you are redirected to you
 
 ![Project Dashboard](./_images/projects-provisioning-projects-project-dashboard.png)
 
-To learn about the Project Dashboard interface, see [Dashboard Walkthrough](docs/projects/8basehome/projects/projects-dashboard-walkthrough.md).
+To learn about the Project Dashboard interface, see [Project Dashboard Walkthrough](projects-dashboard-walkthrough.md).
 
 ## Related Articles
 
