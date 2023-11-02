@@ -1,9 +1,9 @@
 ---
 id: 'projects-settings'
-sidebar_label: 'Settings'
+sidebar_label: 'Project Settings'
 slug: '/8basehome/projects/projects-settings'
 ---
-# Settings
+# Project Settings
 
 On the **Settings** page, you can change your project name, description, and icon. You can also delete the project.
 
@@ -11,7 +11,7 @@ When you change the name or description, remember to click **Save**.
 
 ![Settings](./_images/projects-project-ui-walkthrough-settings.png)
 
-Click the folder icon on the right to change your project icon. A **File Open** dialog opens that allows you to select a new icon.
+Click the project icon on the right to change the icon. If you have never added an icon, a blank folder will display. A dialog box opens that allows you to select a new icon.
 
 ![Project Icon](./_images/projects-project-ui-walkthrough-settings-project-icon.png)
 

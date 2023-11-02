@@ -1,9 +1,9 @@
 ---
 id: 'creating-projects'
-sidebar_label: 'Creating Projects'
+sidebar_label: 'Creating a New Project'
 slug: '/8basehome/creating-projects'
 ---
-# Creating Projects
+# Creating a New Project
 
 A project is the container or workspace where you can develop and manage your applications. You can set up Full-Stack or Backend-Only project. 
 

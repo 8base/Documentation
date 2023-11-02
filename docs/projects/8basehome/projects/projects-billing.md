@@ -15,13 +15,9 @@ This area shows your current payment method.
 
 ### Updating your Payment Method
 
-Click the **Update** button in the **Payment Methods** section to update your payment details. A pop-up opens to allow you to change your payment details.
+Click the **Update** button in the **Payment Methods** section to update your payment details. A dialog box opens to allow you to change your payment details.
 
 ![Payment Details](./_images/projects-project-ui-walkthrough-billing-payment-details.png)
-
-Click the **Change Plan** button in the Project Usage section to change your payment plan. A pop-up opens that walks you through the steps of changing your plan.
-
-Click **View** next to your current statement in the Billing History section to view a copy of your bill. A PDF of your bill opens in a new browser tab.
 
 ## Project Usage
 
@@ -45,4 +41,4 @@ Your payment will be processed, the project dashboard will reload, and your new 
 This section shows an estimate of how much you will owe on your next bill, based on your current month-to-date usage after credits and prepayments.
 
 ## Billing History
-This section shows a table with your past bills.
+This section shows a table with your past bills. Click **View** next to your current statement in the Billing History section to view a copy of your bill. A PDF of your bill opens in a new browser tab.
