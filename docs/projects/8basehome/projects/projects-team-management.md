@@ -1,9 +1,9 @@
 ---
 id: 'projects-team-management'
-sidebar_label: 'Team Management'
+sidebar_label: 'Project Team Management'
 slug: '/8basehome/projects/projects-team-management'
 ---
-# Team Management
+# Project Team Management
 
 Team Members are individuals who work together to develop applications in 8base. Their roles define permissions within the 8base Project Dashboard.
 
