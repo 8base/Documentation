@@ -9,6 +9,6 @@ Organizations are for larger agencies and enterprises who work across multiple p
    
 This section contains:
 
-- [Organization Settings](organizations-overview.md): Learn about your organization's settings, such as name, description, and icon.
+- [Organization Overview](organizations-overview.md): Learn about the Organization Home, and how to change the Organization name, description, and icon. 
 - [Organization Team Management](organizations-team-management.md): Learn about inviting and managing team members in an organization.
 - [Organization Billing](organizations-billing.md): Learn how to view and manage your organization's payment details and plans.

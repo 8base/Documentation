@@ -1,9 +1,9 @@
 ---
 id: 'projects-settings'
-sidebar_label: 'Settings'
+sidebar_label: 'Project Settings'
 slug: '/8basehome/projects/projects-settings'
 ---
-# Settings
+# Project Settings
 
 On the **Settings** page, you can change your project name, description, and icon. You can also delete the project.
 
