@@ -27,7 +27,7 @@ There is a difference between Users and Team Members in 8base:
 -   **Users** are individuals who sign-up for the application you have built. Their roles determine permissions within the application.
 
 
-For an in-depth understanding, refer to [Teams](../backend/8base-console-teams.md) and [Users](../backend/8base-console-platform-tools-users.md).
+For an in-depth understanding, refer to [Project Team Management](../8basehome/projects/projects-team-management.md) and [Users](../backend/8base-console-platform-tools-users.md).
 
 ## Setting up Roles and Permissions
 

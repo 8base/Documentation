@@ -76,7 +76,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'User management accelerator',
+              label: 'User Management Accelerator',
               items: [
                 'projects/gettingstarted/jumpstart/user-management-accelerator/my-account',
                 'projects/gettingstarted/jumpstart/user-management-accelerator/team-members',
@@ -130,6 +130,65 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '8base Home',
+      link: {
+             type: 'doc',
+             id: 'projects/8basehome/8basehome-index',
+            },
+          items: [                    
+              {
+              type: 'category',
+              label: 'Projects',
+              link: {
+                    type: 'doc',
+                    id: 'projects/8basehome/projects/projects-index',
+                    },
+                items: [
+                  'projects/8basehome/projects/creating-projects',
+                  {
+                    type: 'category',
+                    label: 'Projects Dashboard Walkthrough',
+                    link: {
+                      type: 'doc',
+                          id: 'projects/8basehome/projects/projects-dashboard-walkthrough',
+                          },
+                        items: [                 
+                            'projects/8basehome/projects/projects-backend-ui',
+                            {
+                            type: 'category',
+                            label: 'Frontend',
+                             link: {
+                                type: 'doc',
+                                id: 'projects/8basehome/projects/projects-frontend-ui',
+                                },
+                                items: [
+                                'projects/8basehome/projects/projects-frontend-creation',
+                                ],
+                              },
+                            'projects/8basehome/projects/projects-team-management',
+                            'projects/8basehome/projects/projects-billing', 
+                            'projects/8basehome/projects/projects-settings',                   
+                          ],
+                      },
+                    ],
+                  },
+              {
+                type: 'category',
+                label: 'Organizations',
+                link: {
+                      type: 'doc',
+                      id: 'projects/8basehome/organizations/organizations-index',
+                      },
+                  items: [
+                    'projects/8basehome/organizations/organizations-overview',
+                    'projects/8basehome/organizations/organizations-team-management',
+                    'projects/8basehome/organizations/organizations-billing',                 
+                  ],
+                },               
+            ],
+        },                
+    {
+      type: 'category',
       label: 'Backend Development',
       link: {
         type: 'doc',
@@ -156,7 +215,6 @@ const sidebars = {
             id: 'projects/backend/8base-console-readme',
           },
           items: [
-            'projects/backend/8base-console-teams',
             'projects/backend/8base-console-authentication',
             'projects/backend/8base-console-roles-and-permissions',
             'projects/backend/8base-console-handling-files',
