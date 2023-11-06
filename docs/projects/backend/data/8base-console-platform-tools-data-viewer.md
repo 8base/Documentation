@@ -7,7 +7,7 @@ slug: '/backend/data/data-viewer'
 
 # Data Viewer
 
-While logged into a project's workspace, 8base provides an "Admin Panel" like interface for searching and managing table records. The _Data Viewer_ is located within the management console's _Data_ screen, tabbed alongside each table's _Schema_.
+ The **8base Data Viewer** lets you search and manage table records. It is located within the console's **Data** screen.
 
 ![8Base Data Viewer](../_images/data-viewer.png)
 
@@ -40,11 +40,3 @@ By default, the _createdAt_, and _updatedAt_ field columns are hidden in the Dat
 In the same drop-down, columns can easily be reordered. Simply drag-and-drop items in the drop-down to any preferred order.
 
 ![Selecting fields in the Data Viewer](../_images/data-viewer-selected-fields.png)
-
-### Importing Data
-
-To import a CSV file, click the ellipsis button in the top right corner of the menu bar and choose `[Import CSV]` from the drop-down. The CSV importer supports column mapping and enforces all schema defined validations on create.
-
-Please refer to the [CLI's Import](/projects/backend/development-tools/cli/commands#import) command docs to import more complex data (related records, images, smart fields, etc).
-
-![Importing records into the Data Viewer](../_images/data-viewer-import.gif)

@@ -234,7 +234,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Management Console',
+          label: '8base Console',
           link: {
             type: 'doc',
             id: 'projects/backend/8base-console-readme',

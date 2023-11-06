@@ -19,7 +19,7 @@ When initializing the `Auth` module, an auth strategy needs to be specified.
 
 ### Auth Strategies
 
-All required settings values for initializing the Auth module can be collected from an [Authentication Profile](/projects/backend/authentication#authorization) created in the 8base management console.
+All required settings values for initializing the Auth module can be collected from an [Authentication Profile](/projects/backend/authentication#authorization) created in the 8base console.
 
 #### AUTH0_AUTH
 

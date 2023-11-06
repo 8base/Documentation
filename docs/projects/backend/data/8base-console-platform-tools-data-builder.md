@@ -7,11 +7,9 @@ slug: '/backend/data/data-builder'
 
 # Data Builder
 
-The **8base Data Builder** is a data modeling UI for defining database tables, field types, and relationships between tables. For each table defined, the 8base GraphQL engine creates GraphQL schema object types and the corresponding query, mutation, and subscription fields with resolvers automatically.
+The **8base Data Builder** is a data modeling UI for defining database tables, field types, and relationships between tables. For each table defined, the 8base GraphQL engine creates GraphQL schema object types and the corresponding query, mutation, and subscription fields with resolvers automatically. The Data Builder is found in the 8base console's **Data** tab. 
 
 This means that all Create, Read, Update, and Delete (CRUD) actions, as well as real-time connections (websockets) are immediately available to use via the workspace's unique API endpoint.
-
-The Data Builder is found in the management console's `Data` view. It is packed with cool features. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
 
 ## Tables
 
@@ -64,11 +62,11 @@ For specifying _has many_, _has one_ and _belongs to_ relationships between tabl
 
 Configurations
 
-- _Table_ - For selecting what table is to be related.
-- _Relation Field Name_ - The name of the relation as it appears on the **corresponding** table.
-- _Allow Multiple X to Y_ - Whether the relationship is _has one_ or _has many_.
-- _Mandatory_ - Whether the field relationship is required.
-- _Description_ - A meta description used for documentation.
+- **Table**: For selecting what table is to be related.
+- **Relation Field Name**: The name of the relation as it appears on the **corresponding** table.
+- **Allow Multiple X to Y**: Whether the relationship is _has one_ or _has many_.
+- **Mandatory**: Whether the field relationship is required.
+- **Description**: An optional text box where you can write information about the field.
 
 #### Self-Referential Relationships
 
@@ -80,11 +78,11 @@ There are several table types in 8base, with different features:
 
 #### Custom Tables
 
-Custom tables are the tables created in any workspace by the administrator. They are fully customizable and managed by the administrator.
+Custom tables are the tables created in any workspace by an administrator. They are fully customizable.
 
 #### System Tables
 
-System tables - like _Users_ - are tables that come automatically with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they can neither be deleted, renamed, nor their existing fields changes.
+System tables - like _Users_ are tables that come automatically with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they cannot be deleted or renamed. Their existing fields cannot be changed.
 
 #### View Tables
 
@@ -92,11 +90,11 @@ View Tables are virtual tables that aggregate fields from several or more tables
 
 For more information on views, see [SQL Views](https://www.w3schools.com/sql/sql_view.asp).
 
-Salesforce data can be imported as View Tables. For more information, see [Salesforce](../8base-console-plugins-integrations-salesforce.md)
+Salesforce data can be imported as View Tables. For more information, see [Salesforce](../8base-console-plugins-integrations-salesforce.md).
 
 ## Fields
 
-8base offers all database field types required for building software. Certain fields have extended capabilities that streamline specific tasks - such as managing file/image uploads and validating addresses and phone numbers.
+8base offers all database field types required for building software. Certain fields have extended capabilities that streamline specific tasks. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
 
 ### Creating Fields
 
@@ -104,7 +102,7 @@ Every field gets defined in a table and requires a _name_ and a _type_. Field na
 
 ### Updating Fields
 
-Fields are easily updated using the same interface used to create them. Updates to attributes like the field's _name_ - and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
+Fields are easily updated using the same interface used to create them. Updates to attributes like the field's _name_ and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
 
 ![Updating fields in the Data Builder](../_images/data-builder-field-update.png)
 
@@ -114,106 +112,133 @@ To delete a field, click the "X" to the right of the field name input. and enter
 
 ### Field Types
 
-8base offer 8 field types that can be configured to fit almost any data requirement.
+There are eight field types that can be configured to fit almost any data requirement.
 
 #### Text
 
-For storing _String_ data.
+For storing _String_ data. For example, customer names, regions, and email addresses.
 
-Configurations
+Text field properties:
 
-- _Format_ - For specifying what values the field stores (_Plain_, _HTML_ or _Markdown_).
-- _Field Size_ - The maximum string length.
-- _Allow Multiple_ - Stores 0 or more _Text_ values in an array (not searchable).
-- _Mandatory_ - Whether the field value is required.
-- _Unique_ - Whether the field value is required to be unique.
-- _Default Value_ - A default value assigned to new records.
-- _Description_ - A meta description used for documentation.
+- **Format**: For specifying what values the field stores (_Plain_, _HTML_ or _Markdown_).
+- **Field Size**: The maximum string length.
+- **Allow Multiple**: Stores 0 or more _Text_ values in an array (not searchable).
+- **Mandatory**: Whether this field must have a value.
+- **Unique**: Whether the field value is required to be unique.
+- **Default Value**: A default value assigned to new records.
+- **Description**: An optional text box where you can write information about the field.
+
+![Text field properties pane](_images/ui_fieldproperties_text.png)
 
 #### Number
 
 For storing _Integer_, _BigInt_, and _Float_ data.
 
-Configurations
+Number field properties:
 
-- _Decimal Place_ - How many decimal places _Float_ values maintain.
-- _Big Number_ - For numbers outside the range `-2^63 (-9,223,372,036,854,775,808) to 2^63-1 (9,223,372,036,854,775,807)`
-- _Minimum Value_ - The minimum value required.
-- _Maximum Value_ - The maximum value required.
-- _Allow Multiple_ - Stores 0 or more _Number_ values in an array (not searchable).
-- _Mandatory_ - Whether the field value is required.
-- _Unique_ - Whether the field value is required to be unique.
-- _Default Value_ - A default value assigned to new records.
-- _Description_ - A meta description used for documentation.
+- **Decimal Place**: How many decimal places _Float_ values maintain.
+- **Big Number**: For numbers outside the range `-2^63 (-9,223,372,036,854,775,808) to 2^63-1 (9,223,372,036,854,775,807)`
+- **Minimum Value**: The minimum value required.
+- **Maximum Value**: The maximum value required.
+- **Allow Multiple**: Stores 0 or more _Number_ values in an array (not searchable).
+- **Mandatory**: Whether the field value is required.
+- **Unique**: Whether the field value is required to be unique.
+- **Default Value**: A default value assigned to new records.
+- **Description**: An optional text box where you can write information about the field.
+
+![Number field properties pane](_images/ui_fieldproperties_number.png)
 
 #### Date
 
 For storing _Date_ and _DateTime_ data.
 
-Configurations
+Date field properties:
 
-- _Format_ - Whether the field stores a _Date_ or a _DateTime_ value.
-- _Allow Multiple_ - Stores 0 or more _Date_ values in an array (not searchable).
-- _Mandatory_ - Whether the field value is required.
-- _Unique_ - Whether the field value is required to be unique.
-- _Default Value_ - A default value assigned to new records.
-- _Description_ - A meta description used for documentation.
+- **Format**: Whether the field stores a _Date_ or a _DateTime_ value.
+- **Allow Multiple**: Stores 0 or more _Date_ values in an array (not searchable).
+- **Mandatory**: Whether the field value is required.
+- **Unique**: Whether the field value is required to be unique.
+- **Default Value**: A default value assigned to new records.
+- **Description**: An optional text box where you can write information about the field.
+
+![Date field properties pane](_images/ui_fieldproperties_date.png)
 
 #### Switch
 
-For storing _Boolean_ and custom _Enum_ type data.
+For storing _Boolean_ and custom _Enum_ type data. Data where there are only two options, such as true or false, yes or no.
 
-Configurations
+Switch field properties:
 
-- _Format_ - For specifying the _Boolean_ type (true / false, yes / no, etc...)
-- _Allow Multiple_ - Stores 0 or more _Boolean_ values in an array (not searchable).
-- _Mandatory_ - Whether the field value is required.
-- _Default Value_ - A default value assigned to new records.
-- _Description_ - A meta description used for documentation.
+- **Format**: For specifying the _Boolean_ type (true / false, yes / no, etc...)
+- **Allow Multiple**: Stores 0 or more _Boolean_ values in an array (not searchable).
+- **Mandatory**: Whether the field value is required.
+- **Default Value**: A default value assigned to new records.
+- **Description**: An optional text box where you can write information about the field.
+
+![Switch field properties pane](_images/ui_fieldproperties_switch.png)
 
 #### File
 
-For storing _Image_ and _File_ objects.
+For storing _Image_ and _File_ objects. For example, user avatar images.
 
-Configurations
+File field properties:
 
-- _Format_ - Whether the field stores a _File_ or an _Image_.
-- _Allow Multiple_ - Stores 0 or more _File_ objects in an array.
-- _Mandatory_ - Whether the field value is required.
-- _Description_ - A meta description used for documentation.
+- **Format**: Whether the field stores a _File_ or an _Image_.
+- **Allow Multiple**: Stores 0 or more _File_ objects in an array.
+- **Mandatory**: Whether the field value is required.
+- **Description**: An optional text box where you can write information about the field.
+
+![File field properties pane](_images/ui_fieldproperties_file.png)
 
 #### Table
 
 For specifying _has many_, _has one_ and _belongs to_ relationships between tables.
 
-Configurations
+Table field properties:
+- **Table**: For selecting what table is to get related.
+- **Relation Field Name**: The name of the relation as it appears on the **corresponding** table.
+- **Allow Multiple X to Y**: Whether the relationship is _has one_ or _has many_.
+- **Mandatory**: Whether the field relationship is required.
+- **Description**: An optional text box where you can write information about the field.
 
-- _Table_ - For selecting what table is to get related.
-- _Relation Field Name_ - The name of the relation as it appears on the **corresponding** table.
-- _Allow Multiple X to Y_ - Whether the relationship is _has one_ or _has many_.
-- _Mandatory_ - Whether the field relationship is required.
-- _Description_ - A meta description used for documentation.
+![Table field properties pane](_images/ui_fieldproperties_table.png)
 
 #### Smart
 
 For storing _addresses_ and _phone numbers_ with managed validations and logic.
 
-Configurations
+Smart field properties:
+- **Format**: Whether the field stores a _Phone Number_ or an _Address_.
+- **Allow Multiple**: Stores 0 or more _Smart_ objects in an array.
+- **Mandatory**: Whether the field value is required.
+- **Description**: An optional text box where you can write information about the field.
 
-- _Format_ - Whether the field stores a _Phone Number_ or an _Address_.
-- _Allow Multiple_ - Stores 0 or more _Smart_ objects in an array.
-- _Mandatory_ - Whether the field value is required.
-- _Description_ - A meta description used for documentation.
+![Smart field properties pane](_images/ui_fieldproperties_smart.png)
 
 #### JSON
 
 For storing _JSON_ objects.
 
-Configurations
+JSON field properties:
+- **Mandatory**: Whether the field value is required.
+- **Default Value**: A default value assigned to new records.
+- **Description**: An optional text box where you can write information about the field.
 
-- _Mandatory_ - Whether the field value is required.
-- _Default Value_ - A default value assigned to new records.
-- _Description_ - A meta description used for documentation.
+![JSON field properties pane](_images/ui_fieldproperties_JSON.png)
+
+#### GEO
+
+For storing _geo_ data points, based on latitude and longitude.
+
+GEO field properties:
+- **Format**: Must be set to "Point".
+- **Allow Multiple**: Stores 0 or more _Smart_ objects in an array.
+- **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether the field value is required.
+- **Default Value**: A default value assigned to new records.
+
+![Geo field properties pane](_images/ui_fieldproperties_geo.png)
+
 
 ### Smart Fields
 
@@ -258,11 +283,11 @@ Under _Advanced Settings_ for field types _Text_, _Number_, _Date_, _Switch_, an
 
 #### Calculated Field Types
 
-The "Virtual" and "Stored" options will indicate how values are stored, which has the following implications when used:
+The **Virtual** and **Stored** options will indicate how values are stored, which has the following implications when used:
 
-- _Virtual_ - Values are not stored, but are evaluated when rows are read. A virtual column takes no storage.
+- **Virtual**: Values are not stored, but are evaluated when rows are read. A virtual column takes no storage.
 
-- _Stored_ - Values are evaluated and stored when rows are inserted or updated. A stored column requires storage space and can be indexed.
+- **Stored**: Values are evaluated and stored when rows are inserted or updated. A stored column requires storage space and can be indexed.
 
 ![Adding Full Name Field to Users table in 8base Console](../_images/calculated-field-full-name.png)
 

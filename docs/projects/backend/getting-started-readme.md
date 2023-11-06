@@ -43,7 +43,7 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 > Learn 8base by building a React or Vue application.
 >
 > [8base Console](/projects/backend/8base-console-readme.md)
-> Read the high-level overview of 8base's management console.
+> Read the high-level overview of 8base's console.
 >
 > [Connect to your API](/projects/backend/getting-started-connecting-to-api.md)
 > Explore ways to connect to the 8base GraphQL API.
