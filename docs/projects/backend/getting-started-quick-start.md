@@ -7,15 +7,13 @@ slug: '/projects/backend/getting-started/quick-start'
 
 # Quick Start
 
-The goal of this quick-start is to get you up and running with 8base and a front-end framework you love, fast. Let's do it!
+The goal of this quick-start is to get you up and running with 8base and a front-end framework.
 
-This guide will introduce some basics of 8base workspaces and set up a starter app. It will help demonstrate key concepts of 8base, and maybe even kick-off your next awesome project 😊
+This guide will introduce some basics of 8base workspaces and set up a starter app. It will help demonstrate key concepts of 8base, and maybe even kick-off your next awesome project.
 
 ## 1. Start an 8base Account
 
-If you haven't already, create an 8base account. Click [this link](https://app.8base.com) to get started. We'll send you a confirmation email if you signed up using an email and password. Either way, once your account is confirmed, 8base will redirect you to a default workspace.
-
-Voila! You're officially on 8base.
+If you haven't already, create an 8base account. Open [8base](https://app.8base.com) to get started. We'll send you a confirmation email if you signed up using an email and password. Either way, once your account is confirmed, 8base will redirect you to a default workspace.
 
 ## 2. Setting up a Workspace
 
@@ -25,7 +23,9 @@ Let's just use the default workspace for the rest of this quick-start.
 
 ![8base workspace](./images/qs-workspace.png)
 
-_Optional: If you want to create a new workspace, click the "YOUR NAME's Workspace" dropdown at the top of your screen and select "+ New Workspace". Name it whatever you like before pressing create. The new workspace should load in less then 10-seconds._
+:::tip
+If you want to create a new workspace, click the "YOUR NAME's Workspace" dropdown at the top of your screen and select "+ New Workspace". Name it whatever you like before pressing create.
+:::
 
 ### 2.1. Building a Data Model
 

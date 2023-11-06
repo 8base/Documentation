@@ -209,6 +209,28 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Data',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/data/data-index',
+          },
+          items: [
+            'projects/backend/8base-console-platform-tools-data-builder',
+            {
+              type: 'category',
+              label: 'Data Viewer',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/8base-console-platform-tools-data-viewer',
+              },
+              items: [
+                'projects/backend/8base-console-platform-tools-users',              
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Management Console',
           link: {
             type: 'doc',
@@ -225,9 +247,7 @@ const sidebars = {
                 type: 'doc',
                 id: 'projects/backend/8base-console-platform-tools-readme',
               },
-              items: [
-                'projects/backend/8base-console-platform-tools-data-builder',
-                'projects/backend/8base-console-platform-tools-data-viewer',
+              items: [                
                 'projects/backend/8base-console-platform-tools-functions',
                 'projects/backend/8base-console-platform-tools-api-explorer',
                 {
