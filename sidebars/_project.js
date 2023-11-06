@@ -215,16 +215,17 @@ const sidebars = {
             id: 'projects/backend/data/data-index',
           },
           items: [
-            'projects/backend/8base-console-platform-tools-data-builder',
+            'projects/backend/data/8base-console-platform-tools-data-builder',
             {
               type: 'category',
               label: 'Data Viewer',
               link: {
                 type: 'doc',
-                id: 'projects/backend/8base-console-platform-tools-data-viewer',
+                id: 'projects/backend/data/8base-console-platform-tools-data-viewer',
               },
               items: [
                 'projects/backend/data/data-table-importing',
+                'projects/backend/data/8base-console-handling-files',
                 'projects/backend/8base-console-plugins-integrations-salesforce',             
               ],
             },
@@ -241,7 +242,6 @@ const sidebars = {
           items: [
             'projects/backend/8base-console-authentication',
             'projects/backend/8base-console-roles-and-permissions',
-            'projects/backend/8base-console-handling-files',
             {
               type: 'category',
               label: 'Tools',

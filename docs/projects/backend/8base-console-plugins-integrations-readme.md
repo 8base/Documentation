@@ -2,7 +2,7 @@
 id: '8base-console-plugins-integrations-readme'
 sidebar_label: 'Plugins and Integrations'
 redirect_from: '/backend/plugins-integrations'
-slug: '/projects/backend/plugins-integrations'
+# slug: '/projects/backend/plugins-integrations'
 ---
 
 # Plugins and Integrations

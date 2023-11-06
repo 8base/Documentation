@@ -2,7 +2,7 @@
 id: '8base-console-platform-tools-data-viewer'
 sidebar_label: 'Data Viewer'
 redirect_from: '/backend/console/data-viewer'
-slug: '/projects/backend/console/data-viewer'
+slug: '/backend/data/data-viewer'
 ---
 
 # Data Viewer

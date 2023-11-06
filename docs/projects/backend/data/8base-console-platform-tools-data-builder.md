@@ -2,7 +2,7 @@
 id: '8base-console-platform-tools-data-builder'
 sidebar_label: 'Data Builder'
 redirect_from: '/backend/console/data-builder'
-slug: '/projects/backend/console/data-builder'
+slug: '/backend/data/data-builder'
 ---
 
 # Data Builder
