@@ -1,7 +1,7 @@
 ---
 id: '8base-console-handling-files'
 sidebar_label: 'Handling Files'
-redirect_from: '/backend/handling-files'
+redirect_from: '/projects/backend/handling-files'
 slug: '/backend/data/handling-files'
 ---
 

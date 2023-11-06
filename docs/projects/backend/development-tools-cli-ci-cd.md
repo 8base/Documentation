@@ -1,13 +1,13 @@
 ---
 id: 'development-tools-cli-ci-cd'
-sidebar_label: 'Ci Cd'
-redirect_from: '/backend/development-tools/cli/ci-cd'
-slug: '/projects/backend/development-tools/cli/ci-cd'
+sidebar_label: 'CI CD System'
+redirect_from: '/projects/backend/development-tools/cli/ci-cd'
+slug: '/backend/development-tools/cli/ci-cd'
 ---
 
 # CI/CD System
 
-Teams that have multiple developers working simultaneously on different features of the same application – or [Workspace](/projects/backend/getting-started) – benefit from having isolated development environments for each developer. 8base implimented the СI/CD system implemented to make this possible!
+Teams that have multiple developers working simultaneously on different features of the same application – or Workspace – benefit from having isolated development environments for each developer. 8base implimented the СI/CD system implemented to make this possible!
 
 By enabling CI/CD in your Workspace you can create additional Workspace **Environments**.
 
@@ -28,11 +28,11 @@ The process of creating new Environments (cloning one Environment into another) 
 
 Changing/deploying to parent Environments is only possible with [Migration logic](/projects/backend/development-tools/cli/ci-cd#migrations-logic-and-commands).
 
-You can read more about [System Parts](/projects/backend/getting-started#system-parts) and [User Parts](/projects/backend/getting-started#user-parts) of 8base in our [overview section](/projects/backend/getting-started#8base-application-structure).
+You can read more about System Parts and User Parts of 8base in our [overview section](getting-started-readme.md).
 
 ## CI/CD Commands
 
-The CI/CD System is controlled using the [8base CLI](/projects/backend/development-tools/cli). There are 3 command categories that correspond to the main components of the CI/CD System; _Environment commands_, _Migrations commands_, and _Backup commands_.
+The CI/CD System is controlled using the 8base CLI. There are 3 command categories that correspond to the main components of the CI/CD System; _Environment commands_, _Migrations commands_, and _Backup commands_.
 
 ### Environment Commands
 
@@ -63,8 +63,8 @@ Using example:
 
 Two modes of environment branching are available:
 
-1. **SYSTEM Mode**: When branching in SYSTEM mode, only [System Part](/projects/backend/getting-started#system-parts) of the Environment get cloned.
-2. **FULL Mode**: When branching in FULL mode, both [System and User Parts](/projects/backend/getting-started#user-parts) of the Environment get cloned.
+1. **SYSTEM Mode**: When branching in SYSTEM mode, only System Part of the Environment get cloned.
+2. **FULL Mode**: When branching in FULL mode, both System and User Parts of the Environment get cloned.
 
 ##### 2. environment set
 
@@ -132,7 +132,7 @@ Displays all environments in the current workspace.
 
 Making changes and deploying to parent Environments is only possible with **Migration logic**.
 
-Basically, _Migrations_ are the files in the ‘migrations’ directory of your local project (`../<localProjectName>/migrations/`) which describe all the changes in [Schema and/or System/User Data](/projects/backend/getting-started).
+Basically, _Migrations_ are the files in the ‘migrations’ directory of your local project (`../<localProjectName>/migrations/`) which describe all the changes in Schema and/or System/User Data.
 
 ##### Migration file structure
 

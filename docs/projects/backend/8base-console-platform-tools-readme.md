@@ -1,6 +1,6 @@
 ---
 id: '8base-console-platform-tools-readme'
-redirect_from: '/backend/tools'
+redirect_from: '/projects/backend/tools'
 slug: '/projects/backend/tools'
 ---
 
@@ -10,15 +10,11 @@ slug: '/projects/backend/tools'
 
 The 8base platform consists of the following high-level components.
 
-## [Data Builder](/projects/backend/console/data-builder)
-
-![8Base Data Builder](./_images/44df042-fireshot_capture_004_-_8base_-_app.8base.com.png)
+## Data Builder
 
 The Data Builder lets you define an applications data model: tables, fields and relationships between tables. It is packed with cool features. For example, `File` fields allow you to seamlessly attach files to data objects, while `Smart` fields make it easy to implement complex validations for addresses and phone numbers.
 
-## [Data Viewer](/projects/backend/console/data-viewer)
-
-![8base Data Viewer](./_images/e47095d-fireshot_capture_008_-_8base_-_app.8base.com.png)
+## Data Viewer
 
 The Data Viewer lets you view and modify data in an table inspired interface. This is useful for admins needing to browse and modify the data, or enter sample content while in development.
 

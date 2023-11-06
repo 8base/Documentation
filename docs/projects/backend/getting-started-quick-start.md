@@ -1,13 +1,13 @@
 ---
 id: 'getting-started-quick-start'
 sidebar_label: 'Quick Start'
-redirect_from: '/backend/getting-started/quick-start'
+redirect_from: '/projects/backend/getting-started/quick-start'
 slug: '/backend/getting-started/quick-start'
 ---
 
 # Quick Start
 
-The goal of this quick-start is to get you up and running with 8base and a front-end framework.
+The goal of this quick-start is to get you up and running with 8base and a frontend framework.
 
 This guide will introduce some basics of 8base workspaces and set up a starter app. It will help demonstrate key concepts of 8base, and maybe even kick-off your next awesome project.
 

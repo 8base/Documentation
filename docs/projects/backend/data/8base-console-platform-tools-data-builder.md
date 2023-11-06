@@ -1,7 +1,7 @@
 ---
 id: '8base-console-platform-tools-data-builder'
 sidebar_label: 'Data Builder'
-redirect_from: '/backend/console/data-builder'
+redirect_from: '/projects/backend/data/data-builder'
 slug: '/backend/data/data-builder'
 ---
 
@@ -221,7 +221,7 @@ _Smart Fields_ are enriched field types offered by 8base. They provide structure
 
 #### Address
 
-For persisting addresses in a field. The `address` field will display available fields in the [Data Viewer](/projects/backend/console/data-viewer) and API Explorer.
+For persisting addresses in a field. The `address` field will display available fields in the [Data Viewer](/projects/backend/data/data-viewer) and API Explorer.
 
 ```ts
 type Address = {
@@ -236,7 +236,7 @@ type Address = {
 
 #### Phone
 
-For persisting phone numbers in a field. The `phone` field will display available fields in the [Data Viewer](/projects/backend/console/data-viewer) and API Explorer.
+For persisting phone numbers in a field. The `phone` field will display available fields in the [Data Viewer](/projects/backend/data/data-viewer) and API Explorer.
 
 ```ts
 type Phone = {

@@ -144,7 +144,7 @@
     "to": "/projects/backend/console/functions"
   },
   {
-    "from": "/backend/tools",
+    "from": "/projects/backend/tools",
     "to": "/projects/backend/tools"
   },
   {
@@ -152,11 +152,7 @@
     "to": "/projects/backend/console/users"
   },
   {
-    "from": "/backend/plugins-integrations",
-    "to": ""
-  },
-  {
-    "from": "/backend/plugins-integrations/salesforce",
+    "from": "/projects/backend/plugins-integrations/salesforce",
     "to": "/backend/data/salesforce"
   },
   {
@@ -168,20 +164,20 @@
     "to": "/projects/backend/roles-and-permissions"
   },
   {
-    "from": "/backend/handling-files",
+    "from": "/projects/backend/handling-files",
     "to": "/backend/data/handling-files"
   },
   {
-    "from": "/backend/console/data-builder",
+    "from": "/projects/backend/data/data-builder",
     "to": "/backend/data/data-builder"
   },
   {
-    "from": "/backend/console/data-viewer",
+    "from": "/projects/backend/data/data-viewer",
     "to": "/backend/data/data-viewer"
   },
   {
-    "from": "/backend/development-tools/cli/ci-cd",
-    "to": "/projects/backend/development-tools/cli/ci-cd"
+    "from": "/projects/backend/development-tools/cli/ci-cd",
+    "to": "/backend/development-tools/cli/ci-cd"
   },
   {
     "from": "/backend/development-tools/cli/commands",
@@ -248,12 +244,12 @@
     "to": "/projects/backend/getting-started/connecting-to-api"
   },
   {
-    "from": "/backend/getting-started/quick-start",
-    "to": "/projects/backend/getting-started/quick-start"
+    "from": "/projects/backend/getting-started/quick-start",
+    "to": "/backend/getting-started/quick-start"
   },
   {
-    "from": "/backend/getting-started",
-    "to": "/projects/backend/getting-started"
+    "from": "/projects/backend/getting-started",
+    "to": "/backend/getting-started"
   },
   {
     "from": "/frontend/adding-cdns-and-libraries/calling-frontend-functions/addingremoving-cdns",

@@ -1,7 +1,7 @@
 ---
 id: '8base-console-plugins-integrations-salesforce'
 sidebar_label: 'Salesforce'
-redirect_from: '/backend/plugins-integrations/salesforce'
+redirect_from: '/projects/backend/plugins-integrations/salesforce'
 slug: '/backend/data/salesforce'
 ---
 
@@ -23,7 +23,7 @@ Whichever Salesforce account you choose to connect to, clicking "Connect" will d
 
 ## Adding Tables
 
-Once the schema has been synced, you will be able to add any Salesforce tables to your workspace using the [Data Viewer](/projects/backend/console/data-viewer). By default, the _Account_, _Lead_, _Contact_, and _Opportunity_ tables will appear in the newly added Salesforce section of the Data Builder.
+Once the schema has been synced, you will be able to add any Salesforce tables to your workspace using the [Data Viewer](/projects/backend/data/data-viewer). By default, the _Account_, _Lead_, _Contact_, and _Opportunity_ tables will appear in the newly added Salesforce section of the Data Builder.
 
 In the "Select Tables" search input, any table that exists in your Saleforce instance is discoverable. To add any available tables, simply select it from the list and the import will begin.
 
