@@ -48,7 +48,7 @@ module.exports = async (event, context) => {
 
 You can set environment variables in 8base settings and they automatically get exposed in all functions through `process.env.VARIABLE_NAME`.
 
-![Setting environment variables in 8base settings](./images/8base-env-variables.png)
+![Setting environment variables in 8base settings](./_images/8base-env-variables.png)
 
 ### Timeouts
 

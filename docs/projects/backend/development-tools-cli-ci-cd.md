@@ -11,11 +11,11 @@ Teams that have multiple developers working simultaneously on different features
 
 By enabling CI/CD in your Workspace you can create additional Workspace **Environments**.
 
-![CI/CD Switch](./images/enable-ci-cd.png)
+![CI/CD Switch](./_images/enable-ci-cd.png)
 
 Only **Master Environment** is available by default.
 
-![Master Environment](./images/master-env.png)
+![Master Environment](./_images/master-env.png)
 
 The process of creating new Environments (cloning one Environment into another) is called **Branching**. Every Environment gets a unique URL/API endpoint that has the following anatomy `https://app.8base.com/<workspace_id>_<environment_name>`. There is no need to add `<environment_name>` to your URL for requesting _Master_ Environment.
 

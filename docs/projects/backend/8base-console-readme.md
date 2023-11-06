@@ -11,5 +11,5 @@ The 8base Management Console is where you manage all backend resources, like Dat
 
 To get started quickly with the 8base Management Console, all you'll need is [an 8base account](https://app.8base.com) and a modern web browser.
 
-![ ](./images/relaxed-coder.png)
+![ ](./_images/relaxed-coder.png)
 

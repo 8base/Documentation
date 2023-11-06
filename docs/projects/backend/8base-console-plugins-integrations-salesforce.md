@@ -17,7 +17,7 @@ Up to 5 Salesforce integrations can be added to a single workspace. Each integra
 
 After the integration is created (by clicking "Create Integration"), you are able to connect your Salesforce account. If you wish to connect to a Salesforce _Sandbox_ account, as opposed to a production instance, simply select "Connect to Sandbox" from the "Connect" button's dropdown menu.
 
-![Connect Salesforce account to 8base workspace](./images/connect-salesforce-instance.png)
+![Connect Salesforce account to 8base workspace](./_images/connect-salesforce-instance.png)
 
 Whichever Salesforce account you choose to connect to, clicking "Connect" will direct you to a Salesforce sign-in page. Once authenticated, you will be re-directed back to 8base and the system will begin syncing your Salesforce schema within the workspace.
 
@@ -27,7 +27,7 @@ Once the schema has been synced, you will be able to add any Salesforce tables t
 
 In the "Select Tables" search input, any table that exists in your Saleforce instance is discoverable. To add any available tables, simply select it from the list and the import will begin.
 
-![Adding Salesforce tables to 8base workspace](./images/adding-sf-tables.png)
+![Adding Salesforce tables to 8base workspace](./_images/adding-sf-tables.png)
 
 ## Adding Relations
 
@@ -35,7 +35,7 @@ Relationships between 8base and Salesforce tables can easily be established. For
 
 By dragging and dropping a table's name over the "Add New Field" input, the relationship declaration will populate. All required changes can then be made before saving the relationship.
 
-![Adding Salesforce relations to 8base tables](./images/salesforce-relations-8base.png)
+![Adding Salesforce relations to 8base tables](./_images/salesforce-relations-8base.png)
 
 ## Removing Tables
 
@@ -43,7 +43,7 @@ Any table can be quickly removed from the Data Builder without disconnecting the
 
 Deleting a Salesforce table may result in data loss when records have a mandatory relationship with records in the table being deleted.
 
-![Delete Salesforce tables from 8base workspace](./images/delete-sf-table.png)
+![Delete Salesforce tables from 8base workspace](./_images/delete-sf-table.png)
 
 ## Using the GraphQL API
 

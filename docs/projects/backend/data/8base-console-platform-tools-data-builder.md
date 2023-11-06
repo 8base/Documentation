@@ -13,7 +13,7 @@ This means that all Create, Read, Update, and Delete (CRUD) actions, as well as 
 
 The Data Builder is found in the management console's `Data` view. It is packed with cool features. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
 
-![8Base Data Builder](./images/data-builder-new-table.gif)
+![8Base Data Builder](../_images/data-builder-new-table.gif)
 
 ## Tables
 
@@ -25,7 +25,7 @@ New tables are created using the "+ New Table" button. An input that prompts for
 
 As soon as a table is created, corresponding GraphQL schema types and query, mutation, and subscription resolvers will be generated automatically.
 
-![Creating new table's in the Data Builder](./images/data-builder-new-table.png)
+![Creating new table's in the Data Builder](../_images/data-builder-new-table.png)
 
 ### Creating Table Indexes
 
@@ -33,7 +33,7 @@ To improve look up performance on your tables, you can add one or more of your o
 
 You can select one or several fields in the table by which the index will be generated, as well as whether or not it should be a _Unique Index_. When naming the index, ensure the name does not contain spaces.
 
-![Creating new table index in the Data Builder](./images/creating-table-indexes.png)
+![Creating new table index in the Data Builder](../_images/creating-table-indexes.png)
 
 ### Updating Tables
 
@@ -52,7 +52,7 @@ To ensure that table related errors and mistakes are minimized, 8base protects a
 
 When attempting to delete a table, a confirmation input requires the table name to be entered. Please know that deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if any other tables are related to the table being deleted - _belongs to_ and _has many_, either specified as mandatory or not - those relations will be severed.
 
-![Deleting table's in the Data Builder](./images/data-builder-delete-table.png)
+![Deleting table's in the Data Builder](../_images/data-builder-delete-table.png)
 
 ### Table Relationships
 
@@ -64,7 +64,7 @@ When attempting to delete a table, a confirmation input requires the table name 
 | `one-to-many`  | Record in table A may `have_many` records in table B.                | Records in table B may `have_one` or `belong_to` records in table A. |
 | `many-to-many` | Record in table A may `have_many` records in table B.                | Record in table B may `have_many` records in table A.                |
 
-![Defining relationships in the Data Builder](./images/data-builder-making-relationships.gif)
+![Defining relationships in the Data Builder](../_images/data-builder-making-relationships.gif)
 
 Defining a relationship between two tables can be accomplished by dragging and dropping one table onto another or by selecting `Table` as the Data Type when creating a new table field.
 
@@ -114,7 +114,7 @@ Every field gets defined in a table and requires a _name_ and a _type_. Field na
 
 Fields are easily updated using the same interface used to create them. Updates to attributes like the field's _name_ - and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
 
-![Updating fields in the Data Builder](./images/data-builder-field-update.png)
+![Updating fields in the Data Builder](../_images/data-builder-field-update.png)
 
 ### Deleting Fields
 
@@ -272,7 +272,7 @@ The "Virtual" and "Stored" options will indicate how values are stored, which ha
 
 - _Stored_ - Values are evaluated and stored when rows are inserted or updated. A stored column requires storage space and can be indexed.
 
-![Adding Full Name Field to Users table in 8base Console](./images/calculated-field-full-name.png)
+![Adding Full Name Field to Users table in 8base Console](../_images/calculated-field-full-name.png)
 
 When creating _Calculated Fields_, you only have access to fields stored on the record itself. Any field can be accessed using the same field names seen on the GraphQL API. The **return value of the calculation must be the same as the set field type**.
 

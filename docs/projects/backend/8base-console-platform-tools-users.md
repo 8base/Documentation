@@ -9,7 +9,7 @@ slug: '/projects/backend/console/users'
 
 8base's [User Administration](https://app.8base.com/users/app-users) provides the ability to easily view and manage both App User's and Team Members. It also provides some basic insights into how App Users are engaging with your application.
 
-![User administration screen](./images/user-admin-1.png)
+![User administration screen](./_images/user-admin-1.png)
 
 ## Users
 
@@ -60,7 +60,7 @@ Currently, it is required that users sign up with a valid email address. When us
 
 When inside the [User Administration](https://app.8base.com/users/app-users) user's `firstName`, `lastName`, `email`, and `roles` can be updated. This can be accomplished by clicking `Edit` in the row drop-down and using the popover form as needed.
 
-![User administration screen](./images/ua-edit-user.png)
+![User administration screen](./_images/ua-edit-user.png)
 
 Many other data points are stored about a user. If you need to update other information about the user, you can do so using the [Data Viewer](https://app.8base.com/data/) where you will have access to all user fields.
 

@@ -27,7 +27,7 @@ Once added, reposition the cursor after the "r" in user and press `[OPTION] + [S
 
 Additionally, introspection helps us detect errors in queries. The system recognizes when different types are either not available or incorrectly configured - things like, `Number` should be `String`, field not available on table, as well as validations. Therefore, when using the API Explorer, hover over squiggly-red lines to reveal error tool tips.
 
-![Tooltip showing error in API Explorer](./images/api-explorer-tooltip-error.png)
+![Tooltip showing error in API Explorer](./_images/api-explorer-tooltip-error.png)
 
 ## Documentation
 
@@ -47,7 +47,7 @@ mutation {
 
 Once added, hold-press the `[CMD]` or `[WINDOWS]` key while hovering over "userCreate" and click. The _Documentation_ will open, where we can then investigate the operation.
 
-![Opening the documentation using keyboard shortcut](./images/documentation-explorer-open-shortcut.png)
+![Opening the documentation using keyboard shortcut](./_images/documentation-explorer-open-shortcut.png)
 
 ## Explorer
 
@@ -65,4 +65,4 @@ query MyQuery {
 
 Note that argument values can either be typed into to text area or the Explorer's input fields. Required values in the Explorer are denoted with an asterisk (\*).
 
-![Opening the documentation using keyboard shortcut](./images/one-graph-explorer.png)
+![Opening the documentation using keyboard shortcut](./_images/one-graph-explorer.png)

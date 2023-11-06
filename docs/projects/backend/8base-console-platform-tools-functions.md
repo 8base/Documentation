@@ -9,7 +9,7 @@ slug: '/projects/backend/console/functions'
 
 The [Logic](https://app.8base.com/logic) screen is a dashboard where all [Custom Functions](/projects/backend/custom-functions) that have been deployed to a workspace can be reviewed. Consider it your catalog for any custom server side logic.
 
-![Logic screen in 8base management console](./images/logic-screen.png)
+![Logic screen in 8base management console](./_images/logic-screen.png)
 
 ## Custom Function Cards
 
@@ -25,7 +25,7 @@ Keep in mind that when watching the logs a short latency period can be expected.
 
 If a `console.log('...something')` statement is used inside of a custom function, the printed result will appear here inside the logs.
 
-![Reviewing the logs in the Logic Screen](./images/logic-logs.png)
+![Reviewing the logs in the Logic Screen](./_images/logic-logs.png)
 
 ## Descriptions and Meta Data
 
