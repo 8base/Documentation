@@ -224,9 +224,11 @@ const sidebars = {
                 id: 'projects/backend/8base-console-platform-tools-data-viewer',
               },
               items: [
-                'projects/backend/8base-console-platform-tools-users',              
+                'projects/backend/data/data-table-importing',
+                'projects/backend/8base-console-plugins-integrations-salesforce',             
               ],
             },
+            'projects/backend/data/data-table-indexes',
           ],
         },
         {
@@ -341,17 +343,17 @@ const sidebars = {
             'projects/backend/8base-console-custom-functions-debugging',
           ],
         },
-        {
-          type: 'category',
-          label: 'Plugins and Integrations',
-          link: {
-            type: 'doc',
-            id: 'projects/backend/8base-console-plugins-integrations-readme',
-          },
-          items: [
-            'projects/backend/8base-console-plugins-integrations-salesforce',
-          ],
-        },
+       // {
+       //   type: 'category',
+       //   label: 'Plugins and Integrations',
+       //   link: {
+       //     type: 'doc',
+       //     id: 'projects/backend/8base-console-plugins-integrations-readme',
+       //   },
+       //   items: [
+       //     
+       //   ],
+       // },
         {
           type: 'category',
           label: 'Local Development Environment',
