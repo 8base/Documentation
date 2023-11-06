@@ -7,33 +7,23 @@ slug: '/backend/data/data-builder'
 
 # Data Builder
 
-The 8base Data Builder is a data modeling UI for defining database tables, field types, and relationships between tables. For each table defined, the 8base GraphQL engine creates GraphQL schema object types and the corresponding query, mutation, and subscription fields with resolvers automatically.
+The **8base Data Builder** is a data modeling UI for defining database tables, field types, and relationships between tables. For each table defined, the 8base GraphQL engine creates GraphQL schema object types and the corresponding query, mutation, and subscription fields with resolvers automatically.
 
 This means that all Create, Read, Update, and Delete (CRUD) actions, as well as real-time connections (websockets) are immediately available to use via the workspace's unique API endpoint.
 
 The Data Builder is found in the management console's `Data` view. It is packed with cool features. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
 
-![8Base Data Builder](../_images/data-builder-new-table.gif)
-
 ## Tables
 
-In the background, 8base spins up an Aurora MySQL database instance for your workspace. Aurora is a relational database that can handle complex queries and is ACID (Atomicity, Consistency, Isolation, Durability) compliant. When tables are created, updated, and deleted in a workspace, 8base handles the corresponding migrations and executes them immediately against the database. Therefore, you're database is always reflected by the _Data Builder_ UI - showing all available fields, validations, tables, and relations.
+In the background, 8base spins up an Aurora MySQL database instance for your workspace. Aurora is a relational database that can handle complex queries and is ACID (Atomicity, Consistency, Isolation, Durability) compliant. When tables are created, updated, and deleted in a workspace, 8base handles the corresponding migrations and executes them immediately against the database. Therefore, you're database is always reflected by the Data Builder UI - showing all available fields, validations, tables, and relations.
 
 ### Creating Tables
 
-New tables are created using the "+ New Table" button. An input that prompts for a _name_ value will appear, with which the table can named. All tables require unique names (`attribute`, `workspace` names and their plural form are reserved and cannot be used in any letter cases).
+Click the **+ Add Table** button to create a new table. The default name for new tables is "Untitled Table". All tables require unique names (`attribute`, `workspace` names and their plural form are reserved and cannot be used in any letter cases).
 
 As soon as a table is created, corresponding GraphQL schema types and query, mutation, and subscription resolvers will be generated automatically.
 
-![Creating new table's in the Data Builder](../_images/data-builder-new-table.png)
-
-### Creating Table Indexes
-
-To improve look up performance on your tables, you can add one or more of your own indexes. This feature is found in the table settings.
-
-You can select one or several fields in the table by which the index will be generated, as well as whether or not it should be a _Unique Index_. When naming the index, ensure the name does not contain spaces.
-
-![Creating new table index in the Data Builder](../_images/creating-table-indexes.png)
+![Creating new tables in the Data Builder](../_images/data-builder-new-table.png)
 
 ### Updating Tables
 
@@ -56,7 +46,7 @@ When attempting to delete a table, a confirmation input requires the table name 
 
 ### Table Relationships
 
-8base supports 3 types of table relationships to be defined that are congruent with what to expect from relational databases:
+8base supports three types of table relationships to be defined that are congruent with what to expect from relational databases:
 
 | Type           | _A_ to _B_                                                           | _B_ to _A_                                                           |
 | -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -86,7 +76,7 @@ Self-Referential relationships can be defined by relating tables to themselves! 
 
 ### Table Types
 
-There are several types of tables in 8base, each of which offers an important utility.
+There are several table types in 8base, with different features:
 
 #### Custom Tables
 
@@ -94,17 +84,19 @@ Custom tables are the tables created in any workspace by the administrator. They
 
 #### System Tables
 
-System tables - like _Users_ - are tables that come delivered with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they can neither be deleted, renamed, nor their existing fields changes.
+System tables - like _Users_ - are tables that come automatically with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they can neither be deleted, renamed, nor their existing fields changes.
 
 #### View Tables
 
 View Tables are virtual tables that aggregate fields from several or more tables into a single _view_. Under the hood, they are based on the result-set of an SQL statement. In a workspace, they can be created using the `viewCreate` GraphQL mutation in the API Explorer.
 
-For more information on views, [check this out](https://www.w3schools.com/sql/sql_view.asp).
+For more information on views, see [SQL Views](https://www.w3schools.com/sql/sql_view.asp).
+
+Salesforce data can be imported as View Tables. For more information, see [Salesforce](../8base-console-plugins-integrations-salesforce.md)
 
 ## Fields
 
-8base offers all database field types required for building software - and then some! Fields with the type File, Smart, and others have extended capabilities that streamline specific tasks - such as managing file/image uploads and validating addresses and phone numbers.
+8base offers all database field types required for building software. Certain fields have extended capabilities that streamline specific tasks - such as managing file/image uploads and validating addresses and phone numbers.
 
 ### Creating Fields
 

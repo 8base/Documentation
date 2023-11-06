@@ -2,7 +2,7 @@
 id: 'getting-started-quick-start'
 sidebar_label: 'Quick Start'
 redirect_from: '/backend/getting-started/quick-start'
-slug: '/projects/backend/getting-started/quick-start'
+slug: '/backend/getting-started/quick-start'
 ---
 
 # Quick Start

@@ -1,5 +1,9 @@
 [
   {
+    "from": "/backend/teams",
+    "to": "/8basehome/projects/projects-team-management"
+  },
+  {
     "from": "/backend/authentication",
     "to": "/projects/backend/authentication"
   },
@@ -120,10 +124,6 @@
     "to": "/projects/backend/graphql-api/variables"
   },
   {
-    "from": "/backend/handling-files",
-    "to": "/projects/backend/handling-files"
-  },
-  {
     "from": "/backend/console/advanced-introspection",
     "to": "/projects/backend/console/advanced-introspection"
   },
@@ -140,14 +140,6 @@
     "to": "/projects/backend/console/ci-cd"
   },
   {
-    "from": "/backend/console/data-builder",
-    "to": "/projects/backend/console/data-builder"
-  },
-  {
-    "from": "/backend/console/data-viewer",
-    "to": "/projects/backend/console/data-viewer"
-  },
-  {
     "from": "/backend/console/functions",
     "to": "/projects/backend/console/functions"
   },
@@ -161,11 +153,11 @@
   },
   {
     "from": "/backend/plugins-integrations",
-    "to": "/projects/backend/plugins-integrations"
+    "to": ""
   },
   {
     "from": "/backend/plugins-integrations/salesforce",
-    "to": "/projects/backend/plugins-integrations/salesforce"
+    "to": "/backend/data/salesforce"
   },
   {
     "from": "/backend/backend",
@@ -176,8 +168,16 @@
     "to": "/projects/backend/roles-and-permissions"
   },
   {
-    "from": "/backend/teams",
-    "to": "/projects/backend/teams"
+    "from": "/backend/handling-files",
+    "to": "/backend/data/handling-files"
+  },
+  {
+    "from": "/backend/console/data-builder",
+    "to": "/backend/data/data-builder"
+  },
+  {
+    "from": "/backend/console/data-viewer",
+    "to": "/backend/data/data-viewer"
   },
   {
     "from": "/backend/development-tools/cli/ci-cd",
@@ -596,6 +596,10 @@
     "to": "/projects/frontend/application-layouts/introduction"
   },
   {
+    "from": "/frontend/application-layouts",
+    "to": "/projects/frontend/application-layouts"
+  },
+  {
     "from": "/frontend/authenticating-app-users/calling-frontend-functions/introduction",
     "to": "/projects/frontend/authenticating-app-users/calling-frontend-functions/introduction"
   },
@@ -806,6 +810,10 @@
   {
     "from": "/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views",
     "to": "/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements/views"
+  },
+  {
+    "from": "/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements",
+    "to": "/projects/frontend/data-in-the-frontend/data-scopes-for-app-builder-elements"
   },
   {
     "from": "/frontend/data-in-the-frontend/getting-and-setting-state-data",
