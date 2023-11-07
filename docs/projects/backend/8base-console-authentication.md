@@ -11,7 +11,7 @@ Every 8base workspace initializes with native support for signing up, managing, 
 
 ## Understanding Authentication
 
-![Authentication flow diagram](./images/authorization_graphic.svg)
+![Authentication flow diagram](./_images/authorization_graphic.svg)
 
 While 8base simplifies the process of setting up authentication, it's important to still have a basic understanding of what's going on under the hood! Using the diagram above, we can get a clear picture of how the authentication flow works.
 
@@ -112,7 +112,7 @@ There are only a few steps required to set up your Auth0 account on 8base. First
 
 All required information is in the settings of your Auth0 account.
 
-![Connecting your Auth0 account](./images/auth-own-auth0.png)
+![Connecting your Auth0 account](./_images/auth-own-auth0.png)
 
 ### OpenID Connect
 
@@ -120,7 +120,7 @@ The ability to set up an authentication provider that supports the OpenID specif
 
 In the 8base Management Console, you're able to configure one or more authentication providers under `App Services > Authentication`. Click the "+" button and fill out the provider form, select _OpenID_ as the type and add an OpenID Provider URL. Once completed, the record is saved to your _Authentication Profiles_.
 
-![Adding an OpenID Authentication Provider in 8base](./images/openid-settings.png)
+![Adding an OpenID Authentication Provider in 8base](./_images/openid-settings.png)
 
 #### getToken Resolver
 
@@ -237,7 +237,7 @@ extend type Mutation {
 
 To set environment variables that can be accessed from within custom functions, open up your workspace, and navigate to `Settings > Environment Variables`. Here, any key-value pair may be securely stored and accessed from within your functions at `process.env.<ENV_VARIABLE_KEYNAME>`.
 
-![Environment variables manager in the 8base Management Console](./images/openid-env-variables.png)
+![Environment variables manager in the 8base Management Console](./_images/openid-env-variables.png)
 
 ## Troubleshooting
 

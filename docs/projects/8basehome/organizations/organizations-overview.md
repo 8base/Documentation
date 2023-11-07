@@ -22,7 +22,7 @@ There are three main sections: **General**, **Team**, and **Billing**.
 
 Administrators and the Owner can edit the organization name, description, and icon. When you change the name or description, remember to click **Save Changes**.
 
-Click the organization icon on the left to change the icon. If you have never added an icon, a blank folder will display. A dialog box opens that allows you to select a new icon.
+Click the organization icon on the left to change the icon. If you have never added an icon, a blank folder will display.
 
 ![Organization General settings page](_images/ui-org-general.png)
 

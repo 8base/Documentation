@@ -1,21 +1,19 @@
 ---
 id: 'getting-started-quick-start'
 sidebar_label: 'Quick Start'
-redirect_from: '/backend/getting-started/quick-start'
-slug: '/projects/backend/getting-started/quick-start'
+redirect_from: '/projects/backend/getting-started/quick-start'
+slug: '/backend/getting-started/quick-start'
 ---
 
 # Quick Start
 
-The goal of this quick-start is to get you up and running with 8base and a front-end framework you love, fast. Let's do it!
+The goal of this quick-start is to get you up and running with 8base and a frontend framework.
 
-This guide will introduce some basics of 8base workspaces and set up a starter app. It will help demonstrate key concepts of 8base, and maybe even kick-off your next awesome project 😊
+This guide will introduce some basics of 8base workspaces and set up a starter app. It will help demonstrate key concepts of 8base, and maybe even kick-off your next awesome project.
 
 ## 1. Start an 8base Account
 
-If you haven't already, create an 8base account. Click [this link](https://app.8base.com) to get started. We'll send you a confirmation email if you signed up using an email and password. Either way, once your account is confirmed, 8base will redirect you to a default workspace.
-
-Voila! You're officially on 8base.
+If you haven't already, create an 8base account. Open [8base](https://app.8base.com) to get started. We'll send you a confirmation email if you signed up using an email and password. Either way, once your account is confirmed, 8base will redirect you to a default workspace.
 
 ## 2. Setting up a Workspace
 
@@ -23,9 +21,11 @@ Each workspace is treated as an individual project – like having different Git
 
 Let's just use the default workspace for the rest of this quick-start.
 
-![8base workspace](./images/qs-workspace.png)
+![8base workspace](./_images/qs-workspace.png)
 
-_Optional: If you want to create a new workspace, click the "YOUR NAME's Workspace" dropdown at the top of your screen and select "+ New Workspace". Name it whatever you like before pressing create. The new workspace should load in less then 10-seconds._
+:::tip
+If you want to create a new workspace, click the "YOUR NAME's Workspace" dropdown at the top of your screen and select "+ New Workspace". Name it whatever you like before pressing create.
+:::
 
 ### 2.1. Building a Data Model
 
@@ -46,7 +46,7 @@ Once the tables is created, we're going to establish a relationship between it a
 | ------ | ----- | ------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `user` | Table | A notes other | `table=Users`\n`Relation Field Name=notes`\n`Allow multiple Notes per User=True`\n`Allow multiple Users per Note=False` |
 
-![8base tables](./images/qs-tables.png)
+![8base tables](./_images/qs-tables.png)
 
 Before moving on, lets also add several dummy records to our database. You can do this manually by navigating to the `data` tab. However, lets just run the following GraphQL mutation in the [API Explorer](https://app.8base.com/api-explorer). Make sure to swap `<YOUR_ACCOUNT_EMAIL_ADDRESS>` with your email address!
 
@@ -98,7 +98,7 @@ Let's check the appropriate boxes and select the needed options.
 
 Now, all users with the _Reviewer_ role who call the workspace API endpoint will have these permissions when querying notes. 8base handles roles and permissions natively, so it's easy to control what actions users can take on data resources.
 
-![8base roles and permissions](./images/qs-roles-and-permissions.png)
+![8base roles and permissions](./_images/qs-roles-and-permissions.png)
 
 - _[Roles and Permissions docs](/projects/backend/roles-and-permissions)_
 
@@ -117,7 +117,7 @@ Navigate to the [Authentication page](https://app.8base.com/app-services/authent
 
 Add the new authentication profile. The information that’s now displayed will be used when adding authentication to the front-end. Note the Authentication Profile `Id`, the `Client ID` and the `Domain` – these values will come in handy later in the article.
 
-![8base authentication profile](./images/qs-auth-profile.png)
+![8base authentication profile](./_images/qs-auth-profile.png)
 
 Scroll down to where you see `Custom Domains`. This is where you can provide routes that’ll be used during authentication. Make sure the `localhost:port` number matches that which your app will run on in development - or other redirect URLs for native apps!
 
@@ -135,19 +135,19 @@ There are a few ways to obtain the endpoint.
 
 1. In the backend workspace dashboard, at the bottom left.
 
-![API Endpoint Workspace Dashboard](./images/graphql-api-endpoints-workspace-dashboard.png)
+![API Endpoint Workspace Dashboard](./_images/graphql-api-endpoints-workspace-dashboard.png)
 
 2. In the data section, by clicking into the "Endpoint" button at the bottom left.
 
-![API Endpoint Data Section](./images/graphql-api-endpoints-data-section.png)
+![API Endpoint Data Section](./_images/graphql-api-endpoints-data-section.png)
 
 3. In the workspace settings.
 
-![API Endpoint Workspace Settings](./images/graphql-api-endpoints-workspace-settings.png)
+![API Endpoint Workspace Settings](./_images/graphql-api-endpoints-workspace-settings.png)
 
 The endpoint will change if the workspace has CI/CD enabled. For environments other than MASTER, the endpoint will have an \_ENVNAME at the end.
 
-![API Endpoint Environment Settings](./images/graphql-api-endpoints-environment-settings.png)
+![API Endpoint Environment Settings](./_images/graphql-api-endpoints-environment-settings.png)
 
 ## 3. Setting up the Client
 
@@ -288,7 +288,7 @@ Look for a `8base-starter-app/client/.env` file that contains a template for the
 
 Using the command that's appropriate to the chosen starter app (`npm start/serve/etc.`), boot it up! You'll find the right start command in the starter app's READme.md file.
 
-![8base starter app](./images/qs-starter-app.png)
+![8base starter app](./_images/qs-starter-app.png)
 
 You can now login, logout, and sign-up in the starter app using your username and password. Meanwhile, when authenticated you're able to access the Profile page, which queries the GraphQL API for the authenticated user information.
 

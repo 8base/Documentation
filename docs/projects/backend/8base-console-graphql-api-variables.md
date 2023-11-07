@@ -9,7 +9,7 @@ slug: '/projects/backend/graphql-api/variables'
 
 To avoid hardcoding all values when working with GraphQL, the **API Explorer** provides a _Variables_ section in which a JSON object can be added. The top level keys of the JSON object are made available as variables that have names denoted by a dollar-sign ($KEY_NAME). This allows for a much more enjoyable development experience when writing and testing dynamic queries, mutations, and subscriptions.
 
-![Declaring variables in the API Explorer](./images/api-explorer-query-variables.png)
+![Declaring variables in the API Explorer](./_images/api-explorer-query-variables.png)
 
 ### Declaring Variables
 

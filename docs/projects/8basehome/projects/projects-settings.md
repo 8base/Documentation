@@ -11,7 +11,7 @@ When you change the name or description, remember to click **Save**.
 
 ![Settings](./_images/projects-project-ui-walkthrough-settings.png)
 
-Click the project icon on the right to change the icon. If you have never added an icon, a blank folder will display. A dialog box opens that allows you to select a new icon.
+Click the project icon on the right to change the icon. If you have never added an icon, a blank folder will display.
 
 ![Project Icon](./_images/projects-project-ui-walkthrough-settings-project-icon.png)
 
