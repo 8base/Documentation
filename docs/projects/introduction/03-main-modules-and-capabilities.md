@@ -23,7 +23,7 @@ The Backend Builder is where the magic happens for your application's backend ne
 Key Features:
 
 - Visual database schema designer.
-- Spreadsheet-like data viewinf and management interface.
+- Spreadsheet-like data view and management interface.
 - Serverless function management.
 - Management of application core services such as authentication, role-based access controls and more.
 - API endpoint configuration and testing.

@@ -4,14 +4,13 @@ sidebar_label: 'Salesforce'
 redirect_from: '/projects/backend/plugins-integrations/salesforce'
 slug: '/backend/data/salesforce'
 ---
-
 # Salesforce
 
 The Bolt + Salesforce integration unifies all of your Salesforce data inside of 8base and expose it through our GraphQL API for use in custom application development.
 
 ## Set up
 
-In the `Integrations` sections of the Console, click the "+" button. You'll see the Salesforce integration listed in the options modal; select it.
+In the `Integrations` sections of the Console, click the **+** button. You'll see the Salesforce integration listed in the options modal; select it.
 
 Up to 5 Salesforce integrations can be added to a single workspace. Each integration can be given a _Display Name_ and _API Name_, either of which can be changed at any time.
 

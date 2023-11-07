@@ -7,7 +7,11 @@ slug: '/backend/data/data-builder'
 
 # Data Builder
 
-The **8base Data Builder** is a data modeling UI for defining database tables, field types, and relationships between tables. For each table defined, the 8base GraphQL engine creates GraphQL schema object types and the corresponding query, mutation, and subscription fields with resolvers automatically. The Data Builder is found in the 8base console's **Data** tab. 
+The **8base Data Builder** is a data modeling interface for defining database tables, field types, and relationships between tables. The Data Builder is found in the 8base console's **Data** tab.
+
+![8base Data Builder screen](_images/ui_databuilder.png)
+
+For each table defined, the 8base GraphQL engine creates GraphQL schema object types and the corresponding query, mutation, and subscription fields with resolvers automatically. 
 
 This means that all Create, Read, Update, and Delete (CRUD) actions, as well as real-time connections (websockets) are immediately available to use via the workspace's unique API endpoint.
 
@@ -29,16 +33,21 @@ After a table is created, fields and relations can be defined. All updates to a 
 
 As soon as a table is updated, its corresponding GraphQL schema types and query, mutation, and subscription resolvers will be updated automatically.
 
-To ensure that table related errors and mistakes are minimized, 8base protects against **dozens** of harmful actions. Some of these include:
+To ensure that table related errors and mistakes are minimized, 8base protects against many harmful actions. Some of these include:
 
 - A prompt that requires a _Default Value_ will appear when changing a **non-mandatory** field to **mandatory**.
 - Date, Number, and Text field values are automatically converted when an existing field _type_ is updated.
 - When changing a **non-unique** field to **unique**, current records are validated for having unique values.
-- Many more!
 
 ### Deleting Tables
 
-When attempting to delete a table, a confirmation input requires the table name to be entered. Please know that deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if any other tables are related to the table being deleted - _belongs to_ and _has many_, either specified as mandatory or not - those relations will be severed.
+To delete a table:
+1. Go to the table name and click **...**. 
+2. Click **Delete**.
+3. A confirmation dialog opens. Type in the table name and click **Delete**.
+:::warning
+Deleted tables **cannot** be restored and any existing table records will be lost. Additionally, if there are tables that are related to the table being deleted - _belongs to_ and _has many_, either specified as mandatory or not - those relations will be severed.
+:::
 
 ![Deleting table's in the Data Builder](../_images/data-builder-delete-table.png)
 
@@ -74,7 +83,7 @@ Self-Referential relationships can be defined by relating tables to themselves! 
 
 ### Table Types
 
-There are several table types in 8base, with different features:
+There are three table types:
 
 #### Custom Tables
 
@@ -82,11 +91,11 @@ Custom tables are the tables created in any workspace by an administrator. They 
 
 #### System Tables
 
-System tables - like _Users_ are tables that come automatically with a workspace. They are fully extensible, meaning that new fields and relations can be added to them. However, they cannot be deleted or renamed. Their existing fields cannot be changed.
+System tables are tables that come automatically with a workspace. For example, the  _Users_ table. They are fully extensible, meaning that new fields and relations can be added to them. However, these tables cannot be deleted or renamed. Their default fields cannot be changed.
 
 #### View Tables
 
-View Tables are virtual tables that aggregate fields from several or more tables into a single _view_. Under the hood, they are based on the result-set of an SQL statement. In a workspace, they can be created using the `viewCreate` GraphQL mutation in the API Explorer.
+View Tables are virtual tables that aggregate fields from several tables into a single _view_. Under the hood, they are based on the result-set of an SQL statement. In a workspace, they can be created using the `viewCreate` GraphQL mutation in the API Explorer.
 
 For more information on views, see [SQL Views](https://www.w3schools.com/sql/sql_view.asp).
 
@@ -94,25 +103,31 @@ Salesforce data can be imported as View Tables. For more information, see [Sales
 
 ## Fields
 
-8base offers all database field types required for building software. Certain fields have extended capabilities that streamline specific tasks. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
+There are several database field types. Certain fields have extended capabilities that streamline specific tasks. For example, `File` fields allow you to seamlessly attach files to records and `Smart` fields make it easy to implement complex validations for addresses or phone number.
 
 ### Creating Fields
 
-Every field gets defined in a table and requires a _name_ and a _type_. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations - each being specific to the field _type_.
+Every field gets defined in a table and requires a _name_ and a _type_. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations.
 
 ### Updating Fields
 
-Fields are easily updated using the same interface used to create them. Updates to attributes like the field's _name_ and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to remedy the issue.
+Fields are updated using the same interface used to create them. Updates to attributes like the field's _name_ and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to fix the issue.
 
 ![Updating fields in the Data Builder](../_images/data-builder-field-update.png)
 
 ### Deleting Fields
 
-To delete a field, click the "X" to the right of the field name input. and enter the field name in the confirmation modal. Deleted fields **cannot** be restored and any existing data will be lost.
+To delete a field:
+
+1. Click the **X** to the right of the field name input.
+2. Enter the field name in the confirmation modal. Click **Delete**. 
+:::warning
+Deleted fields **cannot** be restored and any existing data will be lost.
+:::
 
 ### Field Types
 
-There are eight field types that can be configured to fit almost any data requirement.
+There are eight field types:
 
 #### Text
 
@@ -121,12 +136,15 @@ For storing _String_ data. For example, customer names, regions, and email addre
 Text field properties:
 
 - **Format**: For specifying what values the field stores (_Plain_, _HTML_ or _Markdown_).
-- **Field Size**: The maximum string length.
+- **Field Size**: The maximum string length, in characters.
 - **Allow Multiple**: Stores 0 or more _Text_ values in an array (not searchable).
-- **Mandatory**: Whether this field must have a value.
-- **Unique**: Whether the field value is required to be unique.
-- **Default Value**: A default value assigned to new records.
 - **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
+- **No Duplicate Values**: Whether the field value is required to be unique.
+- **Default Value**: The default value assigned to new records.
+- **Advanced Settings**:
+  - **Field Type**: Standard or Calculated. For more information, see [Advanced Field Settings](#advanced-field-settings).
+
 
 ![Text field properties pane](_images/ui_fieldproperties_text.png)
 
@@ -141,10 +159,13 @@ Number field properties:
 - **Minimum Value**: The minimum value required.
 - **Maximum Value**: The maximum value required.
 - **Allow Multiple**: Stores 0 or more _Number_ values in an array (not searchable).
-- **Mandatory**: Whether the field value is required.
-- **Unique**: Whether the field value is required to be unique.
-- **Default Value**: A default value assigned to new records.
 - **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
+- **No Duplicate Values**: Whether the field value is required to be unique.
+- **Default Value**: The default value assigned to new records.
+- **Advanced Settings**:
+  - **Field Type**: Standard, Auto-increment, or Calculated. For more information, see [Advanced Field Settings](#advanced-field-settings).
+
 
 ![Number field properties pane](_images/ui_fieldproperties_number.png)
 
@@ -156,10 +177,12 @@ Date field properties:
 
 - **Format**: Whether the field stores a _Date_ or a _DateTime_ value.
 - **Allow Multiple**: Stores 0 or more _Date_ values in an array (not searchable).
-- **Mandatory**: Whether the field value is required.
-- **Unique**: Whether the field value is required to be unique.
-- **Default Value**: A default value assigned to new records.
 - **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
+- **No Duplicate Values**: Whether the field value is required to be unique.
+- **Default Value**: The default value assigned to new records.
+- **Advanced Settings**:
+  - **Field Type**: Standard or Calculated. For more information, see [Advanced Field Settings](#advanced-field-settings).
 
 ![Date field properties pane](_images/ui_fieldproperties_date.png)
 
@@ -169,11 +192,13 @@ For storing _Boolean_ and custom _Enum_ type data. Data where there are only two
 
 Switch field properties:
 
-- **Format**: For specifying the _Boolean_ type (true / false, yes / no, etc...)
+- **Format**: For specifying the _Boolean_ type, such as true or false.
 - **Allow Multiple**: Stores 0 or more _Boolean_ values in an array (not searchable).
-- **Mandatory**: Whether the field value is required.
-- **Default Value**: A default value assigned to new records.
 - **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
+- **Default Value**: The default value assigned to new records.
+- **Advanced Settings**:
+  - **Field Type**: Standard or Calculated. For more information, see [Advanced Field Settings](#advanced-field-settings).
 
 ![Switch field properties pane](_images/ui_fieldproperties_switch.png)
 
@@ -185,8 +210,8 @@ File field properties:
 
 - **Format**: Whether the field stores a _File_ or an _Image_.
 - **Allow Multiple**: Stores 0 or more _File_ objects in an array.
-- **Mandatory**: Whether the field value is required.
 - **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
 
 ![File field properties pane](_images/ui_fieldproperties_file.png)
 
@@ -197,9 +222,9 @@ For specifying _has many_, _has one_ and _belongs to_ relationships between tabl
 Table field properties:
 - **Table**: For selecting what table is to get related.
 - **Relation Field Name**: The name of the relation as it appears on the **corresponding** table.
+- **Description**: An optional text box where you can write information about the field.
 - **Allow Multiple X to Y**: Whether the relationship is _has one_ or _has many_.
 - **Mandatory**: Whether the field relationship is required.
-- **Description**: An optional text box where you can write information about the field.
 
 ![Table field properties pane](_images/ui_fieldproperties_table.png)
 
@@ -210,39 +235,12 @@ For storing _addresses_ and _phone numbers_ with managed validations and logic.
 Smart field properties:
 - **Format**: Whether the field stores a _Phone Number_ or an _Address_.
 - **Allow Multiple**: Stores 0 or more _Smart_ objects in an array.
-- **Mandatory**: Whether the field value is required.
 - **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
 
 ![Smart field properties pane](_images/ui_fieldproperties_smart.png)
 
-#### JSON
-
-For storing _JSON_ objects.
-
-JSON field properties:
-- **Mandatory**: Whether the field value is required.
-- **Default Value**: A default value assigned to new records.
-- **Description**: An optional text box where you can write information about the field.
-
-![JSON field properties pane](_images/ui_fieldproperties_JSON.png)
-
-#### GEO
-
-For storing _geo_ data points, based on latitude and longitude.
-
-GEO field properties:
-- **Format**: Must be set to "Point".
-- **Allow Multiple**: Stores 0 or more _Smart_ objects in an array.
-- **Description**: An optional text box where you can write information about the field.
-- **Mandatory**: Whether the field value is required.
-- **Default Value**: A default value assigned to new records.
-
-![Geo field properties pane](_images/ui_fieldproperties_geo.png)
-
-
-### Smart Fields
-
-_Smart Fields_ are enriched field types offered by 8base. They provide structure, and sometimes logic, to the organization and validation of common data.
+Smart fields are enriched field types offered by 8base. They provide structure, and sometimes logic, to the organization and validation of common data.
 
 #### Address
 
@@ -270,14 +268,41 @@ type Phone = {
 };
 ```
 
-### Auto Increment Fields
+#### JSON
+
+For storing _JSON_ objects.
+
+JSON field properties:
+- **Mandatory**: Whether this field must have a value.
+- **Description**: An optional text box where you can write information about the field.
+- **Default Value**: The default value assigned to new records.
+- **Advanced Settings**:
+  - **Field Type**: Standard or Calculated. For more information, see [Advanced Field Settings](#advanced-field-settings).
+
+![JSON field properties pane](_images/ui_fieldproperties_JSON.png)
+
+#### GEO
+
+For storing _geo_ data points, based on latitude and longitude.
+
+GEO field properties:
+- **Format**: Must be set to _Point_.
+- **Allow Multiple**: Stores 0 or more _Smart_ objects in an array.
+- **Description**: An optional text box where you can write information about the field.
+- **Mandatory**: Whether this field must have a value.
+- **Default Value**: The default value assigned to new records.
+
+![Geo field properties pane](_images/ui_fieldproperties_geo.png)
+
+### Advanced Field Settings
+#### Auto Increment Fields
 
 When using _Number_ field types, the "Auto-Increment" option is available under the fields _Advanced Settings_.
 The system will automatically increment a number value for the field when selected, starting at 1.
 
 Fields that have been created using _Auto Increment_ can be deleted, though they are **not** editable via the console or API when in use. Similar to an integer-based Primary Key, the value always escalates. This means that if five-records are created and receive the values 1-5 in their _Auto Increment_ fields, whether or not those records get deleted, the next record will be assigned a value of 6.
 
-### Calculated Fields
+#### Calculated Fields
 
 Under _Advanced Settings_ for field types _Text_, _Number_, _Date_, _Switch_, and _JSON_ the "Calculated" option is available. This feature follows the [MySQL Generated Column standard](https://dev.mysql.com/doc/refman/5.7/en/create-table-generated-columns.html).
 
