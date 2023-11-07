@@ -215,7 +215,36 @@ const sidebars = {
             id: 'projects/backend/data/data-index',
           },
           items: [
-            'projects/backend/data/8base-console-platform-tools-data-builder',
+            {
+              type: 'category',
+              label: 'Data Builder',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/data/8base-console-platform-tools-data-builder',
+              },
+              items: [
+                {
+                  type: 'category',
+                  label: 'Fields',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/data/data-fields-index',
+                  },
+                  items: [                    
+                    'projects/backend/data/data-fields-text',
+                    'projects/backend/data/data-fields-number',
+                    'projects/backend/data/data-fields-date',  
+                    'projects/backend/data/data-fields-switch',  
+                    'projects/backend/data/data-fields-file',  
+                    'projects/backend/data/data-fields-table',  
+                    'projects/backend/data/data-fields-smart',
+                    'projects/backend/data/data-fields-json',
+                    'projects/backend/data/data-fields-geo',
+                    'projects/backend/data/data-fields-advanced-settings',              
+                  ],
+                },              
+              ],
+            },            
             {
               type: 'category',
               label: 'Data Viewer',
@@ -229,7 +258,17 @@ const sidebars = {
                 'projects/backend/8base-console-plugins-integrations-salesforce',             
               ],
             },
-            'projects/backend/data/data-table-indexes',
+            {
+              type: 'category',
+              label: 'Data Settings',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/data/data-settings',
+              },
+              items: [
+                'projects/backend/data/data-table-indexes',                             
+              ],
+            },            
           ],
         },
         {
