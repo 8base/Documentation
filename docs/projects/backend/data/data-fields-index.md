@@ -13,11 +13,11 @@ Certain fields have extended capabilities that streamline specific tasks. For ex
 
 ### Creating Fields
 
-Every field gets defined in a table and requires a _name_ and a _type_. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configurations modal will appear allowing for further customizations.
+Every field gets defined in a table and requires a _name_ and a _type_. Field names must be unique in the table, irrespective of their type. Once a new field has been created, a configuration modal will appear allowing for further customizations.
 
 ### Updating Fields
 
-Fields are updated using the same interface used to create them. Updates to attributes like the field's _name_ and even _type_ in some cases - are changed in real-time, while changed configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to fix the issue.
+Fields are updated in the same interface used to create them. Updates to attributes like the field's _name_ and even _type_ in some cases - are changed in real-time. Changes to configurations must be saved. If 8base detects an issue with the change being made, an alert will display with instructions to fix the issue.
 
 ![Updating fields in the Data Builder](../_images/data-builder-field-update.png)
 

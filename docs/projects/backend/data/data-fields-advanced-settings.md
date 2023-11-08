@@ -57,7 +57,7 @@ JsonResponse = {
 };
 ```
 
-There is a long list of available MySQL Functions that are referenced, with further documentation [MySQL Docs. Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html), all of which are available when using _Calculated Fields_. All operators, with simple descriptions, are listed below.
+There is a long list of available MySQL Functions that are referenced, with further documentation: [MySQL Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html), all of which are available when using _Calculated Fields_. All operators, with simple descriptions, are listed below.
 
 ```
 | Name | Description |
