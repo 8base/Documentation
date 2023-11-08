@@ -9,7 +9,7 @@ slug: '/backend/data/data-viewer'
 
  The **8base Data Viewer** lets you search and manage table records. You can sort, filter, and search your tables. You can also edit table rows and import data from CSV files. 
  
- If you are viewing a schema, click the **Data** tab to see the **Data Viewer**. 
+To open the Data Viewer, click **Data** in the sidebar, select the table you want to work on, and then click the ![data](../../_images/_icons/ic_data_table.svg) tab.
 
 ![8Base Data Viewer](../_images/data-viewer.png)
 

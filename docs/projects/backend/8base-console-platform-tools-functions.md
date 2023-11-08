@@ -2,7 +2,7 @@
 id: '8base-console-platform-tools-functions'
 sidebar_label: 'Functions'
 redirect_from: '/backend/console/functions'
-slug: '/projects/backend/console/functions'
+slug: '/backend/console/functions'
 ---
 
 # Logic

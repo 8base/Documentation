@@ -6,7 +6,9 @@ slug: '/backend/data/data-builder'
 ---
 # Data Builder
 
-The **8base Data Builder** is a data modeling interface for defining database tables, field types, and relationships between tables. The Data Builder is found in the 8base console's **Data** tab.
+The **8base Data Builder** is a data modeling interface for defining database tables, field types, and relationships between tables. 
+
+To open the Data Builder, click **Data** in the sidebar, select the table you want to work on, and then click the ![schema](../../_images/_icons/ic_schema.svg) Schema tab.
 
 ![8base Data Builder screen](_images/ui_databuilder.png)
 
