@@ -25,7 +25,7 @@ Next, you will set up the data the *Card* component will use by creating four **
 
 1. Click the **State** icon on the left menu and ensure the Local tab is selected.
 2. Click the "+" at the top of the State pane to create a new State, which opens a small pop-up window.
-3. Enter "userPic" in the **Name** field, set the **Type** to String, and enter "https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg" in the **Default Value** field.
+3. Enter "userPic" in the **Name** field, set the **Type** to String, and enter "https://m.media-amazon.com/_images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg" in the **Default Value** field.
 4. Click "Create". 
 
 Your first custom entry should look like this.

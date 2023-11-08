@@ -209,7 +209,71 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Management Console',
+          label: 'Data',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/data/data-index',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Data Builder',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/data/8base-console-platform-tools-data-builder',
+              },
+              items: [
+                {
+                  type: 'category',
+                  label: 'Fields',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/data/data-fields-index',
+                  },
+                  items: [                    
+                    'projects/backend/data/data-fields-text',
+                    'projects/backend/data/data-fields-number',
+                    'projects/backend/data/data-fields-date',  
+                    'projects/backend/data/data-fields-switch',  
+                    'projects/backend/data/data-fields-file',  
+                    'projects/backend/data/data-fields-table',  
+                    'projects/backend/data/data-fields-smart',
+                    'projects/backend/data/data-fields-json',
+                    'projects/backend/data/data-fields-geo',
+                    'projects/backend/data/data-fields-advanced-settings',              
+                  ],
+                },              
+              ],
+            },            
+            {
+              type: 'category',
+              label: 'Data Viewer',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/data/8base-console-platform-tools-data-viewer',
+              },
+              items: [
+                'projects/backend/data/data-table-importing',
+                'projects/backend/data/8base-console-handling-files',
+                'projects/backend/8base-console-plugins-integrations-salesforce',             
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Data Settings',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/data/data-settings',
+              },
+              items: [
+                'projects/backend/data/data-table-indexes',                             
+              ],
+            },            
+          ],
+        },
+        {
+          type: 'category',
+          label: '8base Console',
           link: {
             type: 'doc',
             id: 'projects/backend/8base-console-readme',
@@ -217,7 +281,6 @@ const sidebars = {
           items: [
             'projects/backend/8base-console-authentication',
             'projects/backend/8base-console-roles-and-permissions',
-            'projects/backend/8base-console-handling-files',
             {
               type: 'category',
               label: 'Tools',
@@ -225,9 +288,7 @@ const sidebars = {
                 type: 'doc',
                 id: 'projects/backend/8base-console-platform-tools-readme',
               },
-              items: [
-                'projects/backend/8base-console-platform-tools-data-builder',
-                'projects/backend/8base-console-platform-tools-data-viewer',
+              items: [                
                 'projects/backend/8base-console-platform-tools-functions',
                 'projects/backend/8base-console-platform-tools-api-explorer',
                 {
@@ -321,17 +382,17 @@ const sidebars = {
             'projects/backend/8base-console-custom-functions-debugging',
           ],
         },
-        {
-          type: 'category',
-          label: 'Plugins and Integrations',
-          link: {
-            type: 'doc',
-            id: 'projects/backend/8base-console-plugins-integrations-readme',
-          },
-          items: [
-            'projects/backend/8base-console-plugins-integrations-salesforce',
-          ],
-        },
+       // {
+       //   type: 'category',
+       //   label: 'Plugins and Integrations',
+       //   link: {
+       //     type: 'doc',
+       //     id: 'projects/backend/8base-console-plugins-integrations-readme',
+       //   },
+       //   items: [
+       //     
+       //   ],
+       // },
         {
           type: 'category',
           label: 'Local Development Environment',

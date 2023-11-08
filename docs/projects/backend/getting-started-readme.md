@@ -1,28 +1,16 @@
 ---
 id: 'getting-started-readme'
-sidebar_label: 'Getting Started'
-redirect_from: '/backend/getting-started'
-slug: '/projects/backend/getting-started'
+sidebar_label: 'Backend Overview'
+redirect_from: '/projects/backend/getting-started'
+slug: '/backend/getting-started'
 ---
 
-# Getting Started
+# Backend Overview
 
-**8base** is a Backend-as-a-Service. It lets front-end developers focus more on what they love and back-end developers expedite their work-flow. As our CEO likes to say, "it's totally awesome!"
-
-When using 8base, your project benefits from having:
-
-1. A fully scalable server-less GraphQL API.
-2. A fully managed MySQL Database that's hosted on AWS ([Aurora MySQL](https://aws.amazon.com/rds/aurora/)).
-3. Ready-to-use app services (Authentication, Authorization, File Storage, and more)
-4. 8base's rock-star team and [the Community](https://community.8base.com)
-5. So, so, so much more!
-
-## 8base Application Structure
-
-Every 8base Workspace contains of the following components:
+Every 8base Workspace contains the following components:
 
 1. **Schema**: A Schema represents the shape of your application data and specifies what data a client application can query from your API, as well as how to manipulate it.
-2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Project Team Management](../8basehome/projects/projects-team-management.md), Users, [Roles & Permissions](/projects/backend/roles-and-permissions), and [Files](/projects/backend/handling-files).
+2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Project Team Management](../8basehome/projects/projects-team-management.md), Users, [Roles & Permissions](/projects/backend/roles-and-permissions), and [Files](data/8base-console-handling-files.md).
 3. **User Data**: All the unique data resources (tables, records, etc) that are specific to your application.
 4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/projects/backend/authentication) is implemented through [Authentication Profiles](/projects/backend/authentication#authentication-types), while [Authorization](/projects/backend/roles-and-permissions) uses the roles and permissions system.
 5. **Workspace Users**: 8base users with access to your Workspace through the console.
@@ -51,11 +39,11 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 
 ## Useful Guides
 
-> [Quick Start](/projects/backend/getting-started-quick-start.md)
+> [Quick Start](getting-started-quick-start.md)
 > Learn 8base by building a React or Vue application.
 >
-> [Management Console](/projects/backend/8base-console-readme.md)
-> Read the high-level overview of 8base's management console.
+> [8base Console](/projects/backend/8base-console-readme.md)
+> Read the high-level overview of 8base's console.
 >
 > [Connect to your API](/projects/backend/getting-started-connecting-to-api.md)
 > Explore ways to connect to the 8base GraphQL API.

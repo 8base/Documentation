@@ -6,9 +6,16 @@ slug: /backend
 
 # Backend Development
 
-This section provides information about 8base's backend and data capabilities. 
+**8base** is a Backend-as-a-Service. It lets front-end developers focus more on what they love and back-end developers expedite their workflow. 
 
-Here's a brief overview of the subsections you will find: 
+When using 8base, your project benefits from having:
+
+- A fully scalable server-less GraphQL API.
+- A fully managed MySQL Database that's hosted on AWS ([Aurora MySQL](https://aws.amazon.com/rds/aurora/)).
+- Ready-to-use app services (Authentication, Authorization, File Storage, and more)
+
+
+This section provides information about 8base's backend and data capabilities:
 
 - [Getting Started](getting-started-readme.md): Learn backend fundamentals such as application structure and workspaces.
 - [Management Console](8base-console-readme.md): Learn how to manage backend resources, such as data models, roles and permissions, users, and API tokens,
