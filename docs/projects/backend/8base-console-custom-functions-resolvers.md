@@ -4,16 +4,17 @@ sidebar_label: 'Resolvers'
 redirect_from: '/backend/custom-functions/resolvers'
 slug: '/backend/custom-functions/resolvers'
 ---
-
 # Resolvers
 
-Resolvers are a function type that get exposed to the GraphQL API and can be directly called from client apps. Resolvers allow you to add custom queries and mutations, in addition to the auto-generated CRUD operations 8base handles for you. Resolvers are used to integrate 3rd party APIs, query / coerce data, or run custom algorithms. 
+A resolver is a function type that gets exposed to the GraphQL API and can be directly called from client apps. Resolvers allow you to add custom queries and mutations, in addition to the auto-generated CRUD operations 8base handles for you. Resolvers are used to integrate 3rd party APIs, query/coerce data, or run custom algorithms. 
 
+:::note
 All resolver functions require unique names. You are able to deploy as many resolvers as you want to a single workspace.
+:::
 
 ## 8base.yml Declaration
 
-Resolver declarations require a _handler.code_, _type_, and _schema_ definition. While the _type_ value must equal 'resolver', _handler.code_ and _schema_ both accept relative path values to the resolver's two required files.
+Resolver declarations require a `handler.code`, `type`, and `schema` definition. While the `type` value must equal 'resolver', `handler.code` and `schema` both accept relative path values to the resolver's two required files.
 
 ```yaml
 #
@@ -68,11 +69,11 @@ module.exports = (event) => {
 
 ## Resolver Arguments
 
-To learn about the arguments that are passed to resolvers, review [Custom Function Arguments](/projects/backend/custom-functions/#custom-function-arguments).
+To learn about the arguments that are passed to resolvers, see [Custom Function Arguments](/projects/backend/custom-functions/#custom-function-arguments).
 
 ## Resolver Response
 
-The value returned by a resolver is allowed two properties: _data_ and _errors_. The format of the data property should conform to the schema defined in the `schema.graphql` file.
+The value returned by a resolver is allowed two properties: `data` and `errors`. The format of the data property should conform to the schema defined in the `schema.graphql` file.
 
 ```javascript
 return {

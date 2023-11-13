@@ -1,7 +1,8 @@
 ---
 id: '8base-console-custom-functions-readme'
+sidebar_label: 'Custom Functions'
 redirect_from: '/backend/custom-functions'
-slug: '/projects/backend/custom-functions'
+slug: '/backend/custom-functions'
 ---
 
 # Custom Functions
