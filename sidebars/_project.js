@@ -281,7 +281,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Environment',
+              label: 'Development Environment',
               link: {
                 type: 'doc',
                 id: 'projects/backend/development-tools-dev-env-readme',
@@ -299,6 +299,7 @@ const sidebars = {
             'projects/backend/8base-console-custom-functions-debugging',
             'projects/backend/custom-functions/custom-functions-deployment',
             'projects/backend/custom-functions/custom-functions-executing-functions',
+            'projects/backend/custom-functions/custom-functions-logs',
           ],
         },
         {
@@ -319,7 +320,6 @@ const sidebars = {
                 id: 'projects/backend/8base-console-platform-tools-readme',
               },
               items: [                
-                'projects/backend/8base-console-platform-tools-functions',
                 'projects/backend/8base-console-platform-tools-api-explorer',
                 {
                   type: 'category',
