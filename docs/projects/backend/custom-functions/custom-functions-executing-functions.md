@@ -58,7 +58,7 @@ query MyQuery {
 
 ## Triggers
 
-Triggers execute when the defined event occurs. For example, you can set a trigger to execute every time a new user is created. To learn more, see [Triggers](/projects/backend/custom-functions/triggers#8baseyml).
+Triggers execute when the defined event occurs. For example, you can set a trigger to execute every time a new user is created. To learn more, see [Triggers](/projects/backend/custom-functions/triggers#8baseyml-declaration).
 
 ## Webhooks
 

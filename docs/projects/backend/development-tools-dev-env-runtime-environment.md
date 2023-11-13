@@ -53,7 +53,8 @@ You can set environment variables in 8base settings and they automatically get e
 
 ### Timeouts
 
-Functions have maximum 20 seconds execution time by default. After the execution time limit is reached the execution times out and returns an error. If you need more than 20 seconds of continuous execution you can increase your timeout up to 900 seconds by specifying it in `8base.yml`. Check out the example in [8base Config](/projects/backend/development-tools/dev-env/8base-yml) section of documentation.
+Functions have maximum 20 seconds execution time by default. After the execution time limit is reached the execution times out and returns an error. If you need more than 20 seconds of continuous execution you can increase your timeout up to 900 seconds by specifying it in `8base.yml`. Check out the example in [8base Config](../development-tools-dev-env-8base-yml.md)
+ section of documentation.
 
 ### What Happens after a Function Returns?
 
