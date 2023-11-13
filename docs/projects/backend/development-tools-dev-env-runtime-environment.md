@@ -17,7 +17,8 @@ Each function handler receives two arguments: `event` and `context`. The structu
 Functions have a second `context` argument passed to them that has the following properties:
 
 - `workspaceId`: Property holds the ID of the current workspace.
-- `context.invokeFunction(taskName, args, options)`: Allows you to invoke other functions. To learn more, see [Custom Functions](/backend/custom-functions/custom-functions).
+- `context.invokeFunction(taskName, args, options)`: Allows you to invoke other functions. To learn more, see [Custom Functions]
+(/backend/custom-functions).
 - `context.api.gqlRequest(query, variables, options)`: Provides a convenient way to interact with the 8base GraphQL API. When using the `api.gqlRequest` you don't have to worry about setting the URL or authentication header - it is done automatically. The query is executed under the authentication context of the user that made the request.
 
 ### Using `gqlRequest` to Call 8base API
@@ -53,7 +54,7 @@ You can set environment variables in 8base settings and they automatically get e
 
 ### Timeouts
 
-Functions have maximum 20 seconds execution time by default. After the execution time limit is reached the execution times out and returns an error. If you need more than 20 seconds of continuous execution you can increase your timeout up to 900 seconds by specifying it in `8base.yml`. Check out the example in [8base Config](../development-tools-dev-env-8base-yml.md)
+Functions have maximum 20 seconds execution time by default. After the execution time limit is reached the execution times out and returns an error. If you need more than 20 seconds of continuous execution you can increase your timeout up to 900 seconds by specifying it in `8base.yml`. Check out the example in [8base Config](development-tools-dev-env-8base-yml.md)
  section of documentation.
 
 ### What Happens after a Function Returns?

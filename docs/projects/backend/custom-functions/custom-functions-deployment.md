@@ -20,7 +20,7 @@ Here are some optional parameters:
 - `--help, -h` Show help [boolean]
 - `--functions, -f` The list of functions to deploy [array]
 
-If your 8base backend is using[CI/CD](/backend/8base-console-platform-tools-ci-cd.md), the functions will be deployed to the environment currently set. You can always which environment you are using with: 
+If your 8base backend is using[CI/CD](../8base-console-platform-tools-ci-cd.md), the functions will be deployed to the environment currently set. You can always which environment you are using with: 
 
 ```sh
 $ 8base environment show

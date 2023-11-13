@@ -199,7 +199,8 @@ This command shows the difference between your local migration files and any mig
 
 Applies local migrations files to target Environment.
 
-It is important to know that [Custom Logic (Functions)](/backend/custom-functions/custom-functions) are being deployed by default with any migrations files after `migration commit` is run. You can change this default behavior by specifying a commit mode:
+It is important to know that [Custom Logic (Functions)]
+(/backend/custom-functions) are being deployed by default with any migrations files after `migration commit` is run. You can change this default behavior by specifying a commit mode:
 
 - `--mode FULL` - commits migration files AND Custom Logic (Functions)
 - `--mode ONLY_MIGRATIONS` - commits only migration (without Custom Logic)

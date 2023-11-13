@@ -48,8 +48,7 @@ functions:
 
 ## Webhook Arguments
 
-To learn about the arguments that are passed to webhooks, see [custom function arguments](/backend/custom-functions/custom-functions
-/#custom-function-arguments).
+To learn about the arguments that are passed to webhooks, see [custom function arguments](/backend/custom-functions/custom-functions-types#custom-function-arguments).
 
 ## Path Parameters
 
@@ -85,7 +84,7 @@ Webhooks are public functions by default and are **not** permissioned using 8bas
 
 ### Checking for an Environment Variable
 
-For systems that require a secure webhook, access tokens from authorized systems get [set as a environment variables](/projects/backend/development-tools/dev-env/runtime-environment) in the 8base workspace. The authorized system is then able to specify their access token as a custom header, which then get validated within the webhook function.
+For systems that require a secure webhook, access tokens from authorized systems get [set as a environment variables](/backend/development-tools/dev-env/runtime-environment) in the 8base workspace. The authorized system is then able to specify their access token as a custom header, which then get validated within the webhook function.
 
 ![Setting up custom variables](_images/permissions-webhook-vars-example.png)
 

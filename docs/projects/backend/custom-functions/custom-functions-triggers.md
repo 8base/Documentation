@@ -102,8 +102,7 @@ A `trigger.after` type function receives the output of a mutation in the `event.
 }
 ```
 
-To learn more about the arguments that are passed to triggers, see [custom function arguments](/backend/custom-functions/custom-functions
-/#custom-function-arguments).
+To learn more about the arguments that are passed to triggers, see [custom function arguments](/backend/custom-functions/custom-functions-types#custom-function-arguments).
 
 ## Trigger Responses
 

@@ -7,7 +7,7 @@ slug: '/backend/custom-functions/dev-environment'
 
 # Development Environment
 
-The 8base CLI has a set of tools to assist with debugging functions locally.
+The 8base Command Line Interface (CLI) has a set of tools to assist with working on functions locally.
 
 To learn about logging, see [Logs](custom-functions/custom-functions-logs.md).
 

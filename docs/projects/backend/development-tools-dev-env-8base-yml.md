@@ -10,8 +10,7 @@ slug: '/backend/custom-functions/dev-environment/8base-yml'
 
 The file consists of two sections:
 
-- `functions`: List and configure all your custom functions. To learn more about custome functions, see [Custom Functions](/backend/custom-functions/custom-functions
-).
+- `functions`: List and configure all your custom functions. To learn more about custome functions, see [Custom Functions](/backend/custom-functions).
 - `settings`: List of additional global settings for your project.
 
 ## Example 8base.yml
