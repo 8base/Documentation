@@ -6,7 +6,7 @@ slug: '/backend/custom-functions/custom-functions-deployment'
 ---
 # Deployment
 
-Custom functions become executable once they are deployed to your 8base backend. As a best practice, deployment should be done after [testing](/projects/backend/custom-functions/debugging). 
+Custom functions become executable once they are deployed to your 8base backend. As a best practice, deployment should be done after [testing](/backend/custom-functions/debugging).
 
 This is the deployment command:
 

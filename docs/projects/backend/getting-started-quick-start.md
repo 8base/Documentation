@@ -247,7 +247,8 @@ Serverless custom functions provide tremendous flexibility in customizing server
 - Webhooks: For invoking functions on webhook events using HTTP requests ([GET|POST|PUT|DELETE] @ endpoint)
 - Scheduled Tasks: For invoking functions on timed intervals (once a day, every five-minutes, or cron format)
 
-* _[Custom Functions docs](/projects/backend/custom-functions)_
+* _[Custom Functions docs](/backend/custom-functions/custom-functions
+)_
 
 ### 3.3. Choose a Starter App / Framework for the Frontend
 

@@ -14,7 +14,8 @@ Every 8base Workspace contains the following components:
 3. **User Data**: All the unique data resources (tables, records, etc) that are specific to your application.
 4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/projects/backend/authentication) is implemented through [Authentication Profiles](/projects/backend/authentication#authentication-types), while [Authorization](/projects/backend/roles-and-permissions) uses the roles and permissions system.
 5. **Workspace Users**: 8base users with access to your Workspace through the console.
-6. [Custom Logic (Custom Functions)](/projects/backend/custom-functions): For building and extending your application's server-side functionality.
+6. [Custom Logic (Custom Functions)](/backend/custom-functions/custom-functions
+): For building and extending your application's server-side functionality.
 7. **Integrations**: Data and functionalities from 3rd party sources.
 8. [CI/CD](/projects/backend/development-tools/cli/ci-cd): The ability to create branched Workspace environments and a development pipeline.
 
@@ -51,7 +52,8 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 > [GraphQL API](/projects/backend/8base-console-graphql-api-readme.md)
 > Dive deeper into API concepts like authentication, queries, mutations, subscriptions and files.
 >
-> [Custom Functions](/projects/backend/custom-functions-readme.md)
+> [Custom Functions](/backend/custom-functions/custom-functions
+-readme.md)
 > Learn how to deploy back-end functions in JavaScript/TypeScript using 8base CLI.
 >
 > [Client Tools](/projects/backend/development-tools-sdk-api-readme.md)

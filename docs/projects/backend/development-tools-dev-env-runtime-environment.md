@@ -17,7 +17,7 @@ Each function handler receives two arguments: `event` and `context`. The structu
 Functions have a second `context` argument passed to them that has the following properties:
 
 - `workspaceId`: Property holds the ID of the current workspace.
-- `context.invokeFunction(taskName, args, options)`: Allows you to invoke other functions. To learn more, see [Custom Functions](/projects/backend/custom-functions).
+- `context.invokeFunction(taskName, args, options)`: Allows you to invoke other functions. To learn more, see [Custom Functions](/backend/custom-functions/custom-functions).
 - `context.api.gqlRequest(query, variables, options)`: Provides a convenient way to interact with the 8base GraphQL API. When using the `api.gqlRequest` you don't have to worry about setting the URL or authentication header - it is done automatically. The query is executed under the authentication context of the user that made the request.
 
 ### Using `gqlRequest` to Call 8base API
@@ -87,7 +87,7 @@ module.exports = (event: any, context: any) => {
 };
 ```
 
-3. Spawn a background task that keeps running after your function returns. You can use the `context.invokeFunction` API on the [Tasks](/projects/backend/custom-functions/tasks) page.
+3. Spawn a background task that keeps running after your function returns. You can use the `context.invokeFunction` API on the [Tasks](/backend/custom-functions/tasks) page.
 
 ### Managing Dependencies
 
@@ -101,9 +101,9 @@ We recommend that you have a `package-lock.json` file to dramatically accelerate
 
 ### Supported Languages and Runtime
 
-8base invokes your [Custom Functions](/projects/backend/custom-functions/) in an secure and isolated runtime environment.
+8base invokes your [Custom Functions](/backend/custom-functions/) in an secure and isolated runtime environment.
 
-[Custom Functions](/projects/backend/custom-functions/) can be written in either JavaScript or TypeScript.
+[Custom Functions](/backend/custom-functions/) can be written in either JavaScript or TypeScript.
 
 8base runtime environment currently supports:
 
