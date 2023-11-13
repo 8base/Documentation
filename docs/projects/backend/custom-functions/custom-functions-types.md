@@ -1,35 +1,12 @@
 ---
 id: 'custom-functions-types'
-sidebar_label: 'Working with Custom Functions'
+sidebar_label: 'Custom Functions Types'
 redirect_from: '/backend/custom-functions-types'
 slug: '/backend/custom-functions-types'
 ---
-# Working with Custom Functions
+# Custom Function Types
 
 Custom functions are developed in a local development environment and then deployed to a given workspace using the [8base CLI](/backend/development-tools/cli/). All custom functions must be declared in your projects 8base.yml file.
-
-## Viewing your Custom Functions
-
-You can open the **Functions Dashboard** from the sidebar. This is your catalog for any custom server-side logic. All custom functions that have been deployed to a workspace can be reviewed. 
-
-![Function Dashboard screen](_images/ui_customfunctions_dashboard.png)
-
-### Custom Function Cards
-
-Once custom functions have been deployed to a workspace, they will appear in a list on the left side of the **Functions Dashboard**. Selecting a function will display the function's details on a card to the right of the functions list.
-
-Function details include: `type`, `description`, and relevant metadata (configurations). Most importantly, clicking on the `Logs` tab will display the function's production logs.
-
-### Descriptions and Metadata
-
-All descriptions and metadata attributed to a function must be added/updated inside the `8base.yml` file. There is currently no support for editing functions in the 8base console.
-
-Check out the [8base.yml docs](../development-tools-dev-env-8base-yml.md) to learn more about deploying functions to a workspace.
-
-### Logs
-You can access your custom function logs by clicking the **Logs** tab. For more information, see [Logs](custom-functions-logs.md).
-
-## Custom Function Types
 
 There are four types of custom functions:
 
@@ -37,7 +14,6 @@ There are four types of custom functions:
 - [Webhooks](/backend/custom-functions/webhooks/): Webhooks are a system for how one server can notify another server when something happens. For example, if your app has a payment processing service, a webhook can notify your app of a successful payment by calling a given URL.
 - [Triggers](/backend/custom-functions/triggers/): Triggers let you automate actions when an incoming request matches specific conditions. For example, you could set a trigger that sends a welcome message when a new user is added to your app.
 - [Tasks](/backend/custom-functions/tasks/): Tasks are long-running operations that can be run based on a schedule or another function (such as a trigger). For example, you could schedule a task which sends an email every day at 5pm, listing all sales made.
-
 
 ## Custom Function Arguments
 
