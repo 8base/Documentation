@@ -1,20 +1,19 @@
 ---
 id: 'development-tools-dev-env-8base-yml'
-sidebar_label: '8base Yml'
+sidebar_label: '8base Config'
 redirect_from: '/backend/development-tools/dev-env/8base-yml'
-slug: '/projects/backend/development-tools/dev-env/8base-yml'
+slug: '/backend/custom-functions/dev-environment/8base-yml'
 ---
-
 # 8base Config
 
-`8base.yml` is the main configuration file where you define how custom functions get exposed and called as well as the list of custom permissions that can restrict access to certain paths in your code.
+`8base.yml` is the main configuration file where you define how custom functions get exposed and called. You can also define custom permissions that can restrict access to certain paths in your code.
 
 The file consists of two sections:
 
-- `functions` - list and configure all your custom functions. Read more on how to configure functions [here](/projects/backend/custom-functions).
-- `settings` - list of additional global settings for your project.
+- `functions`: List and configure all your custom functions. To learn more about custome functions, see [Custom Functions](/projects/backend/custom-functions).
+- `settings`: List of additional global settings for your project.
 
-### Example 8base.yml
+## Example 8base.yml
 
 ```yaml
 functions:

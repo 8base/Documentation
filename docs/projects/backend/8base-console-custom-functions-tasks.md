@@ -9,7 +9,7 @@ slug: '/projects/backend/custom-functions/tasks'
 
 A _task_ is a type of function that can be invoked directly from other functions or executed on a specified interval. This allows for cron job like execution of your custom functions and is great for re-occurring tasks.
 
-### 8base.yml
+## 8base.yml
 
 A task can either be specified to run on a schedule or not. If not, it is then only expected to run whenever called by another custom function. The schedule parameter accepts by the minute, hourly, or daily intervals.
 
@@ -30,7 +30,7 @@ functions:
     schedule: 'rate(7 days)'
 ```
 
-##### Non-scheduled function calls
+### Non-scheduled function calls
 
 Functions like resolvers, triggers and webhooks usually run in response to user actions. Normally, you'd want to return a response to the user as soon as possible while offloading any longer-running processes to background tasks. In order to do so you can use the `invokeFunction(taskName, args, options)` method found on the context argument to invoke a background task.
 
@@ -56,11 +56,11 @@ The `options.waitForResponse (default: false)` property tells the platform to re
 
 _Note: The value of `args` is passed as `event` argument to the invoked task._
 
-### Scheduled tasks
+## Scheduled Tasks
 
 You can configure tasks to run on schedule using the `schedule` option in the 8base.yml declaration. The `schedule` parameter accepts two types of expressions: Rate and Cron - both of which specify a scheduled invocation on a re-occuring schedule.
 
-##### Rate expressions
+### Rate expressions
 
 `rate(Value Unit)`
 
@@ -72,13 +72,13 @@ You can configure tasks to run on schedule using the `schedule` option in the 8b
 
 <!--{% hint style="warning" %}-->
 
-##### Singular vs. Plural
+### Singular vs. Plural
 
 For a singular value (1) the unit must be written as singular, otherwise it needs to be plural - rate(**1 day** _vs._ **5 days**).
 
 <!--{% endhint %}-->
 
-##### Cron expressions
+### Cron expressions
 
 `cron(Minutes Hours Day-of-month Month Day-of-week Year)`
 
@@ -95,12 +95,12 @@ Cron expressions that lead to rates faster than one invocation/minute are not su
 
 <!--{% hint style="info" %}-->
 
-##### Cron Docs
+### Cron Docs
 
 Check example expressions and read a detailed description of cron syntax [here](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html?shortFooter=true).
 
 <!--{% endhint %}-->
 
-### Task Arguments
+## Task Arguments
 
 To learn about the arguments that are passed to tasks, review the [custom function arguments docs.](/backend/custom-functions/#custom-function-arguments)

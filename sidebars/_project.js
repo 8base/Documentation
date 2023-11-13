@@ -273,6 +273,37 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Custom Functions',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-custom-functions-readme',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Development Environment',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-dev-env-readme',
+              },
+              items: [
+                'projects/backend/development-tools-dev-env-project-structure',
+                'projects/backend/development-tools-dev-env-8base-yml',
+                'projects/backend/development-tools-dev-env-runtime-environment',                
+              ],
+            },
+            'projects/backend/8base-console-custom-functions-resolvers',
+            'projects/backend/8base-console-custom-functions-triggers',
+            'projects/backend/8base-console-custom-functions-webhooks',
+            'projects/backend/8base-console-custom-functions-tasks',
+            'projects/backend/8base-console-custom-functions-debugging',
+            'projects/backend/custom-functions/custom-functions-deployment',
+            'projects/backend/custom-functions/custom-functions-executing-functions',
+            'projects/backend/custom-functions/custom-functions-logs',
+          ],
+        },
+        {
+          type: 'category',
           label: '8base Console',
           link: {
             type: 'doc',
@@ -289,7 +320,6 @@ const sidebars = {
                 id: 'projects/backend/8base-console-platform-tools-readme',
               },
               items: [                
-                'projects/backend/8base-console-platform-tools-functions',
                 'projects/backend/8base-console-platform-tools-api-explorer',
                 {
                   type: 'category',
@@ -367,21 +397,7 @@ const sidebars = {
             'projects/backend/8base-console-graphql-api-error-handling',
           ],
         },
-        {
-          type: 'category',
-          label: 'Custom Functions',
-          link: {
-            type: 'doc',
-            id: 'projects/backend/8base-console-custom-functions-readme',
-          },
-          items: [
-            'projects/backend/8base-console-custom-functions-resolvers',
-            'projects/backend/8base-console-custom-functions-triggers',
-            'projects/backend/8base-console-custom-functions-webhooks',
-            'projects/backend/8base-console-custom-functions-tasks',
-            'projects/backend/8base-console-custom-functions-debugging',
-          ],
-        },
+        
        // {
        //   type: 'category',
        //   label: 'Plugins and Integrations',
@@ -401,20 +417,7 @@ const sidebars = {
             id: 'projects/backend/development-tools-dev-readme',
           },
           items: [
-            {
-              type: 'category',
-              label: 'Environment',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/development-tools-dev-env-readme',
-              },
-              items: [
-                'projects/backend/development-tools-dev-env-project-structure',
-                'projects/backend/development-tools-dev-env-8base-yml',
-                'projects/backend/development-tools-dev-env-runtime-environment',
-                'projects/backend/development-tools-dev-env-hosting',
-              ],
-            },
+            
             {
               type: 'category',
               label: 'Command Line Interface (CLI)',
