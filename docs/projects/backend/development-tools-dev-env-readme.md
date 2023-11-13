@@ -7,7 +7,7 @@ slug: '/backend/custom-functions/dev-environment'
 
 # Development Environment
 
-The 8base CLI has a set of tools to assist with debugging functions locally.
+The 8base Command Line Interface (CLI) has a set of tools to assist with working on functions locally.
 
 To learn about logging, see [Logs](custom-functions/custom-functions-logs.md).
 
@@ -20,7 +20,8 @@ For testing purposes, you can execute functions locally and supply a JSON value 
 You can specify JSON inline using the `-j` option or a path to a file with JSON using `-p` option.
 
 :::tip 
-To test this feature, implement the `hello` resolver from [Resolvers](/projects/backend/custom-functions/resolvers) and run the following command in your CLI.
+To test this feature, implement the `hello` resolver from [Resolvers](/backend/custom-functions/custom-functions
+/resolvers) and run the following command in your CLI.
 
 `8base invoke-local hello -j '{ "data": { "name": "Bob" } }'`
 :::

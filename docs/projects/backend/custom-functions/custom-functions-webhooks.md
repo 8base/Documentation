@@ -1,8 +1,7 @@
 ---
-id: '8base-console-custom-functions-webhooks'
+id: 'custom-functions-webhooks'
 sidebar_label: 'Webhooks'
-redirect_from: '/backend/custom-functions/webhooks'
-slug: '/projects/backend/custom-functions/webhooks'
+slug: '/backend/custom-functions/webhooks'
 ---
 # Webhooks
 
@@ -49,7 +48,7 @@ functions:
 
 ## Webhook Arguments
 
-To learn about the arguments that are passed to webhooks, see [custom function arguments](/projects/backend/custom-functions/#custom-function-arguments).
+To learn about the arguments that are passed to webhooks, see [custom function arguments](/backend/custom-functions/custom-functions-types#custom-function-arguments).
 
 ## Path Parameters
 
@@ -85,9 +84,9 @@ Webhooks are public functions by default and are **not** permissioned using 8bas
 
 ### Checking for an Environment Variable
 
-For systems that require a secure webhook, access tokens from authorized systems get [set as a environment variables](/projects/backend/development-tools/dev-env/runtime-environment) in the 8base workspace. The authorized system is then able to specify their access token as a custom header, which then get validated within the webhook function.
+For systems that require a secure webhook, access tokens from authorized systems get [set as a environment variables](/backend/development-tools/dev-env/runtime-environment) in the 8base workspace. The authorized system is then able to specify their access token as a custom header, which then get validated within the webhook function.
 
-![Setting custom access tokens and Environment Variables](./_images/permissons-webhook-vars-example.png)
+![Setting up custom variables](_images/permissions-webhook-vars-example.png)
 
 In this example, the webhook's path is `{client}/protected-webhook`. We expect the `client` path parameter to be a name (i.e. STRIPE, AUTHORIZE_NET, etc). That value is then coerced into an environment variable key, retrieved, and compared.
 

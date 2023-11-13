@@ -1,6 +1,6 @@
 ---
 id: 'development-tools-cli-ci-cd'
-sidebar_label: 'CI CD System'
+sidebar_label: 'CI/CD System'
 redirect_from: '/projects/backend/development-tools/cli/ci-cd'
 slug: '/backend/development-tools/cli/ci-cd'
 ---
@@ -26,7 +26,7 @@ The process of creating new Environments (cloning one Environment into another) 
 3. You CAN manually change _System Parts_ and deploy in child Environments (inheritors).
 4. Every Environment can have up to 3-inheritors.
 
-Changing/deploying to parent Environments is only possible with [Migration logic](/projects/backend/development-tools/cli/ci-cd#migrations-logic-and-commands).
+Changing/deploying to parent Environments is only possible with [Migration logic](/backend/development-tools/cli/ci-cd#migrations-logic-and-commands).
 
 You can read more about System Parts and User Parts of 8base in our [overview section](getting-started-readme.md).
 
@@ -199,7 +199,8 @@ This command shows the difference between your local migration files and any mig
 
 Applies local migrations files to target Environment.
 
-It is important to know that _[Custom Logic (Functions)](/projects/backend/custom-functions)_ are being deployed by default with any migrations files after `migration commit` is run. You can change this default behavior by specifying a commit mode:
+It is important to know that [Custom Logic (Functions)]
+(/backend/custom-functions) are being deployed by default with any migrations files after `migration commit` is run. You can change this default behavior by specifying a commit mode:
 
 - `--mode FULL` - commits migration files AND Custom Logic (Functions)
 - `--mode ONLY_MIGRATIONS` - commits only migration (without Custom Logic)

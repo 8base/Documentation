@@ -1,5 +1,5 @@
 ---
-id: '8base-console-custom-functions-resolvers'
+id: 'custom-functions-resolvers'
 sidebar_label: 'Resolvers'
 redirect_from: '/backend/custom-functions/resolvers'
 slug: '/backend/custom-functions/resolvers'
@@ -69,7 +69,7 @@ module.exports = (event) => {
 
 ## Resolver Arguments
 
-To learn about the arguments that are passed to resolvers, see [Custom Function Arguments](/projects/backend/custom-functions/#custom-function-arguments).
+To learn about the arguments that are passed to resolvers, see [Custom Function Arguments](custom-functions-types.md#custom-function-arguments).
 
 ## Resolver Response
 

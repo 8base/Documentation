@@ -1,5 +1,5 @@
 ---
-id: '8base-console-custom-functions-tasks'
+id: 'custom-functions-tasks'
 sidebar_label: 'Tasks'
 redirect_from: '/backend/custom-functions/tasks'
 slug: '/backend/custom-functions/tasks'
@@ -96,4 +96,4 @@ Cron expressions that lead to rates faster than one invocation per minute are no
 
 ## Task Arguments
 
-To learn about the arguments that are passed to tasks, see [custom function arguments](/backend/custom-functions/#custom-function-arguments).
+To learn about the arguments that are passed to tasks, see [custom function arguments](/backend/custom-functions-types#custom-function-arguments).

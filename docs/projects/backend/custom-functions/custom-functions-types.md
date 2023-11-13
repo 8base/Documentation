@@ -1,26 +1,12 @@
 ---
-id: '8base-console-custom-functions-readme'
-sidebar_label: 'Custom Functions'
-redirect_from: '/backend/custom-functions'
-slug: '/backend/custom-functions'
+id: 'custom-functions-types'
+sidebar_label: 'Custom Functions Types'
+redirect_from: '/backend/custom-functions-types'
+slug: '/backend/custom-functions-types'
 ---
+# Custom Function Types
 
-# Custom Functions
-
-Custom functions extend and enhance your projects. For example, you can use custom functions to extend your GraphQL API, add custom endpoints, or build new server-side functionality. 
-
-Custom functions in 8base are essentially AWS lambdas that get enriched with access to your workspace resources. For example, 8base makes sure you are able to access the workspace's environment variables and database from within a custom function by default. Custom functions can be written in either JavaScript or TypeScript and be deployed in a matter of minutes.
-
-All custom functions must be declared in your projects 8base.yml file.
-
-## Highlights
-
-- **Serverless Execution:** Scale custom functions from 1 to 1,000,000+ calls, thanks to serverless design.
-- **JavaScript and TypeScript:** Write in JavaScript or TypeScript, and 8base will compile it as needed.
-- **Predefined Triggers:** Choose from four types of custom function triggers.
-- **Easily Permissioned:** Configure custom functions easily in the **Role Manager**.
-
-## Custom Function Types
+Custom functions are developed in a local development environment and then deployed to a given workspace using the [8base CLI](/backend/development-tools/cli/). All custom functions must be declared in your projects 8base.yml file.
 
 There are four types of custom functions:
 
@@ -28,27 +14,6 @@ There are four types of custom functions:
 - [Webhooks](/backend/custom-functions/webhooks/): Webhooks are a system for how one server can notify another server when something happens. For example, if your app has a payment processing service, a webhook can notify your app of a successful payment by calling a given URL.
 - [Triggers](/backend/custom-functions/triggers/): Triggers let you automate actions when an incoming request matches specific conditions. For example, you could set a trigger that sends a welcome message when a new user is added to your app.
 - [Tasks](/backend/custom-functions/tasks/): Tasks are long-running operations that can be run based on a schedule or another function (such as a trigger). For example, you could schedule a task which sends an email every day at 5pm, listing all sales made.
-
-## Viewing your Custom Functions
-
-You can open the **Functions Dashboard** from the sidebar. This is your catalog for any custom server-side logic. All custom functions that have been deployed to a workspace can be reviewed. 
-
-![Function Dashboard screen](custom-functions/_images/ui_customfunctions_dashboard.png)
-
-### Custom Function Cards
-
-Once custom functions have been deployed to a workspace, they will appear in a list on the left side of the **Functions Dashboard**. Selecting a function will display the function's details on a card to the right of the functions list.
-
-Function details include: `type`, `description`, and relevant metadata (configurations). Most importantly, clicking on the `Logs` tab will display the function's production logs.
-
-### Descriptions and Metadata
-
-All descriptions and metadata attributed to a function must be added/updated inside the `8base.yml` file. There is currently no support for editing functions in the 8base console.
-
-Check out the [8base.yml docs](/projects/backend/development-tools/dev-env/8base-yml) to learn more about deploying functions to a workspace.
-
-### Logs
-You can access your custom function logs by clicking the **Logs** tab. For more information, see [Logs](custom-functions/custom-functions-logs.md)
 
 ## Custom Function Arguments
 
@@ -188,7 +153,7 @@ await ctx.invokeFunction(
 
 ## Best Practices
 
-Custom functions are developed in a local development environment and then deployed to a given workspace using the [8base CLI](/backend/development-tools/cli/). When in development, they can be invoked locally for testing purposes.
+When in development, custom functions can be invoked locally for testing purposes.
 
 Using the `8base generate` command is recommended when creating new functions. Doing so provides a recommended folder structure that helps keep everything organized when developing custom functions locally, including a `mocks` directory and management of the `8base.yml` file.
 
