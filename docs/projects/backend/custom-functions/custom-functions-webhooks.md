@@ -1,15 +1,19 @@
 ---
-id: '8base-console-custom-functions-webhooks'
+id: 'custom-functions-webhooks'
 sidebar_label: 'Webhooks'
-redirect_from: '/backend/custom-functions/webhooks'
-slug: '/projects/backend/custom-functions/webhooks'
+slug: '/backend/custom-functions/webhooks'
 ---
-
 # Webhooks
 
-A _webhook_ allows you to call _Custom Functions_ as regular RESTful endpoints. They can be very useful if you integrate with a 3rd party service that posts data back to your app using a specified URL. For example, enabling a payment processing service such as Stripe or Coinbase Commerce to notify your app of a successful payment by calling _X_ URL.
+A webhook lets you to call custom functions as regular RESTful endpoints. They can be very useful if you integrate with a 3rd party service that posts data back to your app using a specified URL. For example, enabling a payment processing service such as Stripe or Coinbase Commerce to notify your app of a successful payment by calling a specific URL.
 
 ## 8base.yml Declaration
+
+:::note
+All webhooks require a unique name and allow for the same function to be called from different entries.
+::: 
+
+This means that `functionA` and `functionB` may both specify the same function to be called, even if they have different configurations (such as POST vs DELETE). You are able to deploy as many webhooks as you want to a single workspace.
 
 Webhooks have an optional parameter `path` that allows you to manually specify the final URL fragment. By default, it gets defined as the function name.
 
@@ -42,15 +46,13 @@ functions:
     method: POST
 ```
 
-All webhooks require a unique name and allow for the same function to be called from different entries. This means that `functionA` and `functionB` may both specify the same function to be called, even if they have different configurations (i.e. POST vs DELETE). You are able to deploy as many webhooks as you want to a single workspace.
+## Webhook Arguments
 
-### Webhook Arguments
+To learn about the arguments that are passed to webhooks, see [custom function arguments](/backend/custom-functions/custom-functions-types#custom-function-arguments).
 
-To learn about the arguments that are passed to webhooks, review the [custom function arguments docs.](/projects/backend/custom-functions/#custom-function-arguments)
+## Path Parameters
 
-### Path Parameters
-
-Webhook functions support the use of path parameters. Path parameters are parameters whose values are set dynamically in the endpoint's path segment, and can be accessed within the handler function. This makes the webhook incredibly dynamic, enabling the path to be used as a means of passing important data to the webhook function.
+Webhook functions support the use of path parameters. Path parameters are parameters whose values are set dynamically in the endpoint's path segment, and can be accessed within the handler function. This makes the webhook dynamic, enabling the path to be used as a means of passing important data to the webhook function.
 
 For example, lets change the last example to include a value named `customerId` in the path. This gets declared in the project's `8base.yml`.
 
@@ -76,15 +78,15 @@ module.exports = async (event, ctx) => {
 };
 ```
 
-### Permissioning Webhooks
+## Permissioning Webhooks
 
-Webhooks are public functions by default and are **not** permissioned using 8base's native authorization system. Instead, developers looking to permission access to webhook functions can do so using this suggested method - or another way that they choose to implement.
+Webhooks are public functions by default and are **not** permissioned using 8base's native authorization system. Instead, developers looking to permission access to webhook functions can do so using environment variables (described below), or another way that they choose to implement.
 
-#### Checking for an Environment Variable
+### Checking for an Environment Variable
 
-For systems that require a secure webhook, access tokens from authorized systems get [set as a environment variables](/projects/backend/development-tools/dev-env/runtime-environment) in the 8base workspace. The authorized system is then able to specify their access token as a custom header, which then get validated within the webhook function.
+For systems that require a secure webhook, access tokens from authorized systems get [set as a environment variables](/backend/development-tools/dev-env/runtime-environment) in the 8base workspace. The authorized system is then able to specify their access token as a custom header, which then get validated within the webhook function.
 
-![Setting custom access tokens and Environment Variables](./_images/permissons-webhook-vars-example.png)
+![Setting up custom variables](_images/permissions-webhook-vars-example.png)
 
 In this example, the webhook's path is `{client}/protected-webhook`. We expect the `client` path parameter to be a name (i.e. STRIPE, AUTHORIZE_NET, etc). That value is then coerced into an environment variable key, retrieved, and compared.
 
@@ -106,11 +108,13 @@ module.exports = async (event, ctx) => {
 };
 ```
 
-### Webhook Response
+## Webhook Responses
 
-The format of the response object is left entirely up to the developer, giving full control over the returned HTTP status code, headers and response body.
+The format of the response object is left entirely up to the developer, giving full control over the returned HTTP status code, headers, and response body.
 
-_An HTTP `statusCode` value is required_
+:::note 
+An HTTP `statusCode` value is required.
+:::
 
 ```javascript
 return {
@@ -122,15 +126,11 @@ return {
 };
 ```
 
-<!--{% hint style="info" %}-->
+### Getting the webhook URL
 
-#### Getting the webhook URL
+In order to get your webhook URL it has been deployed, run `8base describe [FUNCTION_NAME]` using the CLI.
 
-In order to get your webhook URL after you have deployed it, run `8base describe [FUNCTION_NAME]` using the CLI.
-
-<!--{% endhint %}-->
-
-### Example
+## Example
 
 Here is an example webhook with in-code documentation to help you get started.
 

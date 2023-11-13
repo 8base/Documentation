@@ -1,11 +1,10 @@
 ---
 id: '8base-console-platform-tools-ci-cd'
-sidebar_label: 'Ci Cd'
+sidebar_label: 'Continuous Integration and Continuous Deployment (CI/CD)'
 redirect_from: '/backend/console/ci-cd'
-slug: '/projects/backend/console/ci-cd'
+slug: '/backend/console/ci-cd'
 ---
-
-# Continuous Integration & Continuous Deployment (CI/CD)
+# Continuous Integration and Continuous Deployment (CI/CD)
 
 8base built CI/CD capabilities natively into the workspace to help developers and teams easily manage professional software quality controls when developing their applications. On subscription plans where CI/CD is enabled, developers will be able to create up to a specified number of environments and graduate changes through their environment pipeline in a [Git](https://git-scm.com/) like fashion.
 

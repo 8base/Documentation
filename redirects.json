@@ -8,30 +8,6 @@
     "to": "/projects/backend/authentication"
   },
   {
-    "from": "/backend/custom-functions/debugging",
-    "to": "/projects/backend/custom-functions/debugging"
-  },
-  {
-    "from": "/backend/custom-functions",
-    "to": "/projects/backend/custom-functions"
-  },
-  {
-    "from": "/backend/custom-functions/resolvers",
-    "to": "/projects/backend/custom-functions/resolvers"
-  },
-  {
-    "from": "/backend/custom-functions/tasks",
-    "to": "/projects/backend/custom-functions/tasks"
-  },
-  {
-    "from": "/backend/custom-functions/triggers",
-    "to": "/projects/backend/custom-functions/triggers"
-  },
-  {
-    "from": "/backend/custom-functions/webhooks",
-    "to": "/projects/backend/custom-functions/webhooks"
-  },
-  {
     "from": "/backend/graphql-api/error-handling",
     "to": "/projects/backend/graphql-api/error-handling"
   },
@@ -137,11 +113,7 @@
   },
   {
     "from": "/backend/console/ci-cd",
-    "to": "/projects/backend/console/ci-cd"
-  },
-  {
-    "from": "/backend/console/functions",
-    "to": "/projects/backend/console/functions"
+    "to": "/backend/console/ci-cd"
   },
   {
     "from": "/projects/backend/tools",
@@ -164,6 +136,38 @@
     "to": "/projects/backend/roles-and-permissions"
   },
   {
+    "from": "/backend/custom-functions/debugging",
+    "to": "/backend/custom-functions/debugging"
+  },
+  {
+    "from": "/backend/custom-functions/custom-functions-deployment",
+    "to": "/backend/custom-functions/custom-functions-deployment"
+  },
+  {
+    "from": "/backend/custom-functions/custom-functions-executing-functions",
+    "to": "/backend/custom-functions/custom-functions-executing-functions"
+  },
+  {
+    "from": "/backend/custom-functions/custom-functions-logs",
+    "to": "/backend/custom-functions/custom-functions-logs"
+  },
+  {
+    "from": "/backend/custom-functions",
+    "to": "/backend/custom-functions"
+  },
+  {
+    "from": "/backend/custom-functions/resolvers",
+    "to": "/backend/custom-functions/resolvers"
+  },
+  {
+    "from": "/backend/custom-functions/tasks",
+    "to": "/backend/custom-functions/tasks"
+  },
+  {
+    "from": "/backend/custom-functions/triggers",
+    "to": "/backend/custom-functions/triggers"
+  },
+  {
     "from": "/projects/backend/handling-files",
     "to": "/backend/data/handling-files"
   },
@@ -174,6 +178,54 @@
   {
     "from": "/projects/backend/data/data-viewer",
     "to": "/backend/data/data-viewer"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-advanced-settings",
+    "to": "/backend/data/data-fields-advanced-settings"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-date",
+    "to": "/backend/data/data-fields-date"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-file",
+    "to": "/backend/data/data-fields-file"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-geo",
+    "to": "/backend/data/data-fields-geo"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-index",
+    "to": "/backend/data/data-fields-index"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-json",
+    "to": "/backend/data/data-fields-json"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-number",
+    "to": "/backend/data/data-fields-number"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-smart",
+    "to": "/backend/data/data-fields-smart"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-switch",
+    "to": "/backend/data/data-fields-switch"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-table",
+    "to": "/backend/data/data-fields-table"
+  },
+  {
+    "from": "/projects/backend/data/data-fields-text",
+    "to": "/backend/data/data-fields-text"
+  },
+  {
+    "from": "/projects/backend/data/data-settings",
+    "to": "/backend/data/data-settings"
   },
   {
     "from": "/projects/backend/development-tools/cli/ci-cd",
@@ -193,27 +245,23 @@
   },
   {
     "from": "/backend/development-tools/dev-env/8base-yml",
-    "to": "/projects/backend/development-tools/dev-env/8base-yml"
-  },
-  {
-    "from": "/backend/development-tools/dev-env/hosting",
-    "to": "/projects/backend/development-tools/dev-env/hosting"
+    "to": "/backend/custom-functions/dev-environment/8base-yml"
   },
   {
     "from": "/backend/development-tools/dev-env/project-structure",
-    "to": "/projects/backend/development-tools/dev-env/project-structure"
+    "to": "/backend/custom-functions/dev-environment/project-structure"
   },
   {
     "from": "/backend/development-tools/dev-env",
-    "to": "/projects/backend/development-tools/dev-env"
+    "to": "/backend/custom-functions/dev-environment"
   },
   {
     "from": "/backend/development-tools/dev-env/runtime-environment",
-    "to": "/projects/backend/development-tools/dev-env/runtime-environment"
+    "to": "/backend/custom-functions/dev-environment/runtime-environment"
   },
   {
     "from": "/backend/development-tools",
-    "to": "/projects/backend/development-tools"
+    "to": "/backend/development-tools"
   },
   {
     "from": "/backend/development-tools/sdk/api",

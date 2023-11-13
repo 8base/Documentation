@@ -2,7 +2,7 @@
 id: 'development-tools-dev-readme'
 sidebar_label: 'Local Development Environment'
 redirect_from: '/backend/development-tools'
-slug: '/projects/backend/development-tools'
+slug: '/backend/development-tools'
 ---
 
 # Local Development Environment

@@ -8,11 +8,13 @@ slug: '/gettingstarted/commontasks/extending-the-api'
 
 There are situations where the default API does not cover every requirement. Applications may want to have more complex operations, integrations, or additional logic. For that you can add different capabilities to your backend.
 
-For more information about custom functions, see: [Custom Functions](https://docs.8base.com/projects/backend/custom-functions). 
+For more information about custom functions, see: [Custom Functions](https://docs.8base.com/backend/custom-functions/custom-functions
+). 
 
 ## Getting Started
 
-In our case we have a movie database, but we want to be able to get reviews for each movie straight from ChatGPT. For that, we will add an additional resolver. For more information, see: [Resolvers](https://docs.8base.com/projects/backend/custom-functions/resolvers). 
+In our case we have a movie database, but we want to be able to get reviews for each movie straight from ChatGPT. For that, we will add an additional resolver. For more information, see: [Resolvers](https://docs.8base.com/backend/custom-functions/custom-functions
+/resolvers). 
 
 First we will generate our local development environment and select our project:
 
