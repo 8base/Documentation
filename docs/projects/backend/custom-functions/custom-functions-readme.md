@@ -33,7 +33,7 @@ There are four types of custom functions:
 
 You can open the **Functions Dashboard** from the sidebar. This is your catalog for any custom server-side logic. All custom functions that have been deployed to a workspace can be reviewed. 
 
-![Function Dashboard screen](custom-functions/_images/ui_customfunctions_dashboard.png)
+![Function Dashboard screen](_images/ui_customfunctions_dashboard.png)
 
 ### Custom Function Cards
 
@@ -48,7 +48,7 @@ All descriptions and metadata attributed to a function must be added/updated ins
 Check out the [8base.yml docs](/projects/backend/development-tools/dev-env/8base-yml) to learn more about deploying functions to a workspace.
 
 ### Logs
-You can access your custom function logs by clicking the **Logs** tab. For more information, see [Logs](custom-functions/custom-functions-logs.md)
+You can access your custom function logs by clicking the **Logs** tab. For more information, see [Logs](custom-functions-logs.md)
 
 ## Custom Function Arguments
 

@@ -2,7 +2,7 @@
 id: 'custom-functions-webhooks'
 sidebar_label: 'Webhooks'
 redirect_from: '/backend/custom-functions/webhooks'
-slug: '/projects/backend/custom-functions/webhooks'
+slug: '/backend/custom-functions/webhooks'
 ---
 # Webhooks
 

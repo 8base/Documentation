@@ -276,7 +276,7 @@ const sidebars = {
           label: 'Custom Functions',
           link: {
             type: 'doc',
-            id: 'projects/backend/8base-console-custom-functions-readme',
+            id: 'projects/backend/custom-functions-readme',
           },
           items: [
             {
@@ -292,11 +292,11 @@ const sidebars = {
                 'projects/backend/development-tools-dev-env-runtime-environment',                
               ],
             },
-            'projects/backend/8base-console-custom-functions-resolvers',
-            'projects/backend/8base-console-custom-functions-triggers',
-            'projects/backend/8base-console-custom-functions-webhooks',
-            'projects/backend/8base-console-custom-functions-tasks',
-            'projects/backend/8base-console-custom-functions-debugging',
+            'projects/backend/custom-functions-resolvers',
+            'projects/backend/custom-functions-triggers',
+            'projects/backend/custom-functions-webhooks',
+            'projects/backend/custom-functions-tasks',
+            'projects/backend/custom-functions-debugging',
             'projects/backend/custom-functions/custom-functions-deployment',
             'projects/backend/custom-functions/custom-functions-executing-functions',
             'projects/backend/custom-functions/custom-functions-logs',

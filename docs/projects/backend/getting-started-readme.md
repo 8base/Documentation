@@ -51,7 +51,7 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 > [GraphQL API](/projects/backend/8base-console-graphql-api-readme.md)
 > Dive deeper into API concepts like authentication, queries, mutations, subscriptions and files.
 >
-> [Custom Functions](/projects/backend/8base-console-custom-functions-readme.md)
+> [Custom Functions](/projects/backend/custom-functions-readme.md)
 > Learn how to deploy back-end functions in JavaScript/TypeScript using 8base CLI.
 >
 > [Client Tools](/projects/backend/development-tools-sdk-api-readme.md)
