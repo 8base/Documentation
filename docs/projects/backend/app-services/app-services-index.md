@@ -1,7 +1,6 @@
 ---
 id: 'app-services-index'
 sidebar_label: 'App Services'
-redirect_from: '/backend/app-services'
 slug: '/backend/app-services'
 ---
 # App Services

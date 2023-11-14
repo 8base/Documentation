@@ -1,7 +1,6 @@
 ---
 id: 'administer-users'
 sidebar_label: 'User Administration'
-redirect_from: '/backend/console/users'
 slug: '/backend/app-services/administer-users'
 ---
 # User Administration

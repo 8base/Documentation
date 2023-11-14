@@ -1,7 +1,6 @@
 ---
 id: '8base-console-platform-tools-advanced'
 sidebar_label: 'Advanced'
-redirect_from: '/backend/console/advanced'
 slug: '/advanced'
 ---
 # Advanced

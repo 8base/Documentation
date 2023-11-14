@@ -1,7 +1,6 @@
 ---
 id: 'authentication-8base'
 sidebar_label: '8base Authentication'
-redirect_from: '/backend/authentication'
 slug: '/backend/app-services/8base-authentication'
 ---
 # 8base Authentication

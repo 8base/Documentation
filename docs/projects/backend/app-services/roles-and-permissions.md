@@ -1,7 +1,6 @@
 ---
 id: 'roles-and-permissions'
 sidebar_label: 'Roles And Permissions'
-redirect_from: '/backend/roles-and-permissions'
 slug: '/backend/app-services/roles-and-permissions'
 ---
 # Roles and Permissions
