@@ -314,100 +314,121 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '8base Console',
+          label: 'API Explorer',
           link: {
             type: 'doc',
-            id: 'projects/backend/8base-console-readme',
+            id: 'projects/backend/8base-console-platform-tools-api-explorer',
           },
           items: [
-            'projects/backend/8base-console-authentication',
-            'projects/backend/8base-console-roles-and-permissions',
             {
               type: 'category',
-              label: 'Tools',
+              label: 'GraphQL API Overview',
               link: {
                 type: 'doc',
-                id: 'projects/backend/8base-console-platform-tools-readme',
+                id: 'projects/backend/8base-console-graphql-api-readme',
               },
-              items: [                
-                'projects/backend/8base-console-platform-tools-api-explorer',
+              items: [
                 {
                   type: 'category',
-                  label: 'Advanced',
+                  label: 'Queries',
                   link: {
                     type: 'doc',
-                    id: 'projects/backend/8base-console-platform-tools-advanced',
+                    id: 'projects/backend/8base-console-graphql-api-queries-readme',
                   },
                   items: [
-                    'projects/backend/8base-console-platform-tools-advanced-advanced-introspection',
+                    'projects/backend/8base-console-graphql-api-queries-single-record-query',
+                    'projects/backend/8base-console-graphql-api-queries-record-list-query',
+                    'projects/backend/8base-console-graphql-api-queries-related-record-query',
+                    'projects/backend/8base-console-graphql-api-queries-sort-list-query',
+                    'projects/backend/8base-console-graphql-api-queries-combining-queries',
+                    'projects/backend/8base-console-graphql-api-queries-aggregation-query',
+                    'projects/backend/8base-console-graphql-api-queries-combining-arguments',
+                    'projects/backend/8base-console-graphql-api-queries-filtered-list-query',
+                    'projects/backend/8base-console-graphql-api-queries-paginated-query-results',
                   ],
                 },
-                'projects/backend/8base-console-platform-tools-users',
-                'projects/backend/8base-console-platform-tools-ci-cd',
+                {
+                  type: 'category',
+                  label: 'Mutations',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/8base-console-graphql-api-mutations-readme',
+                  },
+                  items: [
+                    'projects/backend/8base-console-graphql-api-mutations-single-record-mutations',
+                    'projects/backend/8base-console-graphql-api-mutations-related-record-mutations',
+                    'projects/backend/8base-console-graphql-api-mutations-update-by-filter-mutations',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Subscriptions',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/8base-console-graphql-api-subscriptions-readme',
+                  },
+                  items: [
+                    'projects/backend/8base-console-graphql-api-subscriptions-simple-record-subscriptions',
+                    'projects/backend/8base-console-graphql-api-subscriptions-complex-record-subscriptions',
+                    'projects/backend/8base-console-graphql-api-subscriptions-client',
+                  ],
+                },
+                'projects/backend/8base-console-graphql-api-grouping-and-aggregations-readme',
+                'projects/backend/8base-console-graphql-api-geo-fields-readme',
+                'projects/backend/8base-console-graphql-api-variables',
+                'projects/backend/8base-console-graphql-api-error-handling',
               ],
             },
+                       
           ],
         },
         {
           type: 'category',
-          label: 'GraphQL API Overview',
+          label: 'App Services',
           link: {
             type: 'doc',
-            id: 'projects/backend/8base-console-graphql-api-readme',
+            id: 'projects/backend/app-services/app-services-index',
           },
-          items: [
+          items: [                
             {
               type: 'category',
-              label: 'Queries',
+              label: 'Roles',
               link: {
                 type: 'doc',
-                id: 'projects/backend/8base-console-graphql-api-queries-readme',
+                id: 'projects/backend/app-services/roles-and-permissions',
               },
               items: [
-                'projects/backend/8base-console-graphql-api-queries-single-record-query',
-                'projects/backend/8base-console-graphql-api-queries-record-list-query',
-                'projects/backend/8base-console-graphql-api-queries-related-record-query',
-                'projects/backend/8base-console-graphql-api-queries-sort-list-query',
-                'projects/backend/8base-console-graphql-api-queries-combining-queries',
-                'projects/backend/8base-console-graphql-api-queries-aggregation-query',
-                'projects/backend/8base-console-graphql-api-queries-combining-arguments',
-                'projects/backend/8base-console-graphql-api-queries-filtered-list-query',
-                'projects/backend/8base-console-graphql-api-queries-paginated-query-results',
+                'projects/backend/app-services/app-services-data-permissions',
+                'projects/backend/app-services/app-services-apps',
+                'projects/backend/app-services/administer-users',
               ],
             },
             {
               type: 'category',
-              label: 'Mutations',
+              label: 'Authentication',
               link: {
                 type: 'doc',
-                id: 'projects/backend/8base-console-graphql-api-mutations-readme',
+                id: 'projects/backend/app-services/authentication-index',
               },
               items: [
-                'projects/backend/8base-console-graphql-api-mutations-single-record-mutations',
-                'projects/backend/8base-console-graphql-api-mutations-related-record-mutations',
-                'projects/backend/8base-console-graphql-api-mutations-update-by-filter-mutations',
+                'projects/backend/app-services/authentication-8base',
+                'projects/backend/app-services/authentication-auth0',
+                'projects/backend/app-services/authentication-openID',
               ],
-            },
-            {
-              type: 'category',
-              label: 'Subscriptions',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/8base-console-graphql-api-subscriptions-readme',
-              },
-              items: [
-                'projects/backend/8base-console-graphql-api-subscriptions-simple-record-subscriptions',
-                'projects/backend/8base-console-graphql-api-subscriptions-complex-record-subscriptions',
-                'projects/backend/8base-console-graphql-api-subscriptions-client',
-              ],
-            },
-            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-readme',
-            'projects/backend/8base-console-graphql-api-geo-fields-readme',
-            'projects/backend/8base-console-graphql-api-variables',
-            'projects/backend/8base-console-graphql-api-error-handling',
+            },        
           ],
-        },
-        
+        },       
+        {
+          type: 'category',
+          label: 'Continuous Integration and Continuous Deployment (CI/CD)',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-platform-tools-ci-cd',
+          },
+          items: [                      
+            
+          ],
+        }, 
        // {
        //   type: 'category',
        //   label: 'Plugins and Integrations',
@@ -419,45 +440,7 @@ const sidebars = {
        //     
        //   ],
        // },
-        {
-          type: 'category',
-          label: 'Local Development Environment',
-          link: {
-            type: 'doc',
-            id: 'projects/backend/development-tools-dev-readme',
-          },
-          items: [
-            
-            {
-              type: 'category',
-              label: 'Command Line Interface (CLI)',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/development-tools-cli-readme',
-              },
-              items: [
-                'projects/backend/development-tools-cli-commands',
-                'projects/backend/development-tools-cli-generators',
-                'projects/backend/development-tools-cli-ci-cd',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'SDK',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/development-tools-sdk-readme',
-              },
-              items: [
-                'projects/backend/development-tools-sdk-api-readme',
-                'projects/backend/development-tools-sdk-auth-readme',
-                'projects/backend/development-tools-sdk-file-upload',
-                'projects/backend/development-tools-sdk-filestack-uploader',
-                'projects/backend/development-tools-sdk-vs-code-plugin',
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
@@ -902,6 +885,45 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Advanced',
+      link: {
+        type: 'doc',
+        id: 'projects/backend/8base-console-platform-tools-advanced',
+      },
+      items: [         
+            {
+              type: 'category',
+              label: 'Command Line Interface (CLI)',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-cli-readme',
+              },
+              items: [
+                'projects/backend/development-tools-cli-commands',
+                'projects/backend/development-tools-cli-generators',
+                'projects/backend/development-tools-cli-ci-cd',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'JavaScript SDK',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-sdk-readme',
+              },
+              items: [
+                'projects/backend/development-tools-sdk-api-readme',
+                'projects/backend/development-tools-sdk-auth-readme',
+                'projects/backend/development-tools-sdk-file-upload',
+                'projects/backend/development-tools-sdk-filestack-uploader',
+                'projects/backend/development-tools-sdk-vs-code-plugin',
+              ],
+            },         
+        'projects/backend/8base-console-platform-tools-advanced-advanced-introspection',
+      ],
+    }, 
   ],
 };
 

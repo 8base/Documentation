@@ -1,10 +1,9 @@
 ---
-id: '8base-console-roles-and-permissions'
+id: 'roles-and-permissions'
 sidebar_label: 'Roles And Permissions'
-redirect_from: '/backend/roles-and-permissions'
-slug: '/projects/backend/roles-and-permissions'
+slug: '/backend/app-services/roles-and-permissions'
 ---
-# Roles And Permissions
+# Roles and Permissions
 
 Authorization in 8base uses a robust roles and permissions system that lets you securely control access to any data resources in a workspace. You use the roles and authorization system to control what users (with roles) are able to access and who is authorized (has permission) to do what.
 
@@ -27,13 +26,13 @@ _Note: all roles are fully editable._
 
 Creating a new custom Role is simple. In the Roles Manager view (`App Services > Roles`), click the `+ New Role` button at the bottom of the screen. Add a unique name (required) and a simple description before clicking `Add Role`. You may optionally assign users to the new role in the create form. However, this may also be done at anytime in the future once permissions have been specified.
 
-![Create a new role in the 8base Console](./_images/create-role.png)
+![Create a new role in the 8base Console](_images/create-role.png)
 
 ### Deleting a Role
 
 To delete a role, toggle the ellipsis toggle located at the end of the roles table row. Click the `Delete` option and then confirm your action in the modal.
 
-![Delete a role in the 8base Console](./_images/delete-role.png)
+![Delete a role in the 8base Console](_images/delete-role.png)
 
 ## Managing Permissions
 
@@ -45,13 +44,13 @@ In the Roles Manager view (`App Services > Roles`), click on the name of a _Role
 
 Lists all the data tables in the current workspace. Each table exposes the ability to set Create, Read, Update, Delete (CRUD) and Field permissions using simple controls. If fine-tuned permissions beyond CRUD actions are required, `Custom Filters` on tables and `Custom Access` on fields can be implemented.
 
-![Data permissions in Roles Manager](./_images/role-permissions-data.png)
+![Data permissions in Roles Manager](_images/role-permissions-data.png)
 
 ### Apps
 
 Allows toggling of role permissions for 8base Management Console administration, such as Schema Management, Workspace Settings, Team Administration and more.
 
-![Apps permissions in Roles Manager](./_images/role-permissions-apps.png)
+![Apps permissions in Roles Manager](_images/role-permissions-apps.png)
 
 ### Users
 
@@ -59,7 +58,7 @@ Lists all users that hold the selected role and allows for easy role assignment 
 
 _Note: By default, all users are granted the **Guest** role. You may change the name of the Guest role in the edit form._
 
-![Apps permissions in Roles Manager](./_images/role-permissions-users.png)
+![Apps permissions in Roles Manager](_images/role-permissions-users.png)
 
 ## API Tokens
 
@@ -67,7 +66,7 @@ While roles can be assigned to users, they can also be assigned to API Tokens. U
 
 API Tokens can be created in [`Settings > API Tokens`](https://app.8base.com/settings/api-tokens). Note that you can only copy the token on create! So make sure to copy the value and store it securely. The roles associated with the token will enforce which permissions the token has. API Tokens by default have no permissions.
 
-![Creating an API Token](./_images/create-api-token.png)
+![Creating an API Token](_images/create-api-token.png)
 
 ## Advanced
 
@@ -181,4 +180,4 @@ After successfully running this query, the user decides that the filter should b
 
 To accomplish this, the value of the `filter` key can be pasted into the _Custom Filter_ section of the desired role's update permission.
 
-![Adding custom filters to roles](./_images/roles-and-permissions-custom-filter-create.png)
+![Adding custom filters to roles](_images/roles-and-permissions-custom-filter-create.png)

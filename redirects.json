@@ -4,10 +4,6 @@
     "to": "/8basehome/projects/projects-team-management"
   },
   {
-    "from": "/backend/authentication",
-    "to": "/projects/backend/authentication"
-  },
-  {
     "from": "/backend/graphql-api/error-handling",
     "to": "/projects/backend/graphql-api/error-handling"
   },
@@ -104,36 +100,12 @@
     "to": "/projects/backend/console/advanced-introspection"
   },
   {
-    "from": "/backend/console/advanced",
-    "to": "/projects/backend/console/advanced"
-  },
-  {
-    "from": "/backend/console/api-explorer",
-    "to": "/projects/backend/console/api-explorer"
-  },
-  {
     "from": "/backend/console/ci-cd",
     "to": "/backend/console/ci-cd"
   },
   {
-    "from": "/projects/backend/tools",
-    "to": "/projects/backend/tools"
-  },
-  {
-    "from": "/backend/console/users",
-    "to": "/projects/backend/console/users"
-  },
-  {
     "from": "/projects/backend/plugins-integrations/salesforce",
     "to": "/backend/data/salesforce"
-  },
-  {
-    "from": "/backend/backend",
-    "to": "/projects/backend/backend"
-  },
-  {
-    "from": "/backend/roles-and-permissions",
-    "to": "/projects/backend/roles-and-permissions"
   },
   {
     "from": "/backend/custom-functions/debugging",
@@ -166,6 +138,10 @@
   {
     "from": "/backend/custom-functions/triggers",
     "to": "/backend/custom-functions/triggers"
+  },
+  {
+    "from": "/backend/custom-functions-types",
+    "to": "/backend/custom-functions-types"
   },
   {
     "from": "/projects/backend/handling-files",
@@ -260,10 +236,6 @@
     "to": "/backend/custom-functions/dev-environment/runtime-environment"
   },
   {
-    "from": "/backend/development-tools",
-    "to": "/backend/development-tools"
-  },
-  {
     "from": "/backend/development-tools/sdk/api",
     "to": "/projects/backend/development-tools/sdk/api"
   },
@@ -278,10 +250,6 @@
   {
     "from": "/backend/development-tools/sdk/filestack-uploader",
     "to": "/projects/backend/development-tools/sdk/filestack-uploader"
-  },
-  {
-    "from": "/backend/development-tools/sdk",
-    "to": "/projects/backend/development-tools/sdk"
   },
   {
     "from": "/backend/development-tools/sdk/vs-code-plugin",
