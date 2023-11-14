@@ -1,15 +1,15 @@
 ---
 id: '8base-console-platform-tools-api-explorer'
 sidebar_label: 'API Explorer'
-redirect_from: '/backend/console/api-explorer'
-slug: '/projects/backend/console/api-explorer'
+slug: '/backend/api-explorer/'
 ---
-
 # API Explorer
 
 The API Explorer is an in-browser IDE for exploring a workspace's GraphQL API. It allows 8base developers to easily build and execute GraphQL queries from within the workspace.
 
-The API Explorer makes use of your **real, live production data!**
+The API Explorer makes use of your real, live production data.
+
+![API Explorer](_images/ui_API_Explorer.png)
 
 ## Introspection
 

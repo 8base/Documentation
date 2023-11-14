@@ -7,6 +7,8 @@ slug: '/'
 
 Welcome to 8base, a powerful low-code development platform designed to facilitate the creation of full-stack JavaScript applications. We created this platform for professional developers who seek an efficient and streamlined tool to bring their projects to life.
 
+![ ](../_images/relaxed-coder.png)
+
 8base empowers developers to generate comprehensive applications, manage data effectively, and design and deploy scalable and robust digital products. With 8base, developers can generate comprehensive GraphQL APIs and extend them with custom server-side functions.
 
 8base also enables developers to build frontend applications that interact seamlessly with their 8base backend and communicate with any third-party API. The versatility of 8base provides a wide range of opportunities to innovate and deliver high-quality digital solutions.
