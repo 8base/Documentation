@@ -1,18 +1,18 @@
 ---
 id: '8base-console-graphql-api-mutations-readme'
+sidebar_label: 'GraphQL Mutations'
 redirect_from: '/backend/graphql-api/mutations'
 slug: '/projects/backend/graphql-api/mutations'
 ---
-
 # GraphQL Mutations
-
-_For the sake of the any examples, let's consider a scenario where a table called Posts exists, having expected fields and relations like title, body, author, etc._
 
 GraphQL mutations are used to create, update, and delete data via the workspace API.
 
 8base's GraphQL engine auto-generates mutations as part of the GraphQL schema based on your workspace tables. All workspace tables can recieve mutations through the workspace endpoint.
 
-### Auto-generated mutations
+For the sake of the any examples, let's consider a scenario where a table called Posts exists, having expected fields and relations like title, body, author, etc.
+
+## Auto-generated mutations
 
 Whenever a table is added to a work space, four GraphQL mutation operations are auto-generated for the table. They are:
 
@@ -35,7 +35,7 @@ Whenever a table is added to a work space, four GraphQL mutation operations are 
 
 - `tableNameRestore(...)` - Accepts `id` as an argument with which it will restore a previously deleted records; does not work on destroyed records.
 
-### Delete vs. Destroy
+## Delete vs. Destroy
 
 The 8base API differentiates between _soft delete_ and _hard delete_ actions by using _tableNameDelete_ and _tableNameDestroy_ operations.
 
@@ -43,7 +43,7 @@ When a record has a _tableNameDelete_ action performed on it, it's _deletedAt_ t
 
 When a record has a _tableNameDestroy_ action performed on it, it is permanently deleted from the database and cannot be recovered. Additionally, if the `force: true` argument is specified all dependent child records will also be permanently deleted.
 
-### Relationships
+## Relationships
 
 A cool feature of 8base API is the ability to create related objects while creating or updating parent objects. The following operations on relationships are supported:
 
@@ -53,7 +53,7 @@ A cool feature of 8base API is the ability to create related objects while creat
 - **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
 - **Disconnect**: Disconnect connected object(s) (update mutation only).
 
-### Arguments
+## Arguments
 
 8base accepts to the following mutation arguments, depending on the operation.
 

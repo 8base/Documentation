@@ -1,13 +1,13 @@
 ---
 id: 'administer-users'
-sidebar_label: 'User Administration'
+sidebar_label: 'Team and User Administration'
 slug: '/backend/app-services/administer-users'
 ---
-# User Administration
+# Team and User Administration
 
-8base's [User Administration](https://app.8base.com/users/app-users) provides the ability to easily view and manage both App User's and Team Members. It also provides some basic insights into how App Users are engaging with your application.
+You can view and manage both app users and team members. You can also find insights into how app users are engaging with your application.
 
-![User administration screen](./_images/user-admin-1.png)
+![Team administration screen](./_images/team-admin-1.png)
 
 ## Users
 
@@ -44,7 +44,7 @@ By default, the Users table has the following fields defined.
 
 When a Team Member gets invited to a workspace, two separate user records are created for them. The first record is their _Team Member Record_ and the second is their _App User Record_.
 
-This is an important distinction to be understood. The roles that get added to the _Team Member User_ record determine which permissions the developer has within the Management Console. The permissions that get added to the _App User Record_ determine which permissions the developer has within the **application being built**.
+This is an important distinction. The roles that get added to the _Team Member User_ record determine which permissions the developer has within the Management Console. The permissions that get added to the _App User Record_ determine which permissions the developer has within the **application being built**.
 
 If the developer wants to test the application as if their account only had the "Guest" role, they can do so by updating their _App User Record_ with the desired role. However, only the workspace administrator is able to update and edit roles belonging to _Team Member Users_.
 
@@ -54,7 +54,7 @@ When a user signs up for your application (or is added manually), a role can be 
 
 Currently, it is required that users sign up with a valid email address. When using 8base Authentication, a confirmation email will be sent to the user.
 
-### Updating User
+### Updating Users
 
 When inside the [User Administration](https://app.8base.com/users/app-users) user's `firstName`, `lastName`, `email`, and `roles` can be updated. This can be accomplished by clicking `Edit` in the row drop-down and using the popover form as needed.
 
