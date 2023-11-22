@@ -1,19 +1,21 @@
 ---
 id: '8base-console-graphql-api-mutations-update-by-filter-mutations'
-sidebar_label: 'Update By Filter Mutations'
+sidebar_label: 'Mutating Multiple Records Using Filters'
 redirect_from: '/backend/graphql-api/mutations/update-by-filter-mutations'
-slug: '/projects/backend/graphql-api/mutations/update-by-filter-mutations'
+slug: '/backend/graphql-api/mutations/update-by-filter-mutations'
 ---
 
-# Mutating multiple records using filters
+# Mutating Multiple Records Using Filters
 
 _For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
 
 You can update multiple table records using 8base's auto-generated GraphQL mutation operations.
 
-**\*Note**: Some examples might use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
+:::note
+Some examples might use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
+:::
 
-##### Updating all post's titles published before a given day
+## Updating all post's titles published before a given day
 
 Prefix the title of every post published before a specific date with the string "LEGACY: ".
 
@@ -59,13 +61,13 @@ mutation {
 }
 ```
 
-### Field Type Predicates
+## Field Type Predicates
 
 When using the `tableNameUpdateByFilter` operation, different field types have different functions that can be used.
 
 **NOTE: When running the updateByFilter operation, only one coercive method can be used at a time per field.**
 
-##### String
+## String
 
 - **prefix**: String - Prepends a supplied string to the field's existing value.
 - **postfix**: String - Appends a supplied string to the field's existing value.
@@ -83,7 +85,7 @@ mutation {
 }
 ```
 
-##### Number
+## Number
 
 - **add**: Int - Adds a supplied Int to the field's existing value.
 - **sub**: Int - Subtracts a supplied Int from the field's existing value.
@@ -106,7 +108,7 @@ mutation {
 }
 ```
 
-##### Date
+## Date
 
 - **set**: String - Sets a supplied Date as the field's new value.
 - **add**: UpdateByFilterDatePartsInput - Adds a given number of Days, Months, Years, Hours, Minutes, Seconds, and Microseconds to the field's existing value.
@@ -137,7 +139,7 @@ mutation {
 }
 ```
 
-##### Switch
+### Switch
 
 - **set**: Boolean|String - Set the field's existing value to a supplied Boolean or String value.
 - **invert**: Boolean - Switches the field's existing value to its Boolean opposite (`true -> false`, `false -> true`)
@@ -154,7 +156,7 @@ mutation {
 }
 ```
 
-##### JSON
+### JSON
 
 - **set**: JSON - Set the field's existing value to a supplied JSON object.
 

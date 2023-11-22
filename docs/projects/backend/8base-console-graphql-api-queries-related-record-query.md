@@ -1,13 +1,11 @@
 ---
 id: '8base-console-graphql-api-queries-related-record-query'
-sidebar_label: 'Related Record Query'
-redirect_from: '/backend/graphql-api/queries/related-record-query'
-slug: '/projects/backend/graphql-api/queries/related-record-query'
+sidebar_label: 'Retrieving a Record'
+slug: '/backend/graphql-api/queries/related-record-query'
 ---
+# Retrieving a Record
 
-# Related Record Query
-
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.
 
 ## Fetching related table records
 

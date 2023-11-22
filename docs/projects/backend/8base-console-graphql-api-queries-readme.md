@@ -1,18 +1,16 @@
 ---
 id: '8base-console-graphql-api-queries-readme'
+sidebar_label: 'GraphQL Queries'
 redirect_from: '/backend/graphql-api/queries'
 slug: '/projects/backend/graphql-api/queries'
 ---
-
-# Queries
-
-### GraphQL Queries
+# GraphQL Queries
 
 GraphQL queries are used to fetch data via the workspace API.
 
 8base's GraphQL engine auto-generates queries as part of the GraphQL schema based on your workspace tables. All workspace tables can be queried through the workspace endpoint.
 
-### Auto-generated queries
+## Auto-generated queries
 
 Whenever a table is added to a work space, two GraphQL query operations are auto-generated for the table. They are:
 
@@ -20,7 +18,7 @@ Whenever a table is added to a work space, two GraphQL query operations are auto
 
 - `tableNameList(...)` - Accepts _filter_, _sort_, _skip_, _after_, _before_, _first_, _withDeleted_, and, _last_ to retrive a list of curated records while supporting pagination, relational-filtering, sorting, and more.
 
-##### List Arguments
+#### List Arguments
 
 8base responds to the following query arguments when specified for _lists_.
 

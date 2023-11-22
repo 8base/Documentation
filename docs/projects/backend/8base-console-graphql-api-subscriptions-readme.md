@@ -1,18 +1,16 @@
 ---
 id: '8base-console-graphql-api-subscriptions-readme'
+sidebar_label: 'GraphQL Subscriptions'
 redirect_from: '/backend/graphql-api/subscriptions'
 slug: '/projects/backend/graphql-api/subscriptions'
 ---
-
-# Subscriptions
-
-_For the sake of the any examples, let's consider a scenario where a table called Posts exists, having expected fields and relations like title, body, author, etc._
-
-## GraphQL Subscriptions
+# GraphQL Subscriptions
 
 A GraphQL subscription is a web-socket connection where the client receives an event with data whenever the observed event occurs upstream.
 
 8base's GraphQL engine auto-generates subscriptions as part of the GraphQL schema based on your workspace tables. All workspace tables can receive subscriptions through the workspace endpoint using `wss` protocol.
+
+For the sake of the any examples, let's consider a scenario where a table called Posts exists, having expected fields and relations like title, body, author, etc.
 
 ## Auto-generated subscriptions
 
