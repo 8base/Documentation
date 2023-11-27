@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-subscriptions-client'
+id: 'graphql-api-subscriptions-client'
 sidebar_label: 'Subscriptions Client using React Apollo'
 redirect_from: '/backend/graphql-api/subscriptions/client'
-slug: '/projects/backend/graphql-api/subscriptions/client'
+slug: '/backend/graphql-api/subscriptions/client'
 ---
 
 # Subscriptions

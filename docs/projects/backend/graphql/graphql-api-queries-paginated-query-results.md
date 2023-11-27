@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-queries-paginated-query-results'
+id: 'graphql-api-queries-paginated-query-results'
 sidebar_label: 'Paginated Query Results'
 redirect_from: '/backend/graphql-api/queries/paginated-query-results'
-slug: '/projects/backend/graphql-api/queries/paginated-query-results'
+slug: '/backend/graphql-api/queries/paginated-query-results'
 ---
 
 # Pagenated Queries
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Using pagination in queries
 

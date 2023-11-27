@@ -29,7 +29,7 @@ and the **Frontend Listing** page.
 
 ## Related Articles
 
-- [Authentication](../../backend/8base-console-authentication.md)
+- [Authentication](../../backend/app-services/authentication-index.md)
 - [Jumpstart with Accelerators](../../gettingstarted/jumpstart/jumpstart.md)
 
 

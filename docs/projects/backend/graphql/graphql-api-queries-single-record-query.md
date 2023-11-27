@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-queries-single-record-query'
+id: 'graphql-api-queries-single-record-query'
 sidebar_label: 'Single Record Query'
 redirect_from: '/backend/graphql-api/queries/single-record-query'
-slug: '/projects/backend/graphql-api/queries/single-record-query'
+slug: '/backend/graphql-api/queries/single-record-query'
 ---
 
 # Single Record Query
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Fetching specific table records
 

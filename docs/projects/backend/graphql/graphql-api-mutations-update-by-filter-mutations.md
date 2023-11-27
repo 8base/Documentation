@@ -1,5 +1,5 @@
 ---
-id: '8base-console-graphql-api-mutations-update-by-filter-mutations'
+id: 'graphql-api-mutations-update-by-filter-mutations'
 sidebar_label: 'Mutating Multiple Records Using Filters'
 redirect_from: '/backend/graphql-api/mutations/update-by-filter-mutations'
 slug: '/backend/graphql-api/mutations/update-by-filter-mutations'
@@ -7,12 +7,12 @@ slug: '/backend/graphql-api/mutations/update-by-filter-mutations'
 
 # Mutating Multiple Records Using Filters
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 You can update multiple table records using 8base's auto-generated GraphQL mutation operations.
 
 :::note
-Some examples might use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
+Some examples might use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
 :::
 
 ## Updating all post's titles published before a given day

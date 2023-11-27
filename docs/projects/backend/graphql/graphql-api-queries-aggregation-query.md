@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-queries-aggregation-query'
+id: 'graphql-api-queries-aggregation-query'
 sidebar_label: 'Aggregation Query'
 redirect_from: '/backend/graphql-api/queries/aggregation-query'
-slug: '/projects/backend/graphql-api/queries/aggregation-query'
+slug: '/backend/graphql-api/queries/aggregation-query'
 ---
 
 # Simple Aggregation
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Using aggregators in queries
 

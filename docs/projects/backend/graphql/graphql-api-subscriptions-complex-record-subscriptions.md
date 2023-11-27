@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-subscriptions-complex-record-subscriptions'
+id: 'graphql-api-subscriptions-complex-record-subscriptions'
 sidebar_label: 'Complex Record Subscriptions'
 redirect_from: '/backend/graphql-api/subscriptions/complex-record-subscriptions'
-slug: '/projects/backend/graphql-api/subscriptions/complex-record-subscriptions'
+slug: '/backend/graphql-api/subscriptions/complex-record-subscriptions'
 ---
 
 # Complex Record Subscriptions
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Subscriptions using filters
 

@@ -1,17 +1,17 @@
 ---
-id: '8base-console-graphql-api-mutations-single-record-mutations'
+id: 'graphql-api-mutations-single-record-mutations'
 sidebar_label: 'Single Record Mutations'
-redirect_from: '/backend/graphql-api/mutations/single-record-mutations'
-slug: '/projects/backend/graphql-api/mutations/single-record-mutations'
+slug: '/backend/graphql-api/mutations/single-record-mutations'
 ---
+# Mutating Individual Records
 
-# Mutating individual records
-
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 You can create, update, and delete individual table records using 8base's auto-generated GraphQL mutation operations.
 
-**\*Note**: Some examples will use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
+:::note 
+Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
+:::
 
 ##### Creating a single record
 

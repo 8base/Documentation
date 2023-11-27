@@ -1,8 +1,7 @@
 ---
-id: '8base-console-graphql-api-grouping-and-aggregations-readme'
+id: 'graphql-api-grouping-and-aggregations-readme'
 sidebar_label: 'Grouping and Aggregations'
-redirect_from: '/backend/graphql-api/grouping-and-aggregations'
-slug: '/projects/backend/graphql-api/grouping-and-aggregations'
+slug: '/backend/graphql-api/grouping-and-aggregations'
 ---
 
 # Grouping and Aggregations

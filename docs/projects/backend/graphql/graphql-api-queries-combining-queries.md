@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-queries-combining-queries'
+id: 'graphql-api-queries-combining-queries'
 sidebar_label: 'Combining Queries'
 redirect_from: '/backend/graphql-api/queries/combining-queries'
-slug: '/projects/backend/graphql-api/queries/combining-queries'
+slug: '/backend/graphql-api/queries/combining-queries'
 ---
 
 # Combining Queries
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Using multiple queries in a request
 

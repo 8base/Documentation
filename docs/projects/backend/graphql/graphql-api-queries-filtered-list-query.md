@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-queries-filtered-list-query'
+id: 'graphql-api-queries-filtered-list-query'
 sidebar_label: 'Filtered List Query'
 redirect_from: '/backend/graphql-api/queries/filtered-list-query'
-slug: '/projects/backend/graphql-api/queries/filtered-list-query'
+slug: '/backend/graphql-api/queries/filtered-list-query'
 ---
 
 # Filtered List Queries
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Using filters in queries
 

@@ -1,13 +1,13 @@
 ---
-id: '8base-console-graphql-api-queries-sort-list-query'
+id: 'graphql-api-queries-sort-list-query'
 sidebar_label: 'Sort List Query'
 redirect_from: '/backend/graphql-api/queries/sort-list-query'
-slug: '/projects/backend/graphql-api/queries/sort-list-query'
+slug: '/backend/graphql-api/queries/sort-list-query'
 ---
 
 # Sorted List Queries
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ## Using sorting in queries
 
