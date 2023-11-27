@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-record-list-query'
+id: 'graphql-api-queries-record-list-query'
 sidebar_label: 'Record List Query'
 redirect_from: '/backend/graphql-api/queries/record-list-query'
-slug: '/projects/backend/graphql-api/queries/record-list-query'
+slug: '/backend/graphql-api/queries/record-list-query'
 ---
 
 # Record List Query

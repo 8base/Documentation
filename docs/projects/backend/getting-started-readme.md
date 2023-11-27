@@ -48,7 +48,7 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 > [Connect to your API](/projects/backend/getting-started-connecting-to-api.md)
 > Explore ways to connect to the 8base GraphQL API.
 >
-> [GraphQL API](/projects/backend/8base-console-graphql-api-readme.md)
+> [GraphQL API](/projects/backend/graphql-api-readme.md)
 > Dive deeper into API concepts like authentication, queries, mutations, subscriptions and files.
 >
 > [Custom Functions](/backend/custom-functions/custom-functions

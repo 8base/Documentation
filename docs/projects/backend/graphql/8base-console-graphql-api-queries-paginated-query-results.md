@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-paginated-query-results'
+id: 'graphql-api-queries-paginated-query-results'
 sidebar_label: 'Paginated Query Results'
 redirect_from: '/backend/graphql-api/queries/paginated-query-results'
-slug: '/projects/backend/graphql-api/queries/paginated-query-results'
+slug: '/backend/graphql-api/queries/paginated-query-results'
 ---
 
 # Pagenated Queries

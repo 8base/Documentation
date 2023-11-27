@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-variables'
+id: 'graphql-api-variables'
 sidebar_label: 'Variables'
 redirect_from: '/backend/graphql-api/variables'
-slug: '/projects/backend/graphql-api/variables'
+slug: '/backend/graphql-api/variables'
 ---
 
 # Variables Definitions

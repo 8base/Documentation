@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-readme'
+id: 'graphql-api-readme'
 sidebar_label: 'GraphQL API Overview'
 redirect_from: '/backend/graphql-api'
-slug: '/projects/backend/graphql-api'
+slug: '/backend/graphql-api'
 ---
 
 # GraphQL API Overview

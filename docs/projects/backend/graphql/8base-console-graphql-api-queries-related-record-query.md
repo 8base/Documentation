@@ -1,5 +1,5 @@
 ---
-id: '8base-console-graphql-api-queries-related-record-query'
+id: 'graphql-api-queries-related-record-query'
 sidebar_label: 'Retrieving a Record'
 slug: '/backend/graphql-api/queries/related-record-query'
 ---

@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-combining-queries'
+id: 'graphql-api-queries-combining-queries'
 sidebar_label: 'Combining Queries'
 redirect_from: '/backend/graphql-api/queries/combining-queries'
-slug: '/projects/backend/graphql-api/queries/combining-queries'
+slug: '/backend/graphql-api/queries/combining-queries'
 ---
 
 # Combining Queries

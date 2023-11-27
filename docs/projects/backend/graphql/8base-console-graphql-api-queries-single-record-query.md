@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-single-record-query'
+id: 'graphql-api-queries-single-record-query'
 sidebar_label: 'Single Record Query'
 redirect_from: '/backend/graphql-api/queries/single-record-query'
-slug: '/projects/backend/graphql-api/queries/single-record-query'
+slug: '/backend/graphql-api/queries/single-record-query'
 ---
 
 # Single Record Query

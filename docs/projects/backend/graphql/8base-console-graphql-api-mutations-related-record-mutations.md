@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-mutations-related-record-mutations'
+id: 'graphql-api-mutations-related-record-mutations'
 sidebar_label: 'Related Record Mutations'
 redirect_from: '/backend/graphql-api/mutations/related-record-mutations'
-slug: '/projects/backend/graphql-api/mutations/related-record-mutations'
+slug: '/backend/graphql-api/mutations/related-record-mutations'
 ---
 
 # Mutating related records

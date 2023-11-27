@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-filtered-list-query'
+id: 'graphql-api-queries-filtered-list-query'
 sidebar_label: 'Filtered List Query'
 redirect_from: '/backend/graphql-api/queries/filtered-list-query'
-slug: '/projects/backend/graphql-api/queries/filtered-list-query'
+slug: '/backend/graphql-api/queries/filtered-list-query'
 ---
 
 # Filtered List Queries

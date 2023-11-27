@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-geo-fields-readme'
+id: 'graphql-api-geo-fields-readme'
 sidebar_label: 'Geo JSON Fields'
 redirect_from: '/backend/graphql-api/geo-fields'
-slug: '/projects/backend/graphql-api/geo-fields'
+slug: '/backend/graphql-api/geo-fields'
 ---
 
 # Geo Fields

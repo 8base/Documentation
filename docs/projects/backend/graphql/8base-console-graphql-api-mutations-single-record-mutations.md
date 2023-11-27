@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-mutations-single-record-mutations'
+id: 'graphql-api-mutations-single-record-mutations'
 sidebar_label: 'Single Record Mutations'
 redirect_from: '/backend/graphql-api/mutations/single-record-mutations'
-slug: '/projects/backend/graphql-api/mutations/single-record-mutations'
+slug: '/backend/graphql-api/mutations/single-record-mutations'
 ---
 
 # Mutating individual records

@@ -1,5 +1,5 @@
 ---
-id: '8base-console-graphql-api-mutations-update-by-filter-mutations'
+id: 'graphql-api-mutations-update-by-filter-mutations'
 sidebar_label: 'Mutating Multiple Records Using Filters'
 redirect_from: '/backend/graphql-api/mutations/update-by-filter-mutations'
 slug: '/backend/graphql-api/mutations/update-by-filter-mutations'

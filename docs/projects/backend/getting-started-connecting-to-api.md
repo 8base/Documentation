@@ -1,15 +1,15 @@
 ---
 id: 'getting-started-connecting-to-api'
-sidebar_label: 'Connecting To API'
+sidebar_label: 'Connecting to the API'
 redirect_from: '/backend/getting-started/connecting-to-api'
-slug: '/projects/backend/getting-started/connecting-to-api'
+slug: '/backend/getting-started/connecting-to-api'
 ---
 
 # Connecting to the API
 
 An 8base Workspace API is a single endpoint from which **all** data sources can be queried. Simply put, it's the single source of truth for an application's data.
 
-**Workspace Endpoint Anatomy**
+## Workspace Endpoint Anatomy
 
 ```
 https://api.8base.com/<WORKSPACE_ID>

@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-combining-arguments'
+id: 'graphql-api-queries-combining-arguments'
 sidebar_label: 'Combining Arguments'
 redirect_from: '/backend/graphql-api/queries/combining-arguments'
-slug: '/projects/backend/graphql-api/queries/combining-arguments'
+slug: '/backend/graphql-api/queries/combining-arguments'
 ---
 
 # Combining Arguments

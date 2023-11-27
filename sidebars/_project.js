@@ -317,7 +317,7 @@ const sidebars = {
           label: 'GraphQL API Overview',
           link: {
             type: 'doc',
-            id: 'projects/backend/8base-console-graphql-api-readme'
+            id: 'projects/backend/graphql-api-readme'
           },
           items: [
             
@@ -326,11 +326,11 @@ const sidebars = {
                   label: 'GraphQL Queries',
                   link: {
                     type: 'doc',
-                    id: 'projects/backend/8base-console-graphql-api-queries-readme',
+                    id: 'projects/backend/graphql-api-queries-readme',
                   },
                   items: [
-                    'projects/backend/8base-console-graphql-api-queries-single-record-query',
-                    'projects/backend/8base-console-graphql-api-queries-record-list-query',
+                    'projects/backend/graphql-api-queries-single-record-query',
+                    'projects/backend/graphql-api-queries-record-list-query',
                     {
                       type: 'category',
                       label: 'Related Data',
@@ -340,17 +340,17 @@ const sidebars = {
                       },
                       items: [
                         'projects/backend/graphql-api-queries-related-record-retrieve-list',
-                        'projects/backend/8base-console-graphql-api-queries-related-record-query',                                
+                        'projects/backend/graphql-api-queries-related-record-query',                                
                       ],
                     },
-                    'projects/backend/8base-console-graphql-api-queries-combining-queries',
-                    'projects/backend/8base-console-graphql-api-queries-combining-arguments',
-                    'projects/backend/8base-console-graphql-api-queries-sort-list-query',
-                    'projects/backend/8base-console-graphql-api-queries-filtered-list-query',
-                    'projects/backend/8base-console-graphql-api-queries-paginated-query-results',
-                    'projects/backend/8base-console-graphql-api-queries-aggregation-query',
-                    'projects/backend/8base-console-graphql-api-grouping-and-aggregations-readme',                   
-                    'projects/backend/8base-console-graphql-api-geo-fields-readme',                     
+                    'projects/backend/graphql-api-queries-combining-queries',
+                    'projects/backend/graphql-api-queries-combining-arguments',
+                    'projects/backend/graphql-api-queries-sort-list-query',
+                    'projects/backend/graphql-api-queries-filtered-list-query',
+                    'projects/backend/graphql-api-queries-paginated-query-results',
+                    'projects/backend/graphql-api-queries-aggregation-query',
+                    'projects/backend/graphql-api-grouping-and-aggregations-readme',                   
+                    'projects/backend/graphql-api-geo-fields-readme',                     
                   ],
                 },
                 {
@@ -358,12 +358,12 @@ const sidebars = {
                   label: 'GraphQL Mutations',
                   link: {
                     type: 'doc',
-                    id: 'projects/backend/8base-console-graphql-api-mutations-readme',
+                    id: 'projects/backend/graphql-api-mutations-readme',
                   },
                   items: [
-                    'projects/backend/8base-console-graphql-api-mutations-single-record-mutations',
-                    'projects/backend/8base-console-graphql-api-mutations-update-by-filter-mutations',
-                    'projects/backend/8base-console-graphql-api-mutations-related-record-mutations',                    
+                    'projects/backend/graphql-api-mutations-single-record-mutations',
+                    'projects/backend/graphql-api-mutations-update-by-filter-mutations',
+                    'projects/backend/graphql-api-mutations-related-record-mutations',                    
                   ],
                 },
                 {
@@ -371,14 +371,14 @@ const sidebars = {
                   label: 'GraphQL Subscriptions',
                   link: {
                     type: 'doc',
-                    id: 'projects/backend/8base-console-graphql-api-subscriptions-readme',
+                    id: 'projects/backend/graphql-api-subscriptions-readme',
                   },
                   items: [
-                    'projects/backend/8base-console-graphql-api-subscriptions-simple-record-subscriptions',
-                    'projects/backend/8base-console-graphql-api-subscriptions-complex-record-subscriptions',                 
+                    'projects/backend/graphql-api-subscriptions-simple-record-subscriptions',
+                    'projects/backend/graphql-api-subscriptions-complex-record-subscriptions',                 
                   ],
                 },
-                'projects/backend/8base-console-graphql-api-variables',
+                'projects/backend/graphql-api-variables',
                 {
                   type: 'category',
                   label: 'GraphQL Code Samples',
@@ -387,10 +387,10 @@ const sidebars = {
                     id: 'projects/backend/graphql-api-code-samples',
                   },
                   items: [                   
-                    'projects/backend/8base-console-graphql-api-subscriptions-client',
+                    'projects/backend/graphql-api-subscriptions-client',
                   ],
                 },
-                'projects/backend/8base-console-graphql-api-error-handling',
+                'projects/backend/graphql-api-error-handling',
               ], 
         },
         'projects/backend/8base-console-platform-tools-api-explorer',

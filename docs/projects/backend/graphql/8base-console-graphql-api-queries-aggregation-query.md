@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-aggregation-query'
+id: 'graphql-api-queries-aggregation-query'
 sidebar_label: 'Aggregation Query'
 redirect_from: '/backend/graphql-api/queries/aggregation-query'
-slug: '/projects/backend/graphql-api/queries/aggregation-query'
+slug: '/backend/graphql-api/queries/aggregation-query'
 ---
 
 # Simple Aggregation

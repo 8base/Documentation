@@ -1,8 +1,8 @@
 ---
-id: '8base-console-graphql-api-queries-sort-list-query'
+id: 'graphql-api-queries-sort-list-query'
 sidebar_label: 'Sort List Query'
 redirect_from: '/backend/graphql-api/queries/sort-list-query'
-slug: '/projects/backend/graphql-api/queries/sort-list-query'
+slug: '/backend/graphql-api/queries/sort-list-query'
 ---
 
 # Sorted List Queries
