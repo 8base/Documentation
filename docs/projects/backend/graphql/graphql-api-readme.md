@@ -22,7 +22,7 @@ Note: Using [Custom Functions](/backend/custom-functions), these GraphQL resourc
 
 There are several way of retrieving an API endpoint for your workspace. The easiest is to login to the [8base Management Console](https://app.8base.com), select a workspace and copy the `API Endpoint` displayed on the dashboard.
 
-![Where to find a workspace API endpoint](./_images/workspace-api-endpoint.png)
+![Where to find a workspace API endpoint](../_images/workspace-api-endpoint.png)
 
 ### Understanding Fields
 
@@ -107,7 +107,7 @@ For example, were the _Posts_ table to have the _Title_ field set to only permit
 
 ### Variables
 
-![Using Variables in GraphQL queries](./_images/api-explorer-variables-examples.png)
+![Using Variables in GraphQL queries](../_images/api-explorer-variables-examples.png)
 
 In order to make a query re-usable, it can be made dynamic by using variables.
 

@@ -10,9 +10,9 @@ slug: '/backend/getting-started'
 Every 8base Workspace contains the following components:
 
 1. **Schema**: A Schema represents the shape of your application data and specifies what data a client application can query from your API, as well as how to manipulate it.
-2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Project Team Management](../8basehome/projects/projects-team-management.md), Users, [Roles & Permissions](/projects/backend/roles-and-permissions), and [Files](data/8base-console-handling-files.md).
+2. **System Data**: Data resources that are pre-defined by default for every 8base application, such as: [Project Team Management](../8basehome/projects/projects-team-management.md), Users, [Roles & Permissions](../backend/app-services/roles-and-permissions.md), and [Files](data/8base-console-handling-files.md).
 3. **User Data**: All the unique data resources (tables, records, etc) that are specific to your application.
-4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/projects/backend/authentication) is implemented through [Authentication Profiles](/projects/backend/authentication#authentication-types), while [Authorization](/projects/backend/roles-and-permissions) uses the roles and permissions system.
+4. **Authentication and Authorization System**: Sign-up/Sign-in, manage, and authorization flows of your application. [Authentication](/backend//app-services/authentication) is implemented through [Authentication Profiles](/backend//app-services/authentication#authentication-types), while [Authorization](../backend/app-services/roles-and-permissions.md) uses the roles and permissions system.
 5. **Workspace Users**: 8base users with access to your Workspace through the console.
 6. [Custom Functions](/backend/custom-functions): For building and extending your application's server-side functionality.
 7. **Integrations**: Data and functionalities from 3rd party sources.
@@ -48,7 +48,7 @@ An awesome way to get more familiar with the true power of 8base is to complete 
 > [Connect to your API](/projects/backend/getting-started-connecting-to-api.md)
 > Explore ways to connect to the 8base GraphQL API.
 >
-> [GraphQL API](/projects/backend/graphql-api-readme.md)
+> [GraphQL API](/projects/backend/graphql/graphql-api-readme.md)
 > Dive deeper into API concepts like authentication, queries, mutations, subscriptions and files.
 >
 > [Custom Functions](/backend/custom-functions/custom-functions

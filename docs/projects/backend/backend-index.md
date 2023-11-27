@@ -23,6 +23,6 @@ This section provides information about 8base's backend and data capabilities:
 - [Getting Started](getting-started-readme.md): Learn backend fundamentals such as application structure and workspaces.
 - [Data](data/data-index.md): Learn how to manage backend resources, such as data models, roles and permissions, users, and API tokens.
 - [Custom Functions](custom-functions/custom-functions-readme.md): Learn about the four types of backend custom functions: resolvers, webhooks, triggers, and tasks.
-- [GraphQL API Overview](graphql-api-readme.md): Learn about GraphQL queries, mutations and subscriptions.
+- [GraphQL API Overview](graphql/graphql-api-readme.md): Learn about GraphQL queries, mutations and subscriptions.
 - [App Services](app-services/app-services-index.md): Learn how to extend 8base using plugins and integrations.
 - [Continuous Integration and Continuous Deployment (CI/CD)](8base-console-platform-tools-ci-cd.md): Learn about creating environments within a backend to manage different stages of development, such as production, staging, and development.managing professional software quality controls when developing applications.

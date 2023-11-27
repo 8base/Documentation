@@ -4,98 +4,6 @@
     "to": "/8basehome/projects/projects-team-management"
   },
   {
-    "from": "/backend/graphql-api/error-handling",
-    "to": "/projects/backend/graphql-api/error-handling"
-  },
-  {
-    "from": "/backend/graphql-api/geo-fields",
-    "to": "/projects/backend/graphql-api/geo-fields"
-  },
-  {
-    "from": "/backend/graphql-api/grouping-and-aggregations",
-    "to": "/projects/backend/graphql-api/grouping-and-aggregations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations",
-    "to": "/projects/backend/graphql-api/mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/related-record-mutations",
-    "to": "/projects/backend/graphql-api/mutations/related-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/single-record-mutations",
-    "to": "/projects/backend/graphql-api/mutations/single-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/update-by-filter-mutations",
-    "to": "/projects/backend/graphql-api/mutations/update-by-filter-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/queries/aggregation-query",
-    "to": "/projects/backend/graphql-api/queries/aggregation-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/combining-arguments",
-    "to": "/projects/backend/graphql-api/queries/combining-arguments"
-  },
-  {
-    "from": "/backend/graphql-api/queries/combining-queries",
-    "to": "/projects/backend/graphql-api/queries/combining-queries"
-  },
-  {
-    "from": "/backend/graphql-api/queries/filtered-list-query",
-    "to": "/projects/backend/graphql-api/queries/filtered-list-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/paginated-query-results",
-    "to": "/projects/backend/graphql-api/queries/paginated-query-results"
-  },
-  {
-    "from": "/backend/graphql-api/queries",
-    "to": "/projects/backend/graphql-api/queries"
-  },
-  {
-    "from": "/backend/graphql-api/queries/record-list-query",
-    "to": "/projects/backend/graphql-api/queries/record-list-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/related-record-query",
-    "to": "/projects/backend/graphql-api/queries/related-record-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/single-record-query",
-    "to": "/projects/backend/graphql-api/queries/single-record-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/sort-list-query",
-    "to": "/projects/backend/graphql-api/queries/sort-list-query"
-  },
-  {
-    "from": "/backend/graphql-api",
-    "to": "/projects/backend/graphql-api"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions/client",
-    "to": "/projects/backend/graphql-api/subscriptions/client"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions/complex-record-subscriptions",
-    "to": "/projects/backend/graphql-api/subscriptions/complex-record-subscriptions"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions",
-    "to": "/projects/backend/graphql-api/subscriptions"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions/simple-record-subscriptions",
-    "to": "/projects/backend/graphql-api/subscriptions/simple-record-subscriptions"
-  },
-  {
-    "from": "/backend/graphql-api/variables",
-    "to": "/projects/backend/graphql-api/variables"
-  },
-  {
     "from": "/backend/console/advanced-introspection",
     "to": "/projects/backend/console/advanced-introspection"
   },
@@ -257,7 +165,7 @@
   },
   {
     "from": "/backend/getting-started/connecting-to-api",
-    "to": "/projects/backend/getting-started/connecting-to-api"
+    "to": "/backend/getting-started/connecting-to-api"
   },
   {
     "from": "/projects/backend/getting-started/quick-start",
@@ -266,6 +174,94 @@
   {
     "from": "/projects/backend/getting-started",
     "to": "/backend/getting-started"
+  },
+  {
+    "from": "/backend/graphql-api/error-handling",
+    "to": "/backend/graphql-api/error-handling"
+  },
+  {
+    "from": "/backend/graphql-api/geo-fields",
+    "to": "/backend/graphql-api/geo-fields"
+  },
+  {
+    "from": "/backend/graphql-api/grouping-and-aggregations",
+    "to": "/backend/graphql-api/grouping-and-aggregations"
+  },
+  {
+    "from": "/backend/graphql-api/mutations",
+    "to": "/backend/graphql-api/mutations"
+  },
+  {
+    "from": "/backend/graphql-api/mutations/related-record-mutations",
+    "to": "/backend/graphql-api/mutations/related-record-mutations"
+  },
+  {
+    "from": "/backend/graphql-api/mutations/single-record-mutations",
+    "to": "/backend/graphql-api/mutations/single-record-mutations"
+  },
+  {
+    "from": "/backend/graphql-api/mutations/update-by-filter-mutations",
+    "to": "/backend/graphql-api/mutations/update-by-filter-mutations"
+  },
+  {
+    "from": "/backend/graphql-api/queries/aggregation-query",
+    "to": "/backend/graphql-api/queries/aggregation-query"
+  },
+  {
+    "from": "/backend/graphql-api/queries/combining-arguments",
+    "to": "/backend/graphql-api/queries/combining-arguments"
+  },
+  {
+    "from": "/backend/graphql-api/queries/combining-queries",
+    "to": "/backend/graphql-api/queries/combining-queries"
+  },
+  {
+    "from": "/backend/graphql-api/queries/filtered-list-query",
+    "to": "/backend/graphql-api/queries/filtered-list-query"
+  },
+  {
+    "from": "/backend/graphql-api/queries/paginated-query-results",
+    "to": "/backend/graphql-api/queries/paginated-query-results"
+  },
+  {
+    "from": "/backend/graphql-api/queries",
+    "to": "/backend/graphql-api/queries"
+  },
+  {
+    "from": "/backend/graphql-api/queries/record-list-query",
+    "to": "/backend/graphql-api/queries/record-list-query"
+  },
+  {
+    "from": "/backend/graphql-api/queries/single-record-query",
+    "to": "/backend/graphql-api/queries/single-record-query"
+  },
+  {
+    "from": "/backend/graphql-api/queries/sort-list-query",
+    "to": "/backend/graphql-api/queries/sort-list-query"
+  },
+  {
+    "from": "/backend/graphql-api",
+    "to": "/backend/graphql-api"
+  },
+  {
+    "from": "/backend/graphql-api/subscriptions/client",
+    "to": "/backend/graphql-api/subscriptions/client"
+  },
+  {
+    "from": "/backend/graphql-api/subscriptions/complex-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/complex-record-subscriptions"
+  },
+  {
+    "from": "/backend/graphql-api/subscriptions",
+    "to": "/backend/graphql-api/subscriptions"
+  },
+  {
+    "from": "/backend/graphql-api/subscriptions/simple-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/simple-record-subscriptions"
+  },
+  {
+    "from": "/backend/graphql-api/variables",
+    "to": "/backend/graphql-api/variables"
   },
   {
     "from": "/frontend/adding-cdns-and-libraries/calling-frontend-functions/addingremoving-cdns",

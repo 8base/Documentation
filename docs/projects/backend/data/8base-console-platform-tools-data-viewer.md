@@ -4,7 +4,6 @@ sidebar_label: 'Data Viewer'
 redirect_from: '/projects/backend/data/data-viewer'
 slug: '/backend/data/data-viewer'
 ---
-
 # Data Viewer
 
  The **8base Data Viewer** lets you search and manage table records. You can sort, filter, and search your tables. You can also edit table rows and import data from CSV files. 

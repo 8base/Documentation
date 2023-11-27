@@ -11,7 +11,7 @@ _For the sake of the following examples, let's consider a scenario where a table
 
 You can create, update, and delete individual table records using 8base's auto-generated GraphQL mutation operations.
 
-**\*Note**: Some examples will use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
+**\*Note**: Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
 
 ##### Creating a single record
 

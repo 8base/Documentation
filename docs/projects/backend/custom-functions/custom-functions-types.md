@@ -60,7 +60,7 @@ if (runWithRolesEnforced) {
 
 For security reasons, `checkPermissions` is ONLY available from within custom functions. It cannot be used when making requests from client applications.
 
-As opposed to using the `checkPermissions` option, [API Tokens](/backend/roles-and-permissions/#api-tokens) associated with defined roles can be used to permission `gqlRequest` calls. This ability accommodates situations where permissions are required, but not in the context of the requesting user. To accomplish this, the API Token can be added as a bearer token to the call.
+As opposed to using the `checkPermissions` option, [API Tokens](/backend/app-services/roles-and-permissions#api-tokens) associated with defined roles can be used to permission `gqlRequest` calls. This ability accommodates situations where permissions are required, but not in the context of the requesting user. To accomplish this, the API Token can be added as a bearer token to the call.
 
 ```javascript
 await ctx.api.gqlRequest(QUERY, VARIABLES, {

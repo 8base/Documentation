@@ -12,7 +12,7 @@ _For the sake of the following examples, let's consider a scenario where a table
 You can update multiple table records using 8base's auto-generated GraphQL mutation operations.
 
 :::note
-Some examples might use [aliases](/projects/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
+Some examples might use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
 :::
 
 ## Updating all post's titles published before a given day

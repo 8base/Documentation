@@ -358,5 +358,5 @@ Our first query gave us a huge list of movies, organized by ID, with no filterin
 
 ## Related Articles
 
-* [Grouping and Aggregations](https://docs.8base.com/projects/backend/graphql-api/grouping-and-aggregations) 
+* [Grouping and Aggregations](https://docs.8base.com/backend/graphql-api/grouping-and-aggregations) 
 * [Grouping and Aggregations on the GraphQL API](https://www.8base.com/8base-academy/grouping-and-aggregations-on-the-graphql-api) 
