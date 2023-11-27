@@ -13,7 +13,7 @@ In the 8base Management Console, you're able to configure one or more authentica
 
 ## getToken Resolver
 
-A custom _getToken_ resolver mutation function must be deployed to the workspace. This can be done by installing the [8base CLI](./development-tools/cli).
+A custom _getToken_ resolver mutation function must be deployed to the workspace. This can be done by installing the [8base CLI](/projects/backend/development-tools/cli).
 
 In the provided _getToken_ function, the relevant environment variables are accessed - if set in the Management Console - to provide the required credentials and configurations. A request is then made to the authentication provider to query or create the authenticating user from the database and return the user's token.
 

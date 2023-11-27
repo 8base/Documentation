@@ -1,7 +1,6 @@
 ---
 id: 'graphql-api-mutations-readme'
 sidebar_label: 'GraphQL Mutations'
-redirect_from: '/backend/graphql-api/mutations'
 slug: '/backend/graphql-api/mutations'
 ---
 # GraphQL Mutations

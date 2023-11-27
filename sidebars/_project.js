@@ -307,9 +307,9 @@ const sidebars = {
               ],
             },
             'projects/backend/custom-functions/custom-functions-debugging',
-            'projects/backend/custom-functions/custom-functions-deployment',
-            'projects/backend/custom-functions/custom-functions-executing-functions',
-            'projects/backend/custom-functions/custom-functions-logs',
+            'projects/backend/custom-functions/deployment',
+            'projects/backend/custom-functions/executing-functions',
+            'projects/backend/custom-functions/logs',
           ],
         },
         {

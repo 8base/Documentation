@@ -20,16 +20,16 @@
     "to": "/backend/custom-functions/debugging"
   },
   {
-    "from": "/backend/custom-functions/custom-functions-deployment",
-    "to": "/backend/custom-functions/custom-functions-deployment"
+    "from": "/backend/custom-functions/deployment",
+    "to": "/backend/custom-functions/deployment"
   },
   {
-    "from": "/backend/custom-functions/custom-functions-executing-functions",
-    "to": "/backend/custom-functions/custom-functions-executing-functions"
+    "from": "/backend/custom-functions/executing-functions",
+    "to": "/backend/custom-functions/executing-functions"
   },
   {
-    "from": "/backend/custom-functions/custom-functions-logs",
-    "to": "/backend/custom-functions/custom-functions-logs"
+    "from": "/backend/custom-functions/logs",
+    "to": "/backend/custom-functions/logs"
   },
   {
     "from": "/backend/custom-functions",
@@ -49,7 +49,7 @@
   },
   {
     "from": "/backend/custom-functions-types",
-    "to": "/backend/custom-functions-types"
+    "to": "/backend/custom-functions/types"
   },
   {
     "from": "/projects/backend/handling-files",

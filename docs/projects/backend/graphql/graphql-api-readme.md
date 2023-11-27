@@ -7,7 +7,7 @@ slug: '/backend/graphql-api'
 
 # GraphQL API Overview
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 ### GraphQL API and Basic Concepts
 

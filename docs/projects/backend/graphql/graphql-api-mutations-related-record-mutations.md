@@ -1,13 +1,12 @@
 ---
 id: 'graphql-api-mutations-related-record-mutations'
 sidebar_label: 'Related Record Mutations'
-redirect_from: '/backend/graphql-api/mutations/related-record-mutations'
 slug: '/backend/graphql-api/mutations/related-record-mutations'
 ---
 
 # Mutating related records
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 You can create, connect, reconnect, and disconnect related table records using 8base's auto-generated GraphQL mutation operations.
 
@@ -16,7 +15,8 @@ You can create, connect, reconnect, and disconnect related table records using 8
 - **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
 - **Disconnect**: Disconnect connected object(s) (update mutation only).
 
-**\*Note**: Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.\*
+:::note Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
+:::
 
 ##### Creating related records in nested mutation
 

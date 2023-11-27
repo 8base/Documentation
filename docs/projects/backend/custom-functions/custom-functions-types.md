@@ -2,7 +2,7 @@
 id: 'custom-functions-types'
 sidebar_label: 'Custom Functions Types'
 redirect_from: '/backend/custom-functions-types'
-slug: '/backend/custom-functions-types'
+slug: '/backend/custom-functions/types'
 ---
 # Custom Function Types
 

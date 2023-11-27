@@ -1,7 +1,6 @@
 ---
 id: 'graphql-api-error-handling'
 sidebar_label: 'Error Handling'
-redirect_from: '/backend/graphql-api/error-handling'
 slug: '/backend/graphql-api/error-handling'
 ---
 

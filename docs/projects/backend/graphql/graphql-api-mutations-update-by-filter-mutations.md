@@ -7,7 +7,7 @@ slug: '/backend/graphql-api/mutations/update-by-filter-mutations'
 
 # Mutating Multiple Records Using Filters
 
-_For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc._
+In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
 
 You can update multiple table records using 8base's auto-generated GraphQL mutation operations.
 

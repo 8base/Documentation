@@ -1,8 +1,7 @@
 ---
 id: 'custom-functions-logs'
 sidebar_label: 'Logs'
-redirect_from: '/backend/custom-functions/custom-functions-logs'
-slug: '/backend/custom-functions/custom-functions-logs'
+slug: '/backend/custom-functions/logs'
 ---
 # Logs
 

@@ -1,7 +1,6 @@
 ---
 id: 'graphql-api-grouping-and-aggregations-readme'
 sidebar_label: 'Grouping and Aggregations'
-redirect_from: '/backend/graphql-api/grouping-and-aggregations'
 slug: '/backend/graphql-api/grouping-and-aggregations'
 ---
 
