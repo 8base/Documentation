@@ -1,23 +1,23 @@
 ---
 id: 'graphql-api-variables'
 sidebar_label: 'Variables'
-redirect_from: '/backend/graphql-api/variables'
+redirect_from: '/projects/backend/graphql-api/variables'
 slug: '/backend/graphql-api/variables'
 ---
 
-# Variables Definitions
+# Variables
 
 To avoid hardcoding all values when working with GraphQL, the **API Explorer** provides a _Variables_ section in which a JSON object can be added. The top level keys of the JSON object are made available as variables that have names denoted by a dollar-sign ($KEY_NAME). This allows for a much more enjoyable development experience when writing and testing dynamic queries, mutations, and subscriptions.
 
 ![Declaring variables in the API Explorer](../_images/api-explorer-query-variables.png)
 
-### Declaring Variables
+## Declaring Variables
 
 Some dynamic inputs might need to be added when you submit a request to your GraphQL server, while keeping the operation document remains the same. These are your operation's variables. Variables must be typed arguments that get declared on the GraphQL operation. Because GraphQL is typed statically, whether you're passing in the correct variables can be validated for you.
 
 The following two examples would work together for querying a list of female users over the age of 45.
 
-##### JSON Variable
+### JSON Variable
 
 ```json
 {
@@ -26,7 +26,7 @@ The following two examples would work together for querying a list of female use
 }
 ```
 
-##### Query
+### Query
 
 ```js
 query ($gender: String, $age: Int) {
@@ -49,13 +49,13 @@ query ($gender: String, $age: Int) {
 
 You can see that the keys here match the variable names specified in the variables definition. These variable names denoted with the _$_ are what get used in the selecton set.
 
-### Declaring Typed Variables
+## Declaring Typed Variables
 
 Variables are not limited to being single input values. They can be complex objects with any declared _type_ in a given workspace - native or custom. This allows for things like entire filters, sorts, and many others to get passed dynamically as variables.
 
 The following two examples would work together for querying a list of _Posts_ in "draft" status that belong to the _Author_, which is the logged in user - supplying the filter as a variable.
 
-##### JSON Variable
+### JSON Variable
 
 ```json
 {
@@ -88,7 +88,7 @@ The following two examples would work together for querying a list of _Posts_ in
 }
 ```
 
-##### Query
+### Query
 
 ```js
 query ($filter: postFilter) {

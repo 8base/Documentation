@@ -1,23 +1,21 @@
 ---
 id: 'graphql-api-queries-record-list-query'
 sidebar_label: 'Record List Query'
-redirect_from: '/backend/graphql-api/queries/record-list-query'
+redirect_from: '/projects/backend/graphql-api/queries/record-list-query'
 slug: '/backend/graphql-api/queries/record-list-query'
 ---
 
 # Record List Query
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
+You can query a list of records. In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 ## Fetching multiple table records
 
 Query list of records from a single table. Note the `items` key that denotes an array of results will get returned.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   postsList {
     count
@@ -29,9 +27,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -57,5 +53,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

@@ -18,7 +18,7 @@ Any _group_ gets defined in the `groupBy` argument of any tables list query (for
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group articles by their author's name, count how many articles belong to
  * each author, and return each groups article IDs while excluding any
@@ -130,7 +130,7 @@ Every group defined has an additional `fn` property, where you can specify an ar
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Create a single group that returns the oldest authors age
  * out of N many authors (sampleSize).
@@ -180,11 +180,13 @@ query {
 
 Simple sorting can be achieved at the _groups_ level using ascending and descending order. Specifying the alias(es) for which the groups should be sorted by, `ASC` or `DESC` arguments can then get used.
 
-**Group by sort is not the same as the sort and orderBy for the list queries** and gets specified inside the groupBy query definition object. Group sorting only applies to the result set of groups, not to the original records themselves.
+:::note
+Group by sort is not the same as the sort and orderBy for the list queries and gets specified inside the groupBy query definition object. Group sorting only applies to the result set of groups, not to the original records themselves.
+:::
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group articles by their author's name, count how many articles belong to
  * each author, and sort in descending ording by the authorsPosts field.
@@ -251,7 +253,7 @@ The `first` / `last` / `skip` pagination parameters are supported for groupings 
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group posts by title, count how many articles belong to each post's
  * author, and return the first 5 posts after skipping 1 through 10.
@@ -327,7 +329,7 @@ You can use the same filter parameter as in list queries and combine it with gro
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Return average age of authors who are filtered by having
  * written articles with "Blog" in the title.
@@ -384,7 +386,7 @@ Another implication of it is that you should explicitly specify an expected filt
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group authors with their articles count as authorPosts and filter using
  * the having clause by groups (authors) with more than/equal to 10 authorPosts.
@@ -445,7 +447,7 @@ Compound having clauses are also supported in the similar way that filters do. Y
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group authors with their articles count as authorPosts and filter using
  * a compound having clause by groups (authors) with more than/equal to 5 authorPosts
@@ -516,7 +518,7 @@ In that case you can define multiple clauses for the same alias without alias du
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group authors with their articles count as authorPosts and filter using
  * a multiple having clause by groups (authors) with more than/equal to 5 authorPosts
@@ -586,7 +588,7 @@ Using this field, you can access the array of records used in the grouping, incl
 
 **Example**
 
-```javascript
+```graphql
 /**
  * Group authors with their articles count as authorPostsCount and access the collection of authors posts.
  */

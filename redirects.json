@@ -4,11 +4,11 @@
     "to": "/8basehome/projects/projects-team-management"
   },
   {
-    "from": "/backend/console/advanced-introspection",
-    "to": "/projects/backend/console/advanced-introspection"
+    "from": "/projects/backend/console/advanced-introspection",
+    "to": "/backend/console/advanced-introspection"
   },
   {
-    "from": "/backend/console/ci-cd",
+    "from": "/projects/backend/console/ci-cd",
     "to": "/backend/console/ci-cd"
   },
   {
@@ -16,35 +16,23 @@
     "to": "/backend/data/salesforce"
   },
   {
-    "from": "/backend/custom-functions/debugging",
+    "from": "/projects/backend/custom-functions/debugging",
     "to": "/backend/custom-functions/debugging"
   },
   {
-    "from": "/backend/custom-functions/deployment",
-    "to": "/backend/custom-functions/deployment"
-  },
-  {
-    "from": "/backend/custom-functions/executing-functions",
-    "to": "/backend/custom-functions/executing-functions"
-  },
-  {
-    "from": "/backend/custom-functions/logs",
-    "to": "/backend/custom-functions/logs"
-  },
-  {
-    "from": "/backend/custom-functions",
+    "from": "/project/backend/custom-functions",
     "to": "/backend/custom-functions"
   },
   {
-    "from": "/backend/custom-functions/resolvers",
+    "from": "/projects/backend/custom-functions/resolvers",
     "to": "/backend/custom-functions/resolvers"
   },
   {
-    "from": "/backend/custom-functions/tasks",
+    "from": "/projects/backend/custom-functions/tasks",
     "to": "/backend/custom-functions/tasks"
   },
   {
-    "from": "/backend/custom-functions/triggers",
+    "from": "/projects/backend/custom-functions/triggers",
     "to": "/backend/custom-functions/triggers"
   },
   {
@@ -164,7 +152,7 @@
     "to": "/projects/backend/development-tools/sdk/vs-code-plugin"
   },
   {
-    "from": "/backend/getting-started/connecting-to-api",
+    "from": "/projects/backend/getting-started/connecting-to-api",
     "to": "/backend/getting-started/connecting-to-api"
   },
   {
@@ -176,91 +164,67 @@
     "to": "/backend/getting-started"
   },
   {
-    "from": "/backend/graphql-api/error-handling",
-    "to": "/backend/graphql-api/error-handling"
-  },
-  {
-    "from": "/backend/graphql-api/geo-fields",
-    "to": "/backend/graphql-api/geo-fields"
-  },
-  {
-    "from": "/backend/graphql-api/grouping-and-aggregations",
-    "to": "/backend/graphql-api/grouping-and-aggregations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations",
-    "to": "/backend/graphql-api/mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/related-record-mutations",
-    "to": "/backend/graphql-api/mutations/related-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/single-record-mutations",
-    "to": "/backend/graphql-api/mutations/single-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/update-by-filter-mutations",
+    "from": "/projects/backend/graphql-api/mutations/update-by-filter-mutations",
     "to": "/backend/graphql-api/mutations/update-by-filter-mutations"
   },
   {
-    "from": "/backend/graphql-api/queries/aggregation-query",
+    "from": "/projects/backend/graphql-api/queries/aggregation-query",
     "to": "/backend/graphql-api/queries/aggregation-query"
   },
   {
-    "from": "/backend/graphql-api/queries/combining-arguments",
+    "from": "/projects/backend/graphql-api/queries/combining-arguments",
     "to": "/backend/graphql-api/queries/combining-arguments"
   },
   {
-    "from": "/backend/graphql-api/queries/combining-queries",
+    "from": "/projects/backend/graphql-api/queries/combining-queries",
     "to": "/backend/graphql-api/queries/combining-queries"
   },
   {
-    "from": "/backend/graphql-api/queries/filtered-list-query",
+    "from": "/projects/backend/graphql-api/queries/filtered-list-query",
     "to": "/backend/graphql-api/queries/filtered-list-query"
   },
   {
-    "from": "/backend/graphql-api/queries/paginated-query-results",
+    "from": "/projects/backend/graphql-api/queries/paginated-query-results",
     "to": "/backend/graphql-api/queries/paginated-query-results"
   },
   {
-    "from": "/backend/graphql-api/queries",
+    "from": "/projects/backend/graphql-api/queries",
     "to": "/backend/graphql-api/queries"
   },
   {
-    "from": "/backend/graphql-api/queries/record-list-query",
+    "from": "/projects/backend/graphql-api/queries/record-list-query",
     "to": "/backend/graphql-api/queries/record-list-query"
   },
   {
-    "from": "/backend/graphql-api/queries/single-record-query",
+    "from": "/projects/backend/graphql-api/queries/single-record-query",
     "to": "/backend/graphql-api/queries/single-record-query"
   },
   {
-    "from": "/backend/graphql-api/queries/sort-list-query",
+    "from": "/projects/backend/graphql-api/queries/sort-list-query",
     "to": "/backend/graphql-api/queries/sort-list-query"
   },
   {
-    "from": "/backend/graphql-api",
+    "from": "/project/backend/graphql-api",
     "to": "/backend/graphql-api"
   },
   {
-    "from": "/backend/graphql-api/subscriptions/client",
+    "from": "/projects/backend/graphql-api/subscriptions/client",
     "to": "/backend/graphql-api/subscriptions/client"
   },
   {
-    "from": "/backend/graphql-api/subscriptions/complex-record-subscriptions",
+    "from": "/projects/backend/graphql-api/subscriptions/complex-record-subscriptions",
     "to": "/backend/graphql-api/subscriptions/complex-record-subscriptions"
   },
   {
-    "from": "/backend/graphql-api/subscriptions",
+    "from": "/projects/backend/graphql-api/subscriptions",
     "to": "/backend/graphql-api/subscriptions"
   },
   {
-    "from": "/backend/graphql-api/subscriptions/simple-record-subscriptions",
+    "from": "/projects/backend/graphql-api/subscriptions/simple-record-subscriptions",
     "to": "/backend/graphql-api/subscriptions/simple-record-subscriptions"
   },
   {
-    "from": "/backend/graphql-api/variables",
+    "from": "/projects/backend/graphql-api/variables",
     "to": "/backend/graphql-api/variables"
   },
   {
@@ -1012,35 +976,35 @@
     "to": "/projects/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic"
   },
   {
-    "from": "/gettingstarted/commontasks/building-responsive-applications",
+    "from": "/projects/gettingstarted/commontasks/building-responsive-applications",
     "to": "/gettingstarted/commontasks/building-responsive-applications"
   },
   {
-    "from": "/gettingstarted/commontasks/create-multiple-records-single-operation",
+    "from": "/projects/gettingstarted/commontasks/create-multiple-records-single-operation",
     "to": "/gettingstarted/commontasks/create-multiple-records-single-operation"
   },
   {
-    "from": "/gettingstarted/commontasks/extending-the-api",
+    "from": "/projects/gettingstarted/commontasks/extending-the-api",
     "to": "/gettingstarted/commontasks/extending-the-api"
   },
   {
-    "from": "/gettingstarted/commontasks/implementing-pagination-api-queries",
+    "from": "/projects/gettingstarted/commontasks/implementing-pagination-api-queries",
     "to": "/gettingstarted/commontasks/implementing-pagination-api-queries"
   },
   {
-    "from": "/gettingstarted/commontasks/index",
+    "from": "/projects/gettingstarted/commontasks/index",
     "to": "/gettingstarted/commontasks"
   },
   {
-    "from": "/gettingstarted/commontasks/leveraging-navigation-events",
+    "from": "/projects/gettingstarted/commontasks/leveraging-navigation-events",
     "to": "/gettingstarted/commontasks/leveraging-navigation-events"
   },
   {
-    "from": "/gettingstarted/commontasks/real-time-applications",
+    "from": "/projects/gettingstarted/commontasks/real-time-applications",
     "to": "/gettingstarted/commontasks/real-time-applications"
   },
   {
-    "from": "/gettingstarted/commontasks/using-validating-forms",
+    "from": "/projects/gettingstarted/commontasks/using-validating-forms",
     "to": "/gettingstarted/commontasks/using-validating-forms"
   }
 ]

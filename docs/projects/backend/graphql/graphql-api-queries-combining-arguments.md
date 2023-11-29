@@ -1,23 +1,19 @@
 ---
 id: 'graphql-api-queries-combining-arguments'
 sidebar_label: 'Combining Arguments'
-redirect_from: '/backend/graphql-api/queries/combining-arguments'
+redirect_from: '/projects/backend/graphql-api/queries/combining-arguments'
 slug: '/backend/graphql-api/queries/combining-arguments'
 ---
 
 # Combining Arguments
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
+More than one argument can be used in a single list query.
 
-## Using multiple arguments in queries
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
-More than one argument can get used in a single list query.
+**Request**
 
-<div class="code-sample">
-<div>
-<label>Request</label>
-
-```javascript
+```graphql
 query {
   postsList(filter: {
     title: {
@@ -41,9 +37,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -70,5 +64,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

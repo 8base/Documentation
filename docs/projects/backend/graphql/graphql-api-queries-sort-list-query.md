@@ -1,25 +1,23 @@
 ---
 id: 'graphql-api-queries-sort-list-query'
-sidebar_label: 'Sort List Query'
-redirect_from: '/backend/graphql-api/queries/sort-list-query'
+sidebar_label: 'Sort List Queries'
+redirect_from: '/projects/backend/graphql-api/queries/sort-list-query'
 slug: '/backend/graphql-api/queries/sort-list-query'
 ---
 
-# Sorted List Queries
-
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
-
-## Using sorting in queries
+# Sort List Queries
 
 Results from your query can be sorted by using the `sort` argument. The sort order (ascending vs. descending) gets set by specifying ASC or DESC for the field name.
 
-Sorting a list of queried records.
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+## Using Sorting in Queries
 
-```javascript
+Here is a query where the results will be sorted in ascending order of creation date.
+
+**Request**
+
+```graphql
 query {
   postsList(sort: {
     createdAt: ASC
@@ -32,9 +30,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -67,18 +63,13 @@ query {
 }
 ```
 
-</div>
-</div>
+## Nested and Multi-field Sorting
 
-## Nested/multi-field sorting
+Results from your query can be sorted by attributes on related tables, as well as using multiple sort objects. They're ranked in priority by the order they are recieved in.
 
-Results from your query can be sorted by attributes on related tables, as well as using multiple sort objects. They're ranked in priority by the order they're recieved in.
+**Request**
 
-<div class="code-sample">
-<div>
-<label>Request</label>
-
-```javascript
+```graphql
 query {
   postsList(sort: [
     {
@@ -101,9 +92,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -151,5 +140,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

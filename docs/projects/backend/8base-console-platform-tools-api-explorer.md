@@ -17,7 +17,7 @@ A GraphQL schema has a built-in introspection system that publishes the schemaâ€
 
 To try this for yourself, copy and paste the following code into the textarea in the API Explorer.
 
-```javascript
+```graphql
 query {
   user
 }

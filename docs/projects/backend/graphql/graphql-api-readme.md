@@ -1,34 +1,32 @@
 ---
 id: 'graphql-api-readme'
 sidebar_label: 'GraphQL API Overview'
-redirect_from: '/backend/graphql-api'
+redirect_from: '/project/backend/graphql-api'
 slug: '/backend/graphql-api'
 ---
 
 # GraphQL API Overview
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
+Every workspace in 8base is assigned a unique API endpoint. These endpoints handle GraphQL queries, mutations, and subscriptions for every data table. The API comes pre-configured with filtering, pagination, full-text search, and other advanced features.
 
-### GraphQL API and Basic Concepts
-
-All workspaces in 8base are assigned unique API endpoints. These endpoints handle GraphQL queries, mutations and subscriptions for every data table (covering all Create, Read, Update, Delete operations, plus some...) out-of-the-box.
-
-All API Endpoints are structured as so:
+All API Endpoints are structured like this:
 `https://api.8base.com/<WORKSPACE_ID>`
 
-The API comes pre-configured with filtering, pagination, full-text search and many other advanced features, putting the best tools possible for accessing data in the front-end developer's hands.
+:::info 
+You can extend these GraphQL resources with [Custom Functions](/backend/custom-functions).
+:::
 
-Note: Using [Custom Functions](/backend/custom-functions), these GraphQL resources can be extended and added to in any way seen fit.
-
-There are several way of retrieving an API endpoint for your workspace. The easiest is to login to the [8base Management Console](https://app.8base.com), select a workspace and copy the `API Endpoint` displayed on the dashboard.
+There are several way of retrieving an API endpoint for your workspace. The easiest is to log into the [8base Management Console](https://app.8base.com), select a workspace, and copy the `API Endpoint` displayed on the dashboard.
 
 ![Where to find a workspace API endpoint](../_images/workspace-api-endpoint.png)
 
-### Understanding Fields
+## Understanding Fields
 
-Put simply, GraphQL is a specification for requesting fields on objects. Let's look at a simple 8base query example and the result it returns when run:
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
-```javascript
+GraphQL is a specification for requesting fields on objects. Here is a simple 8base query that looks for authors named "Huxley", and when their posts were created:
+
+```graphql
 query {
   author(name: "Huxley") {
     name
@@ -36,6 +34,7 @@ query {
   }
 }
 ```
+And here is the result:
 
 ```json
 {
@@ -48,11 +47,15 @@ query {
 }
 ```
 
-We see immediately that our result has the same shape as the query. This is key to GraphQL; you always get what you ask for, and the server knows which fields the client was asking for.
+The result has the same shape as the query. This is key to GraphQL: you always get what you ask for, and the server knows which fields the client is requesting.
 
-8base GraphQL queries are interactive, and support relational queries natively. This mean two important things, 1) a query can be changed at any time, and 2) related data can be joined without writing complex database queries and serializers (it's handled for you). Let's try another example to demonstrate this.
+8base GraphQL queries are interactive, and support relational queries natively. This mean two important things: 
+1. A query can be changed at any time. 
+2. Related data can be joined without writing complex database queries and serializers.
 
-```javascript
+In the next example, the `createdAt` field is removed from the query. A `posts` parameter is added. 
+
+```graphql
 query {
   author(name: "Huxley") {
     name
@@ -65,6 +68,7 @@ query {
   }
 }
 ```
+In the response, there is no `created` key. There is a new `posts` array containing its specified parameters - a sub-selection on fields for the related objects.
 
 ```json
 {
@@ -88,13 +92,11 @@ query {
 }
 ```
 
-In the previous example, the `createdAt` field was removed from the query and a `posts` parameter added. In the response, we see this reflected by there no longer being a `created` key and the added `posts` array containing its specified parameters - a sub-selection on fields for the related object(s).
-
-### Understanding Arguments
+## Understanding Arguments
 
 The power of the 8base GraphQL API is further enriched by the ability to specify different arguments when executing a query. This has been demonstrated several times now, where "Huxley" is being passed as an argument to the query (`...author(name: "Huxley")`). When creating data tables in the **Data Builder**, any field marked as _unique_ can then be used as an argument for a query.
 
-For example, were the _Posts_ table to have the _Title_ field set to only permit unique values, we could then query a specific _Post_ record like so:
+For example, if the `Posts` table had the `Title` field set to only permit unique values, we could then query a specific `Post` record:
 
 ```javascript
 {
@@ -105,13 +107,19 @@ For example, were the _Posts_ table to have the _Title_ field set to only permit
 }
 ```
 
-### Variables
+## Variables
 
-![Using Variables in GraphQL queries](../_images/api-explorer-variables-examples.png)
+You can make queries re-usable and dynamic by using variables in the API Explorer.
 
-In order to make a query re-usable, it can be made dynamic by using variables.
+To work with variables, you need to:
 
-```javascript
+1. Replace the static value in the query with the `$variableName`.
+2. Declare the `$variableName` as one of the variables accepted by the query.
+3. Pass `variableName: value` in the separate variables dictionary.
+
+Here is the query:
+
+```query
 query($filter: PostFilter) {
   postsList(filter: $filter) {
     count
@@ -122,7 +130,7 @@ query($filter: PostFilter) {
 }
 ```
 
-{% code-tabs-item title="Variables" %}
+Here is the variable:
 
 ```json
 {
@@ -133,6 +141,7 @@ query($filter: PostFilter) {
   }
 }
 ```
+And this is the result:
 
 ```json
 {
@@ -151,12 +160,16 @@ query($filter: PostFilter) {
   }
 }
 ```
+In the API Explorer, it looks like this:
+![Using Variables in GraphQL queries](../_images/api-explorer-variables-examples.png)
 
-### Aliases
+## Aliases
 
 Aliases are used to return objects having different names than their field names. This is needed when fetching the same type of objects with different arguments in a single query.
 
-```javascript
+Below you can see that Huxley has an alias of "hux":
+
+```graphql
 query {
   hux: author(name: "Huxley") {
     name
@@ -173,6 +186,7 @@ query {
   }
 }
 ```
+Result:
 
 ```json
 {
@@ -193,11 +207,11 @@ query {
 }
 ```
 
-### Fragments
+## Fragments
 
-Queries can get verbose and unorganized. Fragments create a set of fields that can then be used to represent the defined set.
+Queries can become long and complex. Fragments create a set of fields that can be used to represent the defined set. If you wanted several fields from two different authors, you can use a fragment, instead of repeating the fields twice. In this query, we have a fragment called `{ ...authorFrag }`, which contains several fields:
 
-```javascript
+```graphql
 query {
   hux: author(name: "Huxley") { ...authorFrag }
   steve: author(name: "Stevens") { ...authorFrag }
@@ -215,6 +229,7 @@ fragment authorFrag on Author {
   }
 }
 ```
+The result:
 
 ```json
 {

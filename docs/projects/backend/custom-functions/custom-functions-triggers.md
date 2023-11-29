@@ -1,7 +1,7 @@
 ---
 id: 'custom-functions-triggers'
 sidebar_label: 'Triggers'
-redirect_from: '/backend/custom-functions/triggers'
+redirect_from: '/projects/backend/custom-functions/triggers'
 slug: '/backend/custom-functions/triggers'
 ---
 # Triggers

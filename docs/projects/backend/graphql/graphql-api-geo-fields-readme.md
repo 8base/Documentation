@@ -4,7 +4,7 @@ sidebar_label: 'Geo JSON Fields'
 slug: '/backend/graphql-api/geo-fields'
 ---
 
-# Geo Fields
+# Geo JSON Fields
 
 With GeoFields, developers are able to filter records based on geo-coordinates. This opens up a ton of possibilities for map and location based applications. For example, apartment listing services, dating apps, delivery apps, and more.
 
@@ -24,7 +24,7 @@ The current implementation of geo filtering querying and works with _Point_ type
 
 Descriptions of these different types are as follows:
 
-**GeoJSONCoordinates**
+### GeoJSONCoordinates
 
 A (multidimensional) set of coordinates following x, y, z order.
 
@@ -47,7 +47,7 @@ query($latitude: Float, $longitude: Float){
 }
 ```
 
-**GeometryInput**
+### GeometryInput
 
 Object describing a single geographical Geometry input. It is comprised of a GeoJSONType and a GeoJsonCoordinates. Supported types include `Point`, `MultiPoint`, `LineString`, `MultiLineString`, `Polygon`, `MultiPolygon`, `GeometryCollection`, `Feature`, `FeatureCollection`.
 
@@ -110,7 +110,7 @@ query($sw: GeoJSONCoordinates, $ne: GeoJSONCoordinates){
 }
 ```
 
-**GeometeryDistanceFilterInput**
+### GeometeryDistanceFilterInput
 
 Object describing a single geographical Geometry distance filter input. The FloatPredicate determines how the distance operation will handle inclusion (i.e. less than, greater than, equals, etc.), while the unit is a string and can be either `meters`, `km`, or `miles`.
 

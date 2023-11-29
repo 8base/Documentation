@@ -5,19 +5,19 @@ slug: '/backend/graphql-api/mutations/single-record-mutations'
 ---
 # Mutating Individual Records
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
-
 You can create, update, and delete individual table records using 8base's auto-generated GraphQL mutation operations.
+
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 :::note 
 Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
 :::
 
-##### Creating a single record
+## Creating a Single Record
 
 Create a new record using the data argument that define the records data.
 
-```javascript
+```graphql
 mutation {
   authorCreate(data: {
     name: "Wyatt"
@@ -39,11 +39,11 @@ mutation {
 }
 ```
 
-##### Updating a single record
+## Updating a Single Record
 
 Update a record using the data argument while including the records `id` OR using a `filter` that includes a unqiue field.
 
-```javascript
+```graphql
 mutation {
   /* Updates record name with find by unqiue name) */
   quade: authorUpdate(filter: {
@@ -64,7 +64,6 @@ mutation {
     id
     name
   }
-}
 ```
 
 ```json
@@ -82,11 +81,11 @@ mutation {
 }
 ```
 
-##### Delete a single record
+## Delete a Single Record
 
 Delete a record using the data argument while including the records `id` OR using a `filter` that includes a unqiue field.
 
-```javascript
+```graphql
 mutation {
   /* Deletes record by unqiue field. */
   quade: authorDelete(filter: {

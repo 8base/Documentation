@@ -5,17 +5,15 @@ slug: '/backend/graphql-api/queries/related-record-query'
 ---
 # Retrieving a Record
 
-For the sake of the following examples, let's consider a scenario where a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`, etc.
+You can use queries to retrieve records. In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 ## Fetching related table records
 
 Query a single record and return data from related tables in the response.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   post(title: "Awesome Possum") {
     title
@@ -29,9 +27,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -49,5 +45,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

@@ -9,7 +9,9 @@ slug: '/projects/backend/development-tools/sdk/auth'
 
 The `Auth` module is used to quickly enable user authentication and sign-up in 8base developer's client applications.
 
-_Note: Before setting up Auth using the SDK, you must have first created an [Authentication Profile](/backend//app-services/authentication)_
+:::note
+Before setting up Auth using the SDK, you must have first created an [Authentication Profile](/backend//app-services/authentication).
+:::
 
 ## Usage
 
