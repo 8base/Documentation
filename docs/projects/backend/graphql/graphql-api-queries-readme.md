@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-readme'
 sidebar_label: 'GraphQL Queries'
-redirect_from: '/backend/graphql-api/queries'
+redirect_from: '/projects/backend/graphql-api/queries'
 slug: '/backend/graphql-api/queries'
 ---
 # GraphQL Queries

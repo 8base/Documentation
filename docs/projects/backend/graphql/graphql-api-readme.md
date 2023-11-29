@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-readme'
 sidebar_label: 'GraphQL API Overview'
-redirect_from: '/backend/graphql-api'
+redirect_from: '/project/backend/graphql-api'
 slug: '/backend/graphql-api'
 ---
 

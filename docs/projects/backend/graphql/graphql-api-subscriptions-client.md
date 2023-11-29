@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-subscriptions-client'
 sidebar_label: 'Subscriptions Client using React Apollo'
-redirect_from: '/backend/graphql-api/subscriptions/client'
+redirect_from: '/projects/backend/graphql-api/subscriptions/client'
 slug: '/backend/graphql-api/subscriptions/client'
 ---
 

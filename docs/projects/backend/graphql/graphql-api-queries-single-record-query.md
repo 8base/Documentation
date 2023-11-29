@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-single-record-query'
 sidebar_label: 'Single Record Query'
-redirect_from: '/backend/graphql-api/queries/single-record-query'
+redirect_from: '/projects/backend/graphql-api/queries/single-record-query'
 slug: '/backend/graphql-api/queries/single-record-query'
 ---
 

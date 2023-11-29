@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-filtered-list-query'
 sidebar_label: 'Filtered List Query'
-redirect_from: '/backend/graphql-api/queries/filtered-list-query'
+redirect_from: '/projects/backend/graphql-api/queries/filtered-list-query'
 slug: '/backend/graphql-api/queries/filtered-list-query'
 ---
 

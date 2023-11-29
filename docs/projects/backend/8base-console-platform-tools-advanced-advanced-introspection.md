@@ -1,8 +1,8 @@
 ---
 id: '8base-console-platform-tools-advanced-advanced-introspection'
 sidebar_label: 'Advanced Introspection'
-redirect_from: '/backend/console/advanced-introspection'
-slug: '/projects/backend/console/advanced-introspection'
+redirect_from: '/projects/backend/console/advanced-introspection'
+slug: '/backend/console/advanced-introspection'
 ---
 
 # Advanced Introspection

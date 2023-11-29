@@ -1,7 +1,7 @@
 ---
 id: 'custom-functions-readme'
 sidebar_label: 'Custom Functions'
-redirect_from: '/backend/custom-functions'
+redirect_from: '/project/backend/custom-functions'
 slug: '/backend/custom-functions'
 ---
 # Custom Functions

@@ -1,7 +1,7 @@
 ---
 id: 'getting-started-connecting-to-api'
 sidebar_label: 'Connecting to the API'
-redirect_from: '/backend/getting-started/connecting-to-api'
+redirect_from: '/projects/backend/getting-started/connecting-to-api'
 slug: '/backend/getting-started/connecting-to-api'
 ---
 

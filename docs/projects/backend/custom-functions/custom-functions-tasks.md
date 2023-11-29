@@ -1,7 +1,7 @@
 ---
 id: 'custom-functions-tasks'
 sidebar_label: 'Tasks'
-redirect_from: '/backend/custom-functions/tasks'
+redirect_from: '/projects/backend/custom-functions/tasks'
 slug: '/backend/custom-functions/tasks'
 ---
 # Tasks

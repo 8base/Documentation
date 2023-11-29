@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-combining-arguments'
 sidebar_label: 'Combining Arguments'
-redirect_from: '/backend/graphql-api/queries/combining-arguments'
+redirect_from: '/projects/backend/graphql-api/queries/combining-arguments'
 slug: '/backend/graphql-api/queries/combining-arguments'
 ---
 

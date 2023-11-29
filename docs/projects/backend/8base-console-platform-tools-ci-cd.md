@@ -1,7 +1,7 @@
 ---
 id: '8base-console-platform-tools-ci-cd'
 sidebar_label: 'Continuous Integration and Continuous Deployment (CI/CD)'
-redirect_from: '/backend/console/ci-cd'
+redirect_from: '/projects/backend/console/ci-cd'
 slug: '/backend/console/ci-cd'
 ---
 # Continuous Integration and Continuous Deployment (CI/CD)

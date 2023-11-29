@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-aggregation-query'
 sidebar_label: 'Aggregation Query'
-redirect_from: '/backend/graphql-api/queries/aggregation-query'
+redirect_from: '/projects/backend/graphql-api/queries/aggregation-query'
 slug: '/backend/graphql-api/queries/aggregation-query'
 ---
 

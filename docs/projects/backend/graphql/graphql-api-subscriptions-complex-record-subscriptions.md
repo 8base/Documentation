@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-subscriptions-complex-record-subscriptions'
 sidebar_label: 'Complex Record Subscriptions'
-redirect_from: '/backend/graphql-api/subscriptions/complex-record-subscriptions'
+redirect_from: '/projects/backend/graphql-api/subscriptions/complex-record-subscriptions'
 slug: '/backend/graphql-api/subscriptions/complex-record-subscriptions'
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-record-list-query'
 sidebar_label: 'Record List Query'
-redirect_from: '/backend/graphql-api/queries/record-list-query'
+redirect_from: '/projects/backend/graphql-api/queries/record-list-query'
 slug: '/backend/graphql-api/queries/record-list-query'
 ---
 

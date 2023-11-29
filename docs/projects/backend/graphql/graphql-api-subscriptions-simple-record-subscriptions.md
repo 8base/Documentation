@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-subscriptions-simple-record-subscriptions'
 sidebar_label: 'Simple Record Subscriptions'
-redirect_from: '/backend/graphql-api/subscriptions/simple-record-subscriptions'
+redirect_from: '/projects/backend/graphql-api/subscriptions/simple-record-subscriptions'
 slug: '/backend/graphql-api/subscriptions/simple-record-subscriptions'
 ---
 

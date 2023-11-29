@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-subscriptions-readme'
 sidebar_label: 'GraphQL Subscriptions'
-redirect_from: '/backend/graphql-api/subscriptions'
+redirect_from: '/projects/backend/graphql-api/subscriptions'
 slug: '/backend/graphql-api/subscriptions'
 ---
 # GraphQL Subscriptions

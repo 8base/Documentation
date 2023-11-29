@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-combining-queries'
 sidebar_label: 'Combining Queries'
-redirect_from: '/backend/graphql-api/queries/combining-queries'
+redirect_from: '/projects/backend/graphql-api/queries/combining-queries'
 slug: '/backend/graphql-api/queries/combining-queries'
 ---
 

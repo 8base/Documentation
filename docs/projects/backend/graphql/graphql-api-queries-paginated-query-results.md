@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-paginated-query-results'
 sidebar_label: 'Paginated Query Results'
-redirect_from: '/backend/graphql-api/queries/paginated-query-results'
+redirect_from: '/projects/backend/graphql-api/queries/paginated-query-results'
 slug: '/backend/graphql-api/queries/paginated-query-results'
 ---
 

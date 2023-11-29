@@ -1,7 +1,7 @@
 ---
 id: 'common-tasks-implementing-pagination-api-queries'
 sidebar_label: 'Implementing Pagination Using 8base GraphQL API Queries'
-redirect_from: '/gettingstarted/commontasks/implementing-pagination-api-queries'
+redirect_from: '/projects/gettingstarted/commontasks/implementing-pagination-api-queries'
 slug: '/gettingstarted/commontasks/implementing-pagination-api-queries'
 ---
 # Implementing Pagination Using 8base GraphQL API Queries

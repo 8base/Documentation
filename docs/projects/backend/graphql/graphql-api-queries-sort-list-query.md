@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-queries-sort-list-query'
 sidebar_label: 'Sort List Query'
-redirect_from: '/backend/graphql-api/queries/sort-list-query'
+redirect_from: '/projects/backend/graphql-api/queries/sort-list-query'
 slug: '/backend/graphql-api/queries/sort-list-query'
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 'graphql-api-variables'
 sidebar_label: 'Variables'
-redirect_from: '/backend/graphql-api/variables'
+redirect_from: '/projects/backend/graphql-api/variables'
 slug: '/backend/graphql-api/variables'
 ---
 
