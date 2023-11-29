@@ -254,6 +254,7 @@ query TeamMembers(
     first: 6
     filter: $filter
   )
+  }
 ```
 Your query should look like this:
 
@@ -359,7 +360,7 @@ First, we need to connect our query response to the looper component. This conne
 
 ![Pagination](_images/implementing-pagination-15.png )
 
-The reference to our query response will be placed in the **Loop Data** dropdown between {{ }}:  `{{ accUsersGet?.data }}`.
+The reference to our query response will be placed in the **Loop Data** dropdown between `{{ }}`: `{{ accUsersGet?.data }}`.
 
 ![Pagination](_images/implementing-pagination-16.png )
 

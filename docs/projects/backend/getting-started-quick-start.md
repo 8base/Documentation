@@ -50,7 +50,7 @@ Once the tables is created, we're going to establish a relationship between it a
 
 Before moving on, lets also add several dummy records to our database. You can do this manually by navigating to the `data` tab. However, lets just run the following GraphQL mutation in the [API Explorer](https://app.8base.com/api-explorer). Make sure to swap `<YOUR_ACCOUNT_EMAIL_ADDRESS>` with your email address!
 
-```javascript
+```graphql
 mutation {
   userUpdate(
   filter: {
@@ -302,7 +302,7 @@ Go back to the [API Explorer](https://app.8base.com/api-explorer) and click on t
 
 It could look something like this:
 
-```javascript
+```graphql
 query {
   notesList(first: 10, filter: {
     title: {

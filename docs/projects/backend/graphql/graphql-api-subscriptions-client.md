@@ -5,7 +5,7 @@ redirect_from: '/projects/backend/graphql-api/subscriptions/client'
 slug: '/backend/graphql-api/subscriptions/client'
 ---
 
-# Subscriptions
+# Subscriptions Client using React Apollo
 
 Subscriptions let your client-side application receive server-side events from the 8base platform. This is useful when you are building real-time functionality such as chats or notifications. Subscriptions are automatically generated for every data table you create.
 

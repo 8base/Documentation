@@ -38,7 +38,7 @@ The workflow of creating a file consists of the following steps:
 
 3. **Create file in 8base** Create file in 8base by passing the Filestack `handle` from step 2. You can either create a `File` object directly so you can later connect it to other tables:
 
-```javascript
+```graphql
 mutation {
   fileCreate(data: {
     fileId: "<FILE_ID>" # Filestack handle here
@@ -51,7 +51,7 @@ mutation {
 
 or you can create and connect file at the same time:
 
-```javascript
+```graphql
 mutation {
   customerCreate(data: {
     picture: {

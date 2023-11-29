@@ -7,17 +7,13 @@ slug: '/backend/graphql-api/queries/combining-queries'
 
 # Combining Queries
 
+You can combine multiple queries into a single request. If multiple queries are combined into a single request, they get executed in parallel, the responses are collated and returned as a single response object. This lets you fetch objects of different and unrelated types in the same query.
+
 In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
-## Using multiple queries in a request
+**Request**
 
-If multiple queries are combined into a single request, they get executed in parallel, the responses are collated and returned as a single response object. This lets you fetch objects of different and unrelated types in the same query.
-
-<div class="code-sample">
-<div>
-<label>Request</label>
-
-```javascript
+```graphql
 query {
   /* A profile about the author */
   author(name: "Huxley") {
@@ -56,9 +52,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -104,5 +98,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

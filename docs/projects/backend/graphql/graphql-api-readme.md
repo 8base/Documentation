@@ -167,6 +167,8 @@ In the API Explorer, it looks like this:
 
 Aliases are used to return objects having different names than their field names. This is needed when fetching the same type of objects with different arguments in a single query.
 
+Below you can see that Huxley has an alias of "hux":
+
 ```graphql
 query {
   hux: author(name: "Huxley") {
@@ -184,6 +186,7 @@ query {
   }
 }
 ```
+Result:
 
 ```json
 {
@@ -206,7 +209,7 @@ query {
 
 ## Fragments
 
-Queries can get verbose and unorganized. Fragments create a set of fields that can then be used to represent the defined set.
+Queries can become long and complex. Fragments create a set of fields that can be used to represent the defined set. If you wanted several fields from two different authors, you can use a fragment, instead of repeating the fields twice. In this query, we have a fragment called `{ ...authorFrag }`, which contains several fields:
 
 ```graphql
 query {
@@ -226,6 +229,7 @@ fragment authorFrag on Author {
   }
 }
 ```
+The result:
 
 ```json
 {

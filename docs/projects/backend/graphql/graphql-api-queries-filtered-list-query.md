@@ -7,17 +7,15 @@ slug: '/backend/graphql-api/queries/filtered-list-query'
 
 # Filtered List Queries
 
-In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
+You can filter your query results. In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
-## Using filters in queries
+## Using Filters in Queries
 
 Query list of records that are filtered. Notice the `filter` argument.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   postsList(filter: {
     title: {
@@ -35,9 +33,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -58,22 +54,17 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ## Conditional Filters
 
-Conditional filters utilize the `AND` and `OR` keys.
+Conditional filters use the `AND` and `OR` keys.
 
 ### Using `AND`
 
 When `AND` is specified, all filter objects must return _truthy_.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   postsList(filter: {
     /* 1 to N filters can be specified */
@@ -102,9 +93,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -123,18 +112,15 @@ query {
 }
 ```
 
-</div>
-</div>
+
 
 ### Using `OR`
 
 When `OR` is specified, at least one filter object must return _truthy_.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   postsList(filter: {
     OR: [
@@ -162,9 +148,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -195,18 +179,15 @@ query {
 }
 ```
 
-</div>
-</div>
+
 
 ## Nested Filters
 
 Filters, and all their elements, can be nested to satisfy more complex specs.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   postsList(filter: {
     OR: [
@@ -252,9 +233,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -287,9 +266,6 @@ query {
   }
 }
 ```
-
-</div>
-</div>
 
 ## Filter Types
 

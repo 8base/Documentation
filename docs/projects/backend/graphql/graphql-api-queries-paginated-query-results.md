@@ -15,11 +15,9 @@ The arguments `skip` and `first` get used for pagination.
 
 `first` specifies the number of rows to pass from the result set and `skip` determines which slice to retain from the results.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
-```javascript
+```graphql
 query {
   /**
    * First consider 0 as the starting slice of paginated rcords. As this
@@ -35,9 +33,7 @@ query {
 
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -59,5 +55,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

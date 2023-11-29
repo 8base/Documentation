@@ -6,18 +6,13 @@ slug: '/backend/graphql-api/queries/aggregation-query'
 ---
 
 # Simple Aggregation
+You can fetch aggregations on nodes using an aggregation query. Currently the available aggregation function is `count`.
 
 In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
-## Using aggregators in queries
+**Request**
 
-You can fetch aggregations on nodes using an aggregation query. Currently the available aggregation function is `count`.
-
-<div class="code-sample">
-<div>
-<label>Request</label>
-
-```javascript
+```graphql
 query {
   author(name: "Huxley") {
     name
@@ -31,9 +26,7 @@ query {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -52,5 +45,4 @@ query {
 }
 ```
 
-</div>
-</div>
+

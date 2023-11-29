@@ -1,13 +1,10 @@
 ---
 id: 'graphql-api-mutations-related-record-mutations'
-sidebar_label: 'Related Record Mutations'
+sidebar_label: 'Mutating Related Records'
 slug: '/backend/graphql-api/mutations/related-record-mutations'
 ---
 
-# Mutating related records
-
-In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
-
+# Mutating Related Records
 You can create, connect, reconnect, and disconnect related table records using 8base's auto-generated GraphQL mutation operations.
 
 - **Create**: Create and relate child objects.
@@ -15,14 +12,17 @@ You can create, connect, reconnect, and disconnect related table records using 8
 - **Reconnect**: Replace old connected objects with a new set of connected objects (update mutation only).
 - **Disconnect**: Disconnect connected object(s) (update mutation only).
 
-:::note Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
+
+:::note 
+Some examples will use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
 :::
 
-##### Creating related records in nested mutation
+## Creating Related Records in a Nested Mutation
 
 Whether when creating or updating a parent record, one or more child records can be created using `create`.
 
-```javascript
+```graphql
 /**
  * The author record's bio is gets updated while
  * a new Post is being created and associated.
@@ -66,11 +66,11 @@ mutation {
 }
 ```
 
-##### Connecting records in mutation
+## Connecting Records in a Mutation
 
 One or more records can be connected using a mutation that associates them - whether the relationship is _many-to-many_, _one-to-many_, or _one-to-one_.
 
-```javascript
+```graphql
 /**
  * The author gets changed to the author
  * named "Stevens" using connect.
@@ -107,11 +107,11 @@ mutation {
 }
 ```
 
-##### Re-connecting records in mutation
+## Re-connecting Records in a Mutation
 
 All related records can be _dissasociated_ from a record, while _connecting_ one or more in a specified set.
 
-```javascript
+```graphql
 /**
  * All posts belonging to the author Huxley are changed to the new set.
  */
@@ -160,11 +160,11 @@ mutation {
 }
 ```
 
-##### Disconnecting records in mutation
+## Disconnecting Records in a Mutation
 
 One or more records can be disconnected using a mutation - whether the relationship is _many-to-many_, _one-to-many_, or _one-to-one_. If the relationship is _mandatory_, an error will be raised.
 
-```javascript
+```graphql
 /**
  * All posts belonging to the author
  * Huxley are changed to the new set.

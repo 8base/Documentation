@@ -62,7 +62,7 @@ If the query runs successfully and a user record is returned, great! Just ensure
 
 If the query **fails and a user record is not found**, we simply need to create a record for the new user. This can be accomplished using the [`userSignUpWithToken`](#mutation-usersignupwithtoken), as seen below.
 
-```javascript
+```graphql
 mutation {
   userSignUpWithToken(
     authProfileId: "8BASE_AUTHENTICATION_PROFILE_ID"

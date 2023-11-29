@@ -7,9 +7,9 @@ slug: '/backend/graphql-api/mutations/update-by-filter-mutations'
 
 # Mutating Multiple Records Using Filters
 
-In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
-
 You can update multiple table records using 8base's auto-generated GraphQL mutation operations.
+
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 :::note
 Some examples might use [aliases](/backend/graphql-api/#aliases) to show side by side the use of `data.id` versus `filter`. All examples work without aliases.
@@ -19,7 +19,7 @@ Some examples might use [aliases](/backend/graphql-api/#aliases) to show side by
 
 Prefix the title of every post published before a specific date with the string "LEGACY: ".
 
-```javascript
+```graphql
 mutation {
   postUpdateByFilter(
   data: {
@@ -65,7 +65,9 @@ mutation {
 
 When using the `tableNameUpdateByFilter` operation, different field types have different functions that can be used.
 
-**NOTE: When running the updateByFilter operation, only one coercive method can be used at a time per field.**
+:::note 
+When running the `updateByFilter` operation, only one coercive method can be used at a time per field.
+:::
 
 ## String
 

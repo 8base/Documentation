@@ -7,13 +7,11 @@ slug: '/backend/graphql-api/subscriptions/simple-record-subscriptions'
 
 # Simple Record Subscriptions
 
-In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
-
-## Subscribing to records
-
 You can subscribe to records being created, updated, and deleted using 8base's auto-generated GraphQL subscription operation.
 
-### Create subscription
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
+
+### Create a Subscription
 
 Subscription for listening to table records being created.
 
@@ -43,7 +41,7 @@ subscription {
 }
 ```
 
-### Update subscription
+### Update a Subscription
 
 Subscription for listening to table records being updated.
 
@@ -87,7 +85,7 @@ subscription {
 }
 ```
 
-### Delete subscription
+### Delete a Subscription
 
 Subscription for listening to table records being deleted.
 
