@@ -150,9 +150,6 @@ Custom filters control data access. Here's how to set one up:
 
 This filter ensures that Editors can only update posts from authors in their domain.
    
-
-Interested in mastering custom filters? Check out [Custom Filters](../backend/app-services/roles-and-permissions.md/#custom-filters).
-
 ## Creating API Tokens
 
 API Tokens allow scheduled post publication without direct user intervention. To create an API token:
@@ -170,7 +167,5 @@ API Tokens allow scheduled post publication without direct user intervention. To
 
 
 Using this token, a server-side script can fetch scheduled posts and publish them without user intervention. Note that by default, API Tokens have no permissions, hence associating roles is crucial.
-
-For a deeper dive into API tokens and their capabilities, visit [API Tokens](../backend/app-services/roles-and-permissions.md/#api-tokens).
 
 With these settings, your blogging platform offers differentiated access for Editors, Readers, and Administrators. It is also primed for server-side operations via API Tokens, ensuring a secure and efficient environment.
