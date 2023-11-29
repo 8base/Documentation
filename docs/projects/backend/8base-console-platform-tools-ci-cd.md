@@ -50,7 +50,9 @@ To delete an environment, run the following command - keeping in mind the _Maste
 8base environment delete -n [BRANCH_NAME]
 ```
 
-_**Note: For a list of all environment commands with their associated options, run `8base environment --help` in your terminal.**_
+:::note
+For a list of all environment commands with their associated options, run `8base environment --help` in your terminal.
+:::
 
 ## Generating Migrations
 
@@ -86,7 +88,9 @@ Once a migration has been generated, you'll be able to commit it so that the cha
 
 If you are committing changes to the master branch, you will be prompted to confirm the changes. Otherwise, the commit will take place without any confirmation.
 
-_**Note: For a list of all migration commands with their associated options, run `8base migration --help` in your terminal.**_
+:::note
+For a list of all migration commands with their associated options, run `8base migration --help` in your terminal.
+:::
 
 ## Handling Backups
 

@@ -7,7 +7,7 @@ slug: '/backend/graphql-api/queries/single-record-query'
 
 # Single Record Query
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 ## Fetching specific table records
 

@@ -7,7 +7,7 @@ slug: '/backend/graphql-api/subscriptions/simple-record-subscriptions'
 
 # Simple Record Subscriptions
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 ## Subscribing to records
 

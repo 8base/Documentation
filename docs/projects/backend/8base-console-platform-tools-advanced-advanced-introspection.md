@@ -53,8 +53,10 @@ query Introspection {
 
 The response returns a very long URL.
 
-_Note: The URL provided in this example is truncated and is for demonstration purposes only._
-<br /><br />
+:::note
+The URL provided in this example is truncated and is for demonstration purposes only.
+:::
+
 
 **Step 2.** Copy the URL returned in the response and paste it into a browser window; this will download a JSON file.
 

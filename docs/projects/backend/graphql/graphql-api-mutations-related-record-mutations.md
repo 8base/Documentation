@@ -6,7 +6,7 @@ slug: '/backend/graphql-api/mutations/related-record-mutations'
 
 # Mutating related records
 
-In the following examples, we have a table called `Posts` exists, having expected fields and relations like `title`, `body`, `author`.
+In the following examples, we have a table called `Posts`, which contains fields and relations like `title`, `body`, `author`.
 
 You can create, connect, reconnect, and disconnect related table records using 8base's auto-generated GraphQL mutation operations.
 
