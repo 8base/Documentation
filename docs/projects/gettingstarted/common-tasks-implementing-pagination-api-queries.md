@@ -61,7 +61,7 @@ query {
 
 Every 8base Backend automatically delivers a user table.
 
-![Pagination](_images/implementing-pagination-01.png )
+![Pagination](_images/implementing-pagination-01.png)
 
 To query these users, we input the following query into the **API Explorer**:
 
@@ -173,6 +173,7 @@ Here is a snippet of the response:
     }
   }
 ```
+
 ![Pagination](_images/implementing-pagination-02.png)
 
 Now we want to split the previous query response into two pages, to show the list of users in the Frontend. We will use the `first` and `skip` arguments.
@@ -226,15 +227,15 @@ Our data is set up in the backend and we have a query ready. Let's dive into how
 
 To assess the resources integrated with your frontend, navigate to the **Resources** section. This can be accomplished by selecting the corresponding icon located in the sidebar.
 
-![Pagination](_images/implementing-pagination-03.png )
+![Pagination](_images/implementing-pagination-03.png)
 
 You can select a specific resource to view more detailed information.
 
-![Pagination](_images/implementing-pagination-04.png )
+![Pagination](_images/implementing-pagination-04.png)
 
 Here is the detailed view for a resource:
 
-![Pagination](_images/implementing-pagination-05.png )
+![Pagination](_images/implementing-pagination-05.png)
 
 
 Now let’s craft the query: 
@@ -254,6 +255,7 @@ query TeamMembers(
     first: 6
     filter: $filter
   )
+  }
 ```
 Your query should look like this:
 
@@ -294,7 +296,7 @@ query TeamMembers(
 4. Enter the query above in the query field of your new request and give it a name.
 5. Click **Save & Run**.
 
-![Pagination](_images/implementing-pagination-08.png )
+![Pagination](_images/implementing-pagination-08.png)
 
 At this moment, we will not send the variables for `first` and `skip`. We will do this in another section, because this is not mandatory. If we execute the request, it will give us the total list without pagination.
 
@@ -316,9 +318,9 @@ Our backend table contains twelve records. This configuration will display the f
 ### Accessing Local Navigation Events
 
 1.  Click on **Pages** in the sidebar.
-![Pagination](_images/implementing-pagination-09.png )
+![Pagination](_images/implementing-pagination-09.png)
 2.  Locate your page and click on the gear icon to view its settings.
-![Pagination](_images/implementing-pagination-10.png )
+![Pagination](_images/implementing-pagination-10.png)
 3.  The settings panel will appear. The Local **Navigation Events** section is located at the bottom.
 ![Pagination](_images/implementing-pagination-11.gif)
 
@@ -327,7 +329,7 @@ Our backend table contains twelve records. This configuration will display the f
 
 1. Select the **BeforeRouteEnter** option. We want the query to execute when the page loads. 
 2. Then, choose the custom code option to enter the request execution code.
-![Pagination](_images/implementing-pagination-12.png )
+![Pagination](_images/implementing-pagination-12.png)
 3. The code should be structured as follows, sending the  `skip`  and  `first`  variables:
 
 ```javascript
@@ -338,10 +340,10 @@ accUsersGet.run({
     }
 });
 ```
-![Pagination](_images/implementing-pagination-13.png )
+![Pagination](_images/implementing-pagination-13.png)
 
 4. After implementing the code, be sure to save your changes. Click on the **Save** button located at the top of the page settings.
-![Pagination](_images/implementing-pagination-14.png )
+![Pagination](_images/implementing-pagination-14.png)
 
 Now your page is set up to execute the GraphQL query upon load. 
 
@@ -357,11 +359,11 @@ The looper component is designed to iterate over an array of data, providing a r
 
 First, we need to connect our query response to the looper component. This connection can be achieved through the Loop Data field. In this example, we will use the **Enter Code** option.
 
-![Pagination](_images/implementing-pagination-15.png )
+![Pagination](_images/implementing-pagination-15.png)
 
 The reference to our query response will be placed in the **Loop Data** dropdown between {{ }}:  `{{ accUsersGet?.data }}`.
 
-![Pagination](_images/implementing-pagination-16.png )
+![Pagination](_images/implementing-pagination-16.png)
 
 By default, the **Item Name** field is set to "item". This serves as the argument we will use to access each element in our query response.
 
@@ -369,25 +371,25 @@ By default, the **Item Name** field is set to "item". This serves as the argumen
 
 Next, we will add a component within the looper to display the iterated information. For this instance, we will use a **Card Component** as it aligns well with our example.
 
-![Pagination](_images/implementing-pagination-17.png )
+![Pagination](_images/implementing-pagination-17.png)
 
 The **Card Component** should be configured as follows:
 
 1.  **Card Header**: The header will display the first and last name of each user. Using our "item" argument, it will look like this:  `{{item?.firstName}} {{item?.lastName}}`.
-![Pagination](_images/implementing-pagination-18.png )    
+![Pagination](_images/implementing-pagination-18.png)    
 
 2.  **Card Content**: The content will display the user's profile photo. The image source configuration will be:  `{{item?.avatar?.downloadUrl}}`.
-![Pagination](_images/implementing-pagination-19.png )    
+![Pagination](_images/implementing-pagination-19.png)    
 
 3.  **Typography Component**: Within the card content, we will add a typography component to display the user's email. The text of this component will be:  `{{item?.email}}`.
-![Pagination](_images/implementing-pagination-20.png )
+![Pagination](_images/implementing-pagination-20.png)
     
 
 ### Previewing the Result
 
 Once these steps have been completed, the component is set to display the information. To preview the result, execute the request from the requests panel.
 
-![Pagination](_images/implementing-pagination-21.gif )
+![Pagination](_images/implementing-pagination-21.gif)
 
 :::note
 The pagination will not appear in the preview. When executing the query from the request panel, it is performed without a value in the `skip` and `first` variables.
@@ -406,11 +408,11 @@ Here are the steps to add an `onClick` event to the button:
 
 1. Drag a button onto the canvas.
 2. Go to the component and click on it. This action will open the properties panel.
-![Pagination](_images/implementing-pagination-22.png )
+![Pagination](_images/implementing-pagination-22.png)
 3.  In the properties panel, select the **Events** tab.
-![Pagination](_images/implementing-pagination-23.png )
+![Pagination](_images/implementing-pagination-23.png)
 4.  Under this tab, add an **On Click** event and choose **Run Custom Code**.
-![Pagination](_images/implementing-pagination-24.png )
+![Pagination](_images/implementing-pagination-24.png)
 5. Just like we did for the local navigation event, we will incorporate the code to execute our request. This code will send the values for the  `skip`  and  `first`  variables.
 
 ```
@@ -428,7 +430,7 @@ accUsersGet.run({
 });
 ```
 
-![Pagination](_images/implementing-pagination-25.png )
+![Pagination](_images/implementing-pagination-25.png)
 
 7. After entering the code, save the configuration by clicking **Done**.
 
@@ -442,10 +444,10 @@ In the editor's header menu, click the **Preview** button to launch a preview of
 
 Here is the first page:
 
-![Pagination](_images/implementing-pagination-27.png )
+![Pagination](_images/implementing-pagination-27.png)
 
 And here is the second one:
 
-![Pagination](_images/implementing-pagination-28.png )
+![Pagination](_images/implementing-pagination-28.png)
 
 Congratulations! Your application now has pagination.
