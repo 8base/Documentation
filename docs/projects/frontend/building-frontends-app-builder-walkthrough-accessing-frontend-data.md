@@ -13,7 +13,7 @@ Additionally, states can be either Local or Global. While Global states are acce
 
 ## Opening the State pane
 
-The first step in managing state data is to open the *State* pane by clicking the "{...}" icon in the left menu. 
+The first step in managing state data is to open the *State* pane by clicking the **...** icon in the left menu. 
 
 ![Opening the state pane in a frontend](./_images/ab-state-1.png)
 
@@ -42,7 +42,7 @@ When hovering over any key or value, you'll see a small clipboard icon to the ri
 
 In frontend projects, all inputs are handlebars enabled, meaning you can dynamically read any state value as an input in your Component's properties.
 
-For example, click the "clipboard icon" next to the **textField_1** value property and paste it into the _Text Field_ component **Value** field in the *Properties* pane. Add handlebars to the front and back of the pasted text in the field. Your **Value** should look like this {{textField_1.value}}.
+For example, click the "clipboard icon" next to the **textField_1** value property and paste it into the _Text Field_ component **Value** field in the *Properties* pane. Add handlebars to the front and back of the pasted text in the field. Your **Value** should look like this: `{{textField_1.value}}`.
 
 
 ![State Pane TextField Clipboard](./_images/ab-state-pane-textField-clipboard.png)

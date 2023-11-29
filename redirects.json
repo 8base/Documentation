@@ -20,18 +20,6 @@
     "to": "/backend/custom-functions/debugging"
   },
   {
-    "from": "/backend/custom-functions/deployment",
-    "to": "/backend/custom-functions/deployment"
-  },
-  {
-    "from": "/backend/custom-functions/executing-functions",
-    "to": "/backend/custom-functions/executing-functions"
-  },
-  {
-    "from": "/backend/custom-functions/logs",
-    "to": "/backend/custom-functions/logs"
-  },
-  {
     "from": "/backend/custom-functions",
     "to": "/backend/custom-functions"
   },
@@ -174,30 +162,6 @@
   {
     "from": "/projects/backend/getting-started",
     "to": "/backend/getting-started"
-  },
-  {
-    "from": "/backend/graphql-api/error-handling",
-    "to": "/backend/graphql-api/error-handling"
-  },
-  {
-    "from": "/backend/graphql-api/geo-fields",
-    "to": "/backend/graphql-api/geo-fields"
-  },
-  {
-    "from": "/backend/graphql-api/grouping-and-aggregations",
-    "to": "/backend/graphql-api/grouping-and-aggregations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations",
-    "to": "/backend/graphql-api/mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/related-record-mutations",
-    "to": "/backend/graphql-api/mutations/related-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/single-record-mutations",
-    "to": "/backend/graphql-api/mutations/single-record-mutations"
   },
   {
     "from": "/backend/graphql-api/mutations/update-by-filter-mutations",

@@ -295,7 +295,7 @@ We changed the style `layout` of the card content, to use **Flex** with `directi
 Now we want to add buttons to paginate through the data. Follow these steps:
 1. Drop a container below the async content.
 2. Drop two buttons inside the container.
-3. Change the lables of the buttons to "<< Previous" and "Next >>".
+3. Change the lables of the buttons to "Previous" and "Next".
 4. Set up stying with flex layout, space between justification and left and right padding.
 
 It should look like this:
@@ -305,7 +305,7 @@ It should look like this:
 Now the fun part: We want to change the value of our `skip` state. As this state is used as the value of a variable in the query, every time it changes the query will be executed again and the data in our page will be updated. 
 
 We will add this functionality as events in the buttons. Follow these steps
-1. Select the button with the label "Next >>".
+1. Select the button with the label "Next".
 2. In the right pane, select **Events** and click the + icon.
 3. Select `On Click`.
 
@@ -322,7 +322,7 @@ We will add this functionality as events in the buttons. Follow these steps
 
 7. Click **Done** when ready.
 
-Repeat those steps for the button labeled "<< Previous", but this time, substract from `skip`: 
+Repeat those steps for the button labeled " Previous", but this time, substract from `skip`: 
 ```js
 skip.setValue(skip.value - 10)
 ```

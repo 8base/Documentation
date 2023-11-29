@@ -3,6 +3,7 @@ id: 'organizations-team-management'
 sidebar_label: 'Organization Team Management'
 slug: '/8basehome/organizations/organizations-team-management'
 ---
+
 # Organization Team Management
 
 Managing team members in an organization offers more granular control than at the project level. You can give team members different access rights in different projects, and even in different backend environments in the same project.
@@ -25,7 +26,7 @@ Only Owners, Administrators, and Managers can invite new members.
 1.  Navigate to **Organization -> Team**, and click **New**.
 ![Inviting new team member](_images/team-management-invite-1.png)
 2.  Enter the invitees email, assign a role, and set their project access levels. Click **Send Invite** to finish.
-![<Team management invite developer](_images/team-management-invite-developer.png)
+![Team management invite developer](_images/team-management-invite-developer.png)
 
 Administrators do not need access configurations due to their universal access. 
 ![Inviting an Admin](_images/team-management-invite-administrator.png)

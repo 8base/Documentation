@@ -580,7 +580,7 @@ query {
 
 ##### \_group
 
-8base provides a special groupBy query field called `_group`. It’s a shortcut to an aggregation function with a distinct modifier applied - { aggregate: GROUP_CONCAT, distinct: true }.
+8base provides a special groupBy query field called `_group`. It’s a shortcut to an aggregation function with a distinct modifier applied: `{ aggregate: GROUP_CONCAT, distinct: true }`.
 
 Using this field, you can access the array of records used in the grouping, including the joined tables from each group at different nesting levels.
 
@@ -693,7 +693,7 @@ Type conversions are designed to perform a best effort on converting actual valu
 - string (parsed as JSON if possible)
 - any (returned as is)
 
-- **{TableName}Group**
+- **`{TableName}`Group**
 - array of the groups records
 
 ## Aggregation Functions

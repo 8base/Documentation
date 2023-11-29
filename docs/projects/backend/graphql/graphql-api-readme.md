@@ -122,7 +122,7 @@ query($filter: PostFilter) {
 }
 ```
 
-{% code-tabs-item title="Variables" %}
+`{% code-tabs-item title="Variables" %}`
 
 ```json
 {

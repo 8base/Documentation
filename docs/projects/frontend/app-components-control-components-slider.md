@@ -11,14 +11,14 @@ The _Slider_ component allows the user to select one value from a range of value
 
 The _Slider_ component is used independently or as a form component within a Form Block.
 
-### Properties
+## Properties
 
 <table>
 <thead>
 <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>name</td><td>string</td><td></td><td>Specifies the name of the component (form component only).</td></tr>
+<tr><td>name</td><td>string</td><td>None</td><td>Specifies the name of the component (form component only).</td></tr>
 <tr><td>label</td><td>node</td><td></td><td>Specifies a label for the component.</td></tr>
 <tr><td>ariaLabel</td><td>string</td><td></td><td>Specifies a label for the slider.</td></tr>
 <tr><td>ariaLabeledBy</td><td>string</td><td></td><td>Specifies the id of the element that contains the slider label.</td></tr>
@@ -26,8 +26,7 @@ The _Slider_ component is used independently or as a form component within a For
 <tr><td>value</td><td>number</td><td></td><td>Defines the value of the slider. A ranged slider requires an array of two values.</td></tr>
 <tr><td>min</td><td>number</td><td>0</td><td>Specifies the minimum value of the slider. The minimum value should not equal the maximum value.</td></tr>
 <tr><td>max</td><td>number</td><td>100</td><td>Specifies the maximum value of the slider. The maximum value should not equal the minimum value.</td></tr>
-<tr><td>defaultValue</td><td>any</td><td></td><td>Specifies a default value for the component.
-</td></tr>
+<tr><td>defaultValue</td><td>any</td><td>None</td><td>Specifies a default value for the component.</td></tr>
 <tr><td>scale</td><td>func</td><td></td><td>Defines a transformation function to change the scale of the slider.</td></tr>
 <tr><td>step</td><td>number</td><td>1</td><td>Defines the granularity with which the slider can step through values. The minimum prop is the origin point for valid values. If the step is *null*, the thumb will use values provided by the marks prop.</td></tr>
 <tr><td>getAriaLabel</td><td>func</td><td></td><td>Accepts a function that returns a string value for the thumb labels of the slider.</td></tr>
@@ -39,7 +38,7 @@ The _Slider_ component is used independently or as a form component within a For
 </tbody>
 </table>
 
-### Style Attributes
+## Style Attributes
 
 <table>
 <thead>

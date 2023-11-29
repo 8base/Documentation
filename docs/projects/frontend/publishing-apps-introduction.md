@@ -22,7 +22,7 @@ Here's how it works:
 3. The _Code Generator_ output is a _React.js_ application.
 4. App Builder then builds the _React.js_ application and uploads the built app to Amazon S3.
 5. The S3 bucket that stores your app is configured to serve the app using HTTPS.
-6. Once the app is deployed, anyone can access it at the https://{some-slug}.appbuilder.8base.com URL.
+6. Once the app is deployed, anyone can access it at the URL.
 
 That's it! App Builder takes care of all the details so that you can focus on building great apps.
 
