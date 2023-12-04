@@ -147,7 +147,7 @@ const sidebars = {
                   'projects/8basehome/projects/creating-projects',
                   {
                     type: 'category',
-                    label: 'Projects Dashboard Walkthrough',
+                    label: 'Project Dashboard Walkthrough',
                     link: {
                       type: 'doc',
                           id: 'projects/8basehome/projects/projects-dashboard-walkthrough',
@@ -197,7 +197,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Getting Started',
+          label: 'Backend Overview',
           link: {
             type: 'doc',
             id: 'projects/backend/getting-started-readme',
