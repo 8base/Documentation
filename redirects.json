@@ -552,14 +552,6 @@
     "to": "/projects/frontend/application-layouts"
   },
   {
-    "from": "/frontend/billing/inviting/managing-collaborators/billing-spec-tbd",
-    "to": ""
-  },
-  {
-    "from": "/frontend/billing/inviting/managing-collaborators/introduction",
-    "to": ""
-  },
-  {
     "from": "/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data",
     "to": "/projects/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data"
   },
