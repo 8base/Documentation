@@ -1,10 +1,11 @@
 ---
 id: 'connecting-to-data-sources-how-to-make-api-calls'
+sidebar_label: 'How to Make API Calls'
 redirect_from: '/frontend/connecting-to-data-sources/how-to-make-api-calls'
 slug: '/projects/frontend/connecting-to-data-sources/how-to-make-api-calls'
 ---
 
-# How to make API Calls (Requests)
+# How to Make API Calls
 
 This article describes how developers can think about making API Calls (Requests) in App Builder.
 

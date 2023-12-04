@@ -1,10 +1,11 @@
 ---
 id: 'connecting-to-data-sources-introduction'
+sidebar_label: 'Connecting to Data Sources'
 redirect_from: '/frontend/connecting-to-data-sources/introduction'
 slug: '/projects/frontend/connecting-to-data-sources/introduction'
 ---
 
-# Introduction
+# Connecting to Data Sources
 
 This article describes how developers can connect to Data Sources (APIs) in App Builder.
 

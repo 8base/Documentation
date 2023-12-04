@@ -1,10 +1,11 @@
 ---
 id: 'custom-frontend-logic-introduction'
+sidebar_label: 'Custom Frontend Logic'
 redirect_from: '/frontend/custom-frontend-logic/introduction'
 slug: '/projects/frontend/custom-frontend-logic/introduction'
 ---
 
-# Custom Frontend Logic Introduction
+# Custom Frontend Logic
 
 This article describes how developers can add custom state entries in their front-end applications.
 

@@ -1,10 +1,11 @@
 ---
 id: 'app-navigation-create-and-editing-app-pages'
+sidebar_label: 'Creating, Cloning, and Editing App Pages'
 redirect_from: '/frontend/app-navigation/create-and-editing-app-pages'
 slug: '/projects/frontend/app-navigation/create-and-editing-app-pages'
 ---
 
-# Creating, cloning, and editing App Pages
+# Creating, Cloning, and Editing App Pages
 
 This article describes how developers can create or clone _Pages_ and edit their _Page Settings_.
 

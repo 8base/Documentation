@@ -1,10 +1,11 @@
 ---
 id: 'triggering-events-in-the-app-introduction'
+sidebar_label: 'Triggering Events in the App'
 redirect_from: '/frontend/triggering-events-in-the-app/introduction'
 slug: '/projects/frontend/triggering-events-in-the-app/introduction'
 ---
 
-# Triggering Events in the App Introduction
+# Triggering Events in the App
 
 This article describes how developers can expect to trigger Events in an App Builder project.
 
