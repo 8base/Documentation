@@ -1,8 +1,8 @@
 ---
 id: 'custom-app-styling-creating-a-global-app-theme-introduction'
-sidebar_label: 'Introduction'
-redirect_from: '/frontend/custom-app-styling-creating-a-global-app-theme-introduction",'
-slug: '/projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction",'
+sidebar_label: 'Creating App Themes Introduction'
+redirect_from: '/frontend/custom-app-styling-creating-a-global-app-theme-introduction'
+slug: '/projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction'
 ---
 
 # Creating App Themes Introduction

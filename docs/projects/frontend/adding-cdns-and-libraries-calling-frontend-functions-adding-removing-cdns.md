@@ -7,4 +7,4 @@ slug: '/projects/frontend/adding-cdns-and-libraries/calling-frontend-functions/a
 
 # AddingRemoving CDNs
 
-...coming soon.
+To be filled.
