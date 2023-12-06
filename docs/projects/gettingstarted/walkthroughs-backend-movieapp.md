@@ -10,16 +10,11 @@ In this guide, we will show you how to create a basic movie database app to show
 
 ![Backend walkthrough](_images/backend-only-01.png )
 
-
-If you've followed our [full-stack walkthrough](/gettingstarted/walkthroughs/full-stack), this process will seem familiar. The core difference in this section is that we are focusing solely on implementing our own frontend and integrating it with 8base backend. 
-
 ## Understanding the Backend Structure
 
 We have already set up at this endpoint: [https://api.8base.com/clm0fahrv000008i67set12kz](https://api.8base.com/clm0fahrv000008i67set12kz).
 
  Our backend is structured around a `Movies` table, which has these fields:
-
-
 
 * `title`
 *  `genre`
@@ -27,13 +22,9 @@ We have already set up at this endpoint: [https://api.8base.com/clm0fahrv000008i
 * `rating` 
 * `Actors` table that holds `firstName`, `lastName`, `gender`, and `date of birth` for actors. 
 
- 
-
- `Movies` has many-to-many relations with `Actors`.
-
+`Movies` has many-to-many relations with `Actors`.
 
 ![Backend walkthrough](_images/backend-only-02.png )
-
 
 ## Setting Up the Project
 
