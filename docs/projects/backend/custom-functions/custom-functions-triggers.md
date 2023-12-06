@@ -1,7 +1,7 @@
 ---
 id: 'custom-functions-triggers'
 sidebar_label: 'Triggers'
-redirect_from: '/backend/custom-functions/triggers'
+redirect_from: '/projects/backend/custom-functions/triggers'
 slug: '/backend/custom-functions/triggers'
 ---
 # Triggers
@@ -102,7 +102,7 @@ A `trigger.after` type function receives the output of a mutation in the `event.
 }
 ```
 
-To learn more about the arguments that are passed to triggers, see [custom function arguments](/backend/custom-functions/custom-functions-types#custom-function-arguments).
+To learn more about the arguments that are passed to triggers, see [custom function arguments](/backend/custom-functions/types#custom-function-arguments).
 
 ## Trigger Responses
 

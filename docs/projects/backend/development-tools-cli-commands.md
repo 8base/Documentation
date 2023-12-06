@@ -145,14 +145,14 @@ OPTIONS:
 - `-n`, `--num` Number of lines to display - type: sting, default: 10, max: 100
 - `-t`, `--tail` Continually stream logs - type: boolean
 
-##### package
+<!-- ##### package
 
 Package 8base application without deploying it.
 
 ```sh
 $ 8base package [OPTIONS]
 ```
-
+-->
 ##### version
 
 Output 8base CLI version.

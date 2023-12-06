@@ -1,7 +1,7 @@
 ---
 id: 'custom-functions-debugging'
 sidebar_label: 'Debugging'
-redirect_from: '/backend/custom-functions/debugging'
+redirect_from: '/projects/backend/custom-functions/debugging'
 slug: '/backend/custom-functions/debugging'
 ---
 # Debugging

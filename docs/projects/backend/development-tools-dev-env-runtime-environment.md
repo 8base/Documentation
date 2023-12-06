@@ -4,8 +4,8 @@ sidebar_label: 'Runtime Environment'
 redirect_from: '/backend/development-tools/dev-env/runtime-environment'
 slug: '/backend/custom-functions/dev-environment/runtime-environment'
 ---
-
 # Runtime Environment
+
 The 8base runtime environment is a secure and isolated environment where 8base invokes your custom functions.
 
 ## Function Arguments

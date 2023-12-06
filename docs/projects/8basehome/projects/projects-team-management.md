@@ -36,7 +36,7 @@ Deleting a team member will **only** disassociate a developer from the current p
 
 ## Team Member Roles and Permissions
 
-For information about creating new roles and managing permissions, see [Roles and Permissions](../../backend/8base-console-roles-and-permissions.md).
+For information about creating new roles and managing permissions, see [Roles and Permissions](../../backend/app-services/roles-and-permissions.md).
 
 ## Differences between Team Members and App Users
 

@@ -1,8 +1,8 @@
 ---
 id: '8base-console-platform-tools-advanced-advanced-introspection'
 sidebar_label: 'Advanced Introspection'
-redirect_from: '/backend/console/advanced-introspection'
-slug: '/projects/backend/console/advanced-introspection'
+redirect_from: '/projects/backend/console/advanced-introspection'
+slug: '/backend/console/advanced-introspection'
 ---
 
 # Advanced Introspection
@@ -17,9 +17,7 @@ Retrieving your schema is a two-step process.
 
 **Step 1.** Paste the following query into the left pane of the API Explorer to retrieve introspection information about your schema.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 query Introspection {
@@ -31,9 +29,7 @@ query Introspection {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -48,13 +44,14 @@ query Introspection {
 }
 ```
 
-</div>
-</div>
+
 
 The response returns a very long URL.
 
-_Note: The URL provided in this example is truncated and is for demonstration purposes only._
-<br /><br />
+:::note
+The URL provided in this example is truncated and is for demonstration purposes only.
+:::
+
 
 **Step 2.** Copy the URL returned in the response and paste it into a browser window; this will download a JSON file.
 
@@ -68,9 +65,7 @@ You can query your schema interactively to learn more about the data types and o
 
 Running the following query returns the kind and name of the different data types.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 query qSchema {
@@ -83,9 +78,7 @@ query qSchema {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -126,16 +119,13 @@ query qSchema {
 }
 ```
 
-</div>
-</div>
+
 
 You can query for multiple type properties such as name, kind, and description.
 
 Running the following query returns the kind, name, and description of the different data types.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 query qSchema {
@@ -149,9 +139,7 @@ query qSchema {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -199,16 +187,13 @@ query qSchema {
 }
 ```
 
-</div>
-</div>
+
 
 You can also query for the available fields in your schema.
 
 Running the following query returns a list of fields, which includes the field name and type properties.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 query qSchema {
@@ -228,9 +213,7 @@ query qSchema {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -281,8 +264,7 @@ query qSchema {
 }
 ```
 
-</div>
-</div>
+
 
 ## Managing Introspection Settings
 
@@ -294,9 +276,7 @@ Running the following query will check the environment settings for your introsp
 
 The response returns a null value if your environment settings are not set up.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 query ReadSettings {
@@ -308,9 +288,7 @@ query ReadSettings {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -324,8 +302,7 @@ query ReadSettings {
 }
 ```
 
-</div>
-</div>
+
 
 ### Turning Introspection Off and On
 
@@ -337,9 +314,7 @@ The mutation name can be anything, but it should be something that describes wha
 
 Running the following mutation will turn off introspection.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 mutation mName {
@@ -355,9 +330,7 @@ mutation mName {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -371,14 +344,11 @@ mutation mName {
 }
 ```
 
-</div>
-</div>
+
 
 Attempting to query the schema after introspection has been turned off will display an error.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 query qSchema {
@@ -391,9 +361,7 @@ query qSchema {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -410,16 +378,13 @@ query qSchema {
 }
 ```
 
-</div>
-</div>
+
 
 #### Turning Introspection On
 
 Running the following mutation will turn introspection on.
 
-<div class="code-sample">
-<div>
-<label>Request</label>
+**Request**
 
 ```javascript
 mutation mutationName {
@@ -435,9 +400,7 @@ mutation mutationName {
 }
 ```
 
-</div>
-<div>
-<label>Response</label>
+**Result**
 
 ```json
 {
@@ -451,5 +414,4 @@ mutation mutationName {
 }
 ```
 
-</div>
-</div>
+

@@ -5,28 +5,35 @@ slug: '/'
 ---
 # Introduction
 
-Welcome to 8base, a powerful low-code development platform designed to facilitate the creation of full-stack JavaScript applications. We created this platform for professional developers who seek an efficient and streamlined tool to bring their projects to life.
+Welcome to 8base! We created this platform for professional developers who seek an efficient and streamlined tool to bring their projects to life.
 
-8base empowers developers to generate comprehensive applications, manage data effectively, and design and deploy scalable and robust digital products. With 8base, developers can generate comprehensive GraphQL APIs and extend them with custom server-side functions.
+![ ](../_images/relaxed-coder.png)
 
-8base also enables developers to build frontend applications that interact seamlessly with their 8base backend and communicate with any third-party API. The versatility of 8base provides a wide range of opportunities to innovate and deliver high-quality digital solutions.
+8base delivers an integrated suite of backend development tools, streamlining the process of setting up a relational data schema, implementing granular role-based access controls, provisioning authentication services, and more. Designed with efficiency in mind, these tools empower developers to establish a robust backend infrastructure with minimal friction, ensuring a solid foundation for any application.
+
+## Backend Development Tools
+
+8base delivers an integrated suite of backend development tools. You can control security permissions at the user, team, or organization level. You can control authentication methods. On subscription plans where CI/CD is enabled, developers will be able to create up to a specified number of environments. 
+
+## GraphQL API Generation
+
+8base instantly delivers an auto-generated and fully-documented GraphQL APIs for an application’s backend data. Extend and customize these APIs with server-side functions to ensure they fit your specific requirements.
+
+## Managed Backend-as-a-Service 
+
+8base presents a comprehensive DevOps-free backend solution, encompassing a fully-managed relational database and serverless functions. Whether you're leveraging 8base's frontend toolkit or your preferred development framework, this service ensures robust backend support, streamlining operations and allowing developers to prioritize feature-rich application development.
 
 ## Create an Account
-Create your free account to get started with 8base at [app.8base.com](https://app.8base.com). After you've set up your account, you'll be able to create Projects and use the 8base tools to buiold and run web applications.
+
+Create your free account to get started with 8base at [app.8base.com](https://app.8base.com). After you've set up your account, you'll be able to create Projects and use the 8base tools.
 
 You can sign up with user name and password, Github, or Google.
 
 
 ## System Requirements
+
 8base is a browser-based web application. Please review these system requirements for the best experience. Building on any laptop or desktop is currently supported using a screen resolution that is at least 1280 x 1084 is recommended.
-8base works best on Google Chrome but also supports Apple Safari, Mozilla Firefox and Microsoft Edge – if you are experiencing any issues, we recommend switching to Chrome.
 
-You must allow pop-ups, redirects, and ClipBoard from app.8base.com and appbuilder.8base.com.
+8base works best on Google Chrome, but also supports Apple Safari, Mozilla Firefox and Microsoft Edge. If you are experiencing any issues, we recommend switching to Chrome.
 
-
-## Documentation Organization
-
-- [**Introduction**](/introduction/what-is-8base): This section provides foundational information on what 8base is, who is it for, and how to use it. It also has a [quickstart tutorial](/introduction/quickstart) for your first project.  
-- [**Getting Started**](../gettingstarted/gettingstarted-index.md): This section provides walkthroughts, examples of common tasks, and explains how to jumpstart your app with accelerators.
-- [**Backend Development**](/projects/backend/getting-started): Here, you'll find detailed guides and tutorials on leveraging the power of 8base for backend development. It includes instructions on creating GraphQL APIs, custom server-side functions, and managing data.
-- [**Frontend Development**](/projects/frontend/getting-started-introduction): This section provides comprehensive instructions for building frontend applications connected to your 8base backend, APIs and other data sources.
+You must allow pop-ups, redirects, and ClipBoard from app.8base.com.

@@ -38,7 +38,7 @@ The workflow of creating a file consists of the following steps:
 
 3. **Create file in 8base** Create file in 8base by passing the Filestack `handle` from step 2. You can either create a `File` object directly so you can later connect it to other tables:
 
-```javascript
+```graphql
 mutation {
   fileCreate(data: {
     fileId: "<FILE_ID>" # Filestack handle here
@@ -51,7 +51,7 @@ mutation {
 
 or you can create and connect file at the same time:
 
-```javascript
+```graphql
 mutation {
   customerCreate(data: {
     picture: {
@@ -68,7 +68,7 @@ mutation {
 
 ### Filestack API
 
-Filestack has API clients, Pickers and Framework integrations that make it easy to upload your files using a variety of different languages and frameworks. See the full list [here](https://www.filestack.com/docs/api/#api-clients). You will need to use the [security credentials](/projects/backend/roles-and-permissions) from the 8base GraphQL API to upload files to Filestack. This is how to upload a file to the API using a basic `CURL` request:
+Filestack has API clients, Pickers and Framework integrations that make it easy to upload your files using a variety of different languages and frameworks. See the full list [here](https://www.filestack.com/docs/api/#api-clients). You will need to use the [security credentials](../backend/app-services/roles-and-permissions.md) from the 8base GraphQL API to upload files to Filestack. This is how to upload a file to the API using a basic `CURL` request:
 
 ```sh
 curl -X POST \
