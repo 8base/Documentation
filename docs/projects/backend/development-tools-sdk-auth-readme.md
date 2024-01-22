@@ -2,7 +2,7 @@
 id: 'development-tools-sdk-auth-readme'
 sidebar_label: 'Auth Module'
 redirect_from: '/backend/development-tools/sdk/auth'
-slug: '/projects/backend/development-tools/sdk/auth'
+slug: '/advanced/development-tools/sdk/auth'
 ---
 
 # Auth Module

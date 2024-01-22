@@ -2,12 +2,12 @@
 id: 'development-tools-cli-ci-cd'
 sidebar_label: 'CI/CD System'
 redirect_from: '/projects/backend/development-tools/cli/ci-cd'
-slug: '/backend/development-tools/cli/ci-cd'
+slug: '/advanced/development-tools/cli/ci-cd'
 ---
 
 # CI/CD System
 
-Teams that have multiple developers working simultaneously on different features of the same application – or Workspace – benefit from having isolated development environments for each developer. 8base implimented the СI/CD system implemented to make this possible!
+Teams that have multiple developers working simultaneously on different features of the same application – or Workspace – benefit from having isolated development environments for each developer. The 8base СI/CD system makes this possible!
 
 By enabling CI/CD in your Workspace you can create additional Workspace **Environments**.
 
@@ -19,7 +19,7 @@ Only **Master Environment** is available by default.
 
 The process of creating new Environments (cloning one Environment into another) is called **Branching**. Every Environment gets a unique URL/API endpoint that has the following anatomy `https://app.8base.com/<workspace_id>_<environment_name>`. There is no need to add `<environment_name>` to your URL for requesting _Master_ Environment.
 
-### Environment rules
+## Environment rules
 
 1. Environments are inheritable.
 2. You CANNOT manually change _System Parts_ of parent Environments after Branching (for example, one Environment can’t be manually changed after another is created from it).

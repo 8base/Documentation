@@ -1,13 +1,13 @@
 ---
 id: '8base-console-platform-tools-advanced'
-sidebar_label: 'Advanced'
+sidebar_label: 'Advanced Development'
 slug: '/advanced'
 ---
-# Advanced
+# Advanced Development
 
 8base offers advanced features that help developers interact with their schemas and functions.
 
-The Command-line Interface \(CLI\) allows you to develop and deploy custom backend logic in JavaScript or TypeScript. Need to run a custom algorithm, connect to a 3rd-party API, or execute a task on schedule? The CLI lets you deploy this logic in seconds to 8base serverless environment where it is executed and scaled automatically.
+The Command-line Interface (CLI) allows you to develop and deploy custom backend logic in JavaScript or TypeScript. Need to run a custom algorithm, connect to a third-party API, or execute a task on schedule? The CLI lets you deploy this logic in seconds to 8base serverless environment where it is executed and scaled automatically.
 
 ![8base CLI](./_images/c890144-screenshot_2019-05-12_09.23.51.png)
 

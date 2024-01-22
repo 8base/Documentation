@@ -1,7 +1,7 @@
 ---
 id: 'development-tools-sdk-readme'
 sidebar_label: 'JavaScript SDK'
-slug: '/backend/development-tools/sdk'
+slug: '/advanced/development-tools/sdk'
 ---
 
 # JavaScript SDK

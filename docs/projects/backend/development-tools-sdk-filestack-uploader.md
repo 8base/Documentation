@@ -2,12 +2,12 @@
 id: 'development-tools-sdk-filestack-uploader'
 sidebar_label: 'Filestack Uploader'
 redirect_from: '/backend/development-tools/sdk/filestack-uploader'
-slug: '/projects/backend/development-tools/sdk/filestack-uploader'
+slug: '/advanced/development-tools/sdk/filestack-uploader'
 ---
 
 # Filestack
 
-### File picker for React
+## File picker for React
 
 For React developers 8base SDK provides the `@8base-react/file-input` package that automates the steps described here. If you're looking for an easy way to integrate file uploading capabilities into your application read the [Client Tools](./file-upload) section.
 
@@ -66,7 +66,7 @@ mutation {
 }
 ```
 
-### Filestack API
+## Filestack API
 
 Filestack has API clients, Pickers and Framework integrations that make it easy to upload your files using a variety of different languages and frameworks. See the full list [here](https://www.filestack.com/docs/api/#api-clients). You will need to use the [security credentials](../backend/app-services/roles-and-permissions.md) from the 8base GraphQL API to upload files to Filestack. This is how to upload a file to the API using a basic `CURL` request:
 
@@ -92,7 +92,7 @@ The success response should look similar to this:
 
 In this case, your handle will be `VJaeYGhMSJ2FJJnvSPx9`, the last portion of `"url"`.
 
-### React Native Support
+## React Native Support
 
 Filestack does not have an SDK for React Native. See below for how to implement file uploads in React Native using the `fetch()` API and the `ImagePicker` API from Expo.
 

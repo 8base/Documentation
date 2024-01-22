@@ -284,12 +284,12 @@ const sidebars = {
               label: 'Development Environment',
               link: {
                 type: 'doc',
-                id: 'projects/backend/development-tools-dev-env-readme',
+                id: 'projects/backend/custom-functions/development-tools-dev-env-readme',
               },
               items: [
-                'projects/backend/development-tools-dev-env-project-structure',
-                'projects/backend/development-tools-dev-env-8base-yml',
-                'projects/backend/development-tools-dev-env-runtime-environment',                
+                'projects/backend/custom-functions/development-tools-dev-env-project-structure',
+                'projects/backend/custom-functions/development-tools-dev-env-8base-yml',
+                'projects/backend/custom-functions/development-tools-dev-env-runtime-environment',                
               ],
             },
             {
@@ -899,7 +899,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Advanced',
+      label: 'Advanced Development',
       link: {
         type: 'doc',
         id: 'projects/backend/8base-console-platform-tools-advanced',

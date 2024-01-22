@@ -33,7 +33,7 @@ Function details include: `type`, `description`, and relevant metadata (configur
 
 All descriptions and metadata attributed to a function must be added/updated inside the `8base.yml` file. There is currently no support for editing functions in the 8base console.
 
-Check out the [8base.yml docs](../development-tools-dev-env-8base-yml.md) to learn more about deploying functions to a workspace.
+Check out the [8base.yml docs](development-tools-dev-env-8base-yml.md) to learn more about deploying functions to a workspace.
 
 ### Logs
 You can access your custom function logs by clicking the **Logs** tab. For more information, see [Logs](custom-functions-logs.md).

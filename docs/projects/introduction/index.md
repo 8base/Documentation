@@ -21,14 +21,10 @@ You can sign up with user name and password, Github, or Google.
 
 ## System Requirements
 8base is a browser-based web application. Please review these system requirements for the best experience. Building on any laptop or desktop is currently supported using a screen resolution that is at least 1280 x 1084 is recommended.
+
 8base works best on Google Chrome but also supports Apple Safari, Mozilla Firefox and Microsoft Edge – if you are experiencing any issues, we recommend switching to Chrome.
 
 You must allow pop-ups, redirects, and ClipBoard from app.8base.com and appbuilder.8base.com.
 
+### Node.js
 
-## Documentation Organization
-
-- [**Introduction**](/introduction/what-is-8base): This section provides foundational information on what 8base is, who is it for, and how to use it. It also has a [quickstart tutorial](/introduction/quickstart) for your first project.  
-- [**Getting Started**](../gettingstarted/gettingstarted-index.md): This section provides walkthroughts, examples of common tasks, and explains how to jumpstart your app with accelerators.
-- [**Backend Development**](/projects/backend/getting-started): Here, you'll find detailed guides and tutorials on leveraging the power of 8base for backend development. It includes instructions on creating GraphQL APIs, custom server-side functions, and managing data.
-- [**Frontend Development**](/projects/frontend/getting-started-introduction): This section provides comprehensive instructions for building frontend applications connected to your 8base backend, APIs and other data sources.
