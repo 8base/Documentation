@@ -2,7 +2,7 @@
 id: 'getting-started-connecting-to-api'
 sidebar_label: 'Connecting to the API'
 redirect_from: '/projects/backend/getting-started/connecting-to-api'
-slug: '/backend/getting-started/connecting-to-api'
+slug: '/backend/overview/connecting-to-api'
 ---
 
 # Connecting to the API
@@ -257,7 +257,7 @@ It is not required that you use a script or the [8base API Explorer](https://doc
 
 When using a 3rd party API Client (**NOT** the 8base API Explorer) make sure to generate an API Token with full permissions and include it as an authorization header. Otherwise, you will likely run into authentication issues when running queries.
 
-We've added a list below of some of the ones that we like. Feel free to use one of them or find another that you love!
+We've added a list below of some of the ones that we like:
 
 - [GraphiQL](https://github.com/skevy/graphiql-app)
 - [GraphiQL Online](https://graphiql-online.com/)

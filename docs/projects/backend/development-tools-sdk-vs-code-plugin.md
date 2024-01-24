@@ -1,8 +1,8 @@
 ---
 id: 'development-tools-sdk-vs-code-plugin'
-sidebar_label: 'Vs Code Plugin'
+sidebar_label: 'VS Code Plugin'
 redirect_from: '/backend/development-tools/sdk/vs-code-plugin'
-slug: '/projects/backend/development-tools/sdk/vs-code-plugin'
+slug: '/advanced/development-tools/sdk/vs-code-plugin'
 ---
 
 # VS Code Plugin

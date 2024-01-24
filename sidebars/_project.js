@@ -147,7 +147,7 @@ const sidebars = {
                   'projects/8basehome/projects/creating-projects',
                   {
                     type: 'category',
-                    label: 'Projects Dashboard Walkthrough',
+                    label: 'Project Dashboard Walkthrough',
                     link: {
                       type: 'doc',
                           id: 'projects/8basehome/projects/projects-dashboard-walkthrough',
@@ -197,7 +197,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Getting Started',
+          label: 'Backend Overview',
           link: {
             type: 'doc',
             id: 'projects/backend/getting-started-readme',
@@ -284,12 +284,12 @@ const sidebars = {
               label: 'Development Environment',
               link: {
                 type: 'doc',
-                id: 'projects/backend/development-tools-dev-env-readme',
+                id: 'projects/backend/custom-functions/development-tools-dev-env-readme',
               },
               items: [
-                'projects/backend/development-tools-dev-env-project-structure',
-                'projects/backend/development-tools-dev-env-8base-yml',
-                'projects/backend/development-tools-dev-env-runtime-environment',                
+                'projects/backend/custom-functions/development-tools-dev-env-project-structure',
+                'projects/backend/custom-functions/development-tools-dev-env-8base-yml',
+                'projects/backend/custom-functions/development-tools-dev-env-runtime-environment',                
               ],
             },
             {
@@ -404,7 +404,7 @@ const sidebars = {
           items: [                
             {
               type: 'category',
-              label: 'Roles',
+              label: 'Roles and Permissions',
               link: {
                 type: 'doc',
                 id: 'projects/backend/app-services/roles-and-permissions',
@@ -544,7 +544,7 @@ const sidebars = {
             'projects/frontend/custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app',
             {
               type: 'category',
-              label: 'Creating a Global App Theme',
+              label: 'Creating App Themes',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction',
@@ -606,7 +606,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'App Pages States and Settings',
+              label: 'Creating, Cloning, and Editing App Pages',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/app-navigation-create-and-editing-app-pages',
@@ -627,7 +627,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'App Components',
+          label: 'App Components Introduction',
           link: {
             type: 'doc',
             id: 'projects/frontend/app-components-introduction',
@@ -761,7 +761,7 @@ const sidebars = {
             'projects/frontend/connecting-to-data-sources-introduction',
             {
               type: 'category',
-              label: 'Creating API Connections',
+              label: 'API Connection Types',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/connecting-to-data-sources-creating-api-connections',
@@ -774,7 +774,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'How to make API Calls (Requests)',
+              label: 'How to Make API Calls',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls',
@@ -827,7 +827,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Creating custom frontend functions',
+              label: 'Custom Frontend Functions',
                 link: {
                   type: 'doc',
                   id: 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions-readme',
@@ -899,7 +899,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Advanced',
+      label: 'Advanced Development',
       link: {
         type: 'doc',
         id: 'projects/backend/8base-console-platform-tools-advanced',

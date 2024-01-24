@@ -1,8 +1,8 @@
 ---
 id: 'application-layouts-introduction'
 sidebar_label: 'Introduction'
-redirect_from: '/frontend/application-layouts/introduction'
-slug: '/projects/frontend/application-layouts/introduction'
+# redirect_from: '/frontend/application-layouts/introduction'
+# slug: '/projects/frontend/application-layouts/introduction'
 ---
 
 # Introduction

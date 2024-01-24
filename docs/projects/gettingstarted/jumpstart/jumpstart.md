@@ -1,9 +1,9 @@
 ---
 id: 'jumpstart'
-sidebar_label: 'Jumpstart your project with accelerators'
+sidebar_label: 'Jumpstart with Accelerators'
 slug: '/gettingstarted/jumpstart'
 ---
-# Jumpstart your project with accelerators
+# Jumpstart with Accelerators
 
 Accelerators are pre-packaged functionalities that work inside of 8base’s low-code tools to help you jumpstart your application development. Accelerators work to facilitate common software application elements such as authentication, navigation, and user management.
 

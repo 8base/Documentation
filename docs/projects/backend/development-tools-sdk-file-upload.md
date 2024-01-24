@@ -2,7 +2,7 @@
 id: 'development-tools-sdk-file-upload'
 sidebar_label: 'File Upload'
 redirect_from: '/backend/development-tools/sdk/file-upload'
-slug: '/projects/backend/development-tools/sdk/file-upload'
+slug: '/advanced/development-tools/sdk/file-upload'
 ---
 
 # Application File Uploads

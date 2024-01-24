@@ -2,7 +2,7 @@
 id: 'development-tools-sdk-api-readme'
 sidebar_label: 'API Module'
 redirect_from: '/backend/development-tools/sdk/api'
-slug: '/projects/backend/development-tools/sdk/api'
+slug: '/advanced/development-tools/sdk/api'
 ---
 
 # API Module

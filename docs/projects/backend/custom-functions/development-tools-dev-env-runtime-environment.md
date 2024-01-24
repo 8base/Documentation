@@ -4,8 +4,8 @@ sidebar_label: 'Runtime Environment'
 redirect_from: '/backend/development-tools/dev-env/runtime-environment'
 slug: '/backend/custom-functions/dev-environment/runtime-environment'
 ---
-
 # Runtime Environment
+
 The 8base runtime environment is a secure and isolated environment where 8base invokes your custom functions.
 
 ## Function Arguments
@@ -50,7 +50,7 @@ module.exports = async (event, context) => {
 
 You can set environment variables in 8base settings and they automatically get exposed in all functions through `process.env.VARIABLE_NAME`.
 
-![Setting environment variables in 8base settings](./_images/8base-env-variables.png)
+![Setting environment variables in 8base settings](../_images/8base-env-variables.png)
 
 ### Timeouts
 
@@ -108,5 +108,6 @@ We recommend that you have a `package-lock.json` file to dramatically accelerate
 
 8base runtime environment currently supports:
 
-- TypeScript of version `4.3.4`
-- Node.js of version `14.x`
+- TypeScript: v4.3.4
+- Node.js: v18.x and v20.x
+The 8base CLI was recently updated to support Node v18 and v20. For information about updating, see [Command Line Interface (CLI)](../development-tools-cli-readme.md).

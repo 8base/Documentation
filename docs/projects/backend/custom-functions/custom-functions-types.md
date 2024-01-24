@@ -1,10 +1,10 @@
 ---
 id: 'custom-functions-types'
-sidebar_label: 'Custom Functions Types'
+sidebar_label: 'Working with Custom Functions'
 redirect_from: '/backend/custom-functions-types'
 slug: '/backend/custom-functions/types'
 ---
-# Custom Function Types
+# Working with Custom Functions
 
 Custom functions are developed in a local development environment and then deployed to a given workspace using the [8base CLI](/backend/development-tools/cli/). All custom functions must be declared in your projects 8base.yml file.
 

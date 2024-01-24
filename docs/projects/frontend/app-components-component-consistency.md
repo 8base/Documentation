@@ -1,8 +1,8 @@
 ---
 id: 'app-components-component-consistency'
 sidebar_label: 'Component Consistency'
-redirect_from: '/frontend/app-components/component-consistency'
-slug: '/projects/frontend/app-components/component-consistency'
+# redirect_from: '/frontend/app-components/component-consistency'
+# slug: '/projects/frontend/app-components/component-consistency'
 ---
 
 # Component Consistency

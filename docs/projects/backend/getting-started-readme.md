@@ -2,7 +2,7 @@
 id: 'getting-started-readme'
 sidebar_label: 'Backend Overview'
 redirect_from: '/projects/backend/getting-started'
-slug: '/backend/getting-started'
+slug: '/backend/overview'
 ---
 
 # Backend Overview

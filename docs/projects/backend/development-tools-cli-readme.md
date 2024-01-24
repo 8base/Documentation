@@ -2,14 +2,28 @@
 id: 'development-tools-cli-readme'
 sidebar_label: 'Command Line Interface (CLI)'
 redirect_from: '/backend/development-tools/cli'
-slug: '/projects/backend/development-tools/cli'
+slug: '/advanced/development-tools/cli'
 ---
 
 # Command Line Interface (CLI)
 
-The 8base Command Line Interface (CLI) makes it easy to generate custom functions and manage workspaces straight from the terminal. Run the following commands to get going!
+The 8base Command Line Interface (CLI) makes it easy to generate custom functions and manage workspaces straight from the terminal. You can develop and deploy custom backend logic in JavaScript or TypeScript.
 
-## Install
+## Supported Versions
+
+### Typescript
+Typescript v4.3.4 is supported.
+
+### Node.js
+:::caution
+AWS has announced the end of support for Node.js 14.x in the AWS SDK for JavaScript v3, effective **May 1, 2024**. If your custom functions run on Node.js v14, they may stop working after this date.
+:::
+
+As of Friday, January 26, 2024, our serverless functions infrastructure and the 8base Command Line Interface (CLI) support Node v18 and v20. If you are running an older version of CLI, you will need to update it to be able to run Node v18 and v20. We recommend updating and testing your 8base CLI and your Node versions before April 30, 2024.
+
+For more information about Node.js versions, see [Announcing the end of support for Node.js 14.x in the AWS SDK for JavaScript (v3)](https://aws.amazon.com/blogs/developer/announcing-the-end-of-support-for-node-js-14-x-in-the-aws-sdk-for-javascript-v3/).
+
+## Installing the CLI
 
 ```shell
 # Install the CLI Globally
@@ -49,4 +63,23 @@ OPTIONS
   --version, -v  Show version number
   --debug, -d    Turn on debug logs
   --help, -h     Show help
+```
+
+## Upgrading the CLI
+
+To update your CLI, run:
+
+`yarn global add 8base-cli@latest`  or
+
+`npm i -g 8base-cli@latest`
+
+After you update your CLI version, the 8base.yaml file will provide the option to specify the runtime version for your functions. This added flexibility allows you to choose whether your functions run in Node or Typescript, and the version.
+
+If you upgrade your CLI and change the Node version, we recommend that you thoroughly test your functions locally with the new Node version. You may have libraries within your functions that are not supported by newer Node versions. 
+
+If you have older projects, you can manually update your Node version in the 8base.yaml file and add a new parameter. For example:
+
+```yml
+settings:
+nodeVersion:20
 ```

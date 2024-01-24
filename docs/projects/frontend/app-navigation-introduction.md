@@ -1,6 +1,6 @@
 ---
 id: 'app-navigation-introduction'
-sidebar_label: 'Introduction'
+sidebar_label: 'App Navigation Introduction'
 redirect_from: '/frontend/app-navigation/introduction'
 slug: '/projects/frontend/app-navigation/introduction'
 ---
