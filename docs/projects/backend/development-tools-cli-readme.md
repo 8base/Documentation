@@ -67,17 +67,17 @@ OPTIONS
 
 ## Upgrading the CLI
 
-When you update your CLI version, the 8base.yaml file will provide the option to specify the runtime version for your functions. This added flexibility allows you to choose whether your function run in Node or Typescript, and the version.
-
 To update your CLI, run:
 
 `yarn global add 8base-cli@latest`  or
 
 `npm i -g 8base-cli@latest`
 
+After you update your CLI version, the 8base.yaml file will provide the option to specify the runtime version for your functions. This added flexibility allows you to choose whether your functions run in Node or Typescript, and the version.
+
 If you upgrade your CLI and change the Node version, we recommend that you thoroughly test your functions locally with the new Node version. You may have libraries within your functions that are not supported by newer Node versions. 
 
-If you have older projects, you can manually update your Node version in the 8base.yml file and add a new parameter. For example:
+If you have older projects, you can manually update your Node version in the 8base.yaml file and add a new parameter. For example:
 
 ```yml
 settings:

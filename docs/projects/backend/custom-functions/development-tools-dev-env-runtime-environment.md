@@ -109,5 +109,5 @@ We recommend that you have a `package-lock.json` file to dramatically accelerate
 8base runtime environment currently supports:
 
 - TypeScript: v4.3.4
-- Node.js: v14.x, v18.x, and v20.x
-The 8base CLI was recently updated to support Node v18 and v20. For information about updating, see .
+- Node.js: v18.x and v20.x
+The 8base CLI was recently updated to support Node v18 and v20. For information about updating, see [Command Line Interface (CLI)](../development-tools-cli-readme.md).
