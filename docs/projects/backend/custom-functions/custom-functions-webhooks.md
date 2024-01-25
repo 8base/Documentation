@@ -48,7 +48,7 @@ functions:
 
 ## Webhook Arguments
 
-To learn about the arguments that are passed to webhooks, see [custom function arguments](/backend/custom-functions/custom-functions-types#custom-function-arguments).
+To learn about the arguments that are passed to webhooks, see [custom function arguments](/backend/custom-functions/types#custom-function-arguments).
 
 ## Path Parameters
 

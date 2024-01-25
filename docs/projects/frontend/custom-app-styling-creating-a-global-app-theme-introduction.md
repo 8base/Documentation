@@ -1,11 +1,11 @@
 ---
 id: 'custom-app-styling-creating-a-global-app-theme-introduction'
-sidebar_label: 'Introduction'
-redirect_from: '/frontend/custom-app-styling-creating-a-global-app-theme-introduction",'
-slug: '/projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction",'
+sidebar_label: 'Creating App Themes'
+redirect_from: '/frontend/custom-app-styling-creating-a-global-app-theme-introduction'
+slug: '/projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction'
 ---
 
-# Creating App Themes Introduction
+# Creating App Themes
 
 This document describes what comprises an App Theme and how to create and customize themes.
 

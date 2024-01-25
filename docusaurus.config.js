@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const redirects = JSON.parse(fs.readFileSync('redirects.json', 'utf8'));
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types').Config} **/
 const config = {
   title: '8base Docs',
   tagline: '8base Platform Documentation',
@@ -17,7 +17,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
+  // GitHub pages deployment config. You may not need this.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: '8base', // Usually your GitHub org/user name.
   projectName: 'Documentation', // Usually your repo name.

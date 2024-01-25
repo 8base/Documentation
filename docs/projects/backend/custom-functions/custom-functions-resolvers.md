@@ -1,7 +1,7 @@
 ---
 id: 'custom-functions-resolvers'
 sidebar_label: 'Resolvers'
-redirect_from: '/backend/custom-functions/resolvers'
+redirect_from: '/projects/backend/custom-functions/resolvers'
 slug: '/backend/custom-functions/resolvers'
 ---
 # Resolvers

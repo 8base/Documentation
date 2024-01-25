@@ -147,7 +147,7 @@ const sidebars = {
                   'projects/8basehome/projects/creating-projects',
                   {
                     type: 'category',
-                    label: 'Projects Dashboard Walkthrough',
+                    label: 'Project Dashboard Walkthrough',
                     link: {
                       type: 'doc',
                           id: 'projects/8basehome/projects/projects-dashboard-walkthrough',
@@ -197,7 +197,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Getting Started',
+          label: 'Backend Overview',
           link: {
             type: 'doc',
             id: 'projects/backend/getting-started-readme',
@@ -284,12 +284,12 @@ const sidebars = {
               label: 'Development Environment',
               link: {
                 type: 'doc',
-                id: 'projects/backend/development-tools-dev-env-readme',
+                id: 'projects/backend/custom-functions/development-tools-dev-env-readme',
               },
               items: [
-                'projects/backend/development-tools-dev-env-project-structure',
-                'projects/backend/development-tools-dev-env-8base-yml',
-                'projects/backend/development-tools-dev-env-runtime-environment',                
+                'projects/backend/custom-functions/development-tools-dev-env-project-structure',
+                'projects/backend/custom-functions/development-tools-dev-env-8base-yml',
+                'projects/backend/custom-functions/development-tools-dev-env-runtime-environment',                
               ],
             },
             {
@@ -314,100 +314,133 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '8base Console',
-          link: {
-            type: 'doc',
-            id: 'projects/backend/8base-console-readme',
-          },
-          items: [
-            'projects/backend/8base-console-authentication',
-            'projects/backend/8base-console-roles-and-permissions',
-            {
-              type: 'category',
-              label: 'Tools',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/8base-console-platform-tools-readme',
-              },
-              items: [                
-                'projects/backend/8base-console-platform-tools-api-explorer',
-                {
-                  type: 'category',
-                  label: 'Advanced',
-                  link: {
-                    type: 'doc',
-                    id: 'projects/backend/8base-console-platform-tools-advanced',
-                  },
-                  items: [
-                    'projects/backend/8base-console-platform-tools-advanced-advanced-introspection',
-                  ],
-                },
-                'projects/backend/8base-console-platform-tools-users',
-                'projects/backend/8base-console-platform-tools-ci-cd',
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
           label: 'GraphQL API Overview',
           link: {
             type: 'doc',
-            id: 'projects/backend/8base-console-graphql-api-readme',
+            id: 'projects/backend/graphql/graphql-api-readme'
           },
           items: [
-            {
-              type: 'category',
-              label: 'Queries',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/8base-console-graphql-api-queries-readme',
-              },
-              items: [
-                'projects/backend/8base-console-graphql-api-queries-single-record-query',
-                'projects/backend/8base-console-graphql-api-queries-record-list-query',
-                'projects/backend/8base-console-graphql-api-queries-related-record-query',
-                'projects/backend/8base-console-graphql-api-queries-sort-list-query',
-                'projects/backend/8base-console-graphql-api-queries-combining-queries',
-                'projects/backend/8base-console-graphql-api-queries-aggregation-query',
-                'projects/backend/8base-console-graphql-api-queries-combining-arguments',
-                'projects/backend/8base-console-graphql-api-queries-filtered-list-query',
-                'projects/backend/8base-console-graphql-api-queries-paginated-query-results',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Mutations',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/8base-console-graphql-api-mutations-readme',
-              },
-              items: [
-                'projects/backend/8base-console-graphql-api-mutations-single-record-mutations',
-                'projects/backend/8base-console-graphql-api-mutations-related-record-mutations',
-                'projects/backend/8base-console-graphql-api-mutations-update-by-filter-mutations',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Subscriptions',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/8base-console-graphql-api-subscriptions-readme',
-              },
-              items: [
-                'projects/backend/8base-console-graphql-api-subscriptions-simple-record-subscriptions',
-                'projects/backend/8base-console-graphql-api-subscriptions-complex-record-subscriptions',
-                'projects/backend/8base-console-graphql-api-subscriptions-client',
-              ],
-            },
-            'projects/backend/8base-console-graphql-api-grouping-and-aggregations-readme',
-            'projects/backend/8base-console-graphql-api-geo-fields-readme',
-            'projects/backend/8base-console-graphql-api-variables',
-            'projects/backend/8base-console-graphql-api-error-handling',
-          ],
+            
+                {
+                  type: 'category',
+                  label: 'GraphQL Queries',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/graphql/graphql-api-queries-readme',
+                  },
+                  items: [
+                    'projects/backend/graphql/graphql-api-queries-single-record-query',
+                    'projects/backend/graphql/graphql-api-queries-record-list-query',
+                    {
+                      type: 'category',
+                      label: 'Related Data',
+                      link: {
+                        type: 'doc',
+                        id: 'projects/backend/graphql/graphql-api-queries-related-data',
+                      },
+                      items: [
+                        'projects/backend/graphql/graphql-api-queries-related-record-retrieve-list',
+                        'projects/backend/graphql/graphql-api-queries-related-record-query',                                
+                      ],
+                    },
+                    'projects/backend/graphql/graphql-api-queries-combining-queries',
+                    'projects/backend/graphql/graphql-api-queries-combining-arguments',
+                    'projects/backend/graphql/graphql-api-queries-sort-list-query',
+                    'projects/backend/graphql/graphql-api-queries-filtered-list-query',
+                    'projects/backend/graphql/graphql-api-queries-paginated-query-results',
+                    'projects/backend/graphql/graphql-api-queries-aggregation-query',
+                    'projects/backend/graphql/graphql-api-grouping-and-aggregations-readme',                   
+                    'projects/backend/graphql/graphql-api-geo-fields-readme',                     
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'GraphQL Mutations',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/graphql/graphql-api-mutations-readme',
+                  },
+                  items: [
+                    'projects/backend/graphql/graphql-api-mutations-single-record-mutations',
+                    'projects/backend/graphql/graphql-api-mutations-update-by-filter-mutations',
+                    'projects/backend/graphql/graphql-api-mutations-related-record-mutations',                    
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'GraphQL Subscriptions',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/graphql/graphql-api-subscriptions-readme',
+                  },
+                  items: [
+                    'projects/backend/graphql/graphql-api-subscriptions-simple-record-subscriptions',
+                    'projects/backend/graphql/graphql-api-subscriptions-complex-record-subscriptions',                 
+                  ],
+                },
+                'projects/backend/graphql/graphql-api-variables',
+                {
+                  type: 'category',
+                  label: 'GraphQL Code Samples',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/backend/graphql/graphql-api-code-samples',
+                  },
+                  items: [                   
+                    'projects/backend/graphql/graphql-api-subscriptions-client',
+                  ],
+                },
+                'projects/backend/graphql/graphql-api-error-handling',
+              ], 
         },
-        
+        'projects/backend/8base-console-platform-tools-api-explorer',
+        {
+          type: 'category',
+          label: 'App Services',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/app-services/app-services-index',
+          },
+          items: [                
+            {
+              type: 'category',
+              label: 'Roles and Permissions',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/app-services/roles-and-permissions',
+              },
+              items: [
+                // 'projects/backend/app-services/app-services-data-permissions',
+                // 'projects/backend/app-services/app-services-apps',
+                'projects/backend/app-services/administer-users',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Authentication',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/app-services/authentication-index',
+              },
+              items: [
+                'projects/backend/app-services/authentication-8base',
+                'projects/backend/app-services/authentication-auth0',
+                'projects/backend/app-services/authentication-openID',
+              ],
+            },        
+          ],
+        },       
+        {
+          type: 'category',
+          label: 'Continuous Integration and Continuous Deployment (CI/CD)',
+          link: {
+            type: 'doc',
+            id: 'projects/backend/8base-console-platform-tools-ci-cd',
+          },
+          items: [                      
+            
+          ],
+        }, 
        // {
        //   type: 'category',
        //   label: 'Plugins and Integrations',
@@ -419,45 +452,7 @@ const sidebars = {
        //     
        //   ],
        // },
-        {
-          type: 'category',
-          label: 'Local Development Environment',
-          link: {
-            type: 'doc',
-            id: 'projects/backend/development-tools-dev-readme',
-          },
-          items: [
-            
-            {
-              type: 'category',
-              label: 'Command Line Interface (CLI)',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/development-tools-cli-readme',
-              },
-              items: [
-                'projects/backend/development-tools-cli-commands',
-                'projects/backend/development-tools-cli-generators',
-                'projects/backend/development-tools-cli-ci-cd',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'SDK',
-              link: {
-                type: 'doc',
-                id: 'projects/backend/development-tools-sdk-readme',
-              },
-              items: [
-                'projects/backend/development-tools-sdk-api-readme',
-                'projects/backend/development-tools-sdk-auth-readme',
-                'projects/backend/development-tools-sdk-file-upload',
-                'projects/backend/development-tools-sdk-filestack-uploader',
-                'projects/backend/development-tools-sdk-vs-code-plugin',
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
@@ -549,7 +544,7 @@ const sidebars = {
             'projects/frontend/custom-app-styling-understanding-the-app-builder-interface-adding-custom-fonts-and-icons-to-your-app',
             {
               type: 'category',
-              label: 'Creating a Global App Theme',
+              label: 'Creating App Themes',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction',
@@ -611,7 +606,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'App Pages States and Settings',
+              label: 'Creating, Cloning, and Editing App Pages',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/app-navigation-create-and-editing-app-pages',
@@ -632,7 +627,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'App Components',
+          label: 'App Components Introduction',
           link: {
             type: 'doc',
             id: 'projects/frontend/app-components-introduction',
@@ -766,7 +761,7 @@ const sidebars = {
             'projects/frontend/connecting-to-data-sources-introduction',
             {
               type: 'category',
-              label: 'Creating API Connections',
+              label: 'API Connection Types',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/connecting-to-data-sources-creating-api-connections',
@@ -779,7 +774,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'How to make API Calls (Requests)',
+              label: 'How to Make API Calls',
               link: {
                 type: 'doc',
                 id: 'projects/frontend/connecting-to-data-sources-how-to-make-api-calls',
@@ -832,7 +827,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Creating custom frontend functions',
+              label: 'Custom Frontend Functions',
                 link: {
                   type: 'doc',
                   id: 'projects/frontend/custom-frontend-logic-creating-custom-frontend-functions-readme',
@@ -902,6 +897,45 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Advanced Development',
+      link: {
+        type: 'doc',
+        id: 'projects/backend/8base-console-platform-tools-advanced',
+      },
+      items: [         
+            {
+              type: 'category',
+              label: 'Command Line Interface (CLI)',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-cli-readme',
+              },
+              items: [
+                'projects/backend/development-tools-cli-commands',
+                'projects/backend/development-tools-cli-generators',
+                'projects/backend/development-tools-cli-ci-cd',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'JavaScript SDK',
+              link: {
+                type: 'doc',
+                id: 'projects/backend/development-tools-sdk-readme',
+              },
+              items: [
+                'projects/backend/development-tools-sdk-api-readme',
+                'projects/backend/development-tools-sdk-auth-readme',
+                'projects/backend/development-tools-sdk-file-upload',
+                'projects/backend/development-tools-sdk-filestack-uploader',
+                'projects/backend/development-tools-sdk-vs-code-plugin',
+              ],
+            },         
+        'projects/backend/8base-console-platform-tools-advanced-advanced-introspection',
+      ],
+    }, 
   ],
 };
 

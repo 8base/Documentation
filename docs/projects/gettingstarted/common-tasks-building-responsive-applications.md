@@ -1,7 +1,7 @@
 ---
 id: 'common-tasks-building-responsive-applications'
 sidebar_label: 'Building Responsive Applications'
-redirect_from: '/gettingstarted/commontasks/building-responsive-applications'
+redirect_from: '/projects/gettingstarted/commontasks/building-responsive-applications'
 slug: '/gettingstarted/commontasks/building-responsive-applications'
 ---
 

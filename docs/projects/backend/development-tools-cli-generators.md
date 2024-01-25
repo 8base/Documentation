@@ -2,14 +2,14 @@
 id: 'development-tools-cli-generators'
 sidebar_label: 'Generators'
 redirect_from: '/backend/development-tools/cli/generators'
-slug: '/projects/backend/development-tools/cli/generators'
+slug: '/advanced/development-tools/cli/generators'
 ---
 
 # Generators
 
-Generators are awesome. Essentially, they can be used to reliably scaffold application resources – like custom functions – that can then get customized. Relying on generators will also help ensure that your project directories stay organized.
+Generators can be used to reliably scaffold application resources – like custom functions – that can then get customized. Relying on generators will also help ensure that your project directories stay organized.
 
-### Commands
+## Commands
 
 When running `8base generate [COMMAND]`, certain option flags are always available. Currently, they are:
 
@@ -21,11 +21,11 @@ OPTIONS:
 
 Let's walk through a few examples of using generators.
 
-### Custom Functions
+## Custom Functions
 
 Custom function generators will add all the files required for a given type, along with boiler-plate code.
 
-##### Resolvers
+### Resolvers
 
 Generate a custom resolver function.
 
@@ -54,7 +54,7 @@ Boom! Your new myNewResolver function has been successfully generated. To add an
 generate done. Time: 18 ms.
 ```
 
-##### Webhooks
+### Webhooks
 
 Generate a custom webhook function.
 
@@ -84,7 +84,7 @@ Boom! Your new myNewWebhook function has been successfully generated. To add any
 generate done. Time: 12 ms.
 ```
 
-##### Trigger
+### Trigger
 
 Generate a custom trigger function.
 
@@ -114,7 +114,7 @@ Boom! Your new myNewTrigger function has been successfully generated. To add any
 generate done. Time: 14 ms.
 ```
 
-##### Task
+### Task
 
 Generate a custom task function.
 
@@ -143,7 +143,7 @@ Boom! Your new myNewTask function has been successfully generated. To add any re
 generate done. Time: 11 ms.
 ```
 
-##### Mock
+### Mock
 
 Generate a mock for a custom function.
 
@@ -170,11 +170,11 @@ Boom! Your new success request mock has been successfully generated.
 generate done. Time: 10 ms.
 ```
 
-### Client Side
+## Client Side
 
 Application generators can be used for building 'starter-app-like' skeletons in supported frameworks. Please note that this feature is highly experimental on our part!
 
-##### App
+### App
 
 Generate a starter app in a specified framework.
 
@@ -184,7 +184,7 @@ $ 8base generate app [PROJECT_NAME]
 
 Currently, only ReactJs is supported and the application template can be found [here](https://github.com/8base/react-app-starter).
 
-##### Scaffold
+### Scaffold
 
 Scaffold client side resources for a given table resource.
 

@@ -4,168 +4,40 @@
     "to": "/8basehome/projects/projects-team-management"
   },
   {
-    "from": "/backend/authentication",
-    "to": "/projects/backend/authentication"
+    "from": "/projects/backend/console/advanced-introspection",
+    "to": "/backend/console/advanced-introspection"
   },
   {
-    "from": "/backend/graphql-api/error-handling",
-    "to": "/projects/backend/graphql-api/error-handling"
-  },
-  {
-    "from": "/backend/graphql-api/geo-fields",
-    "to": "/projects/backend/graphql-api/geo-fields"
-  },
-  {
-    "from": "/backend/graphql-api/grouping-and-aggregations",
-    "to": "/projects/backend/graphql-api/grouping-and-aggregations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations",
-    "to": "/projects/backend/graphql-api/mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/related-record-mutations",
-    "to": "/projects/backend/graphql-api/mutations/related-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/single-record-mutations",
-    "to": "/projects/backend/graphql-api/mutations/single-record-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/mutations/update-by-filter-mutations",
-    "to": "/projects/backend/graphql-api/mutations/update-by-filter-mutations"
-  },
-  {
-    "from": "/backend/graphql-api/queries/aggregation-query",
-    "to": "/projects/backend/graphql-api/queries/aggregation-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/combining-arguments",
-    "to": "/projects/backend/graphql-api/queries/combining-arguments"
-  },
-  {
-    "from": "/backend/graphql-api/queries/combining-queries",
-    "to": "/projects/backend/graphql-api/queries/combining-queries"
-  },
-  {
-    "from": "/backend/graphql-api/queries/filtered-list-query",
-    "to": "/projects/backend/graphql-api/queries/filtered-list-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/paginated-query-results",
-    "to": "/projects/backend/graphql-api/queries/paginated-query-results"
-  },
-  {
-    "from": "/backend/graphql-api/queries",
-    "to": "/projects/backend/graphql-api/queries"
-  },
-  {
-    "from": "/backend/graphql-api/queries/record-list-query",
-    "to": "/projects/backend/graphql-api/queries/record-list-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/related-record-query",
-    "to": "/projects/backend/graphql-api/queries/related-record-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/single-record-query",
-    "to": "/projects/backend/graphql-api/queries/single-record-query"
-  },
-  {
-    "from": "/backend/graphql-api/queries/sort-list-query",
-    "to": "/projects/backend/graphql-api/queries/sort-list-query"
-  },
-  {
-    "from": "/backend/graphql-api",
-    "to": "/projects/backend/graphql-api"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions/client",
-    "to": "/projects/backend/graphql-api/subscriptions/client"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions/complex-record-subscriptions",
-    "to": "/projects/backend/graphql-api/subscriptions/complex-record-subscriptions"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions",
-    "to": "/projects/backend/graphql-api/subscriptions"
-  },
-  {
-    "from": "/backend/graphql-api/subscriptions/simple-record-subscriptions",
-    "to": "/projects/backend/graphql-api/subscriptions/simple-record-subscriptions"
-  },
-  {
-    "from": "/backend/graphql-api/variables",
-    "to": "/projects/backend/graphql-api/variables"
-  },
-  {
-    "from": "/backend/console/advanced-introspection",
-    "to": "/projects/backend/console/advanced-introspection"
-  },
-  {
-    "from": "/backend/console/advanced",
-    "to": "/projects/backend/console/advanced"
-  },
-  {
-    "from": "/backend/console/api-explorer",
-    "to": "/projects/backend/console/api-explorer"
-  },
-  {
-    "from": "/backend/console/ci-cd",
+    "from": "/projects/backend/console/ci-cd",
     "to": "/backend/console/ci-cd"
-  },
-  {
-    "from": "/projects/backend/tools",
-    "to": "/projects/backend/tools"
-  },
-  {
-    "from": "/backend/console/users",
-    "to": "/projects/backend/console/users"
   },
   {
     "from": "/projects/backend/plugins-integrations/salesforce",
     "to": "/backend/data/salesforce"
   },
   {
-    "from": "/backend/backend",
-    "to": "/projects/backend/backend"
-  },
-  {
-    "from": "/backend/roles-and-permissions",
-    "to": "/projects/backend/roles-and-permissions"
-  },
-  {
-    "from": "/backend/custom-functions/debugging",
+    "from": "/projects/backend/custom-functions/debugging",
     "to": "/backend/custom-functions/debugging"
   },
   {
-    "from": "/backend/custom-functions/custom-functions-deployment",
-    "to": "/backend/custom-functions/custom-functions-deployment"
-  },
-  {
-    "from": "/backend/custom-functions/custom-functions-executing-functions",
-    "to": "/backend/custom-functions/custom-functions-executing-functions"
-  },
-  {
-    "from": "/backend/custom-functions/custom-functions-logs",
-    "to": "/backend/custom-functions/custom-functions-logs"
-  },
-  {
-    "from": "/backend/custom-functions",
+    "from": "/project/backend/custom-functions",
     "to": "/backend/custom-functions"
   },
   {
-    "from": "/backend/custom-functions/resolvers",
+    "from": "/projects/backend/custom-functions/resolvers",
     "to": "/backend/custom-functions/resolvers"
   },
   {
-    "from": "/backend/custom-functions/tasks",
+    "from": "/projects/backend/custom-functions/tasks",
     "to": "/backend/custom-functions/tasks"
   },
   {
-    "from": "/backend/custom-functions/triggers",
+    "from": "/projects/backend/custom-functions/triggers",
     "to": "/backend/custom-functions/triggers"
+  },
+  {
+    "from": "/backend/custom-functions-types",
+    "to": "/backend/custom-functions/types"
   },
   {
     "from": "/projects/backend/handling-files",
@@ -260,10 +132,6 @@
     "to": "/backend/custom-functions/dev-environment/runtime-environment"
   },
   {
-    "from": "/backend/development-tools",
-    "to": "/backend/development-tools"
-  },
-  {
     "from": "/backend/development-tools/sdk/api",
     "to": "/projects/backend/development-tools/sdk/api"
   },
@@ -280,16 +148,12 @@
     "to": "/projects/backend/development-tools/sdk/filestack-uploader"
   },
   {
-    "from": "/backend/development-tools/sdk",
-    "to": "/projects/backend/development-tools/sdk"
-  },
-  {
     "from": "/backend/development-tools/sdk/vs-code-plugin",
     "to": "/projects/backend/development-tools/sdk/vs-code-plugin"
   },
   {
-    "from": "/backend/getting-started/connecting-to-api",
-    "to": "/projects/backend/getting-started/connecting-to-api"
+    "from": "/projects/backend/getting-started/connecting-to-api",
+    "to": "/backend/getting-started/connecting-to-api"
   },
   {
     "from": "/projects/backend/getting-started/quick-start",
@@ -298,6 +162,70 @@
   {
     "from": "/projects/backend/getting-started",
     "to": "/backend/getting-started"
+  },
+  {
+    "from": "/projects/backend/graphql-api/mutations/update-by-filter-mutations",
+    "to": "/backend/graphql-api/mutations/update-by-filter-mutations"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/aggregation-query",
+    "to": "/backend/graphql-api/queries/aggregation-query"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/combining-arguments",
+    "to": "/backend/graphql-api/queries/combining-arguments"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/combining-queries",
+    "to": "/backend/graphql-api/queries/combining-queries"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/filtered-list-query",
+    "to": "/backend/graphql-api/queries/filtered-list-query"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/paginated-query-results",
+    "to": "/backend/graphql-api/queries/paginated-query-results"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries",
+    "to": "/backend/graphql-api/queries"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/record-list-query",
+    "to": "/backend/graphql-api/queries/record-list-query"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/single-record-query",
+    "to": "/backend/graphql-api/queries/single-record-query"
+  },
+  {
+    "from": "/projects/backend/graphql-api/queries/sort-list-query",
+    "to": "/backend/graphql-api/queries/sort-list-query"
+  },
+  {
+    "from": "/project/backend/graphql-api",
+    "to": "/backend/graphql-api"
+  },
+  {
+    "from": "/projects/backend/graphql-api/subscriptions/client",
+    "to": "/backend/graphql-api/subscriptions/client"
+  },
+  {
+    "from": "/projects/backend/graphql-api/subscriptions/complex-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/complex-record-subscriptions"
+  },
+  {
+    "from": "/projects/backend/graphql-api/subscriptions",
+    "to": "/backend/graphql-api/subscriptions"
+  },
+  {
+    "from": "/projects/backend/graphql-api/subscriptions/simple-record-subscriptions",
+    "to": "/backend/graphql-api/subscriptions/simple-record-subscriptions"
+  },
+  {
+    "from": "/projects/backend/graphql-api/variables",
+    "to": "/backend/graphql-api/variables"
   },
   {
     "from": "/frontend/adding-cdns-and-libraries/calling-frontend-functions/addingremoving-cdns",
@@ -326,10 +254,6 @@
   {
     "from": "/frontend/app-components/component-categories",
     "to": "/projects/frontend/app-components/component-categories"
-  },
-  {
-    "from": "/frontend/app-components/component-consistency",
-    "to": "/projects/frontend/app-components/component-consistency"
   },
   {
     "from": "/frontend/app-components/component-groups",
@@ -596,14 +520,6 @@
     "to": "/projects/frontend/app-navigation/create-and-editing-app-pages/adding-logic-to-navigation-events"
   },
   {
-    "from": "/frontend/app-navigation/create-and-editing-app-pages/handling-redirects",
-    "to": "/projects/frontend/app-navigation/create-and-editing-app-pages/handling-redirects"
-  },
-  {
-    "from": "/frontend/app-navigation/create-and-editing-app-pages/how-to-create-layouts",
-    "to": "/projects/frontend/app-navigation/create-and-editing-app-pages/how-to-create-layouts"
-  },
-  {
     "from": "/frontend/app-navigation/create-and-editing-app-pages/page-url-settings",
     "to": "/projects/frontend/app-navigation/create-and-editing-app-pages/page-url-settings"
   },
@@ -620,10 +536,6 @@
     "to": "/projects/frontend/app-navigation/create-and-editing-app-pages/using-url-parameters"
   },
   {
-    "from": "/frontend/app-navigation/create-and-editing-app-pages/using-url-query-parameters",
-    "to": "/projects/frontend/app-navigation/create-and-editing-app-pages/using-url-query-parameters"
-  },
-  {
     "from": "/frontend/app-navigation/create-and-editing-app-pages",
     "to": "/projects/frontend/app-navigation/create-and-editing-app-pages"
   },
@@ -636,52 +548,8 @@
     "to": "/projects/frontend/application-layouts/creating-and-editing-layouts"
   },
   {
-    "from": "/frontend/application-layouts/introduction",
-    "to": "/projects/frontend/application-layouts/introduction"
-  },
-  {
     "from": "/frontend/application-layouts",
     "to": "/projects/frontend/application-layouts"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/calling-frontend-functions/introduction",
-    "to": "/projects/frontend/authenticating-app-users/calling-frontend-functions/introduction"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-0auth",
-    "to": "/projects/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-0auth"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-basic-emailpassword",
-    "to": "/projects/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-basic-emailpassword"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-hosted-login-w-redirect",
-    "to": "/projects/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-hosted-login-w-redirect"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-json-web-tokens",
-    "to": "/projects/frontend/authenticating-app-users/supported-authentication-strategies/how-to-setup-authentication-for-json-web-tokens"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/supported-authentication-strategies/setting-up-protected-pages-in-app-builder",
-    "to": "/projects/frontend/authenticating-app-users/supported-authentication-strategies/setting-up-protected-pages-in-app-builder"
-  },
-  {
-    "from": "/frontend/authenticating-app-users/supported-authentication-strategies/testing-authentication-in-development-mode",
-    "to": "/projects/frontend/authenticating-app-users/supported-authentication-strategies/testing-authentication-in-development-mode"
-  },
-  {
-    "from": "/frontend/billing/inviting/managing-collaborators/billing-spec-tbd",
-    "to": "/projects/frontend/billing/inviting/managing-collaborators/billing-spec-tbd"
-  },
-  {
-    "from": "/frontend/billing/inviting/managing-collaborators/introduction",
-    "to": "/projects/frontend/billing/inviting/managing-collaborators/introduction"
-  },
-  {
-    "from": "/frontend/billing/inviting/managing-collaborators/upgradingdowngrading-subscription-tiers",
-    "to": "/projects/frontend/billing/inviting/managing-collaborators/upgradingdowngrading-subscription-tiers"
   },
   {
     "from": "/frontend/building-frontends-app-builder-walkthrough/accessing-frontend-data",
@@ -756,8 +624,8 @@
     "to": "/projects/frontend/custom-app-styling/creating-a-global-app-theme/exporting-importing-app-themes"
   },
   {
-    "from": "/frontend/custom-app-styling-creating-a-global-app-theme-introduction\",",
-    "to": "/projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction\","
+    "from": "/frontend/custom-app-styling-creating-a-global-app-theme-introduction",
+    "to": "/projects/frontend/custom-app-styling-creating-a-global-app-theme-introduction"
   },
   {
     "from": "/frontend/custom-app-styling/creating-a-global-app-theme/setting-default-styles-on-components",
@@ -778,18 +646,6 @@
   {
     "from": "/frontend/custom-app-styling/understanding-the-app-builder-interface/using-a-css-design-framework",
     "to": "/projects/frontend/custom-app-styling/understanding-the-app-builder-interface/using-a-css-design-framework"
-  },
-  {
-    "from": "/frontend/custom-components/component-library/introduction",
-    "to": "/projects/frontend/custom-components/component-library/introduction"
-  },
-  {
-    "from": "/frontend/custom-components/component-library/setting-up-your-local-development-environment",
-    "to": "/projects/frontend/custom-components/component-library/setting-up-your-local-development-environment"
-  },
-  {
-    "from": "/frontend/custom-components/component-library/spec-tbd",
-    "to": "/projects/frontend/custom-components/component-library/spec-tbd"
   },
   {
     "from": "/frontend/custom-frontend-logic/calling-a-function-from-a-callback",
@@ -816,16 +672,8 @@
     "to": "/projects/frontend/custom-frontend-logic/introduction"
   },
   {
-    "from": "/frontend/custom-frontend-logic/functions/typed-arguments-in-frontend-functions",
-    "to": "/projects/frontend/custom-frontend-logic/functions/typed-arguments-in-frontend-functions"
-  },
-  {
     "from": "/frontend/custom-frontend-logic/using-installed-js-libraries-in-scripts",
     "to": "/projects/frontend/custom-frontend-logic/using-installed-js-libraries-in-scripts"
-  },
-  {
-    "from": "/frontend/data-in-the-frontend-(state)/data-scopes-for-app-builder-elements/theme",
-    "to": "/projects/frontend/data-in-the-frontend-(state)/data-scopes-for-app-builder-elements/theme"
   },
   {
     "from": "/frontend/data-in-the-frontend/adding-custom-state-data-entries",
@@ -884,70 +732,6 @@
     "to": "/projects/frontend/getting-started/what-is-app-builder"
   },
   {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/general-settings",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/general-settings"
-  },
-  {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/global-app-settings-interface",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/global-app-settings-interface"
-  },
-  {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/introduction",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/introduction"
-  },
-  {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/managing-app-billing",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/managing-app-billing"
-  },
-  {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/managing-seo-in-app-builder",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/managing-seo-in-app-builder"
-  },
-  {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/seeing-app-activity-history",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/seeing-app-activity-history"
-  },
-  {
-    "from": "/frontend/global-app-settings/handling-errors/failures-in-the-editor/using-custom-domains",
-    "to": "/projects/frontend/global-app-settings/handling-errors/failures-in-the-editor/using-custom-domains"
-  },
-  {
-    "from": "/frontend/global-app-settings/inviting/managing-collaborators/assigning-collaborators-roles",
-    "to": "/projects/frontend/global-app-settings/inviting/managing-collaborators/assigning-collaborators-roles"
-  },
-  {
-    "from": "/frontend/global-app-settings/inviting/managing-collaborators/revoking-access-from-collaborators",
-    "to": "/projects/frontend/global-app-settings/inviting/managing-collaborators/revoking-access-from-collaborators"
-  },
-  {
-    "from": "/frontend/handling-errors-and-debugging/handling-errors/failures-in-the-editor/displaying-form-errors-to-app-users",
-    "to": "/projects/frontend/handling-errors-and-debugging/handling-errors/failures-in-the-editor/displaying-form-errors-to-app-users"
-  },
-  {
-    "from": "/frontend/handling-errors-and-debugging/handling-errors/failures-in-the-editor/handling-request-errors-in-app",
-    "to": "/projects/frontend/handling-errors-and-debugging/handling-errors/failures-in-the-editor/handling-request-errors-in-app"
-  },
-  {
-    "from": "/frontend/handling-errors-and-debugging/supported-authentication-strategies/adding-validations-and-custom-errors",
-    "to": "/projects/frontend/handling-errors-and-debugging/supported-authentication-strategies/adding-validations-and-custom-errors"
-  },
-  {
-    "from": "/frontend/handling-errors-and-debugging/supported-authentication-strategies/introduction",
-    "to": "/projects/frontend/handling-errors-and-debugging/supported-authentication-strategies/introduction"
-  },
-  {
-    "from": "/frontend/handling-errors-and-debugging/supported-authentication-strategies/reading-and-fixing-app-errors",
-    "to": "/projects/frontend/handling-errors-and-debugging/supported-authentication-strategies/reading-and-fixing-app-errors"
-  },
-  {
-    "from": "/frontend/images-and-files-in-app-builder/available-attributes-on-uploaded-files",
-    "to": "/projects/frontend/images-and-files-in-app-builder/available-attributes-on-uploaded-files"
-  },
-  {
-    "from": "/frontend/images-and-files-in-app-builder/available-attributes-on-uploaded-images",
-    "to": "/projects/frontend/images-and-files-in-app-builder/available-attributes-on-uploaded-images"
-  },
-  {
     "from": "/frontend/images-and-files-in-app-builder/displaying-an-image-or-file-on-a-page",
     "to": "/projects/frontend/images-and-files-in-app-builder/displaying-an-image-or-file-on-a-page"
   },
@@ -960,28 +744,12 @@
     "to": "/projects/frontend/images-and-files-in-app-builder/uploading-an-image-or-file"
   },
   {
-    "from": "/frontend/publishing-apps/adding-ssl-to-custom-domains",
-    "to": "/projects/frontend/publishing-apps/adding-ssl-to-custom-domains"
-  },
-  {
-    "from": "/frontend/publishing-apps/cname-records-for-custom-domain",
-    "to": "/projects/frontend/publishing-apps/cname-records-for-custom-domain"
-  },
-  {
-    "from": "/frontend/publishing-apps/deployment-settings",
-    "to": "/projects/frontend/publishing-apps/deployment-settings"
-  },
-  {
     "from": "/frontend/publishing-apps/introduction",
     "to": "/projects/frontend/publishing-apps/introduction"
   },
   {
     "from": "/frontend/publishing-apps/making-an-app-public",
     "to": "/projects/frontend/publishing-apps/making-an-app-public"
-  },
-  {
-    "from": "/frontend/publishing-apps/publishing-apps-to-a-cdn",
-    "to": "/projects/frontend/publishing-apps/publishing-apps-to-a-cdn"
   },
   {
     "from": "/frontend/publishing-apps/seeing-deployment-history",
@@ -1020,18 +788,6 @@
     "to": "/projects/frontend/responsive-design-in-app-builder/writing-custom-media-query-rules"
   },
   {
-    "from": "/frontend/setting-rolebased-access-controls-and-frontend-permissions/inviting/managing-collaborators/developer-permissions-in-the-editor",
-    "to": "/projects/frontend/setting-rolebased-access-controls-and-frontend-permissions/inviting/managing-collaborators/developer-permissions-in-the-editor"
-  },
-  {
-    "from": "/frontend/setting-rolebased-access-controls-and-frontend-permissions/inviting/managing-collaborators/introduction",
-    "to": "/projects/frontend/setting-rolebased-access-controls-and-frontend-permissions/inviting/managing-collaborators/introduction"
-  },
-  {
-    "from": "/frontend/setting-rolebased-access-controls-and-frontend-permissions/inviting/managing-collaborators/user-permissions-in-the-frontend-spec-tbd",
-    "to": "/projects/frontend/setting-rolebased-access-controls-and-frontend-permissions/inviting/managing-collaborators/user-permissions-in-the-frontend-spec-tbd"
-  },
-  {
     "from": "/frontend/triggering-events-in-the-app/introduction",
     "to": "/projects/frontend/triggering-events-in-the-app/introduction"
   },
@@ -1048,35 +804,35 @@
     "to": "/projects/frontend/triggering-events-in-the-app/triggering-events-in-custom-front-end-logic"
   },
   {
-    "from": "/gettingstarted/commontasks/building-responsive-applications",
+    "from": "/projects/gettingstarted/commontasks/building-responsive-applications",
     "to": "/gettingstarted/commontasks/building-responsive-applications"
   },
   {
-    "from": "/gettingstarted/commontasks/create-multiple-records-single-operation",
+    "from": "/projects/gettingstarted/commontasks/create-multiple-records-single-operation",
     "to": "/gettingstarted/commontasks/create-multiple-records-single-operation"
   },
   {
-    "from": "/gettingstarted/commontasks/extending-the-api",
+    "from": "/projects/gettingstarted/commontasks/extending-the-api",
     "to": "/gettingstarted/commontasks/extending-the-api"
   },
   {
-    "from": "/gettingstarted/commontasks/implementing-pagination-api-queries",
+    "from": "/projects/gettingstarted/commontasks/implementing-pagination-api-queries",
     "to": "/gettingstarted/commontasks/implementing-pagination-api-queries"
   },
   {
-    "from": "/gettingstarted/commontasks/index",
+    "from": "/projects/gettingstarted/commontasks/index",
     "to": "/gettingstarted/commontasks"
   },
   {
-    "from": "/gettingstarted/commontasks/leveraging-navigation-events",
+    "from": "/projects/gettingstarted/commontasks/leveraging-navigation-events",
     "to": "/gettingstarted/commontasks/leveraging-navigation-events"
   },
   {
-    "from": "/gettingstarted/commontasks/real-time-applications",
+    "from": "/projects/gettingstarted/commontasks/real-time-applications",
     "to": "/gettingstarted/commontasks/real-time-applications"
   },
   {
-    "from": "/gettingstarted/commontasks/using-validating-forms",
+    "from": "/projects/gettingstarted/commontasks/using-validating-forms",
     "to": "/gettingstarted/commontasks/using-validating-forms"
   }
 ]

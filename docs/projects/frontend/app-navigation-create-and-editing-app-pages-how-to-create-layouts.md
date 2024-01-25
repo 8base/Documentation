@@ -1,8 +1,8 @@
 ---
 id: 'app-navigation-create-and-editing-app-pages-how-to-create-layouts'
 sidebar_label: 'How to create Layouts'
-redirect_from: '/frontend/app-navigation/create-and-editing-app-pages/how-to-create-layouts'
-slug: '/projects/frontend/app-navigation/create-and-editing-app-pages/how-to-create-layouts'
+# redirect_from: '/frontend/app-navigation/create-and-editing-app-pages/how-to-create-layouts'
+# slug: '/projects/frontend/app-navigation/create-and-editing-app-pages/how-to-create-layouts'
 ---
 
 # How to create Layouts

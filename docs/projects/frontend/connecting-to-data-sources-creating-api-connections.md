@@ -1,10 +1,11 @@
 ---
 id: 'connecting-to-data-sources-creating-api-connections'
+sidebar_label: 'API Connection Types'
 redirect_from: '/frontend/connecting-to-data-sources/creating-api-connections'
 slug: '/projects/frontend/connecting-to-data-sources/creating-api-connections'
 ---
 
-# API Connecting Types
+# API Connection Types
 
 This article describes how developers can think about Resources (API Clients) in App Builder.
 
