@@ -33,7 +33,7 @@ You can download this CSV file to test this example: [Sample CSV file](_files/cu
 
 ## Importing Complex Data
 
-Please refer to the [CLI's Import](../development-tools-cli-commands.md#import)command docs to import more complex data, such as related records, images, smart fields, etc.
+Please refer to the [CLI's Import](../development-tools-cli-commands.md#import) command docs to import more complex data, such as related records, images, smart fields, etc.
 
 
 
